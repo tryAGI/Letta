@@ -3,7 +3,7 @@ set -euo pipefail
 
 dotnet tool install --global autosdk.cli --prerelease
 rm -rf Generated
-curl -o openapi.yaml https://raw.githubusercontent.com/letta-ai/letta/main/fern/openapi.json
+curl --fail --silent --show-error -o openapi.yaml https://raw.githubusercontent.com/letta-ai/letta/main/fern/openapi.json
 
 # Fix spec using Python:
 # 1. Remove text/event-stream content type from all responses (AutoSDK doesn't handle SSE)
