@@ -285,7 +285,7 @@ namespace Letta
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Step>), JsonSerializerContext) as global::System.Collections.Generic.IList<global::Letta.Step> ??
+                        (global::System.Collections.Generic.IList<global::Letta.Step>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Step>), JsonSerializerContext) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -316,7 +316,7 @@ namespace Letta
                     ).ConfigureAwait(false);
 
                     return
-                        await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Step>), JsonSerializerContext).ConfigureAwait(false) as global::System.Collections.Generic.IList<global::Letta.Step> ??
+                        (global::System.Collections.Generic.IList<global::Letta.Step>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Step>), JsonSerializerContext).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)
