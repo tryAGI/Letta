@@ -1,0 +1,39 @@
+#nullable enable
+
+namespace Letta
+{
+    public partial interface IArchivesClient
+    {
+        /// <summary>
+        /// Modify Archive<br/>
+        /// Update an existing archive's name and/or description.
+        /// </summary>
+        /// <param name="archiveId">
+        /// The ID of the archive in the format 'archive-&lt;uuid4&gt;'
+        /// </param>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.Archive> ModifyArchiveAsync(
+            string archiveId,
+
+            global::Letta.ArchiveUpdateRequest request,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Modify Archive<br/>
+        /// Update an existing archive's name and/or description.
+        /// </summary>
+        /// <param name="archiveId">
+        /// The ID of the archive in the format 'archive-&lt;uuid4&gt;'
+        /// </param>
+        /// <param name="name"></param>
+        /// <param name="description"></param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.Archive> ModifyArchiveAsync(
+            string archiveId,
+            string? name = default,
+            string? description = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

@@ -1,0 +1,18 @@
+
+#nullable enable
+
+namespace Letta
+{
+    /// <summary>
+    /// The list of tool calls requested. Only applicable for role assistant.
+    /// </summary>
+    public sealed partial class LettaSchemasAgentFileMessageSchemaToolCalls
+    {
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+    }
+}

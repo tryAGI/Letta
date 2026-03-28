@@ -1,0 +1,281 @@
+#pragma warning disable CS0618 // Type or member is obsolete
+
+#nullable enable
+
+namespace Letta
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public readonly partial struct ResponseFormatVariant17 : global::System.IEquatable<ResponseFormatVariant17>
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// Response format for plain text responses.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Letta.TextResponseFormat? Text { get; init; }
+#else
+        public global::Letta.TextResponseFormat? Text { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
+#endif
+        public bool IsText => Text != null;
+
+        /// <summary>
+        /// Response format for JSON schema-based responses.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Letta.JsonSchemaResponseFormat? JsonSchema { get; init; }
+#else
+        public global::Letta.JsonSchemaResponseFormat? JsonSchema { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonSchema))]
+#endif
+        public bool IsJsonSchema => JsonSchema != null;
+
+        /// <summary>
+        /// Response format for JSON object responses.
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Letta.JsonObjectResponseFormat? JsonObject { get; init; }
+#else
+        public global::Letta.JsonObjectResponseFormat? JsonObject { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonObject))]
+#endif
+        public bool IsJsonObject => JsonObject != null;
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator ResponseFormatVariant17(global::Letta.TextResponseFormat value) => new ResponseFormatVariant17((global::Letta.TextResponseFormat?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Letta.TextResponseFormat?(ResponseFormatVariant17 @this) => @this.Text;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ResponseFormatVariant17(global::Letta.TextResponseFormat? value)
+        {
+            Text = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator ResponseFormatVariant17(global::Letta.JsonSchemaResponseFormat value) => new ResponseFormatVariant17((global::Letta.JsonSchemaResponseFormat?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Letta.JsonSchemaResponseFormat?(ResponseFormatVariant17 @this) => @this.JsonSchema;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ResponseFormatVariant17(global::Letta.JsonSchemaResponseFormat? value)
+        {
+            JsonSchema = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator ResponseFormatVariant17(global::Letta.JsonObjectResponseFormat value) => new ResponseFormatVariant17((global::Letta.JsonObjectResponseFormat?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Letta.JsonObjectResponseFormat?(ResponseFormatVariant17 @this) => @this.JsonObject;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ResponseFormatVariant17(global::Letta.JsonObjectResponseFormat? value)
+        {
+            JsonObject = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ResponseFormatVariant17(
+            global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType? type,
+            global::Letta.TextResponseFormat? text,
+            global::Letta.JsonSchemaResponseFormat? jsonSchema,
+            global::Letta.JsonObjectResponseFormat? jsonObject
+            )
+        {
+            Type = type;
+
+            Text = text;
+            JsonSchema = jsonSchema;
+            JsonObject = jsonObject;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public object? Object =>
+            JsonObject as object ??
+            JsonSchema as object ??
+            Text as object 
+            ;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override string? ToString() =>
+            Text?.ToString() ??
+            JsonSchema?.ToString() ??
+            JsonObject?.ToString() 
+            ;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Validate()
+        {
+            return IsText && !IsJsonSchema && !IsJsonObject || !IsText && IsJsonSchema && !IsJsonObject || !IsText && !IsJsonSchema && IsJsonObject;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public TResult? Match<TResult>(
+            global::System.Func<global::Letta.TextResponseFormat?, TResult>? text = null,
+            global::System.Func<global::Letta.JsonSchemaResponseFormat?, TResult>? jsonSchema = null,
+            global::System.Func<global::Letta.JsonObjectResponseFormat?, TResult>? jsonObject = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText && text != null)
+            {
+                return text(Text!);
+            }
+            else if (IsJsonSchema && jsonSchema != null)
+            {
+                return jsonSchema(JsonSchema!);
+            }
+            else if (IsJsonObject && jsonObject != null)
+            {
+                return jsonObject(JsonObject!);
+            }
+
+            return default(TResult);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Match(
+            global::System.Action<global::Letta.TextResponseFormat?>? text = null,
+            global::System.Action<global::Letta.JsonSchemaResponseFormat?>? jsonSchema = null,
+            global::System.Action<global::Letta.JsonObjectResponseFormat?>? jsonObject = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsJsonSchema)
+            {
+                jsonSchema?.Invoke(JsonSchema!);
+            }
+            else if (IsJsonObject)
+            {
+                jsonObject?.Invoke(JsonObject!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override int GetHashCode()
+        {
+            var fields = new object?[]
+            {
+                Text,
+                typeof(global::Letta.TextResponseFormat),
+                JsonSchema,
+                typeof(global::Letta.JsonSchemaResponseFormat),
+                JsonObject,
+                typeof(global::Letta.JsonObjectResponseFormat),
+            };
+            const int offset = unchecked((int)2166136261);
+            const int prime = 16777619;
+            static int HashCodeAggregator(int hashCode, object? value) => value == null
+                ? (hashCode ^ 0) * prime
+                : (hashCode ^ value.GetHashCode()) * prime;
+
+            return global::System.Linq.Enumerable.Aggregate(fields, offset, HashCodeAggregator);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Equals(ResponseFormatVariant17 other)
+        {
+            return
+                global::System.Collections.Generic.EqualityComparer<global::Letta.TextResponseFormat?>.Default.Equals(Text, other.Text) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.JsonSchemaResponseFormat?>.Default.Equals(JsonSchema, other.JsonSchema) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.JsonObjectResponseFormat?>.Default.Equals(JsonObject, other.JsonObject) 
+                ;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static bool operator ==(ResponseFormatVariant17 obj1, ResponseFormatVariant17 obj2)
+        {
+            return global::System.Collections.Generic.EqualityComparer<ResponseFormatVariant17>.Default.Equals(obj1, obj2);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static bool operator !=(ResponseFormatVariant17 obj1, ResponseFormatVariant17 obj2)
+        {
+            return !(obj1 == obj2);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public override bool Equals(object? obj)
+        {
+            return obj is ResponseFormatVariant17 o && Equals(o);
+        }
+    }
+}

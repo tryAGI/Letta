@@ -1,0 +1,56 @@
+
+#nullable enable
+
+namespace Letta
+{
+    /// <summary>
+    /// A URL citation when using web search.
+    /// </summary>
+    public sealed partial class Annotation
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <default>"url_citation"</default>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        public string Type { get; set; } = "url_citation";
+
+        /// <summary>
+        /// A URL citation when using web search.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url_citation")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Letta.AnnotationURLCitation UrlCitation { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Annotation" /> class.
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="urlCitation">
+        /// A URL citation when using web search.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public Annotation(
+            global::Letta.AnnotationURLCitation urlCitation,
+            string type = "url_citation")
+        {
+            this.UrlCitation = urlCitation ?? throw new global::System.ArgumentNullException(nameof(urlCitation));
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Annotation" /> class.
+        /// </summary>
+        public Annotation()
+        {
+        }
+    }
+}

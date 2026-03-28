@@ -1,0 +1,101 @@
+
+#pragma warning disable CS0618 // Type or member is obsolete
+
+#nullable enable
+
+namespace Letta
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class AgentsSearchDeployedAgentsRequest
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("search")]
+        public global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>? Search { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("project_id")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("combinator")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter))]
+        public global::Letta.AgentsSearchDeployedAgentsRequestCombinator? Combinator { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("limit")]
+        public double? Limit { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("after")]
+        public string? After { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sortBy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter))]
+        public global::Letta.AgentsSearchDeployedAgentsRequestSortBy? SortBy { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ascending")]
+        public bool? Ascending { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AgentsSearchDeployedAgentsRequest" /> class.
+        /// </summary>
+        /// <param name="search"></param>
+        /// <param name="projectId"></param>
+        /// <param name="combinator"></param>
+        /// <param name="limit"></param>
+        /// <param name="after"></param>
+        /// <param name="sortBy"></param>
+        /// <param name="ascending"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AgentsSearchDeployedAgentsRequest(
+            global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>? search,
+            string? projectId,
+            global::Letta.AgentsSearchDeployedAgentsRequestCombinator? combinator,
+            double? limit,
+            string? after,
+            global::Letta.AgentsSearchDeployedAgentsRequestSortBy? sortBy,
+            bool? ascending)
+        {
+            this.Search = search;
+            this.ProjectId = projectId;
+            this.Combinator = combinator;
+            this.Limit = limit;
+            this.After = after;
+            this.SortBy = sortBy;
+            this.Ascending = ascending;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AgentsSearchDeployedAgentsRequest" /> class.
+        /// </summary>
+        public AgentsSearchDeployedAgentsRequest()
+        {
+        }
+    }
+}

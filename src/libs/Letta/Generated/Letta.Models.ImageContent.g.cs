@@ -1,0 +1,60 @@
+
+#nullable enable
+
+namespace Letta
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class ImageContent
+    {
+        /// <summary>
+        /// The type of the message.<br/>
+        /// Default Value: image
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        public string? Type { get; set; }
+
+        /// <summary>
+        /// The source of the image.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.SourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Letta.Source Source { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ImageContent" /> class.
+        /// </summary>
+        /// <param name="type">
+        /// The type of the message.<br/>
+        /// Default Value: image
+        /// </param>
+        /// <param name="source">
+        /// The source of the image.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ImageContent(
+            global::Letta.Source source,
+            string? type)
+        {
+            this.Source = source;
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ImageContent" /> class.
+        /// </summary>
+        public ImageContent()
+        {
+        }
+    }
+}

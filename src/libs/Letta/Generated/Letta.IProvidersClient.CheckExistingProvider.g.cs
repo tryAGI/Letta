@@ -1,0 +1,20 @@
+#nullable enable
+
+namespace Letta
+{
+    public partial interface IProvidersClient
+    {
+        /// <summary>
+        /// Check Existing Provider<br/>
+        /// Verify the API key and additional parameters for an existing provider.
+        /// </summary>
+        /// <param name="providerId">
+        /// The ID of the provider in the format 'provider-&lt;uuid4&gt;'
+        /// </param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<string> CheckExistingProviderAsync(
+            string providerId,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
