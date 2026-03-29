@@ -63,12 +63,18 @@ The `generate.sh` script applies three fixes via Python before generation:
 # Build
 dotnet build Letta.slnx
 
-# Run tests (requires LETTA_API_KEY env var)
+# Run tests
 dotnet test src/tests/IntegrationTests/
 
 # Regenerate from latest spec
 cd src/libs/Letta && ./generate.sh
 ```
+
+### Test Modes (Testcontainers)
+
+Tests use Testcontainers with automatic environment detection:
+- **Debug builds** (`dotnet test`): Connect to local instance at `localhost:8283` (requires `LETTA_API_KEY`)
+- **Release/CI builds** (`dotnet test -c Release`): Automatically spin up `letta/letta` Docker container (no auth needed, 3-minute startup timeout)
 
 ## Servers
 
