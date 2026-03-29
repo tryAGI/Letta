@@ -126,6 +126,21 @@ namespace Letta
         /// <param name="value">
         /// Value of the block.
         /// </param>
+        /// <param name="templateId">
+        /// The id of the template.
+        /// </param>
+        /// <param name="baseTemplateId">
+        /// The id of the base template.
+        /// </param>
+        /// <param name="deploymentId">
+        /// The id of the deployment.
+        /// </param>
+        /// <param name="entityId">
+        /// The id of the entity within the template.
+        /// </param>
+        /// <param name="label">
+        /// Label of the block.
+        /// </param>
         /// <param name="limit">
         /// Character limit of the block.<br/>
         /// Default Value: 100000
@@ -139,24 +154,9 @@ namespace Letta
         /// <param name="isTemplate">
         /// Default Value: false
         /// </param>
-        /// <param name="templateId">
-        /// The id of the template.
-        /// </param>
-        /// <param name="baseTemplateId">
-        /// The id of the base template.
-        /// </param>
-        /// <param name="deploymentId">
-        /// The id of the deployment.
-        /// </param>
-        /// <param name="entityId">
-        /// The id of the entity within the template.
-        /// </param>
         /// <param name="preserveOnMigration">
         /// Preserve the block on template migration.<br/>
         /// Default Value: false
-        /// </param>
-        /// <param name="label">
-        /// Label of the block.
         /// </param>
         /// <param name="readOnly">
         /// Whether the agent has read-only access to the block.<br/>
@@ -197,16 +197,16 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? tags)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
-            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
-            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.Limit = limit;
             this.ProjectId = projectId;
             this.TemplateName = templateName;
             this.IsTemplate = isTemplate;
+            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
+            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
+            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
             this.PreserveOnMigration = preserveOnMigration;
+            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.ReadOnly = readOnly;
             this.Description = description;
             this.Metadata = metadata;

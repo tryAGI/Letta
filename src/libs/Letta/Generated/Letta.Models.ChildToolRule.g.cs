@@ -52,14 +52,14 @@ namespace Letta
         /// <param name="toolName">
         /// The name of the tool. Must exist in the database for the user's organization.
         /// </param>
+        /// <param name="children">
+        /// The children tools that can be invoked.
+        /// </param>
         /// <param name="type">
         /// Default Value: constrain_child_tools
         /// </param>
         /// <param name="promptTemplate">
         /// Optional template string (ignored).
-        /// </param>
-        /// <param name="children">
-        /// The children tools that can be invoked.
         /// </param>
         /// <param name="childArgNodes">
         /// Optional list of typed child argument overrides. Each node must reference a child in 'children'.
@@ -75,9 +75,9 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.ToolCallNode>? childArgNodes)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
             this.Type = type;
             this.PromptTemplate = promptTemplate;
+            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
             this.ChildArgNodes = childArgNodes;
         }
 

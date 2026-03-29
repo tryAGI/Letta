@@ -61,11 +61,14 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="SSEMCPServer" /> class.
         /// </summary>
-        /// <param name="mcpServerType">
-        /// Default Value: sse
-        /// </param>
         /// <param name="serverUrl">
         /// The URL of the server
+        /// </param>
+        /// <param name="serverName">
+        /// The name of the MCP server
+        /// </param>
+        /// <param name="mcpServerType">
+        /// Default Value: sse
         /// </param>
         /// <param name="authHeader">
         /// The name of the authentication header (e.g., 'Authorization')
@@ -79,9 +82,6 @@ namespace Letta
         /// <param name="id">
         /// The human-friendly ID of the Mcp_server
         /// </param>
-        /// <param name="serverName">
-        /// The name of the MCP server
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -94,13 +94,13 @@ namespace Letta
             global::System.Collections.Generic.Dictionary<string, string>? customHeaders,
             string? id)
         {
-            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
-            this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
             this.McpServerType = mcpServerType;
+            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.AuthHeader = authHeader;
             this.AuthToken = authToken;
             this.CustomHeaders = customHeaders;
             this.Id = id;
+            this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
         }
 
         /// <summary>

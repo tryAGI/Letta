@@ -123,6 +123,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaBatchRequest" /> class.
         /// </summary>
+        /// <param name="agentId">
+        /// The ID of the agent to send this batch request for
+        /// </param>
         /// <param name="messages">
         /// The messages to be sent to the agent.
         /// </param>
@@ -157,9 +160,6 @@ namespace Letta
         /// If True, returns token IDs and logprobs for ALL LLM generations in the agent step, not just the last one. Uses SGLang native /generate endpoint. Returns 'turns' field with TurnTokenData for each assistant/tool turn. Required for proper multi-turn RL training with loss masking.<br/>
         /// Default Value: false
         /// </param>
-        /// <param name="agentId">
-        /// The ID of the agent to send this batch request for
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -176,7 +176,6 @@ namespace Letta
             int? topLogprobs,
             bool? returnTokenIds)
         {
-            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.Messages = messages;
             this.Input = input;
             this.MaxSteps = maxSteps;
@@ -187,6 +186,7 @@ namespace Letta
             this.ReturnLogprobs = returnLogprobs;
             this.TopLogprobs = topLogprobs;
             this.ReturnTokenIds = returnTokenIds;
+            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
         }
 
         /// <summary>

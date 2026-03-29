@@ -36,10 +36,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ParametersSchema" /> class.
         /// </summary>
+        /// <param name="properties"></param>
         /// <param name="type">
         /// Default Value: object
         /// </param>
-        /// <param name="properties"></param>
         /// <param name="required"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -49,8 +49,8 @@ namespace Letta
             string? type,
             global::System.Collections.Generic.IList<string>? required)
         {
-            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Type = type;
+            this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Required = required;
         }
 

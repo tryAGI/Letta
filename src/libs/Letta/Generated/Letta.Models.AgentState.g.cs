@@ -307,6 +307,36 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentState" /> class.
         /// </summary>
+        /// <param name="id">
+        /// The id of the agent. Assigned by the database.
+        /// </param>
+        /// <param name="name">
+        /// The name of the agent.
+        /// </param>
+        /// <param name="system">
+        /// The system prompt used by the agent.
+        /// </param>
+        /// <param name="agentType">
+        /// The type of agent.
+        /// </param>
+        /// <param name="llmConfig">
+        /// Deprecated: Use `model` field instead. The LLM configuration used by the agent.
+        /// </param>
+        /// <param name="memory">
+        /// Deprecated: Use `blocks` field instead. The in-context memory of the agent.
+        /// </param>
+        /// <param name="blocks">
+        /// The memory blocks used by the agent.
+        /// </param>
+        /// <param name="tools">
+        /// The tools used by the agent.
+        /// </param>
+        /// <param name="sources">
+        /// Deprecated: Use `folders` field instead. The sources used by the agent.
+        /// </param>
+        /// <param name="tags">
+        /// The tags associated with the agent.
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -319,26 +349,11 @@ namespace Letta
         /// <param name="updatedAt">
         /// The timestamp when the object was last updated.
         /// </param>
-        /// <param name="id">
-        /// The id of the agent. Assigned by the database.
-        /// </param>
-        /// <param name="name">
-        /// The name of the agent.
-        /// </param>
         /// <param name="toolRules">
         /// The list of tool rules.
         /// </param>
         /// <param name="messageIds">
         /// The ids of the messages in the agent's in-context memory.
-        /// </param>
-        /// <param name="system">
-        /// The system prompt used by the agent.
-        /// </param>
-        /// <param name="agentType">
-        /// The type of agent.
-        /// </param>
-        /// <param name="llmConfig">
-        /// Deprecated: Use `model` field instead. The LLM configuration used by the agent.
         /// </param>
         /// <param name="model">
         /// The model handle used by the agent (format: provider/model-name).
@@ -360,21 +375,6 @@ namespace Letta
         /// </param>
         /// <param name="metadata">
         /// The metadata of the agent.
-        /// </param>
-        /// <param name="memory">
-        /// Deprecated: Use `blocks` field instead. The in-context memory of the agent.
-        /// </param>
-        /// <param name="blocks">
-        /// The memory blocks used by the agent.
-        /// </param>
-        /// <param name="tools">
-        /// The tools used by the agent.
-        /// </param>
-        /// <param name="sources">
-        /// Deprecated: Use `folders` field instead. The sources used by the agent.
-        /// </param>
-        /// <param name="tags">
-        /// The tags associated with the agent.
         /// </param>
         /// <param name="secrets">
         /// The environment variables for tool execution specific to this agent.
@@ -478,22 +478,17 @@ namespace Letta
             int? perFileViewWindowCharLimit,
             bool? hidden)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.System = system ?? throw new global::System.ArgumentNullException(nameof(system));
-            this.AgentType = agentType;
-            this.LlmConfig = llmConfig ?? throw new global::System.ArgumentNullException(nameof(llmConfig));
-            this.Memory = memory ?? throw new global::System.ArgumentNullException(nameof(memory));
-            this.Blocks = blocks ?? throw new global::System.ArgumentNullException(nameof(blocks));
-            this.Tools = tools ?? throw new global::System.ArgumentNullException(nameof(tools));
-            this.Sources = sources ?? throw new global::System.ArgumentNullException(nameof(sources));
-            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ToolRules = toolRules;
             this.MessageIds = messageIds;
+            this.System = system ?? throw new global::System.ArgumentNullException(nameof(system));
+            this.AgentType = agentType;
+            this.LlmConfig = llmConfig ?? throw new global::System.ArgumentNullException(nameof(llmConfig));
             this.Model = model;
             this.Embedding = embedding;
             this.ModelSettings = modelSettings;
@@ -501,6 +496,11 @@ namespace Letta
             this.ResponseFormat = responseFormat;
             this.Description = description;
             this.Metadata = metadata;
+            this.Memory = memory ?? throw new global::System.ArgumentNullException(nameof(memory));
+            this.Blocks = blocks ?? throw new global::System.ArgumentNullException(nameof(blocks));
+            this.Tools = tools ?? throw new global::System.ArgumentNullException(nameof(tools));
+            this.Sources = sources ?? throw new global::System.ArgumentNullException(nameof(sources));
+            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.Secrets = secrets;
             this.ProjectId = projectId;
             this.TemplateId = templateId;

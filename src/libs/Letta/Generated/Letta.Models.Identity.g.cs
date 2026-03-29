@@ -73,9 +73,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Identity" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The human-friendly ID of the Identity
-        /// </param>
         /// <param name="identifierKey">
         /// External, user-generated identifier key of the identity.
         /// </param>
@@ -85,14 +82,17 @@ namespace Letta
         /// <param name="identityType">
         /// The type of the identity.
         /// </param>
-        /// <param name="projectId">
-        /// The project id of the identity, if applicable.
-        /// </param>
         /// <param name="agentIds">
         /// The IDs of the agents associated with the identity.
         /// </param>
         /// <param name="blockIds">
         /// The IDs of the blocks associated with the identity.
+        /// </param>
+        /// <param name="id">
+        /// The human-friendly ID of the Identity
+        /// </param>
+        /// <param name="projectId">
+        /// The project id of the identity, if applicable.
         /// </param>
         /// <param name="properties">
         /// List of properties associated with the identity
@@ -110,13 +110,13 @@ namespace Letta
             string? projectId,
             global::System.Collections.Generic.IList<global::Letta.IdentityProperty>? properties)
         {
+            this.Id = id;
             this.IdentifierKey = identifierKey ?? throw new global::System.ArgumentNullException(nameof(identifierKey));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.IdentityType = identityType;
+            this.ProjectId = projectId;
             this.AgentIds = agentIds ?? throw new global::System.ArgumentNullException(nameof(agentIds));
             this.BlockIds = blockIds ?? throw new global::System.ArgumentNullException(nameof(blockIds));
-            this.Id = id;
-            this.ProjectId = projectId;
             this.Properties = properties;
         }
 

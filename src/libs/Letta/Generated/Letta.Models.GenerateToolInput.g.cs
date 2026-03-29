@@ -56,14 +56,14 @@ namespace Letta
         /// <param name="prompt">
         /// User prompt to generate code
         /// </param>
+        /// <param name="validationErrors">
+        /// List of validation errors
+        /// </param>
         /// <param name="handle">
         /// Handle of the tool to generate code for
         /// </param>
         /// <param name="starterCode">
         /// Python source code to parse for JSON schema
-        /// </param>
-        /// <param name="validationErrors">
-        /// List of validation errors
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -77,9 +77,9 @@ namespace Letta
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Prompt = prompt ?? throw new global::System.ArgumentNullException(nameof(prompt));
-            this.ValidationErrors = validationErrors ?? throw new global::System.ArgumentNullException(nameof(validationErrors));
             this.Handle = handle;
             this.StarterCode = starterCode;
+            this.ValidationErrors = validationErrors ?? throw new global::System.ArgumentNullException(nameof(validationErrors));
         }
 
         /// <summary>

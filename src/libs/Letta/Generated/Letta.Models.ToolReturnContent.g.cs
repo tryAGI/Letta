@@ -45,10 +45,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolReturnContent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Indicates this content represents a tool return event.<br/>
-        /// Default Value: tool_return
-        /// </param>
         /// <param name="toolCallId">
         /// References the ID of the ToolCallContent that initiated this tool call.
         /// </param>
@@ -57,6 +53,10 @@ namespace Letta
         /// </param>
         /// <param name="isError">
         /// Indicates whether the tool execution resulted in an error.
+        /// </param>
+        /// <param name="type">
+        /// Indicates this content represents a tool return event.<br/>
+        /// Default Value: tool_return
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -67,10 +67,10 @@ namespace Letta
             bool isError,
             string? type)
         {
+            this.Type = type;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.IsError = isError;
-            this.Type = type;
         }
 
         /// <summary>

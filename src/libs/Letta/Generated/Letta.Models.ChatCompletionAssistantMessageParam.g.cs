@@ -61,13 +61,13 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatCompletionAssistantMessageParam" /> class.
         /// </summary>
-        /// <param name="role"></param>
         /// <param name="audio"></param>
         /// <param name="content"></param>
         /// <param name="functionCall"></param>
         /// <param name="name"></param>
         /// <param name="refusal"></param>
         /// <param name="toolCalls"></param>
+        /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

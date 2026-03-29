@@ -86,14 +86,14 @@ namespace Letta
         /// <param name="embeddingEndpointType">
         /// The endpoint type for the model.
         /// </param>
-        /// <param name="embeddingEndpoint">
-        /// The endpoint for the model (`None` if local).
-        /// </param>
         /// <param name="embeddingModel">
         /// The model for the embedding.
         /// </param>
         /// <param name="embeddingDim">
         /// The dimension of the embedding.
+        /// </param>
+        /// <param name="embeddingEndpoint">
+        /// The endpoint for the model (`None` if local).
         /// </param>
         /// <param name="embeddingChunkSize">
         /// The chunk size of the embedding.<br/>
@@ -131,9 +131,9 @@ namespace Letta
             string? azureDeployment)
         {
             this.EmbeddingEndpointType = embeddingEndpointType;
+            this.EmbeddingEndpoint = embeddingEndpoint;
             this.EmbeddingModel = embeddingModel ?? throw new global::System.ArgumentNullException(nameof(embeddingModel));
             this.EmbeddingDim = embeddingDim;
-            this.EmbeddingEndpoint = embeddingEndpoint;
             this.EmbeddingChunkSize = embeddingChunkSize;
             this.Handle = handle;
             this.BatchSize = batchSize;

@@ -56,8 +56,8 @@ namespace Letta
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant1Data" /> class.
         /// </summary>
         /// <param name="sessionId"></param>
-        /// <param name="agentId"></param>
         /// <param name="startupCommand"></param>
+        /// <param name="agentId"></param>
         /// <param name="version"></param>
         /// <param name="platform"></param>
         /// <param name="nodeVersion"></param>
@@ -73,8 +73,8 @@ namespace Letta
             string? nodeVersion)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
-            this.StartupCommand = startupCommand ?? throw new global::System.ArgumentNullException(nameof(startupCommand));
             this.AgentId = agentId;
+            this.StartupCommand = startupCommand ?? throw new global::System.ArgumentNullException(nameof(startupCommand));
             this.Version = version;
             this.Platform = platform;
             this.NodeVersion = nodeVersion;

@@ -49,12 +49,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaImage" /> class.
         /// </summary>
+        /// <param name="fileId">
+        /// The unique identifier of the image file persisted in storage.
+        /// </param>
         /// <param name="type">
         /// The source type for the image.<br/>
         /// Default Value: letta
-        /// </param>
-        /// <param name="fileId">
-        /// The unique identifier of the image file persisted in storage.
         /// </param>
         /// <param name="mediaType">
         /// The media type for the image.
@@ -75,8 +75,8 @@ namespace Letta
             string? data,
             string? detail)
         {
-            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
             this.Type = type;
+            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
             this.MediaType = mediaType;
             this.Data = data;
             this.Detail = detail;

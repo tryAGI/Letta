@@ -98,17 +98,17 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaSerializeSchemasPydanticAgentSchemaToolSchema" /> class.
         /// </summary>
-        /// <param name="argsJsonSchema"></param>
         /// <param name="createdAt"></param>
         /// <param name="description"></param>
         /// <param name="jsonSchema"></param>
         /// <param name="name"></param>
         /// <param name="returnCharLimit"></param>
-        /// <param name="sourceCode"></param>
         /// <param name="sourceType"></param>
         /// <param name="tags"></param>
         /// <param name="toolType"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="argsJsonSchema"></param>
+        /// <param name="sourceCode"></param>
         /// <param name="metadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -127,17 +127,17 @@ namespace Letta
             string? sourceCode,
             object? metadata)
         {
+            this.ArgsJsonSchema = argsJsonSchema;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.JsonSchema = jsonSchema ?? throw new global::System.ArgumentNullException(nameof(jsonSchema));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ReturnCharLimit = returnCharLimit;
+            this.SourceCode = sourceCode;
             this.SourceType = sourceType ?? throw new global::System.ArgumentNullException(nameof(sourceType));
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.ToolType = toolType ?? throw new global::System.ArgumentNullException(nameof(toolType));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.ArgsJsonSchema = argsJsonSchema;
-            this.SourceCode = sourceCode;
             this.Metadata = metadata;
         }
 

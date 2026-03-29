@@ -110,6 +110,9 @@ namespace Letta
         /// <param name="sourceId">
         /// Deprecated: Use `folder_id` field instead. The unique identifier of the source associated with the document.
         /// </param>
+        /// <param name="id">
+        /// Human-readable identifier for this file in the file
+        /// </param>
         /// <param name="fileName">
         /// The name of the file.
         /// </param>
@@ -147,9 +150,6 @@ namespace Letta
         /// <param name="content">
         /// Optional full-text content of the file; only populated on demand due to its size.
         /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this file in the file
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -170,7 +170,6 @@ namespace Letta
             string? content)
         {
             this.SourceId = sourceId ?? throw new global::System.ArgumentNullException(nameof(sourceId));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.FileName = fileName;
             this.OriginalFileName = originalFileName;
             this.FilePath = filePath;
@@ -183,6 +182,7 @@ namespace Letta
             this.TotalChunks = totalChunks;
             this.ChunksEmbedded = chunksEmbedded;
             this.Content = content;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

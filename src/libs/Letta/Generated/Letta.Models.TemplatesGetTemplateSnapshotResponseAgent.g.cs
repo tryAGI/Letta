@@ -103,6 +103,9 @@ namespace Letta
         /// </summary>
         /// <param name="model"></param>
         /// <param name="systemPrompt"></param>
+        /// <param name="agentType"></param>
+        /// <param name="entityId"></param>
+        /// <param name="name"></param>
         /// <param name="toolIds"></param>
         /// <param name="sourceIds"></param>
         /// <param name="memoryVariables"></param>
@@ -110,10 +113,7 @@ namespace Letta
         /// <param name="tags"></param>
         /// <param name="identityIds"></param>
         /// <param name="toolRules"></param>
-        /// <param name="agentType"></param>
         /// <param name="properties"></param>
-        /// <param name="entityId"></param>
-        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -134,9 +134,6 @@ namespace Letta
         {
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.SystemPrompt = systemPrompt ?? throw new global::System.ArgumentNullException(nameof(systemPrompt));
-            this.AgentType = agentType;
-            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ToolIds = toolIds;
             this.SourceIds = sourceIds;
             this.MemoryVariables = memoryVariables;
@@ -144,7 +141,10 @@ namespace Letta
             this.Tags = tags;
             this.IdentityIds = identityIds;
             this.ToolRules = toolRules;
+            this.AgentType = agentType;
             this.Properties = properties;
+            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

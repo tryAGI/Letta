@@ -152,6 +152,9 @@ namespace Letta
         /// <param name="value">
         /// Value of the block.
         /// </param>
+        /// <param name="id">
+        /// The id of the block.
+        /// </param>
         /// <param name="limit">
         /// Character limit of the block.<br/>
         /// Default Value: 100000
@@ -172,9 +175,6 @@ namespace Letta
         /// <param name="metadata">
         /// Metadata of the block.<br/>
         /// Default Value: {}
-        /// </param>
-        /// <param name="id">
-        /// The id of the block.
         /// </param>
         /// <param name="createdById">
         /// The id of the user that made this Block.
@@ -203,13 +203,13 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? tags)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Limit = limit;
             this.ProjectId = projectId;
             this.IsTemplate = isTemplate;
             this.Label = label;
             this.Description = description;
             this.Metadata = metadata;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.Tags = tags;

@@ -82,6 +82,9 @@ namespace Letta
         /// <param name="name">
         /// The name of the folder.
         /// </param>
+        /// <param name="embeddingConfig">
+        /// The embedding configuration used by the folder.
+        /// </param>
         /// <param name="description">
         /// The description of the folder.
         /// </param>
@@ -93,9 +96,6 @@ namespace Letta
         /// </param>
         /// <param name="id">
         /// The human-friendly ID of the Source
-        /// </param>
-        /// <param name="embeddingConfig">
-        /// The embedding configuration used by the folder.
         /// </param>
         /// <param name="createdById">
         /// The id of the user that made this Tool.
@@ -125,11 +125,11 @@ namespace Letta
             global::System.DateTime? updatedAt)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.EmbeddingConfig = embeddingConfig ?? throw new global::System.ArgumentNullException(nameof(embeddingConfig));
             this.Description = description;
             this.Instructions = instructions;
             this.Metadata = metadata;
             this.Id = id;
+            this.EmbeddingConfig = embeddingConfig ?? throw new global::System.ArgumentNullException(nameof(embeddingConfig));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;

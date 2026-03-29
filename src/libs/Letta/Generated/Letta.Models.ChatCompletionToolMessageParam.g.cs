@@ -40,8 +40,8 @@ namespace Letta
         /// Initializes a new instance of the <see cref="ChatCompletionToolMessageParam" /> class.
         /// </summary>
         /// <param name="content"></param>
-        /// <param name="role"></param>
         /// <param name="toolCallId"></param>
+        /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -51,8 +51,8 @@ namespace Letta
             string role = "tool")
         {
             this.Content = content;
-            this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.Role = role;
+            this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
         }
 
         /// <summary>

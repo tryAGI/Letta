@@ -94,6 +94,7 @@ namespace Letta
         /// </summary>
         /// <param name="id"></param>
         /// <param name="date"></param>
+        /// <param name="summary"></param>
         /// <param name="name"></param>
         /// <param name="messageType">
         /// Default Value: summary_message
@@ -104,7 +105,6 @@ namespace Letta
         /// <param name="isErr"></param>
         /// <param name="seqId"></param>
         /// <param name="runId"></param>
-        /// <param name="summary"></param>
         /// <param name="compactionStats"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -125,7 +125,6 @@ namespace Letta
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;
-            this.Summary = summary ?? throw new global::System.ArgumentNullException(nameof(summary));
             this.Name = name;
             this.MessageType = messageType;
             this.Otid = otid;
@@ -134,6 +133,7 @@ namespace Letta
             this.IsErr = isErr;
             this.SeqId = seqId;
             this.RunId = runId;
+            this.Summary = summary ?? throw new global::System.ArgumentNullException(nameof(summary));
             this.CompactionStats = compactionStats;
         }
 

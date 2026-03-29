@@ -81,13 +81,13 @@ namespace Letta
         /// <param name="latestVersion">
         /// The latest version of the template
         /// </param>
-        /// <param name="description"></param>
         /// <param name="templateDeploymentSlug">
         /// The full name of the template, including version and project slug
         /// </param>
         /// <param name="updatedAt">
         /// When the template was last updated
         /// </param>
+        /// <param name="description"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -106,9 +106,9 @@ namespace Letta
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectSlug = projectSlug ?? throw new global::System.ArgumentNullException(nameof(projectSlug));
             this.LatestVersion = latestVersion ?? throw new global::System.ArgumentNullException(nameof(latestVersion));
+            this.Description = description;
             this.TemplateDeploymentSlug = templateDeploymentSlug ?? throw new global::System.ArgumentNullException(nameof(templateDeploymentSlug));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.Description = description;
         }
 
         /// <summary>

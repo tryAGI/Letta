@@ -44,15 +44,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="SummarizedReasoningContent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Indicates this is a summarized reasoning step.<br/>
-        /// Default Value: summarized_reasoning
-        /// </param>
         /// <param name="id">
         /// The unique identifier for this reasoning step.
         /// </param>
         /// <param name="summary">
         /// Summaries of the reasoning content.
+        /// </param>
+        /// <param name="type">
+        /// Indicates this is a summarized reasoning step.<br/>
+        /// Default Value: summarized_reasoning
         /// </param>
         /// <param name="encryptedContent">
         /// The encrypted reasoning content.
@@ -66,9 +66,9 @@ namespace Letta
             string? type,
             string? encryptedContent)
         {
+            this.Type = type;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Summary = summary ?? throw new global::System.ArgumentNullException(nameof(summary));
-            this.Type = type;
             this.EncryptedContent = encryptedContent;
         }
 

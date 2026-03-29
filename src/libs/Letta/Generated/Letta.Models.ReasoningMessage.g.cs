@@ -110,6 +110,7 @@ namespace Letta
         /// </summary>
         /// <param name="id"></param>
         /// <param name="date"></param>
+        /// <param name="reasoning"></param>
         /// <param name="name"></param>
         /// <param name="messageType">
         /// The type of the message.<br/>
@@ -124,7 +125,6 @@ namespace Letta
         /// <param name="source">
         /// Default Value: non_reasoner_model
         /// </param>
-        /// <param name="reasoning"></param>
         /// <param name="signature"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -146,7 +146,6 @@ namespace Letta
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;
-            this.Reasoning = reasoning ?? throw new global::System.ArgumentNullException(nameof(reasoning));
             this.Name = name;
             this.MessageType = messageType;
             this.Otid = otid;
@@ -156,6 +155,7 @@ namespace Letta
             this.SeqId = seqId;
             this.RunId = runId;
             this.Source = source;
+            this.Reasoning = reasoning ?? throw new global::System.ArgumentNullException(nameof(reasoning));
             this.Signature = signature;
         }
 

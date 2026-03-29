@@ -104,6 +104,7 @@ namespace Letta
         /// </summary>
         /// <param name="id"></param>
         /// <param name="date"></param>
+        /// <param name="state"></param>
         /// <param name="name"></param>
         /// <param name="messageType">
         /// The type of the message.<br/>
@@ -115,7 +116,6 @@ namespace Letta
         /// <param name="isErr"></param>
         /// <param name="seqId"></param>
         /// <param name="runId"></param>
-        /// <param name="state"></param>
         /// <param name="hiddenReasoning"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -136,7 +136,6 @@ namespace Letta
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;
-            this.State = state;
             this.Name = name;
             this.MessageType = messageType;
             this.Otid = otid;
@@ -145,6 +144,7 @@ namespace Letta
             this.IsErr = isErr;
             this.SeqId = seqId;
             this.RunId = runId;
+            this.State = state;
             this.HiddenReasoning = hiddenReasoning;
         }
 

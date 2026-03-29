@@ -31,8 +31,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequest" /> class.
         /// </summary>
-        /// <param name="service"></param>
         /// <param name="events"></param>
+        /// <param name="service"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.EventsItem> events,
             global::Letta.MetadataSendTelemetryRequestService service)
         {
-            this.Events = events ?? throw new global::System.ArgumentNullException(nameof(events));
             this.Service = service;
+            this.Events = events ?? throw new global::System.ArgumentNullException(nameof(events));
         }
 
         /// <summary>

@@ -104,9 +104,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Provider" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The id of the provider, lazily created by the database manager.
-        /// </param>
         /// <param name="name">
         /// The name of the provider
         /// </param>
@@ -115,6 +112,9 @@ namespace Letta
         /// </param>
         /// <param name="providerCategory">
         /// The category of the provider (base or byok)
+        /// </param>
+        /// <param name="id">
+        /// The id of the provider, lazily created by the database manager.
         /// </param>
         /// <param name="baseUrl">
         /// Base URL for the provider.
@@ -153,10 +153,10 @@ namespace Letta
             string? apiKeyEnc,
             string? accessKeyEnc)
         {
+            this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProviderType = providerType;
             this.ProviderCategory = providerCategory;
-            this.Id = id;
             this.BaseUrl = baseUrl;
             this.Region = region;
             this.ApiVersion = apiVersion;

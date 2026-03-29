@@ -53,9 +53,9 @@ namespace Letta
         /// </summary>
         /// <param name="toolName"></param>
         /// <param name="type"></param>
-        /// <param name="defaultChild"></param>
         /// <param name="childOutputMapping"></param>
         /// <param name="requireOutputMapping"></param>
+        /// <param name="defaultChild"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,9 +68,9 @@ namespace Letta
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.DefaultChild = defaultChild;
             this.ChildOutputMapping = childOutputMapping ?? throw new global::System.ArgumentNullException(nameof(childOutputMapping));
             this.RequireOutputMapping = requireOutputMapping;
-            this.DefaultChild = defaultChild;
         }
 
         /// <summary>

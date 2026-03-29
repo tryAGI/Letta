@@ -78,14 +78,14 @@ namespace Letta
         /// Initializes a new instance of the <see cref="CoreMemoryBlockSchema" /> class.
         /// </summary>
         /// <param name="createdAt"></param>
-        /// <param name="description"></param>
         /// <param name="isTemplate"></param>
         /// <param name="label"></param>
         /// <param name="limit"></param>
-        /// <param name="metadata"></param>
-        /// <param name="templateName"></param>
         /// <param name="updatedAt"></param>
         /// <param name="value"></param>
+        /// <param name="description"></param>
+        /// <param name="metadata"></param>
+        /// <param name="templateName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -101,14 +101,14 @@ namespace Letta
             string? templateName)
         {
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Description = description;
             this.IsTemplate = isTemplate;
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.Limit = limit;
-            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.Description = description;
             this.Metadata = metadata;
             this.TemplateName = templateName;
+            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

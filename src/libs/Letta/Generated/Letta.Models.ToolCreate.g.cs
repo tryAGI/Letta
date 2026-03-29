@@ -87,14 +87,14 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolCreate" /> class.
         /// </summary>
+        /// <param name="sourceCode">
+        /// The source code of the function.
+        /// </param>
         /// <param name="description">
         /// The description of the tool.
         /// </param>
         /// <param name="tags">
         /// Metadata tags.
-        /// </param>
-        /// <param name="sourceCode">
-        /// The source code of the function.
         /// </param>
         /// <param name="sourceType">
         /// The source type of the function.<br/>
@@ -139,9 +139,9 @@ namespace Letta
             bool? defaultRequiresApproval,
             bool? enableParallelExecution)
         {
-            this.SourceCode = sourceCode ?? throw new global::System.ArgumentNullException(nameof(sourceCode));
             this.Description = description;
             this.Tags = tags;
+            this.SourceCode = sourceCode ?? throw new global::System.ArgumentNullException(nameof(sourceCode));
             this.SourceType = sourceType;
             this.JsonSchema = jsonSchema;
             this.ArgsJsonSchema = argsJsonSchema;

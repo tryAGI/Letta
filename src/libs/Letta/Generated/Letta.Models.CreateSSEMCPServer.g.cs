@@ -48,11 +48,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSSEMCPServer" /> class.
         /// </summary>
-        /// <param name="mcpServerType">
-        /// Default Value: sse
-        /// </param>
         /// <param name="serverUrl">
         /// The URL of the server
+        /// </param>
+        /// <param name="mcpServerType">
+        /// Default Value: sse
         /// </param>
         /// <param name="authHeader">
         /// The name of the authentication header (e.g., 'Authorization')
@@ -73,8 +73,8 @@ namespace Letta
             string? authToken,
             global::System.Collections.Generic.Dictionary<string, string>? customHeaders)
         {
-            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.McpServerType = mcpServerType;
+            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.AuthHeader = authHeader;
             this.AuthToken = authToken;
             this.CustomHeaders = customHeaders;

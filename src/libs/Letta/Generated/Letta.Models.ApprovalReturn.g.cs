@@ -44,15 +44,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ApprovalReturn" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The message type to be created.<br/>
-        /// Default Value: approval
-        /// </param>
         /// <param name="toolCallId">
         /// The ID of the tool call that corresponds to this approval
         /// </param>
         /// <param name="approve">
         /// Whether the tool has been approved
+        /// </param>
+        /// <param name="type">
+        /// The message type to be created.<br/>
+        /// Default Value: approval
         /// </param>
         /// <param name="reason">
         /// An optional explanation for the provided approval status
@@ -66,9 +66,9 @@ namespace Letta
             string? type,
             string? reason)
         {
+            this.Type = type;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.Approve = approve;
-            this.Type = type;
             this.Reason = reason;
         }
 

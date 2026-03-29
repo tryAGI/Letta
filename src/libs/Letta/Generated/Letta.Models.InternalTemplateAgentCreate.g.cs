@@ -349,6 +349,18 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="InternalTemplateAgentCreate" /> class.
         /// </summary>
+        /// <param name="templateId">
+        /// The id of the template.
+        /// </param>
+        /// <param name="baseTemplateId">
+        /// The id of the base template.
+        /// </param>
+        /// <param name="deploymentId">
+        /// The id of the deployment.
+        /// </param>
+        /// <param name="entityId">
+        /// The id of the entity within the template.
+        /// </param>
         /// <param name="name">
         /// The name of the agent.
         /// </param>
@@ -417,12 +429,6 @@ namespace Letta
         /// <param name="secrets">
         /// The environment variables for tool execution specific to this agent.
         /// </param>
-        /// <param name="templateId">
-        /// The id of the template.
-        /// </param>
-        /// <param name="baseTemplateId">
-        /// The id of the base template.
-        /// </param>
         /// <param name="identityIds">
         /// The ids of the identities associated with this agent.
         /// </param>
@@ -441,12 +447,6 @@ namespace Letta
         /// </param>
         /// <param name="perFileViewWindowCharLimit">
         /// The per-file view window character limit for this agent. Setting this too high may exceed the context window, which will break the agent.
-        /// </param>
-        /// <param name="deploymentId">
-        /// The id of the deployment.
-        /// </param>
-        /// <param name="entityId">
-        /// The id of the entity within the template.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -485,10 +485,6 @@ namespace Letta
             int? maxFilesOpen,
             int? perFileViewWindowCharLimit)
         {
-            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
-            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
             this.Name = name;
             this.MemoryBlocks = memoryBlocks;
             this.Tools = tools;
@@ -511,12 +507,16 @@ namespace Letta
             this.CompactionSettings = compactionSettings;
             this.ContextWindowLimit = contextWindowLimit;
             this.Secrets = secrets;
+            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
+            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
             this.IdentityIds = identityIds;
             this.MessageBufferAutoclear = messageBufferAutoclear;
             this.EnableSleeptime = enableSleeptime;
             this.Timezone = timezone;
             this.MaxFilesOpen = maxFilesOpen;
             this.PerFileViewWindowCharLimit = perFileViewWindowCharLimit;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
+            this.EntityId = entityId ?? throw new global::System.ArgumentNullException(nameof(entityId));
         }
 
         /// <summary>

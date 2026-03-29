@@ -32,12 +32,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaStopReason" /> class.
         /// </summary>
+        /// <param name="stopReason">
+        /// The reason why execution stopped.
+        /// </param>
         /// <param name="messageType">
         /// The type of the message.<br/>
         /// Default Value: stop_reason
-        /// </param>
-        /// <param name="stopReason">
-        /// The reason why execution stopped.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -46,8 +46,8 @@ namespace Letta
             global::Letta.StopReasonType stopReason,
             string? messageType)
         {
-            this.StopReason = stopReason;
             this.MessageType = messageType;
+            this.StopReason = stopReason;
         }
 
         /// <summary>

@@ -34,12 +34,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolReturnCreate" /> class.
         /// </summary>
+        /// <param name="toolReturns">
+        /// List of tool returns from client-side execution
+        /// </param>
         /// <param name="type">
         /// The message type to be created.<br/>
         /// Default Value: tool_return
-        /// </param>
-        /// <param name="toolReturns">
-        /// List of tool returns from client-side execution
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -48,8 +48,8 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.LettaSchemasLettaMessageToolReturn> toolReturns,
             string? type)
         {
-            this.ToolReturns = toolReturns ?? throw new global::System.ArgumentNullException(nameof(toolReturns));
             this.Type = type;
+            this.ToolReturns = toolReturns ?? throw new global::System.ArgumentNullException(nameof(toolReturns));
         }
 
         /// <summary>

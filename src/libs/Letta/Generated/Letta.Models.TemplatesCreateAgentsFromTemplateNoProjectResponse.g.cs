@@ -40,11 +40,11 @@ namespace Letta
         /// <param name="agentIds">
         /// Array of created agent IDs
         /// </param>
-        /// <param name="groupId">
-        /// Optional group ID if agents were created in a group
-        /// </param>
         /// <param name="deploymentId">
         /// The deployment ID for the created agents
+        /// </param>
+        /// <param name="groupId">
+        /// Optional group ID if agents were created in a group
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,8 +55,8 @@ namespace Letta
             string? groupId)
         {
             this.AgentIds = agentIds ?? throw new global::System.ArgumentNullException(nameof(agentIds));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.GroupId = groupId;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
         }
 
         /// <summary>

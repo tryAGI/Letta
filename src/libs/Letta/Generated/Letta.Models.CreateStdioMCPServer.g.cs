@@ -43,14 +43,14 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateStdioMCPServer" /> class.
         /// </summary>
-        /// <param name="mcpServerType">
-        /// Default Value: stdio
-        /// </param>
         /// <param name="command">
         /// The command to run (MCP 'local' client will run this command)
         /// </param>
         /// <param name="args">
         /// The arguments to pass to the command
+        /// </param>
+        /// <param name="mcpServerType">
+        /// Default Value: stdio
         /// </param>
         /// <param name="env">
         /// Environment variables to set
@@ -64,9 +64,9 @@ namespace Letta
             string? mcpServerType,
             global::System.Collections.Generic.Dictionary<string, string>? env)
         {
+            this.McpServerType = mcpServerType;
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
             this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
-            this.McpServerType = mcpServerType;
             this.Env = env;
         }
 

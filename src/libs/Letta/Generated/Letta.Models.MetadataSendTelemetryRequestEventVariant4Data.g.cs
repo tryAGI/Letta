@@ -81,10 +81,10 @@ namespace Letta
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant4Data" /> class.
         /// </summary>
         /// <param name="sessionId"></param>
-        /// <param name="agentId"></param>
-        /// <param name="runId"></param>
         /// <param name="errorType"></param>
         /// <param name="errorMessage"></param>
+        /// <param name="agentId"></param>
+        /// <param name="runId"></param>
         /// <param name="context"></param>
         /// <param name="httpStatus"></param>
         /// <param name="modelId"></param>
@@ -106,10 +106,10 @@ namespace Letta
             string? debugLogTail)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
-            this.ErrorType = errorType ?? throw new global::System.ArgumentNullException(nameof(errorType));
-            this.ErrorMessage = errorMessage ?? throw new global::System.ArgumentNullException(nameof(errorMessage));
             this.AgentId = agentId;
             this.RunId = runId;
+            this.ErrorType = errorType ?? throw new global::System.ArgumentNullException(nameof(errorType));
+            this.ErrorMessage = errorMessage ?? throw new global::System.ArgumentNullException(nameof(errorMessage));
             this.Context = context;
             this.HttpStatus = httpStatus;
             this.ModelId = modelId;

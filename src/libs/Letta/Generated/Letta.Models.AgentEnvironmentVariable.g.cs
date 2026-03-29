@@ -80,6 +80,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentEnvironmentVariable" /> class.
         /// </summary>
+        /// <param name="key">
+        /// The name of the environment variable.
+        /// </param>
+        /// <param name="value">
+        /// The value of the environment variable.
+        /// </param>
+        /// <param name="agentId">
+        /// The ID of the agent this environment variable belongs to.
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -95,20 +104,11 @@ namespace Letta
         /// <param name="id">
         /// The human-friendly ID of the Agent-env
         /// </param>
-        /// <param name="key">
-        /// The name of the environment variable.
-        /// </param>
-        /// <param name="value">
-        /// The value of the environment variable.
-        /// </param>
         /// <param name="description">
         /// An optional description of the environment variable.
         /// </param>
         /// <param name="valueEnc">
         /// Encrypted value as Secret object
-        /// </param>
-        /// <param name="agentId">
-        /// The ID of the agent this environment variable belongs to.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -125,16 +125,16 @@ namespace Letta
             string? description,
             string? valueEnc)
         {
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.Id = id;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Description = description;
             this.ValueEnc = valueEnc;
+            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
         }
 
         /// <summary>

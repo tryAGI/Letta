@@ -42,6 +42,7 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="DeleteDeploymentResponse" /> class.
         /// </summary>
+        /// <param name="message"></param>
         /// <param name="deletedBlocks">
         /// Default Value: []
         /// </param>
@@ -51,7 +52,6 @@ namespace Letta
         /// <param name="deletedGroups">
         /// Default Value: []
         /// </param>
-        /// <param name="message"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,10 +61,10 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? deletedAgents,
             global::System.Collections.Generic.IList<string>? deletedGroups)
         {
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.DeletedBlocks = deletedBlocks;
             this.DeletedAgents = deletedAgents;
             this.DeletedGroups = deletedGroups;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 
         /// <summary>

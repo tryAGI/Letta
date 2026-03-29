@@ -32,12 +32,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ImageContent" /> class.
         /// </summary>
+        /// <param name="source">
+        /// The source of the image.
+        /// </param>
         /// <param name="type">
         /// The type of the message.<br/>
         /// Default Value: image
-        /// </param>
-        /// <param name="source">
-        /// The source of the image.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -46,8 +46,8 @@ namespace Letta
             global::Letta.Source source,
             string? type)
         {
-            this.Source = source;
             this.Type = type;
+            this.Source = source;
         }
 
         /// <summary>

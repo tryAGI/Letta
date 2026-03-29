@@ -74,10 +74,10 @@ namespace Letta
         /// <param name="choices"></param>
         /// <param name="created"></param>
         /// <param name="model"></param>
-        /// <param name="object"></param>
         /// <param name="serviceTier"></param>
         /// <param name="systemFingerprint"></param>
         /// <param name="usage"></param>
+        /// <param name="object"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

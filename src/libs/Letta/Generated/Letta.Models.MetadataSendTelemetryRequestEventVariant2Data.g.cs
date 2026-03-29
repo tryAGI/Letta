@@ -106,10 +106,10 @@ namespace Letta
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant2Data" /> class.
         /// </summary>
         /// <param name="sessionId"></param>
-        /// <param name="agentId"></param>
         /// <param name="duration"></param>
         /// <param name="messageCount"></param>
         /// <param name="toolCallCount"></param>
+        /// <param name="agentId"></param>
         /// <param name="exitReason"></param>
         /// <param name="totalApiMs"></param>
         /// <param name="totalWallMs"></param>
@@ -139,10 +139,10 @@ namespace Letta
             double? stepCount)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
+            this.AgentId = agentId;
             this.Duration = duration;
             this.MessageCount = messageCount;
             this.ToolCallCount = toolCallCount;
-            this.AgentId = agentId;
             this.ExitReason = exitReason;
             this.TotalApiMs = totalApiMs;
             this.TotalWallMs = totalWallMs;

@@ -95,6 +95,7 @@ namespace Letta
         /// </summary>
         /// <param name="id"></param>
         /// <param name="date"></param>
+        /// <param name="eventData"></param>
         /// <param name="name"></param>
         /// <param name="messageType">
         /// Default Value: event_message
@@ -106,7 +107,6 @@ namespace Letta
         /// <param name="seqId"></param>
         /// <param name="runId"></param>
         /// <param name="eventType"></param>
-        /// <param name="eventData"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -126,7 +126,6 @@ namespace Letta
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;
-            this.EventData = eventData ?? throw new global::System.ArgumentNullException(nameof(eventData));
             this.Name = name;
             this.MessageType = messageType;
             this.Otid = otid;
@@ -136,6 +135,7 @@ namespace Letta
             this.SeqId = seqId;
             this.RunId = runId;
             this.EventType = eventType;
+            this.EventData = eventData ?? throw new global::System.ArgumentNullException(nameof(eventData));
         }
 
         /// <summary>

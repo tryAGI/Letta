@@ -97,6 +97,9 @@ namespace Letta
         /// <param name="fileName">
         /// Name of the file.
         /// </param>
+        /// <param name="id">
+        /// Human-readable identifier for this file-agent relationship in the file
+        /// </param>
         /// <param name="isOpen">
         /// True if the agent currently has the file open.<br/>
         /// Default Value: true
@@ -112,9 +115,6 @@ namespace Letta
         /// </param>
         /// <param name="endLine">
         /// Ending line number (exclusive) when file was opened with line range.
-        /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this file-agent relationship in the file
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -135,12 +135,12 @@ namespace Letta
             this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
             this.SourceId = sourceId ?? throw new global::System.ArgumentNullException(nameof(sourceId));
             this.FileName = fileName ?? throw new global::System.ArgumentNullException(nameof(fileName));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.IsOpen = isOpen;
             this.VisibleContent = visibleContent;
             this.LastAccessedAt = lastAccessedAt;
             this.StartLine = startLine;
             this.EndLine = endLine;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

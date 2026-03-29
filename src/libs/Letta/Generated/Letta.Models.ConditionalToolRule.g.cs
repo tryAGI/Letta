@@ -59,6 +59,9 @@ namespace Letta
         /// <param name="toolName">
         /// The name of the tool. Must exist in the database for the user's organization.
         /// </param>
+        /// <param name="childOutputMapping">
+        /// The output case to check for mapping
+        /// </param>
         /// <param name="type">
         /// Default Value: conditional
         /// </param>
@@ -67,9 +70,6 @@ namespace Letta
         /// </param>
         /// <param name="defaultChild">
         /// The default child tool to be called. If None, any tool can be called.
-        /// </param>
-        /// <param name="childOutputMapping">
-        /// The output case to check for mapping
         /// </param>
         /// <param name="requireOutputMapping">
         /// Whether to throw an error when output doesn't match any case<br/>
@@ -87,10 +87,10 @@ namespace Letta
             bool? requireOutputMapping)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.ChildOutputMapping = childOutputMapping ?? throw new global::System.ArgumentNullException(nameof(childOutputMapping));
             this.Type = type;
             this.PromptTemplate = promptTemplate;
             this.DefaultChild = defaultChild;
+            this.ChildOutputMapping = childOutputMapping ?? throw new global::System.ArgumentNullException(nameof(childOutputMapping));
             this.RequireOutputMapping = requireOutputMapping;
         }
 

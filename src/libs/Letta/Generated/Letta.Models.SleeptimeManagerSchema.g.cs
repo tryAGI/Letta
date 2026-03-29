@@ -36,10 +36,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="SleeptimeManagerSchema" /> class.
         /// </summary>
+        /// <param name="managerAgentId"></param>
         /// <param name="managerType">
         /// Default Value: sleeptime
         /// </param>
-        /// <param name="managerAgentId"></param>
         /// <param name="sleeptimeAgentFrequency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -49,8 +49,8 @@ namespace Letta
             string? managerType,
             int? sleeptimeAgentFrequency)
         {
-            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.ManagerType = managerType;
+            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.SleeptimeAgentFrequency = sleeptimeAgentFrequency;
         }
 

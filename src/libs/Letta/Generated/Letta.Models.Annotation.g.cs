@@ -31,10 +31,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Annotation" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="urlCitation">
         /// A URL citation when using web search.
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -42,8 +42,8 @@ namespace Letta
             global::Letta.AnnotationURLCitation urlCitation,
             string type = "url_citation")
         {
-            this.UrlCitation = urlCitation ?? throw new global::System.ArgumentNullException(nameof(urlCitation));
             this.Type = type;
+            this.UrlCitation = urlCitation ?? throw new global::System.ArgumentNullException(nameof(urlCitation));
         }
 
         /// <summary>

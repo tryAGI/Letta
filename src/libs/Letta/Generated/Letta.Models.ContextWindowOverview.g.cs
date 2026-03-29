@@ -206,6 +206,18 @@ namespace Letta
         /// <param name="coreMemory">
         /// The content of the core memory.
         /// </param>
+        /// <param name="numTokensSummaryMemory">
+        /// The number of tokens in the summary memory.
+        /// </param>
+        /// <param name="numTokensFunctionsDefinitions">
+        /// The number of tokens in the functions definitions.
+        /// </param>
+        /// <param name="numTokensMessages">
+        /// The number of tokens in the messages list.
+        /// </param>
+        /// <param name="messages">
+        /// The messages in the context window.
+        /// </param>
         /// <param name="numTokensMemoryFilesystem">
         /// The number of tokens in the memory filesystem section (git-enabled agents only).<br/>
         /// Default Value: 0
@@ -227,23 +239,11 @@ namespace Letta
         /// <param name="directories">
         /// The content of the directories section.
         /// </param>
-        /// <param name="numTokensSummaryMemory">
-        /// The number of tokens in the summary memory.
-        /// </param>
         /// <param name="summaryMemory">
         /// The content of the summary memory.
         /// </param>
-        /// <param name="numTokensFunctionsDefinitions">
-        /// The number of tokens in the functions definitions.
-        /// </param>
         /// <param name="functionsDefinitions">
         /// The content of the functions definitions.
-        /// </param>
-        /// <param name="numTokensMessages">
-        /// The number of tokens in the messages list.
-        /// </param>
-        /// <param name="messages">
-        /// The messages in the context window.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -284,18 +284,18 @@ namespace Letta
             this.SystemPrompt = systemPrompt ?? throw new global::System.ArgumentNullException(nameof(systemPrompt));
             this.NumTokensCoreMemory = numTokensCoreMemory;
             this.CoreMemory = coreMemory ?? throw new global::System.ArgumentNullException(nameof(coreMemory));
-            this.NumTokensSummaryMemory = numTokensSummaryMemory;
-            this.NumTokensFunctionsDefinitions = numTokensFunctionsDefinitions;
-            this.NumTokensMessages = numTokensMessages;
-            this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
             this.NumTokensMemoryFilesystem = numTokensMemoryFilesystem;
             this.MemoryFilesystem = memoryFilesystem;
             this.NumTokensToolUsageRules = numTokensToolUsageRules;
             this.ToolUsageRules = toolUsageRules;
             this.NumTokensDirectories = numTokensDirectories;
             this.Directories = directories;
+            this.NumTokensSummaryMemory = numTokensSummaryMemory;
             this.SummaryMemory = summaryMemory;
+            this.NumTokensFunctionsDefinitions = numTokensFunctionsDefinitions;
             this.FunctionsDefinitions = functionsDefinitions;
+            this.NumTokensMessages = numTokensMessages;
+            this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
         }
 
         /// <summary>

@@ -82,15 +82,6 @@ namespace Letta
         /// </summary>
         /// <param name="agentIds"></param>
         /// <param name="description"></param>
-        /// <param name="managerConfig">
-        /// Default Value: {"manager_type":"round_robin"}
-        /// </param>
-        /// <param name="projectId">
-        /// The associated project id.
-        /// </param>
-        /// <param name="hidden">
-        /// If set to True, the group will be hidden.
-        /// </param>
         /// <param name="baseTemplateId">
         /// The id of the base template.
         /// </param>
@@ -99,6 +90,15 @@ namespace Letta
         /// </param>
         /// <param name="deploymentId">
         /// The id of the deployment.
+        /// </param>
+        /// <param name="managerConfig">
+        /// Default Value: {"manager_type":"round_robin"}
+        /// </param>
+        /// <param name="projectId">
+        /// The associated project id.
+        /// </param>
+        /// <param name="hidden">
+        /// If set to True, the group will be hidden.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -115,12 +115,12 @@ namespace Letta
         {
             this.AgentIds = agentIds ?? throw new global::System.ArgumentNullException(nameof(agentIds));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
-            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.ManagerConfig = managerConfig;
             this.ProjectId = projectId;
             this.Hidden = hidden;
+            this.BaseTemplateId = baseTemplateId ?? throw new global::System.ArgumentNullException(nameof(baseTemplateId));
+            this.TemplateId = templateId ?? throw new global::System.ArgumentNullException(nameof(templateId));
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
         }
 
         /// <summary>

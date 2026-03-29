@@ -365,6 +365,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaSchemasAgentFileAgentSchema" /> class.
         /// </summary>
+        /// <param name="id">
+        /// Human-readable identifier for this agent in the file
+        /// </param>
         /// <param name="name">
         /// The name of the agent.
         /// </param>
@@ -455,9 +458,6 @@ namespace Letta
         /// <param name="perFileViewWindowCharLimit">
         /// The per-file view window character limit for this agent. Setting this too high may exceed the context window, which will break the agent.
         /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this agent in the file
-        /// </param>
         /// <param name="inContextMessageIds">
         /// List of message IDs that are currently in the agent's context
         /// </param>
@@ -509,7 +509,6 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.FileAgentSchema>? filesAgents,
             global::System.Collections.Generic.IList<string>? groupIds)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name;
             this.MemoryBlocks = memoryBlocks;
             this.Tools = tools;
@@ -539,6 +538,7 @@ namespace Letta
             this.Timezone = timezone;
             this.MaxFilesOpen = maxFilesOpen;
             this.PerFileViewWindowCharLimit = perFileViewWindowCharLimit;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.InContextMessageIds = inContextMessageIds;
             this.Messages = messages;
             this.FilesAgents = filesAgents;

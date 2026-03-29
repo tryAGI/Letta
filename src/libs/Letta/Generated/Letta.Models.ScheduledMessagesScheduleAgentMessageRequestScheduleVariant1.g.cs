@@ -31,8 +31,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="scheduledAt"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Letta
             double scheduledAt,
             global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type? type)
         {
-            this.ScheduledAt = scheduledAt;
             this.Type = type;
+            this.ScheduledAt = scheduledAt;
         }
 
         /// <summary>

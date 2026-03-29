@@ -38,8 +38,8 @@ namespace Letta
         /// Initializes a new instance of the <see cref="LettaSchemasOpenaiChatCompletionResponseTopLogprob" /> class.
         /// </summary>
         /// <param name="token"></param>
-        /// <param name="bytes"></param>
         /// <param name="logprob"></param>
+        /// <param name="bytes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,8 +49,8 @@ namespace Letta
             global::System.Collections.Generic.IList<long>? bytes)
         {
             this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
-            this.Logprob = logprob;
             this.Bytes = bytes;
+            this.Logprob = logprob;
         }
 
         /// <summary>

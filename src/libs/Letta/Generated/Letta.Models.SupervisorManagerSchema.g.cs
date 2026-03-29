@@ -30,10 +30,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="SupervisorManagerSchema" /> class.
         /// </summary>
+        /// <param name="managerAgentId"></param>
         /// <param name="managerType">
         /// Default Value: supervisor
         /// </param>
-        /// <param name="managerAgentId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -41,8 +41,8 @@ namespace Letta
             string managerAgentId,
             string? managerType)
         {
-            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.ManagerType = managerType;
+            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
         }
 
         /// <summary>

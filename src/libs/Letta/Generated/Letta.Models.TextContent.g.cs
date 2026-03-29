@@ -37,12 +37,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="TextContent" /> class.
         /// </summary>
+        /// <param name="text">
+        /// The text content of the message.
+        /// </param>
         /// <param name="type">
         /// The type of the message.<br/>
         /// Default Value: text
-        /// </param>
-        /// <param name="text">
-        /// The text content of the message.
         /// </param>
         /// <param name="signature">
         /// Stores a unique identifier for any reasoning associated with this text content.
@@ -55,8 +55,8 @@ namespace Letta
             string? type,
             string? signature)
         {
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Type = type;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Signature = signature;
         }
 

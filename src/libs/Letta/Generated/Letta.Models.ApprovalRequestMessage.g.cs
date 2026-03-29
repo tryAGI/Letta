@@ -104,6 +104,9 @@ namespace Letta
         /// </summary>
         /// <param name="id"></param>
         /// <param name="date"></param>
+        /// <param name="toolCall">
+        /// The tool call that has been requested by the llm to run
+        /// </param>
         /// <param name="name"></param>
         /// <param name="messageType">
         /// The type of the message.<br/>
@@ -115,9 +118,6 @@ namespace Letta
         /// <param name="isErr"></param>
         /// <param name="seqId"></param>
         /// <param name="runId"></param>
-        /// <param name="toolCall">
-        /// The tool call that has been requested by the llm to run
-        /// </param>
         /// <param name="toolCalls">
         /// The tool calls that have been requested by the llm to run, which are pending approval
         /// </param>
@@ -140,7 +140,6 @@ namespace Letta
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;
-            this.ToolCall = toolCall;
             this.Name = name;
             this.MessageType = messageType;
             this.Otid = otid;
@@ -149,6 +148,7 @@ namespace Letta
             this.IsErr = isErr;
             this.SeqId = seqId;
             this.RunId = runId;
+            this.ToolCall = toolCall;
             this.ToolCalls = toolCalls;
         }
 

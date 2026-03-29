@@ -70,10 +70,10 @@ namespace Letta
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant3Data" /> class.
         /// </summary>
         /// <param name="sessionId"></param>
-        /// <param name="agentId"></param>
         /// <param name="toolName"></param>
         /// <param name="success"></param>
         /// <param name="duration"></param>
+        /// <param name="agentId"></param>
         /// <param name="responseLength"></param>
         /// <param name="errorType"></param>
         /// <param name="stderr"></param>
@@ -91,10 +91,10 @@ namespace Letta
             string? stderr)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
+            this.AgentId = agentId;
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Success = success;
             this.Duration = duration;
-            this.AgentId = agentId;
             this.ResponseLength = responseLength;
             this.ErrorType = errorType;
             this.Stderr = stderr;

@@ -44,12 +44,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ListDeploymentEntitiesResponse" /> class.
         /// </summary>
-        /// <param name="entities">
-        /// Default Value: []
-        /// </param>
         /// <param name="totalCount"></param>
         /// <param name="deploymentId"></param>
         /// <param name="message"></param>
+        /// <param name="entities">
+        /// Default Value: []
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -59,10 +59,10 @@ namespace Letta
             string message,
             global::System.Collections.Generic.IList<global::Letta.DeploymentEntity>? entities)
         {
+            this.Entities = entities;
             this.TotalCount = totalCount;
             this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.Entities = entities;
         }
 
         /// <summary>

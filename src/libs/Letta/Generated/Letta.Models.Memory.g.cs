@@ -50,15 +50,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Memory" /> class.
         /// </summary>
+        /// <param name="blocks">
+        /// Memory blocks contained in the agent's in-context memory
+        /// </param>
         /// <param name="agentType">
         /// Agent type controlling prompt rendering.
         /// </param>
         /// <param name="gitEnabled">
         /// Whether this agent uses git-backed memory with structured labels.<br/>
         /// Default Value: false
-        /// </param>
-        /// <param name="blocks">
-        /// Memory blocks contained in the agent's in-context memory
         /// </param>
         /// <param name="fileBlocks">
         /// Special blocks representing the agent's in-context memory of an attached file
@@ -76,9 +76,9 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.FileBlock>? fileBlocks,
             string? promptTemplate)
         {
-            this.Blocks = blocks ?? throw new global::System.ArgumentNullException(nameof(blocks));
             this.AgentType = agentType;
             this.GitEnabled = gitEnabled;
+            this.Blocks = blocks ?? throw new global::System.ArgumentNullException(nameof(blocks));
             this.FileBlocks = fileBlocks;
             this.PromptTemplate = promptTemplate;
         }

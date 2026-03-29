@@ -101,15 +101,15 @@ namespace Letta
         /// <param name="id"></param>
         /// <param name="feedId"></param>
         /// <param name="agentId"></param>
-        /// <param name="agentName"></param>
         /// <param name="cronSchedule"></param>
         /// <param name="mergeStrategy"></param>
-        /// <param name="promptTemplate"></param>
         /// <param name="nextScheduledAt"></param>
         /// <param name="lastConsumedSequence"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="agentName"></param>
+        /// <param name="promptTemplate"></param>
         /// <param name="lastConsumedAt"></param>
         /// <param name="disabledAt"></param>
-        /// <param name="createdAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -130,15 +130,15 @@ namespace Letta
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.FeedId = feedId ?? throw new global::System.ArgumentNullException(nameof(feedId));
             this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
+            this.AgentName = agentName;
             this.CronSchedule = cronSchedule ?? throw new global::System.ArgumentNullException(nameof(cronSchedule));
             this.MergeStrategy = mergeStrategy;
+            this.PromptTemplate = promptTemplate;
             this.NextScheduledAt = nextScheduledAt ?? throw new global::System.ArgumentNullException(nameof(nextScheduledAt));
             this.LastConsumedSequence = lastConsumedSequence;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.AgentName = agentName;
-            this.PromptTemplate = promptTemplate;
             this.LastConsumedAt = lastConsumedAt;
             this.DisabledAt = disabledAt;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
         }
 
         /// <summary>
