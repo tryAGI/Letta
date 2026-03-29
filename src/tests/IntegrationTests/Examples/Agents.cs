@@ -13,7 +13,7 @@ public partial class Tests
     [TestMethod]
     public async Task ListAgents()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// List all agents in your Letta workspace.
         //// Supports pagination, filtering by name/tags, and sorting.
@@ -26,7 +26,7 @@ public partial class Tests
     [TestMethod]
     public async Task CountAgents()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// Get the total number of agents in your workspace.
         //// Useful for pagination or dashboard summaries.

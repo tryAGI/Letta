@@ -13,7 +13,7 @@ public partial class Tests
     [TestMethod]
     public async Task ListModels()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// List all available LLM models that can be used with Letta agents.
         //// Each model includes its name, provider type, and context window size.
@@ -26,7 +26,7 @@ public partial class Tests
     [TestMethod]
     public async Task ListEmbeddingModels()
     {
-        using var client = GetAuthenticatedClient();
+        var client = Client;
 
         //// List all available embedding models for use with agent memory and RAG.
         //// Each embedding model includes its name, provider, and embedding dimensions.
