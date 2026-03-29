@@ -42,10 +42,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="VoiceSleeptimeManagerSchema" /> class.
         /// </summary>
+        /// <param name="managerAgentId"></param>
         /// <param name="managerType">
         /// Default Value: voice_sleeptime
         /// </param>
-        /// <param name="managerAgentId"></param>
         /// <param name="maxMessageBufferLength"></param>
         /// <param name="minMessageBufferLength"></param>
 #if NET7_0_OR_GREATER
@@ -57,8 +57,8 @@ namespace Letta
             int? maxMessageBufferLength,
             int? minMessageBufferLength)
         {
-            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.ManagerType = managerType;
+            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.MaxMessageBufferLength = maxMessageBufferLength;
             this.MinMessageBufferLength = minMessageBufferLength;
         }

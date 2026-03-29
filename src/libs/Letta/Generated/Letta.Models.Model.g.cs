@@ -230,24 +230,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Model" /> class.
         /// </summary>
-        /// <param name="handle">
-        /// The handle for this config, in the format provider/model-name.
-        /// </param>
         /// <param name="name">
         /// The actual model name used by the provider
         /// </param>
-        /// <param name="displayName">
-        /// A human-friendly display name for the model.
-        /// </param>
         /// <param name="providerType">
         /// The type of the provider
-        /// </param>
-        /// <param name="providerName">
-        /// The provider name for the model.
-        /// </param>
-        /// <param name="modelType">
-        /// Type of model (llm or embedding)<br/>
-        /// Default Value: llm
         /// </param>
         /// <param name="model1">
         /// Deprecated: Use 'name' field instead. LLM model name.
@@ -257,6 +244,22 @@ namespace Letta
         /// </param>
         /// <param name="contextWindow">
         /// Deprecated: Use 'max_context_window' field instead. The context window size for the model.
+        /// </param>
+        /// <param name="maxContextWindow">
+        /// The maximum context window for the model
+        /// </param>
+        /// <param name="handle">
+        /// The handle for this config, in the format provider/model-name.
+        /// </param>
+        /// <param name="displayName">
+        /// A human-friendly display name for the model.
+        /// </param>
+        /// <param name="providerName">
+        /// The provider name for the model.
+        /// </param>
+        /// <param name="modelType">
+        /// Type of model (llm or embedding)<br/>
+        /// Default Value: llm
         /// </param>
         /// <param name="effort">
         /// The effort level for Anthropic models that support it (Opus 4.5, Opus 4.6). Controls token spending and thinking behavior. Not setting this gives similar performance to 'high'.
@@ -279,9 +282,6 @@ namespace Letta
         /// Whether to return token IDs for all LLM generations via SGLang native endpoint. Required for multi-turn RL training with loss masking. Only works with SGLang provider.<br/>
         /// Default Value: false
         /// </param>
-        /// <param name="maxContextWindow">
-        /// The maximum context window for the model
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -303,22 +303,22 @@ namespace Letta
             int? topLogprobs,
             bool? returnTokenIds)
         {
+            this.Handle = handle;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.DisplayName = displayName;
             this.ProviderType = providerType;
+            this.ProviderName = providerName;
+            this.ModelType = modelType;
             this.Model1 = model1 ?? throw new global::System.ArgumentNullException(nameof(model1));
             this.ModelEndpointType = modelEndpointType;
             this.ContextWindow = contextWindow;
-            this.MaxContextWindow = maxContextWindow;
-            this.Handle = handle;
-            this.DisplayName = displayName;
-            this.ProviderName = providerName;
-            this.ModelType = modelType;
             this.Effort = effort;
             this.ResponseFormat = responseFormat;
             this.Strict = strict;
             this.ReturnLogprobs = returnLogprobs;
             this.TopLogprobs = topLogprobs;
             this.ReturnTokenIds = returnTokenIds;
+            this.MaxContextWindow = maxContextWindow;
         }
 
         /// <summary>

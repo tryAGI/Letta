@@ -37,8 +37,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatCompletionFunctionMessageParam" /> class.
         /// </summary>
-        /// <param name="content"></param>
         /// <param name="name"></param>
+        /// <param name="content"></param>
         /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -48,8 +48,8 @@ namespace Letta
             string? content,
             string role = "function")
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Content = content;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Role = role;
         }
 

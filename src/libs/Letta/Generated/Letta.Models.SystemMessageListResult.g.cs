@@ -57,23 +57,23 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="SystemMessageListResult" /> class.
         /// </summary>
-        /// <param name="messageType">
-        /// Default Value: system_message
-        /// </param>
         /// <param name="content">
         /// The message content sent by the system (can be a string or an array of multi-modal content parts)
         /// </param>
         /// <param name="messageId">
         /// The unique identifier of the message.
         /// </param>
+        /// <param name="createdAt">
+        /// The time the message was created in ISO format.
+        /// </param>
+        /// <param name="messageType">
+        /// Default Value: system_message
+        /// </param>
         /// <param name="agentId">
         /// The unique identifier of the agent that owns the message.
         /// </param>
         /// <param name="conversationId">
         /// The unique identifier of the conversation that the message belongs to.
-        /// </param>
-        /// <param name="createdAt">
-        /// The time the message was created in ISO format.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -86,12 +86,12 @@ namespace Letta
             string? agentId,
             string? conversationId)
         {
+            this.MessageType = messageType;
             this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
-            this.CreatedAt = createdAt;
-            this.MessageType = messageType;
             this.AgentId = agentId;
             this.ConversationId = conversationId;
+            this.CreatedAt = createdAt;
         }
 
         /// <summary>

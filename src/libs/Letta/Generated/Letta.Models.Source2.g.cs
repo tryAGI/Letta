@@ -90,6 +90,9 @@ namespace Letta
         /// <param name="name">
         /// The name of the source.
         /// </param>
+        /// <param name="embeddingConfig">
+        /// The embedding configuration used by the source.
+        /// </param>
         /// <param name="description">
         /// The description of the source.
         /// </param>
@@ -101,9 +104,6 @@ namespace Letta
         /// </param>
         /// <param name="id">
         /// The human-friendly ID of the Source
-        /// </param>
-        /// <param name="embeddingConfig">
-        /// The embedding configuration used by the source.
         /// </param>
         /// <param name="vectorDbProvider">
         /// The vector database provider used for this source's passages<br/>
@@ -138,11 +138,11 @@ namespace Letta
             global::System.DateTime? updatedAt)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.EmbeddingConfig = embeddingConfig ?? throw new global::System.ArgumentNullException(nameof(embeddingConfig));
             this.Description = description;
             this.Instructions = instructions;
             this.Metadata = metadata;
             this.Id = id;
+            this.EmbeddingConfig = embeddingConfig ?? throw new global::System.ArgumentNullException(nameof(embeddingConfig));
             this.VectorDbProvider = vectorDbProvider;
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;

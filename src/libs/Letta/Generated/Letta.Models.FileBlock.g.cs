@@ -170,6 +170,15 @@ namespace Letta
         /// <param name="value">
         /// Value of the block.
         /// </param>
+        /// <param name="fileId">
+        /// Unique identifier of the file.
+        /// </param>
+        /// <param name="sourceId">
+        /// Deprecated: Use `folder_id` field instead. Unique identifier of the source.
+        /// </param>
+        /// <param name="isOpen">
+        /// True if the agent currently has the file open.
+        /// </param>
         /// <param name="limit">
         /// Character limit of the block.<br/>
         /// Default Value: 100000
@@ -230,15 +239,6 @@ namespace Letta
         /// The tags associated with the block.<br/>
         /// Default Value: []
         /// </param>
-        /// <param name="fileId">
-        /// Unique identifier of the file.
-        /// </param>
-        /// <param name="sourceId">
-        /// Deprecated: Use `folder_id` field instead. Unique identifier of the source.
-        /// </param>
-        /// <param name="isOpen">
-        /// True if the agent currently has the file open.
-        /// </param>
         /// <param name="lastAccessedAt">
         /// UTC timestamp of the agent’s most recent access to this file. Any operations from the open, close, or search tools will update this field.
         /// </param>
@@ -271,9 +271,6 @@ namespace Letta
             global::System.DateTime? lastAccessedAt)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
-            this.SourceId = sourceId ?? throw new global::System.ArgumentNullException(nameof(sourceId));
-            this.IsOpen = isOpen;
             this.Limit = limit;
             this.ProjectId = projectId;
             this.TemplateName = templateName;
@@ -292,6 +289,9 @@ namespace Letta
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.Tags = tags;
+            this.FileId = fileId ?? throw new global::System.ArgumentNullException(nameof(fileId));
+            this.SourceId = sourceId ?? throw new global::System.ArgumentNullException(nameof(sourceId));
+            this.IsOpen = isOpen;
             this.LastAccessedAt = lastAccessedAt;
         }
 

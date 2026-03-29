@@ -38,8 +38,8 @@ namespace Letta
         /// Initializes a new instance of the <see cref="TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem" /> class.
         /// </summary>
         /// <param name="key"></param>
-        /// <param name="defaultValue"></param>
         /// <param name="type"></param>
+        /// <param name="defaultValue"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,8 +49,8 @@ namespace Letta
             string? defaultValue)
         {
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.DefaultValue = defaultValue;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

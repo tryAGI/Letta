@@ -31,11 +31,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateUserMessage" /> class.
         /// </summary>
-        /// <param name="messageType">
-        /// Default Value: user_message
-        /// </param>
         /// <param name="content">
         /// The message content sent by the user (can be a string or an array of multi-modal content parts)
+        /// </param>
+        /// <param name="messageType">
+        /// Default Value: user_message
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Letta
             global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string> content,
             string? messageType)
         {
-            this.Content = content;
             this.MessageType = messageType;
+            this.Content = content;
         }
 
         /// <summary>

@@ -70,15 +70,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="MessageCreate" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The message type to be created.<br/>
-        /// Default Value: message
-        /// </param>
         /// <param name="role">
         /// The role of the participant.
         /// </param>
         /// <param name="content">
         /// The content of the message.
+        /// </param>
+        /// <param name="type">
+        /// The message type to be created.<br/>
+        /// Default Value: message
         /// </param>
         /// <param name="name">
         /// The name of the participant.
@@ -108,9 +108,9 @@ namespace Letta
             string? batchItemId,
             string? groupId)
         {
+            this.Type = type;
             this.Role = role;
             this.Content = content;
-            this.Type = type;
             this.Name = name;
             this.Otid = otid;
             this.SenderId = senderId;

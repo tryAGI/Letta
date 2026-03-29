@@ -31,12 +31,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="UrlImage" /> class.
         /// </summary>
+        /// <param name="url">
+        /// The URL of the image.
+        /// </param>
         /// <param name="type">
         /// The source type for the image.<br/>
         /// Default Value: url
-        /// </param>
-        /// <param name="url">
-        /// The URL of the image.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -45,8 +45,8 @@ namespace Letta
             string url,
             string? type)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Type = type;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

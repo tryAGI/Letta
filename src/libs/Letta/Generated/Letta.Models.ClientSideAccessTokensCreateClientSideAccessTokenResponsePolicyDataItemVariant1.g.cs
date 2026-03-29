@@ -38,9 +38,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="id"></param>
         /// <param name="access"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces> access,
             global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type type)
         {
+            this.Type = type;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Access = access ?? throw new global::System.ArgumentNullException(nameof(access));
-            this.Type = type;
         }
 
         /// <summary>

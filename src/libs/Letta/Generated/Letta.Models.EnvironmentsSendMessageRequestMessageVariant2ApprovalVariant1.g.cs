@@ -59,10 +59,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="toolCallId"></param>
         /// <param name="toolReturn"></param>
         /// <param name="status"></param>
+        /// <param name="type"></param>
         /// <param name="stdout"></param>
         /// <param name="stderr"></param>
 #if NET7_0_OR_GREATER
@@ -76,10 +76,10 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? stdout,
             global::System.Collections.Generic.IList<string>? stderr)
         {
+            this.Type = type;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.ToolReturn = toolReturn;
             this.Status = status;
-            this.Type = type;
             this.Stdout = stdout;
             this.Stderr = stderr;
         }

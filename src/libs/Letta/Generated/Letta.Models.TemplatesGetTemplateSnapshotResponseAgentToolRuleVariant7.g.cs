@@ -45,9 +45,9 @@ namespace Letta
         /// Initializes a new instance of the <see cref="TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7" /> class.
         /// </summary>
         /// <param name="toolName"></param>
+        /// <param name="maxCountLimit"></param>
         /// <param name="type"></param>
         /// <param name="promptTemplate"></param>
-        /// <param name="maxCountLimit"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -58,9 +58,9 @@ namespace Letta
             string? promptTemplate)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.MaxCountLimit = maxCountLimit;
             this.Type = type;
             this.PromptTemplate = promptTemplate;
+            this.MaxCountLimit = maxCountLimit;
         }
 
         /// <summary>

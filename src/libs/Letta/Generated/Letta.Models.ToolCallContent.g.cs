@@ -51,10 +51,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ToolCallContent" /> class.
         /// </summary>
-        /// <param name="type">
-        /// Indicates this content represents a tool call event.<br/>
-        /// Default Value: tool_call
-        /// </param>
         /// <param name="id">
         /// A unique identifier for this specific tool call instance.
         /// </param>
@@ -63,6 +59,10 @@ namespace Letta
         /// </param>
         /// <param name="input">
         /// The parameters being passed to the tool, structured as a dictionary of parameter names to values.
+        /// </param>
+        /// <param name="type">
+        /// Indicates this content represents a tool call event.<br/>
+        /// Default Value: tool_call
         /// </param>
         /// <param name="signature">
         /// Stores a unique identifier for any reasoning associated with this tool call.
@@ -77,10 +77,10 @@ namespace Letta
             string? type,
             string? signature)
         {
+            this.Type = type;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
-            this.Type = type;
             this.Signature = signature;
         }
 

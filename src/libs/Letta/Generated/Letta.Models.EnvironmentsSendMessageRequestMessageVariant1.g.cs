@@ -45,9 +45,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EnvironmentsSendMessageRequestMessageVariant1" /> class.
         /// </summary>
-        /// <param name="role"></param>
         /// <param name="content"></param>
         /// <param name="clientMessageId"></param>
+        /// <param name="role"></param>
         /// <param name="otid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -58,9 +58,9 @@ namespace Letta
             global::Letta.EnvironmentsSendMessageRequestMessageVariant1Role role,
             string? otid)
         {
+            this.Role = role;
             this.Content = content;
             this.ClientMessageId = clientMessageId ?? throw new global::System.ArgumentNullException(nameof(clientMessageId));
-            this.Role = role;
             this.Otid = otid;
         }
 

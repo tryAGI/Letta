@@ -31,12 +31,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="RedactedReasoningContent" /> class.
         /// </summary>
+        /// <param name="data">
+        /// The redacted or filtered intermediate reasoning content.
+        /// </param>
         /// <param name="type">
         /// Indicates this is a redacted thinking step.<br/>
         /// Default Value: redacted_reasoning
-        /// </param>
-        /// <param name="data">
-        /// The redacted or filtered intermediate reasoning content.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -45,8 +45,8 @@ namespace Letta
             string data,
             string? type)
         {
-            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Type = type;
+            this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
         }
 
         /// <summary>

@@ -187,6 +187,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Message" /> class.
         /// </summary>
+        /// <param name="role">
+        /// The role of the participant.
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -207,9 +210,6 @@ namespace Letta
         /// </param>
         /// <param name="model">
         /// The model used to make the function call.
-        /// </param>
-        /// <param name="role">
-        /// The role of the participant.
         /// </param>
         /// <param name="content">
         /// The content of the message.
@@ -292,7 +292,6 @@ namespace Letta
             string? denialReason,
             global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>>? approvals)
         {
-            this.Role = role;
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
@@ -300,6 +299,7 @@ namespace Letta
             this.Id = id;
             this.AgentId = agentId;
             this.Model = model;
+            this.Role = role;
             this.Content = content;
             this.Name = name;
             this.ToolCalls = toolCalls;

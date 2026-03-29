@@ -42,10 +42,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="DynamicManager" /> class.
         /// </summary>
+        /// <param name="managerAgentId"></param>
         /// <param name="managerType">
         /// Default Value: dynamic
         /// </param>
-        /// <param name="managerAgentId"></param>
         /// <param name="terminationToken">
         /// Default Value: DONE!
         /// </param>
@@ -59,8 +59,8 @@ namespace Letta
             string? terminationToken,
             int? maxTurns)
         {
-            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.ManagerType = managerType;
+            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.TerminationToken = terminationToken;
             this.MaxTurns = maxTurns;
         }

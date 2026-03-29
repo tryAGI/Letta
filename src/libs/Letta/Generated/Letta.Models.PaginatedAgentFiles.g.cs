@@ -40,11 +40,11 @@ namespace Letta
         /// <param name="files">
         /// List of file attachments for the agent
         /// </param>
-        /// <param name="nextCursor">
-        /// Cursor for fetching the next page (file-agent relationship ID)
-        /// </param>
         /// <param name="hasMore">
         /// Whether more results exist after this page
+        /// </param>
+        /// <param name="nextCursor">
+        /// Cursor for fetching the next page (file-agent relationship ID)
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -55,8 +55,8 @@ namespace Letta
             string? nextCursor)
         {
             this.Files = files ?? throw new global::System.ArgumentNullException(nameof(files));
-            this.HasMore = hasMore;
             this.NextCursor = nextCursor;
+            this.HasMore = hasMore;
         }
 
         /// <summary>

@@ -109,17 +109,17 @@ namespace Letta
         /// Initializes a new instance of the <see cref="EnvironmentsListConnectionsResponseConnection" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="connectionId"></param>
         /// <param name="deviceId"></param>
         /// <param name="connectionName"></param>
         /// <param name="organizationId"></param>
+        /// <param name="lastSeenAt"></param>
+        /// <param name="firstSeenAt"></param>
+        /// <param name="connectionId"></param>
         /// <param name="userId"></param>
         /// <param name="apiKeyOwner"></param>
         /// <param name="podId"></param>
         /// <param name="connectedAt"></param>
         /// <param name="lastHeartbeat"></param>
-        /// <param name="lastSeenAt"></param>
-        /// <param name="firstSeenAt"></param>
         /// <param name="currentMode"></param>
         /// <param name="metadata"></param>
 #if NET7_0_OR_GREATER
@@ -142,17 +142,17 @@ namespace Letta
             global::Letta.EnvironmentsListConnectionsResponseConnectionMetadata? metadata)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.ConnectionId = connectionId;
             this.DeviceId = deviceId ?? throw new global::System.ArgumentNullException(nameof(deviceId));
             this.ConnectionName = connectionName ?? throw new global::System.ArgumentNullException(nameof(connectionName));
             this.OrganizationId = organizationId ?? throw new global::System.ArgumentNullException(nameof(organizationId));
-            this.LastSeenAt = lastSeenAt;
-            this.FirstSeenAt = firstSeenAt;
-            this.ConnectionId = connectionId;
             this.UserId = userId;
             this.ApiKeyOwner = apiKeyOwner;
             this.PodId = podId;
             this.ConnectedAt = connectedAt;
             this.LastHeartbeat = lastHeartbeat;
+            this.LastSeenAt = lastSeenAt;
+            this.FirstSeenAt = firstSeenAt;
             this.CurrentMode = currentMode;
             this.Metadata = metadata;
         }

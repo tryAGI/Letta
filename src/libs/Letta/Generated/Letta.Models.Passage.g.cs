@@ -113,6 +113,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Passage" /> class.
         /// </summary>
+        /// <param name="text">
+        /// The text of the passage.
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -148,9 +151,6 @@ namespace Letta
         /// <param name="id">
         /// The human-friendly ID of the Passage
         /// </param>
-        /// <param name="text">
-        /// The text of the passage.
-        /// </param>
         /// <param name="embedding">
         /// The embedding of the passage.
         /// </param>
@@ -176,7 +176,6 @@ namespace Letta
             global::System.Collections.Generic.IList<double>? embedding,
             global::Letta.EmbeddingConfig? embeddingConfig)
         {
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
@@ -188,6 +187,7 @@ namespace Letta
             this.Metadata = metadata;
             this.Tags = tags;
             this.Id = id;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Embedding = embedding;
             this.EmbeddingConfig = embeddingConfig;
         }

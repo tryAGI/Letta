@@ -54,14 +54,14 @@ namespace Letta
         /// <param name="serverName">
         /// The name of the server
         /// </param>
-        /// <param name="type">
-        /// Default Value: stdio
-        /// </param>
         /// <param name="command">
         /// The command to run (MCP 'local' client will run this command)
         /// </param>
         /// <param name="args">
         /// The arguments to pass to the command
+        /// </param>
+        /// <param name="type">
+        /// Default Value: stdio
         /// </param>
         /// <param name="env">
         /// Environment variables to set
@@ -77,9 +77,9 @@ namespace Letta
             global::System.Collections.Generic.Dictionary<string, string>? env)
         {
             this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
+            this.Type = type;
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
             this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
-            this.Type = type;
             this.Env = env;
         }
 

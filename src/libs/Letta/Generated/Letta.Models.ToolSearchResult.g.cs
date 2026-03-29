@@ -52,6 +52,9 @@ namespace Letta
         /// <param name="tool">
         /// The matched tool.
         /// </param>
+        /// <param name="combinedScore">
+        /// Combined relevance score (RRF for hybrid mode).
+        /// </param>
         /// <param name="embeddedText">
         /// The embedded text content used for matching.
         /// </param>
@@ -60,9 +63,6 @@ namespace Letta
         /// </param>
         /// <param name="vectorRank">
         /// Vector search rank position.
-        /// </param>
-        /// <param name="combinedScore">
-        /// Combined relevance score (RRF for hybrid mode).
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -75,10 +75,10 @@ namespace Letta
             int? vectorRank)
         {
             this.Tool = tool ?? throw new global::System.ArgumentNullException(nameof(tool));
-            this.CombinedScore = combinedScore;
             this.EmbeddedText = embeddedText;
             this.FtsRank = ftsRank;
             this.VectorRank = vectorRank;
+            this.CombinedScore = combinedScore;
         }
 
         /// <summary>

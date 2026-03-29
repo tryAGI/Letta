@@ -154,7 +154,6 @@ namespace Letta
         /// <param name="agentType"></param>
         /// <param name="coreMemory"></param>
         /// <param name="createdAt"></param>
-        /// <param name="description"></param>
         /// <param name="embeddingConfig">
         /// Configuration for embedding model connection and processing parameters.
         /// </param>
@@ -168,8 +167,6 @@ namespace Letta
         /// <param name="messageBufferAutoclear"></param>
         /// <param name="inContextMessageIndices"></param>
         /// <param name="messages"></param>
-        /// <param name="metadata"></param>
-        /// <param name="multiAgentGroup"></param>
         /// <param name="name"></param>
         /// <param name="system"></param>
         /// <param name="tags"></param>
@@ -178,6 +175,9 @@ namespace Letta
         /// <param name="tools"></param>
         /// <param name="updatedAt"></param>
         /// <param name="version"></param>
+        /// <param name="description"></param>
+        /// <param name="metadata"></param>
+        /// <param name="multiAgentGroup"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -205,11 +205,14 @@ namespace Letta
             this.AgentType = agentType ?? throw new global::System.ArgumentNullException(nameof(agentType));
             this.CoreMemory = coreMemory ?? throw new global::System.ArgumentNullException(nameof(coreMemory));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Description = description;
             this.EmbeddingConfig = embeddingConfig ?? throw new global::System.ArgumentNullException(nameof(embeddingConfig));
             this.LlmConfig = llmConfig ?? throw new global::System.ArgumentNullException(nameof(llmConfig));
             this.MessageBufferAutoclear = messageBufferAutoclear;
             this.InContextMessageIndices = inContextMessageIndices ?? throw new global::System.ArgumentNullException(nameof(inContextMessageIndices));
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
+            this.Metadata = metadata;
+            this.MultiAgentGroup = multiAgentGroup;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.System = system ?? throw new global::System.ArgumentNullException(nameof(system));
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
@@ -218,9 +221,6 @@ namespace Letta
             this.Tools = tools ?? throw new global::System.ArgumentNullException(nameof(tools));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
             this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
-            this.Description = description;
-            this.Metadata = metadata;
-            this.MultiAgentGroup = multiAgentGroup;
         }
 
         /// <summary>

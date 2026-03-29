@@ -70,6 +70,9 @@ namespace Letta
         /// <param name="name">
         /// The name of the source.
         /// </param>
+        /// <param name="id">
+        /// Human-readable identifier for this source in the file
+        /// </param>
         /// <param name="description">
         /// The description of the source.
         /// </param>
@@ -88,9 +91,6 @@ namespace Letta
         /// <param name="embeddingConfig">
         /// (Legacy) The embedding configuration used by the source.
         /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this source in the file
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -105,13 +105,13 @@ namespace Letta
             global::Letta.EmbeddingConfig? embeddingConfig)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Description = description;
             this.Instructions = instructions;
             this.Metadata = metadata;
             this.Embedding = embedding;
             this.EmbeddingChunkSize = embeddingChunkSize;
             this.EmbeddingConfig = embeddingConfig;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

@@ -50,11 +50,11 @@ namespace Letta
         /// <param name="createdAt">
         /// When the version was created
         /// </param>
-        /// <param name="message">
-        /// Version description message
-        /// </param>
         /// <param name="isLatest">
         /// Whether this is the latest version
+        /// </param>
+        /// <param name="message">
+        /// Version description message
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -67,8 +67,8 @@ namespace Letta
         {
             this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.IsLatest = isLatest;
             this.Message = message;
+            this.IsLatest = isLatest;
         }
 
         /// <summary>

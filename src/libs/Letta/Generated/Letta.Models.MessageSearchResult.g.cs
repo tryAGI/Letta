@@ -56,14 +56,14 @@ namespace Letta
         /// <param name="message">
         /// The raw message object
         /// </param>
+        /// <param name="rrfScore">
+        /// Reciprocal Rank Fusion combined score
+        /// </param>
         /// <param name="ftsRank">
         /// Full-text search rank position if FTS was used
         /// </param>
         /// <param name="vectorRank">
         /// Vector search rank position if vector search was used
-        /// </param>
-        /// <param name="rrfScore">
-        /// Reciprocal Rank Fusion combined score
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -77,9 +77,9 @@ namespace Letta
         {
             this.EmbeddedText = embeddedText ?? throw new global::System.ArgumentNullException(nameof(embeddedText));
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.RrfScore = rrfScore;
             this.FtsRank = ftsRank;
             this.VectorRank = vectorRank;
+            this.RrfScore = rrfScore;
         }
 
         /// <summary>

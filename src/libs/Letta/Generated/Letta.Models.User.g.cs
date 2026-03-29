@@ -49,11 +49,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="User" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The human-friendly ID of the User
-        /// </param>
         /// <param name="name">
         /// The name of the user.
+        /// </param>
+        /// <param name="id">
+        /// The human-friendly ID of the User
         /// </param>
         /// <param name="createdAt">
         /// The creation date of the user.
@@ -75,8 +75,8 @@ namespace Letta
             global::System.DateTime? updatedAt,
             bool? isDeleted)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Id = id;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.IsDeleted = isDeleted;

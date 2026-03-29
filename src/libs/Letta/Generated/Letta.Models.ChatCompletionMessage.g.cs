@@ -62,11 +62,11 @@ namespace Letta
         /// </summary>
         /// <param name="content"></param>
         /// <param name="refusal"></param>
-        /// <param name="role"></param>
         /// <param name="annotations"></param>
         /// <param name="audio"></param>
         /// <param name="functionCall"></param>
         /// <param name="toolCalls"></param>
+        /// <param name="role"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

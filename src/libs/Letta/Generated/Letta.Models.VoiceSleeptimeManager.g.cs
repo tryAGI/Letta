@@ -42,10 +42,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="VoiceSleeptimeManager" /> class.
         /// </summary>
+        /// <param name="managerAgentId"></param>
         /// <param name="managerType">
         /// Default Value: voice_sleeptime
         /// </param>
-        /// <param name="managerAgentId"></param>
         /// <param name="maxMessageBufferLength">
         /// The desired maximum length of messages in the context window of the convo agent. This is a best effort, and may be off slightly due to user/assistant interleaving.
         /// </param>
@@ -61,8 +61,8 @@ namespace Letta
             int? maxMessageBufferLength,
             int? minMessageBufferLength)
         {
-            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.ManagerType = managerType;
+            this.ManagerAgentId = managerAgentId ?? throw new global::System.ArgumentNullException(nameof(managerAgentId));
             this.MaxMessageBufferLength = maxMessageBufferLength;
             this.MinMessageBufferLength = minMessageBufferLength;
         }

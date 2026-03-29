@@ -31,8 +31,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EnvironmentsSendMessageRequestMessageVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="approvals"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>> approvals,
             global::Letta.EnvironmentsSendMessageRequestMessageVariant2Type type)
         {
-            this.Approvals = approvals ?? throw new global::System.ArgumentNullException(nameof(approvals));
             this.Type = type;
+            this.Approvals = approvals ?? throw new global::System.ArgumentNullException(nameof(approvals));
         }
 
         /// <summary>

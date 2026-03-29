@@ -122,6 +122,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Run" /> class.
         /// </summary>
+        /// <param name="agentId">
+        /// The unique identifier of the agent associated with the run.
+        /// </param>
         /// <param name="id">
         /// The human-friendly ID of the Run
         /// </param>
@@ -134,9 +137,6 @@ namespace Letta
         /// </param>
         /// <param name="completedAt">
         /// The timestamp when the run was completed.
-        /// </param>
-        /// <param name="agentId">
-        /// The unique identifier of the agent associated with the run.
         /// </param>
         /// <param name="conversationId">
         /// The unique identifier of the conversation associated with the run.
@@ -196,11 +196,11 @@ namespace Letta
             long? ttftNs,
             long? totalDurationNs)
         {
-            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.Id = id;
             this.Status = status;
             this.CreatedAt = createdAt;
             this.CompletedAt = completedAt;
+            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.ConversationId = conversationId;
             this.BaseTemplateId = baseTemplateId;
             this.Background = background;

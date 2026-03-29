@@ -31,8 +31,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="text"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Letta
             string text,
             global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemType type)
         {
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.Type = type;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
         }
 
         /// <summary>

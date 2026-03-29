@@ -137,15 +137,18 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaSchemasAgentFileMessageSchema" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The message type to be created.<br/>
-        /// Default Value: message
-        /// </param>
         /// <param name="role">
         /// The role of the participant.
         /// </param>
         /// <param name="content">
         /// The content of the message.
+        /// </param>
+        /// <param name="id">
+        /// Human-readable identifier for this message in the file
+        /// </param>
+        /// <param name="type">
+        /// The message type to be created.<br/>
+        /// Default Value: message
         /// </param>
         /// <param name="name">
         /// The name of the participant.
@@ -161,9 +164,6 @@ namespace Letta
         /// </param>
         /// <param name="groupId">
         /// The multi-agent group that the message was sent in
-        /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this message in the file
         /// </param>
         /// <param name="model">
         /// The model used to make the function call
@@ -219,15 +219,15 @@ namespace Letta
             string? denialReason,
             global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>>? approvals)
         {
+            this.Type = type;
             this.Role = role;
             this.Content = content;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Type = type;
             this.Name = name;
             this.Otid = otid;
             this.SenderId = senderId;
             this.BatchItemId = batchItemId;
             this.GroupId = groupId;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Model = model;
             this.AgentId = agentId;
             this.ToolCalls = toolCalls;

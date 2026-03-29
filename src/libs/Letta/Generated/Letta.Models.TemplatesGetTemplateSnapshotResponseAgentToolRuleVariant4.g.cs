@@ -57,10 +57,10 @@ namespace Letta
         /// Initializes a new instance of the <see cref="TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4" /> class.
         /// </summary>
         /// <param name="toolName"></param>
+        /// <param name="childOutputMapping"></param>
         /// <param name="type"></param>
         /// <param name="promptTemplate"></param>
         /// <param name="defaultChild"></param>
-        /// <param name="childOutputMapping"></param>
         /// <param name="requireOutputMapping"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -74,10 +74,10 @@ namespace Letta
             bool? requireOutputMapping)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.ChildOutputMapping = childOutputMapping ?? throw new global::System.ArgumentNullException(nameof(childOutputMapping));
             this.Type = type;
             this.PromptTemplate = promptTemplate;
             this.DefaultChild = defaultChild;
+            this.ChildOutputMapping = childOutputMapping ?? throw new global::System.ArgumentNullException(nameof(childOutputMapping));
             this.RequireOutputMapping = requireOutputMapping;
         }
 

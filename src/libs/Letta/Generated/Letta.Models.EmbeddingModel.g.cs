@@ -127,9 +127,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EmbeddingModel" /> class.
         /// </summary>
-        /// <param name="handle">
-        /// The handle for this config, in the format provider/model-name.
-        /// </param>
         /// <param name="name">
         /// The actual model name used by the provider
         /// </param>
@@ -142,10 +139,6 @@ namespace Letta
         /// <param name="providerName">
         /// The name of the provider
         /// </param>
-        /// <param name="modelType">
-        /// Type of model (llm or embedding)<br/>
-        /// Default Value: embedding
-        /// </param>
         /// <param name="embeddingEndpointType">
         /// Deprecated: Use 'provider_type' field instead. The endpoint type for the embedding model.
         /// </param>
@@ -154,6 +147,13 @@ namespace Letta
         /// </param>
         /// <param name="embeddingDim">
         /// The dimension of the embedding
+        /// </param>
+        /// <param name="handle">
+        /// The handle for this config, in the format provider/model-name.
+        /// </param>
+        /// <param name="modelType">
+        /// Type of model (llm or embedding)<br/>
+        /// Default Value: embedding
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -169,15 +169,15 @@ namespace Letta
             string? handle,
             string? modelType)
         {
+            this.Handle = handle;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.ProviderType = providerType;
             this.ProviderName = providerName ?? throw new global::System.ArgumentNullException(nameof(providerName));
+            this.ModelType = modelType;
             this.EmbeddingEndpointType = embeddingEndpointType;
             this.EmbeddingModel1 = embeddingModel1 ?? throw new global::System.ArgumentNullException(nameof(embeddingModel1));
             this.EmbeddingDim = embeddingDim;
-            this.Handle = handle;
-            this.ModelType = modelType;
         }
 
         /// <summary>

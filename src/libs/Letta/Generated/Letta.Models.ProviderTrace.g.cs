@@ -136,6 +136,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="ProviderTrace" /> class.
         /// </summary>
+        /// <param name="requestJson">
+        /// JSON content of the provider request
+        /// </param>
+        /// <param name="responseJson">
+        /// JSON content of the provider response
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -150,12 +156,6 @@ namespace Letta
         /// </param>
         /// <param name="id">
         /// The human-friendly ID of the Provider_trace
-        /// </param>
-        /// <param name="requestJson">
-        /// JSON content of the provider request
-        /// </param>
-        /// <param name="responseJson">
-        /// JSON content of the provider response
         /// </param>
         /// <param name="stepId">
         /// ID of the step that this trace is associated with
@@ -209,13 +209,13 @@ namespace Letta
             object? llmConfig,
             global::Letta.BillingContext? billingContext)
         {
-            this.RequestJson = requestJson ?? throw new global::System.ArgumentNullException(nameof(requestJson));
-            this.ResponseJson = responseJson ?? throw new global::System.ArgumentNullException(nameof(responseJson));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
             this.Id = id;
+            this.RequestJson = requestJson ?? throw new global::System.ArgumentNullException(nameof(requestJson));
+            this.ResponseJson = responseJson ?? throw new global::System.ArgumentNullException(nameof(responseJson));
             this.StepId = stepId;
             this.AgentId = agentId;
             this.AgentTags = agentTags;

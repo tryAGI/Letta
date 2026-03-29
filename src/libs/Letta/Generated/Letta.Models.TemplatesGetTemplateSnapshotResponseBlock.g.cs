@@ -70,8 +70,8 @@ namespace Letta
         /// <param name="value"></param>
         /// <param name="limit"></param>
         /// <param name="description"></param>
-        /// <param name="preserveOnMigration"></param>
         /// <param name="readOnly"></param>
+        /// <param name="preserveOnMigration"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -89,8 +89,8 @@ namespace Letta
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Limit = limit;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.ReadOnly = readOnly;
             this.PreserveOnMigration = preserveOnMigration;
+            this.ReadOnly = readOnly;
         }
 
         /// <summary>

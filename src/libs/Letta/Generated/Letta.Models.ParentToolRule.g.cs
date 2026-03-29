@@ -46,14 +46,14 @@ namespace Letta
         /// <param name="toolName">
         /// The name of the tool. Must exist in the database for the user's organization.
         /// </param>
+        /// <param name="children">
+        /// The children tools that can be invoked.
+        /// </param>
         /// <param name="type">
         /// Default Value: parent_last_tool
         /// </param>
         /// <param name="promptTemplate">
         /// Optional template string (ignored).
-        /// </param>
-        /// <param name="children">
-        /// The children tools that can be invoked.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -65,9 +65,9 @@ namespace Letta
             string? promptTemplate)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
             this.Type = type;
             this.PromptTemplate = promptTemplate;
+            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
         }
 
         /// <summary>

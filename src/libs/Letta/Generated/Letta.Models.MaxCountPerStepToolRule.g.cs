@@ -46,14 +46,14 @@ namespace Letta
         /// <param name="toolName">
         /// The name of the tool. Must exist in the database for the user's organization.
         /// </param>
+        /// <param name="maxCountLimit">
+        /// The max limit for the total number of times this tool can be invoked in a single step.
+        /// </param>
         /// <param name="type">
         /// Default Value: max_count_per_step
         /// </param>
         /// <param name="promptTemplate">
         /// Optional template string (ignored).
-        /// </param>
-        /// <param name="maxCountLimit">
-        /// The max limit for the total number of times this tool can be invoked in a single step.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -65,9 +65,9 @@ namespace Letta
             string? promptTemplate)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.MaxCountLimit = maxCountLimit;
             this.Type = type;
             this.PromptTemplate = promptTemplate;
+            this.MaxCountLimit = maxCountLimit;
         }
 
         /// <summary>

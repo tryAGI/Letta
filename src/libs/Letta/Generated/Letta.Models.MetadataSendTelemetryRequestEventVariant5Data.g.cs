@@ -65,12 +65,12 @@ namespace Letta
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant5Data" /> class.
         /// </summary>
         /// <param name="sessionId"></param>
-        /// <param name="agentId"></param>
         /// <param name="inputLength"></param>
         /// <param name="isCommand"></param>
-        /// <param name="commandName"></param>
         /// <param name="messageType"></param>
         /// <param name="modelId"></param>
+        /// <param name="agentId"></param>
+        /// <param name="commandName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -84,12 +84,12 @@ namespace Letta
             string? commandName)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
+            this.AgentId = agentId;
             this.InputLength = inputLength;
             this.IsCommand = isCommand;
+            this.CommandName = commandName;
             this.MessageType = messageType ?? throw new global::System.ArgumentNullException(nameof(messageType));
             this.ModelId = modelId ?? throw new global::System.ArgumentNullException(nameof(modelId));
-            this.AgentId = agentId;
-            this.CommandName = commandName;
         }
 
         /// <summary>

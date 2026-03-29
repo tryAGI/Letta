@@ -68,6 +68,9 @@ namespace Letta
         /// List of agent IDs in this group
         /// </param>
         /// <param name="description"></param>
+        /// <param name="id">
+        /// Human-readable identifier for this group in the file
+        /// </param>
         /// <param name="managerConfig">
         /// Default Value: {"manager_type":"round_robin"}
         /// </param>
@@ -80,9 +83,6 @@ namespace Letta
         /// </param>
         /// <param name="hidden">
         /// If set to True, the group will be hidden.
-        /// </param>
-        /// <param name="id">
-        /// Human-readable identifier for this group in the file
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -98,11 +98,11 @@ namespace Letta
         {
             this.AgentIds = agentIds ?? throw new global::System.ArgumentNullException(nameof(agentIds));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ManagerConfig = managerConfig;
             this.ProjectId = projectId;
             this.SharedBlockIds = sharedBlockIds;
             this.Hidden = hidden;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

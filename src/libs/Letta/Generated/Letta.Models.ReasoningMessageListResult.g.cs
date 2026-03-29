@@ -58,20 +58,20 @@ namespace Letta
         /// Initializes a new instance of the <see cref="ReasoningMessageListResult" /> class.
         /// </summary>
         /// <param name="reasoning"></param>
-        /// <param name="messageType">
-        /// Default Value: reasoning_message
-        /// </param>
         /// <param name="messageId">
         /// The unique identifier of the message.
+        /// </param>
+        /// <param name="createdAt">
+        /// The time the message was created in ISO format.
+        /// </param>
+        /// <param name="messageType">
+        /// Default Value: reasoning_message
         /// </param>
         /// <param name="agentId">
         /// The unique identifier of the agent that owns the message.
         /// </param>
         /// <param name="conversationId">
         /// The unique identifier of the conversation that the message belongs to.
-        /// </param>
-        /// <param name="createdAt">
-        /// The time the message was created in ISO format.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -85,11 +85,11 @@ namespace Letta
             string? conversationId)
         {
             this.Reasoning = reasoning ?? throw new global::System.ArgumentNullException(nameof(reasoning));
-            this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
-            this.CreatedAt = createdAt;
             this.MessageType = messageType;
+            this.MessageId = messageId ?? throw new global::System.ArgumentNullException(nameof(messageId));
             this.AgentId = agentId;
             this.ConversationId = conversationId;
+            this.CreatedAt = createdAt;
         }
 
         /// <summary>

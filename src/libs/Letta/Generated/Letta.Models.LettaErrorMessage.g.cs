@@ -58,10 +58,6 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaErrorMessage" /> class.
         /// </summary>
-        /// <param name="messageType">
-        /// The type of the message.<br/>
-        /// Default Value: error_message
-        /// </param>
         /// <param name="runId">
         /// The ID of the run.
         /// </param>
@@ -77,6 +73,10 @@ namespace Letta
         /// <param name="seqId">
         /// The sequence ID for cursor-based pagination.
         /// </param>
+        /// <param name="messageType">
+        /// The type of the message.<br/>
+        /// Default Value: error_message
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -88,10 +88,10 @@ namespace Letta
             int? seqId,
             string messageType = "error_message")
         {
+            this.MessageType = messageType;
             this.RunId = runId ?? throw new global::System.ArgumentNullException(nameof(runId));
             this.ErrorType = errorType ?? throw new global::System.ArgumentNullException(nameof(errorType));
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.MessageType = messageType;
             this.Detail = detail;
             this.SeqId = seqId;
         }

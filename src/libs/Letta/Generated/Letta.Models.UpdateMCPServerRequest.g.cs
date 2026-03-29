@@ -31,11 +31,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMCPServerRequest" /> class.
         /// </summary>
-        /// <param name="serverName">
-        /// The name of the MCP server
-        /// </param>
         /// <param name="config">
         /// The MCP server configuration updates (Stdio, SSE, or Streamable HTTP)
+        /// </param>
+        /// <param name="serverName">
+        /// The name of the MCP server
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -44,8 +44,8 @@ namespace Letta
             global::Letta.Config4 config,
             string? serverName)
         {
-            this.Config = config;
             this.ServerName = serverName;
+            this.Config = config;
         }
 
         /// <summary>

@@ -44,15 +44,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Base64Image" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The source type for the image.<br/>
-        /// Default Value: base64
-        /// </param>
         /// <param name="mediaType">
         /// The media type for the image.
         /// </param>
         /// <param name="data">
         /// The base64 encoded image data.
+        /// </param>
+        /// <param name="type">
+        /// The source type for the image.<br/>
+        /// Default Value: base64
         /// </param>
         /// <param name="detail">
         /// What level of detail to use when processing and understanding the image (low, high, or auto to let the model decide)
@@ -66,9 +66,9 @@ namespace Letta
             string? type,
             string? detail)
         {
+            this.Type = type;
             this.MediaType = mediaType ?? throw new global::System.ArgumentNullException(nameof(mediaType));
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
-            this.Type = type;
             this.Detail = detail;
         }
 

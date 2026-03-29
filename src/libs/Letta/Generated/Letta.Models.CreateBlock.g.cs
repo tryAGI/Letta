@@ -122,6 +122,9 @@ namespace Letta
         /// <param name="value">
         /// Value of the block.
         /// </param>
+        /// <param name="label">
+        /// Label of the block.
+        /// </param>
         /// <param name="limit">
         /// Character limit of the block.<br/>
         /// Default Value: 100000
@@ -150,9 +153,6 @@ namespace Letta
         /// <param name="preserveOnMigration">
         /// Preserve the block on template migration.<br/>
         /// Default Value: false
-        /// </param>
-        /// <param name="label">
-        /// Label of the block.
         /// </param>
         /// <param name="readOnly">
         /// Whether the agent has read-only access to the block.<br/>
@@ -193,7 +193,6 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? tags)
         {
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
-            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.Limit = limit;
             this.ProjectId = projectId;
             this.TemplateName = templateName;
@@ -203,6 +202,7 @@ namespace Letta
             this.DeploymentId = deploymentId;
             this.EntityId = entityId;
             this.PreserveOnMigration = preserveOnMigration;
+            this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
             this.ReadOnly = readOnly;
             this.Description = description;
             this.Metadata = metadata;

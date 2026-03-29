@@ -59,15 +59,15 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaSchemasLettaMessageToolReturn" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The message type to be created.<br/>
-        /// Default Value: tool
-        /// </param>
         /// <param name="toolReturn">
         /// The tool return value - either a string or list of content parts (text/image)
         /// </param>
         /// <param name="status"></param>
         /// <param name="toolCallId"></param>
+        /// <param name="type">
+        /// The message type to be created.<br/>
+        /// Default Value: tool
+        /// </param>
         /// <param name="stdout"></param>
         /// <param name="stderr"></param>
 #if NET7_0_OR_GREATER
@@ -81,10 +81,10 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? stdout,
             global::System.Collections.Generic.IList<string>? stderr)
         {
+            this.Type = type;
             this.ToolReturn = toolReturn;
             this.Status = status;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
-            this.Type = type;
             this.Stdout = stdout;
             this.Stderr = stderr;
         }

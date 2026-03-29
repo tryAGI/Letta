@@ -81,20 +81,20 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Archive" /> class.
         /// </summary>
+        /// <param name="createdAt">
+        /// The creation date of the archive
+        /// </param>
+        /// <param name="name">
+        /// The name of the archive
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
         /// <param name="lastUpdatedById">
         /// The id of the user that made this object.
         /// </param>
-        /// <param name="createdAt">
-        /// The creation date of the archive
-        /// </param>
         /// <param name="updatedAt">
         /// The timestamp when the object was last updated.
-        /// </param>
-        /// <param name="name">
-        /// The name of the archive
         /// </param>
         /// <param name="description">
         /// A description of the archive
@@ -127,11 +127,11 @@ namespace Letta
             object? metadata,
             string? id)
         {
-            this.CreatedAt = createdAt;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
+            this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.VectorDbProvider = vectorDbProvider;
             this.EmbeddingConfig = embeddingConfig;

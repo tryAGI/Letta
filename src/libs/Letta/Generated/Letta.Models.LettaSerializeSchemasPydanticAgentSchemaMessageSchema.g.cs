@@ -84,15 +84,15 @@ namespace Letta
         /// Initializes a new instance of the <see cref="LettaSerializeSchemasPydanticAgentSchemaMessageSchema" /> class.
         /// </summary>
         /// <param name="createdAt"></param>
-        /// <param name="groupId"></param>
-        /// <param name="model"></param>
-        /// <param name="name"></param>
         /// <param name="role"></param>
         /// <param name="content"></param>
-        /// <param name="toolCallId"></param>
         /// <param name="toolCalls"></param>
         /// <param name="toolReturns"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="groupId"></param>
+        /// <param name="model"></param>
+        /// <param name="name"></param>
+        /// <param name="toolCallId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -109,15 +109,15 @@ namespace Letta
             string? toolCallId)
         {
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
-            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
-            this.ToolCalls = toolCalls ?? throw new global::System.ArgumentNullException(nameof(toolCalls));
-            this.ToolReturns = toolReturns ?? throw new global::System.ArgumentNullException(nameof(toolReturns));
-            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
             this.GroupId = groupId;
             this.Model = model;
             this.Name = name;
+            this.Role = role ?? throw new global::System.ArgumentNullException(nameof(role));
+            this.Content = content ?? throw new global::System.ArgumentNullException(nameof(content));
             this.ToolCallId = toolCallId;
+            this.ToolCalls = toolCalls ?? throw new global::System.ArgumentNullException(nameof(toolCalls));
+            this.ToolReturns = toolReturns ?? throw new global::System.ArgumentNullException(nameof(toolReturns));
+            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 
         /// <summary>

@@ -56,23 +56,23 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="StdioMCPServer" /> class.
         /// </summary>
-        /// <param name="mcpServerType">
-        /// Default Value: stdio
-        /// </param>
         /// <param name="command">
         /// The command to run (MCP 'local' client will run this command)
         /// </param>
         /// <param name="args">
         /// The arguments to pass to the command
         /// </param>
+        /// <param name="serverName">
+        /// The name of the MCP server
+        /// </param>
+        /// <param name="mcpServerType">
+        /// Default Value: stdio
+        /// </param>
         /// <param name="env">
         /// Environment variables to set
         /// </param>
         /// <param name="id">
         /// The human-friendly ID of the Mcp_server
-        /// </param>
-        /// <param name="serverName">
-        /// The name of the MCP server
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -85,12 +85,12 @@ namespace Letta
             global::System.Collections.Generic.Dictionary<string, string>? env,
             string? id)
         {
+            this.McpServerType = mcpServerType;
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
             this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
-            this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
-            this.McpServerType = mcpServerType;
             this.Env = env;
             this.Id = id;
+            this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
         }
 
         /// <summary>

@@ -59,11 +59,11 @@ namespace Letta
         /// <param name="serverName">
         /// The name of the server
         /// </param>
-        /// <param name="type">
-        /// Default Value: streamable_http
-        /// </param>
         /// <param name="serverUrl">
         /// The URL of the server
+        /// </param>
+        /// <param name="type">
+        /// Default Value: streamable_http
         /// </param>
         /// <param name="authHeader">
         /// The name of the authentication header (e.g., 'Authorization')
@@ -86,8 +86,8 @@ namespace Letta
             global::System.Collections.Generic.Dictionary<string, string>? customHeaders)
         {
             this.ServerName = serverName ?? throw new global::System.ArgumentNullException(nameof(serverName));
-            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.Type = type;
+            this.ServerUrl = serverUrl ?? throw new global::System.ArgumentNullException(nameof(serverUrl));
             this.AuthHeader = authHeader;
             this.AuthToken = authToken;
             this.CustomHeaders = customHeaders;

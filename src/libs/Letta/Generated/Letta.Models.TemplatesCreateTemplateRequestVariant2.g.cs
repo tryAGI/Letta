@@ -43,10 +43,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="TemplatesCreateTemplateRequestVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="agentFile">
         /// The agent file to use as a template, this should be a JSON file exported from the platform
         /// </param>
+        /// <param name="type"></param>
         /// <param name="name">
         /// Optional custom name for the template. If not provided, a random name will be generated.
         /// </param>
@@ -62,8 +62,8 @@ namespace Letta
             string? name,
             bool? updateExistingTools)
         {
-            this.AgentFile = agentFile ?? throw new global::System.ArgumentNullException(nameof(agentFile));
             this.Type = type;
+            this.AgentFile = agentFile ?? throw new global::System.ArgumentNullException(nameof(agentFile));
             this.Name = name;
             this.UpdateExistingTools = updateExistingTools;
         }

@@ -195,11 +195,14 @@ namespace Letta
         /// <param name="model">
         /// LLM model name. 
         /// </param>
-        /// <param name="displayName">
-        /// A human-friendly display name for the model.
-        /// </param>
         /// <param name="modelEndpointType">
         /// The endpoint type for the model.
+        /// </param>
+        /// <param name="contextWindow">
+        /// The context window size for the model.
+        /// </param>
+        /// <param name="displayName">
+        /// A human-friendly display name for the model.
         /// </param>
         /// <param name="modelEndpoint">
         /// The endpoint for the model.
@@ -212,9 +215,6 @@ namespace Letta
         /// </param>
         /// <param name="modelWrapper">
         /// The wrapper for the model.
-        /// </param>
-        /// <param name="contextWindow">
-        /// The context window size for the model.
         /// </param>
         /// <param name="putInnerThoughtsInKwargs">
         /// Puts 'inner_thoughts' as a kwarg in the function call if this is set to True. This helps with function calling performance and also the generation of inner thoughts.<br/>
@@ -305,13 +305,13 @@ namespace Letta
             bool? returnTokenIds)
         {
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
-            this.ModelEndpointType = modelEndpointType;
-            this.ContextWindow = contextWindow;
             this.DisplayName = displayName;
+            this.ModelEndpointType = modelEndpointType;
             this.ModelEndpoint = modelEndpoint;
             this.ProviderName = providerName;
             this.ProviderCategory = providerCategory;
             this.ModelWrapper = modelWrapper;
+            this.ContextWindow = contextWindow;
             this.PutInnerThoughtsInKwargs = putInnerThoughtsInKwargs;
             this.Handle = handle;
             this.Temperature = temperature;

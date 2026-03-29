@@ -38,9 +38,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="MetadataSendTelemetryRequestEventVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="timestamp"></param>
         /// <param name="data"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -49,9 +49,9 @@ namespace Letta
             global::Letta.MetadataSendTelemetryRequestEventVariant1Data data,
             global::Letta.MetadataSendTelemetryRequestEventVariant1Type type)
         {
+            this.Type = type;
             this.Timestamp = timestamp ?? throw new global::System.ArgumentNullException(nameof(timestamp));
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
-            this.Type = type;
         }
 
         /// <summary>

@@ -45,9 +45,9 @@ namespace Letta
         /// Initializes a new instance of the <see cref="TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8" /> class.
         /// </summary>
         /// <param name="toolName"></param>
+        /// <param name="children"></param>
         /// <param name="type"></param>
         /// <param name="promptTemplate"></param>
-        /// <param name="children"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -58,9 +58,9 @@ namespace Letta
             string? promptTemplate)
         {
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
-            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
             this.Type = type;
             this.PromptTemplate = promptTemplate;
+            this.Children = children ?? throw new global::System.ArgumentNullException(nameof(children));
         }
 
         /// <summary>

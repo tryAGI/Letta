@@ -51,10 +51,10 @@ namespace Letta
         /// Initializes a new instance of the <see cref="ScheduledMessagesScheduleAgentMessageRequest" /> class.
         /// </summary>
         /// <param name="messages"></param>
+        /// <param name="schedule"></param>
         /// <param name="maxSteps"></param>
         /// <param name="callbackUrl"></param>
         /// <param name="includeReturnMessageTypes"></param>
-        /// <param name="schedule"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -66,10 +66,10 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>? includeReturnMessageTypes)
         {
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
-            this.Schedule = schedule;
             this.MaxSteps = maxSteps;
             this.CallbackUrl = callbackUrl;
             this.IncludeReturnMessageTypes = includeReturnMessageTypes;
+            this.Schedule = schedule;
         }
 
         /// <summary>

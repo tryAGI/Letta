@@ -44,9 +44,9 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="approve"></param>
         /// <param name="toolCallId"></param>
+        /// <param name="type"></param>
         /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -57,9 +57,9 @@ namespace Letta
             global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2Type? type,
             string? reason)
         {
+            this.Type = type;
             this.Approve = approve;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
-            this.Type = type;
             this.Reason = reason;
         }
 

@@ -31,12 +31,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="JsonSchemaResponseFormat" /> class.
         /// </summary>
+        /// <param name="jsonSchema">
+        /// The JSON schema of the response.
+        /// </param>
         /// <param name="type">
         /// The type of the response format.<br/>
         /// Default Value: json_schema
-        /// </param>
-        /// <param name="jsonSchema">
-        /// The JSON schema of the response.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -45,8 +45,8 @@ namespace Letta
             object jsonSchema,
             string? type)
         {
-            this.JsonSchema = jsonSchema ?? throw new global::System.ArgumentNullException(nameof(jsonSchema));
             this.Type = type;
+            this.JsonSchema = jsonSchema ?? throw new global::System.ArgumentNullException(nameof(jsonSchema));
         }
 
         /// <summary>

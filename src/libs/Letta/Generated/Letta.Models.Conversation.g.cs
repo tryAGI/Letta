@@ -85,6 +85,12 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="Conversation" /> class.
         /// </summary>
+        /// <param name="id">
+        /// The unique identifier of the conversation.
+        /// </param>
+        /// <param name="agentId">
+        /// The ID of the agent this conversation belongs to.
+        /// </param>
         /// <param name="createdById">
         /// The id of the user that made this object.
         /// </param>
@@ -96,12 +102,6 @@ namespace Letta
         /// </param>
         /// <param name="updatedAt">
         /// The timestamp when the object was last updated.
-        /// </param>
-        /// <param name="id">
-        /// The unique identifier of the conversation.
-        /// </param>
-        /// <param name="agentId">
-        /// The ID of the agent this conversation belongs to.
         /// </param>
         /// <param name="summary">
         /// A summary of the conversation.
@@ -134,12 +134,12 @@ namespace Letta
             string? model,
             global::Letta.ModelSettingsVariant14? modelSettings)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.CreatedById = createdById;
             this.LastUpdatedById = lastUpdatedById;
             this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.Summary = summary;
             this.InContextMessageIds = inContextMessageIds;
             this.IsolatedBlockIds = isolatedBlockIds;

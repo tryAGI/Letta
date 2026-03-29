@@ -50,11 +50,11 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="LettaSchemasMessageToolReturnInput" /> class.
         /// </summary>
-        /// <param name="toolCallId">
-        /// The ID for the tool call
-        /// </param>
         /// <param name="status">
         /// The status of the tool call
+        /// </param>
+        /// <param name="toolCallId">
+        /// The ID for the tool call
         /// </param>
         /// <param name="stdout">
         /// Captured stdout (e.g. prints, logs) from the tool invocation
@@ -75,8 +75,8 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? stderr,
             global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>? funcResponse)
         {
-            this.Status = status;
             this.ToolCallId = toolCallId;
+            this.Status = status;
             this.Stdout = stdout;
             this.Stderr = stderr;
             this.FuncResponse = funcResponse;

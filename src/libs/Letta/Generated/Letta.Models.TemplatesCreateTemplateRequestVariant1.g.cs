@@ -37,10 +37,10 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="TemplatesCreateTemplateRequestVariant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="agentId">
         /// The ID of the agent to use as a template, can be from any project
         /// </param>
+        /// <param name="type"></param>
         /// <param name="name">
         /// Optional custom name for the template. If not provided, a random name will be generated.
         /// </param>
@@ -52,8 +52,8 @@ namespace Letta
             global::Letta.TemplatesCreateTemplateRequestVariant1Type type,
             string? name)
         {
-            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.Type = type;
+            this.AgentId = agentId ?? throw new global::System.ArgumentNullException(nameof(agentId));
             this.Name = name;
         }
 

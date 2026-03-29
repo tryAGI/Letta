@@ -60,12 +60,6 @@ namespace Letta
         /// <param name="trigger">
         /// What triggered the compaction (e.g., 'context_window_exceeded', 'post_step_context_check')
         /// </param>
-        /// <param name="contextTokensBefore">
-        /// Token count before compaction (from LLM usage stats, includes full context sent to LLM)
-        /// </param>
-        /// <param name="contextTokensAfter">
-        /// Token count after compaction (message tokens only, does not include tool definitions)
-        /// </param>
         /// <param name="contextWindow">
         /// The model's context window size
         /// </param>
@@ -74,6 +68,12 @@ namespace Letta
         /// </param>
         /// <param name="messagesCountAfter">
         /// Number of messages after compaction
+        /// </param>
+        /// <param name="contextTokensBefore">
+        /// Token count before compaction (from LLM usage stats, includes full context sent to LLM)
+        /// </param>
+        /// <param name="contextTokensAfter">
+        /// Token count after compaction (message tokens only, does not include tool definitions)
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -87,11 +87,11 @@ namespace Letta
             int? contextTokensAfter)
         {
             this.Trigger = trigger ?? throw new global::System.ArgumentNullException(nameof(trigger));
+            this.ContextTokensBefore = contextTokensBefore;
+            this.ContextTokensAfter = contextTokensAfter;
             this.ContextWindow = contextWindow;
             this.MessagesCountBefore = messagesCountBefore;
             this.MessagesCountAfter = messagesCountAfter;
-            this.ContextTokensBefore = contextTokensBefore;
-            this.ContextTokensAfter = contextTokensAfter;
         }
 
         /// <summary>

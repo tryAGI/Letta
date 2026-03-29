@@ -31,8 +31,8 @@ namespace Letta
         /// <summary>
         /// Initializes a new instance of the <see cref="AgentsCountDeployedAgentsSearchItemVariant1" /> class.
         /// </summary>
-        /// <param name="field"></param>
         /// <param name="value"></param>
+        /// <param name="field"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -40,8 +40,8 @@ namespace Letta
             string value,
             global::Letta.AgentsCountDeployedAgentsSearchItemVariant1Field field)
         {
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Field = field;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>
