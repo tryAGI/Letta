@@ -6,7 +6,7 @@ namespace Letta
     {
         /// <summary>
         /// Check Health<br/>
-        /// Async health check endpoint.
+        /// Liveness endpoint; returns 200 when process is responsive.
         /// </summary>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>

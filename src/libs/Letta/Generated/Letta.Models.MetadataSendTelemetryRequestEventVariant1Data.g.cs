@@ -24,6 +24,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surface")]
+        public string? Surface { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("startup_command")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string StartupCommand { get; set; }
@@ -58,6 +64,7 @@ namespace Letta
         /// <param name="sessionId"></param>
         /// <param name="startupCommand"></param>
         /// <param name="agentId"></param>
+        /// <param name="surface"></param>
         /// <param name="version"></param>
         /// <param name="platform"></param>
         /// <param name="nodeVersion"></param>
@@ -68,12 +75,14 @@ namespace Letta
             string sessionId,
             string startupCommand,
             string? agentId,
+            string? surface,
             string? version,
             string? platform,
             string? nodeVersion)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.AgentId = agentId;
+            this.Surface = surface;
             this.StartupCommand = startupCommand ?? throw new global::System.ArgumentNullException(nameof(startupCommand));
             this.Version = version;
             this.Platform = platform;

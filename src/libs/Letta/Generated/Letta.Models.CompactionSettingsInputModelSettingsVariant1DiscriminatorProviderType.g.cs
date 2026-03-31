@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -51,6 +55,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Sglang,
+        /// <summary>
+        /// 
+        /// </summary>
         Together,
         /// <summary>
         /// 
@@ -76,6 +84,7 @@ namespace Letta
             {
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Anthropic => "anthropic",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Azure => "azure",
+                CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Baseten => "baseten",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Bedrock => "bedrock",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth => "chatgpt_oauth",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Deepseek => "deepseek",
@@ -84,6 +93,7 @@ namespace Letta
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Groq => "groq",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Openai => "openai",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Openrouter => "openrouter",
+                CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Sglang => "sglang",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Together => "together",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Xai => "xai",
                 CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Zai => "zai",
@@ -99,6 +109,7 @@ namespace Letta
             {
                 "anthropic" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Anthropic,
                 "azure" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Azure,
+                "baseten" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Baseten,
                 "bedrock" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Bedrock,
                 "chatgpt_oauth" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth,
                 "deepseek" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Deepseek,
@@ -107,6 +118,7 @@ namespace Letta
                 "groq" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Groq,
                 "openai" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Openai,
                 "openrouter" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Openrouter,
+                "sglang" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Sglang,
                 "together" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Together,
                 "xai" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Xai,
                 "zai" => CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType.Zai,

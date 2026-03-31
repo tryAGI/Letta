@@ -18,6 +18,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("server_version")]
+        public string? ServerVersion { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("events")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Letta.EventsItem> Events { get; set; }
@@ -33,14 +39,17 @@ namespace Letta
         /// </summary>
         /// <param name="events"></param>
         /// <param name="service"></param>
+        /// <param name="serverVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MetadataSendTelemetryRequest(
             global::System.Collections.Generic.IList<global::Letta.EventsItem> events,
-            global::Letta.MetadataSendTelemetryRequestService service)
+            global::Letta.MetadataSendTelemetryRequestService service,
+            string? serverVersion)
         {
             this.Service = service;
+            this.ServerVersion = serverVersion;
             this.Events = events ?? throw new global::System.ArgumentNullException(nameof(events));
         }
 

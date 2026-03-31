@@ -40,6 +40,9 @@ namespace Letta
         /// <param name="lastStopReason">
         /// Filter agents by their last stop reason.
         /// </param>
+        /// <param name="createdById">
+        /// Filter agents by the user who created them.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<int> CountAgentsAsync(
@@ -53,6 +56,7 @@ namespace Letta
             string? identityId = default,
             global::System.Collections.Generic.IList<string>? identifierKeys = default,
             global::Letta.StopReasonType? lastStopReason = default,
+            string? createdById = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

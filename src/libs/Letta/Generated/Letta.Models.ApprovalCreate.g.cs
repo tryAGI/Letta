@@ -18,6 +18,18 @@ namespace Letta
         public string? Type { get; set; }
 
         /// <summary>
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
+        public string? Otid { get; set; }
+
+        /// <summary>
+        /// The multi-agent group that the message was sent in
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("group_id")]
+        public string? GroupId { get; set; }
+
+        /// <summary>
         /// The list of approval responses
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("approvals")]
@@ -45,12 +57,6 @@ namespace Letta
         public string? Reason { get; set; }
 
         /// <summary>
-        /// The multi-agent group that the message was sent in
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("group_id")]
-        public string? GroupId { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -63,23 +69,28 @@ namespace Letta
         /// The message type to be created.<br/>
         /// Default Value: approval
         /// </param>
-        /// <param name="approvals">
-        /// The list of approval responses
+        /// <param name="otid">
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
         /// </param>
         /// <param name="groupId">
         /// The multi-agent group that the message was sent in
+        /// </param>
+        /// <param name="approvals">
+        /// The list of approval responses
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ApprovalCreate(
             string? type,
-            global::System.Collections.Generic.IList<global::Letta.ApprovalsVariant1Item>? approvals,
-            string? groupId)
+            string? otid,
+            string? groupId,
+            global::System.Collections.Generic.IList<global::Letta.ApprovalsVariant1Item>? approvals)
         {
             this.Type = type;
-            this.Approvals = approvals;
+            this.Otid = otid;
             this.GroupId = groupId;
+            this.Approvals = approvals;
         }
 
         /// <summary>

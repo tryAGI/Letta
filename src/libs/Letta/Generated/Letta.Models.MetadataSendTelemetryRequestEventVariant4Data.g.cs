@@ -62,6 +62,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surface")]
+        public string? Surface { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recent_chunks")]
         public global::System.Collections.Generic.IList<object>? RecentChunks { get; set; }
 
@@ -88,6 +94,7 @@ namespace Letta
         /// <param name="context"></param>
         /// <param name="httpStatus"></param>
         /// <param name="modelId"></param>
+        /// <param name="surface"></param>
         /// <param name="recentChunks"></param>
         /// <param name="debugLogTail"></param>
 #if NET7_0_OR_GREATER
@@ -102,6 +109,7 @@ namespace Letta
             string? context,
             double? httpStatus,
             string? modelId,
+            string? surface,
             global::System.Collections.Generic.IList<object>? recentChunks,
             string? debugLogTail)
         {
@@ -113,6 +121,7 @@ namespace Letta
             this.Context = context;
             this.HttpStatus = httpStatus;
             this.ModelId = modelId;
+            this.Surface = surface;
             this.RecentChunks = recentChunks;
             this.DebugLogTail = debugLogTail;
         }

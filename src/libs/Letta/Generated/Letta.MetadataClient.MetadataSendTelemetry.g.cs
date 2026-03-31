@@ -185,17 +185,20 @@ namespace Letta
         /// Send telemetry events for usage tracking and analysis.
         /// </summary>
         /// <param name="service"></param>
+        /// <param name="serverVersion"></param>
         /// <param name="events"></param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Letta.MetadataSendTelemetryResponse> MetadataSendTelemetryAsync(
             global::System.Collections.Generic.IList<global::Letta.EventsItem> events,
             global::Letta.MetadataSendTelemetryRequestService service = default,
+            string? serverVersion = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Letta.MetadataSendTelemetryRequest
             {
                 Service = service,
+                ServerVersion = serverVersion,
                 Events = events,
             };
 

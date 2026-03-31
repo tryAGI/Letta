@@ -32,6 +32,23 @@ namespace Letta
         public bool IsOpenai => Openai != null;
 
         /// <summary>
+        /// SGLang model configuration (OpenAI-compatible runtime with SGLang-specific parsing).
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Letta.SGLangModelSettings? Sglang { get; init; }
+#else
+        public global::Letta.SGLangModelSettings? Sglang { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sglang))]
+#endif
+        public bool IsSglang => Sglang != null;
+
+        /// <summary>
         /// 
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -202,6 +219,23 @@ namespace Letta
         public bool IsBedrock => Bedrock != null;
 
         /// <summary>
+        /// Baseten model configuration (OpenAI-compatible).
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::Letta.BasetenModelSettings? Baseten { get; init; }
+#else
+        public global::Letta.BasetenModelSettings? Baseten { get; }
+#endif
+
+        /// <summary>
+        /// 
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Baseten))]
+#endif
+        public bool IsBaseten => Baseten != null;
+
+        /// <summary>
         /// OpenRouter model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -250,6 +284,24 @@ namespace Letta
         public ModelSettingsVariant15(global::Letta.OpenAIModelSettings? value)
         {
             Openai = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator ModelSettingsVariant15(global::Letta.SGLangModelSettings value) => new ModelSettingsVariant15((global::Letta.SGLangModelSettings?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Letta.SGLangModelSettings?(ModelSettingsVariant15 @this) => @this.Sglang;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ModelSettingsVariant15(global::Letta.SGLangModelSettings? value)
+        {
+            Sglang = value;
         }
 
         /// <summary>
@@ -435,6 +487,24 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static implicit operator ModelSettingsVariant15(global::Letta.BasetenModelSettings value) => new ModelSettingsVariant15((global::Letta.BasetenModelSettings?)value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static implicit operator global::Letta.BasetenModelSettings?(ModelSettingsVariant15 @this) => @this.Baseten;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public ModelSettingsVariant15(global::Letta.BasetenModelSettings? value)
+        {
+            Baseten = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant15(global::Letta.OpenRouterModelSettings value) => new ModelSettingsVariant15((global::Letta.OpenRouterModelSettings?)value);
 
         /// <summary>
@@ -474,6 +544,7 @@ namespace Letta
         public ModelSettingsVariant15(
             global::Letta.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType? providerType,
             global::Letta.OpenAIModelSettings? openai,
+            global::Letta.SGLangModelSettings? sglang,
             global::Letta.AnthropicModelSettings? anthropic,
             global::Letta.GoogleAIModelSettings? googleAi,
             global::Letta.GoogleVertexModelSettings? googleVertex,
@@ -484,6 +555,7 @@ namespace Letta
             global::Letta.DeepseekModelSettings? deepseek,
             global::Letta.TogetherModelSettings? together,
             global::Letta.BedrockModelSettings? bedrock,
+            global::Letta.BasetenModelSettings? baseten,
             global::Letta.OpenRouterModelSettings? openrouter,
             global::Letta.ChatGPTOAuthModelSettings? chatgptOauth
             )
@@ -491,6 +563,7 @@ namespace Letta
             ProviderType = providerType;
 
             Openai = openai;
+            Sglang = sglang;
             Anthropic = anthropic;
             GoogleAi = googleAi;
             GoogleVertex = googleVertex;
@@ -501,6 +574,7 @@ namespace Letta
             Deepseek = deepseek;
             Together = together;
             Bedrock = bedrock;
+            Baseten = baseten;
             Openrouter = openrouter;
             ChatgptOauth = chatgptOauth;
         }
@@ -511,6 +585,7 @@ namespace Letta
         public object? Object =>
             ChatgptOauth as object ??
             Openrouter as object ??
+            Baseten as object ??
             Bedrock as object ??
             Together as object ??
             Deepseek as object ??
@@ -521,6 +596,7 @@ namespace Letta
             GoogleVertex as object ??
             GoogleAi as object ??
             Anthropic as object ??
+            Sglang as object ??
             Openai as object 
             ;
 
@@ -529,6 +605,7 @@ namespace Letta
         /// </summary>
         public override string? ToString() =>
             Openai?.ToString() ??
+            Sglang?.ToString() ??
             Anthropic?.ToString() ??
             GoogleAi?.ToString() ??
             GoogleVertex?.ToString() ??
@@ -539,6 +616,7 @@ namespace Letta
             Deepseek?.ToString() ??
             Together?.ToString() ??
             Bedrock?.ToString() ??
+            Baseten?.ToString() ??
             Openrouter?.ToString() ??
             ChatgptOauth?.ToString() 
             ;
@@ -548,7 +626,7 @@ namespace Letta
         /// </summary>
         public bool Validate()
         {
-            return IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && IsTogether && !IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && IsBedrock && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsOpenrouter && IsChatgptOauth;
+            return IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && IsBedrock && !IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && IsBaseten && !IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && IsOpenrouter && !IsChatgptOauth || !IsOpenai && !IsSglang && !IsAnthropic && !IsGoogleAi && !IsGoogleVertex && !IsAzure && !IsXai && !IsZai && !IsGroq && !IsDeepseek && !IsTogether && !IsBedrock && !IsBaseten && !IsOpenrouter && IsChatgptOauth;
         }
 
         /// <summary>
@@ -556,6 +634,7 @@ namespace Letta
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.OpenAIModelSettings?, TResult>? openai = null,
+            global::System.Func<global::Letta.SGLangModelSettings?, TResult>? sglang = null,
             global::System.Func<global::Letta.AnthropicModelSettings?, TResult>? anthropic = null,
             global::System.Func<global::Letta.GoogleAIModelSettings?, TResult>? googleAi = null,
             global::System.Func<global::Letta.GoogleVertexModelSettings?, TResult>? googleVertex = null,
@@ -566,6 +645,7 @@ namespace Letta
             global::System.Func<global::Letta.DeepseekModelSettings?, TResult>? deepseek = null,
             global::System.Func<global::Letta.TogetherModelSettings?, TResult>? together = null,
             global::System.Func<global::Letta.BedrockModelSettings?, TResult>? bedrock = null,
+            global::System.Func<global::Letta.BasetenModelSettings?, TResult>? baseten = null,
             global::System.Func<global::Letta.OpenRouterModelSettings?, TResult>? openrouter = null,
             global::System.Func<global::Letta.ChatGPTOAuthModelSettings?, TResult>? chatgptOauth = null,
             bool validate = true)
@@ -578,6 +658,10 @@ namespace Letta
             if (IsOpenai && openai != null)
             {
                 return openai(Openai!);
+            }
+            else if (IsSglang && sglang != null)
+            {
+                return sglang(Sglang!);
             }
             else if (IsAnthropic && anthropic != null)
             {
@@ -619,6 +703,10 @@ namespace Letta
             {
                 return bedrock(Bedrock!);
             }
+            else if (IsBaseten && baseten != null)
+            {
+                return baseten(Baseten!);
+            }
             else if (IsOpenrouter && openrouter != null)
             {
                 return openrouter(Openrouter!);
@@ -636,6 +724,7 @@ namespace Letta
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.OpenAIModelSettings?>? openai = null,
+            global::System.Action<global::Letta.SGLangModelSettings?>? sglang = null,
             global::System.Action<global::Letta.AnthropicModelSettings?>? anthropic = null,
             global::System.Action<global::Letta.GoogleAIModelSettings?>? googleAi = null,
             global::System.Action<global::Letta.GoogleVertexModelSettings?>? googleVertex = null,
@@ -646,6 +735,7 @@ namespace Letta
             global::System.Action<global::Letta.DeepseekModelSettings?>? deepseek = null,
             global::System.Action<global::Letta.TogetherModelSettings?>? together = null,
             global::System.Action<global::Letta.BedrockModelSettings?>? bedrock = null,
+            global::System.Action<global::Letta.BasetenModelSettings?>? baseten = null,
             global::System.Action<global::Letta.OpenRouterModelSettings?>? openrouter = null,
             global::System.Action<global::Letta.ChatGPTOAuthModelSettings?>? chatgptOauth = null,
             bool validate = true)
@@ -658,6 +748,10 @@ namespace Letta
             if (IsOpenai)
             {
                 openai?.Invoke(Openai!);
+            }
+            else if (IsSglang)
+            {
+                sglang?.Invoke(Sglang!);
             }
             else if (IsAnthropic)
             {
@@ -699,6 +793,10 @@ namespace Letta
             {
                 bedrock?.Invoke(Bedrock!);
             }
+            else if (IsBaseten)
+            {
+                baseten?.Invoke(Baseten!);
+            }
             else if (IsOpenrouter)
             {
                 openrouter?.Invoke(Openrouter!);
@@ -718,6 +816,8 @@ namespace Letta
             {
                 Openai,
                 typeof(global::Letta.OpenAIModelSettings),
+                Sglang,
+                typeof(global::Letta.SGLangModelSettings),
                 Anthropic,
                 typeof(global::Letta.AnthropicModelSettings),
                 GoogleAi,
@@ -738,6 +838,8 @@ namespace Letta
                 typeof(global::Letta.TogetherModelSettings),
                 Bedrock,
                 typeof(global::Letta.BedrockModelSettings),
+                Baseten,
+                typeof(global::Letta.BasetenModelSettings),
                 Openrouter,
                 typeof(global::Letta.OpenRouterModelSettings),
                 ChatgptOauth,
@@ -759,6 +861,7 @@ namespace Letta
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.OpenAIModelSettings?>.Default.Equals(Openai, other.Openai) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.SGLangModelSettings?>.Default.Equals(Sglang, other.Sglang) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.AnthropicModelSettings?>.Default.Equals(Anthropic, other.Anthropic) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.GoogleAIModelSettings?>.Default.Equals(GoogleAi, other.GoogleAi) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.GoogleVertexModelSettings?>.Default.Equals(GoogleVertex, other.GoogleVertex) &&
@@ -769,6 +872,7 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.DeepseekModelSettings?>.Default.Equals(Deepseek, other.Deepseek) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.TogetherModelSettings?>.Default.Equals(Together, other.Together) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.BedrockModelSettings?>.Default.Equals(Bedrock, other.Bedrock) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.BasetenModelSettings?>.Default.Equals(Baseten, other.Baseten) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.OpenRouterModelSettings?>.Default.Equals(Openrouter, other.Openrouter) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ChatGPTOAuthModelSettings?>.Default.Equals(ChatgptOauth, other.ChatgptOauth) 
                 ;

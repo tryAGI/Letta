@@ -184,6 +184,12 @@ namespace Letta
         public bool? ReturnTokenIds { get; set; }
 
         /// <summary>
+        /// SGLang tool call parser name (e.g. 'glm47', 'qwen25', 'hermes'). Used by the SGLang native adapter to parse tool calls from raw model output.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tool_call_parser")]
+        public string? ToolCallParser { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -274,6 +280,9 @@ namespace Letta
         /// Whether to return token IDs for all LLM generations via SGLang native endpoint. Required for multi-turn RL training with loss masking. Only works with SGLang provider.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="toolCallParser">
+        /// SGLang tool call parser name (e.g. 'glm47', 'qwen25', 'hermes'). Used by the SGLang native adapter to parse tool calls from raw model output.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -302,7 +311,8 @@ namespace Letta
             bool? strict,
             bool? returnLogprobs,
             int? topLogprobs,
-            bool? returnTokenIds)
+            bool? returnTokenIds,
+            string? toolCallParser)
         {
             this.Model = model ?? throw new global::System.ArgumentNullException(nameof(model));
             this.DisplayName = displayName;
@@ -329,6 +339,7 @@ namespace Letta
             this.ReturnLogprobs = returnLogprobs;
             this.TopLogprobs = topLogprobs;
             this.ReturnTokenIds = returnTokenIds;
+            this.ToolCallParser = toolCallParser;
         }
 
         /// <summary>

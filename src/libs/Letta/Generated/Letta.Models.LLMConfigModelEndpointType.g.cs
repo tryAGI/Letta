@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -28,6 +32,10 @@ namespace Letta
         /// 
         /// </summary>
         Deepseek,
+        /// <summary>
+        /// 
+        /// </summary>
+        Fireworks,
         /// <summary>
         /// 
         /// </summary>
@@ -108,6 +116,10 @@ namespace Letta
         /// 
         /// </summary>
         Zai,
+        /// <summary>
+        /// 
+        /// </summary>
+        ZaiCoding,
     }
 
     /// <summary>
@@ -124,9 +136,11 @@ namespace Letta
             {
                 LLMConfigModelEndpointType.Anthropic => "anthropic",
                 LLMConfigModelEndpointType.Azure => "azure",
+                LLMConfigModelEndpointType.Baseten => "baseten",
                 LLMConfigModelEndpointType.Bedrock => "bedrock",
                 LLMConfigModelEndpointType.ChatgptOauth => "chatgpt_oauth",
                 LLMConfigModelEndpointType.Deepseek => "deepseek",
+                LLMConfigModelEndpointType.Fireworks => "fireworks",
                 LLMConfigModelEndpointType.GoogleAi => "google_ai",
                 LLMConfigModelEndpointType.GoogleVertex => "google_vertex",
                 LLMConfigModelEndpointType.Groq => "groq",
@@ -147,6 +161,7 @@ namespace Letta
                 LLMConfigModelEndpointType.WebuiLegacy => "webui-legacy",
                 LLMConfigModelEndpointType.Xai => "xai",
                 LLMConfigModelEndpointType.Zai => "zai",
+                LLMConfigModelEndpointType.ZaiCoding => "zai_coding",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -159,9 +174,11 @@ namespace Letta
             {
                 "anthropic" => LLMConfigModelEndpointType.Anthropic,
                 "azure" => LLMConfigModelEndpointType.Azure,
+                "baseten" => LLMConfigModelEndpointType.Baseten,
                 "bedrock" => LLMConfigModelEndpointType.Bedrock,
                 "chatgpt_oauth" => LLMConfigModelEndpointType.ChatgptOauth,
                 "deepseek" => LLMConfigModelEndpointType.Deepseek,
+                "fireworks" => LLMConfigModelEndpointType.Fireworks,
                 "google_ai" => LLMConfigModelEndpointType.GoogleAi,
                 "google_vertex" => LLMConfigModelEndpointType.GoogleVertex,
                 "groq" => LLMConfigModelEndpointType.Groq,
@@ -182,6 +199,7 @@ namespace Letta
                 "webui-legacy" => LLMConfigModelEndpointType.WebuiLegacy,
                 "xai" => LLMConfigModelEndpointType.Xai,
                 "zai" => LLMConfigModelEndpointType.Zai,
+                "zai_coding" => LLMConfigModelEndpointType.ZaiCoding,
                 _ => null,
             };
         }

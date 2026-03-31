@@ -72,6 +72,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public DeviceStorageClient DeviceStorage { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public EmbeddingsClient Embeddings { get; }
 
         /// <summary>
@@ -168,6 +173,11 @@ namespace Letta
         /// 
         /// </summary>
         public RunsClient Runs { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public SandboxesClient Sandboxes { get; }
 
         /// <summary>
         /// 

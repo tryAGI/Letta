@@ -24,6 +24,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surface")]
+        public string? Surface { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_length")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double InputLength { get; set; }
@@ -70,6 +76,7 @@ namespace Letta
         /// <param name="messageType"></param>
         /// <param name="modelId"></param>
         /// <param name="agentId"></param>
+        /// <param name="surface"></param>
         /// <param name="commandName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -81,10 +88,12 @@ namespace Letta
             string messageType,
             string modelId,
             string? agentId,
+            string? surface,
             string? commandName)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.AgentId = agentId;
+            this.Surface = surface;
             this.InputLength = inputLength;
             this.IsCommand = isCommand;
             this.CommandName = commandName;
