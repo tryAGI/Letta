@@ -19,6 +19,18 @@ namespace Letta
         public string? Type { get; set; }
 
         /// <summary>
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
+        public string? Otid { get; set; }
+
+        /// <summary>
+        /// The multi-agent group that the message was sent in
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("group_id")]
+        public string? GroupId { get; set; }
+
+        /// <summary>
         /// List of tool returns from client-side execution
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_returns")]
@@ -41,14 +53,24 @@ namespace Letta
         /// The message type to be created.<br/>
         /// Default Value: tool_return
         /// </param>
+        /// <param name="otid">
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </param>
+        /// <param name="groupId">
+        /// The multi-agent group that the message was sent in
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ToolReturnCreate(
             global::System.Collections.Generic.IList<global::Letta.LettaSchemasLettaMessageToolReturn> toolReturns,
-            string? type)
+            string? type,
+            string? otid,
+            string? groupId)
         {
             this.Type = type;
+            this.Otid = otid;
+            this.GroupId = groupId;
             this.ToolReturns = toolReturns ?? throw new global::System.ArgumentNullException(nameof(toolReturns));
         }
 

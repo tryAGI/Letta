@@ -24,6 +24,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surface")]
+        public string? Surface { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ToolName { get; set; }
@@ -74,6 +80,7 @@ namespace Letta
         /// <param name="success"></param>
         /// <param name="duration"></param>
         /// <param name="agentId"></param>
+        /// <param name="surface"></param>
         /// <param name="responseLength"></param>
         /// <param name="errorType"></param>
         /// <param name="stderr"></param>
@@ -86,12 +93,14 @@ namespace Letta
             bool success,
             double duration,
             string? agentId,
+            string? surface,
             double? responseLength,
             string? errorType,
             string? stderr)
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.AgentId = agentId;
+            this.Surface = surface;
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Success = success;
             this.Duration = duration;

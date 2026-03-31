@@ -30,6 +30,10 @@ namespace Letta
         /// for a conversation, enabling recovery from network interruptions.<br/>
         /// **Agent-direct mode**: Pass conversation_id="default" with agent_id in request body<br/>
         /// to retrieve the stream for the agent's most recent active run.<br/>
+        /// **Direct run access**: Pass run_id directly to skip run lookup entirely.<br/>
+        /// Useful for recovery from duplicate request 409 errors.<br/>
+        /// **OTID lookup**: Pass otid to look up the run_id from Redis.<br/>
+        /// Useful when you have the otid from a 409 error response.<br/>
         /// **Deprecated**: Passing an agent ID as conversation_id still works but will be removed.
         /// </summary>
         /// <param name="conversationId">
@@ -234,6 +238,10 @@ namespace Letta
         /// for a conversation, enabling recovery from network interruptions.<br/>
         /// **Agent-direct mode**: Pass conversation_id="default" with agent_id in request body<br/>
         /// to retrieve the stream for the agent's most recent active run.<br/>
+        /// **Direct run access**: Pass run_id directly to skip run lookup entirely.<br/>
+        /// Useful for recovery from duplicate request 409 errors.<br/>
+        /// **OTID lookup**: Pass otid to look up the run_id from Redis.<br/>
+        /// Useful when you have the otid from a 409 error response.<br/>
         /// **Deprecated**: Passing an agent ID as conversation_id still works but will be removed.
         /// </summary>
         /// <param name="conversationId">
@@ -241,6 +249,12 @@ namespace Letta
         /// </param>
         /// <param name="agentId">
         /// Agent ID for agent-direct mode with 'default' conversation. Use with conversation_id='default' in the URL path.
+        /// </param>
+        /// <param name="runId">
+        /// Run ID to stream directly, bypassing run lookup. Use for recovery from duplicate requests.
+        /// </param>
+        /// <param name="otid">
+        /// Offline threading ID to look up the run_id. Bypasses active run lookup if run_id not provided.
         /// </param>
         /// <param name="startingAfter">
         /// Sequence id to use as a cursor for pagination. Response will start streaming after this chunk sequence id<br/>
@@ -263,6 +277,8 @@ namespace Letta
         public async global::System.Threading.Tasks.Task<string> RetrieveConversationStreamAsync(
             string conversationId,
             string? agentId = default,
+            string? runId = default,
+            string? otid = default,
             int? startingAfter = default,
             bool? includePings = default,
             double? pollInterval = default,
@@ -272,6 +288,8 @@ namespace Letta
             var __request = new global::Letta.RetrieveStreamRequest
             {
                 AgentId = agentId,
+                RunId = runId,
+                Otid = otid,
                 StartingAfter = startingAfter,
                 IncludePings = includePings,
                 PollInterval = pollInterval,

@@ -24,6 +24,12 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("surface")]
+        public string? Surface { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Duration { get; set; }
@@ -110,6 +116,7 @@ namespace Letta
         /// <param name="messageCount"></param>
         /// <param name="toolCallCount"></param>
         /// <param name="agentId"></param>
+        /// <param name="surface"></param>
         /// <param name="exitReason"></param>
         /// <param name="totalApiMs"></param>
         /// <param name="totalWallMs"></param>
@@ -128,6 +135,7 @@ namespace Letta
             double messageCount,
             double toolCallCount,
             string? agentId,
+            string? surface,
             string? exitReason,
             double? totalApiMs,
             double? totalWallMs,
@@ -140,6 +148,7 @@ namespace Letta
         {
             this.SessionId = sessionId ?? throw new global::System.ArgumentNullException(nameof(sessionId));
             this.AgentId = agentId;
+            this.Surface = surface;
             this.Duration = duration;
             this.MessageCount = messageCount;
             this.ToolCallCount = toolCallCount;

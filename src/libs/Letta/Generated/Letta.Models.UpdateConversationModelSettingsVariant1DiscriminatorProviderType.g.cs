@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -51,6 +55,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Sglang,
+        /// <summary>
+        /// 
+        /// </summary>
         Together,
         /// <summary>
         /// 
@@ -76,6 +84,7 @@ namespace Letta
             {
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Anthropic => "anthropic",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Azure => "azure",
+                UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Baseten => "baseten",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Bedrock => "bedrock",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth => "chatgpt_oauth",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Deepseek => "deepseek",
@@ -84,6 +93,7 @@ namespace Letta
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Groq => "groq",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Openai => "openai",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Openrouter => "openrouter",
+                UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Sglang => "sglang",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Together => "together",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Xai => "xai",
                 UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Zai => "zai",
@@ -99,6 +109,7 @@ namespace Letta
             {
                 "anthropic" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Anthropic,
                 "azure" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Azure,
+                "baseten" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Baseten,
                 "bedrock" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Bedrock,
                 "chatgpt_oauth" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth,
                 "deepseek" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Deepseek,
@@ -107,6 +118,7 @@ namespace Letta
                 "groq" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Groq,
                 "openai" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Openai,
                 "openrouter" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Openrouter,
+                "sglang" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Sglang,
                 "together" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Together,
                 "xai" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Xai,
                 "zai" => UpdateConversationModelSettingsVariant1DiscriminatorProviderType.Zai,

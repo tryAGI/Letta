@@ -226,6 +226,12 @@ namespace Letta
         /// <param name="agentId">
         /// Agent ID for agent-direct mode with 'default' conversation. Use with conversation_id='default' in the URL path.
         /// </param>
+        /// <param name="requestRunId">
+        /// Run ID to stream directly, bypassing run lookup. Use for recovery from duplicate requests.
+        /// </param>
+        /// <param name="otid">
+        /// Offline threading ID to look up the run_id. Bypasses active run lookup if run_id not provided.
+        /// </param>
         /// <param name="startingAfter">
         /// Sequence id to use as a cursor for pagination. Response will start streaming after this chunk sequence id<br/>
         /// Default Value: 0
@@ -247,6 +253,8 @@ namespace Letta
         public async global::System.Threading.Tasks.Task<string> RetrieveStreamForRunAsync(
             string runId,
             string? agentId = default,
+            string? requestRunId = default,
+            string? otid = default,
             int? startingAfter = default,
             bool? includePings = default,
             double? pollInterval = default,
@@ -256,6 +264,8 @@ namespace Letta
             var __request = new global::Letta.RetrieveStreamRequest
             {
                 AgentId = agentId,
+                RunId = requestRunId,
+                Otid = otid,
                 StartingAfter = startingAfter,
                 IncludePings = includePings,
                 PollInterval = pollInterval,

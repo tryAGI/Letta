@@ -15,7 +15,8 @@ namespace Letta
             ref global::Letta.ListConversationMessagesOrder? order,
             ref string? orderBy,
             ref string? groupId,
-            bool? includeErr);
+            bool? includeErr,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void PrepareListConversationMessagesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -27,7 +28,8 @@ namespace Letta
             global::Letta.ListConversationMessagesOrder? order,
             string? orderBy,
             string? groupId,
-            bool? includeErr);
+            bool? includeErr,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void ProcessListConversationMessagesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -76,6 +78,9 @@ namespace Letta
         /// <param name="includeErr">
         /// Whether to include error messages and error statuses. For debugging purposes only.
         /// </param>
+        /// <param name="includeReturnMessageTypes">
+        /// Message types to include in response. When null, all message types are returned.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.LettaMessageUnion>> ListConversationMessagesAsync(
@@ -88,6 +93,7 @@ namespace Letta
             string? orderBy = default,
             string? groupId = default,
             bool? includeErr = default,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
@@ -102,7 +108,8 @@ namespace Letta
                 order: ref order,
                 orderBy: ref orderBy,
                 groupId: ref groupId,
-                includeErr: includeErr);
+                includeErr: includeErr,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/conversations/{conversationId}/messages",
@@ -115,7 +122,8 @@ namespace Letta
                 .AddOptionalParameter("order", order?.ToValueString())
                 .AddOptionalParameter("order_by", orderBy)
                 .AddOptionalParameter("group_id", groupId)
-                .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant()) 
+                .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant())
+                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString()) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
@@ -156,7 +164,8 @@ namespace Letta
                 order: order,
                 orderBy: orderBy,
                 groupId: groupId,
-                includeErr: includeErr);
+                includeErr: includeErr,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,

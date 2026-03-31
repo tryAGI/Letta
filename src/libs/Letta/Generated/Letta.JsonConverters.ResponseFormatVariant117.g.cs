@@ -17,26 +17,26 @@ namespace Letta.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1Discriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1Discriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1Discriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ZAIModelSettingsResponseFormatVariant1Discriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ZAIModelSettingsResponseFormatVariant1Discriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ZAIModelSettingsResponseFormatVariant1Discriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Letta.TextResponseFormat? text = default;
-            if (discriminator?.Type == global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType.Text)
+            if (discriminator?.Type == global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType.Text)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextResponseFormat> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.TextResponseFormat)}");
                 text = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.JsonSchemaResponseFormat? jsonSchema = default;
-            if (discriminator?.Type == global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType.JsonSchema)
+            if (discriminator?.Type == global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType.JsonSchema)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonSchemaResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonSchemaResponseFormat> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.JsonSchemaResponseFormat)}");
                 jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.JsonObjectResponseFormat? jsonObject = default;
-            if (discriminator?.Type == global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType.JsonObject)
+            if (discriminator?.Type == global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType.JsonObject)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonObjectResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonObjectResponseFormat> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.JsonObjectResponseFormat)}");

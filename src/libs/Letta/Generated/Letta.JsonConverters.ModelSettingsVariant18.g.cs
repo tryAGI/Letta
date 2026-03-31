@@ -28,6 +28,13 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.OpenAIModelSettings)}");
                 openai = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::Letta.SGLangModelSettings? sglang = default;
+            if (discriminator?.ProviderType == global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType.Sglang)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SGLangModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SGLangModelSettings> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.SGLangModelSettings)}");
+                sglang = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
             global::Letta.AnthropicModelSettings? anthropic = default;
             if (discriminator?.ProviderType == global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType.Anthropic)
             {
@@ -98,6 +105,13 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.BedrockModelSettings)}");
                 bedrock = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::Letta.BasetenModelSettings? baseten = default;
+            if (discriminator?.ProviderType == global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType.Baseten)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.BasetenModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.BasetenModelSettings> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.BasetenModelSettings)}");
+                baseten = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
             global::Letta.OpenRouterModelSettings? openrouter = default;
             if (discriminator?.ProviderType == global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType.Openrouter)
             {
@@ -116,6 +130,8 @@ namespace Letta.JsonConverters
             var __value = new global::Letta.ModelSettingsVariant18(
                 discriminator?.ProviderType,
                 openai,
+
+                sglang,
 
                 anthropic,
 
@@ -136,6 +152,8 @@ namespace Letta.JsonConverters
                 together,
 
                 bedrock,
+
+                baseten,
 
                 openrouter,
 
@@ -159,6 +177,12 @@ namespace Letta.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.OpenAIModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.OpenAIModelSettings?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.OpenAIModelSettings).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Openai, typeInfo);
+            }
+            else if (value.IsSglang)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SGLangModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SGLangModelSettings?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SGLangModelSettings).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sglang, typeInfo);
             }
             else if (value.IsAnthropic)
             {
@@ -219,6 +243,12 @@ namespace Letta.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.BedrockModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.BedrockModelSettings?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.BedrockModelSettings).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.Bedrock, typeInfo);
+            }
+            else if (value.IsBaseten)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.BasetenModelSettings), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.BasetenModelSettings?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.BasetenModelSettings).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Baseten, typeInfo);
             }
             else if (value.IsOpenrouter)
             {

@@ -15,6 +15,18 @@ namespace Letta
         public string? AgentId { get; set; }
 
         /// <summary>
+        /// Run ID to stream directly, bypassing run lookup. Use for recovery from duplicate requests.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("run_id")]
+        public string? RunId { get; set; }
+
+        /// <summary>
+        /// Offline threading ID to look up the run_id. Bypasses active run lookup if run_id not provided.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
+        public string? Otid { get; set; }
+
+        /// <summary>
         /// Sequence id to use as a cursor for pagination. Response will start streaming after this chunk sequence id<br/>
         /// Default Value: 0
         /// </summary>
@@ -54,6 +66,12 @@ namespace Letta
         /// <param name="agentId">
         /// Agent ID for agent-direct mode with 'default' conversation. Use with conversation_id='default' in the URL path.
         /// </param>
+        /// <param name="runId">
+        /// Run ID to stream directly, bypassing run lookup. Use for recovery from duplicate requests.
+        /// </param>
+        /// <param name="otid">
+        /// Offline threading ID to look up the run_id. Bypasses active run lookup if run_id not provided.
+        /// </param>
         /// <param name="startingAfter">
         /// Sequence id to use as a cursor for pagination. Response will start streaming after this chunk sequence id<br/>
         /// Default Value: 0
@@ -75,12 +93,16 @@ namespace Letta
 #endif
         public RetrieveStreamRequest(
             string? agentId,
+            string? runId,
+            string? otid,
             int? startingAfter,
             bool? includePings,
             double? pollInterval,
             int? batchSize)
         {
             this.AgentId = agentId;
+            this.RunId = runId;
+            this.Otid = otid;
             this.StartingAfter = startingAfter;
             this.IncludePings = includePings;
             this.PollInterval = pollInterval;

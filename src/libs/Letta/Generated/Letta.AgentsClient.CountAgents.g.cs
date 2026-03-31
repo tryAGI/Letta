@@ -16,7 +16,8 @@ namespace Letta
             ref string? baseTemplateId,
             ref string? identityId,
             global::System.Collections.Generic.IList<string>? identifierKeys,
-            global::Letta.StopReasonType? lastStopReason);
+            global::Letta.StopReasonType? lastStopReason,
+            ref string? createdById);
         partial void PrepareCountAgentsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -29,7 +30,8 @@ namespace Letta
             string? baseTemplateId,
             string? identityId,
             global::System.Collections.Generic.IList<string>? identifierKeys,
-            global::Letta.StopReasonType? lastStopReason);
+            global::Letta.StopReasonType? lastStopReason,
+            string? createdById);
         partial void ProcessCountAgentsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -75,6 +77,9 @@ namespace Letta
         /// <param name="lastStopReason">
         /// Filter agents by their last stop reason.
         /// </param>
+        /// <param name="createdById">
+        /// Filter agents by the user who created them.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<int> CountAgentsAsync(
@@ -88,6 +93,7 @@ namespace Letta
             string? identityId = default,
             global::System.Collections.Generic.IList<string>? identifierKeys = default,
             global::Letta.StopReasonType? lastStopReason = default,
+            string? createdById = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
@@ -103,7 +109,8 @@ namespace Letta
                 baseTemplateId: ref baseTemplateId,
                 identityId: ref identityId,
                 identifierKeys: identifierKeys,
-                lastStopReason: lastStopReason);
+                lastStopReason: lastStopReason,
+                createdById: ref createdById);
 
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/agents/count",
@@ -118,7 +125,8 @@ namespace Letta
                 .AddOptionalParameter("base_template_id", baseTemplateId)
                 .AddOptionalParameter("identity_id", identityId)
                 .AddOptionalParameter("identifier_keys", identifierKeys?.ToString())
-                .AddOptionalParameter("last_stop_reason", lastStopReason?.ToString()) 
+                .AddOptionalParameter("last_stop_reason", lastStopReason?.ToString())
+                .AddOptionalParameter("created_by_id", createdById) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
@@ -160,7 +168,8 @@ namespace Letta
                 baseTemplateId: baseTemplateId,
                 identityId: identityId,
                 identifierKeys: identifierKeys,
-                lastStopReason: lastStopReason);
+                lastStopReason: lastStopReason,
+                createdById: createdById);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,

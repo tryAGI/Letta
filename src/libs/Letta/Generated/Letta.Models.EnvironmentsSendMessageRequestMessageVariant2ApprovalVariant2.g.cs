@@ -36,6 +36,12 @@ namespace Letta
         public string? Reason { get; set; }
 
         /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated_input")]
+        public object? UpdatedInput { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -48,6 +54,7 @@ namespace Letta
         /// <param name="toolCallId"></param>
         /// <param name="type"></param>
         /// <param name="reason"></param>
+        /// <param name="updatedInput"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -55,12 +62,14 @@ namespace Letta
             bool approve,
             string toolCallId,
             global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2Type? type,
-            string? reason)
+            string? reason,
+            object? updatedInput)
         {
             this.Type = type;
             this.Approve = approve;
             this.ToolCallId = toolCallId ?? throw new global::System.ArgumentNullException(nameof(toolCallId));
             this.Reason = reason;
+            this.UpdatedInput = updatedInput;
         }
 
         /// <summary>

@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -32,6 +36,10 @@ namespace Letta
         /// 
         /// </summary>
         Deepseek,
+        /// <summary>
+        /// 
+        /// </summary>
+        Fireworks,
         /// <summary>
         /// 
         /// </summary>
@@ -96,6 +104,10 @@ namespace Letta
         /// 
         /// </summary>
         Zai,
+        /// <summary>
+        /// 
+        /// </summary>
+        ZaiCoding,
     }
 
     /// <summary>
@@ -112,10 +124,12 @@ namespace Letta
             {
                 ProviderType.Anthropic => "anthropic",
                 ProviderType.Azure => "azure",
+                ProviderType.Baseten => "baseten",
                 ProviderType.Bedrock => "bedrock",
                 ProviderType.Cerebras => "cerebras",
                 ProviderType.ChatgptOauth => "chatgpt_oauth",
                 ProviderType.Deepseek => "deepseek",
+                ProviderType.Fireworks => "fireworks",
                 ProviderType.GoogleAi => "google_ai",
                 ProviderType.GoogleVertex => "google_vertex",
                 ProviderType.Groq => "groq",
@@ -132,6 +146,7 @@ namespace Letta
                 ProviderType.Vllm => "vllm",
                 ProviderType.Xai => "xai",
                 ProviderType.Zai => "zai",
+                ProviderType.ZaiCoding => "zai_coding",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -144,10 +159,12 @@ namespace Letta
             {
                 "anthropic" => ProviderType.Anthropic,
                 "azure" => ProviderType.Azure,
+                "baseten" => ProviderType.Baseten,
                 "bedrock" => ProviderType.Bedrock,
                 "cerebras" => ProviderType.Cerebras,
                 "chatgpt_oauth" => ProviderType.ChatgptOauth,
                 "deepseek" => ProviderType.Deepseek,
+                "fireworks" => ProviderType.Fireworks,
                 "google_ai" => ProviderType.GoogleAi,
                 "google_vertex" => ProviderType.GoogleVertex,
                 "groq" => ProviderType.Groq,
@@ -164,6 +181,7 @@ namespace Letta
                 "vllm" => ProviderType.Vllm,
                 "xai" => ProviderType.Xai,
                 "zai" => ProviderType.Zai,
+                "zai_coding" => ProviderType.ZaiCoding,
                 _ => null,
             };
         }

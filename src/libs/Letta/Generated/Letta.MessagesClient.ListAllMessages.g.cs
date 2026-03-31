@@ -11,7 +11,8 @@ namespace Letta
             ref string? after,
             int? limit,
             ref global::Letta.ListAllMessagesOrder? order,
-            ref string? conversationId);
+            ref string? conversationId,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void PrepareListAllMessagesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -19,7 +20,8 @@ namespace Letta
             string? after,
             int? limit,
             global::Letta.ListAllMessagesOrder? order,
-            string? conversationId);
+            string? conversationId,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void ProcessListAllMessagesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -50,6 +52,9 @@ namespace Letta
         /// <param name="conversationId">
         /// Conversation ID to filter messages by
         /// </param>
+        /// <param name="includeReturnMessageTypes">
+        /// Message types to include in response. When null, all message types are returned.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.LettaMessageUnion>> ListAllMessagesAsync(
@@ -58,6 +63,7 @@ namespace Letta
             int? limit = default,
             global::Letta.ListAllMessagesOrder? order = default,
             string? conversationId = default,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
@@ -68,7 +74,8 @@ namespace Letta
                 after: ref after,
                 limit: limit,
                 order: ref order,
-                conversationId: ref conversationId);
+                conversationId: ref conversationId,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/messages/",
@@ -78,7 +85,8 @@ namespace Letta
                 .AddOptionalParameter("after", after)
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("order", order?.ToValueString())
-                .AddOptionalParameter("conversation_id", conversationId) 
+                .AddOptionalParameter("conversation_id", conversationId)
+                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString()) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
@@ -115,7 +123,8 @@ namespace Letta
                 after: after,
                 limit: limit,
                 order: order,
-                conversationId: conversationId);
+                conversationId: conversationId,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,

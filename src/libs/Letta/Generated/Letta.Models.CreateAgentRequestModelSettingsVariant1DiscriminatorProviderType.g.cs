@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -51,6 +55,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Sglang,
+        /// <summary>
+        /// 
+        /// </summary>
         Together,
         /// <summary>
         /// 
@@ -76,6 +84,7 @@ namespace Letta
             {
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Anthropic => "anthropic",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Azure => "azure",
+                CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Baseten => "baseten",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Bedrock => "bedrock",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth => "chatgpt_oauth",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Deepseek => "deepseek",
@@ -84,6 +93,7 @@ namespace Letta
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Groq => "groq",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Openai => "openai",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Openrouter => "openrouter",
+                CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Sglang => "sglang",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Together => "together",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Xai => "xai",
                 CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Zai => "zai",
@@ -99,6 +109,7 @@ namespace Letta
             {
                 "anthropic" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Anthropic,
                 "azure" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Azure,
+                "baseten" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Baseten,
                 "bedrock" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Bedrock,
                 "chatgpt_oauth" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth,
                 "deepseek" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Deepseek,
@@ -107,6 +118,7 @@ namespace Letta
                 "groq" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Groq,
                 "openai" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Openai,
                 "openrouter" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Openrouter,
+                "sglang" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Sglang,
                 "together" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Together,
                 "xai" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Xai,
                 "zai" => CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType.Zai,

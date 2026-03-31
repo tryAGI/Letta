@@ -16,6 +16,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        LastMessageAt,
+        /// <summary>
+        /// 
+        /// </summary>
         LastRunCompletion,
     }
 
@@ -32,6 +36,7 @@ namespace Letta
             return value switch
             {
                 ListConversationsOrderBy.CreatedAt => "created_at",
+                ListConversationsOrderBy.LastMessageAt => "last_message_at",
                 ListConversationsOrderBy.LastRunCompletion => "last_run_completion",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -44,6 +49,7 @@ namespace Letta
             return value switch
             {
                 "created_at" => ListConversationsOrderBy.CreatedAt,
+                "last_message_at" => ListConversationsOrderBy.LastMessageAt,
                 "last_run_completion" => ListConversationsOrderBy.LastRunCompletion,
                 _ => null,
             };

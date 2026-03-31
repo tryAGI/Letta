@@ -27,6 +27,12 @@ namespace Letta
         public global::Letta.ModelSettingsVariant19? ModelSettings { get; set; }
 
         /// <summary>
+        /// Timestamp of the most recent message request sent to this conversation.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("last_message_at")]
+        public global::System.DateTime? LastMessageAt { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,17 +50,22 @@ namespace Letta
         /// <param name="modelSettings">
         /// The model settings for this conversation (overrides agent's model settings).
         /// </param>
+        /// <param name="lastMessageAt">
+        /// Timestamp of the most recent message request sent to this conversation.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateConversation(
             string? summary,
             string? model,
-            global::Letta.ModelSettingsVariant19? modelSettings)
+            global::Letta.ModelSettingsVariant19? modelSettings,
+            global::System.DateTime? lastMessageAt)
         {
             this.Summary = summary;
             this.Model = model;
             this.ModelSettings = modelSettings;
+            this.LastMessageAt = lastMessageAt;
         }
 
         /// <summary>

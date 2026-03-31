@@ -20,7 +20,8 @@ namespace Letta
             ref bool? useAssistantMessage,
             ref string? assistantMessageToolName,
             ref string? assistantMessageToolKwarg,
-            bool? includeErr);
+            bool? includeErr,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void PrepareListMessagesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -35,7 +36,8 @@ namespace Letta
             bool? useAssistantMessage,
             string? assistantMessageToolName,
             string? assistantMessageToolKwarg,
-            bool? includeErr);
+            bool? includeErr,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes);
         partial void ProcessListMessagesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -91,6 +93,9 @@ namespace Letta
         /// <param name="includeErr">
         /// Whether to include error messages and error statuses. For debugging purposes only.
         /// </param>
+        /// <param name="includeReturnMessageTypes">
+        /// Message types to include in response. When null, all message types are returned.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.LettaMessageUnion>> ListMessagesAsync(
@@ -106,6 +111,7 @@ namespace Letta
             string? assistantMessageToolName = default,
             string? assistantMessageToolKwarg = default,
             bool? includeErr = default,
+            global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
@@ -123,7 +129,8 @@ namespace Letta
                 useAssistantMessage: ref useAssistantMessage,
                 assistantMessageToolName: ref assistantMessageToolName,
                 assistantMessageToolKwarg: ref assistantMessageToolKwarg,
-                includeErr: includeErr);
+                includeErr: includeErr,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/messages",
@@ -139,7 +146,8 @@ namespace Letta
                 .AddOptionalParameter("use_assistant_message", useAssistantMessage?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("assistant_message_tool_name", assistantMessageToolName)
                 .AddOptionalParameter("assistant_message_tool_kwarg", assistantMessageToolKwarg)
-                .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant()) 
+                .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant())
+                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString()) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
@@ -183,7 +191,8 @@ namespace Letta
                 useAssistantMessage: useAssistantMessage,
                 assistantMessageToolName: assistantMessageToolName,
                 assistantMessageToolKwarg: assistantMessageToolKwarg,
-                includeErr: includeErr);
+                includeErr: includeErr,
+                includeReturnMessageTypes: includeReturnMessageTypes);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,

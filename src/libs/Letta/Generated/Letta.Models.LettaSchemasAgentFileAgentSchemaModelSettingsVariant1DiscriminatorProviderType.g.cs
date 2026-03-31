@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -51,6 +55,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Sglang,
+        /// <summary>
+        /// 
+        /// </summary>
         Together,
         /// <summary>
         /// 
@@ -76,6 +84,7 @@ namespace Letta
             {
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Anthropic => "anthropic",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Azure => "azure",
+                LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Baseten => "baseten",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Bedrock => "bedrock",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth => "chatgpt_oauth",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Deepseek => "deepseek",
@@ -84,6 +93,7 @@ namespace Letta
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Groq => "groq",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Openai => "openai",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Openrouter => "openrouter",
+                LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Sglang => "sglang",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Together => "together",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Xai => "xai",
                 LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Zai => "zai",
@@ -99,6 +109,7 @@ namespace Letta
             {
                 "anthropic" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Anthropic,
                 "azure" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Azure,
+                "baseten" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Baseten,
                 "bedrock" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Bedrock,
                 "chatgpt_oauth" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.ChatgptOauth,
                 "deepseek" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Deepseek,
@@ -107,6 +118,7 @@ namespace Letta
                 "groq" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Groq,
                 "openai" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Openai,
                 "openrouter" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Openrouter,
+                "sglang" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Sglang,
                 "together" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Together,
                 "xai" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Xai,
                 "zai" => LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType.Zai,

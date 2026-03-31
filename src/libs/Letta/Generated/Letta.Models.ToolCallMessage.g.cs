@@ -43,7 +43,7 @@ namespace Letta
         public string? MessageType { get; set; }
 
         /// <summary>
-        /// 
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
         public string? Otid { get; set; }
@@ -110,7 +110,9 @@ namespace Letta
         /// The type of the message.<br/>
         /// Default Value: tool_call_message
         /// </param>
-        /// <param name="otid"></param>
+        /// <param name="otid">
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </param>
         /// <param name="senderId"></param>
         /// <param name="stepId"></param>
         /// <param name="isErr"></param>

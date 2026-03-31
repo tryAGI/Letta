@@ -16,6 +16,18 @@ namespace Letta
         public string? Type { get; set; }
 
         /// <summary>
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
+        public string? Otid { get; set; }
+
+        /// <summary>
+        /// The multi-agent group that the message was sent in
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("group_id")]
+        public string? GroupId { get; set; }
+
+        /// <summary>
         /// The role of the participant.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
@@ -38,12 +50,6 @@ namespace Letta
         public string? Name { get; set; }
 
         /// <summary>
-        /// The offline threading id associated with this message
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("otid")]
-        public string? Otid { get; set; }
-
-        /// <summary>
         /// The id of the sender of the message, can be an identity id or agent id
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sender_id")]
@@ -54,12 +60,6 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("batch_item_id")]
         public string? BatchItemId { get; set; }
-
-        /// <summary>
-        /// The multi-agent group that the message was sent in
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("group_id")]
-        public string? GroupId { get; set; }
 
         /// <summary>
         /// Human-readable identifier for this message in the file
@@ -150,20 +150,20 @@ namespace Letta
         /// The message type to be created.<br/>
         /// Default Value: message
         /// </param>
+        /// <param name="otid">
+        /// The offline threading id (OTID). Set by the client to deduplicate requests. Used for idempotency in background streaming mode — each message in a request must have a unique OTID. Retries of the same request should reuse the same OTIDs.
+        /// </param>
+        /// <param name="groupId">
+        /// The multi-agent group that the message was sent in
+        /// </param>
         /// <param name="name">
         /// The name of the participant.
-        /// </param>
-        /// <param name="otid">
-        /// The offline threading id associated with this message
         /// </param>
         /// <param name="senderId">
         /// The id of the sender of the message, can be an identity id or agent id
         /// </param>
         /// <param name="batchItemId">
         /// The id of the LLMBatchItem that this message is associated with
-        /// </param>
-        /// <param name="groupId">
-        /// The multi-agent group that the message was sent in
         /// </param>
         /// <param name="model">
         /// The model used to make the function call
@@ -203,11 +203,11 @@ namespace Letta
             global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string> content,
             string id,
             string? type,
-            string? name,
             string? otid,
+            string? groupId,
+            string? name,
             string? senderId,
             string? batchItemId,
-            string? groupId,
             string? model,
             string? agentId,
             global::System.Collections.Generic.IList<global::Letta.ChatCompletionMessageFunctionToolCallInput>? toolCalls,
@@ -220,13 +220,13 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>>? approvals)
         {
             this.Type = type;
+            this.Otid = otid;
+            this.GroupId = groupId;
             this.Role = role;
             this.Content = content;
             this.Name = name;
-            this.Otid = otid;
             this.SenderId = senderId;
             this.BatchItemId = batchItemId;
-            this.GroupId = groupId;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Model = model;
             this.AgentId = agentId;

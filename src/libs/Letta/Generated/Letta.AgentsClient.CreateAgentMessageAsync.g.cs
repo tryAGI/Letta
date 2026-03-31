@@ -261,6 +261,9 @@ namespace Letta
         /// <param name="clientTools">
         /// Client-side tools that the agent can call. When the agent calls a client-side tool, execution pauses and returns control to the client to execute the tool and provide the result via a ToolReturn.
         /// </param>
+        /// <param name="clientSkills">
+        /// Client-side skills available in the environment. These are rendered in the system prompt's available skills section alongside agent-scoped skills from MemFS.
+        /// </param>
         /// <param name="overrideModel">
         /// Model handle to use for this request instead of the agent's default model. This allows sending a message to a different model without changing the agent's configuration.
         /// </param>
@@ -279,6 +282,9 @@ namespace Letta
         /// If True, returns token IDs and logprobs for ALL LLM generations in the agent step, not just the last one. Uses SGLang native /generate endpoint. Returns 'turns' field with TurnTokenData for each assistant/tool turn. Required for proper multi-turn RL training with loss masking.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="overrideSystem">
+        /// Optional per-request system prompt override. When set, this is passed directly to the underlying LLM request and bypasses the persisted/compiled system message for that request.
+        /// </param>
         /// <param name="callbackUrl">
         /// Optional callback URL to POST to when the job completes
         /// </param>
@@ -291,11 +297,13 @@ namespace Letta
             int? maxSteps = default,
             global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes = default,
             global::System.Collections.Generic.IList<global::Letta.ClientToolSchema>? clientTools = default,
+            global::System.Collections.Generic.IList<global::Letta.ClientSkillSchema>? clientSkills = default,
             string? overrideModel = default,
             bool? includeCompactionMessages = default,
             bool? returnLogprobs = default,
             int? topLogprobs = default,
             bool? returnTokenIds = default,
+            string? overrideSystem = default,
             string? callbackUrl = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -306,11 +314,13 @@ namespace Letta
                 MaxSteps = maxSteps,
                 IncludeReturnMessageTypes = includeReturnMessageTypes,
                 ClientTools = clientTools,
+                ClientSkills = clientSkills,
                 OverrideModel = overrideModel,
                 IncludeCompactionMessages = includeCompactionMessages,
                 ReturnLogprobs = returnLogprobs,
                 TopLogprobs = topLogprobs,
                 ReturnTokenIds = returnTokenIds,
+                OverrideSystem = overrideSystem,
                 CallbackUrl = callbackUrl,
             };
 

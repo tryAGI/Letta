@@ -27,7 +27,8 @@ namespace Letta
             ref global::Letta.ListAgentsOrderBy? orderBy,
             ref bool? ascending,
             ref string? sortBy,
-            global::Letta.StopReasonType? lastStopReason);
+            global::Letta.StopReasonType? lastStopReason,
+            ref string? createdById);
         partial void PrepareListAgentsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -49,7 +50,8 @@ namespace Letta
             global::Letta.ListAgentsOrderBy? orderBy,
             bool? ascending,
             string? sortBy,
-            global::Letta.StopReasonType? lastStopReason);
+            global::Letta.StopReasonType? lastStopReason,
+            string? createdById);
         partial void ProcessListAgentsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -127,6 +129,9 @@ namespace Letta
         /// <param name="lastStopReason">
         /// Filter agents by their last stop reason.
         /// </param>
+        /// <param name="createdById">
+        /// Filter agents by the user who created them.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.AgentState>> ListAgentsAsync(
@@ -149,6 +154,7 @@ namespace Letta
             bool? ascending = default,
             string? sortBy = default,
             global::Letta.StopReasonType? lastStopReason = default,
+            string? createdById = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
@@ -173,7 +179,8 @@ namespace Letta
                 orderBy: ref orderBy,
                 ascending: ref ascending,
                 sortBy: ref sortBy,
-                lastStopReason: lastStopReason);
+                lastStopReason: lastStopReason,
+                createdById: ref createdById);
 
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/agents/",
@@ -197,7 +204,8 @@ namespace Letta
                 .AddOptionalParameter("order_by", orderBy?.ToValueString())
                 .AddOptionalParameter("ascending", ascending?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("sort_by", sortBy)
-                .AddOptionalParameter("last_stop_reason", lastStopReason?.ToString()) 
+                .AddOptionalParameter("last_stop_reason", lastStopReason?.ToString())
+                .AddOptionalParameter("created_by_id", createdById) 
                 ; 
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
@@ -248,7 +256,8 @@ namespace Letta
                 orderBy: orderBy,
                 ascending: ascending,
                 sortBy: sortBy,
-                lastStopReason: lastStopReason);
+                lastStopReason: lastStopReason,
+                createdById: createdById);
 
             using var __response = await HttpClient.SendAsync(
                 request: __httpRequest,

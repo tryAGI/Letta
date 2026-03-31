@@ -181,7 +181,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::Letta.ResponseFormatVariant114? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant115? ResponseFormat { get; set; }
 
         /// <summary>
         /// Deprecated: Use `model` field to configure max output tokens instead. The maximum number of tokens to generate, including reasoning step.

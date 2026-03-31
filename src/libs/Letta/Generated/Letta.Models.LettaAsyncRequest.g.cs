@@ -75,6 +75,12 @@ namespace Letta
         public global::System.Collections.Generic.IList<global::Letta.ClientToolSchema>? ClientTools { get; set; }
 
         /// <summary>
+        /// Client-side skills available in the environment. These are rendered in the system prompt's available skills section alongside agent-scoped skills from MemFS.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("client_skills")]
+        public global::System.Collections.Generic.IList<global::Letta.ClientSkillSchema>? ClientSkills { get; set; }
+
+        /// <summary>
         /// Model handle to use for this request instead of the agent's default model. This allows sending a message to a different model without changing the agent's configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("override_model")]
@@ -108,6 +114,12 @@ namespace Letta
         public bool? ReturnTokenIds { get; set; }
 
         /// <summary>
+        /// Optional per-request system prompt override. When set, this is passed directly to the underlying LLM request and bypasses the persisted/compiled system message for that request.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("override_system")]
+        public string? OverrideSystem { get; set; }
+
+        /// <summary>
         /// Optional callback URL to POST to when the job completes
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
@@ -138,6 +150,9 @@ namespace Letta
         /// <param name="clientTools">
         /// Client-side tools that the agent can call. When the agent calls a client-side tool, execution pauses and returns control to the client to execute the tool and provide the result via a ToolReturn.
         /// </param>
+        /// <param name="clientSkills">
+        /// Client-side skills available in the environment. These are rendered in the system prompt's available skills section alongside agent-scoped skills from MemFS.
+        /// </param>
         /// <param name="overrideModel">
         /// Model handle to use for this request instead of the agent's default model. This allows sending a message to a different model without changing the agent's configuration.
         /// </param>
@@ -156,6 +171,9 @@ namespace Letta
         /// If True, returns token IDs and logprobs for ALL LLM generations in the agent step, not just the last one. Uses SGLang native /generate endpoint. Returns 'turns' field with TurnTokenData for each assistant/tool turn. Required for proper multi-turn RL training with loss masking.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="overrideSystem">
+        /// Optional per-request system prompt override. When set, this is passed directly to the underlying LLM request and bypasses the persisted/compiled system message for that request.
+        /// </param>
         /// <param name="callbackUrl">
         /// Optional callback URL to POST to when the job completes
         /// </param>
@@ -168,11 +186,13 @@ namespace Letta
             int? maxSteps,
             global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes,
             global::System.Collections.Generic.IList<global::Letta.ClientToolSchema>? clientTools,
+            global::System.Collections.Generic.IList<global::Letta.ClientSkillSchema>? clientSkills,
             string? overrideModel,
             bool? includeCompactionMessages,
             bool? returnLogprobs,
             int? topLogprobs,
             bool? returnTokenIds,
+            string? overrideSystem,
             string? callbackUrl)
         {
             this.Messages = messages;
@@ -180,11 +200,13 @@ namespace Letta
             this.MaxSteps = maxSteps;
             this.IncludeReturnMessageTypes = includeReturnMessageTypes;
             this.ClientTools = clientTools;
+            this.ClientSkills = clientSkills;
             this.OverrideModel = overrideModel;
             this.IncludeCompactionMessages = includeCompactionMessages;
             this.ReturnLogprobs = returnLogprobs;
             this.TopLogprobs = topLogprobs;
             this.ReturnTokenIds = returnTokenIds;
+            this.OverrideSystem = overrideSystem;
             this.CallbackUrl = callbackUrl;
         }
 

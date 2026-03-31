@@ -19,6 +19,10 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        Baseten,
+        /// <summary>
+        /// 
+        /// </summary>
         Bedrock,
         /// <summary>
         /// 
@@ -108,6 +112,10 @@ namespace Letta
         /// 
         /// </summary>
         Zai,
+        /// <summary>
+        /// 
+        /// </summary>
+        ZaiCoding,
     }
 
     /// <summary>
@@ -124,6 +132,7 @@ namespace Letta
             {
                 ModelModelEndpointType.Anthropic => "anthropic",
                 ModelModelEndpointType.Azure => "azure",
+                ModelModelEndpointType.Baseten => "baseten",
                 ModelModelEndpointType.Bedrock => "bedrock",
                 ModelModelEndpointType.ChatgptOauth => "chatgpt_oauth",
                 ModelModelEndpointType.Deepseek => "deepseek",
@@ -147,6 +156,7 @@ namespace Letta
                 ModelModelEndpointType.WebuiLegacy => "webui-legacy",
                 ModelModelEndpointType.Xai => "xai",
                 ModelModelEndpointType.Zai => "zai",
+                ModelModelEndpointType.ZaiCoding => "zai_coding",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -159,6 +169,7 @@ namespace Letta
             {
                 "anthropic" => ModelModelEndpointType.Anthropic,
                 "azure" => ModelModelEndpointType.Azure,
+                "baseten" => ModelModelEndpointType.Baseten,
                 "bedrock" => ModelModelEndpointType.Bedrock,
                 "chatgpt_oauth" => ModelModelEndpointType.ChatgptOauth,
                 "deepseek" => ModelModelEndpointType.Deepseek,
@@ -182,6 +193,7 @@ namespace Letta
                 "webui-legacy" => ModelModelEndpointType.WebuiLegacy,
                 "xai" => ModelModelEndpointType.Xai,
                 "zai" => ModelModelEndpointType.Zai,
+                "zai_coding" => ModelModelEndpointType.ZaiCoding,
                 _ => null,
             };
         }

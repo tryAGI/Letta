@@ -40,7 +40,7 @@ namespace Letta
         /// The response format for the model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
-        public global::Letta.ResponseFormatVariant116? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant117? ResponseFormat { get; set; }
 
         /// <summary>
         /// The thinking configuration for GLM-4.5+ models.<br/>
@@ -89,7 +89,7 @@ namespace Letta
             bool? parallelToolCalls,
             string? providerType,
             double? temperature,
-            global::Letta.ResponseFormatVariant116? responseFormat,
+            global::Letta.ResponseFormatVariant117? responseFormat,
             global::Letta.ZAIThinking? thinking)
         {
             this.MaxOutputTokens = maxOutputTokens;

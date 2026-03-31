@@ -242,6 +242,9 @@ namespace Letta
         /// <param name="modelSettings">
         /// The model settings for this conversation (overrides agent's model settings).
         /// </param>
+        /// <param name="lastMessageAt">
+        /// Timestamp of the most recent message request sent to this conversation.
+        /// </param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Letta.Conversation> UpdateConversationAsync(
@@ -249,6 +252,7 @@ namespace Letta
             string? summary = default,
             string? model = default,
             global::Letta.ModelSettingsVariant19? modelSettings = default,
+            global::System.DateTime? lastMessageAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __request = new global::Letta.UpdateConversation
@@ -256,6 +260,7 @@ namespace Letta
                 Summary = summary,
                 Model = model,
                 ModelSettings = modelSettings,
+                LastMessageAt = lastMessageAt,
             };
 
             return await UpdateConversationAsync(
