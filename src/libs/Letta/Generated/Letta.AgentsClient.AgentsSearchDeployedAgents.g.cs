@@ -203,6 +203,7 @@ namespace Letta
             bool? ascending = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.AgentsSearchDeployedAgentsRequest
             {
                 Search = search,

@@ -239,6 +239,7 @@ namespace Letta
             bool? disabled = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.PipelinesUpdatePipelineRequest
             {
                 Name = name,

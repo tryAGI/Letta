@@ -77,25 +77,25 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SystemMessageListResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SystemMessageListResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SystemMessageListResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SystemMessage, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SystemMessage!, typeInfo);
             }
             else if (value.IsUserMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.UserMessageListResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.UserMessageListResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.UserMessageListResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserMessage, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserMessage!, typeInfo);
             }
             else if (value.IsReasoningMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningMessageListResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningMessageListResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ReasoningMessageListResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReasoningMessage, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReasoningMessage!, typeInfo);
             }
             else if (value.IsAssistantMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.AssistantMessageListResult), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.AssistantMessageListResult?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.AssistantMessageListResult).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AssistantMessage, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AssistantMessage!, typeInfo);
             }
         }
     }

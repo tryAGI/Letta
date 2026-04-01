@@ -68,19 +68,19 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextResponseFormat?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.TextResponseFormat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsJsonSchema)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonSchemaResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonSchemaResponseFormat?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.JsonSchemaResponseFormat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema!, typeInfo);
             }
             else if (value.IsJsonObject)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonObjectResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonObjectResponseFormat?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.JsonObjectResponseFormat).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject!, typeInfo);
             }
         }
     }

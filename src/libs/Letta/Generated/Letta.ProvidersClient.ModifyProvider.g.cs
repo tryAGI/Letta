@@ -259,6 +259,7 @@ namespace Letta
             string? apiVersion = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.ProviderUpdate
             {
                 ApiKey = apiKey,

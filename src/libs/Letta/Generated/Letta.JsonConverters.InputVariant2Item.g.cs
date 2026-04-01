@@ -113,49 +113,49 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.TextContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsImage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ImageContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ImageContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ImageContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Image, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Image!, typeInfo);
             }
             else if (value.IsToolCall)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ToolCallContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ToolCallContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ToolCallContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolCall, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolCall!, typeInfo);
             }
             else if (value.IsToolReturn)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ToolReturnContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ToolReturnContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ToolReturnContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolReturn, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolReturn!, typeInfo);
             }
             else if (value.IsOmittedReasoning1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OmittedReasoning1, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OmittedReasoning1!, typeInfo);
             }
             else if (value.IsRedactedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RedactedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RedactedReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RedactedReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RedactedReasoning, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RedactedReasoning!, typeInfo);
             }
             else if (value.IsOmittedReasoning2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.OmittedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.OmittedReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.OmittedReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OmittedReasoning2, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.OmittedReasoning2!, typeInfo);
             }
             else if (value.IsSummarizedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SummarizedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SummarizedReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SummarizedReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SummarizedReasoning, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SummarizedReasoning!, typeInfo);
             }
         }
     }

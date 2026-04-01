@@ -59,13 +59,13 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ApprovalReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ApprovalReturn?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ApprovalReturn).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Approval, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Approval!, typeInfo);
             }
             else if (value.IsTool)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasLettaMessageToolReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasLettaMessageToolReturn?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasLettaMessageToolReturn).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool!, typeInfo);
             }
         }
     }

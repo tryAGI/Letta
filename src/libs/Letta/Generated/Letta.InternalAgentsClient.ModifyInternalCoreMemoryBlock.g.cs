@@ -315,6 +315,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? tags = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.BlockUpdate
             {
                 Value = value,

@@ -257,6 +257,7 @@ namespace Letta
             string? createdAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.PassageCreateRequest
             {
                 Text = text,

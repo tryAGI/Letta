@@ -223,6 +223,7 @@ namespace Letta
         public async global::System.Threading.Tasks.Task<string> ConnectMcpServerAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.AnyOf<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>
             {
             };

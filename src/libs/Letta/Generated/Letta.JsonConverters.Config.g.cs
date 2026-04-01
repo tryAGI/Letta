@@ -68,19 +68,19 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.CreateStdioMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.CreateStdioMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.CreateStdioMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Stdio, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Stdio!, typeInfo);
             }
             else if (value.IsSse)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.CreateSSEMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.CreateSSEMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.CreateSSEMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sse, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sse!, typeInfo);
             }
             else if (value.IsStreamableHttp)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.CreateStreamableHTTPMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.CreateStreamableHTTPMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.CreateStreamableHTTPMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamableHttp, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamableHttp!, typeInfo);
             }
         }
     }

@@ -258,6 +258,7 @@ namespace Letta
             global::Letta.ModelSettingsVariant16? modelSettings = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.CreateConversation
             {
                 Summary = summary,
