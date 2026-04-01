@@ -233,7 +233,6 @@ namespace Letta
             string mcpServerName,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.AnyOf<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>
             {
             };

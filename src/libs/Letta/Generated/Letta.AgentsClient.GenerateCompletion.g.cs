@@ -346,7 +346,6 @@ namespace Letta
             object? responseSchema = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.GenerateRequest
             {
                 Prompt = prompt,

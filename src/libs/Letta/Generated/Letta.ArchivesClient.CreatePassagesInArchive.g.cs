@@ -245,7 +245,6 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.PassageCreateRequest> passages,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.PassageBatchCreateRequest
             {
                 Passages = passages,

@@ -255,7 +255,6 @@ namespace Letta
             global::System.DateTime? lastMessageAt = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.UpdateConversation
             {
                 Summary = summary,

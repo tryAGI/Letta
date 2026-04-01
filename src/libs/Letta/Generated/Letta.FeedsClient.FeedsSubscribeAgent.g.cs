@@ -241,7 +241,6 @@ namespace Letta
             string? promptTemplate = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.FeedsSubscribeAgentRequest
             {
                 AgentId = agentId,

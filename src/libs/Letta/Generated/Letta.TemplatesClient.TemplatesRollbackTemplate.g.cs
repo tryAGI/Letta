@@ -323,7 +323,6 @@ namespace Letta
             string version,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.TemplatesRollbackTemplateRequest
             {
                 Version = version,

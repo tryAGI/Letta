@@ -323,7 +323,6 @@ namespace Letta
             string newName,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.TemplatesRenameTemplateRequest
             {
                 NewName = newName,

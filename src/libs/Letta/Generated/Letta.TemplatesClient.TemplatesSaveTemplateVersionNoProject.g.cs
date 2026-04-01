@@ -259,7 +259,6 @@ namespace Letta
             string? message = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.TemplatesSaveTemplateVersionNoProjectRequest
             {
                 PreserveEnvironmentVariablesOnMigration = preserveEnvironmentVariablesOnMigration,

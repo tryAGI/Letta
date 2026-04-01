@@ -195,7 +195,6 @@ namespace Letta
             string? serverVersion = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.MetadataSendTelemetryRequest
             {
                 Service = service,

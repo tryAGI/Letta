@@ -274,7 +274,6 @@ namespace Letta
             bool? enableParallelExecution = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.ToolCreate
             {
                 Description = description,

@@ -241,7 +241,6 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? runIds = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.CancelAgentRunRequest
             {
                 RunIds = runIds,

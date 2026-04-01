@@ -257,7 +257,6 @@ namespace Letta
             bool? hidden = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.InternalTemplateGroupCreate
             {
                 AgentIds = agentIds,
