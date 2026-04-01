@@ -249,7 +249,6 @@ namespace Letta
             string conversationId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.LettaServerRestApiRoutersV1ConversationsCompactionRequest
             {
             };

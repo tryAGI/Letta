@@ -231,7 +231,6 @@ namespace Letta
             string token,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new object
             {
             };

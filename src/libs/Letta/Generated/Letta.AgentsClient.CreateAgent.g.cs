@@ -362,7 +362,6 @@ namespace Letta
             int? perFileViewWindowCharLimit = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.CreateAgentRequest
             {
                 Name = name,

@@ -273,7 +273,6 @@ namespace Letta
             string sandboxId,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new object
             {
             };

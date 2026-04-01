@@ -281,7 +281,6 @@ namespace Letta
             string? user = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.ChatCompletionRequest
             {
                 Model = model,

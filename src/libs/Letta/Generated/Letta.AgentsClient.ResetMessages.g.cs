@@ -244,7 +244,6 @@ namespace Letta
             bool? addDefaultInitialMessages = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.ResetMessagesRequest
             {
                 AddDefaultInitialMessages = addDefaultInitialMessages,

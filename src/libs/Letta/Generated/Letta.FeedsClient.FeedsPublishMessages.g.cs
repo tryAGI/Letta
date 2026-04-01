@@ -199,7 +199,6 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.FeedsPublishMessagesRequestMessage> messages,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Letta.FeedsPublishMessagesRequest
             {
                 Messages = messages,
