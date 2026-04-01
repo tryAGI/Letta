@@ -275,6 +275,7 @@ namespace Letta
             global::Letta.ProducerConfig2 producerConfig,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.PipelinesUpdatePipelineProducerConfigRequest
             {
                 ProducerConfig = producerConfig,

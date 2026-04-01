@@ -317,6 +317,7 @@ namespace Letta
             string? conversationId = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.EnvironmentsSendMessageRequest
             {
                 Messages = messages,

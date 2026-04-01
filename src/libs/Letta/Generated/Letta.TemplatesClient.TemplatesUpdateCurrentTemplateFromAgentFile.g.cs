@@ -333,6 +333,7 @@ namespace Letta
             bool? saveExistingChanges = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileRequest
             {
                 AgentFileJson = agentFileJson,

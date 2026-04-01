@@ -285,6 +285,7 @@ namespace Letta
             int? batchSize = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.RetrieveStreamRequest
             {
                 AgentId = agentId,

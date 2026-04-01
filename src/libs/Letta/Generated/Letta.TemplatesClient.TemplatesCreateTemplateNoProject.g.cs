@@ -225,6 +225,7 @@ namespace Letta
         public async global::System.Threading.Tasks.Task<global::Letta.TemplatesCreateTemplateNoProjectResponse> TemplatesCreateTemplateNoProjectAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.TemplatesCreateTemplateNoProjectRequest
             {
             };

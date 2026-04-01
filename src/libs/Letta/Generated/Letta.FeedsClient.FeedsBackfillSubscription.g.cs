@@ -247,6 +247,7 @@ namespace Letta
             double? toSequence = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.FeedsBackfillSubscriptionRequest
             {
                 FromSequence = fromSequence,

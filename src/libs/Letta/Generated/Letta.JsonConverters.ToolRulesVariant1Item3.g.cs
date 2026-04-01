@@ -122,55 +122,55 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ChildToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ChildToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ChildToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConstrainChildTools, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConstrainChildTools!, typeInfo);
             }
             else if (value.IsRunFirst)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.InitToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.InitToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.InitToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RunFirst, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RunFirst!, typeInfo);
             }
             else if (value.IsExitLoop)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TerminalToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TerminalToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.TerminalToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExitLoop, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ExitLoop!, typeInfo);
             }
             else if (value.IsConditional)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ConditionalToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ConditionalToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ConditionalToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Conditional, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Conditional!, typeInfo);
             }
             else if (value.IsContinueLoop)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ContinueToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ContinueToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ContinueToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ContinueLoop, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ContinueLoop!, typeInfo);
             }
             else if (value.IsRequiredBeforeExit)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RequiredBeforeExitToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RequiredBeforeExitToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RequiredBeforeExitToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RequiredBeforeExit, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RequiredBeforeExit!, typeInfo);
             }
             else if (value.IsMaxCountPerStep)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MaxCountPerStepToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MaxCountPerStepToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MaxCountPerStepToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MaxCountPerStep, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.MaxCountPerStep!, typeInfo);
             }
             else if (value.IsParentLastTool)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ParentToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ParentToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ParentToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ParentLastTool, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ParentLastTool!, typeInfo);
             }
             else if (value.IsRequiresApproval)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RequiresApprovalToolRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RequiresApprovalToolRule?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RequiresApprovalToolRule).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RequiresApproval, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RequiresApproval!, typeInfo);
             }
         }
     }

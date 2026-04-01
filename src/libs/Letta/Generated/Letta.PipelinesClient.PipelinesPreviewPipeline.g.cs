@@ -233,6 +233,7 @@ namespace Letta
             global::Letta.ProducerConfig3 producerConfig,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Letta.PipelinesPreviewPipelineRequest
             {
                 IntegrationType = integrationType,

@@ -59,13 +59,13 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.TextContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsImage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ImageContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ImageContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ImageContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Image, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Image!, typeInfo);
             }
         }
     }

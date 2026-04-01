@@ -68,19 +68,19 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Stdio, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Stdio!, typeInfo);
             }
             else if (value.IsSse)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sse, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sse!, typeInfo);
             }
             else if (value.IsStreamableHttp)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamableHttp, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.StreamableHttp!, typeInfo);
             }
         }
     }

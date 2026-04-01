@@ -86,31 +86,31 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RoundRobinManagerUpdate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RoundRobinManagerUpdate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RoundRobinManagerUpdate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RoundRobin, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RoundRobin!, typeInfo);
             }
             else if (value.IsSupervisor)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SupervisorManagerUpdate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SupervisorManagerUpdate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SupervisorManagerUpdate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Supervisor, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Supervisor!, typeInfo);
             }
             else if (value.IsDynamic)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.DynamicManagerUpdate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.DynamicManagerUpdate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.DynamicManagerUpdate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Dynamic, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Dynamic!, typeInfo);
             }
             else if (value.IsSleeptime)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SleeptimeManagerUpdate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SleeptimeManagerUpdate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SleeptimeManagerUpdate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleeptime, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleeptime!, typeInfo);
             }
             else if (value.IsVoiceSleeptime)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.VoiceSleeptimeManagerUpdate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.VoiceSleeptimeManagerUpdate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.VoiceSleeptimeManagerUpdate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VoiceSleeptime, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VoiceSleeptime!, typeInfo);
             }
         }
     }

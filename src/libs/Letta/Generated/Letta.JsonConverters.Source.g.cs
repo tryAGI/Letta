@@ -68,19 +68,19 @@ namespace Letta.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.UrlImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.UrlImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.UrlImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Url, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Url!, typeInfo);
             }
             else if (value.IsBase64)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.Base64Image), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.Base64Image?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.Base64Image).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Base64, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Base64!, typeInfo);
             }
             else if (value.IsLetta)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Letta, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Letta!, typeInfo);
             }
         }
     }
