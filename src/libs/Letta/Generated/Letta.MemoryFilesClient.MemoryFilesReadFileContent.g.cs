@@ -112,13 +112,13 @@ namespace Letta
                     if (ReadResponseAsString)
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_404 = global::Letta.MemoryFilesReadFileContentResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::Letta.MemoryFilesReadFileContentResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_404 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_404 = global::Letta.MemoryFilesReadFileContentResponse2.FromJson(__content_404, JsonSerializerContext);
+                        __value_404 = global::Letta.MemoryFilesReadFileContentResponse2.FromJson(__content_404, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -150,13 +150,13 @@ namespace Letta
                     if (ReadResponseAsString)
                     {
                         __content_501 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_501 = global::Letta.MemoryFilesReadFileContentResponse3.FromJson(__content_501, JsonSerializerContext);
+                        __value_501 = global::Letta.MemoryFilesReadFileContentResponse3.FromJson(__content_501, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_501 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_501 = global::Letta.MemoryFilesReadFileContentResponse3.FromJson(__content_501, JsonSerializerContext);
+                        __value_501 = global::Letta.MemoryFilesReadFileContentResponse3.FromJson(__content_501, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
@@ -200,7 +200,7 @@ namespace Letta
                     __response.EnsureSuccessStatusCode();
 
                     return
-                        global::Letta.MemoryFilesReadFileContentResponse.FromJson(__content, JsonSerializerContext) ??
+                        global::Letta.MemoryFilesReadFileContentResponse.FromJson(__content, JsonSerializerOptions) ??
                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                 }
                 catch (global::System.Exception __ex)
@@ -231,7 +231,7 @@ namespace Letta
                     ).ConfigureAwait(false);
 
                     return
-                        await global::Letta.MemoryFilesReadFileContentResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                        await global::Letta.MemoryFilesReadFileContentResponse.FromJsonStreamAsync(__content, JsonSerializerOptions).ConfigureAwait(false) ??
                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                 }
                 catch (global::System.Exception __ex)

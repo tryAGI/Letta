@@ -12,8 +12,7 @@ namespace Letta.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -41,9 +40,7 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1> ??
-                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1).Name}");
-                        agent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                        agent = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1>(__rawJson, options);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -58,9 +55,7 @@ namespace Letta.JsonConverters
             {
                 try
                 {
-                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1> ??
-                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1).Name}");
-                    agent = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
+                    agent = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1>(__rawJson, options);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -83,14 +78,11 @@ namespace Letta.JsonConverters
             global::Letta.DataItem2 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
-            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
 
             if (value.IsAgent)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Agent!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Agent, typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options);
             }
         }
     }
