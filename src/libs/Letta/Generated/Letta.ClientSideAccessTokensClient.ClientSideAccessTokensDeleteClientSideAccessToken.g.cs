@@ -73,7 +73,7 @@ namespace Letta
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, request.GetType(), JsonSerializerContext);
+            var __httpRequestContentBody = global::System.Text.Json.JsonSerializer.Serialize(request, JsonSerializerOptions);
             var __httpRequestContent = new global::System.Net.Http.StringContent(
                 content: __httpRequestContentBody,
                 encoding: global::System.Text.Encoding.UTF8,
@@ -111,13 +111,13 @@ namespace Letta
                     if (ReadResponseAsString)
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_400 = global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2.FromJson(__content_400, JsonSerializerOptions);
                     }
                     else
                     {
                         __content_400 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_400 = global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2.FromJson(__content_400, JsonSerializerContext);
+                        __value_400 = global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2.FromJson(__content_400, JsonSerializerOptions);
                     }
                 }
                 catch (global::System.Exception __ex)
