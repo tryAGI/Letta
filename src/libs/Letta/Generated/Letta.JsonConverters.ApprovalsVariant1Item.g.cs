@@ -12,21 +12,28 @@ namespace Letta.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
 
             var readerCopy = reader;
-            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator>(ref readerCopy, options);
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator)}");
+            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Letta.ApprovalReturn? approval = default;
             if (discriminator?.Type == global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType.Approval)
             {
-                approval = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.ApprovalReturn>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ApprovalReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ApprovalReturn> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ApprovalReturn)}");
+                approval = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.LettaSchemasLettaMessageToolReturn? tool = default;
             if (discriminator?.Type == global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType.Tool)
             {
-                tool = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.LettaSchemasLettaMessageToolReturn>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasLettaMessageToolReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasLettaMessageToolReturn> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaSchemasLettaMessageToolReturn)}");
+                tool = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Letta.ApprovalsVariant1Item(
@@ -45,15 +52,20 @@ namespace Letta.JsonConverters
             global::Letta.ApprovalsVariant1Item value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsApproval)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Approval, typeof(global::Letta.ApprovalReturn), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ApprovalReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ApprovalReturn?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ApprovalReturn).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Approval!, typeInfo);
             }
             else if (value.IsTool)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool, typeof(global::Letta.LettaSchemasLettaMessageToolReturn), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasLettaMessageToolReturn), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasLettaMessageToolReturn?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasLettaMessageToolReturn).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Tool!, typeInfo);
             }
         }
     }

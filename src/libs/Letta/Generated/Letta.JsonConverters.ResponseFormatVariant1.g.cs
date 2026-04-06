@@ -12,26 +12,35 @@ namespace Letta.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
 
             var readerCopy = reader;
-            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.AgentStateResponseFormatVariant1Discriminator>(ref readerCopy, options);
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.AgentStateResponseFormatVariant1Discriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.AgentStateResponseFormatVariant1Discriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.AgentStateResponseFormatVariant1Discriminator)}");
+            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Letta.TextResponseFormat? text = default;
             if (discriminator?.Type == global::Letta.AgentStateResponseFormatVariant1DiscriminatorType.Text)
             {
-                text = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.TextResponseFormat>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextResponseFormat> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.TextResponseFormat)}");
+                text = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.JsonSchemaResponseFormat? jsonSchema = default;
             if (discriminator?.Type == global::Letta.AgentStateResponseFormatVariant1DiscriminatorType.JsonSchema)
             {
-                jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.JsonSchemaResponseFormat>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonSchemaResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonSchemaResponseFormat> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.JsonSchemaResponseFormat)}");
+                jsonSchema = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.JsonObjectResponseFormat? jsonObject = default;
             if (discriminator?.Type == global::Letta.AgentStateResponseFormatVariant1DiscriminatorType.JsonObject)
             {
-                jsonObject = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.JsonObjectResponseFormat>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonObjectResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonObjectResponseFormat> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.JsonObjectResponseFormat)}");
+                jsonObject = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Letta.ResponseFormatVariant1(
@@ -52,19 +61,26 @@ namespace Letta.JsonConverters
             global::Letta.ResponseFormatVariant1 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsText)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text, typeof(global::Letta.TextResponseFormat), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextResponseFormat?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.TextResponseFormat).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Text!, typeInfo);
             }
             else if (value.IsJsonSchema)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema, typeof(global::Letta.JsonSchemaResponseFormat), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonSchemaResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonSchemaResponseFormat?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.JsonSchemaResponseFormat).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonSchema!, typeInfo);
             }
             else if (value.IsJsonObject)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject, typeof(global::Letta.JsonObjectResponseFormat), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.JsonObjectResponseFormat), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.JsonObjectResponseFormat?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.JsonObjectResponseFormat).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.JsonObject!, typeInfo);
             }
         }
     }
