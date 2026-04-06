@@ -12,36 +12,49 @@ namespace Letta.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
 
             var readerCopy = reader;
-            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.GroupSchemaManagerConfigDiscriminator>(ref readerCopy, options);
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.GroupSchemaManagerConfigDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.GroupSchemaManagerConfigDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.GroupSchemaManagerConfigDiscriminator)}");
+            var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Letta.RoundRobinManager? roundRobin = default;
             if (discriminator?.ManagerType == global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType.RoundRobin)
             {
-                roundRobin = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.RoundRobinManager>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RoundRobinManager), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RoundRobinManager> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.RoundRobinManager)}");
+                roundRobin = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.SupervisorManagerSchema? supervisor = default;
             if (discriminator?.ManagerType == global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType.Supervisor)
             {
-                supervisor = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.SupervisorManagerSchema>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SupervisorManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SupervisorManagerSchema> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.SupervisorManagerSchema)}");
+                supervisor = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.DynamicManagerSchema? dynamic = default;
             if (discriminator?.ManagerType == global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType.Dynamic)
             {
-                dynamic = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.DynamicManagerSchema>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.DynamicManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.DynamicManagerSchema> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.DynamicManagerSchema)}");
+                dynamic = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.SleeptimeManagerSchema? sleeptime = default;
             if (discriminator?.ManagerType == global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType.Sleeptime)
             {
-                sleeptime = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.SleeptimeManagerSchema>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SleeptimeManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SleeptimeManagerSchema> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.SleeptimeManagerSchema)}");
+                sleeptime = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.VoiceSleeptimeManagerSchema? voiceSleeptime = default;
             if (discriminator?.ManagerType == global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType.VoiceSleeptime)
             {
-                voiceSleeptime = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.VoiceSleeptimeManagerSchema>(ref reader, options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.VoiceSleeptimeManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.VoiceSleeptimeManagerSchema> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.VoiceSleeptimeManagerSchema)}");
+                voiceSleeptime = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Letta.ManagerConfig2(
@@ -66,27 +79,38 @@ namespace Letta.JsonConverters
             global::Letta.ManagerConfig2 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsRoundRobin)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RoundRobin, typeof(global::Letta.RoundRobinManager), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RoundRobinManager), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RoundRobinManager?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RoundRobinManager).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RoundRobin!, typeInfo);
             }
             else if (value.IsSupervisor)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Supervisor, typeof(global::Letta.SupervisorManagerSchema), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SupervisorManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SupervisorManagerSchema?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SupervisorManagerSchema).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Supervisor!, typeInfo);
             }
             else if (value.IsDynamic)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Dynamic, typeof(global::Letta.DynamicManagerSchema), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.DynamicManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.DynamicManagerSchema?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.DynamicManagerSchema).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Dynamic!, typeInfo);
             }
             else if (value.IsSleeptime)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleeptime, typeof(global::Letta.SleeptimeManagerSchema), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SleeptimeManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SleeptimeManagerSchema?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.SleeptimeManagerSchema).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sleeptime!, typeInfo);
             }
             else if (value.IsVoiceSleeptime)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VoiceSleeptime, typeof(global::Letta.VoiceSleeptimeManagerSchema), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.VoiceSleeptimeManagerSchema), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.VoiceSleeptimeManagerSchema?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.VoiceSleeptimeManagerSchema).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VoiceSleeptime!, typeInfo);
             }
         }
     }

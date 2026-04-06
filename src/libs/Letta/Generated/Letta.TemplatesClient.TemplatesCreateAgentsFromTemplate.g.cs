@@ -73,7 +73,7 @@ namespace Letta
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-            var __httpRequestContentBody = request.ToJson(JsonSerializerOptions);
+            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
             var __httpRequestContent = new global::System.Net.Http.StringContent(
                 content: __httpRequestContentBody,
                 encoding: global::System.Text.Encoding.UTF8,
@@ -112,13 +112,13 @@ namespace Letta
                     if (ReadResponseAsString)
                     {
                         __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-                        __value_402 = global::Letta.TemplatesCreateAgentsFromTemplateResponse.FromJson(__content_402, JsonSerializerOptions);
+                        __value_402 = global::Letta.TemplatesCreateAgentsFromTemplateResponse.FromJson(__content_402, JsonSerializerContext);
                     }
                     else
                     {
                         __content_402 = await __response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                        __value_402 = global::Letta.TemplatesCreateAgentsFromTemplateResponse.FromJson(__content_402, JsonSerializerOptions);
+                        __value_402 = global::Letta.TemplatesCreateAgentsFromTemplateResponse.FromJson(__content_402, JsonSerializerContext);
                     }
                 }
                 catch (global::System.Exception __ex)

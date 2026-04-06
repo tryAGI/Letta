@@ -12,7 +12,8 @@ namespace Letta.JsonConverters
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             using var __jsonDocument = global::System.Text.Json.JsonDocument.ParseValue(ref reader);
             var __rawJson = __jsonDocument.RootElement.GetRawText();
@@ -64,7 +65,9 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        sessionStart = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant1>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant1> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1).Name}");
+                        sessionStart = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -77,7 +80,9 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        sessionEnd = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant2>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant2> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2).Name}");
+                        sessionEnd = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -90,7 +95,9 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        toolUsage = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant3>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant3> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3).Name}");
+                        toolUsage = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -103,7 +110,9 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        error = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant4>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant4> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4).Name}");
+                        error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -116,7 +125,9 @@ namespace Letta.JsonConverters
                 {
                     try
                     {
-                        userInput = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant5>(__rawJson, options);
+                        var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant5> ??
+                                       throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5).Name}");
+                        userInput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                     }
                     catch (global::System.Text.Json.JsonException)
                     {
@@ -131,7 +142,9 @@ namespace Letta.JsonConverters
             {
                 try
                 {
-                    sessionStart = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant1>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant1> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1).Name}");
+                    sessionStart = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -142,7 +155,9 @@ namespace Letta.JsonConverters
 
                 try
                 {
-                    sessionEnd = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant2>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant2> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2).Name}");
+                    sessionEnd = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -153,7 +168,9 @@ namespace Letta.JsonConverters
 
                 try
                 {
-                    toolUsage = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant3>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant3> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3).Name}");
+                    toolUsage = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -164,7 +181,9 @@ namespace Letta.JsonConverters
 
                 try
                 {
-                    error = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant4>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant4> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4).Name}");
+                    error = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -175,7 +194,9 @@ namespace Letta.JsonConverters
 
                 try
                 {
-                    userInput = global::System.Text.Json.JsonSerializer.Deserialize<global::Letta.MetadataSendTelemetryRequestEventVariant5>(__rawJson, options);
+                    var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant5> ??
+                                   throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5).Name}");
+                    userInput = global::System.Text.Json.JsonSerializer.Deserialize(__rawJson, typeInfo);
                 }
                 catch (global::System.Text.Json.JsonException)
                 {
@@ -206,27 +227,38 @@ namespace Letta.JsonConverters
             global::Letta.EventsItem value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
-            options = options ?? throw new global::System.ArgumentNullException(nameof(options)); 
+            options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
             if (value.IsSessionStart)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SessionStart, typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SessionStart!, typeInfo);
             }
             else if (value.IsSessionEnd)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SessionEnd, typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SessionEnd!, typeInfo);
             }
             else if (value.IsToolUsage)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolUsage, typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant3?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant3).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ToolUsage!, typeInfo);
             }
             else if (value.IsError)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error, typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant4?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant4).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Error!, typeInfo);
             }
             else if (value.IsUserInput)
             {
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserInput, typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5), options);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.MetadataSendTelemetryRequestEventVariant5?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.MetadataSendTelemetryRequestEventVariant5).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.UserInput!, typeInfo);
             }
         }
     }
