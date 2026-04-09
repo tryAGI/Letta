@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ProjectsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ProjectsDeleteProjectSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ProjectsDeleteProjectSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ProjectsDeleteProjectSecurityRequirement0,
+            };
         partial void PrepareProjectsDeleteProjectArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::System.Guid projectId,
@@ -46,9 +65,15 @@ namespace Letta
                 projectId: ref projectId,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ProjectsDeleteProjectSecurityRequirements,
+                operationName: "ProjectsDeleteProjectAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/projects/{projectId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -58,7 +83,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

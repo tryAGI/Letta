@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class JobsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_DeleteJobSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_DeleteJobSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_DeleteJobSecurityRequirement0,
+            };
         partial void PrepareDeleteJobArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string jobId);
@@ -40,9 +59,15 @@ namespace Letta
                 httpClient: HttpClient,
                 jobId: ref jobId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeleteJobSecurityRequirements,
+                operationName: "DeleteJobAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/jobs/{jobId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -52,7 +77,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

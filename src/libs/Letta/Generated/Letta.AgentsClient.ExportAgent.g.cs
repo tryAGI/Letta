@@ -7,6 +7,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ExportAgentSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ExportAgentSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ExportAgentSecurityRequirement0,
+            };
         partial void PrepareExportAgentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -78,6 +97,12 @@ namespace Letta
                 scrubMessages: ref scrubMessages,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ExportAgentSecurityRequirements,
+                operationName: "ExportAgentAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/export",
                 baseUri: HttpClient.BaseAddress); 
@@ -86,7 +111,7 @@ namespace Letta
                 .AddOptionalParameter("use_legacy_format", useLegacyFormat?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("conversation_id", conversationId)
                 .AddOptionalParameter("scrub_messages", scrubMessages?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -96,7 +121,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

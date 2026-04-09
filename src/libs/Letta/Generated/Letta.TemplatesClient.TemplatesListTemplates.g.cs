@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class TemplatesClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_TemplatesListTemplatesSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_TemplatesListTemplatesSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_TemplatesListTemplatesSecurityRequirement0,
+            };
         partial void PrepareTemplatesListTemplatesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Letta.OneOf<string, double?>? offset,
@@ -83,6 +102,12 @@ namespace Letta
                 projectId: ref projectId,
                 sortBy: ref sortBy);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TemplatesListTemplatesSecurityRequirements,
+                operationName: "TemplatesListTemplatesAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/templates",
                 baseUri: HttpClient.BaseAddress); 
@@ -97,7 +122,7 @@ namespace Letta
                 .AddOptionalParameter("project_slug", projectSlug)
                 .AddOptionalParameter("project_id", projectId)
                 .AddOptionalParameter("sort_by", sortBy?.ToValueString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -107,7 +132,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

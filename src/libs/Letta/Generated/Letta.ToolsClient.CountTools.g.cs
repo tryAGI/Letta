@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ToolsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_CountToolsSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_CountToolsSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_CountToolsSecurityRequirement0,
+            };
         partial void PrepareCountToolsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? name,
@@ -89,6 +108,12 @@ namespace Letta
                 returnOnlyLettaTools: returnOnlyLettaTools,
                 excludeLettaTools: excludeLettaTools);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_CountToolsSecurityRequirements,
+                operationName: "CountToolsAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/tools/count",
                 baseUri: HttpClient.BaseAddress); 
@@ -101,7 +126,7 @@ namespace Letta
                 .AddOptionalParameter("exclude_tool_types", excludeToolTypes?.ToString())
                 .AddOptionalParameter("return_only_letta_tools", returnOnlyLettaTools?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("exclude_letta_tools", excludeLettaTools?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -111,7 +136,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

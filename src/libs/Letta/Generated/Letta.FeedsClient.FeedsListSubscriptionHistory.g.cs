@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class FeedsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_FeedsListSubscriptionHistorySecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_FeedsListSubscriptionHistorySecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_FeedsListSubscriptionHistorySecurityRequirement0,
+            };
         partial void PrepareFeedsListSubscriptionHistoryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string feedId,
@@ -53,13 +72,19 @@ namespace Letta
                 pageSize: ref pageSize,
                 nextPageToken: ref nextPageToken);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_FeedsListSubscriptionHistorySecurityRequirements,
+                operationName: "FeedsListSubscriptionHistoryAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/feeds/{feedId}/subscriptions/{subscriptionId}/history",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("page_size", pageSize)
                 .AddOptionalParameter("next_page_token", nextPageToken) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -69,7 +94,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

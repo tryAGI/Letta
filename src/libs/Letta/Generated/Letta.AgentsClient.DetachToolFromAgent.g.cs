@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_DetachToolFromAgentSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_DetachToolFromAgentSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_DetachToolFromAgentSecurityRequirement0,
+            };
         partial void PrepareDetachToolFromAgentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string toolId,
@@ -47,9 +66,15 @@ namespace Letta
                 toolId: ref toolId,
                 agentId: ref agentId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DetachToolFromAgentSecurityRequirements,
+                operationName: "DetachToolFromAgentAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/tools/detach/{toolId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -59,7 +84,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

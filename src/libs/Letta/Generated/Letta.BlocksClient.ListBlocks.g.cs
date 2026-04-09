@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class BlocksClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ListBlocksSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ListBlocksSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ListBlocksSecurityRequirement0,
+            };
         partial void PrepareListBlocksArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? label,
@@ -170,6 +189,12 @@ namespace Letta
                 connectedToAgentsCountLt: connectedToAgentsCountLt,
                 connectedToAgentsCountEq: connectedToAgentsCountEq);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListBlocksSecurityRequirements,
+                operationName: "ListBlocksAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/blocks/",
                 baseUri: HttpClient.BaseAddress); 
@@ -193,7 +218,7 @@ namespace Letta
                 .AddOptionalParameter("connected_to_agents_count_gt", connectedToAgentsCountGt?.ToString())
                 .AddOptionalParameter("connected_to_agents_count_lt", connectedToAgentsCountLt?.ToString())
                 .AddOptionalParameter("connected_to_agents_count_eq", connectedToAgentsCountEq?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -203,7 +228,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

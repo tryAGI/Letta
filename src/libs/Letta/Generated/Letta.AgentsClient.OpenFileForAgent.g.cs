@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_OpenFileForAgentSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_OpenFileForAgentSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_OpenFileForAgentSecurityRequirement0,
+            };
         partial void PrepareOpenFileForAgentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string fileId,
@@ -50,9 +69,15 @@ namespace Letta
                 fileId: ref fileId,
                 agentId: ref agentId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_OpenFileForAgentSecurityRequirements,
+                operationName: "OpenFileForAgentAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/files/{fileId}/open",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -62,7 +87,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

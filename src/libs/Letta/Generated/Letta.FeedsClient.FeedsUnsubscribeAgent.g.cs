@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class FeedsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_FeedsUnsubscribeAgentSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_FeedsUnsubscribeAgentSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_FeedsUnsubscribeAgentSecurityRequirement0,
+            };
         partial void PrepareFeedsUnsubscribeAgentArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string feedId,
@@ -46,9 +65,15 @@ namespace Letta
                 feedId: ref feedId,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_FeedsUnsubscribeAgentSecurityRequirements,
+                operationName: "FeedsUnsubscribeAgentAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/feeds/{feedId}/unsubscribe",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -58,7 +83,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -6,6 +6,7 @@ namespace Letta
     public sealed partial class LettaClient
     {
         /// <inheritdoc cref="LettaClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Letta.EndPointAuthorization}?, bool)"/>
+
         public LettaClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,

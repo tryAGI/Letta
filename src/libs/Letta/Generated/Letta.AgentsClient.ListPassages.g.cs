@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ListPassagesSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ListPassagesSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ListPassagesSecurityRequirement0,
+            };
         partial void PrepareListPassagesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -77,6 +96,12 @@ namespace Letta
                 search: ref search,
                 ascending: ascending);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListPassagesSecurityRequirements,
+                operationName: "ListPassagesAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/archival-memory",
                 baseUri: HttpClient.BaseAddress); 
@@ -86,7 +111,7 @@ namespace Letta
                 .AddOptionalParameter("limit", limit?.ToString())
                 .AddOptionalParameter("search", search)
                 .AddOptionalParameter("ascending", ascending?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -96,7 +121,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

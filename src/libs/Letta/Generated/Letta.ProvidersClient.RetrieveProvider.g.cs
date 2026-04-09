@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ProvidersClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_RetrieveProviderSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_RetrieveProviderSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_RetrieveProviderSecurityRequirement0,
+            };
         partial void PrepareRetrieveProviderArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string providerId);
@@ -40,9 +59,15 @@ namespace Letta
                 httpClient: HttpClient,
                 providerId: ref providerId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RetrieveProviderSecurityRequirements,
+                operationName: "RetrieveProviderAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/providers/{providerId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -52,7 +77,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

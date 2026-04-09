@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class StepsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_RetrieveMetricsForStepSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_RetrieveMetricsForStepSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_RetrieveMetricsForStepSecurityRequirement0,
+            };
         partial void PrepareRetrieveMetricsForStepArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string stepId);
@@ -40,9 +59,15 @@ namespace Letta
                 httpClient: HttpClient,
                 stepId: ref stepId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RetrieveMetricsForStepSecurityRequirements,
+                operationName: "RetrieveMetricsForStepAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/steps/{stepId}/metrics",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -52,7 +77,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

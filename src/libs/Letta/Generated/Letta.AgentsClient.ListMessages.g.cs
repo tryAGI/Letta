@@ -7,6 +7,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ListMessagesSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ListMessagesSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ListMessagesSecurityRequirement0,
+            };
         partial void PrepareListMessagesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -132,6 +151,12 @@ namespace Letta
                 includeErr: includeErr,
                 includeReturnMessageTypes: includeReturnMessageTypes);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListMessagesSecurityRequirements,
+                operationName: "ListMessagesAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/messages",
                 baseUri: HttpClient.BaseAddress); 
@@ -148,7 +173,7 @@ namespace Letta
                 .AddOptionalParameter("assistant_message_tool_kwarg", assistantMessageToolKwarg)
                 .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant())
                 .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -158,7 +183,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ToolsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_AddMcpServerSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_AddMcpServerSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_AddMcpServerSecurityRequirement0,
+            };
         partial void PrepareAddMcpServerArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::Letta.AnyOf<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig> request);
@@ -39,9 +58,15 @@ namespace Letta
                 httpClient: HttpClient,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AddMcpServerSecurityRequirements,
+                operationName: "AddMcpServerAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/tools/mcp/servers",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Put,
@@ -51,7 +76,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

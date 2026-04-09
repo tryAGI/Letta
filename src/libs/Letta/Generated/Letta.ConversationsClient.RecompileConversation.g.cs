@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ConversationsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_RecompileConversationSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_RecompileConversationSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_RecompileConversationSecurityRequirement0,
+            };
         partial void PrepareRecompileConversationArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string conversationId,
@@ -56,12 +75,18 @@ namespace Letta
                 dryRun: ref dryRun,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_RecompileConversationSecurityRequirements,
+                operationName: "RecompileConversationAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/conversations/{conversationId}/recompile",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("dry_run", dryRun?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -71,7 +96,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

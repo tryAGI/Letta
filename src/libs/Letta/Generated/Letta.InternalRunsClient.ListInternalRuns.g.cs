@@ -7,6 +7,25 @@ namespace Letta
 {
     public partial class InternalRunsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ListInternalRunsSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ListInternalRunsSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ListInternalRunsSecurityRequirement0,
+            };
         partial void PrepareListInternalRunsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? runId,
@@ -209,6 +228,12 @@ namespace Letta
                 startDate: startDate,
                 endDate: endDate);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListInternalRunsSecurityRequirements,
+                operationName: "ListInternalRunsAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/_internal_runs/",
                 baseUri: HttpClient.BaseAddress); 
@@ -237,7 +262,7 @@ namespace Letta
                 .AddOptionalParameter("duration_operator", durationOperator?.ToString())
                 .AddOptionalParameter("start_date", startDate?.ToString())
                 .AddOptionalParameter("end_date", endDate?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -247,7 +272,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

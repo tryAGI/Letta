@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ToolsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_UpdateMcpServerSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_UpdateMcpServerSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_UpdateMcpServerSecurityRequirement0,
+            };
         partial void PrepareUpdateMcpServerArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string mcpServerName,
@@ -44,9 +63,15 @@ namespace Letta
                 mcpServerName: ref mcpServerName,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_UpdateMcpServerSecurityRequirements,
+                operationName: "UpdateMcpServerAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/tools/mcp/servers/{mcpServerName}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: new global::System.Net.Http.HttpMethod("PATCH"),
@@ -56,7 +81,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

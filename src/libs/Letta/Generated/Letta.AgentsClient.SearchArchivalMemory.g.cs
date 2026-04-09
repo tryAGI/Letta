@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_SearchArchivalMemorySecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_SearchArchivalMemorySecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_SearchArchivalMemorySecurityRequirement0,
+            };
         partial void PrepareSearchArchivalMemoryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string agentId,
@@ -86,6 +105,12 @@ namespace Letta
                 startDatetime: startDatetime,
                 endDatetime: endDatetime);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_SearchArchivalMemorySecurityRequirements,
+                operationName: "SearchArchivalMemoryAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/archival-memory/search",
                 baseUri: HttpClient.BaseAddress); 
@@ -96,7 +121,7 @@ namespace Letta
                 .AddOptionalParameter("top_k", topK?.ToString())
                 .AddOptionalParameter("start_datetime", startDatetime?.ToString())
                 .AddOptionalParameter("end_datetime", endDatetime?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -106,7 +131,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
