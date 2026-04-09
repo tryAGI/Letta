@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class InternalAgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_CountInternalAgentsSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_CountInternalAgentsSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_CountInternalAgentsSecurityRequirement0,
+            };
         partial void PrepareCountInternalAgentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref bool? excludeHidden);
@@ -41,12 +60,18 @@ namespace Letta
                 httpClient: HttpClient,
                 excludeHidden: ref excludeHidden);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_CountInternalAgentsSecurityRequirements,
+                operationName: "CountInternalAgentsAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/_internal_agents/count",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("exclude_hidden", excludeHidden?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -56,7 +81,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

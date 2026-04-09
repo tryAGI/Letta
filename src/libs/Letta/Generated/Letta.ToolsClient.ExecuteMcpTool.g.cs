@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ToolsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ExecuteMcpToolSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ExecuteMcpToolSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ExecuteMcpToolSecurityRequirement0,
+            };
         partial void PrepareExecuteMcpToolArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string mcpServerName,
@@ -52,9 +71,15 @@ namespace Letta
                 toolName: ref toolName,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ExecuteMcpToolSecurityRequirements,
+                operationName: "ExecuteMcpToolAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/tools/mcp/servers/{mcpServerName}/tools/{toolName}/execute",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -64,7 +89,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

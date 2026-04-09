@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_DeletePassageSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_DeletePassageSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_DeletePassageSecurityRequirement0,
+            };
         partial void PrepareDeletePassageArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string memoryId,
@@ -45,9 +64,15 @@ namespace Letta
                 memoryId: ref memoryId,
                 agentId: ref agentId);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_DeletePassageSecurityRequirements,
+                operationName: "DeletePassageAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/agents/{agentId}/archival-memory/{memoryId}",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Delete,
@@ -57,7 +82,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

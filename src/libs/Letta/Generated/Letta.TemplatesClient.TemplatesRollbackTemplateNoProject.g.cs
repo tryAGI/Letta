@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class TemplatesClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_TemplatesRollbackTemplateNoProjectSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_TemplatesRollbackTemplateNoProjectSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_TemplatesRollbackTemplateNoProjectSecurityRequirement0,
+            };
         partial void PrepareTemplatesRollbackTemplateNoProjectArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string templateName,
@@ -46,9 +65,15 @@ namespace Letta
                 templateName: ref templateName,
                 request: request);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_TemplatesRollbackTemplateNoProjectSecurityRequirements,
+                operationName: "TemplatesRollbackTemplateNoProjectAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: $"/v1/templates/{templateName}/rollback",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Post,
@@ -58,7 +83,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

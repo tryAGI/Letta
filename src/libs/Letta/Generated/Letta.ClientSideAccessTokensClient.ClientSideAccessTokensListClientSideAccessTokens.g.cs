@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class ClientSideAccessTokensClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_ClientSideAccessTokensListClientSideAccessTokensSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_ClientSideAccessTokensListClientSideAccessTokensSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_ClientSideAccessTokensListClientSideAccessTokensSecurityRequirement0,
+            };
         partial void PrepareClientSideAccessTokensListClientSideAccessTokensArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? agentId,
@@ -52,6 +71,12 @@ namespace Letta
                 offset: ref offset,
                 limit: ref limit);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ClientSideAccessTokensListClientSideAccessTokensSecurityRequirements,
+                operationName: "ClientSideAccessTokensListClientSideAccessTokensAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/client-side-access-tokens",
                 baseUri: HttpClient.BaseAddress); 
@@ -59,7 +84,7 @@ namespace Letta
                 .AddOptionalParameter("agentId", agentId)
                 .AddOptionalParameter("offset", offset?.ToString())
                 .AddOptionalParameter("limit", limit?.ToString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -69,7 +94,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

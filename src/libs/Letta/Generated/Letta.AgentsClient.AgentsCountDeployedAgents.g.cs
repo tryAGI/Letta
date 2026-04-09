@@ -5,6 +5,25 @@ namespace Letta
 {
     public partial class AgentsClient
     {
+
+
+        private static readonly global::Letta.EndPointSecurityRequirement s_AgentsCountDeployedAgentsSecurityRequirement0 =
+            new global::Letta.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Letta.EndPointAuthorizationRequirement[]
+                {                    new global::Letta.EndPointAuthorizationRequirement
+                    {
+                        Type = "Http",
+                        Location = "Header",
+                        Name = "Bearer",
+                        FriendlyName = "Bearer",
+                    },
+                },
+            };
+        private static readonly global::Letta.EndPointSecurityRequirement[] s_AgentsCountDeployedAgentsSecurityRequirements =
+            new global::Letta.EndPointSecurityRequirement[]
+            {                s_AgentsCountDeployedAgentsSecurityRequirement0,
+            };
         partial void PrepareAgentsCountDeployedAgentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>? search,
@@ -48,6 +67,12 @@ namespace Letta
                 projectId: ref projectId,
                 combinator: ref combinator);
 
+
+            var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_AgentsCountDeployedAgentsSecurityRequirements,
+                operationName: "AgentsCountDeployedAgentsAsync");
+
             var __pathBuilder = new global::Letta.PathBuilder(
                 path: "/v1/agents/search/count",
                 baseUri: HttpClient.BaseAddress); 
@@ -55,7 +80,7 @@ namespace Letta
                 .AddOptionalParameter("search", search, selector: static x => x.ToString() ?? string.Empty, delimiter: ",", explode: true)
                 .AddOptionalParameter("project_id", projectId)
                 .AddOptionalParameter("combinator", combinator?.ToValueString()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -65,7 +90,7 @@ namespace Letta
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
