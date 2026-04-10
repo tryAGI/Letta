@@ -25,12 +25,14 @@ namespace Letta
         /// The ID of the agent in the format 'agent-&lt;uuid4&gt;'
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.LettaResponse> SendMessageAsync(
             string agentId,
 
             global::Letta.LettaStreamingRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Send Message<br/>
@@ -106,6 +108,7 @@ namespace Letta
         /// Whether to process the request in the background (only used when streaming=true).<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.LettaResponse> SendMessageAsync(
@@ -126,6 +129,7 @@ namespace Letta
             bool? streamTokens = default,
             bool? includePings = default,
             bool? background = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

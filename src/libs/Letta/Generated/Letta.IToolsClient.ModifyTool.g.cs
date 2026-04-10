@@ -12,12 +12,14 @@ namespace Letta
         /// The ID of the tool in the format 'tool-&lt;uuid4&gt;'
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Tool> ModifyToolAsync(
             string toolId,
 
             global::Letta.ToolUpdate request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Modify Tool<br/>
@@ -63,6 +65,7 @@ namespace Letta
         /// If set to True, then this tool will potentially be executed concurrently with other tools. Default False.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Tool> ModifyToolAsync(
@@ -79,6 +82,7 @@ namespace Letta
             object? metadata = default,
             bool? defaultRequiresApproval = default,
             bool? enableParallelExecution = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

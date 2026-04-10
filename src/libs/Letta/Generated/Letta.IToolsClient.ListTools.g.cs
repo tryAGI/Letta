@@ -48,6 +48,7 @@ namespace Letta
         /// Return only tools with tool_type starting with 'letta_'<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.Tool>> ListToolsAsync(
@@ -63,6 +64,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? toolTypes = default,
             global::System.Collections.Generic.IList<string>? excludeToolTypes = default,
             bool? returnOnlyLettaTools = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -12,12 +12,14 @@ namespace Letta
         /// The agent ID to create a conversation for
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Conversation> CreateConversationAsync(
             string agentId,
 
             global::Letta.CreateConversation request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Conversation<br/>
@@ -38,6 +40,7 @@ namespace Letta
         /// <param name="modelSettings">
         /// The model settings for this conversation (overrides agent's model settings).
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Conversation> CreateConversationAsync(
@@ -46,6 +49,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? isolatedBlockLabels = default,
             string? model = default,
             global::Letta.ModelSettingsVariant16? modelSettings = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
