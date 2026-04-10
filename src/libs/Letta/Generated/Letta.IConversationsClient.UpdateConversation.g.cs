@@ -12,12 +12,14 @@ namespace Letta
         /// The ID of the conv in the format 'conv-&lt;uuid4&gt;'
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Conversation> UpdateConversationAsync(
             string conversationId,
 
             global::Letta.UpdateConversation request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update Conversation<br/>
@@ -38,6 +40,7 @@ namespace Letta
         /// <param name="lastMessageAt">
         /// Timestamp of the most recent message request sent to this conversation.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Conversation> UpdateConversationAsync(
@@ -46,6 +49,7 @@ namespace Letta
             string? model = default,
             global::Letta.ModelSettingsVariant19? modelSettings = default,
             global::System.DateTime? lastMessageAt = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

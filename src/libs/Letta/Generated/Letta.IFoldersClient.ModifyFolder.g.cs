@@ -12,12 +12,14 @@ namespace Letta
         /// The ID of the source in the format 'source-&lt;uuid4&gt;'
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Folder> ModifyFolderAsync(
             string folderId,
 
             global::Letta.SourceUpdate request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Modify Folder<br/>
@@ -41,6 +43,7 @@ namespace Letta
         /// <param name="embeddingConfig">
         /// The embedding configuration used by the source.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.Folder> ModifyFolderAsync(
@@ -50,6 +53,7 @@ namespace Letta
             string? instructions = default,
             object? metadata = default,
             global::Letta.EmbeddingConfig? embeddingConfig = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

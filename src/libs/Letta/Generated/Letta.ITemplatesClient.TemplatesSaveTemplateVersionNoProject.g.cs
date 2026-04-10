@@ -10,12 +10,14 @@ namespace Letta
         /// </summary>
         /// <param name="templateName"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.TemplatesSaveTemplateVersionNoProjectResponse> TemplatesSaveTemplateVersionNoProjectAsync(
             string templateName,
 
             global::Letta.TemplatesSaveTemplateVersionNoProjectRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Save template version (Cloud-only)<br/>
@@ -40,6 +42,7 @@ namespace Letta
         /// <param name="message">
         /// A message to describe the changes made in this template version
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.TemplatesSaveTemplateVersionNoProjectResponse> TemplatesSaveTemplateVersionNoProjectAsync(
@@ -50,6 +53,7 @@ namespace Letta
             global::Letta.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategy? blockReconciliationStrategy = default,
             bool? migrateAgents = default,
             string? message = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

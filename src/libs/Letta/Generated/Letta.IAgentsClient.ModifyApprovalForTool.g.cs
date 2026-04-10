@@ -19,6 +19,7 @@ namespace Letta
         /// Whether the tool requires approval before execution
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.AgentState> ModifyApprovalForToolAsync(
@@ -27,6 +28,7 @@ namespace Letta
 
             global::Letta.ModifyApprovalRequest request,
             bool? requiresApproval = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Modify Approval For Tool<br/>
@@ -40,12 +42,14 @@ namespace Letta
         /// <param name="requiresApproval">
         /// Whether the tool requires approval before execution
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.AgentState> ModifyApprovalForToolAsync(
             string toolName,
             string agentId,
             bool? requiresApproval = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

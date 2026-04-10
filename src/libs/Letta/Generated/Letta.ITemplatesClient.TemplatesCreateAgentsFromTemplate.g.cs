@@ -11,6 +11,7 @@ namespace Letta
         /// <param name="projectId"></param>
         /// <param name="templateVersion"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task TemplatesCreateAgentsFromTemplateAsync(
@@ -18,6 +19,7 @@ namespace Letta
             string templateVersion,
 
             global::Letta.TemplatesCreateAgentsFromTemplateRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Agents From Template<br/>
@@ -43,6 +45,7 @@ namespace Letta
         /// <param name="identityIds">
         /// The identity ids to assign to the agent
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task TemplatesCreateAgentsFromTemplateAsync(
@@ -54,6 +57,7 @@ namespace Letta
             global::System.Collections.Generic.Dictionary<string, string>? memoryVariables = default,
             global::System.Collections.Generic.Dictionary<string, string>? toolVariables = default,
             global::System.Collections.Generic.IList<string>? identityIds = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

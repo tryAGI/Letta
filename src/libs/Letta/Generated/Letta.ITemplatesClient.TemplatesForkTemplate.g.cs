@@ -11,6 +11,7 @@ namespace Letta
         /// <param name="projectId"></param>
         /// <param name="templateVersion"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.TemplatesForkTemplateResponse> TemplatesForkTemplateAsync(
@@ -18,6 +19,7 @@ namespace Letta
             string templateVersion,
 
             global::Letta.TemplatesForkTemplateRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Fork template (Cloud-only)<br/>
@@ -28,12 +30,14 @@ namespace Letta
         /// <param name="name">
         /// Optional custom name for the forked template. If not provided, a random name will be generated.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.TemplatesForkTemplateResponse> TemplatesForkTemplateAsync(
             string projectId,
             string templateVersion,
             string? name = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

@@ -25,6 +25,7 @@ namespace Letta
             Authorizations.Add(new global::Letta.EndPointAuthorization
             {
                 Type = "Http",
+                SchemeId = "BearerAuth",
                 Location = "Header",
                 Name = "Bearer",
                 Value = apiKey,

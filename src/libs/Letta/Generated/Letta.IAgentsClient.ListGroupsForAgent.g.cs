@@ -32,6 +32,7 @@ namespace Letta
         /// Field to sort by<br/>
         /// Default Value: created_at
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Letta.Group>> ListGroupsForAgentAsync(
@@ -42,6 +43,7 @@ namespace Letta
             int? limit = default,
             global::Letta.ListGroupsForAgentOrder? order = default,
             string? orderBy = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

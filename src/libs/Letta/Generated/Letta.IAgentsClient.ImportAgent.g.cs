@@ -13,12 +13,14 @@ namespace Letta
         /// </summary>
         /// <param name="xOverrideEmbeddingModel"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.ImportedAgentsResponse> ImportAgentAsync(
 
             global::Letta.BodyImportAgent request,
             string? xOverrideEmbeddingModel = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Import Agent<br/>
@@ -48,6 +50,7 @@ namespace Letta
         /// <param name="model">
         /// Model handle to override the agent's default model. This allows the imported agent to use a different model while keeping other defaults (e.g., context size) from the original configuration.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.ImportedAgentsResponse> ImportAgentAsync(
@@ -60,6 +63,7 @@ namespace Letta
             string? name = default,
             string? embedding = default,
             string? model = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

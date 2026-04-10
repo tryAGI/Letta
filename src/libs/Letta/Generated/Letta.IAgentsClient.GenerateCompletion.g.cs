@@ -27,12 +27,14 @@ namespace Letta
         /// The ID of the agent in the format 'agent-&lt;uuid4&gt;'
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.GenerateResponse> GenerateCompletionAsync(
             string agentId,
 
             global::Letta.GenerateRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Generate Completion<br/>
@@ -68,6 +70,7 @@ namespace Letta
         /// <param name="responseSchema">
         /// JSON schema for structured output. When provided, the LLM will be forced to return a response matching this schema via tool calling. The schema should follow JSON Schema format with 'properties' and optionally 'required' fields.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.GenerateResponse> GenerateCompletionAsync(
@@ -76,6 +79,7 @@ namespace Letta
             string? systemPrompt = default,
             string? overrideModel = default,
             object? responseSchema = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

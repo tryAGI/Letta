@@ -16,6 +16,7 @@ namespace Letta
         /// Default Value: false
         /// </param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<string> RecompileConversationAsync(
@@ -23,6 +24,7 @@ namespace Letta
 
             global::Letta.LettaServerRestApiRoutersV1ConversationsCompactionRequest request,
             bool? dryRun = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Recompile Conversation<br/>
@@ -35,11 +37,13 @@ namespace Letta
         /// If True, do not persist changes; still returns the compiled system prompt.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<string> RecompileConversationAsync(
             string conversationId,
             bool? dryRun = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

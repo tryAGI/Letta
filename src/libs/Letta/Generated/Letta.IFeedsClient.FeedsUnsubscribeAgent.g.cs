@@ -10,12 +10,14 @@ namespace Letta
         /// </summary>
         /// <param name="feedId"></param>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Letta.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.FeedsUnsubscribeAgentResponse> FeedsUnsubscribeAgentAsync(
             string feedId,
 
             global::Letta.FeedsUnsubscribeAgentRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Unsubscribe Agent from Feed<br/>
@@ -23,11 +25,13 @@ namespace Letta
         /// </summary>
         /// <param name="feedId"></param>
         /// <param name="agentId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.FeedsUnsubscribeAgentResponse> FeedsUnsubscribeAgentAsync(
             string feedId,
             string agentId,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
