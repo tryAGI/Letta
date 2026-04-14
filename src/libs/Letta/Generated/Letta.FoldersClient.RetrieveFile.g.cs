@@ -6,6 +6,19 @@ namespace Letta
     public partial class FoldersClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_RetrieveFileServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_RetrieveFileSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -101,7 +114,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: $"/v1/folders/{folderId}/files/{fileId}",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_RetrieveFileServers,
+                                defaultBaseUrl: "https://app.letta.com/")); 
                             __pathBuilder
                                 .AddOptionalParameter("include_content", includeContent?.ToString().ToLowerInvariant()) 
                                 ;
