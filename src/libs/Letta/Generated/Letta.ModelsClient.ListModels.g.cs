@@ -6,6 +6,19 @@ namespace Letta
     public partial class ModelsClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_ListModelsServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_ListModelsSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -96,7 +109,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: "/v1/models/",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_ListModelsServers,
+                                defaultBaseUrl: "https://app.letta.com/")); 
                             __pathBuilder
                                 .AddOptionalParameter("provider_category", providerCategory?.ToString())
                                 .AddOptionalParameter("provider_name", providerName)

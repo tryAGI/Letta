@@ -6,6 +6,19 @@ namespace Letta
     public partial class ToolsClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_ListMcpToolsByServerServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_ListMcpToolsByServerSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -84,7 +97,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: $"/v1/tools/mcp/servers/{mcpServerName}/tools",
-                                baseUri: HttpClient.BaseAddress);
+                                baseUri: ResolveBaseUri(
+                                servers: s_ListMcpToolsByServerServers,
+                                defaultBaseUrl: "https://app.letta.com/"));
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,

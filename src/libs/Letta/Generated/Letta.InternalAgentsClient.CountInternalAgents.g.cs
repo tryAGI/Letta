@@ -6,6 +6,19 @@ namespace Letta
     public partial class InternalAgentsClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_CountInternalAgentsServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_CountInternalAgentsSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -87,7 +100,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: "/v1/_internal_agents/count",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_CountInternalAgentsServers,
+                                defaultBaseUrl: "https://app.letta.com/")); 
                             __pathBuilder
                                 .AddOptionalParameter("exclude_hidden", excludeHidden?.ToString().ToLowerInvariant()) 
                                 ;

@@ -6,6 +6,19 @@ namespace Letta
     public partial class FeedsClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_FeedsListSubscriptionsServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_FeedsListSubscriptionsSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -99,7 +112,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: $"/v1/feeds/{feedId}/subscriptions",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_FeedsListSubscriptionsServers,
+                                defaultBaseUrl: "https://app.letta.com/")); 
                             __pathBuilder
                                 .AddOptionalParameter("limit", limit)
                                 .AddOptionalParameter("offset", offset?.ToString())

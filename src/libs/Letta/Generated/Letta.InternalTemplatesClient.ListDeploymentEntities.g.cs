@@ -6,6 +6,19 @@ namespace Letta
     public partial class InternalTemplatesClient
     {
 
+        private static readonly global::Letta.AutoSDKServer[] s_ListDeploymentEntitiesServers = new global::Letta.AutoSDKServer[]
+        {            new global::Letta.AutoSDKServer(
+                id: "https-app-letta-com",
+                name: "Letta Cloud",
+                url: "https://app.letta.com/",
+                description: "Letta Cloud"),
+            new global::Letta.AutoSDKServer(
+                id: "http-localhost",
+                name: "Self-hosted",
+                url: "http://localhost:8283/",
+                description: "Self-hosted"),
+        };
+
 
         private static readonly global::Letta.EndPointSecurityRequirement s_ListDeploymentEntitiesSecurityRequirement0 =
             new global::Letta.EndPointSecurityRequirement
@@ -92,7 +105,9 @@ namespace Letta
             {
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: $"/v1/_internal_templates/deployment/{deploymentId}",
-                                baseUri: HttpClient.BaseAddress); 
+                                baseUri: ResolveBaseUri(
+                                servers: s_ListDeploymentEntitiesServers,
+                                defaultBaseUrl: "https://app.letta.com/")); 
                             __pathBuilder
                                 .AddOptionalParameter("entity_types", entityTypes?.ToString()) 
                                 ;
