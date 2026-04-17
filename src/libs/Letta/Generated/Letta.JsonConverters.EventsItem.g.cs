@@ -23,27 +23,85 @@ namespace Letta.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("data")) __score0++;
+            if (__jsonProps.Contains("data.agent_id")) __score0++;
+            if (__jsonProps.Contains("data.node_version")) __score0++;
+            if (__jsonProps.Contains("data.platform")) __score0++;
+            if (__jsonProps.Contains("data.session_id")) __score0++;
+            if (__jsonProps.Contains("data.startup_command")) __score0++;
+            if (__jsonProps.Contains("data.surface")) __score0++;
+            if (__jsonProps.Contains("data.version")) __score0++;
             if (__jsonProps.Contains("timestamp")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("data")) __score1++;
+            if (__jsonProps.Contains("data.agent_id")) __score1++;
+            if (__jsonProps.Contains("data.cached_tokens")) __score1++;
+            if (__jsonProps.Contains("data.completion_tokens")) __score1++;
+            if (__jsonProps.Contains("data.duration")) __score1++;
+            if (__jsonProps.Contains("data.exit_reason")) __score1++;
+            if (__jsonProps.Contains("data.message_count")) __score1++;
+            if (__jsonProps.Contains("data.prompt_tokens")) __score1++;
+            if (__jsonProps.Contains("data.reasoning_tokens")) __score1++;
+            if (__jsonProps.Contains("data.session_id")) __score1++;
+            if (__jsonProps.Contains("data.step_count")) __score1++;
+            if (__jsonProps.Contains("data.surface")) __score1++;
+            if (__jsonProps.Contains("data.tool_call_count")) __score1++;
+            if (__jsonProps.Contains("data.total_api_ms")) __score1++;
+            if (__jsonProps.Contains("data.total_tokens")) __score1++;
+            if (__jsonProps.Contains("data.total_wall_ms")) __score1++;
             if (__jsonProps.Contains("timestamp")) __score1++;
             if (__jsonProps.Contains("type")) __score1++;
             var __score2 = 0;
             if (__jsonProps.Contains("data")) __score2++;
+            if (__jsonProps.Contains("data.agent_id")) __score2++;
+            if (__jsonProps.Contains("data.duration")) __score2++;
+            if (__jsonProps.Contains("data.error_type")) __score2++;
+            if (__jsonProps.Contains("data.response_length")) __score2++;
+            if (__jsonProps.Contains("data.session_id")) __score2++;
+            if (__jsonProps.Contains("data.stderr")) __score2++;
+            if (__jsonProps.Contains("data.success")) __score2++;
+            if (__jsonProps.Contains("data.surface")) __score2++;
+            if (__jsonProps.Contains("data.tool_name")) __score2++;
             if (__jsonProps.Contains("timestamp")) __score2++;
             if (__jsonProps.Contains("type")) __score2++;
             var __score3 = 0;
             if (__jsonProps.Contains("data")) __score3++;
+            if (__jsonProps.Contains("data.agent_id")) __score3++;
+            if (__jsonProps.Contains("data.context")) __score3++;
+            if (__jsonProps.Contains("data.debug_log_tail")) __score3++;
+            if (__jsonProps.Contains("data.error_message")) __score3++;
+            if (__jsonProps.Contains("data.error_type")) __score3++;
+            if (__jsonProps.Contains("data.http_status")) __score3++;
+            if (__jsonProps.Contains("data.model_id")) __score3++;
+            if (__jsonProps.Contains("data.recent_chunks")) __score3++;
+            if (__jsonProps.Contains("data.run_id")) __score3++;
+            if (__jsonProps.Contains("data.session_id")) __score3++;
+            if (__jsonProps.Contains("data.surface")) __score3++;
             if (__jsonProps.Contains("timestamp")) __score3++;
             if (__jsonProps.Contains("type")) __score3++;
             var __score4 = 0;
             if (__jsonProps.Contains("data")) __score4++;
+            if (__jsonProps.Contains("data.agent_id")) __score4++;
+            if (__jsonProps.Contains("data.command_name")) __score4++;
+            if (__jsonProps.Contains("data.input_length")) __score4++;
+            if (__jsonProps.Contains("data.is_command")) __score4++;
+            if (__jsonProps.Contains("data.message_type")) __score4++;
+            if (__jsonProps.Contains("data.model_id")) __score4++;
+            if (__jsonProps.Contains("data.session_id")) __score4++;
+            if (__jsonProps.Contains("data.surface")) __score4++;
             if (__jsonProps.Contains("timestamp")) __score4++;
             if (__jsonProps.Contains("type")) __score4++;
             var __bestScore = 0;
