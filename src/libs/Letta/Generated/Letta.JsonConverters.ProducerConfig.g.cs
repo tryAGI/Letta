@@ -23,11 +23,21 @@ namespace Letta.JsonConverters
                 foreach (var __jsonProp in __jsonDocument.RootElement.EnumerateObject())
                 {
                     __jsonProps.Add(__jsonProp.Name);
+                    if (__jsonProp.Value.ValueKind == global::System.Text.Json.JsonValueKind.Object)
+                    {
+                        foreach (var __nestedJsonProp in __jsonProp.Value.EnumerateObject())
+                        {
+                            __jsonProps.Add(__jsonProp.Name + "." + __nestedJsonProp.Name);
+                        }
+                    }
+
                 }
             }
 
             var __score0 = 0;
             if (__jsonProps.Contains("data")) __score0++;
+            if (__jsonProps.Contains("data.channels")) __score0++;
+            if (__jsonProps.Contains("data.max_messages_per_poll")) __score0++;
             if (__jsonProps.Contains("type")) __score0++;
             var __score1 = 0;
             if (__jsonProps.Contains("data")) __score1++;
