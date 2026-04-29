@@ -159,8 +159,8 @@ namespace Letta
                 PrepareFeedsDeleteSubscriptionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
-                    subscriptionId: subscriptionId,
+                    feedId: feedId!,
+                    subscriptionId: subscriptionId!,
                     request: request);
 
                 return __httpRequest;

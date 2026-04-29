@@ -154,7 +154,7 @@ namespace Letta
                 PrepareSandboxesTerminateSandboxRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sandboxId: sandboxId,
+                    sandboxId: sandboxId!,
                     request: request);
 
                 return __httpRequest;

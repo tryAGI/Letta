@@ -196,8 +196,8 @@ namespace Letta
                 PrepareSearchArchivalMemoryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    query: query,
+                    agentId: agentId!,
+                    query: query!,
                     tags: tags,
                     tagMatchMode: tagMatchMode,
                     topK: topK,

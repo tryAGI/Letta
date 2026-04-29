@@ -157,7 +157,7 @@ namespace Letta
                 PrepareCreatePassagesInArchiveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId,
+                    archiveId: archiveId!,
                     request: request);
 
                 return __httpRequest;

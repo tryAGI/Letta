@@ -141,7 +141,7 @@ namespace Letta
                 PrepareDeleteBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    blockId: blockId);
+                    blockId: blockId!);
 
                 return __httpRequest;
             }

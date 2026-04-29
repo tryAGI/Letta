@@ -193,7 +193,7 @@ namespace Letta
                 PrepareListMessagesForBatchRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    batchId: batchId,
+                    batchId: batchId!,
                     before: before,
                     after: after,
                     limit: limit,

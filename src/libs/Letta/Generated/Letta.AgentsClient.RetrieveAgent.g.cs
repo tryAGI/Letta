@@ -163,7 +163,7 @@ namespace Letta
                 PrepareRetrieveAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     includeRelationships: includeRelationships,
                     include: include);
 

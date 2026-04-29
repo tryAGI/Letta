@@ -160,23 +160,51 @@ namespace Letta
             }
                             var __httpRequestContent = new global::System.Net.Http.MultipartFormDataContent();
                             __httpRequestContent.Add(
-                                content: new global::System.Net.Http.StringContent($"{folderId}"),
+                                content: new global::System.Net.Http.StringContent(folderId ?? string.Empty),
                                 name: "\"folder_id\"");
                             if (duplicateHandling != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{duplicateHandling?.ToValueString()}"),
+                                    content: new global::System.Net.Http.StringContent((duplicateHandling).HasValue ? (duplicateHandling).GetValueOrDefault().ToValueString() : string.Empty),
                                     name: "\"duplicate_handling\"");
                             } 
                             if (name != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{name}"),
+                                    content: new global::System.Net.Http.StringContent(name ?? string.Empty),
                                     name: "\"name\"");
                             }
                             var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File ?? global::System.Array.Empty<byte>());
+                            __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
+                                request.Filename is null
+                                    ? "application/octet-stream"
+                                    : (global::System.IO.Path.GetExtension(request.Filename) ?? string.Empty).ToLowerInvariant() switch
+                                    {
+                                        ".aac" => "audio/aac",
+                                        ".flac" => "audio/flac",
+                                        ".gif" => "image/gif",
+                                        ".jpeg" => "image/jpeg",
+                                        ".jpg" => "image/jpeg",
+                                        ".json" => "application/json",
+                                        ".m4a" => "audio/mp4",
+                                        ".mp3" => "audio/mpeg",
+                                        ".mp4" => "video/mp4",
+                                        ".mpeg" => "audio/mpeg",
+                                        ".mpga" => "audio/mpeg",
+                                        ".oga" => "audio/ogg",
+                                        ".ogg" => "audio/ogg",
+                                        ".opus" => "audio/ogg",
+                                        ".pdf" => "application/pdf",
+                                        ".png" => "image/png",
+                                        ".txt" => "text/plain",
+                                        ".wav" => "audio/wav",
+                                        ".weba" => "audio/webm",
+                                        ".webm" => "video/webm",
+                                        ".webp" => "image/webp",
+                                        _ => "application/octet-stream",
+                                    });
                             __httpRequestContent.Add(
                                 content: __contentFile,
                                 name: "\"file\"",
@@ -197,7 +225,7 @@ namespace Letta
                 PrepareUploadFileToFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
+                    folderId: folderId!,
                     duplicateHandling: duplicateHandling,
                     name: name,
                     request: request);

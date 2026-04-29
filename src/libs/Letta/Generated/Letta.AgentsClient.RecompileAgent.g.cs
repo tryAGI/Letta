@@ -162,7 +162,7 @@ namespace Letta
                 PrepareRecompileAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     updateTimestamp: updateTimestamp,
                     dryRun: dryRun);
 

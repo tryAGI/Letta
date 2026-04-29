@@ -152,7 +152,7 @@ namespace Letta
                 PrepareUpdateMcpServerRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerName: mcpServerName,
+                    mcpServerName: mcpServerName!,
                     request: request);
 
                 return __httpRequest;

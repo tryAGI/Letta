@@ -161,8 +161,8 @@ namespace Letta
                 PrepareModifyCoreMemoryBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    blockLabel: blockLabel,
-                    agentId: agentId,
+                    blockLabel: blockLabel!,
+                    agentId: agentId!,
                     request: request);
 
                 return __httpRequest;

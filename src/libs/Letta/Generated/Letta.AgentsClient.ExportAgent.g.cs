@@ -192,7 +192,7 @@ namespace Letta
                 PrepareExportAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     maxSteps: maxSteps,
                     useLegacyFormat: useLegacyFormat,
                     conversationId: conversationId,

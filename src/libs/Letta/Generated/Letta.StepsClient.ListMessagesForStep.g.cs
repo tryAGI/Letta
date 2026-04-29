@@ -187,7 +187,7 @@ namespace Letta
                 PrepareListMessagesForStepRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    stepId: stepId,
+                    stepId: stepId!,
                     before: before,
                     after: after,
                     limit: limit,

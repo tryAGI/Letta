@@ -142,7 +142,7 @@ namespace Letta
                 PrepareRetrieveArchiveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId);
+                    archiveId: archiveId!);
 
                 return __httpRequest;
             }

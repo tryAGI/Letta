@@ -145,8 +145,8 @@ namespace Letta
                 PrepareAddMcpToolRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerName: mcpServerName,
-                    mcpToolName: mcpToolName);
+                    mcpServerName: mcpServerName!,
+                    mcpToolName: mcpToolName!);
 
                 return __httpRequest;
             }

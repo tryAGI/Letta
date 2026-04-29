@@ -145,8 +145,8 @@ namespace Letta
                 PrepareDeletePassageFromArchiveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId,
-                    passageId: passageId);
+                    archiveId: archiveId!,
+                    passageId: passageId!);
 
                 return __httpRequest;
             }

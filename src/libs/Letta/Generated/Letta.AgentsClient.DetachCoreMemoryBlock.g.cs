@@ -149,8 +149,8 @@ namespace Letta
                 PrepareDetachCoreMemoryBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    blockId: blockId,
-                    agentId: agentId);
+                    blockId: blockId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

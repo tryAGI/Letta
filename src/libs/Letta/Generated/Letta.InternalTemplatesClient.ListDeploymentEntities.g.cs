@@ -151,7 +151,7 @@ namespace Letta
                 PrepareListDeploymentEntitiesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId,
+                    deploymentId: deploymentId!,
                     entityTypes: entityTypes);
 
                 return __httpRequest;

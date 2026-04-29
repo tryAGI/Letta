@@ -140,7 +140,7 @@ namespace Letta
                 PreparePipelinesGetPipelineRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    pipelineId: pipelineId);
+                    pipelineId: pipelineId!);
 
                 return __httpRequest;
             }

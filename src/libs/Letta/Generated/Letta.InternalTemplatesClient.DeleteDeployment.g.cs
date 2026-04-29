@@ -141,7 +141,7 @@ namespace Letta
                 PrepareDeleteDeploymentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId);
+                    deploymentId: deploymentId!);
 
                 return __httpRequest;
             }

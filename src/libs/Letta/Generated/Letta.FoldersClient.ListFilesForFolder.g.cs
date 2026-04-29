@@ -196,7 +196,7 @@ namespace Letta
                 PrepareListFilesForFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
+                    folderId: folderId!,
                     before: before,
                     after: after,
                     limit: limit,

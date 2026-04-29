@@ -143,7 +143,7 @@ namespace Letta
                 PrepareRefreshProviderModelsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    providerId: providerId);
+                    providerId: providerId!);
 
                 return __httpRequest;
             }

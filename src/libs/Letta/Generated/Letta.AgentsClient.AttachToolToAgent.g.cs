@@ -149,8 +149,8 @@ namespace Letta
                 PrepareAttachToolToAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    toolId: toolId,
-                    agentId: agentId);
+                    toolId: toolId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

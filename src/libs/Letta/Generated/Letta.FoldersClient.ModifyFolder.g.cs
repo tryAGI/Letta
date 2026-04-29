@@ -156,7 +156,7 @@ namespace Letta
                 PrepareModifyFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
+                    folderId: folderId!,
                     request: request);
 
                 return __httpRequest;

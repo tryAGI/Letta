@@ -147,8 +147,8 @@ namespace Letta
                 PrepareDetachArchiveFromAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId,
-                    agentId: agentId);
+                    archiveId: archiveId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

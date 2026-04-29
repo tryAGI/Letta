@@ -147,8 +147,8 @@ namespace Letta
                 PrepareDetachIdentityFromAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    identityId: identityId,
-                    agentId: agentId);
+                    identityId: identityId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

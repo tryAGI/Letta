@@ -187,7 +187,7 @@ namespace Letta
                 PrepareListAgentsForArchiveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId,
+                    archiveId: archiveId!,
                     before: before,
                     after: after,
                     limit: limit,

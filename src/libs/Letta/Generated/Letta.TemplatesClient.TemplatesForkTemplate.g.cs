@@ -159,8 +159,8 @@ namespace Letta
                 PrepareTemplatesForkTemplateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    templateVersion: templateVersion,
+                    projectId: projectId!,
+                    templateVersion: templateVersion!,
                     request: request);
 
                 return __httpRequest;

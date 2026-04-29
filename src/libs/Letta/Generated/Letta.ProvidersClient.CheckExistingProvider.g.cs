@@ -142,7 +142,7 @@ namespace Letta
                 PrepareCheckExistingProviderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    providerId: providerId);
+                    providerId: providerId!);
 
                 return __httpRequest;
             }

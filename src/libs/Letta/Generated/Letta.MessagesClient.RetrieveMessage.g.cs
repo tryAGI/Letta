@@ -142,7 +142,7 @@ namespace Letta
                 PrepareRetrieveMessageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    messageId: messageId);
+                    messageId: messageId!);
 
                 return __httpRequest;
             }

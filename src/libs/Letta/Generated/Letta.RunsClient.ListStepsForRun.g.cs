@@ -185,7 +185,7 @@ namespace Letta
                 PrepareListStepsForRunRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    runId: runId,
+                    runId: runId!,
                     before: before,
                     after: after,
                     limit: limit,

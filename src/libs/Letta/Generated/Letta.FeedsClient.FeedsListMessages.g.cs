@@ -154,7 +154,7 @@ namespace Letta
                 PrepareFeedsListMessagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
+                    feedId: feedId!,
                     afterSequence: afterSequence,
                     limit: limit);
 

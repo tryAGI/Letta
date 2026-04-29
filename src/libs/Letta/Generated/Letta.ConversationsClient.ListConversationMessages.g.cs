@@ -224,7 +224,7 @@ namespace Letta
                 PrepareListConversationMessagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
+                    conversationId: conversationId!,
                     agentId: agentId,
                     before: before,
                     after: after,

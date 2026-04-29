@@ -160,8 +160,8 @@ namespace Letta
                 PrepareRetrieveFileRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
-                    fileId: fileId,
+                    folderId: folderId!,
+                    fileId: fileId!,
                     includeContent: includeContent);
 
                 return __httpRequest;

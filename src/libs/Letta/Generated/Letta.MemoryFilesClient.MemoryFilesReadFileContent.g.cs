@@ -154,8 +154,8 @@ namespace Letta
                 PrepareMemoryFilesReadFileContentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    filePath: filePath,
+                    agentId: agentId!,
+                    filePath: filePath!,
                     @ref: @ref);
 
                 return __httpRequest;

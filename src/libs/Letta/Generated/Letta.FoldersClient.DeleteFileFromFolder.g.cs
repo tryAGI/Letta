@@ -144,8 +144,8 @@ namespace Letta
                 PrepareDeleteFileFromFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
-                    fileId: fileId);
+                    folderId: folderId!,
+                    fileId: fileId!);
 
                 return __httpRequest;
             }

@@ -145,8 +145,8 @@ namespace Letta
                 PrepareFeedsGetMessageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
-                    messageId: messageId);
+                    feedId: feedId!,
+                    messageId: messageId!);
 
                 return __httpRequest;
             }

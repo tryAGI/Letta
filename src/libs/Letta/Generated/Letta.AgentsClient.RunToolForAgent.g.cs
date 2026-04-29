@@ -163,8 +163,8 @@ namespace Letta
                 PrepareRunToolForAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    toolName: toolName,
+                    agentId: agentId!,
+                    toolName: toolName!,
                     request: request);
 
                 return __httpRequest;

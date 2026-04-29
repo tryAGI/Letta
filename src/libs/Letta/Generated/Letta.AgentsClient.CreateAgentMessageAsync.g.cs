@@ -163,7 +163,7 @@ namespace Letta
                 PrepareCreateAgentMessageAsyncRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     request: request);
 
                 return __httpRequest;

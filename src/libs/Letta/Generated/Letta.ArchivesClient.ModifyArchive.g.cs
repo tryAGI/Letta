@@ -156,7 +156,7 @@ namespace Letta
                 PrepareModifyArchiveRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    archiveId: archiveId,
+                    archiveId: archiveId!,
                     request: request);
 
                 return __httpRequest;

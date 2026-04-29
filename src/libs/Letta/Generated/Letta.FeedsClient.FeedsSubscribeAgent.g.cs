@@ -154,7 +154,7 @@ namespace Letta
                 PrepareFeedsSubscribeAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
+                    feedId: feedId!,
                     request: request);
 
                 return __httpRequest;

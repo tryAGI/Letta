@@ -149,8 +149,8 @@ namespace Letta
                 PrepareAttachFolderToAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
-                    agentId: agentId);
+                    folderId: folderId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

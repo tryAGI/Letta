@@ -160,7 +160,7 @@ namespace Letta
                 PrepareFeedsListSubscriptionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
+                    feedId: feedId!,
                     limit: limit,
                     offset: offset,
                     agentId: agentId);
