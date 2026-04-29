@@ -141,7 +141,7 @@ namespace Letta
                 PrepareRetrieveTraceForStepRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    stepId: stepId);
+                    stepId: stepId!);
 
                 return __httpRequest;
             }

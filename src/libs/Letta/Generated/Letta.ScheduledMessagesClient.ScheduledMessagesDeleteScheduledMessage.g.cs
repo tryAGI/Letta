@@ -159,8 +159,8 @@ namespace Letta
                 PrepareScheduledMessagesDeleteScheduledMessageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    scheduledMessageId: scheduledMessageId,
+                    agentId: agentId!,
+                    scheduledMessageId: scheduledMessageId!,
                     request: request);
 
                 return __httpRequest;

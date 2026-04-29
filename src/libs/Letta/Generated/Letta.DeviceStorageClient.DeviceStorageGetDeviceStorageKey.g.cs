@@ -143,7 +143,7 @@ namespace Letta
                 PrepareDeviceStorageGetDeviceStorageKeyRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deviceId: deviceId);
+                    deviceId: deviceId!);
 
                 return __httpRequest;
             }

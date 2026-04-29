@@ -140,7 +140,7 @@ namespace Letta
                 PrepareDeleteMcpServerRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerName: mcpServerName);
+                    mcpServerName: mcpServerName!);
 
                 return __httpRequest;
             }

@@ -156,7 +156,7 @@ namespace Letta
                 PrepareModifyProviderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    providerId: providerId,
+                    providerId: providerId!,
                     request: request);
 
                 return __httpRequest;

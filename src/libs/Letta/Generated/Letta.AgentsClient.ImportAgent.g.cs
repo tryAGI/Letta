@@ -151,10 +151,38 @@ namespace Letta
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{xOverrideEmbeddingModel}"),
+                                    content: new global::System.Net.Http.StringContent(xOverrideEmbeddingModel ?? string.Empty),
                                     name: "\"x-override-embedding-model\"");
                             }
                             var __contentFile = new global::System.Net.Http.ByteArrayContent(request.File ?? global::System.Array.Empty<byte>());
+                            __contentFile.Headers.ContentType = new global::System.Net.Http.Headers.MediaTypeHeaderValue(
+                                request.Filename is null
+                                    ? "application/octet-stream"
+                                    : (global::System.IO.Path.GetExtension(request.Filename) ?? string.Empty).ToLowerInvariant() switch
+                                    {
+                                        ".aac" => "audio/aac",
+                                        ".flac" => "audio/flac",
+                                        ".gif" => "image/gif",
+                                        ".jpeg" => "image/jpeg",
+                                        ".jpg" => "image/jpeg",
+                                        ".json" => "application/json",
+                                        ".m4a" => "audio/mp4",
+                                        ".mp3" => "audio/mpeg",
+                                        ".mp4" => "video/mp4",
+                                        ".mpeg" => "audio/mpeg",
+                                        ".mpga" => "audio/mpeg",
+                                        ".oga" => "audio/ogg",
+                                        ".ogg" => "audio/ogg",
+                                        ".opus" => "audio/ogg",
+                                        ".pdf" => "application/pdf",
+                                        ".png" => "image/png",
+                                        ".txt" => "text/plain",
+                                        ".wav" => "audio/wav",
+                                        ".weba" => "audio/webm",
+                                        ".webm" => "video/webm",
+                                        ".webp" => "image/webp",
+                                        _ => "application/octet-stream",
+                                    });
                             __httpRequestContent.Add(
                                 content: __contentFile,
                                 name: "\"file\"",
@@ -167,84 +195,84 @@ namespace Letta
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.OverrideExistingTools}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.OverrideExistingTools, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"override_existing_tools\"");
                             } 
                             if (request.StripMessages != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.StripMessages}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.StripMessages, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"strip_messages\"");
                             } 
                             if (request.Secrets != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Secrets}"),
+                                    content: new global::System.Net.Http.StringContent(request.Secrets ?? string.Empty),
                                     name: "\"secrets\"");
                             } 
                             if (request.Name != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Name}"),
+                                    content: new global::System.Net.Http.StringContent(request.Name ?? string.Empty),
                                     name: "\"name\"");
                             } 
                             if (request.Embedding != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Embedding}"),
+                                    content: new global::System.Net.Http.StringContent(request.Embedding ?? string.Empty),
                                     name: "\"embedding\"");
                             } 
                             if (request.Model != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.Model}"),
+                                    content: new global::System.Net.Http.StringContent(request.Model ?? string.Empty),
                                     name: "\"model\"");
                             } 
                             if (request.AppendCopySuffix != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.AppendCopySuffix}"),
+                                    content: new global::System.Net.Http.StringContent((global::System.Convert.ToString(request.AppendCopySuffix, global::System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty).ToLowerInvariant()),
                                     name: "\"append_copy_suffix\"");
                             } 
                             if (request.OverrideName != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.OverrideName}"),
+                                    content: new global::System.Net.Http.StringContent(request.OverrideName ?? string.Empty),
                                     name: "\"override_name\"");
                             } 
                             if (request.OverrideEmbeddingHandle != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.OverrideEmbeddingHandle}"),
+                                    content: new global::System.Net.Http.StringContent(request.OverrideEmbeddingHandle ?? string.Empty),
                                     name: "\"override_embedding_handle\"");
                             } 
                             if (request.OverrideModelHandle != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.OverrideModelHandle}"),
+                                    content: new global::System.Net.Http.StringContent(request.OverrideModelHandle ?? string.Empty),
                                     name: "\"override_model_handle\"");
                             } 
                             if (request.ProjectId != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.ProjectId}"),
+                                    content: new global::System.Net.Http.StringContent(request.ProjectId ?? string.Empty),
                                     name: "\"project_id\"");
                             } 
                             if (request.EnvVarsJson != default)
                             {
 
                                 __httpRequestContent.Add(
-                                    content: new global::System.Net.Http.StringContent($"{request.EnvVarsJson}"),
+                                    content: new global::System.Net.Http.StringContent(request.EnvVarsJson ?? string.Empty),
                                     name: "\"env_vars_json\"");
                             }
                             __httpRequest.Content = __httpRequestContent;

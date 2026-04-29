@@ -156,7 +156,7 @@ namespace Letta
                 PrepareModifyFeedbackForStepRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    stepId: stepId,
+                    stepId: stepId!,
                     request: request);
 
                 return __httpRequest;

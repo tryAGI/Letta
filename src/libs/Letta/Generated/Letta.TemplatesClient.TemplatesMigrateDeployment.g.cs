@@ -164,9 +164,9 @@ namespace Letta
                 PrepareTemplatesMigrateDeploymentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    templateName: templateName,
-                    deploymentId: deploymentId,
+                    projectId: projectId!,
+                    templateName: templateName!,
+                    deploymentId: deploymentId!,
                     request: request);
 
                 return __httpRequest;

@@ -153,7 +153,7 @@ namespace Letta
                 PrepareResyncMcpServerToolsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerName: mcpServerName,
+                    mcpServerName: mcpServerName!,
                     agentId: agentId);
 
                 return __httpRequest;

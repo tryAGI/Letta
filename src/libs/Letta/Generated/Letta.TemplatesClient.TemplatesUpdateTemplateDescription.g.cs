@@ -159,8 +159,8 @@ namespace Letta
                 PrepareTemplatesUpdateTemplateDescriptionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    templateName: templateName,
+                    projectId: projectId!,
+                    templateName: templateName!,
                     request: request);
 
                 return __httpRequest;

@@ -160,7 +160,7 @@ namespace Letta
                 PrepareMemoryFilesListDirectoryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     path: path,
                     depth: depth,
                     @ref: @ref);

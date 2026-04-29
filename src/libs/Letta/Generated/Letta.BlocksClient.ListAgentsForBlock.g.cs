@@ -207,7 +207,7 @@ namespace Letta
                 PrepareListAgentsForBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    blockId: blockId,
+                    blockId: blockId!,
                     before: before,
                     after: after,
                     limit: limit,

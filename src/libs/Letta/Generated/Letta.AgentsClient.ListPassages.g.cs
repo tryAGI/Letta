@@ -186,7 +186,7 @@ namespace Letta
                 PrepareListPassagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     after: after,
                     before: before,
                     limit: limit,

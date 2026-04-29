@@ -154,7 +154,7 @@ namespace Letta
                 PrepareScheduledMessagesListScheduledMessagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     limit: limit,
                     after: after);
 

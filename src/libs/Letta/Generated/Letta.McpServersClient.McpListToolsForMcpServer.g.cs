@@ -140,7 +140,7 @@ namespace Letta
                 PrepareMcpListToolsForMcpServerRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerId: mcpServerId);
+                    mcpServerId: mcpServerId!);
 
                 return __httpRequest;
             }

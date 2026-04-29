@@ -205,7 +205,7 @@ namespace Letta
                 PrepareListFilesForAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     before: before,
                     after: after,
                     limit: limit,

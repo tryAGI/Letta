@@ -154,7 +154,7 @@ namespace Letta
                 PrepareTemplatesRollbackTemplateNoProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    templateName: templateName,
+                    templateName: templateName!,
                     request: request);
 
                 return __httpRequest;

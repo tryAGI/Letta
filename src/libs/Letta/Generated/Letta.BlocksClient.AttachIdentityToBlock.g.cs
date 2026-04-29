@@ -147,8 +147,8 @@ namespace Letta
                 PrepareAttachIdentityToBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    identityId: identityId,
-                    blockId: blockId);
+                    identityId: identityId!,
+                    blockId: blockId!);
 
                 return __httpRequest;
             }

@@ -145,8 +145,8 @@ namespace Letta
                 PrepareScheduledMessagesRetrieveScheduledMessageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    scheduledMessageId: scheduledMessageId);
+                    agentId: agentId!,
+                    scheduledMessageId: scheduledMessageId!);
 
                 return __httpRequest;
             }

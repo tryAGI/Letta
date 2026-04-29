@@ -142,7 +142,7 @@ namespace Letta
                 PrepareDeleteFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId);
+                    folderId: folderId!);
 
                 return __httpRequest;
             }

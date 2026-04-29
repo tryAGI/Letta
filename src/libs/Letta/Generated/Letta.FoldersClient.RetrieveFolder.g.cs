@@ -142,7 +142,7 @@ namespace Letta
                 PrepareRetrieveFolderRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId);
+                    folderId: folderId!);
 
                 return __httpRequest;
             }

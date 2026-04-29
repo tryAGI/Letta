@@ -195,7 +195,7 @@ namespace Letta
                 PrepareListGroupsForAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     managerType: managerType,
                     before: before,
                     after: after,

@@ -147,8 +147,8 @@ namespace Letta
                 PrepareDeletePassageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    memoryId: memoryId,
-                    agentId: agentId);
+                    memoryId: memoryId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }

@@ -145,8 +145,8 @@ namespace Letta
                 PrepareTemplatesGetTemplateSnapshotRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    templateVersion: templateVersion);
+                    projectId: projectId!,
+                    templateVersion: templateVersion!);
 
                 return __httpRequest;
             }

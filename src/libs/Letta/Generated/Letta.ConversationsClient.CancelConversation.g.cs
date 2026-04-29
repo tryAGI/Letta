@@ -156,7 +156,7 @@ namespace Letta
                 PrepareCancelConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
+                    conversationId: conversationId!,
                     agentId: agentId);
 
                 return __httpRequest;

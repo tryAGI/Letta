@@ -154,7 +154,7 @@ namespace Letta
                 PrepareTemplatesCreateAgentsFromTemplateNoProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    templateVersion: templateVersion,
+                    templateVersion: templateVersion!,
                     request: request);
 
                 return __httpRequest;

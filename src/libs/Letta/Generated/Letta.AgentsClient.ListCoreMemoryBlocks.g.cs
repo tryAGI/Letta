@@ -187,7 +187,7 @@ namespace Letta
                 PrepareListCoreMemoryBlocksRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
+                    agentId: agentId!,
                     before: before,
                     after: after,
                     limit: limit,

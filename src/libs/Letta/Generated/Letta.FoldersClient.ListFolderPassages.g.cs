@@ -187,7 +187,7 @@ namespace Letta
                 PrepareListFolderPassagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    folderId: folderId,
+                    folderId: folderId!,
                     before: before,
                     after: after,
                     limit: limit,

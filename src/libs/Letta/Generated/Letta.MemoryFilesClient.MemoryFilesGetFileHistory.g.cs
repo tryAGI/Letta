@@ -154,8 +154,8 @@ namespace Letta
                 PrepareMemoryFilesGetFileHistoryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    agentId: agentId,
-                    filePath: filePath,
+                    agentId: agentId!,
+                    filePath: filePath!,
                     limit: limit);
 
                 return __httpRequest;

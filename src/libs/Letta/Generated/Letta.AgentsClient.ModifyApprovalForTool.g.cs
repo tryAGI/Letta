@@ -174,8 +174,8 @@ namespace Letta
                 PrepareModifyApprovalForToolRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    toolName: toolName,
-                    agentId: agentId,
+                    toolName: toolName!,
+                    agentId: agentId!,
                     requiresApproval: requiresApproval,
                     request: request);
 

@@ -153,7 +153,7 @@ namespace Letta
                 PrepareMcpRefreshMcpServerToolsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerId: mcpServerId,
+                    mcpServerId: mcpServerId!,
                     agentId: agentId);
 
                 return __httpRequest;

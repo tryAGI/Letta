@@ -159,8 +159,8 @@ namespace Letta
                 PrepareTemplatesListTemplateVersionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    name: name,
+                    projectId: projectId!,
+                    name: name!,
                     offset: offset,
                     limit: limit);
 

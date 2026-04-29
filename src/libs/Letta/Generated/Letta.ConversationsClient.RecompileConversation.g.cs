@@ -167,7 +167,7 @@ namespace Letta
                 PrepareRecompileConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
+                    conversationId: conversationId!,
                     dryRun: dryRun,
                     request: request);
 

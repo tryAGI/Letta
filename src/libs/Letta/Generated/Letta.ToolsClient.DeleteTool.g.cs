@@ -142,7 +142,7 @@ namespace Letta
                 PrepareDeleteToolRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    toolId: toolId);
+                    toolId: toolId!);
 
                 return __httpRequest;
             }

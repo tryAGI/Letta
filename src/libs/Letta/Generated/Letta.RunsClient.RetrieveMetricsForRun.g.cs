@@ -140,7 +140,7 @@ namespace Letta
                 PrepareRetrieveMetricsForRunRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    runId: runId);
+                    runId: runId!);
 
                 return __httpRequest;
             }

@@ -155,7 +155,7 @@ namespace Letta
                 PrepareModifyBlockRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    blockId: blockId,
+                    blockId: blockId!,
                     request: request);
 
                 return __httpRequest;

@@ -160,8 +160,8 @@ namespace Letta
                 PrepareMcpRunToolRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerId: mcpServerId,
-                    toolId: toolId,
+                    mcpServerId: mcpServerId!,
+                    toolId: toolId!,
                     request: request);
 
                 return __httpRequest;

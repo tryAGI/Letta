@@ -157,7 +157,7 @@ namespace Letta
                 PrepareRetrieveTraceForRunRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    runId: runId,
+                    runId: runId!,
                     limit: limit);
 
                 return __httpRequest;

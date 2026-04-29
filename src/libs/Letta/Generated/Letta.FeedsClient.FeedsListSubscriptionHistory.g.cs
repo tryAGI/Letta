@@ -159,8 +159,8 @@ namespace Letta
                 PrepareFeedsListSubscriptionHistoryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    feedId: feedId,
-                    subscriptionId: subscriptionId,
+                    feedId: feedId!,
+                    subscriptionId: subscriptionId!,
                     pageSize: pageSize,
                     nextPageToken: nextPageToken);
 

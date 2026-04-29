@@ -154,7 +154,7 @@ namespace Letta
                 PrepareProjectsDeleteProjectRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     request: request);
 
                 return __httpRequest;

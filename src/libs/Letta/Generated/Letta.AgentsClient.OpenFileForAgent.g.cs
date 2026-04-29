@@ -152,8 +152,8 @@ namespace Letta
                 PrepareOpenFileForAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    fileId: fileId,
-                    agentId: agentId);
+                    fileId: fileId!,
+                    agentId: agentId!);
 
                 return __httpRequest;
             }
