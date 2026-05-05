@@ -28,6 +28,23 @@ namespace Letta
         /// <param name="toolId">
         /// The ID of the tool in the format 'tool-&lt;uuid4&gt;'
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.Tool>> ModifyToolAsResponseAsync(
+            string toolId,
+
+            global::Letta.ToolUpdate request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Modify Tool<br/>
+        /// Update an existing tool
+        /// </summary>
+        /// <param name="toolId">
+        /// The ID of the tool in the format 'tool-&lt;uuid4&gt;'
+        /// </param>
         /// <param name="description">
         /// The description of the tool.
         /// </param>

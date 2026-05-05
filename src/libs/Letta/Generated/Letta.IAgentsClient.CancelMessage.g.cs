@@ -30,6 +30,24 @@ namespace Letta
         /// <param name="agentId">
         /// The ID of the agent in the format 'agent-&lt;uuid4&gt;'
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<string>> CancelMessageAsResponseAsync(
+            string agentId,
+
+            global::Letta.CancelAgentRunRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Cancel Message<br/>
+        /// Cancel runs associated with an agent. If run_ids are passed in, cancel those in particular.<br/>
+        /// Note to cancel active runs associated with an agent, redis is required.
+        /// </summary>
+        /// <param name="agentId">
+        /// The ID of the agent in the format 'agent-&lt;uuid4&gt;'
+        /// </param>
         /// <param name="runIds">
         /// Optional list of run IDs to cancel
         /// </param>

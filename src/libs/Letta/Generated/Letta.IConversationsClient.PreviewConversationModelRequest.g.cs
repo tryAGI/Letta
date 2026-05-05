@@ -38,6 +38,27 @@ namespace Letta
         /// <param name="conversationId">
         /// The conversation identifier. Can be a conversation ID ('conv-&lt;uuid4&gt;'), 'default' for agent-direct mode (with agent_id parameter), or an agent ID ('agent-&lt;uuid4&gt;') for backwards compatibility (deprecated).
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<string>> PreviewConversationModelRequestAsResponseAsync(
+            string conversationId,
+
+            global::Letta.ConversationMessageRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Preview Conversation Model Request<br/>
+        /// Inspect the raw LLM request payload for a conversation message without sending it.<br/>
+        /// This endpoint processes the message through the same path as send_conversation_message<br/>
+        /// (including conversation-scoped messages, isolated blocks, model overrides, and<br/>
+        /// client tools/skills) but stops before the LLM call and returns the raw request<br/>
+        /// payload. Useful for debugging and verifying what the LLM will actually see.
+        /// </summary>
+        /// <param name="conversationId">
+        /// The conversation identifier. Can be a conversation ID ('conv-&lt;uuid4&gt;'), 'default' for agent-direct mode (with agent_id parameter), or an agent ID ('agent-&lt;uuid4&gt;') for backwards compatibility (deprecated).
+        /// </param>
         /// <param name="messages">
         /// The messages to be sent to the agent.
         /// </param>

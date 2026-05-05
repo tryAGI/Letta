@@ -45,7 +45,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public AgentsClient Agents => new AgentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public AgentsClient Agents => new AgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -55,7 +55,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ArchivesClient Archives => new ArchivesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ArchivesClient Archives => new ArchivesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -65,7 +65,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public BlocksClient Blocks => new BlocksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public BlocksClient Blocks => new BlocksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -75,7 +75,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ChatClient Chat => new ChatClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ChatClient Chat => new ChatClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -85,7 +85,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ClientSideAccessTokensClient ClientSideAccessTokens => new ClientSideAccessTokensClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ClientSideAccessTokensClient ClientSideAccessTokens => new ClientSideAccessTokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -95,7 +95,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ConversationsClient Conversations => new ConversationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ConversationsClient Conversations => new ConversationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -105,7 +105,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public DeviceStorageClient DeviceStorage => new DeviceStorageClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DeviceStorageClient DeviceStorage => new DeviceStorageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public EmbeddingsClient Embeddings => new EmbeddingsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EmbeddingsClient Embeddings => new EmbeddingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -125,7 +125,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -135,7 +135,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public FeedsClient Feeds => new FeedsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public FeedsClient Feeds => new FeedsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -145,7 +145,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public FoldersClient Folders => new FoldersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public FoldersClient Folders => new FoldersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -155,7 +155,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public HealthClient Health => new HealthClient(HttpClient, authorizations: Authorizations, options: Options)
+        public HealthClient Health => new HealthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -165,7 +165,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public InternalAgentsClient InternalAgents => new InternalAgentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public InternalAgentsClient InternalAgents => new InternalAgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -175,7 +175,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public InternalBlocksClient InternalBlocks => new InternalBlocksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public InternalBlocksClient InternalBlocks => new InternalBlocksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -185,7 +185,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public InternalRunsClient InternalRuns => new InternalRunsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public InternalRunsClient InternalRuns => new InternalRunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -195,7 +195,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public InternalTemplatesClient InternalTemplates => new InternalTemplatesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public InternalTemplatesClient InternalTemplates => new InternalTemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -205,7 +205,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public JobsClient Jobs => new JobsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public JobsClient Jobs => new JobsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -215,7 +215,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public McpServersClient McpServers => new McpServersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public McpServersClient McpServers => new McpServersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -225,7 +225,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public MemoryFilesClient MemoryFiles => new MemoryFilesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MemoryFilesClient MemoryFiles => new MemoryFilesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -235,7 +235,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public MessagesClient Messages => new MessagesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MessagesClient Messages => new MessagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -245,7 +245,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public MetadataClient Metadata => new MetadataClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MetadataClient Metadata => new MetadataClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -255,7 +255,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ModelsClient Models => new ModelsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -265,7 +265,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public PassagesClient Passages => new PassagesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PassagesClient Passages => new PassagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -275,7 +275,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public PipelinesClient Pipelines => new PipelinesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PipelinesClient Pipelines => new PipelinesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -285,7 +285,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -295,7 +295,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ProvidersClient Providers => new ProvidersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProvidersClient Providers => new ProvidersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -305,7 +305,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public RunsClient Runs => new RunsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RunsClient Runs => new RunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -315,7 +315,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -325,7 +325,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ScheduledMessagesClient ScheduledMessages => new ScheduledMessagesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ScheduledMessagesClient ScheduledMessages => new ScheduledMessagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -335,7 +335,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public StepsClient Steps => new StepsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public StepsClient Steps => new StepsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -345,7 +345,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public TagClient Tag => new TagClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TagClient Tag => new TagClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -355,7 +355,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public TemplatesClient Templates => new TemplatesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public TemplatesClient Templates => new TemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -365,7 +365,7 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public ToolsClient Tools => new ToolsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ToolsClient Tools => new ToolsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -433,10 +433,10 @@ namespace Letta
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public LettaClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Letta.EndPointAuthorization>? authorizations = null,
-            global::Letta.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Letta.EndPointAuthorization>? authorizations,
+            global::Letta.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

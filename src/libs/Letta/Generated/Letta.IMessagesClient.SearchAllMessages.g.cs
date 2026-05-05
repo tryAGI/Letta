@@ -25,6 +25,21 @@ namespace Letta
         /// Returns messages with FTS/vector ranks and total RRF score.<br/>
         /// This is a cloud-only feature.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.SearchAllMessagesResponseItem>>> SearchAllMessagesAsResponseAsync(
+
+            global::Letta.SearchAllMessagesRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Search All Messages<br/>
+        /// Search messages across the organization with optional agent filtering.<br/>
+        /// Returns messages with FTS/vector ranks and total RRF score.<br/>
+        /// This is a cloud-only feature.
+        /// </summary>
         /// <param name="query">
         /// Text query for full-text search
         /// </param>
