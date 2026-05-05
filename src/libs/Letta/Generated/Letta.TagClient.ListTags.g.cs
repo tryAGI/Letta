@@ -110,6 +110,62 @@ namespace Letta
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ListTagsAsResponseAsync(
+                before: before,
+                after: after,
+                limit: limit,
+                order: order,
+                orderBy: orderBy,
+                queryText: queryText,
+                name: name,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List Tags<br/>
+        /// Get the list of all tags (from agents and blocks) that have been created.
+        /// </summary>
+        /// <param name="before">
+        /// Tag cursor for pagination. Returns tags that come before this tag in the specified sort order
+        /// </param>
+        /// <param name="after">
+        /// Tag cursor for pagination. Returns tags that come after this tag in the specified sort order
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of tags to return<br/>
+        /// Default Value: 50
+        /// </param>
+        /// <param name="order">
+        /// Sort order for tags. 'asc' for alphabetical order, 'desc' for reverse alphabetical order<br/>
+        /// Default Value: asc
+        /// </param>
+        /// <param name="orderBy">
+        /// Field to sort by<br/>
+        /// Default Value: name
+        /// </param>
+        /// <param name="queryText">
+        /// Filter tags by text search. Deprecated, please use name field instead
+        /// </param>
+        /// <param name="name">
+        /// Filter tags by name
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<string>>> ListTagsAsResponseAsync(
+            string? before = default,
+            string? after = default,
+            int? limit = default,
+            global::Letta.ListTagsOrder? order = default,
+            string? orderBy = default,
+            string? queryText = default,
+            string? name = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareListTagsArguments(
@@ -144,11 +200,12 @@ namespace Letta
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: "/v1/tags/",
                                 baseUri: ResolveBaseUri(
                                 servers: s_ListTagsServers,
-                                defaultBaseUrl: "https://app.letta.com/")); 
+                                defaultBaseUrl: "https://app.letta.com/"));
                             __pathBuilder
                                 .AddOptionalParameter("before", before)
                                 .AddOptionalParameter("after", after)
@@ -156,7 +213,7 @@ namespace Letta
                                 .AddOptionalParameter("order", order?.ToValueString())
                                 .AddOptionalParameter("order_by", orderBy)
                                 .AddOptionalParameter("query_text", queryText)
-                                .AddOptionalParameter("name", name) 
+                                .AddOptionalParameter("name", name)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -234,6 +291,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -244,6 +303,11 @@ namespace Letta
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -261,6 +325,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -270,8 +336,7 @@ namespace Letta
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -280,6 +345,11 @@ namespace Letta
                         __attempt < __maxAttempts &&
                         global::Letta.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Letta.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -296,14 +366,15 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -343,6 +414,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -363,6 +436,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Validation Error
@@ -425,9 +500,13 @@ namespace Letta
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        (global::System.Collections.Generic.IList<string>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<string>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<string>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<string>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<string>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -455,9 +534,13 @@ namespace Letta
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        (global::System.Collections.Generic.IList<string>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<string>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<string>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<string>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<string>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

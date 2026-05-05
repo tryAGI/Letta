@@ -29,6 +29,23 @@ namespace Letta
         /// When streaming is enabled (stream=true), the response will be Server-Sent Events<br/>
         /// with ChatCompletionChunk objects.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.ChatCompletion>> CreateChatCompletionAsResponseAsync(
+
+            global::Letta.ChatCompletionRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Chat Completion<br/>
+        /// Create a chat completion using a Letta agent (OpenAI-compatible).<br/>
+        /// This endpoint provides full OpenAI API compatibility. The agent is selected based on:<br/>
+        /// - The 'model' parameter in the request (should contain an agent ID in format 'agent-...')<br/>
+        /// When streaming is enabled (stream=true), the response will be Server-Sent Events<br/>
+        /// with ChatCompletionChunk objects.
+        /// </summary>
         /// <param name="model">
         /// ID of the model to use
         /// </param>

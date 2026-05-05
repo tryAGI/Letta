@@ -19,5 +19,20 @@ namespace Letta
             bool? excludeHidden = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Count Agents<br/>
+        /// Get the total number of agents for a user, with option to exclude hidden agents.
+        /// </summary>
+        /// <param name="excludeHidden">
+        /// If True, excludes hidden agents from the count. If False, includes all agents.<br/>
+        /// Default Value: true
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<int>> CountInternalAgentsAsResponseAsync(
+            bool? excludeHidden = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

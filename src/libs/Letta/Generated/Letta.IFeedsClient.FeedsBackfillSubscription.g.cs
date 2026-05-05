@@ -27,6 +27,23 @@ namespace Letta
         /// </summary>
         /// <param name="feedId"></param>
         /// <param name="subscriptionId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.FeedsBackfillSubscriptionResponse>> FeedsBackfillSubscriptionAsResponseAsync(
+            string feedId,
+            string subscriptionId,
+
+            global::Letta.FeedsBackfillSubscriptionRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Backfill Subscription<br/>
+        /// Start a background job to send historical messages to an agent subscription. Returns immediately with workflow ID. Does not update last_consumed_sequence.
+        /// </summary>
+        /// <param name="feedId"></param>
+        /// <param name="subscriptionId"></param>
         /// <param name="fromSequence"></param>
         /// <param name="toSequence"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

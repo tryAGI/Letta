@@ -21,5 +21,22 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? entityTypes = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// List Deployment Entities<br/>
+        /// List all entities (blocks, agents, groups) with the specified deployment_id.<br/>
+        /// Optionally filter by entity types.
+        /// </summary>
+        /// <param name="deploymentId"></param>
+        /// <param name="entityTypes">
+        /// Filter by entity types (block, agent, group)
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.ListDeploymentEntitiesResponse>> ListDeploymentEntitiesAsResponseAsync(
+            string deploymentId,
+            global::System.Collections.Generic.IList<string>? entityTypes = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

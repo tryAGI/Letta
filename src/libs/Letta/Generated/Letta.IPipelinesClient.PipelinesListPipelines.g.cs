@@ -24,5 +24,25 @@ namespace Letta
             string? limit = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// List Pipelines<br/>
+        /// List all pipelines for the organization with optional filtering
+        /// </summary>
+        /// <param name="search"></param>
+        /// <param name="integrationType"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="offset"></param>
+        /// <param name="limit"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.PipelinesListPipelinesResponse>> PipelinesListPipelinesAsResponseAsync(
+            string? search = default,
+            string? integrationType = default,
+            string? integrationId = default,
+            global::Letta.OneOf<string, double?>? offset = default,
+            string? limit = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

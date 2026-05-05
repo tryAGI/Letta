@@ -215,6 +215,150 @@ namespace Letta
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ListInternalRunsAsResponseAsync(
+                runId: runId,
+                agentId: agentId,
+                agentIds: agentIds,
+                statuses: statuses,
+                background: background,
+                stopReason: stopReason,
+                templateFamily: templateFamily,
+                stepCount: stepCount,
+                stepCountOperator: stepCountOperator,
+                toolsUsed: toolsUsed,
+                before: before,
+                after: after,
+                limit: limit,
+                order: order,
+                orderBy: orderBy,
+                active: active,
+                ascending: ascending,
+                projectId: projectId,
+                conversationId: conversationId,
+                durationPercentile: durationPercentile,
+                durationValue: durationValue,
+                durationOperator: durationOperator,
+                startDate: startDate,
+                endDate: endDate,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List Runs<br/>
+        /// List all runs.
+        /// </summary>
+        /// <param name="runId">
+        /// Filter by a specific run ID.
+        /// </param>
+        /// <param name="agentId">
+        /// The unique identifier of the agent associated with the run.
+        /// </param>
+        /// <param name="agentIds">
+        /// The unique identifiers of the agents associated with the run. Deprecated in favor of agent_id field.
+        /// </param>
+        /// <param name="statuses">
+        /// Filter runs by status. Can specify multiple statuses.
+        /// </param>
+        /// <param name="background">
+        /// If True, filters for runs that were created in background mode.
+        /// </param>
+        /// <param name="stopReason">
+        /// Filter runs by stop reason.
+        /// </param>
+        /// <param name="templateFamily">
+        /// Filter runs by template family (base_template_id).
+        /// </param>
+        /// <param name="stepCount">
+        /// Filter runs by step count. Must be provided with step_count_operator.
+        /// </param>
+        /// <param name="stepCountOperator">
+        /// Operator for step_count filter: 'eq' for equals, 'gte' for greater than or equal, 'lte' for less than or equal.<br/>
+        /// Default Value: eq
+        /// </param>
+        /// <param name="toolsUsed">
+        /// Filter runs that used any of the specified tools.
+        /// </param>
+        /// <param name="before">
+        /// Run ID cursor for pagination. Returns runs that come before this run ID in the specified sort order
+        /// </param>
+        /// <param name="after">
+        /// Run ID cursor for pagination. Returns runs that come after this run ID in the specified sort order
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of runs to return<br/>
+        /// Default Value: 100
+        /// </param>
+        /// <param name="order">
+        /// Sort order for runs by creation time. 'asc' for oldest first, 'desc' for newest first<br/>
+        /// Default Value: desc
+        /// </param>
+        /// <param name="orderBy">
+        /// Field to sort by<br/>
+        /// Default Value: created_at
+        /// </param>
+        /// <param name="active">
+        /// Filter for active runs.<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="ascending">
+        /// Whether to sort agents oldest to newest (True) or newest to oldest (False, default). Deprecated in favor of order field.<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="projectId">
+        /// Filter runs by project ID.
+        /// </param>
+        /// <param name="conversationId">
+        /// Filter runs by conversation ID.
+        /// </param>
+        /// <param name="durationPercentile">
+        /// Filter runs by duration percentile (1-100). Returns runs slower than this percentile.
+        /// </param>
+        /// <param name="durationValue">
+        /// Duration value in nanoseconds for filtering. Must be used with duration_operator.
+        /// </param>
+        /// <param name="durationOperator">
+        /// Comparison operator for duration filter: 'gt' (greater than), 'lt' (less than), 'eq' (equals).
+        /// </param>
+        /// <param name="startDate">
+        /// Filter runs created on or after this date (ISO 8601 format).
+        /// </param>
+        /// <param name="endDate">
+        /// Filter runs created on or before this date (ISO 8601 format).
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.Run>>> ListInternalRunsAsResponseAsync(
+            string? runId = default,
+            string? agentId = default,
+            global::System.Collections.Generic.IList<string>? agentIds = default,
+            global::System.Collections.Generic.IList<string>? statuses = default,
+            bool? background = default,
+            global::Letta.StopReasonType? stopReason = default,
+            string? templateFamily = default,
+            int? stepCount = default,
+            global::Letta.ComparisonOperator? stepCountOperator = default,
+            global::System.Collections.Generic.IList<string>? toolsUsed = default,
+            string? before = default,
+            string? after = default,
+            int? limit = default,
+            global::Letta.ListInternalRunsOrder? order = default,
+            global::Letta.ListInternalRunsOrderBy? orderBy = default,
+            bool? active = default,
+            bool? ascending = default,
+            string? projectId = default,
+            string? conversationId = default,
+            int? durationPercentile = default,
+            int? durationValue = default,
+            global::Letta.ListInternalRunsDurationOperator2? durationOperator = default,
+            global::System.DateTime? startDate = default,
+            global::System.DateTime? endDate = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareListInternalRunsArguments(
@@ -266,11 +410,12 @@ namespace Letta
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: "/v1/_internal_runs/",
                                 baseUri: ResolveBaseUri(
                                 servers: s_ListInternalRunsServers,
-                                defaultBaseUrl: "https://app.letta.com/")); 
+                                defaultBaseUrl: "https://app.letta.com/"));
                             __pathBuilder
                                 .AddOptionalParameter("run_id", runId)
                                 .AddOptionalParameter("agent_id", agentId)
@@ -295,7 +440,7 @@ namespace Letta
                                 .AddOptionalParameter("duration_value", durationValue?.ToString())
                                 .AddOptionalParameter("duration_operator", durationOperator?.ToString())
                                 .AddOptionalParameter("start_date", startDate?.ToString())
-                                .AddOptionalParameter("end_date", endDate?.ToString()) 
+                                .AddOptionalParameter("end_date", endDate?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -390,6 +535,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -400,6 +547,11 @@ namespace Letta
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -417,6 +569,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -426,8 +580,7 @@ namespace Letta
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -436,6 +589,11 @@ namespace Letta
                         __attempt < __maxAttempts &&
                         global::Letta.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Letta.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -452,14 +610,15 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -499,6 +658,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -519,6 +680,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Validation Error
@@ -581,9 +744,13 @@ namespace Letta
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Letta.Run>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Run>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Letta.Run>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Run>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.Run>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -611,9 +778,13 @@ namespace Letta
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Letta.Run>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Run>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Letta.Run>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.Run>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.Run>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {

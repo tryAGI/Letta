@@ -25,6 +25,21 @@ namespace Letta
         /// Creates a job that will fan out messages to all listed agents and process them in parallel.<br/>
         /// The request will be rejected if it exceeds 256MB.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.BatchJob>> CreateBatchAsResponseAsync(
+
+            global::Letta.CreateBatch request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Batch<br/>
+        /// Submit a batch of agent runs for asynchronous processing.<br/>
+        /// Creates a job that will fan out messages to all listed agents and process them in parallel.<br/>
+        /// The request will be rejected if it exceeds 256MB.
+        /// </summary>
         /// <param name="requests">
         /// List of requests to be processed in batch.
         /// </param>

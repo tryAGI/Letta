@@ -27,6 +27,23 @@ namespace Letta
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="templateVersion"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse>> TemplatesSetCurrentTemplateFromSnapshotAsResponseAsync(
+            string projectId,
+            string templateVersion,
+
+            object request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Set current template from snapshot (Cloud-only)<br/>
+        /// Updates the current working version of a template from a snapshot
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <param name="templateVersion"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>

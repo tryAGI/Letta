@@ -46,6 +46,32 @@ namespace Letta
         /// <param name="conversationId">
         /// The conversation identifier. Can be a conversation ID ('conv-&lt;uuid4&gt;'), 'default' for agent-direct mode (with agent_id parameter), or an agent ID ('agent-&lt;uuid4&gt;') for backwards compatibility (deprecated).
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<string>> RetrieveConversationStreamAsResponseAsync(
+            string conversationId,
+
+            global::Letta.RetrieveStreamRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Retrieve Conversation Stream<br/>
+        /// Resume the stream for the most recent active run in a conversation.<br/>
+        /// This endpoint allows you to reconnect to an active background stream<br/>
+        /// for a conversation, enabling recovery from network interruptions.<br/>
+        /// **Agent-direct mode**: Pass conversation_id="default" with agent_id in request body<br/>
+        /// to retrieve the stream for the agent's most recent active run.<br/>
+        /// **Direct run access**: Pass run_id directly to skip run lookup entirely.<br/>
+        /// Useful for recovery from duplicate request 409 errors.<br/>
+        /// **OTID lookup**: Pass otid to look up the run_id from Redis.<br/>
+        /// Useful when you have the otid from a 409 error response.<br/>
+        /// **Deprecated**: Passing an agent ID as conversation_id still works but will be removed.
+        /// </summary>
+        /// <param name="conversationId">
+        /// The conversation identifier. Can be a conversation ID ('conv-&lt;uuid4&gt;'), 'default' for agent-direct mode (with agent_id parameter), or an agent ID ('agent-&lt;uuid4&gt;') for backwards compatibility (deprecated).
+        /// </param>
         /// <param name="agentId">
         /// Agent ID for agent-direct mode with 'default' conversation. Use with conversation_id='default' in the URL path.
         /// </param>

@@ -28,6 +28,23 @@ namespace Letta
         /// <param name="archiveId">
         /// The ID of the archive in the format 'archive-&lt;uuid4&gt;'
         /// </param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.Archive>> ModifyArchiveAsResponseAsync(
+            string archiveId,
+
+            global::Letta.ArchiveUpdateRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Modify Archive<br/>
+        /// Update an existing archive's name and/or description.
+        /// </summary>
+        /// <param name="archiveId">
+        /// The ID of the archive in the format 'archive-&lt;uuid4&gt;'
+        /// </param>
         /// <param name="name"></param>
         /// <param name="description"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>

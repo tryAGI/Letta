@@ -29,6 +29,24 @@ namespace Letta
         /// </summary>
         /// <param name="mcpServerId"></param>
         /// <param name="toolId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::Letta.ToolExecutionResult>> McpRunToolAsResponseAsync(
+            string mcpServerId,
+            string toolId,
+
+            global::Letta.LettaSchemasMcpServerToolExecuteRequest request,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Run Mcp Tool<br/>
+        /// Execute a specific MCP tool<br/>
+        /// The request body should contain the tool arguments in the ToolExecuteRequest format.
+        /// </summary>
+        /// <param name="mcpServerId"></param>
+        /// <param name="toolId"></param>
         /// <param name="args">
         /// Arguments to pass to the tool
         /// </param>

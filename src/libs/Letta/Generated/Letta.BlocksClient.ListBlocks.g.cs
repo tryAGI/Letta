@@ -181,6 +181,123 @@ namespace Letta
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var __response = await ListBlocksAsResponseAsync(
+                label: label,
+                templatesOnly: templatesOnly,
+                name: name,
+                identityId: identityId,
+                identifierKeys: identifierKeys,
+                projectId: projectId,
+                tags: tags,
+                matchAllTags: matchAllTags,
+                limit: limit,
+                before: before,
+                after: after,
+                order: order,
+                orderBy: orderBy,
+                labelSearch: labelSearch,
+                descriptionSearch: descriptionSearch,
+                valueSearch: valueSearch,
+                connectedToAgentsCountGt: connectedToAgentsCountGt,
+                connectedToAgentsCountLt: connectedToAgentsCountLt,
+                connectedToAgentsCountEq: connectedToAgentsCountEq,
+                requestOptions: requestOptions,
+                cancellationToken: cancellationToken
+            ).ConfigureAwait(false);
+
+            return __response.Body;
+        }
+        /// <summary>
+        /// List Blocks
+        /// </summary>
+        /// <param name="label">
+        /// Label to include (alphanumeric, hyphens, underscores, forward slashes)
+        /// </param>
+        /// <param name="templatesOnly">
+        /// Whether to include only templates<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="name">
+        /// Name filter (alphanumeric, spaces, hyphens, underscores)
+        /// </param>
+        /// <param name="identityId">
+        /// The ID of the identity in the format 'identity-&lt;uuid4&gt;'
+        /// </param>
+        /// <param name="identifierKeys">
+        /// Search agents by identifier keys
+        /// </param>
+        /// <param name="projectId">
+        /// Search blocks by project id
+        /// </param>
+        /// <param name="tags">
+        /// List of tags to filter blocks by
+        /// </param>
+        /// <param name="matchAllTags">
+        /// If True, only returns blocks that match ALL given tags. Otherwise, return blocks that have ANY of the passed-in tags.<br/>
+        /// Default Value: false
+        /// </param>
+        /// <param name="limit">
+        /// Number of blocks to return<br/>
+        /// Default Value: 50
+        /// </param>
+        /// <param name="before">
+        /// Block ID cursor for pagination. Returns blocks that come before this block ID in the specified sort order
+        /// </param>
+        /// <param name="after">
+        /// Block ID cursor for pagination. Returns blocks that come after this block ID in the specified sort order
+        /// </param>
+        /// <param name="order">
+        /// Sort order for blocks by creation time. 'asc' for oldest first, 'desc' for newest first<br/>
+        /// Default Value: asc
+        /// </param>
+        /// <param name="orderBy">
+        /// Field to sort by<br/>
+        /// Default Value: created_at
+        /// </param>
+        /// <param name="labelSearch">
+        /// Search blocks by label. If provided, returns blocks whose label matches the search query. This is a full-text search on block labels.
+        /// </param>
+        /// <param name="descriptionSearch">
+        /// Search blocks by description. If provided, returns blocks whose description matches the search query. This is a full-text search on block descriptions.
+        /// </param>
+        /// <param name="valueSearch">
+        /// Search blocks by value. If provided, returns blocks whose value matches the search query. This is a full-text search on block values.
+        /// </param>
+        /// <param name="connectedToAgentsCountGt">
+        /// Filter blocks by the number of connected agents. If provided, returns blocks that have more than this number of connected agents.
+        /// </param>
+        /// <param name="connectedToAgentsCountLt">
+        /// Filter blocks by the number of connected agents. If provided, returns blocks that have less than this number of connected agents.
+        /// </param>
+        /// <param name="connectedToAgentsCountEq">
+        /// Filter blocks by the exact number of connected agents. If provided, returns blocks that have exactly this number of connected agents.
+        /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Letta.ApiException"></exception>
+        public async global::System.Threading.Tasks.Task<global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.BlockResponse>>> ListBlocksAsResponseAsync(
+            string? label = default,
+            bool? templatesOnly = default,
+            string? name = default,
+            string? identityId = default,
+            global::System.Collections.Generic.IList<string>? identifierKeys = default,
+            string? projectId = default,
+            global::System.Collections.Generic.IList<string>? tags = default,
+            bool? matchAllTags = default,
+            int? limit = default,
+            string? before = default,
+            string? after = default,
+            global::Letta.ListBlocksOrder? order = default,
+            string? orderBy = default,
+            string? labelSearch = default,
+            string? descriptionSearch = default,
+            string? valueSearch = default,
+            int? connectedToAgentsCountGt = default,
+            int? connectedToAgentsCountLt = default,
+            global::System.Collections.Generic.IList<int>? connectedToAgentsCountEq = default,
+            global::Letta.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
             PrepareArguments(
                 client: HttpClient);
             PrepareListBlocksArguments(
@@ -227,11 +344,12 @@ namespace Letta
 
             global::System.Net.Http.HttpRequestMessage __CreateHttpRequest()
             {
+
                             var __pathBuilder = new global::Letta.PathBuilder(
                                 path: "/v1/blocks/",
                                 baseUri: ResolveBaseUri(
                                 servers: s_ListBlocksServers,
-                                defaultBaseUrl: "https://app.letta.com/")); 
+                                defaultBaseUrl: "https://app.letta.com/"));
                             __pathBuilder
                                 .AddOptionalParameter("label", label)
                                 .AddOptionalParameter("templates_only", templatesOnly?.ToString().ToLowerInvariant())
@@ -251,7 +369,7 @@ namespace Letta
                                 .AddOptionalParameter("value_search", valueSearch)
                                 .AddOptionalParameter("connected_to_agents_count_gt", connectedToAgentsCountGt?.ToString())
                                 .AddOptionalParameter("connected_to_agents_count_lt", connectedToAgentsCountLt?.ToString())
-                                .AddOptionalParameter("connected_to_agents_count_eq", connectedToAgentsCountEq?.ToString()) 
+                                .AddOptionalParameter("connected_to_agents_count_eq", connectedToAgentsCountEq?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -341,6 +459,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                     try
                     {
@@ -351,6 +471,11 @@ namespace Letta
                     }
                     catch (global::System.Net.Http.HttpRequestException __exception)
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: null,
+                            attempt: __attempt);
                         var __willRetry = __attempt < __maxAttempts && !__effectiveCancellationToken.IsCancellationRequested;
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
@@ -368,6 +493,8 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: __willRetry,
+                                retryDelay: __willRetry ? __retryDelay : (global::System.TimeSpan?)null,
+                                retryReason: "exception",
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         if (!__willRetry)
                         {
@@ -377,8 +504,7 @@ namespace Letta
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -387,6 +513,11 @@ namespace Letta
                         __attempt < __maxAttempts &&
                         global::Letta.AutoSDKRequestOptionsSupport.ShouldRetryStatusCode(__response.StatusCode))
                     {
+                        var __retryDelay = global::Letta.AutoSDKRequestOptionsSupport.GetRetryDelay(
+                            clientOptions: Options,
+                            requestOptions: requestOptions,
+                            response: __response,
+                            attempt: __attempt);
                         await global::Letta.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Letta.AutoSDKRequestOptionsSupport.CreateHookContext(
@@ -403,14 +534,15 @@ namespace Letta
                                 attempt: __attempt,
                                 maxAttempts: __maxAttempts,
                                 willRetry: true,
+                                retryDelay: __retryDelay,
+                                retryReason: "status:" + ((int)__response.StatusCode).ToString(global::System.Globalization.CultureInfo.InvariantCulture),
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                         __response.Dispose();
                         __response = null;
                         __httpRequest.Dispose();
                         __httpRequest = null;
                         await global::Letta.AutoSDKRequestOptionsSupport.DelayBeforeRetryAsync(
-                            clientOptions: Options,
-                            requestOptions: requestOptions,
+                            retryDelay: __retryDelay,
                             cancellationToken: __effectiveCancellationToken).ConfigureAwait(false);
                         continue;
                     }
@@ -450,6 +582,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                 else
@@ -470,6 +604,8 @@ namespace Letta
                                 attempt: __attemptNumber,
                                 maxAttempts: __maxAttempts,
                                 willRetry: false,
+                                retryDelay: null,
+                                retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
                             // Validation Error
@@ -532,9 +668,13 @@ namespace Letta
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Letta.BlockResponse>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.BlockResponse>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Letta.BlockResponse>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Letta.BlockResponse>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.BlockResponse>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
@@ -562,9 +702,13 @@ namespace Letta
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    return
-                                        (global::System.Collections.Generic.IList<global::Letta.BlockResponse>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.BlockResponse>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Letta.BlockResponse>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Letta.BlockResponse>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
+                                    return new global::Letta.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Letta.BlockResponse>>(
+                                        statusCode: __response.StatusCode,
+                                        headers: global::Letta.AutoSDKHttpResponse.CreateHeaders(__response),
+                                        requestUri: __response.RequestMessage?.RequestUri,
+                                        body: __value);
                                 }
                                 catch (global::System.Exception __ex)
                                 {
