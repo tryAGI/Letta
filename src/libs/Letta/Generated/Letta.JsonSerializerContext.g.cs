@@ -1573,6 +1573,61 @@ namespace Letta
 
             typeof(global::Letta.JsonConverters.UnixTimestampJsonConverter),
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_d8443727f0d0270d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_7f4fb34f3326c133")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_d2ba79a22e17fee8")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_67e53cc175ef7561")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_0d4fd571c84b1c4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_cd01b724de433c6d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_8ce6274e62b54e84")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_496f6ade7a04f230")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_9281aa9dcafb0375")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_d4968acf1a3e05b1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_fa65f75c0d3df04f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_62ed34002ca837dc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_359d334d3d46f40c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_27d61181f5c48c89")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ff109340e88dfb59")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_685b7aa95ed5bcf6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_d753c2e739333bdc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_8c4a8c8c4a5da84a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_69267a95ebdf98a1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_cdbaee669dae9339")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_567b9254787c8c9d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>?), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_cd4d3401d5ca00f1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>?), TypeInfoPropertyName = "File_e9c6c062abc477cd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>?), TypeInfoPropertyName = "File_1e8f4048b580c962")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>?), TypeInfoPropertyName = "LettaSchemasMcpUpdateStreamableHTTPMCPServer_59793d73c4c9a401")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>?), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_0a348bab28d09e77")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_fd7dada98421b7e9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_1c53a23b0d842706")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_eededdbba38bc71c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>?), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_288214ce22d7fe68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>?), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_c42d3a18b2d2e40f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>?), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_c23b6aaa85691242")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_93dfc172c9d0e474")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_c50525e0b01ebdc3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceType?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_9196ebc2ce726396")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_540358b5968ea643")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e5927a333487a758")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_5b57367b9a634f68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_eff9cfba05113a2c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_89f40afe39b5fbf2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_113a2a99f9cdcbec")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_1fcc3a01e189db52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_16240036ef77c28b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_abeb4f509fa4b815")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_7d6b723075fc0efd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_8357cf73f18c2991")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_db7b3263f62e2009")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_f15cf09b70ece79b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ebd47bca88938983")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JsonSerializerContextTypes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentEnvironmentVariable))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -1759,14 +1814,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.FunctionOutput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenaiTypesChatChatCompletionMessageFunctionToolCallParamFunction))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionSystemMessageParam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionUserMessageParam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionToolMessageParam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>, object>), TypeInfoPropertyName = "AnyOfStringIListStringObject2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_d8443727f0d0270d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>), TypeInfoPropertyName = "AnyOfChatCompletionContentPartTextParamChatCompletionContentPartImageParamChatCompletionContentPartInputAudioParamFile2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.File))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatGPTOAuthReasoning))]
@@ -2022,6 +2073,1632 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.FileBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageRole), TypeInfoPropertyName = "MessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>))]
+    internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.SourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ContentVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant117JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PolicyItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EventsItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItem2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config6JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config7JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config8JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config9JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallParam, global::Letta.ChatCompletionMessageCustomToolCallParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallOutput, global::Letta.ChatCompletionMessageCustomToolCall>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaToolReturnContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.BaseToolRuleSchema, global::Letta.ChildToolRuleSchema, global::Letta.MaxCountPerStepToolRuleSchema, global::Letta.ConditionalToolRuleSchema>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaRequest, global::Letta.LettaStreamingRequest>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_d8443727f0d0270d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_7f4fb34f3326c133")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_d2ba79a22e17fee8")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_67e53cc175ef7561")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_0d4fd571c84b1c4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_cd01b724de433c6d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_8ce6274e62b54e84")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_496f6ade7a04f230")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_9281aa9dcafb0375")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_d4968acf1a3e05b1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_fa65f75c0d3df04f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_62ed34002ca837dc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_359d334d3d46f40c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_27d61181f5c48c89")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ff109340e88dfb59")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_685b7aa95ed5bcf6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_d753c2e739333bdc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_8c4a8c8c4a5da84a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_69267a95ebdf98a1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_cdbaee669dae9339")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_567b9254787c8c9d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>?), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_cd4d3401d5ca00f1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>?), TypeInfoPropertyName = "File_e9c6c062abc477cd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>?), TypeInfoPropertyName = "File_1e8f4048b580c962")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>?), TypeInfoPropertyName = "LettaSchemasMcpUpdateStreamableHTTPMCPServer_59793d73c4c9a401")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>?), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_0a348bab28d09e77")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_fd7dada98421b7e9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_1c53a23b0d842706")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_eededdbba38bc71c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>?), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_288214ce22d7fe68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>?), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_c42d3a18b2d2e40f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>?), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_c23b6aaa85691242")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_93dfc172c9d0e474")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_c50525e0b01ebdc3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceType?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_9196ebc2ce726396")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_540358b5968ea643")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e5927a333487a758")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_5b57367b9a634f68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_eff9cfba05113a2c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_89f40afe39b5fbf2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_113a2a99f9cdcbec")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_1fcc3a01e189db52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_16240036ef77c28b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_abeb4f509fa4b815")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_7d6b723075fc0efd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_8357cf73f18c2991")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_db7b3263f62e2009")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_f15cf09b70ece79b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ebd47bca88938983")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item), TypeInfoPropertyName = "ContentVariant1Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminatorType), TypeInfoPropertyName = "MessageContentVariant1ItemDiscriminatorType2")]
@@ -2267,8 +3944,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LettaRequest, global::Letta.LettaStreamingRequest>), TypeInfoPropertyName = "AnyOfLettaRequestLettaStreamingRequest2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InternalTemplateBlockCreate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsSearchDeployedAgentsRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_7f4fb34f3326c133")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_d2ba79a22e17fee8")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1Field), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant1Field2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2))]
@@ -2355,9 +4030,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_67e53cc175ef7561")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_0d4fd571c84b1c4c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_cd01b724de433c6d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1Type), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2))]
@@ -2368,7 +4040,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageType), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_8ce6274e62b54e84")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2))]
@@ -2428,8 +4099,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemType), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsSendMessageRequestMessageVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsSendMessageRequestMessageVariant2Type), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_496f6ade7a04f230")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_9281aa9dcafb0375")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Type), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>), TypeInfoPropertyName = "OneOfStringIListEnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item2")]
@@ -2475,6 +4144,1632 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListBlocksForIdentityOrder), TypeInfoPropertyName = "ListBlocksForIdentityOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalBlocksOrder), TypeInfoPropertyName = "ListInternalBlocksOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForInternalBlockOrder), TypeInfoPropertyName = "ListAgentsForInternalBlockOrder2")]
+    internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.SourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ContentVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant117JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PolicyItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EventsItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItem2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config6JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config7JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config8JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config9JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallParam, global::Letta.ChatCompletionMessageCustomToolCallParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallOutput, global::Letta.ChatCompletionMessageCustomToolCall>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaToolReturnContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.BaseToolRuleSchema, global::Letta.ChildToolRuleSchema, global::Letta.MaxCountPerStepToolRuleSchema, global::Letta.ConditionalToolRuleSchema>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaRequest, global::Letta.LettaStreamingRequest>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_d8443727f0d0270d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_7f4fb34f3326c133")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_d2ba79a22e17fee8")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_67e53cc175ef7561")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_0d4fd571c84b1c4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_cd01b724de433c6d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_8ce6274e62b54e84")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_496f6ade7a04f230")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_9281aa9dcafb0375")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_d4968acf1a3e05b1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_fa65f75c0d3df04f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_62ed34002ca837dc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_359d334d3d46f40c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_27d61181f5c48c89")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ff109340e88dfb59")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_685b7aa95ed5bcf6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_d753c2e739333bdc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_8c4a8c8c4a5da84a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_69267a95ebdf98a1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_cdbaee669dae9339")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_567b9254787c8c9d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>?), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_cd4d3401d5ca00f1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>?), TypeInfoPropertyName = "File_e9c6c062abc477cd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>?), TypeInfoPropertyName = "File_1e8f4048b580c962")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>?), TypeInfoPropertyName = "LettaSchemasMcpUpdateStreamableHTTPMCPServer_59793d73c4c9a401")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>?), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_0a348bab28d09e77")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_fd7dada98421b7e9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_1c53a23b0d842706")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_eededdbba38bc71c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>?), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_288214ce22d7fe68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>?), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_c42d3a18b2d2e40f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>?), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_c23b6aaa85691242")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_93dfc172c9d0e474")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_c50525e0b01ebdc3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceType?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_9196ebc2ce726396")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_540358b5968ea643")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e5927a333487a758")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_5b57367b9a634f68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_eff9cfba05113a2c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_89f40afe39b5fbf2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_113a2a99f9cdcbec")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_1fcc3a01e189db52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_16240036ef77c28b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_abeb4f509fa4b815")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_7d6b723075fc0efd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_8357cf73f18c2991")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_db7b3263f62e2009")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_f15cf09b70ece79b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ebd47bca88938983")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrder), TypeInfoPropertyName = "ListInternalRunsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrderBy), TypeInfoPropertyName = "ListInternalRunsOrderBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsDurationOperator2))]
@@ -2495,8 +5790,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAllMessagesOrder), TypeInfoPropertyName = "ListAllMessagesOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListBatchesOrder), TypeInfoPropertyName = "ListBatchesOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListMessagesForBatchOrder), TypeInfoPropertyName = "ListMessagesForBatchOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_d4968acf1a3e05b1")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_fa65f75c0d3df04f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsCountDeployedAgentsSearchItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsCountDeployedAgentsSearchItemVariant1Field), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant1Field2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentsCountDeployedAgentsSearchItemVariant2))]
@@ -2582,8 +5875,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariables))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_62ed34002ca837dc")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_359d334d3d46f40c")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1Type), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode>))]
@@ -2701,9 +5992,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_27d61181f5c48c89")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ff109340e88dfb59")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_685b7aa95ed5bcf6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1Type), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2))]
@@ -2714,7 +6002,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageType), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_d753c2e739333bdc")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1Type), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2))]
@@ -2724,9 +6011,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_8c4a8c8c4a5da84a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_69267a95ebdf98a1")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_cdbaee669dae9339")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1Type), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2))]
@@ -2737,7 +6021,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageType), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_567b9254787c8c9d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1Type), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2))]
@@ -2932,6 +6215,1632 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Identity>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ApprovalsVariant1Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>))]
+    internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicModelSettingsEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnthropicThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatCompletionServiceTier2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ChoiceFinishReasonNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsInputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CompactionSettingsOutputModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ComparisonOperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DuplicateFileHandlingNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedbackTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FileProcessingStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateJsonConverter),
+
+            typeof(global::Letta.JsonConverters.HiddenReasoningMessageStateNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityPropertyTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.IdentityTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ImageURLDetailNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputAudioFormatNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.JobTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MCPServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageCreateRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModalSandboxConfigLanguageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelModelEndpointTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelReasoningEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelEffort2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelCompatibilityType2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelVerbosity2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenAIReasoningReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PassageSearchRequestTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderCategoryNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ReasoningMessageSourceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.StepStatus2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.StopReasonTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolExecutionResultStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolReturnMessageStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolSearchRequestSearchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TurnTokenDataRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.VectorDBProviderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ZAIThinkingTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListArchivesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFolderPassagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForFolderOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.RetrieveAgentIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListToolsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentSourcesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFoldersForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListFilesForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListCoreMemoryBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsForAgentOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListConversationMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListGroupMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListIdentitiesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksForIdentityOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForInternalBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsOrderByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListInternalRunsDurationOperator2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBlocksOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAgentsForBlockIncludeItemNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListJobsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListProvidersOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListRunsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsForRunOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListStepsFeedback2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListTagsOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListAllMessagesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListBatchesOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForBatchOrderNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesListTemplatesSortByNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageJsonConverter),
+
+            typeof(global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2NullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeNullableJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ApprovalsVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant16JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseSchemaVariant12JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfigVariant1JsonConverter),
+
+            typeof(global::Letta.JsonConverters.SourceJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ManagerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.InputVariant2Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaStreamingResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ContentVariant1ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config4JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant117JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ToolRulesVariant1Item5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModelSettingsVariant110JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2ItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.FuncResponseVariant2Item2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaAssistantMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaToolReturnContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.LettaUserMessageContentUnionJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.TemplatesCreateTemplateRequestJsonConverter),
+
+            typeof(global::Letta.JsonConverters.PolicyItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.EventsItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfigJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ProducerConfig3JsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ModifyGroupMessageResponseJsonConverter),
+
+            typeof(global::Letta.JsonConverters.ListMessagesForStepResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.SearchAllMessagesResponseItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItemJsonConverter),
+
+            typeof(global::Letta.JsonConverters.DataItem2JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config5JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config6JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config7JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config8JsonConverter),
+
+            typeof(global::Letta.JsonConverters.Config9JsonConverter),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallParam, global::Letta.ChatCompletionMessageCustomToolCallParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallOutput, global::Letta.ChatCompletionMessageCustomToolCall>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaToolReturnContentUnion>, string>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item2>, object>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.BaseToolRuleSchema, global::Letta.ChildToolRuleSchema, global::Letta.MaxCountPerStepToolRuleSchema, global::Letta.ConditionalToolRuleSchema>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaRequest, global::Letta.LettaStreamingRequest>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<string, double?>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>),
+
+            typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>),
+
+            typeof(global::Letta.JsonConverters.UnixTimestampJsonConverter),
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_d8443727f0d0270d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_7f4fb34f3326c133")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_d2ba79a22e17fee8")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_67e53cc175ef7561")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_0d4fd571c84b1c4c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_cd01b724de433c6d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_8ce6274e62b54e84")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_496f6ade7a04f230")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_9281aa9dcafb0375")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_d4968acf1a3e05b1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_fa65f75c0d3df04f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_62ed34002ca837dc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_359d334d3d46f40c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_27d61181f5c48c89")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ff109340e88dfb59")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_685b7aa95ed5bcf6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_d753c2e739333bdc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_8c4a8c8c4a5da84a")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_69267a95ebdf98a1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_cdbaee669dae9339")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_567b9254787c8c9d")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>?), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_cd4d3401d5ca00f1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>?), TypeInfoPropertyName = "File_e9c6c062abc477cd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>?), TypeInfoPropertyName = "File_1e8f4048b580c962")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>?), TypeInfoPropertyName = "LettaSchemasMcpUpdateStreamableHTTPMCPServer_59793d73c4c9a401")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>?), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_0a348bab28d09e77")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_fd7dada98421b7e9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_1c53a23b0d842706")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2_eededdbba38bc71c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>?), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_288214ce22d7fe68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>?), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_c42d3a18b2d2e40f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>?), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_c23b6aaa85691242")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_93dfc172c9d0e474")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_c50525e0b01ebdc3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceType?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_9196ebc2ce726396")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2_540358b5968ea643")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e5927a333487a758")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_5b57367b9a634f68")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>?), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2_eff9cfba05113a2c")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_89f40afe39b5fbf2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_113a2a99f9cdcbec")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_1fcc3a01e189db52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_16240036ef77c28b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_abeb4f509fa4b815")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_7d6b723075fc0efd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_8357cf73f18c2991")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_db7b3263f62e2009")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_f15cf09b70ece79b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ebd47bca88938983")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolCall2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ApprovalsVariant1Item2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ArchivalMemorySearchResult>))]
@@ -2945,10 +7854,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ChatCompletionContentPartTextParam>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Annotation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionMessageFunctionToolCallOutput, global::Letta.ChatCompletionMessageCustomToolCall>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_89f40afe39b5fbf2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<string>, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_113a2a99f9cdcbec")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>), TypeInfoPropertyName = "File_1fcc3a01e189db52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolCallNode>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FunctionTool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Message>))]
@@ -3024,15 +7930,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OpenaiTypesChatChatCompletionTokenLogprobChatCompletionTokenLogprob>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OpenaiTypesChatChatCompletionTokenLogprobTopLogprob>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InternalTemplateBlockCreate>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>), TypeInfoPropertyName = "AgentsSearchDeployedAgentsRequestSearchItemVariant6_16240036ef77c28b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.PolicyItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.EventsItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_string_abeb4f509fa4b815")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2_7d6b723075fc0efd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FeedsPublishMessagesRequestMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1DataChannel>))]
@@ -3041,7 +7944,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<string, global::System.Collections.Generic.List<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>>), TypeInfoPropertyName = "EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2_8357cf73f18c2991")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<string, global::System.Collections.Generic.List<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ListAgentsForArchiveIncludeItem>))]
@@ -3050,7 +7952,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ListAgentsForIdentityIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ProviderCategory>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ListAgentsForBlockIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>>), TypeInfoPropertyName = "AgentsCountDeployedAgentsSearchItemVariant6_db7b3263f62e2009")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Archive>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AgentState>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Passage>))]
@@ -3078,7 +7979,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseAgent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariablesDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>>), TypeInfoPropertyName = "TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9_f15cf09b70ece79b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseRelationship>))]
@@ -3091,12 +7991,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ProjectsListProjectsResponseProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_ebd47bca88938983")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FeedsListFeedsResponseFeed>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FeedsListMessagesResponseMessage>))]
@@ -3113,7 +8009,834 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.PipelinesListPipelineSyncHistoryResponseRun>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.EnvironmentsListConnectionsResponseConnection>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.SandboxesListSandboxesResponseSandboxe>))]
+    internal sealed partial class SourceGenerationContextChunk3 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed partial class SourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = global::System.Text.Json.Serialization.Metadata.JsonTypeInfoResolver.Combine(
+            SourceGenerationContextChunk0.Default,
+
+            SourceGenerationContextChunk1.Default,
+
+            SourceGenerationContextChunk2.Default,
+
+            SourceGenerationContextChunk3.Default
+            );
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private SourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentStateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsEffort2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicModelSettingsEffort2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicThinkingTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnthropicThinkingTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalCreateApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AzureModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChatCompletionServiceTier2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChatCompletionServiceTier2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChatGPTOAuthReasoningReasoningEffortNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChoiceFinishReasonJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ChoiceFinishReasonNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsInputModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsInputModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsOutputModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CompactionSettingsOutputModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ComparisonOperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ComparisonOperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConversationMessageRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateAgentRequestResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.CreateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DeepseekModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DuplicateFileHandlingJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DuplicateFileHandlingNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EmbeddingModelEmbeddingEndpointTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedbackTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedbackTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FileProcessingStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FileProcessingStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroqModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupSchemaManagerConfigDiscriminatorManagerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.GroupUpdateManagerConfigVariant1DiscriminatorManagerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.HiddenReasoningMessageStateJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.HiddenReasoningMessageStateNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.IdentityPropertyTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.IdentityPropertyTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.IdentityTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.IdentityTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ImageContentSourceDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ImageURLDetailJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ImageURLDetailNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputAudioFormatJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputAudioFormatNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.JobStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.JobStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.JobTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.JobTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigModelEndpointTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigModelEndpointTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigReasoningEffort2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigReasoningEffort2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigEffort2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigEffort2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigCompatibilityType2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigCompatibilityType2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigVerbosity2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigVerbosity2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LLMConfigResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaAsyncRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaBatchRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingRequestInputVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingResponseDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MCPServerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MCPServerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageContentVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageCreateRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageCreateRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageSearchRequestSearchModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageSearchRequestSearchModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModalSandboxConfigLanguageJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModalSandboxConfigLanguageNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelModelEndpointTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelModelEndpointTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelReasoningEffort2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelReasoningEffort2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelEffort2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelEffort2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelCompatibilityType2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelCompatibilityType2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelVerbosity2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelVerbosity2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenAIReasoningReasoningEffortJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenAIReasoningReasoningEffortNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PassageSearchRequestTagMatchModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PassageSearchRequestTagMatchModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProviderCategoryJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProviderCategoryNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ReasoningMessageSourceJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ReasoningMessageSourceNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.RunStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.RunStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SGLangModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SandboxTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SandboxTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StepFeedback2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StepFeedback2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StepStatus2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StepStatus2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StopReasonTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.StopReasonTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TogetherModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolExecutionResultStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolExecutionResultStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolReturnMessageStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolReturnMessageStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolSearchRequestSearchModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolSearchRequestSearchModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TurnTokenDataRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TurnTokenDataRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateAgentResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateConversationModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.VectorDBProviderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.VectorDBProviderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.XAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ZAIModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ZAIThinkingTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ZAIThinkingTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaToolRulesVariant1ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasLettaMessageToolReturnStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnInputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaSchemasMessageToolReturnOutputFuncResponseVariant2ItemDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageUnionDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageContentUnionDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaAssistantMessageContentUnionDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaToolReturnContentUnionDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaUserMessageContentUnionDiscriminatorTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant1FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant2OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant3OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant4OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant5OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateRequestInitialMessageSequenceItemRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateAgentsFromTemplateNoProjectRequestInitialMessageSequenceItemRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategyNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategyNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateRequestVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1AccesNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendFeedbackRequestFeatureNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestServiceNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MetadataSendTelemetryRequestEventVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineRequestProducerConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1RoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1StatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListArchivesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListArchivesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForArchiveOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForArchiveOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForArchiveIncludeItemNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListToolsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListToolsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFoldersOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFoldersOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForFolderOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForFolderOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFolderPassagesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFolderPassagesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFilesForFolderOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFilesForFolderOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsIncludeItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsIncludeItemNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsOrderByJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsOrderByNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.RetrieveAgentIncludeItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.RetrieveAgentIncludeItemNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListToolsForAgentOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListToolsForAgentOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentSourcesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentSourcesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFoldersForAgentOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFoldersForAgentOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFilesForAgentOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListFilesForAgentOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListCoreMemoryBlocksOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListCoreMemoryBlocksOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchArchivalMemoryTagMatchModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupsForAgentOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupsForAgentOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationsOrderByJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationsOrderByNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationMessagesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListConversationMessagesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupMessagesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListGroupMessagesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListIdentitiesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListIdentitiesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForIdentityOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForIdentityOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForIdentityIncludeItemNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBlocksForIdentityOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBlocksForIdentityOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalBlocksOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalBlocksOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForInternalBlockOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForInternalBlockOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsOrderByJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsOrderByNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsDurationOperator2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListInternalRunsDurationOperator2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBlocksOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBlocksOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForBlockOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForBlockOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForBlockIncludeItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAgentsForBlockIncludeItemNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListJobsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListJobsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListProvidersOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListProvidersOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListRunsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListRunsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForRunOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForRunOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsForRunOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsForRunOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsFeedback2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListStepsFeedback2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListTagsOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListTagsOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAllMessagesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListAllMessagesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBatchesOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListBatchesOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForBatchOrderJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForBatchOrderNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant1FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant2OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant3OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant4OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant5OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6FieldNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsSearchItemVariant6OperatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsCountDeployedAgentsCombinatorNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesListTemplatesSortByJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesListTemplatesSortByNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyMessageResponseDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyGroupMessageResponseDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepResponseItemDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesResponseItemDiscriminatorMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AgentsGetAgentVariablesResponseMessageNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentAgentTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevelNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffortNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesGetTemplateSnapshotResponseTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersionNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1AccesNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersionNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1AccesNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRoleNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsSubscribeAgentResponseMergeStrategyNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsSubscribeAgentResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsUpdateSubscriptionResponseMergeStrategyNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsBackfillSubscriptionResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseRunStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionHistoryResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FeedsListSubscriptionsResponseSubscriptionMergeStrategyNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.MemoryFilesListDirectoryResponseEntrieTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesCreatePipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelinesResponsePipelineConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponsePipelineConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesGetPipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponsePipelineConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesDeletePipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationTypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2TypeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesUpdatePipelineProducerConfigResponseErrorCode2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesPreviewPipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesSyncPipelineResponseErrorCode2NullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseRunStatusNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PipelinesListPipelineSyncHistoryResponseErrorCodeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsGetConnectionResponseCurrentModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EnvironmentsListConnectionsResponseConnectionCurrentModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SandboxesListSandboxesResponseSandboxeCurrentModeNullableJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalsVariant1ItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ApprovalsVariant1Item2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2ItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConfigJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant16JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseSchemaVariant1JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseSchemaVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerConfigJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerConfig2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerConfigVariant1JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SourceJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ManagerConfig3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item4JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item5JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingResponseJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ContentVariant1ItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config4JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant117JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item5JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant110JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FuncResponseVariant2ItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.FuncResponseVariant2Item2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageUnionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaMessageContentUnionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaAssistantMessageContentUnionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaToolReturnContentUnionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.LettaUserMessageContentUnionJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.TemplatesCreateTemplateRequestJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.PolicyItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.EventsItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProducerConfigJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProducerConfig2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProducerConfig3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyMessageResponseJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModifyGroupMessageResponseJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepResponseItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesResponseItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DataItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DataItem2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config5JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config6JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config7JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config8JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config9JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallParam, global::Letta.ChatCompletionMessageCustomToolCallParam>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionMessageFunctionToolCallOutput, global::Letta.ChatCompletionMessageCustomToolCall>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnInput>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaToolReturnContentUnion>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item2>, object>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.BaseToolRuleSchema, global::Letta.ChildToolRuleSchema, global::Letta.MaxCountPerStepToolRuleSchema, global::Letta.ConditionalToolRuleSchema>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaSchemasMcpUpdateStdioMCPServer, global::Letta.LettaSchemasMcpUpdateSSEMCPServer, global::Letta.LettaSchemasMcpUpdateStreamableHTTPMCPServer>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LettaRequest, global::Letta.LettaStreamingRequest>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.UpdateSystemMessage, global::Letta.UpdateUserMessage, global::Letta.UpdateReasoningMessage, global::Letta.UpdateAssistantMessage>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.AgentsCountDeployedAgentsSearchItemVariant1, global::Letta.AgentsCountDeployedAgentsSearchItemVariant2, global::Letta.AgentsCountDeployedAgentsSearchItemVariant3, global::Letta.AgentsCountDeployedAgentsSearchItemVariant4, global::Letta.AgentsCountDeployedAgentsSearchItemVariant5, global::Letta.AgentsCountDeployedAgentsSearchItemVariant6>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8, global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>());
+            options.Converters.Add(new global::Letta.JsonConverters.UnixTimestampJsonConverter());
+
+            return options;
+        }
     }
 }
