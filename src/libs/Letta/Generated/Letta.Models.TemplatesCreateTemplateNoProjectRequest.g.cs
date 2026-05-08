@@ -27,6 +27,19 @@ namespace Letta
         public bool IsAgent => Agent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? value)
+        {
+            value = Agent;
+            return IsAgent;
+        }
+
+        /// <summary>
         /// Create a template from an uploaded agent file
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +55,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentFile))]
 #endif
         public bool IsAgentFile => AgentFile != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentFile(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? value)
+        {
+            value = AgentFile;
+            return IsAgentFile;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -118,8 +144,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?, TResult>? agent = null,
-            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?, TResult>? agentFile = null,
+            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1, TResult>? agent = null,
+            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2, TResult>? agentFile = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +169,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?>? agent = null,
-            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?>? agentFile = null,
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
+
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2>? agentFile = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAgent)
+            {
+                agent?.Invoke(Agent!);
+            }
+            else if (IsAgentFile)
+            {
+                agentFile?.Invoke(AgentFile!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2>? agentFile = null,
             bool validate = true)
         {
             if (validate)

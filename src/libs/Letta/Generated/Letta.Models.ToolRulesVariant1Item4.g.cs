@@ -32,6 +32,19 @@ namespace Letta
         public bool IsConstrainChildTools => ConstrainChildTools != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConstrainChildTools(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ChildToolRule? value)
+        {
+            value = ConstrainChildTools;
+            return IsConstrainChildTools;
+        }
+
+        /// <summary>
         /// Represents the initial tool rule configuration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -47,6 +60,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RunFirst))]
 #endif
         public bool IsRunFirst => RunFirst != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRunFirst(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.InitToolRule? value)
+        {
+            value = RunFirst;
+            return IsRunFirst;
+        }
 
         /// <summary>
         /// Represents a terminal tool rule configuration where if this tool gets called, it must end the agent loop.
@@ -66,6 +92,19 @@ namespace Letta
         public bool IsExitLoop => ExitLoop != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickExitLoop(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TerminalToolRule? value)
+        {
+            value = ExitLoop;
+            return IsExitLoop;
+        }
+
+        /// <summary>
         /// A ToolRule that conditionally maps to different child tools based on the output.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -81,6 +120,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Conditional))]
 #endif
         public bool IsConditional => Conditional != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickConditional(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ConditionalToolRule? value)
+        {
+            value = Conditional;
+            return IsConditional;
+        }
 
         /// <summary>
         /// Represents a tool rule configuration where if this tool gets called, it must continue the agent loop.
@@ -100,6 +152,19 @@ namespace Letta
         public bool IsContinueLoop => ContinueLoop != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickContinueLoop(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ContinueToolRule? value)
+        {
+            value = ContinueLoop;
+            return IsContinueLoop;
+        }
+
+        /// <summary>
         /// Represents a tool rule configuration where this tool must be called before the agent loop can exit.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -115,6 +180,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RequiredBeforeExit))]
 #endif
         public bool IsRequiredBeforeExit => RequiredBeforeExit != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRequiredBeforeExit(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.RequiredBeforeExitToolRule? value)
+        {
+            value = RequiredBeforeExit;
+            return IsRequiredBeforeExit;
+        }
 
         /// <summary>
         /// Represents a tool rule configuration which constrains the total number of times this tool can be invoked in a single step.
@@ -134,6 +212,19 @@ namespace Letta
         public bool IsMaxCountPerStep => MaxCountPerStep != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickMaxCountPerStep(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.MaxCountPerStepToolRule? value)
+        {
+            value = MaxCountPerStep;
+            return IsMaxCountPerStep;
+        }
+
+        /// <summary>
         /// A ToolRule that only allows a child tool to be called if the parent has been called.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -151,6 +242,19 @@ namespace Letta
         public bool IsParentLastTool => ParentLastTool != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickParentLastTool(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ParentToolRule? value)
+        {
+            value = ParentLastTool;
+            return IsParentLastTool;
+        }
+
+        /// <summary>
         /// Represents a tool rule configuration which requires approval before the tool can be invoked.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -166,6 +270,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RequiresApproval))]
 #endif
         public bool IsRequiresApproval => RequiresApproval != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRequiresApproval(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.RequiresApprovalToolRule? value)
+        {
+            value = RequiresApproval;
+            return IsRequiresApproval;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -399,15 +516,15 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.ChildToolRule?, TResult>? constrainChildTools = null,
-            global::System.Func<global::Letta.InitToolRule?, TResult>? runFirst = null,
-            global::System.Func<global::Letta.TerminalToolRule?, TResult>? exitLoop = null,
-            global::System.Func<global::Letta.ConditionalToolRule?, TResult>? conditional = null,
-            global::System.Func<global::Letta.ContinueToolRule?, TResult>? continueLoop = null,
-            global::System.Func<global::Letta.RequiredBeforeExitToolRule?, TResult>? requiredBeforeExit = null,
-            global::System.Func<global::Letta.MaxCountPerStepToolRule?, TResult>? maxCountPerStep = null,
-            global::System.Func<global::Letta.ParentToolRule?, TResult>? parentLastTool = null,
-            global::System.Func<global::Letta.RequiresApprovalToolRule?, TResult>? requiresApproval = null,
+            global::System.Func<global::Letta.ChildToolRule, TResult>? constrainChildTools = null,
+            global::System.Func<global::Letta.InitToolRule, TResult>? runFirst = null,
+            global::System.Func<global::Letta.TerminalToolRule, TResult>? exitLoop = null,
+            global::System.Func<global::Letta.ConditionalToolRule, TResult>? conditional = null,
+            global::System.Func<global::Letta.ContinueToolRule, TResult>? continueLoop = null,
+            global::System.Func<global::Letta.RequiredBeforeExitToolRule, TResult>? requiredBeforeExit = null,
+            global::System.Func<global::Letta.MaxCountPerStepToolRule, TResult>? maxCountPerStep = null,
+            global::System.Func<global::Letta.ParentToolRule, TResult>? parentLastTool = null,
+            global::System.Func<global::Letta.RequiresApprovalToolRule, TResult>? requiresApproval = null,
             bool validate = true)
         {
             if (validate)
@@ -459,15 +576,81 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.ChildToolRule?>? constrainChildTools = null,
-            global::System.Action<global::Letta.InitToolRule?>? runFirst = null,
-            global::System.Action<global::Letta.TerminalToolRule?>? exitLoop = null,
-            global::System.Action<global::Letta.ConditionalToolRule?>? conditional = null,
-            global::System.Action<global::Letta.ContinueToolRule?>? continueLoop = null,
-            global::System.Action<global::Letta.RequiredBeforeExitToolRule?>? requiredBeforeExit = null,
-            global::System.Action<global::Letta.MaxCountPerStepToolRule?>? maxCountPerStep = null,
-            global::System.Action<global::Letta.ParentToolRule?>? parentLastTool = null,
-            global::System.Action<global::Letta.RequiresApprovalToolRule?>? requiresApproval = null,
+            global::System.Action<global::Letta.ChildToolRule>? constrainChildTools = null,
+
+            global::System.Action<global::Letta.InitToolRule>? runFirst = null,
+
+            global::System.Action<global::Letta.TerminalToolRule>? exitLoop = null,
+
+            global::System.Action<global::Letta.ConditionalToolRule>? conditional = null,
+
+            global::System.Action<global::Letta.ContinueToolRule>? continueLoop = null,
+
+            global::System.Action<global::Letta.RequiredBeforeExitToolRule>? requiredBeforeExit = null,
+
+            global::System.Action<global::Letta.MaxCountPerStepToolRule>? maxCountPerStep = null,
+
+            global::System.Action<global::Letta.ParentToolRule>? parentLastTool = null,
+
+            global::System.Action<global::Letta.RequiresApprovalToolRule>? requiresApproval = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsConstrainChildTools)
+            {
+                constrainChildTools?.Invoke(ConstrainChildTools!);
+            }
+            else if (IsRunFirst)
+            {
+                runFirst?.Invoke(RunFirst!);
+            }
+            else if (IsExitLoop)
+            {
+                exitLoop?.Invoke(ExitLoop!);
+            }
+            else if (IsConditional)
+            {
+                conditional?.Invoke(Conditional!);
+            }
+            else if (IsContinueLoop)
+            {
+                continueLoop?.Invoke(ContinueLoop!);
+            }
+            else if (IsRequiredBeforeExit)
+            {
+                requiredBeforeExit?.Invoke(RequiredBeforeExit!);
+            }
+            else if (IsMaxCountPerStep)
+            {
+                maxCountPerStep?.Invoke(MaxCountPerStep!);
+            }
+            else if (IsParentLastTool)
+            {
+                parentLastTool?.Invoke(ParentLastTool!);
+            }
+            else if (IsRequiresApproval)
+            {
+                requiresApproval?.Invoke(RequiresApproval!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.ChildToolRule>? constrainChildTools = null,
+            global::System.Action<global::Letta.InitToolRule>? runFirst = null,
+            global::System.Action<global::Letta.TerminalToolRule>? exitLoop = null,
+            global::System.Action<global::Letta.ConditionalToolRule>? conditional = null,
+            global::System.Action<global::Letta.ContinueToolRule>? continueLoop = null,
+            global::System.Action<global::Letta.RequiredBeforeExitToolRule>? requiredBeforeExit = null,
+            global::System.Action<global::Letta.MaxCountPerStepToolRule>? maxCountPerStep = null,
+            global::System.Action<global::Letta.ParentToolRule>? parentLastTool = null,
+            global::System.Action<global::Letta.RequiresApprovalToolRule>? requiresApproval = null,
             bool validate = true)
         {
             if (validate)

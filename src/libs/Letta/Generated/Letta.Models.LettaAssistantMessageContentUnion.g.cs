@@ -30,6 +30,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
 #endif
         public bool IsText => Text != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TextContent? value)
+        {
+            value = Text;
+            return IsText;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -87,7 +100,7 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TextContent?, TResult>? text = null,
+            global::System.Func<global::Letta.TextContent, TResult>? text = null,
             bool validate = true)
         {
             if (validate)
@@ -107,7 +120,25 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TextContent?>? text = null,
+            global::System.Action<global::Letta.TextContent>? text = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TextContent>? text = null,
             bool validate = true)
         {
             if (validate)

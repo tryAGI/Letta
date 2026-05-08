@@ -32,6 +32,19 @@ namespace Letta
         public bool IsStdio => Stdio != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStdio(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.CreateStdioMCPServer? value)
+        {
+            value = Stdio;
+            return IsStdio;
+        }
+
+        /// <summary>
         /// Create a new SSE MCP server
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -49,6 +62,19 @@ namespace Letta
         public bool IsSse => Sse != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSse(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.CreateSSEMCPServer? value)
+        {
+            value = Sse;
+            return IsSse;
+        }
+
+        /// <summary>
         /// Create a new Streamable HTTP MCP server
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -64,6 +90,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamableHttp))]
 #endif
         public bool IsStreamableHttp => StreamableHttp != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStreamableHttp(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.CreateStreamableHTTPMCPServer? value)
+        {
+            value = StreamableHttp;
+            return IsStreamableHttp;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -165,9 +204,9 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.CreateStdioMCPServer?, TResult>? stdio = null,
-            global::System.Func<global::Letta.CreateSSEMCPServer?, TResult>? sse = null,
-            global::System.Func<global::Letta.CreateStreamableHTTPMCPServer?, TResult>? streamableHttp = null,
+            global::System.Func<global::Letta.CreateStdioMCPServer, TResult>? stdio = null,
+            global::System.Func<global::Letta.CreateSSEMCPServer, TResult>? sse = null,
+            global::System.Func<global::Letta.CreateStreamableHTTPMCPServer, TResult>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)
@@ -195,9 +234,39 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.CreateStdioMCPServer?>? stdio = null,
-            global::System.Action<global::Letta.CreateSSEMCPServer?>? sse = null,
-            global::System.Action<global::Letta.CreateStreamableHTTPMCPServer?>? streamableHttp = null,
+            global::System.Action<global::Letta.CreateStdioMCPServer>? stdio = null,
+
+            global::System.Action<global::Letta.CreateSSEMCPServer>? sse = null,
+
+            global::System.Action<global::Letta.CreateStreamableHTTPMCPServer>? streamableHttp = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStdio)
+            {
+                stdio?.Invoke(Stdio!);
+            }
+            else if (IsSse)
+            {
+                sse?.Invoke(Sse!);
+            }
+            else if (IsStreamableHttp)
+            {
+                streamableHttp?.Invoke(StreamableHttp!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.CreateStdioMCPServer>? stdio = null,
+            global::System.Action<global::Letta.CreateSSEMCPServer>? sse = null,
+            global::System.Action<global::Letta.CreateStreamableHTTPMCPServer>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)

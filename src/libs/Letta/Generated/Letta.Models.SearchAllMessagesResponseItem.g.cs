@@ -33,6 +33,19 @@ namespace Letta
         public bool IsSystemMessage => SystemMessage != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSystemMessage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.SystemMessageListResult? value)
+        {
+            value = SystemMessage;
+            return IsSystemMessage;
+        }
+
+        /// <summary>
         /// User message list result with agent context.<br/>
         /// Shape is identical to UpdateUserMessage but includes the owning agent_id and message id.
         /// </summary>
@@ -49,6 +62,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserMessage))]
 #endif
         public bool IsUserMessage => UserMessage != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickUserMessage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.UserMessageListResult? value)
+        {
+            value = UserMessage;
+            return IsUserMessage;
+        }
 
         /// <summary>
         /// Reasoning message list result with agent context.<br/>
@@ -69,6 +95,19 @@ namespace Letta
         public bool IsReasoningMessage => ReasoningMessage != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickReasoningMessage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ReasoningMessageListResult? value)
+        {
+            value = ReasoningMessage;
+            return IsReasoningMessage;
+        }
+
+        /// <summary>
         /// Assistant message list result with agent context.<br/>
         /// Shape is identical to UpdateAssistantMessage but includes the owning agent_id and message id.
         /// </summary>
@@ -85,6 +124,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssistantMessage))]
 #endif
         public bool IsAssistantMessage => AssistantMessage != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAssistantMessage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.AssistantMessageListResult? value)
+        {
+            value = AssistantMessage;
+            return IsAssistantMessage;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -208,10 +260,10 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.SystemMessageListResult?, TResult>? systemMessage = null,
-            global::System.Func<global::Letta.UserMessageListResult?, TResult>? userMessage = null,
-            global::System.Func<global::Letta.ReasoningMessageListResult?, TResult>? reasoningMessage = null,
-            global::System.Func<global::Letta.AssistantMessageListResult?, TResult>? assistantMessage = null,
+            global::System.Func<global::Letta.SystemMessageListResult, TResult>? systemMessage = null,
+            global::System.Func<global::Letta.UserMessageListResult, TResult>? userMessage = null,
+            global::System.Func<global::Letta.ReasoningMessageListResult, TResult>? reasoningMessage = null,
+            global::System.Func<global::Letta.AssistantMessageListResult, TResult>? assistantMessage = null,
             bool validate = true)
         {
             if (validate)
@@ -243,10 +295,46 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.SystemMessageListResult?>? systemMessage = null,
-            global::System.Action<global::Letta.UserMessageListResult?>? userMessage = null,
-            global::System.Action<global::Letta.ReasoningMessageListResult?>? reasoningMessage = null,
-            global::System.Action<global::Letta.AssistantMessageListResult?>? assistantMessage = null,
+            global::System.Action<global::Letta.SystemMessageListResult>? systemMessage = null,
+
+            global::System.Action<global::Letta.UserMessageListResult>? userMessage = null,
+
+            global::System.Action<global::Letta.ReasoningMessageListResult>? reasoningMessage = null,
+
+            global::System.Action<global::Letta.AssistantMessageListResult>? assistantMessage = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSystemMessage)
+            {
+                systemMessage?.Invoke(SystemMessage!);
+            }
+            else if (IsUserMessage)
+            {
+                userMessage?.Invoke(UserMessage!);
+            }
+            else if (IsReasoningMessage)
+            {
+                reasoningMessage?.Invoke(ReasoningMessage!);
+            }
+            else if (IsAssistantMessage)
+            {
+                assistantMessage?.Invoke(AssistantMessage!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.SystemMessageListResult>? systemMessage = null,
+            global::System.Action<global::Letta.UserMessageListResult>? userMessage = null,
+            global::System.Action<global::Letta.ReasoningMessageListResult>? reasoningMessage = null,
+            global::System.Action<global::Letta.AssistantMessageListResult>? assistantMessage = null,
             bool validate = true)
         {
             if (validate)
