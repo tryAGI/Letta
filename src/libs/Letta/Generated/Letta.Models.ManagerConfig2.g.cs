@@ -34,6 +34,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickRoundRobin(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.RoundRobinManager? value)
+        {
+            value = RoundRobin;
+            return IsRoundRobin;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.SupervisorManagerSchema? Supervisor { get; init; }
 #else
@@ -47,6 +60,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Supervisor))]
 #endif
         public bool IsSupervisor => Supervisor != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSupervisor(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.SupervisorManagerSchema? value)
+        {
+            value = Supervisor;
+            return IsSupervisor;
+        }
 
         /// <summary>
         /// 
@@ -68,6 +94,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickDynamic(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.DynamicManagerSchema? value)
+        {
+            value = Dynamic;
+            return IsDynamic;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.SleeptimeManagerSchema? Sleeptime { get; init; }
 #else
@@ -85,6 +124,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSleeptime(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.SleeptimeManagerSchema? value)
+        {
+            value = Sleeptime;
+            return IsSleeptime;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.VoiceSleeptimeManagerSchema? VoiceSleeptime { get; init; }
 #else
@@ -98,6 +150,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(VoiceSleeptime))]
 #endif
         public bool IsVoiceSleeptime => VoiceSleeptime != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickVoiceSleeptime(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.VoiceSleeptimeManagerSchema? value)
+        {
+            value = VoiceSleeptime;
+            return IsVoiceSleeptime;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -243,11 +308,11 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.RoundRobinManager?, TResult>? roundRobin = null,
-            global::System.Func<global::Letta.SupervisorManagerSchema?, TResult>? supervisor = null,
-            global::System.Func<global::Letta.DynamicManagerSchema?, TResult>? dynamic = null,
-            global::System.Func<global::Letta.SleeptimeManagerSchema?, TResult>? sleeptime = null,
-            global::System.Func<global::Letta.VoiceSleeptimeManagerSchema?, TResult>? voiceSleeptime = null,
+            global::System.Func<global::Letta.RoundRobinManager, TResult>? roundRobin = null,
+            global::System.Func<global::Letta.SupervisorManagerSchema, TResult>? supervisor = null,
+            global::System.Func<global::Letta.DynamicManagerSchema, TResult>? dynamic = null,
+            global::System.Func<global::Letta.SleeptimeManagerSchema, TResult>? sleeptime = null,
+            global::System.Func<global::Letta.VoiceSleeptimeManagerSchema, TResult>? voiceSleeptime = null,
             bool validate = true)
         {
             if (validate)
@@ -283,11 +348,53 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.RoundRobinManager?>? roundRobin = null,
-            global::System.Action<global::Letta.SupervisorManagerSchema?>? supervisor = null,
-            global::System.Action<global::Letta.DynamicManagerSchema?>? dynamic = null,
-            global::System.Action<global::Letta.SleeptimeManagerSchema?>? sleeptime = null,
-            global::System.Action<global::Letta.VoiceSleeptimeManagerSchema?>? voiceSleeptime = null,
+            global::System.Action<global::Letta.RoundRobinManager>? roundRobin = null,
+
+            global::System.Action<global::Letta.SupervisorManagerSchema>? supervisor = null,
+
+            global::System.Action<global::Letta.DynamicManagerSchema>? dynamic = null,
+
+            global::System.Action<global::Letta.SleeptimeManagerSchema>? sleeptime = null,
+
+            global::System.Action<global::Letta.VoiceSleeptimeManagerSchema>? voiceSleeptime = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsRoundRobin)
+            {
+                roundRobin?.Invoke(RoundRobin!);
+            }
+            else if (IsSupervisor)
+            {
+                supervisor?.Invoke(Supervisor!);
+            }
+            else if (IsDynamic)
+            {
+                dynamic?.Invoke(Dynamic!);
+            }
+            else if (IsSleeptime)
+            {
+                sleeptime?.Invoke(Sleeptime!);
+            }
+            else if (IsVoiceSleeptime)
+            {
+                voiceSleeptime?.Invoke(VoiceSleeptime!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.RoundRobinManager>? roundRobin = null,
+            global::System.Action<global::Letta.SupervisorManagerSchema>? supervisor = null,
+            global::System.Action<global::Letta.DynamicManagerSchema>? dynamic = null,
+            global::System.Action<global::Letta.SleeptimeManagerSchema>? sleeptime = null,
+            global::System.Action<global::Letta.VoiceSleeptimeManagerSchema>? voiceSleeptime = null,
             bool validate = true)
         {
             if (validate)

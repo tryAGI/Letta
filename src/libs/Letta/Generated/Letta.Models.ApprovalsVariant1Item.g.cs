@@ -34,6 +34,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickApproval(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ApprovalReturn? value)
+        {
+            value = Approval;
+            return IsApproval;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.LettaSchemasLettaMessageToolReturn? Tool { get; init; }
 #else
@@ -47,6 +60,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Tool))]
 #endif
         public bool IsTool => Tool != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTool(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasLettaMessageToolReturn? value)
+        {
+            value = Tool;
+            return IsTool;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -126,8 +152,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.ApprovalReturn?, TResult>? approval = null,
-            global::System.Func<global::Letta.LettaSchemasLettaMessageToolReturn?, TResult>? tool = null,
+            global::System.Func<global::Letta.ApprovalReturn, TResult>? approval = null,
+            global::System.Func<global::Letta.LettaSchemasLettaMessageToolReturn, TResult>? tool = null,
             bool validate = true)
         {
             if (validate)
@@ -151,8 +177,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.ApprovalReturn?>? approval = null,
-            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn?>? tool = null,
+            global::System.Action<global::Letta.ApprovalReturn>? approval = null,
+
+            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn>? tool = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsApproval)
+            {
+                approval?.Invoke(Approval!);
+            }
+            else if (IsTool)
+            {
+                tool?.Invoke(Tool!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.ApprovalReturn>? approval = null,
+            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn>? tool = null,
             bool validate = true)
         {
             if (validate)

@@ -32,6 +32,19 @@ namespace Letta
         public bool IsStdio => Stdio != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStdio(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? value)
+        {
+            value = Stdio;
+            return IsStdio;
+        }
+
+        /// <summary>
         /// Update schema for SSE MCP server - all fields optional
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -49,6 +62,19 @@ namespace Letta
         public bool IsSse => Sse != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSse(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? value)
+        {
+            value = Sse;
+            return IsSse;
+        }
+
+        /// <summary>
         /// Update schema for Streamable HTTP MCP server - all fields optional
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -64,6 +90,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamableHttp))]
 #endif
         public bool IsStreamableHttp => StreamableHttp != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickStreamableHttp(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? value)
+        {
+            value = StreamableHttp;
+            return IsStreamableHttp;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -165,9 +204,9 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?, TResult>? stdio = null,
-            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?, TResult>? sse = null,
-            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?, TResult>? streamableHttp = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer, TResult>? stdio = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer, TResult>? sse = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer, TResult>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)
@@ -195,9 +234,39 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?>? stdio = null,
-            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?>? sse = null,
-            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?>? streamableHttp = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer>? stdio = null,
+
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer>? sse = null,
+
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer>? streamableHttp = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsStdio)
+            {
+                stdio?.Invoke(Stdio!);
+            }
+            else if (IsSse)
+            {
+                sse?.Invoke(Sse!);
+            }
+            else if (IsStreamableHttp)
+            {
+                streamableHttp?.Invoke(StreamableHttp!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer>? stdio = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer>? sse = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)

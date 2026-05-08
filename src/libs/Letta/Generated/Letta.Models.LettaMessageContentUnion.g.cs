@@ -34,6 +34,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TextContent? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
 #else
@@ -47,6 +60,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
 #endif
         public bool IsImage => Image != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ImageContent? value)
+        {
+            value = Image;
+            return IsImage;
+        }
 
         /// <summary>
         /// 
@@ -68,6 +94,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickToolCall(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ToolCallContent? value)
+        {
+            value = ToolCall;
+            return IsToolCall;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolReturnContent? ToolReturn { get; init; }
 #else
@@ -81,6 +120,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturn))]
 #endif
         public bool IsToolReturn => ToolReturn != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickToolReturn(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ToolReturnContent? value)
+        {
+            value = ToolReturn;
+            return IsToolReturn;
+        }
 
         /// <summary>
         /// Sent via the Anthropic Messages API
@@ -100,6 +152,19 @@ namespace Letta
         public bool IsReasoning => Reasoning != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ReasoningContent? value)
+        {
+            value = Reasoning;
+            return IsReasoning;
+        }
+
+        /// <summary>
         /// Sent via the Anthropic Messages API
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -117,6 +182,19 @@ namespace Letta
         public bool IsRedactedReasoning => RedactedReasoning != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRedactedReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.RedactedReasoningContent? value)
+        {
+            value = RedactedReasoning;
+            return IsRedactedReasoning;
+        }
+
+        /// <summary>
         /// A placeholder for reasoning content we know is present, but isn't returned by the provider (e.g. OpenAI GPT-5 on ChatCompletions)
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -132,6 +210,19 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OmittedReasoning))]
 #endif
         public bool IsOmittedReasoning => OmittedReasoning != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOmittedReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.OmittedReasoningContent? value)
+        {
+            value = OmittedReasoning;
+            return IsOmittedReasoning;
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -321,13 +412,13 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TextContent?, TResult>? text = null,
-            global::System.Func<global::Letta.ImageContent?, TResult>? image = null,
-            global::System.Func<global::Letta.ToolCallContent?, TResult>? toolCall = null,
-            global::System.Func<global::Letta.ToolReturnContent?, TResult>? toolReturn = null,
-            global::System.Func<global::Letta.ReasoningContent?, TResult>? reasoning = null,
-            global::System.Func<global::Letta.RedactedReasoningContent?, TResult>? redactedReasoning = null,
-            global::System.Func<global::Letta.OmittedReasoningContent?, TResult>? omittedReasoning = null,
+            global::System.Func<global::Letta.TextContent, TResult>? text = null,
+            global::System.Func<global::Letta.ImageContent, TResult>? image = null,
+            global::System.Func<global::Letta.ToolCallContent, TResult>? toolCall = null,
+            global::System.Func<global::Letta.ToolReturnContent, TResult>? toolReturn = null,
+            global::System.Func<global::Letta.ReasoningContent, TResult>? reasoning = null,
+            global::System.Func<global::Letta.RedactedReasoningContent, TResult>? redactedReasoning = null,
+            global::System.Func<global::Letta.OmittedReasoningContent, TResult>? omittedReasoning = null,
             bool validate = true)
         {
             if (validate)
@@ -371,13 +462,67 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TextContent?>? text = null,
-            global::System.Action<global::Letta.ImageContent?>? image = null,
-            global::System.Action<global::Letta.ToolCallContent?>? toolCall = null,
-            global::System.Action<global::Letta.ToolReturnContent?>? toolReturn = null,
-            global::System.Action<global::Letta.ReasoningContent?>? reasoning = null,
-            global::System.Action<global::Letta.RedactedReasoningContent?>? redactedReasoning = null,
-            global::System.Action<global::Letta.OmittedReasoningContent?>? omittedReasoning = null,
+            global::System.Action<global::Letta.TextContent>? text = null,
+
+            global::System.Action<global::Letta.ImageContent>? image = null,
+
+            global::System.Action<global::Letta.ToolCallContent>? toolCall = null,
+
+            global::System.Action<global::Letta.ToolReturnContent>? toolReturn = null,
+
+            global::System.Action<global::Letta.ReasoningContent>? reasoning = null,
+
+            global::System.Action<global::Letta.RedactedReasoningContent>? redactedReasoning = null,
+
+            global::System.Action<global::Letta.OmittedReasoningContent>? omittedReasoning = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsImage)
+            {
+                image?.Invoke(Image!);
+            }
+            else if (IsToolCall)
+            {
+                toolCall?.Invoke(ToolCall!);
+            }
+            else if (IsToolReturn)
+            {
+                toolReturn?.Invoke(ToolReturn!);
+            }
+            else if (IsReasoning)
+            {
+                reasoning?.Invoke(Reasoning!);
+            }
+            else if (IsRedactedReasoning)
+            {
+                redactedReasoning?.Invoke(RedactedReasoning!);
+            }
+            else if (IsOmittedReasoning)
+            {
+                omittedReasoning?.Invoke(OmittedReasoning!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TextContent>? text = null,
+            global::System.Action<global::Letta.ImageContent>? image = null,
+            global::System.Action<global::Letta.ToolCallContent>? toolCall = null,
+            global::System.Action<global::Letta.ToolReturnContent>? toolReturn = null,
+            global::System.Action<global::Letta.ReasoningContent>? reasoning = null,
+            global::System.Action<global::Letta.RedactedReasoningContent>? redactedReasoning = null,
+            global::System.Action<global::Letta.OmittedReasoningContent>? omittedReasoning = null,
             bool validate = true)
         {
             if (validate)
