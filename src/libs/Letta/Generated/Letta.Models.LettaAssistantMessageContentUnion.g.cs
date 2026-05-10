@@ -64,6 +64,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaAssistantMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaAssistantMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public LettaAssistantMessageContentUnion(
             global::Letta.LettaAssistantMessageContentUnionDiscriminatorType? type,
             global::Letta.TextContent? text

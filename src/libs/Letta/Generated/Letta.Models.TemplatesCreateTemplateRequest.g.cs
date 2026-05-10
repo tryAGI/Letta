@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatesCreateTemplateRequest FromAgent(global::Letta.TemplatesCreateTemplateRequestVariant1? value) => new TemplatesCreateTemplateRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator TemplatesCreateTemplateRequest(global::Letta.TemplatesCreateTemplateRequestVariant2 value) => new TemplatesCreateTemplateRequest((global::Letta.TemplatesCreateTemplateRequestVariant2?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             AgentFile = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatesCreateTemplateRequest FromAgentFile(global::Letta.TemplatesCreateTemplateRequestVariant2? value) => new TemplatesCreateTemplateRequest(value);
 
         /// <summary>
         /// 

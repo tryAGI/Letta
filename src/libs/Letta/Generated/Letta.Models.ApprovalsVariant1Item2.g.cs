@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ApprovalsVariant1Item2 FromApproval(global::Letta.ApprovalReturn? value) => new ApprovalsVariant1Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ApprovalsVariant1Item2(global::Letta.LettaSchemasLettaMessageToolReturn value) => new ApprovalsVariant1Item2((global::Letta.LettaSchemasLettaMessageToolReturn?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             Tool = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ApprovalsVariant1Item2 FromTool(global::Letta.LettaSchemasLettaMessageToolReturn? value) => new ApprovalsVariant1Item2(value);
 
         /// <summary>
         /// 

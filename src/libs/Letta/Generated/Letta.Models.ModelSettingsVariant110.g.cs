@@ -484,6 +484,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromOpenai(global::Letta.OpenAIModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.SGLangModelSettings value) => new ModelSettingsVariant110((global::Letta.SGLangModelSettings?)value);
 
         /// <summary>
@@ -498,6 +503,11 @@ namespace Letta
         {
             Sglang = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromSglang(global::Letta.SGLangModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -520,6 +530,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromAnthropic(global::Letta.AnthropicModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.GoogleAIModelSettings value) => new ModelSettingsVariant110((global::Letta.GoogleAIModelSettings?)value);
 
         /// <summary>
@@ -534,6 +549,11 @@ namespace Letta
         {
             GoogleAi = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromGoogleAi(global::Letta.GoogleAIModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -556,6 +576,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromGoogleVertex(global::Letta.GoogleVertexModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.AzureModelSettings value) => new ModelSettingsVariant110((global::Letta.AzureModelSettings?)value);
 
         /// <summary>
@@ -570,6 +595,11 @@ namespace Letta
         {
             Azure = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromAzure(global::Letta.AzureModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -592,6 +622,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromXai(global::Letta.XAIModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.ZAIModelSettings value) => new ModelSettingsVariant110((global::Letta.ZAIModelSettings?)value);
 
         /// <summary>
@@ -606,6 +641,11 @@ namespace Letta
         {
             Zai = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromZai(global::Letta.ZAIModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -628,6 +668,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromGroq(global::Letta.GroqModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.DeepseekModelSettings value) => new ModelSettingsVariant110((global::Letta.DeepseekModelSettings?)value);
 
         /// <summary>
@@ -642,6 +687,11 @@ namespace Letta
         {
             Deepseek = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromDeepseek(global::Letta.DeepseekModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -664,6 +714,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromTogether(global::Letta.TogetherModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.BedrockModelSettings value) => new ModelSettingsVariant110((global::Letta.BedrockModelSettings?)value);
 
         /// <summary>
@@ -678,6 +733,11 @@ namespace Letta
         {
             Bedrock = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromBedrock(global::Letta.BedrockModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 
@@ -700,6 +760,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromBaseten(global::Letta.BasetenModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.OpenRouterModelSettings value) => new ModelSettingsVariant110((global::Letta.OpenRouterModelSettings?)value);
 
         /// <summary>
@@ -718,6 +783,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant110 FromOpenrouter(global::Letta.OpenRouterModelSettings? value) => new ModelSettingsVariant110(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant110(global::Letta.ChatGPTOAuthModelSettings value) => new ModelSettingsVariant110((global::Letta.ChatGPTOAuthModelSettings?)value);
 
         /// <summary>
@@ -732,6 +802,11 @@ namespace Letta
         {
             ChatgptOauth = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant110 FromChatgptOauth(global::Letta.ChatGPTOAuthModelSettings? value) => new ModelSettingsVariant110(value);
 
         /// <summary>
         /// 

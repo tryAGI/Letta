@@ -158,6 +158,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static SearchAllMessagesResponseItem FromSystemMessage(global::Letta.SystemMessageListResult? value) => new SearchAllMessagesResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.UserMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.UserMessageListResult?)value);
 
         /// <summary>
@@ -172,6 +177,11 @@ namespace Letta
         {
             UserMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SearchAllMessagesResponseItem FromUserMessage(global::Letta.UserMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
         /// 
@@ -194,6 +204,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static SearchAllMessagesResponseItem FromReasoningMessage(global::Letta.ReasoningMessageListResult? value) => new SearchAllMessagesResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.AssistantMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.AssistantMessageListResult?)value);
 
         /// <summary>
@@ -208,6 +223,11 @@ namespace Letta
         {
             AssistantMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static SearchAllMessagesResponseItem FromAssistantMessage(global::Letta.AssistantMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
         /// 

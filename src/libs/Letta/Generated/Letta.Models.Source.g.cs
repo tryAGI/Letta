@@ -124,6 +124,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Source FromUrl(global::Letta.UrlImage? value) => new Source(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Source(global::Letta.Base64Image value) => new Source((global::Letta.Base64Image?)value);
 
         /// <summary>
@@ -142,6 +147,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Source FromBase64(global::Letta.Base64Image? value) => new Source(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Source(global::Letta.LettaImage value) => new Source((global::Letta.LettaImage?)value);
 
         /// <summary>
@@ -156,6 +166,11 @@ namespace Letta
         {
             Letta = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Source FromLetta(global::Letta.LettaImage? value) => new Source(value);
 
         /// <summary>
         /// 

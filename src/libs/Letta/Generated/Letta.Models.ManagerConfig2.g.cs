@@ -184,6 +184,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig2 FromRoundRobin(global::Letta.RoundRobinManager? value) => new ManagerConfig2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig2(global::Letta.SupervisorManagerSchema value) => new ManagerConfig2((global::Letta.SupervisorManagerSchema?)value);
 
         /// <summary>
@@ -198,6 +203,11 @@ namespace Letta
         {
             Supervisor = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfig2 FromSupervisor(global::Letta.SupervisorManagerSchema? value) => new ManagerConfig2(value);
 
         /// <summary>
         /// 
@@ -220,6 +230,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig2 FromDynamic(global::Letta.DynamicManagerSchema? value) => new ManagerConfig2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig2(global::Letta.SleeptimeManagerSchema value) => new ManagerConfig2((global::Letta.SleeptimeManagerSchema?)value);
 
         /// <summary>
@@ -238,6 +253,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig2 FromSleeptime(global::Letta.SleeptimeManagerSchema? value) => new ManagerConfig2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig2(global::Letta.VoiceSleeptimeManagerSchema value) => new ManagerConfig2((global::Letta.VoiceSleeptimeManagerSchema?)value);
 
         /// <summary>
@@ -252,6 +272,11 @@ namespace Letta
         {
             VoiceSleeptime = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfig2 FromVoiceSleeptime(global::Letta.VoiceSleeptimeManagerSchema? value) => new ManagerConfig2(value);
 
         /// <summary>
         /// 

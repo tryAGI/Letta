@@ -184,6 +184,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfigVariant1 FromRoundRobin(global::Letta.RoundRobinManagerUpdate? value) => new ManagerConfigVariant1(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfigVariant1(global::Letta.SupervisorManagerUpdate value) => new ManagerConfigVariant1((global::Letta.SupervisorManagerUpdate?)value);
 
         /// <summary>
@@ -198,6 +203,11 @@ namespace Letta
         {
             Supervisor = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfigVariant1 FromSupervisor(global::Letta.SupervisorManagerUpdate? value) => new ManagerConfigVariant1(value);
 
         /// <summary>
         /// 
@@ -220,6 +230,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfigVariant1 FromDynamic(global::Letta.DynamicManagerUpdate? value) => new ManagerConfigVariant1(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfigVariant1(global::Letta.SleeptimeManagerUpdate value) => new ManagerConfigVariant1((global::Letta.SleeptimeManagerUpdate?)value);
 
         /// <summary>
@@ -238,6 +253,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfigVariant1 FromSleeptime(global::Letta.SleeptimeManagerUpdate? value) => new ManagerConfigVariant1(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfigVariant1(global::Letta.VoiceSleeptimeManagerUpdate value) => new ManagerConfigVariant1((global::Letta.VoiceSleeptimeManagerUpdate?)value);
 
         /// <summary>
@@ -252,6 +272,11 @@ namespace Letta
         {
             VoiceSleeptime = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfigVariant1 FromVoiceSleeptime(global::Letta.VoiceSleeptimeManagerUpdate? value) => new ManagerConfigVariant1(value);
 
         /// <summary>
         /// 

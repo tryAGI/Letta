@@ -422,6 +422,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromSystemMessage(global::Letta.SystemMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.UserMessage value) => new ListMessagesForStepResponseItem((global::Letta.UserMessage?)value);
 
         /// <summary>
@@ -436,6 +441,11 @@ namespace Letta
         {
             UserMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListMessagesForStepResponseItem FromUserMessage(global::Letta.UserMessage? value) => new ListMessagesForStepResponseItem(value);
 
         /// <summary>
         /// 
@@ -458,6 +468,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromReasoningMessage(global::Letta.ReasoningMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.HiddenReasoningMessage value) => new ListMessagesForStepResponseItem((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
@@ -472,6 +487,11 @@ namespace Letta
         {
             HiddenReasoningMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListMessagesForStepResponseItem FromHiddenReasoningMessage(global::Letta.HiddenReasoningMessage? value) => new ListMessagesForStepResponseItem(value);
 
         /// <summary>
         /// 
@@ -494,6 +514,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromToolCallMessage(global::Letta.ToolCallMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.ToolReturnMessage value) => new ListMessagesForStepResponseItem((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
@@ -508,6 +533,11 @@ namespace Letta
         {
             ToolReturnMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListMessagesForStepResponseItem FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new ListMessagesForStepResponseItem(value);
 
         /// <summary>
         /// 
@@ -530,6 +560,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromAssistantMessage(global::Letta.AssistantMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.ApprovalRequestMessage value) => new ListMessagesForStepResponseItem((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
@@ -544,6 +579,11 @@ namespace Letta
         {
             ApprovalRequestMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListMessagesForStepResponseItem FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new ListMessagesForStepResponseItem(value);
 
         /// <summary>
         /// 
@@ -566,6 +606,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.SummaryMessage value) => new ListMessagesForStepResponseItem((global::Letta.SummaryMessage?)value);
 
         /// <summary>
@@ -584,6 +629,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ListMessagesForStepResponseItem FromSummaryMessage(global::Letta.SummaryMessage? value) => new ListMessagesForStepResponseItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ListMessagesForStepResponseItem(global::Letta.EventMessage value) => new ListMessagesForStepResponseItem((global::Letta.EventMessage?)value);
 
         /// <summary>
@@ -598,6 +648,11 @@ namespace Letta
         {
             EventMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ListMessagesForStepResponseItem FromEventMessage(global::Letta.EventMessage? value) => new ListMessagesForStepResponseItem(value);
 
         /// <summary>
         /// 

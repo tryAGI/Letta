@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaUserMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaUserMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaUserMessageContentUnion(global::Letta.ImageContent value) => new LettaUserMessageContentUnion((global::Letta.ImageContent?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaUserMessageContentUnion FromImage(global::Letta.ImageContent? value) => new LettaUserMessageContentUnion(value);
 
         /// <summary>
         /// 

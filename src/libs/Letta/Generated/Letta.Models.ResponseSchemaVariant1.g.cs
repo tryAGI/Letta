@@ -124,6 +124,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ResponseSchemaVariant1 FromText(global::Letta.TextResponseFormat? value) => new ResponseSchemaVariant1(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResponseSchemaVariant1(global::Letta.JsonSchemaResponseFormat value) => new ResponseSchemaVariant1((global::Letta.JsonSchemaResponseFormat?)value);
 
         /// <summary>
@@ -142,6 +147,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ResponseSchemaVariant1 FromJsonSchema(global::Letta.JsonSchemaResponseFormat? value) => new ResponseSchemaVariant1(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResponseSchemaVariant1(global::Letta.JsonObjectResponseFormat value) => new ResponseSchemaVariant1((global::Letta.JsonObjectResponseFormat?)value);
 
         /// <summary>
@@ -156,6 +166,11 @@ namespace Letta
         {
             JsonObject = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResponseSchemaVariant1 FromJsonObject(global::Letta.JsonObjectResponseFormat? value) => new ResponseSchemaVariant1(value);
 
         /// <summary>
         /// 

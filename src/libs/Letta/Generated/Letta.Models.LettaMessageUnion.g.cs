@@ -422,6 +422,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromSystemMessage(global::Letta.SystemMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.UserMessage value) => new LettaMessageUnion((global::Letta.UserMessage?)value);
 
         /// <summary>
@@ -436,6 +441,11 @@ namespace Letta
         {
             UserMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageUnion FromUserMessage(global::Letta.UserMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
         /// 
@@ -458,6 +468,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromReasoningMessage(global::Letta.ReasoningMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.HiddenReasoningMessage value) => new LettaMessageUnion((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
@@ -472,6 +487,11 @@ namespace Letta
         {
             HiddenReasoningMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageUnion FromHiddenReasoningMessage(global::Letta.HiddenReasoningMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
         /// 
@@ -494,6 +514,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromToolCallMessage(global::Letta.ToolCallMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ToolReturnMessage value) => new LettaMessageUnion((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
@@ -508,6 +533,11 @@ namespace Letta
         {
             ToolReturnMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageUnion FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
         /// 
@@ -530,6 +560,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromAssistantMessage(global::Letta.AssistantMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ApprovalRequestMessage value) => new LettaMessageUnion((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
@@ -544,6 +579,11 @@ namespace Letta
         {
             ApprovalRequestMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageUnion FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
         /// 
@@ -566,6 +606,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.SummaryMessage value) => new LettaMessageUnion((global::Letta.SummaryMessage?)value);
 
         /// <summary>
@@ -584,6 +629,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageUnion FromSummaryMessage(global::Letta.SummaryMessage? value) => new LettaMessageUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.EventMessage value) => new LettaMessageUnion((global::Letta.EventMessage?)value);
 
         /// <summary>
@@ -598,6 +648,11 @@ namespace Letta
         {
             EventMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageUnion FromEventMessage(global::Letta.EventMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
         /// 

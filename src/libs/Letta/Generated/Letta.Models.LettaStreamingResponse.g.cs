@@ -494,6 +494,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromSystemMessage(global::Letta.SystemMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.UserMessage value) => new LettaStreamingResponse((global::Letta.UserMessage?)value);
 
         /// <summary>
@@ -508,6 +513,11 @@ namespace Letta
         {
             UserMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromUserMessage(global::Letta.UserMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
@@ -530,6 +540,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromHiddenReasoningMessage1(global::Letta.ReasoningMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.HiddenReasoningMessage value) => new LettaStreamingResponse((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
@@ -544,6 +559,11 @@ namespace Letta
         {
             HiddenReasoningMessage2 = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromHiddenReasoningMessage2(global::Letta.HiddenReasoningMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
@@ -566,6 +586,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromToolCallMessage(global::Letta.ToolCallMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ToolReturnMessage value) => new LettaStreamingResponse((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
@@ -580,6 +605,11 @@ namespace Letta
         {
             ToolReturnMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
@@ -602,6 +632,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromAssistantMessage(global::Letta.AssistantMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ApprovalRequestMessage value) => new LettaStreamingResponse((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
@@ -616,6 +651,11 @@ namespace Letta
         {
             ApprovalRequestMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
@@ -638,6 +678,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaPing value) => new LettaStreamingResponse((global::Letta.LettaPing?)value);
 
         /// <summary>
@@ -652,6 +697,11 @@ namespace Letta
         {
             Ping = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromPing(global::Letta.LettaPing? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
@@ -674,6 +724,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromErrorMessage(global::Letta.LettaErrorMessage? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaStopReason value) => new LettaStreamingResponse((global::Letta.LettaStopReason?)value);
 
         /// <summary>
@@ -692,6 +747,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaStreamingResponse FromStopReason(global::Letta.LettaStopReason? value) => new LettaStreamingResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaUsageStatistics value) => new LettaStreamingResponse((global::Letta.LettaUsageStatistics?)value);
 
         /// <summary>
@@ -706,6 +766,11 @@ namespace Letta
         {
             UsageStatistics = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaStreamingResponse FromUsageStatistics(global::Letta.LettaUsageStatistics? value) => new LettaStreamingResponse(value);
 
         /// <summary>
         /// 
