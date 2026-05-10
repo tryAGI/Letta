@@ -12,6 +12,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? SlackChannelReader { get; init; }
 #else
@@ -108,10 +113,13 @@ namespace Letta
         /// 
         /// </summary>
         public ProducerConfig2(
+            global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType? type,
             global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? slackChannelReader,
             global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2? customWebhook
             )
         {
+            Type = type;
+
             SlackChannelReader = slackChannelReader;
             CustomWebhook = customWebhook;
         }

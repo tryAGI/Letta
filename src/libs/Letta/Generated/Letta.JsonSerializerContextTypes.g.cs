@@ -2912,2375 +2912,2431 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionNoProjectRequest? Type721 { get; set; }
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestDiscriminatorType? Type721 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategy? Type722 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionNoProjectRequest? Type722 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionRequest? Type723 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionNoProjectRequestBlockReconciliationStrategy? Type723 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategy? Type724 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionRequest? Type724 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesForkTemplateRequest? Type725 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionRequestBlockReconciliationStrategy? Type725 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequest? Type726 { get; set; }
+        public global::Letta.TemplatesForkTemplateRequest? Type726 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant1? Type727 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequest? Type727 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant1Type? Type728 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestVariant1? Type728 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant2? Type729 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestVariant1Type? Type729 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant2Type? Type730 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestVariant2? Type730 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestDiscriminator? Type731 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestVariant2Type? Type731 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectRequest? Type732 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestDiscriminator? Type732 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRenameTemplateRequest? Type733 { get; set; }
+        public global::Letta.TemplatesCreateTemplateRequestDiscriminatorType? Type733 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateTemplateDescriptionRequest? Type734 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectRequest? Type734 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesMigrateDeploymentRequest? Type735 { get; set; }
+        public global::Letta.TemplatesRenameTemplateRequest? Type735 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateNoProjectRequest? Type736 { get; set; }
+        public global::Letta.TemplatesUpdateTemplateDescriptionRequest? Type736 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateRequest? Type737 { get; set; }
+        public global::Letta.TemplatesMigrateDeploymentRequest? Type737 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileRequest? Type738 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateNoProjectRequest? Type738 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequest? Type739 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateRequest? Type739 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PolicyItem>? Type740 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileRequest? Type740 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PolicyItem? Type741 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequest? Type741 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1? Type742 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PolicyItem>? Type742 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Type? Type743 { get; set; }
+        public global::Letta.PolicyItem? Type743 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces>? Type744 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1? Type744 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces? Type745 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Type? Type745 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemDiscriminator? Type746 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces>? Type746 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProjectsCreateProjectRequest? Type747 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces? Type747 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendFeedbackRequest? Type748 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemDiscriminator? Type748 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendFeedbackRequestFeature? Type749 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemDiscriminatorType? Type749 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequest? Type750 { get; set; }
+        public global::Letta.ProjectsCreateProjectRequest? Type750 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestService? Type751 { get; set; }
+        public global::Letta.MetadataSendFeedbackRequest? Type751 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.EventsItem>? Type752 { get; set; }
+        public global::Letta.MetadataSendFeedbackRequestFeature? Type752 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EventsItem? Type753 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequest? Type753 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant1? Type754 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestService? Type754 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant1Type? Type755 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.EventsItem>? Type755 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant1Data? Type756 { get; set; }
+        public global::Letta.EventsItem? Type756 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant2? Type757 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant1? Type757 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant2Type? Type758 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant1Type? Type758 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant2Data? Type759 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant1Data? Type759 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant3? Type760 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant2? Type760 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant3Type? Type761 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant2Type? Type761 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant3Data? Type762 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant2Data? Type762 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant4? Type763 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant3? Type763 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant4Type? Type764 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant3Type? Type764 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant4Data? Type765 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant3Data? Type765 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant5? Type766 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant4? Type766 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant5Type? Type767 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant4Type? Type767 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventVariant5Data? Type768 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant4Data? Type768 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryRequestEventDiscriminator? Type769 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant5? Type769 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequest? Type770 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant5Type? Type770 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage>? Type771 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventVariant5Data? Type771 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage? Type772 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventDiscriminator? Type772 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1? Type773 { get; set; }
+        public global::Letta.MetadataSendTelemetryRequestEventDiscriminatorType? Type773 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1Type? Type774 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequest? Type774 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2? Type775 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage>? Type775 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2Source? Type776 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage? Type776 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceType? Type777 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1? Type777 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2Type? Type778 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant1Type? Type778 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageRole? Type779 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2? Type779 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageType? Type780 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2Source? Type780 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>? Type781 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2SourceType? Type781 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType? Type782 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2Type? Type782 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1? Type783 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageRole? Type783 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type? Type784 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessageType? Type784 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2? Type785 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>? Type785 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2Type? Type786 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType? Type786 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsCreateFeedRequest? Type787 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1? Type787 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsPublishMessagesRequest? Type788 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type? Type788 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FeedsPublishMessagesRequestMessage>? Type789 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2? Type789 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsPublishMessagesRequestMessage? Type790 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2Type? Type790 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsSubscribeAgentRequest? Type791 { get; set; }
+        public global::Letta.FeedsCreateFeedRequest? Type791 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateSubscriptionRequest? Type792 { get; set; }
+        public global::Letta.FeedsPublishMessagesRequest? Type792 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUnsubscribeAgentRequest? Type793 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FeedsPublishMessagesRequestMessage>? Type793 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsBackfillSubscriptionRequest? Type794 { get; set; }
+        public global::Letta.FeedsPublishMessagesRequestMessage? Type794 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateAllSubscriptionsCronRequest? Type795 { get; set; }
+        public global::Letta.FeedsSubscribeAgentRequest? Type795 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequest? Type796 { get; set; }
+        public global::Letta.FeedsUpdateSubscriptionRequest? Type796 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestIntegrationType? Type797 { get; set; }
+        public global::Letta.FeedsUnsubscribeAgentRequest? Type797 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProducerConfig? Type798 { get; set; }
+        public global::Letta.FeedsBackfillSubscriptionRequest? Type798 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1? Type799 { get; set; }
+        public global::Letta.FeedsUpdateAllSubscriptionsCronRequest? Type799 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1Type? Type800 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequest? Type800 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1Data? Type801 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestIntegrationType? Type801 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1DataChannel>? Type802 { get; set; }
+        public global::Letta.ProducerConfig? Type802 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1DataChannel? Type803 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1? Type803 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2? Type804 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1Type? Type804 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2Type? Type805 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1Data? Type805 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigDiscriminator? Type806 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1DataChannel>? Type806 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineRequest? Type807 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1DataChannel? Type807 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequest? Type808 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2? Type808 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProducerConfig2? Type809 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2Type? Type809 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? Type810 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigDiscriminator? Type810 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type? Type811 { get; set; }
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigDiscriminatorType? Type811 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Data? Type812 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineRequest? Type812 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1DataChannel>? Type813 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequest? Type813 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1DataChannel? Type814 { get; set; }
+        public global::Letta.ProducerConfig2? Type814 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2? Type815 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? Type815 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2Type? Type816 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type? Type816 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminator? Type817 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Data? Type817 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequest? Type818 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1DataChannel>? Type818 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestIntegrationType? Type819 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1DataChannel? Type819 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProducerConfig3? Type820 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2? Type820 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1? Type821 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2Type? Type821 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Type? Type822 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminator? Type822 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Data? Type823 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType? Type823 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1DataChannel>? Type824 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequest? Type824 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1DataChannel? Type825 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestIntegrationType? Type825 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2? Type826 { get; set; }
+        public global::Letta.ProducerConfig3? Type826 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2Type? Type827 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1? Type827 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminator? Type828 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Type? Type828 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsRegisterRequest? Type829 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Data? Type829 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsRegisterRequestMetadata? Type830 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1DataChannel>? Type830 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequest? Type831 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1DataChannel? Type831 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>>? Type832 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2? Type832 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>? Type833 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2Type? Type833 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1? Type834 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminator? Type834 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1Role? Type835 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminatorType? Type835 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.OneOf<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>? Type836 { get; set; }
+        public global::Letta.EnvironmentsRegisterRequest? Type836 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>? Type837 { get; set; }
+        public global::Letta.EnvironmentsRegisterRequestMetadata? Type837 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item? Type838 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequest? Type838 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemType? Type839 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>>? Type839 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2? Type840 { get; set; }
+        public global::Letta.OneOf<global::Letta.EnvironmentsSendMessageRequestMessageVariant1, global::Letta.EnvironmentsSendMessageRequestMessageVariant2>? Type840 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2Type? Type841 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1? Type841 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1? Type842 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1Role? Type842 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Type? Type843 { get; set; }
+        public global::Letta.OneOf<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>>? Type843 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.OneOf<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>? Type844 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item>? Type844 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>? Type845 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item? Type845 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item? Type846 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant1ContentVariant2ItemType? Type846 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemType? Type847 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2? Type847 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Status? Type848 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2Type? Type848 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2? Type849 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1? Type849 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2Type? Type850 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Type? Type850 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesCreateSandboxRequest? Type851 { get; set; }
+        public global::Letta.OneOf<string, global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>>? Type851 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListArchivesOrder? Type852 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item>? Type852 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForArchiveOrder? Type853 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item? Type853 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForArchiveIncludeItem>? Type854 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2ItemType? Type854 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForArchiveIncludeItem? Type855 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Status? Type855 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListToolsOrder? Type856 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2? Type856 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListFoldersOrder? Type857 { get; set; }
+        public global::Letta.EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant2Type? Type857 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForFolderOrder? Type858 { get; set; }
+        public global::Letta.SandboxesCreateSandboxRequest? Type858 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListFolderPassagesOrder? Type859 { get; set; }
+        public global::Letta.ListArchivesOrder? Type859 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListFilesForFolderOrder? Type860 { get; set; }
+        public global::Letta.ListAgentsForArchiveOrder? Type860 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ListAgentsIncludeItem>? Type861 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForArchiveIncludeItem>? Type861 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsIncludeItem? Type862 { get; set; }
+        public global::Letta.ListAgentsForArchiveIncludeItem? Type862 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsOrder? Type863 { get; set; }
+        public global::Letta.ListToolsOrder? Type863 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsOrderBy? Type864 { get; set; }
+        public global::Letta.ListFoldersOrder? Type864 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.RetrieveAgentIncludeItem>? Type865 { get; set; }
+        public global::Letta.ListAgentsForFolderOrder? Type865 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.RetrieveAgentIncludeItem? Type866 { get; set; }
+        public global::Letta.ListFolderPassagesOrder? Type866 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListToolsForAgentOrder? Type867 { get; set; }
+        public global::Letta.ListFilesForFolderOrder? Type867 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentSourcesOrder? Type868 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ListAgentsIncludeItem>? Type868 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListFoldersForAgentOrder? Type869 { get; set; }
+        public global::Letta.ListAgentsIncludeItem? Type869 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListFilesForAgentOrder? Type870 { get; set; }
+        public global::Letta.ListAgentsOrder? Type870 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListCoreMemoryBlocksOrder? Type871 { get; set; }
+        public global::Letta.ListAgentsOrderBy? Type871 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SearchArchivalMemoryTagMatchMode? Type872 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.RetrieveAgentIncludeItem>? Type872 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesOrder? Type873 { get; set; }
+        public global::Letta.RetrieveAgentIncludeItem? Type873 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListGroupsForAgentOrder? Type874 { get; set; }
+        public global::Letta.ListToolsForAgentOrder? Type874 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListConversationsOrder? Type875 { get; set; }
+        public global::Letta.ListAgentSourcesOrder? Type875 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListConversationsOrderBy? Type876 { get; set; }
+        public global::Letta.ListFoldersForAgentOrder? Type876 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListConversationMessagesOrder? Type877 { get; set; }
+        public global::Letta.ListFilesForAgentOrder? Type877 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListGroupsOrder? Type878 { get; set; }
+        public global::Letta.ListCoreMemoryBlocksOrder? Type878 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListGroupMessagesOrder? Type879 { get; set; }
+        public global::Letta.SearchArchivalMemoryTagMatchMode? Type879 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListIdentitiesOrder? Type880 { get; set; }
+        public global::Letta.ListMessagesOrder? Type880 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForIdentityOrder? Type881 { get; set; }
+        public global::Letta.ListGroupsForAgentOrder? Type881 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForIdentityIncludeItem>? Type882 { get; set; }
+        public global::Letta.ListConversationsOrder? Type882 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForIdentityIncludeItem? Type883 { get; set; }
+        public global::Letta.ListConversationsOrderBy? Type883 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListBlocksForIdentityOrder? Type884 { get; set; }
+        public global::Letta.ListConversationMessagesOrder? Type884 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListInternalBlocksOrder? Type885 { get; set; }
+        public global::Letta.ListGroupsOrder? Type885 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForInternalBlockOrder? Type886 { get; set; }
+        public global::Letta.ListGroupMessagesOrder? Type886 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListInternalRunsOrder? Type887 { get; set; }
+        public global::Letta.ListIdentitiesOrder? Type887 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListInternalRunsOrderBy? Type888 { get; set; }
+        public global::Letta.ListAgentsForIdentityOrder? Type888 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListInternalRunsDurationOperator2? Type889 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForIdentityIncludeItem>? Type889 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ProviderCategory>? Type890 { get; set; }
+        public global::Letta.ListAgentsForIdentityIncludeItem? Type890 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListBlocksOrder? Type891 { get; set; }
+        public global::Letta.ListBlocksForIdentityOrder? Type891 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForBlockOrder? Type892 { get; set; }
+        public global::Letta.ListInternalBlocksOrder? Type892 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForBlockIncludeItem>? Type893 { get; set; }
+        public global::Letta.ListAgentsForInternalBlockOrder? Type893 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAgentsForBlockIncludeItem? Type894 { get; set; }
+        public global::Letta.ListInternalRunsOrder? Type894 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListJobsOrder? Type895 { get; set; }
+        public global::Letta.ListInternalRunsOrderBy? Type895 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListProvidersOrder? Type896 { get; set; }
+        public global::Letta.ListInternalRunsDurationOperator2? Type896 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListRunsOrder? Type897 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ProviderCategory>? Type897 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForRunOrder? Type898 { get; set; }
+        public global::Letta.ListBlocksOrder? Type898 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListStepsForRunOrder? Type899 { get; set; }
+        public global::Letta.ListAgentsForBlockOrder? Type899 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListStepsOrder? Type900 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ListAgentsForBlockIncludeItem>? Type900 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListStepsFeedback2? Type901 { get; set; }
+        public global::Letta.ListAgentsForBlockIncludeItem? Type901 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForStepOrder? Type902 { get; set; }
+        public global::Letta.ListJobsOrder? Type902 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListTagsOrder? Type903 { get; set; }
+        public global::Letta.ListProvidersOrder? Type903 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListAllMessagesOrder? Type904 { get; set; }
+        public global::Letta.ListRunsOrder? Type904 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListBatchesOrder? Type905 { get; set; }
+        public global::Letta.ListMessagesForRunOrder? Type905 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForBatchOrder? Type906 { get; set; }
+        public global::Letta.ListStepsForRunOrder? Type906 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant1? Type907 { get; set; }
+        public global::Letta.ListStepsOrder? Type907 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant1Field? Type908 { get; set; }
+        public global::Letta.ListStepsFeedback2? Type908 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2? Type909 { get; set; }
+        public global::Letta.ListMessagesForStepOrder? Type909 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2Field? Type910 { get; set; }
+        public global::Letta.ListTagsOrder? Type910 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2Operator? Type911 { get; set; }
+        public global::Letta.ListAllMessagesOrder? Type911 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3? Type912 { get; set; }
+        public global::Letta.ListBatchesOrder? Type912 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3Field? Type913 { get; set; }
+        public global::Letta.ListMessagesForBatchOrder? Type913 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3Operator? Type914 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant1? Type914 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4? Type915 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant1Field? Type915 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4Field? Type916 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2? Type916 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4Operator? Type917 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2Field? Type917 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5? Type918 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant2Operator? Type918 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5Field? Type919 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3? Type919 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5Operator? Type920 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3Field? Type920 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6? Type921 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant3Operator? Type921 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6Field? Type922 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4? Type922 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6Operator? Type923 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4Field? Type923 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsCombinator? Type924 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant4Operator? Type924 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.OneOf<string, double?>? Type925 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5? Type925 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplatesSortBy? Type926 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5Field? Type926 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Archive>? Type927 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant5Operator? Type927 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.AgentState>? Type928 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6? Type928 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Passage>? Type929 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6Field? Type929 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ToolSearchResult>? Type930 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsSearchItemVariant6Operator? Type930 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AnyOf<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>? Type931 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsCombinator? Type931 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>>? Type932 { get; set; }
+        public global::Letta.OneOf<string, double?>? Type932 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.MCPTool>? Type933 { get; set; }
+        public global::Letta.TemplatesListTemplatesSortBy? Type933 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FileMetadata>? Type934 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Archive>? Type934 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Folder>? Type935 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.AgentState>? Type935 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.BlockResponse>? Type936 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Passage>? Type936 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyMessageResponse? Type937 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolSearchResult>? Type937 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyMessageResponseDiscriminator? Type938 { get; set; }
+        public global::Letta.AnyOf<global::Letta.SSEServerConfig, global::Letta.StdioServerConfig, global::Letta.StreamableHTTPServerConfig>? Type938 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyMessageResponseDiscriminatorMessageType? Type939 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.StdioServerConfig, global::Letta.SSEServerConfig, global::Letta.StreamableHTTPServerConfig>>? Type939 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.MessageSearchResult>? Type940 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.MCPTool>? Type940 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Group>? Type941 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FileMetadata>? Type941 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Conversation>? Type942 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Folder>? Type942 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyGroupMessageResponse? Type943 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.BlockResponse>? Type943 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyGroupMessageResponseDiscriminator? Type944 { get; set; }
+        public global::Letta.ModifyMessageResponse? Type944 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ModifyGroupMessageResponseDiscriminatorMessageType? Type945 { get; set; }
+        public global::Letta.ModifyMessageResponseDiscriminator? Type945 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Run>? Type946 { get; set; }
+        public global::Letta.ModifyMessageResponseDiscriminatorMessageType? Type946 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Model>? Type947 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.MessageSearchResult>? Type947 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.EmbeddingModel>? Type948 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Group>? Type948 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AnyOf<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>? Type949 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Conversation>? Type949 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>>? Type950 { get; set; }
+        public global::Letta.ModifyGroupMessageResponse? Type950 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Job>? Type951 { get; set; }
+        public global::Letta.ModifyGroupMessageResponseDiscriminator? Type951 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Provider>? Type952 { get; set; }
+        public global::Letta.ModifyGroupMessageResponseDiscriminatorMessageType? Type952 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Step>? Type953 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Run>? Type953 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ListMessagesForStepResponseItem>? Type954 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Model>? Type954 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForStepResponseItem? Type955 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.EmbeddingModel>? Type955 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForStepResponseItemDiscriminator? Type956 { get; set; }
+        public global::Letta.AnyOf<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>? Type956 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ListMessagesForStepResponseItemDiscriminatorMessageType? Type957 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>>? Type957 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.SearchAllMessagesResponseItem>? Type958 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Job>? Type958 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SearchAllMessagesResponseItem? Type959 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Provider>? Type959 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SearchAllMessagesResponseItemDiscriminator? Type960 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Step>? Type960 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SearchAllMessagesResponseItemDiscriminatorMessageType? Type961 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ListMessagesForStepResponseItem>? Type961 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.BatchJob>? Type962 { get; set; }
+        public global::Letta.ListMessagesForStepResponseItem? Type962 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PassageSearchResult>? Type963 { get; set; }
+        public global::Letta.ListMessagesForStepResponseItemDiscriminator? Type963 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsSearchDeployedAgentsResponse? Type964 { get; set; }
+        public global::Letta.ListMessagesForStepResponseItemDiscriminatorMessageType? Type964 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsCountDeployedAgentsResponse? Type965 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.SearchAllMessagesResponseItem>? Type965 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsGetAgentVariablesResponse? Type966 { get; set; }
+        public global::Letta.SearchAllMessagesResponseItem? Type966 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsGetAgentVariablesResponse2? Type967 { get; set; }
+        public global::Letta.SearchAllMessagesResponseItemDiscriminator? Type967 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.AgentsGetAgentVariablesResponseMessage? Type968 { get; set; }
+        public global::Letta.SearchAllMessagesResponseItemDiscriminatorMessageType? Type968 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateAgentsFromTemplateResponse? Type969 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.BatchJob>? Type969 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateAgentsFromTemplateNoProjectResponse? Type970 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PassageSearchResult>? Type970 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateAgentsFromTemplateNoProjectResponse2? Type971 { get; set; }
+        public global::Letta.AgentsSearchDeployedAgentsResponse? Type971 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplatesResponse? Type972 { get; set; }
+        public global::Letta.AgentsCountDeployedAgentsResponse? Type972 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesListTemplatesResponseTemplate>? Type973 { get; set; }
+        public global::Letta.AgentsGetAgentVariablesResponse? Type973 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplatesResponseTemplate? Type974 { get; set; }
+        public global::Letta.AgentsGetAgentVariablesResponse2? Type974 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateNoProjectResponse? Type975 { get; set; }
+        public global::Letta.AgentsGetAgentVariablesResponseMessage? Type975 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateNoProjectResponse2? Type976 { get; set; }
+        public global::Letta.TemplatesCreateAgentsFromTemplateResponse? Type976 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionNoProjectResponse? Type977 { get; set; }
+        public global::Letta.TemplatesCreateAgentsFromTemplateNoProjectResponse? Type977 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionNoProjectResponse2? Type978 { get; set; }
+        public global::Letta.TemplatesCreateAgentsFromTemplateNoProjectResponse2? Type978 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionResponse? Type979 { get; set; }
+        public global::Letta.TemplatesListTemplatesResponse? Type979 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSaveTemplateVersionResponse2? Type980 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesListTemplatesResponseTemplate>? Type980 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesDeleteTemplateResponse? Type981 { get; set; }
+        public global::Letta.TemplatesListTemplatesResponseTemplate? Type981 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesDeleteTemplateResponse2? Type982 { get; set; }
+        public global::Letta.TemplatesCreateTemplateNoProjectResponse? Type982 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponse? Type983 { get; set; }
+        public global::Letta.TemplatesCreateTemplateNoProjectResponse2? Type983 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgent>? Type984 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionNoProjectResponse? Type984 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgent? Type985 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionNoProjectResponse2? Type985 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariables? Type986 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionResponse? Type986 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariablesDataItem>? Type987 { get; set; }
+        public global::Letta.TemplatesSaveTemplateVersionResponse2? Type987 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariablesDataItem? Type988 { get; set; }
+        public global::Letta.TemplatesDeleteTemplateResponse? Type988 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariables? Type989 { get; set; }
+        public global::Letta.TemplatesDeleteTemplateResponse2? Type989 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem>? Type990 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponse? Type990 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem? Type991 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgent>? Type991 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1? Type992 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgent? Type992 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1Type? Type993 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariables? Type993 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode>? Type994 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariablesDataItem>? Type994 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode? Type995 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentMemoryVariablesDataItem? Type995 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2? Type996 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariables? Type996 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2Type? Type997 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem>? Type997 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3? Type998 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolVariablesDataItem? Type998 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3Type? Type999 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1? Type999 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4? Type1000 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1Type? Type1000 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4Type? Type1001 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode>? Type1001 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5? Type1002 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode? Type1002 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5Type? Type1003 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2? Type1003 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6? Type1004 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2Type? Type1004 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6Type? Type1005 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3? Type1005 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7? Type1006 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3Type? Type1006 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7Type? Type1007 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4? Type1007 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8? Type1008 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant4Type? Type1008 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8Type? Type1009 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5? Type1009 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9? Type1010 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant5Type? Type1010 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9Type? Type1011 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6? Type1011 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentAgentType? Type1012 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant6Type? Type1012 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentProperties? Type1013 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7? Type1013 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevel? Type1014 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant7Type? Type1014 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffort? Type1015 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8? Type1015 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseBlock>? Type1016 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8Type? Type1016 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseBlock? Type1017 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9? Type1017 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseRelationship>? Type1018 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant9Type? Type1018 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseRelationship? Type1019 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentAgentType? Type1019 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseConfiguration? Type1020 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentProperties? Type1020 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesGetTemplateSnapshotResponseType? Type1021 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentPropertiesVerbosityLevel? Type1021 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse? Type1022 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffort? Type1022 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse2? Type1023 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseBlock>? Type1023 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse3? Type1024 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseBlock? Type1024 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse4? Type1025 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesGetTemplateSnapshotResponseRelationship>? Type1025 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesForkTemplateResponse? Type1026 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseRelationship? Type1026 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesForkTemplateResponse2? Type1027 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseConfiguration? Type1027 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateResponse? Type1028 { get; set; }
+        public global::Letta.TemplatesGetTemplateSnapshotResponseType? Type1028 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateResponse2? Type1029 { get; set; }
+        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse? Type1029 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesDeleteTemplateNoProjectResponse? Type1030 { get; set; }
+        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse2? Type1030 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesDeleteTemplateNoProjectResponse2? Type1031 { get; set; }
+        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse3? Type1031 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse? Type1032 { get; set; }
+        public global::Letta.TemplatesSetCurrentTemplateFromSnapshotResponse4? Type1032 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse2? Type1033 { get; set; }
+        public global::Letta.TemplatesForkTemplateResponse? Type1033 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse3? Type1034 { get; set; }
+        public global::Letta.TemplatesForkTemplateResponse2? Type1034 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse4? Type1035 { get; set; }
+        public global::Letta.TemplatesCreateTemplateResponse? Type1035 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRenameTemplateResponse? Type1036 { get; set; }
+        public global::Letta.TemplatesCreateTemplateResponse2? Type1036 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRenameTemplateResponse2? Type1037 { get; set; }
+        public global::Letta.TemplatesDeleteTemplateNoProjectResponse? Type1037 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRenameTemplateResponse3? Type1038 { get; set; }
+        public global::Letta.TemplatesDeleteTemplateNoProjectResponse2? Type1038 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRenameTemplateResponse4? Type1039 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse? Type1039 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateTemplateDescriptionResponse? Type1040 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse2? Type1040 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateTemplateDescriptionResponse2? Type1041 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse3? Type1041 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateTemplateDescriptionResponse3? Type1042 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileNoProjectResponse4? Type1042 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplateVersionsResponse? Type1043 { get; set; }
+        public global::Letta.TemplatesRenameTemplateResponse? Type1043 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.TemplatesListTemplateVersionsResponseVersion>? Type1044 { get; set; }
+        public global::Letta.TemplatesRenameTemplateResponse2? Type1044 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplateVersionsResponseVersion? Type1045 { get; set; }
+        public global::Letta.TemplatesRenameTemplateResponse3? Type1045 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesListTemplateVersionsResponse2? Type1046 { get; set; }
+        public global::Letta.TemplatesRenameTemplateResponse4? Type1046 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesMigrateDeploymentResponse? Type1047 { get; set; }
+        public global::Letta.TemplatesUpdateTemplateDescriptionResponse? Type1047 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesMigrateDeploymentResponse2? Type1048 { get; set; }
+        public global::Letta.TemplatesUpdateTemplateDescriptionResponse2? Type1048 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesMigrateDeploymentResponse3? Type1049 { get; set; }
+        public global::Letta.TemplatesUpdateTemplateDescriptionResponse3? Type1049 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesMigrateDeploymentResponse4? Type1050 { get; set; }
+        public global::Letta.TemplatesListTemplateVersionsResponse? Type1050 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateNoProjectResponse? Type1051 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.TemplatesListTemplateVersionsResponseVersion>? Type1051 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateNoProjectResponse2? Type1052 { get; set; }
+        public global::Letta.TemplatesListTemplateVersionsResponseVersion? Type1052 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateNoProjectResponse3? Type1053 { get; set; }
+        public global::Letta.TemplatesListTemplateVersionsResponse2? Type1053 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateNoProjectResponse4? Type1054 { get; set; }
+        public global::Letta.TemplatesMigrateDeploymentResponse? Type1054 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateResponse? Type1055 { get; set; }
+        public global::Letta.TemplatesMigrateDeploymentResponse2? Type1055 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateResponse2? Type1056 { get; set; }
+        public global::Letta.TemplatesMigrateDeploymentResponse3? Type1056 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateResponse3? Type1057 { get; set; }
+        public global::Letta.TemplatesMigrateDeploymentResponse4? Type1057 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesRollbackTemplateResponse4? Type1058 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateNoProjectResponse? Type1058 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse? Type1059 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateNoProjectResponse2? Type1059 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse2? Type1060 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateNoProjectResponse3? Type1060 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse3? Type1061 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateNoProjectResponse4? Type1061 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse4? Type1062 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateResponse? Type1062 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesLegacyMigrationResponse? Type1063 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateResponse2? Type1063 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesLegacyMigrationResponse2? Type1064 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateResponse3? Type1064 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.TemplatesLegacyMigrationResponse3? Type1065 { get; set; }
+        public global::Letta.TemplatesRollbackTemplateResponse4? Type1065 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponse? Type1066 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse? Type1066 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicy? Type1067 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse2? Type1067 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion? Type1068 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse3? Type1068 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.DataItem>? Type1069 { get; set; }
+        public global::Letta.TemplatesUpdateCurrentTemplateFromAgentFileResponse4? Type1069 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.DataItem? Type1070 { get; set; }
+        public global::Letta.TemplatesLegacyMigrationResponse? Type1070 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? Type1071 { get; set; }
+        public global::Letta.TemplatesLegacyMigrationResponse2? Type1071 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type? Type1072 { get; set; }
+        public global::Letta.TemplatesLegacyMigrationResponse3? Type1072 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces>? Type1073 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponse? Type1073 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces? Type1074 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicy? Type1074 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminator? Type1075 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion? Type1075 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponse2? Type1076 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.DataItem>? Type1076 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponse? Type1077 { get; set; }
+        public global::Letta.DataItem? Type1077 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken>? Type1078 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? Type1078 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken? Type1079 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type? Type1079 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicy? Type1080 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces>? Type1080 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion? Type1081 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces? Type1081 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.DataItem2>? Type1082 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminator? Type1082 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.DataItem2? Type1083 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType? Type1083 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? Type1084 { get; set; }
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponse2? Type1084 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type? Type1085 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponse? Type1085 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces>? Type1086 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken>? Type1086 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces? Type1087 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken? Type1087 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminator? Type1088 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicy? Type1088 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponse2? Type1089 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion? Type1089 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2? Type1090 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.DataItem2>? Type1090 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProjectsListProjectsResponse? Type1091 { get; set; }
+        public global::Letta.DataItem2? Type1091 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ProjectsListProjectsResponseProject>? Type1092 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? Type1092 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProjectsListProjectsResponseProject? Type1093 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type? Type1093 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProjectsCreateProjectResponse? Type1094 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces>? Type1094 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ProjectsDeleteProjectResponse? Type1095 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces? Type1095 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataRetrieveCurrentBalancesResponse? Type1096 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminator? Type1096 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendFeedbackResponse? Type1097 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType? Type1097 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataSendTelemetryResponse? Type1098 { get; set; }
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponse2? Type1098 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataGetStatusResponse? Type1099 { get; set; }
+        public global::Letta.ClientSideAccessTokensDeleteClientSideAccessTokenResponse2? Type1099 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataGetUserResponse? Type1100 { get; set; }
+        public global::Letta.ProjectsListProjectsResponse? Type1100 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MetadataGetUserResponse2? Type1101 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ProjectsListProjectsResponseProject>? Type1101 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesScheduleAgentMessageResponse? Type1102 { get; set; }
+        public global::Letta.ProjectsListProjectsResponseProject? Type1102 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponse? Type1103 { get; set; }
+        public global::Letta.ProjectsCreateProjectResponse? Type1103 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage>? Type1104 { get; set; }
+        public global::Letta.ProjectsDeleteProjectResponse? Type1104 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage? Type1105 { get; set; }
+        public global::Letta.MetadataRetrieveCurrentBalancesResponse? Type1105 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessage? Type1106 { get; set; }
+        public global::Letta.MetadataSendFeedbackResponse? Type1106 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage>? Type1107 { get; set; }
+        public global::Letta.MetadataSendTelemetryResponse? Type1107 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage? Type1108 { get; set; }
+        public global::Letta.MetadataGetStatusResponse? Type1108 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1? Type1109 { get; set; }
+        public global::Letta.MetadataGetUserResponse? Type1109 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1Type? Type1110 { get; set; }
+        public global::Letta.MetadataGetUserResponse2? Type1110 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2? Type1111 { get; set; }
+        public global::Letta.ScheduledMessagesScheduleAgentMessageResponse? Type1111 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2Source? Type1112 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponse? Type1112 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2Type? Type1113 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage>? Type1113 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRole? Type1114 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage? Type1114 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageType? Type1115 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessage? Type1115 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType>? Type1116 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage>? Type1116 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType? Type1117 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage? Type1117 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1? Type1118 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1? Type1118 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1Type? Type1119 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1Type? Type1119 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2? Type1120 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2? Type1120 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2Type? Type1121 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2Source? Type1121 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesDeleteScheduledMessageResponse? Type1122 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2Type? Type1122 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponse? Type1123 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageRole? Type1123 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessage? Type1124 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageType? Type1124 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage>? Type1125 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType>? Type1125 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage? Type1126 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageIncludeReturnMessageType? Type1126 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1? Type1127 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1? Type1127 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1Type? Type1128 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1Type? Type1128 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2? Type1129 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2? Type1129 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2Source? Type1130 { get; set; }
+        public global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2Type? Type1130 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceType? Type1131 { get; set; }
+        public global::Letta.ScheduledMessagesDeleteScheduledMessageResponse? Type1131 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2Type? Type1132 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponse? Type1132 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRole? Type1133 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessage? Type1133 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageType? Type1134 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage>? Type1134 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType>? Type1135 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessage? Type1135 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType? Type1136 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1? Type1136 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1? Type1137 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1Type? Type1137 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1Type? Type1138 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2? Type1138 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2? Type1139 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2Source? Type1139 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2Type? Type1140 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2SourceType? Type1140 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsCreateFeedResponse? Type1141 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2Type? Type1141 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListFeedsResponse? Type1142 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageRole? Type1142 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FeedsListFeedsResponseFeed>? Type1143 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageType? Type1143 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListFeedsResponseFeed? Type1144 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType>? Type1144 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsGetFeedResponse? Type1145 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageIncludeReturnMessageType? Type1145 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsDeleteFeedResponse? Type1146 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1? Type1146 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsPublishMessagesResponse? Type1147 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1Type? Type1147 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListMessagesResponse? Type1148 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2? Type1148 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FeedsListMessagesResponseMessage>? Type1149 { get; set; }
+        public global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2Type? Type1149 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListMessagesResponseMessage? Type1150 { get; set; }
+        public global::Letta.FeedsCreateFeedResponse? Type1150 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsGetMessageResponse? Type1151 { get; set; }
+        public global::Letta.FeedsListFeedsResponse? Type1151 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsGetMessageResponseMessage? Type1152 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FeedsListFeedsResponseFeed>? Type1152 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsGetMessageResponse2? Type1153 { get; set; }
+        public global::Letta.FeedsListFeedsResponseFeed? Type1153 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsSubscribeAgentResponse? Type1154 { get; set; }
+        public global::Letta.FeedsGetFeedResponse? Type1154 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsSubscribeAgentResponseMergeStrategy? Type1155 { get; set; }
+        public global::Letta.FeedsDeleteFeedResponse? Type1155 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsSubscribeAgentResponse2? Type1156 { get; set; }
+        public global::Letta.FeedsPublishMessagesResponse? Type1156 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsSubscribeAgentResponseErrorCode? Type1157 { get; set; }
+        public global::Letta.FeedsListMessagesResponse? Type1157 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateSubscriptionResponse? Type1158 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FeedsListMessagesResponseMessage>? Type1158 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateSubscriptionResponseMergeStrategy? Type1159 { get; set; }
+        public global::Letta.FeedsListMessagesResponseMessage? Type1159 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsDeleteSubscriptionResponse? Type1160 { get; set; }
+        public global::Letta.FeedsGetMessageResponse? Type1160 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUnsubscribeAgentResponse? Type1161 { get; set; }
+        public global::Letta.FeedsGetMessageResponseMessage? Type1161 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsTriggerSubscriptionResponse? Type1162 { get; set; }
+        public global::Letta.FeedsGetMessageResponse2? Type1162 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsTriggerSubscriptionResponse2? Type1163 { get; set; }
+        public global::Letta.FeedsSubscribeAgentResponse? Type1163 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsBackfillSubscriptionResponse? Type1164 { get; set; }
+        public global::Letta.FeedsSubscribeAgentResponseMergeStrategy? Type1164 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsBackfillSubscriptionResponse2? Type1165 { get; set; }
+        public global::Letta.FeedsSubscribeAgentResponse2? Type1165 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsBackfillSubscriptionResponseErrorCode? Type1166 { get; set; }
+        public global::Letta.FeedsSubscribeAgentResponseErrorCode? Type1166 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponse? Type1167 { get; set; }
+        public global::Letta.FeedsUpdateSubscriptionResponse? Type1167 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FeedsListSubscriptionHistoryResponseRun>? Type1168 { get; set; }
+        public global::Letta.FeedsUpdateSubscriptionResponseMergeStrategy? Type1168 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponseRun? Type1169 { get; set; }
+        public global::Letta.FeedsDeleteSubscriptionResponse? Type1169 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponseRunType? Type1170 { get; set; }
+        public global::Letta.FeedsUnsubscribeAgentResponse? Type1170 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponseRunStatus? Type1171 { get; set; }
+        public global::Letta.FeedsTriggerSubscriptionResponse? Type1171 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponse2? Type1172 { get; set; }
+        public global::Letta.FeedsTriggerSubscriptionResponse2? Type1172 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionHistoryResponseErrorCode? Type1173 { get; set; }
+        public global::Letta.FeedsBackfillSubscriptionResponse? Type1173 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateAllSubscriptionsCronResponse? Type1174 { get; set; }
+        public global::Letta.FeedsBackfillSubscriptionResponse2? Type1174 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsUpdateAllSubscriptionsCronResponse2? Type1175 { get; set; }
+        public global::Letta.FeedsBackfillSubscriptionResponseErrorCode? Type1175 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionsResponse? Type1176 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponse? Type1176 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.FeedsListSubscriptionsResponseSubscription>? Type1177 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FeedsListSubscriptionHistoryResponseRun>? Type1177 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionsResponseSubscription? Type1178 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponseRun? Type1178 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.FeedsListSubscriptionsResponseSubscriptionMergeStrategy? Type1179 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponseRunType? Type1179 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesListDirectoryResponse? Type1180 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponseRunStatus? Type1180 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.MemoryFilesListDirectoryResponseEntrie>? Type1181 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponse2? Type1181 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesListDirectoryResponseEntrie? Type1182 { get; set; }
+        public global::Letta.FeedsListSubscriptionHistoryResponseErrorCode? Type1182 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesListDirectoryResponseEntrieType? Type1183 { get; set; }
+        public global::Letta.FeedsUpdateAllSubscriptionsCronResponse? Type1183 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesListDirectoryResponse2? Type1184 { get; set; }
+        public global::Letta.FeedsUpdateAllSubscriptionsCronResponse2? Type1184 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesListDirectoryResponse3? Type1185 { get; set; }
+        public global::Letta.FeedsListSubscriptionsResponse? Type1185 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesGetFileHistoryResponse? Type1186 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.FeedsListSubscriptionsResponseSubscription>? Type1186 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.MemoryFilesGetFileHistoryResponseCommit>? Type1187 { get; set; }
+        public global::Letta.FeedsListSubscriptionsResponseSubscription? Type1187 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesGetFileHistoryResponseCommit? Type1188 { get; set; }
+        public global::Letta.FeedsListSubscriptionsResponseSubscriptionMergeStrategy? Type1188 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesGetFileHistoryResponse2? Type1189 { get; set; }
+        public global::Letta.MemoryFilesListDirectoryResponse? Type1189 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesGetFileHistoryResponse3? Type1190 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.MemoryFilesListDirectoryResponseEntrie>? Type1190 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesReadFileContentResponse? Type1191 { get; set; }
+        public global::Letta.MemoryFilesListDirectoryResponseEntrie? Type1191 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesReadFileContentResponse2? Type1192 { get; set; }
+        public global::Letta.MemoryFilesListDirectoryResponseEntrieType? Type1192 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.MemoryFilesReadFileContentResponse3? Type1193 { get; set; }
+        public global::Letta.MemoryFilesListDirectoryResponse2? Type1193 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponse? Type1194 { get; set; }
+        public global::Letta.MemoryFilesListDirectoryResponse3? Type1194 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipeline? Type1195 { get; set; }
+        public global::Letta.MemoryFilesGetFileHistoryResponse? Type1195 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineIntegrationType? Type1196 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.MemoryFilesGetFileHistoryResponseCommit>? Type1196 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.Config5? Type1197 { get; set; }
+        public global::Letta.MemoryFilesGetFileHistoryResponseCommit? Type1197 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1? Type1198 { get; set; }
+        public global::Letta.MemoryFilesGetFileHistoryResponse2? Type1198 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Type? Type1199 { get; set; }
+        public global::Letta.MemoryFilesGetFileHistoryResponse3? Type1199 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Data? Type1200 { get; set; }
+        public global::Letta.MemoryFilesReadFileContentResponse? Type1200 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1DataChannel>? Type1201 { get; set; }
+        public global::Letta.MemoryFilesReadFileContentResponse2? Type1201 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1DataChannel? Type1202 { get; set; }
+        public global::Letta.MemoryFilesReadFileContentResponse3? Type1202 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant2? Type1203 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponse? Type1203 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant2Type? Type1204 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipeline? Type1204 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminator? Type1205 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineIntegrationType? Type1205 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponse2? Type1206 { get; set; }
+        public global::Letta.Config5? Type1206 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineResponseErrorCode? Type1207 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1? Type1207 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponse? Type1208 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Type? Type1208 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelinesResponsePipeline>? Type1209 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Data? Type1209 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipeline? Type1210 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1DataChannel>? Type1210 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineIntegrationType? Type1211 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1DataChannel? Type1211 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.Config6? Type1212 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant2? Type1212 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1? Type1213 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant2Type? Type1213 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Type? Type1214 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminator? Type1214 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Data? Type1215 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminatorType? Type1215 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1DataChannel>? Type1216 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponse2? Type1216 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1DataChannel? Type1217 { get; set; }
+        public global::Letta.PipelinesCreatePipelineResponseErrorCode? Type1217 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant2? Type1218 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponse? Type1218 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant2Type? Type1219 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelinesResponsePipeline>? Type1219 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelinesResponsePipelineConfigDiscriminator? Type1220 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipeline? Type1220 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesCountPipelinesResponse? Type1221 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineIntegrationType? Type1221 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponse? Type1222 { get; set; }
+        public global::Letta.Config6? Type1222 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipeline? Type1223 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1? Type1223 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineIntegrationType? Type1224 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Type? Type1224 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.Config7? Type1225 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Data? Type1225 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1? Type1226 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1DataChannel>? Type1226 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Type? Type1227 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1DataChannel? Type1227 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Data? Type1228 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant2? Type1228 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1DataChannel>? Type1229 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant2Type? Type1229 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1DataChannel? Type1230 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigDiscriminator? Type1230 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2? Type1231 { get; set; }
+        public global::Letta.PipelinesListPipelinesResponsePipelineConfigDiscriminatorType? Type1231 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2Type? Type1232 { get; set; }
+        public global::Letta.PipelinesCountPipelinesResponse? Type1232 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponsePipelineConfigDiscriminator? Type1233 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponse? Type1233 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponse2? Type1234 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipeline? Type1234 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesGetPipelineResponseErrorCode? Type1235 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineIntegrationType? Type1235 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponse? Type1236 { get; set; }
+        public global::Letta.Config7? Type1236 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipeline? Type1237 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1? Type1237 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineIntegrationType? Type1238 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Type? Type1238 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.Config8? Type1239 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Data? Type1239 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1? Type1240 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1DataChannel>? Type1240 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Type? Type1241 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1DataChannel? Type1241 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Data? Type1242 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2? Type1242 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1DataChannel>? Type1243 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2Type? Type1243 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1DataChannel? Type1244 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigDiscriminator? Type1244 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant2? Type1245 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigDiscriminatorType? Type1245 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant2Type? Type1246 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponse2? Type1246 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigDiscriminator? Type1247 { get; set; }
+        public global::Letta.PipelinesGetPipelineResponseErrorCode? Type1247 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponse2? Type1248 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponse? Type1248 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineResponseErrorCode? Type1249 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipeline? Type1249 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesDeletePipelineResponse? Type1250 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineIntegrationType? Type1250 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesDeletePipelineResponse2? Type1251 { get; set; }
+        public global::Letta.Config8? Type1251 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesDeletePipelineResponseErrorCode? Type1252 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1? Type1252 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse? Type1253 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Type? Type1253 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipeline? Type1254 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Data? Type1254 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType? Type1255 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1DataChannel>? Type1255 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.Config9? Type1256 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1DataChannel? Type1256 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? Type1257 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant2? Type1257 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type? Type1258 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant2Type? Type1258 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Data? Type1259 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigDiscriminator? Type1259 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1DataChannel>? Type1260 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponsePipelineConfigDiscriminatorType? Type1260 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1DataChannel? Type1261 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponse2? Type1261 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? Type1262 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineResponseErrorCode? Type1262 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2Type? Type1263 { get; set; }
+        public global::Letta.PipelinesDeletePipelineResponse? Type1263 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminator? Type1264 { get; set; }
+        public global::Letta.PipelinesDeletePipelineResponse2? Type1264 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse2? Type1265 { get; set; }
+        public global::Letta.PipelinesDeletePipelineResponseErrorCode? Type1265 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponseErrorCode? Type1266 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse? Type1266 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse3? Type1267 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipeline? Type1267 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponseErrorCode2? Type1268 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType? Type1268 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineResponse? Type1269 { get; set; }
+        public global::Letta.Config9? Type1269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineResponse2? Type1270 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? Type1270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesPreviewPipelineResponseErrorCode? Type1271 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type? Type1271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesSyncPipelineResponse? Type1272 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Data? Type1272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesSyncPipelineResponse2? Type1273 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1DataChannel>? Type1273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesSyncPipelineResponseErrorCode? Type1274 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1DataChannel? Type1274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesSyncPipelineResponse3? Type1275 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? Type1275 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesSyncPipelineResponseErrorCode2? Type1276 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2Type? Type1276 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponse? Type1277 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminator? Type1277 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelineSyncHistoryResponseRun>? Type1278 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType? Type1278 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponseRun? Type1279 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse2? Type1279 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponseRunStatus? Type1280 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponseErrorCode? Type1280 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponseRunError? Type1281 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponse3? Type1281 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponse2? Type1282 { get; set; }
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponseErrorCode2? Type1282 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.PipelinesListPipelineSyncHistoryResponseErrorCode? Type1283 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineResponse? Type1283 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsRegisterResponse? Type1284 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineResponse2? Type1284 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsRegisterResponse2? Type1285 { get; set; }
+        public global::Letta.PipelinesPreviewPipelineResponseErrorCode? Type1285 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsGetConnectionResponse? Type1286 { get; set; }
+        public global::Letta.PipelinesSyncPipelineResponse? Type1286 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsGetConnectionResponseCurrentMode? Type1287 { get; set; }
+        public global::Letta.PipelinesSyncPipelineResponse2? Type1287 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsGetConnectionResponseMetadata? Type1288 { get; set; }
+        public global::Letta.PipelinesSyncPipelineResponseErrorCode? Type1288 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsGetConnectionResponse2? Type1289 { get; set; }
+        public global::Letta.PipelinesSyncPipelineResponse3? Type1289 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsListConnectionsResponse? Type1290 { get; set; }
+        public global::Letta.PipelinesSyncPipelineResponseErrorCode2? Type1290 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsListConnectionsResponseConnection>? Type1291 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponse? Type1291 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsListConnectionsResponseConnection? Type1292 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelineSyncHistoryResponseRun>? Type1292 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsListConnectionsResponseConnectionCurrentMode? Type1293 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponseRun? Type1293 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsListConnectionsResponseConnectionMetadata? Type1294 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponseRunStatus? Type1294 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageResponse? Type1295 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponseRunError? Type1295 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageResponse2? Type1296 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponse2? Type1296 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageResponse3? Type1297 { get; set; }
+        public global::Letta.PipelinesListPipelineSyncHistoryResponseErrorCode? Type1297 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsSendMessageResponse4? Type1298 { get; set; }
+        public global::Letta.EnvironmentsRegisterResponse? Type1298 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsDeleteEnvironmentResponse? Type1299 { get; set; }
+        public global::Letta.EnvironmentsRegisterResponse2? Type1299 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsDeleteEnvironmentResponse2? Type1300 { get; set; }
+        public global::Letta.EnvironmentsGetConnectionResponse? Type1300 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.EnvironmentsDeleteEnvironmentResponse3? Type1301 { get; set; }
+        public global::Letta.EnvironmentsGetConnectionResponseCurrentMode? Type1301 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesCreateSandboxResponse? Type1302 { get; set; }
+        public global::Letta.EnvironmentsGetConnectionResponseMetadata? Type1302 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesCreateSandboxResponse2? Type1303 { get; set; }
+        public global::Letta.EnvironmentsGetConnectionResponse2? Type1303 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesCreateSandboxResponse3? Type1304 { get; set; }
+        public global::Letta.EnvironmentsListConnectionsResponse? Type1304 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesListSandboxesResponse? Type1305 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.EnvironmentsListConnectionsResponseConnection>? Type1305 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.SandboxesListSandboxesResponseSandboxe>? Type1306 { get; set; }
+        public global::Letta.EnvironmentsListConnectionsResponseConnection? Type1306 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesListSandboxesResponseSandboxe? Type1307 { get; set; }
+        public global::Letta.EnvironmentsListConnectionsResponseConnectionCurrentMode? Type1307 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesListSandboxesResponseSandboxeCurrentMode? Type1308 { get; set; }
+        public global::Letta.EnvironmentsListConnectionsResponseConnectionMetadata? Type1308 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesListSandboxesResponseSandboxeMetadata? Type1309 { get; set; }
+        public global::Letta.EnvironmentsSendMessageResponse? Type1309 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesTerminateSandboxResponse? Type1310 { get; set; }
+        public global::Letta.EnvironmentsSendMessageResponse2? Type1310 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesTerminateSandboxResponse2? Type1311 { get; set; }
+        public global::Letta.EnvironmentsSendMessageResponse3? Type1311 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.SandboxesTerminateSandboxResponse3? Type1312 { get; set; }
+        public global::Letta.EnvironmentsSendMessageResponse4? Type1312 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::Letta.DeviceStorageGetDeviceStorageKeyResponse? Type1313 { get; set; }
+        public global::Letta.EnvironmentsDeleteEnvironmentResponse? Type1313 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.EnvironmentsDeleteEnvironmentResponse2? Type1314 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.EnvironmentsDeleteEnvironmentResponse3? Type1315 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesCreateSandboxResponse? Type1316 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesCreateSandboxResponse2? Type1317 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesCreateSandboxResponse3? Type1318 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesListSandboxesResponse? Type1319 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::System.Collections.Generic.IList<global::Letta.SandboxesListSandboxesResponseSandboxe>? Type1320 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesListSandboxesResponseSandboxe? Type1321 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesListSandboxesResponseSandboxeCurrentMode? Type1322 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesListSandboxesResponseSandboxeMetadata? Type1323 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesTerminateSandboxResponse? Type1324 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesTerminateSandboxResponse2? Type1325 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SandboxesTerminateSandboxResponse3? Type1326 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.DeviceStorageGetDeviceStorageKeyResponse? Type1327 { get; set; }
 
         /// <summary>
         /// 
