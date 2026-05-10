@@ -12,6 +12,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.MetadataSendTelemetryRequestEventDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant1? SessionStart { get; init; }
 #else
@@ -252,6 +257,7 @@ namespace Letta
         /// 
         /// </summary>
         public EventsItem(
+            global::Letta.MetadataSendTelemetryRequestEventDiscriminatorType? type,
             global::Letta.MetadataSendTelemetryRequestEventVariant1? sessionStart,
             global::Letta.MetadataSendTelemetryRequestEventVariant2? sessionEnd,
             global::Letta.MetadataSendTelemetryRequestEventVariant3? toolUsage,
@@ -259,6 +265,8 @@ namespace Letta
             global::Letta.MetadataSendTelemetryRequestEventVariant5? userInput
             )
         {
+            Type = type;
+
             SessionStart = sessionStart;
             SessionEnd = sessionEnd;
             ToolUsage = toolUsage;

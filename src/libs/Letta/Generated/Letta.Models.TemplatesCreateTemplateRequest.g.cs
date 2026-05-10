@@ -10,6 +10,11 @@ namespace Letta
     public readonly partial struct TemplatesCreateTemplateRequest : global::System.IEquatable<TemplatesCreateTemplateRequest>
     {
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateRequestDiscriminatorType? Type { get; }
+
+        /// <summary>
         /// Create a template from an existing agent
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -108,10 +113,13 @@ namespace Letta
         /// 
         /// </summary>
         public TemplatesCreateTemplateRequest(
+            global::Letta.TemplatesCreateTemplateRequestDiscriminatorType? type,
             global::Letta.TemplatesCreateTemplateRequestVariant1? agent,
             global::Letta.TemplatesCreateTemplateRequestVariant2? agentFile
             )
         {
+            Type = type;
+
             Agent = agent;
             AgentFile = agentFile;
         }

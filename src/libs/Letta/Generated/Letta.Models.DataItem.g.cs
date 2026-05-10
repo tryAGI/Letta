@@ -12,6 +12,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? Agent { get; init; }
 #else
@@ -54,6 +59,19 @@ namespace Letta
         public DataItem(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? value)
         {
             Agent = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DataItem(
+            global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType? type,
+            global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? agent
+            )
+        {
+            Type = type;
+
+            Agent = agent;
         }
 
         /// <summary>
