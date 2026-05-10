@@ -186,5 +186,6 @@ namespace Letta
         public EmbeddingModel()
         {
         }
+
     }
 }

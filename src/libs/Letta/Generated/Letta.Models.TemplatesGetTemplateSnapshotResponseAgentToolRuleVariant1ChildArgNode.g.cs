@@ -49,5 +49,6 @@ namespace Letta
         public TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant1ChildArgNode()
         {
         }
+
     }
 }

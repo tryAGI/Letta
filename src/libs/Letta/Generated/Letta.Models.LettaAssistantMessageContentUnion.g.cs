@@ -43,6 +43,13 @@ namespace Letta
             value = Text;
             return IsText;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TextContent PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

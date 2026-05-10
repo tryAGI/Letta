@@ -45,6 +45,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TextResponseFormat PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
         /// Response format for JSON schema-based responses.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -75,6 +82,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.JsonSchemaResponseFormat PickJsonSchema() => IsJsonSchema
+            ? JsonSchema!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonSchema' but the value was {ToString()}.");
+
+        /// <summary>
         /// Response format for JSON object responses.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -103,6 +117,13 @@ namespace Letta
             value = JsonObject;
             return IsJsonObject;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.JsonObjectResponseFormat PickJsonObject() => IsJsonObject
+            ? JsonObject!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonObject' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

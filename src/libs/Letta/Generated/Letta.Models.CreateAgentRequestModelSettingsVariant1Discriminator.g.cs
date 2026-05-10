@@ -40,5 +40,6 @@ namespace Letta
         public CreateAgentRequestModelSettingsVariant1Discriminator()
         {
         }
+
     }
 }

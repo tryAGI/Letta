@@ -46,6 +46,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SystemMessageListResult PickSystemMessage() => IsSystemMessage
+            ? SystemMessage!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SystemMessage' but the value was {ToString()}.");
+
+        /// <summary>
         /// User message list result with agent context.<br/>
         /// Shape is identical to UpdateUserMessage but includes the owning agent_id and message id.
         /// </summary>
@@ -75,6 +82,13 @@ namespace Letta
             value = UserMessage;
             return IsUserMessage;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.UserMessageListResult PickUserMessage() => IsUserMessage
+            ? UserMessage!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'UserMessage' but the value was {ToString()}.");
 
         /// <summary>
         /// Reasoning message list result with agent context.<br/>
@@ -108,6 +122,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ReasoningMessageListResult PickReasoningMessage() => IsReasoningMessage
+            ? ReasoningMessage!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReasoningMessage' but the value was {ToString()}.");
+
+        /// <summary>
         /// Assistant message list result with agent context.<br/>
         /// Shape is identical to UpdateAssistantMessage but includes the owning agent_id and message id.
         /// </summary>
@@ -137,6 +158,13 @@ namespace Letta
             value = AssistantMessage;
             return IsAssistantMessage;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.AssistantMessageListResult PickAssistantMessage() => IsAssistantMessage
+            ? AssistantMessage!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AssistantMessage' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

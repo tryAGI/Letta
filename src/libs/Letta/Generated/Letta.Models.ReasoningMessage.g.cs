@@ -167,5 +167,6 @@ namespace Letta
         public ReasoningMessage()
         {
         }
+
     }
 }

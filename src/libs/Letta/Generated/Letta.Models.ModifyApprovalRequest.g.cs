@@ -41,5 +41,6 @@ namespace Letta
         public ModifyApprovalRequest()
         {
         }
+
     }
 }

@@ -45,6 +45,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1 PickAgent() => IsAgent
+            ? Agent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Agent' but the value was {ToString()}.");
+
+        /// <summary>
         /// Create a template from an uploaded agent file
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -73,6 +80,13 @@ namespace Letta
             value = AgentFile;
             return IsAgentFile;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2 PickAgentFile() => IsAgentFile
+            ? AgentFile!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentFile' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

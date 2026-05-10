@@ -96,5 +96,6 @@ namespace Letta
         public TemplatesCreateAgentsFromTemplateNoProjectRequest()
         {
         }
+
     }
 }

@@ -40,5 +40,6 @@ namespace Letta
         public InternalTemplateAgentCreateModelSettingsVariant1Discriminator()
         {
         }
+
     }
 }

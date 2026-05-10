@@ -98,5 +98,6 @@ namespace Letta
         public ReasoningMessageListResult()
         {
         }
+
     }
 }

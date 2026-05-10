@@ -212,5 +212,6 @@ namespace Letta
         public PipelinesCreatePipelineResponsePipeline()
         {
         }
+
     }
 }

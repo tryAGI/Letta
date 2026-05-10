@@ -45,6 +45,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OpenAIModelSettings PickOpenai() => IsOpenai
+            ? Openai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Openai' but the value was {ToString()}.");
+
+        /// <summary>
         /// SGLang model configuration (OpenAI-compatible runtime with SGLang-specific parsing).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -73,6 +80,13 @@ namespace Letta
             value = Sglang;
             return IsSglang;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SGLangModelSettings PickSglang() => IsSglang
+            ? Sglang!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sglang' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.AnthropicModelSettings PickAnthropic() => IsAnthropic
+            ? Anthropic!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Anthropic' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.GoogleAIModelSettings? GoogleAi { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Letta
             value = GoogleAi;
             return IsGoogleAi;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GoogleAIModelSettings PickGoogleAi() => IsGoogleAi
+            ? GoogleAi!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleAi' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -165,6 +193,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GoogleVertexModelSettings PickGoogleVertex() => IsGoogleVertex
+            ? GoogleVertex!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertex' but the value was {ToString()}.");
+
+        /// <summary>
         /// Azure OpenAI model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -193,6 +228,13 @@ namespace Letta
             value = Azure;
             return IsAzure;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.AzureModelSettings PickAzure() => IsAzure
+            ? Azure!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Azure' but the value was {ToString()}.");
 
         /// <summary>
         /// xAI model configuration (OpenAI-compatible).
@@ -225,6 +267,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.XAIModelSettings PickXai() => IsXai
+            ? Xai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Xai' but the value was {ToString()}.");
+
+        /// <summary>
         /// Z.ai (ZhipuAI) model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -253,6 +302,13 @@ namespace Letta
             value = Zai;
             return IsZai;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ZAIModelSettings PickZai() => IsZai
+            ? Zai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Zai' but the value was {ToString()}.");
 
         /// <summary>
         /// Groq model configuration (OpenAI-compatible).
@@ -285,6 +341,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GroqModelSettings PickGroq() => IsGroq
+            ? Groq!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Groq' but the value was {ToString()}.");
+
+        /// <summary>
         /// Deepseek model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -313,6 +376,13 @@ namespace Letta
             value = Deepseek;
             return IsDeepseek;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.DeepseekModelSettings PickDeepseek() => IsDeepseek
+            ? Deepseek!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Deepseek' but the value was {ToString()}.");
 
         /// <summary>
         /// Together AI model configuration (OpenAI-compatible).
@@ -345,6 +415,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TogetherModelSettings PickTogether() => IsTogether
+            ? Together!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Together' but the value was {ToString()}.");
+
+        /// <summary>
         /// AWS Bedrock model configuration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -373,6 +450,13 @@ namespace Letta
             value = Bedrock;
             return IsBedrock;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.BedrockModelSettings PickBedrock() => IsBedrock
+            ? Bedrock!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Bedrock' but the value was {ToString()}.");
 
         /// <summary>
         /// Baseten model configuration (OpenAI-compatible).
@@ -405,6 +489,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.BasetenModelSettings PickBaseten() => IsBaseten
+            ? Baseten!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Baseten' but the value was {ToString()}.");
+
+        /// <summary>
         /// OpenRouter model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -435,6 +526,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OpenRouterModelSettings PickOpenrouter() => IsOpenrouter
+            ? Openrouter!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Openrouter' but the value was {ToString()}.");
+
+        /// <summary>
         /// ChatGPT OAuth model configuration (uses ChatGPT backend API).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -463,6 +561,13 @@ namespace Letta
             value = ChatgptOauth;
             return IsChatgptOauth;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ChatGPTOAuthModelSettings PickChatgptOauth() => IsChatgptOauth
+            ? ChatgptOauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChatgptOauth' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

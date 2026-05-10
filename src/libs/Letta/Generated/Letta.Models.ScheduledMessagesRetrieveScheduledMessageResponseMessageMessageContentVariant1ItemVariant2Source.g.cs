@@ -69,5 +69,6 @@ namespace Letta
         public ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2Source()
         {
         }
+
     }
 }

@@ -81,5 +81,6 @@ namespace Letta
         public UsageStatistics()
         {
         }
+
     }
 }

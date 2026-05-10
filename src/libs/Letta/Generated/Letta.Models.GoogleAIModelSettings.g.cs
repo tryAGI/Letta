@@ -106,5 +106,6 @@ namespace Letta
         public GoogleAIModelSettings()
         {
         }
+
     }
 }

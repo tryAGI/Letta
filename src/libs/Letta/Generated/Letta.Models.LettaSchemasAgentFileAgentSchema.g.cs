@@ -551,5 +551,6 @@ namespace Letta
         public LettaSchemasAgentFileAgentSchema()
         {
         }
+
     }
 }

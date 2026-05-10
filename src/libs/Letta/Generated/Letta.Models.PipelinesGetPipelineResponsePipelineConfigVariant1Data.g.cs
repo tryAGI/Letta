@@ -49,5 +49,6 @@ namespace Letta
         public PipelinesGetPipelineResponsePipelineConfigVariant1Data()
         {
         }
+
     }
 }

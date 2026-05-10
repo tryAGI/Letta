@@ -491,5 +491,6 @@ namespace Letta
         public CreateAgentRequest()
         {
         }
+
     }
 }

@@ -91,5 +91,6 @@ namespace Letta
         public TemplatesGetTemplateSnapshotResponse()
         {
         }
+
     }
 }

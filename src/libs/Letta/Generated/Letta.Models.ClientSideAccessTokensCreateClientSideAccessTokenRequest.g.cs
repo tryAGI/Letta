@@ -63,5 +63,6 @@ namespace Letta
         public ClientSideAccessTokensCreateClientSideAccessTokenRequest()
         {
         }
+
     }
 }

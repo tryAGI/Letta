@@ -47,6 +47,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.TextContent PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Letta
             value = Image;
             return IsImage;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ImageContent PickImage() => IsImage
+            ? Image!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.ToolCallContent PickToolCall() => IsToolCall
+            ? ToolCall!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolCall' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolReturnContent? ToolReturn { get; init; }
 #else
@@ -133,6 +154,13 @@ namespace Letta
             value = ToolReturn;
             return IsToolReturn;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ToolReturnContent PickToolReturn() => IsToolReturn
+            ? ToolReturn!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolReturn' but the value was {ToString()}.");
 
         /// <summary>
         /// Sent via the Anthropic Messages API
@@ -165,6 +193,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ReasoningContent PickReasoning() => IsReasoning
+            ? Reasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Reasoning' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sent via the Anthropic Messages API
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -195,6 +230,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.RedactedReasoningContent PickRedactedReasoning() => IsRedactedReasoning
+            ? RedactedReasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RedactedReasoning' but the value was {ToString()}.");
+
+        /// <summary>
         /// A placeholder for reasoning content we know is present, but isn't returned by the provider (e.g. OpenAI GPT-5 on ChatCompletions)
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -223,6 +265,13 @@ namespace Letta
             value = OmittedReasoning;
             return IsOmittedReasoning;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OmittedReasoningContent PickOmittedReasoning() => IsOmittedReasoning
+            ? OmittedReasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OmittedReasoning' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

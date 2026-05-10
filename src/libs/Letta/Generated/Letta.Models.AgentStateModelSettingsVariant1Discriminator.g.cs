@@ -40,5 +40,6 @@ namespace Letta
         public AgentStateModelSettingsVariant1Discriminator()
         {
         }
+
     }
 }

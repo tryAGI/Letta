@@ -54,5 +54,18 @@ namespace Letta
         public SearchCacheWarmRequest()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="SearchCacheWarmRequest"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static SearchCacheWarmRequest FromScope(global::Letta.MessageSearchCacheWarmScope scope)
+        {
+            return new SearchCacheWarmRequest
+            {
+                Scope = scope,
+            };
+        }
+
     }
 }

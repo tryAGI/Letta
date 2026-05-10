@@ -40,5 +40,6 @@ namespace Letta
         public SGLangModelSettingsResponseFormatVariant1Discriminator()
         {
         }
+
     }
 }

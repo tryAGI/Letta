@@ -40,5 +40,6 @@ namespace Letta
         public LettaRequestInputVariant2ItemDiscriminator()
         {
         }
+
     }
 }

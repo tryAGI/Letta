@@ -111,5 +111,6 @@ namespace Letta
         public GroupSchema()
         {
         }
+
     }
 }

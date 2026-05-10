@@ -50,5 +50,6 @@ namespace Letta
         public PipelinesUpdatePipelineProducerConfigResponse3()
         {
         }
+
     }
 }

@@ -50,5 +50,18 @@ namespace Letta
         public ChatCompletionContentPartImageParam()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatCompletionContentPartImageParam"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatCompletionContentPartImageParam FromImageUrl(global::Letta.ImageURL imageUrl)
+        {
+            return new ChatCompletionContentPartImageParam
+            {
+                ImageUrl = imageUrl,
+            };
+        }
+
     }
 }

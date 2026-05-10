@@ -169,5 +169,6 @@ namespace Letta
         public ApprovalResponseMessage()
         {
         }
+
     }
 }

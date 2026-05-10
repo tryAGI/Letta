@@ -50,5 +50,6 @@ namespace Letta
         public EnvironmentsSendMessageRequestMessageVariant1ContentVariant2Item()
         {
         }
+
     }
 }
