@@ -102,5 +102,6 @@ namespace Letta
         public LettaErrorMessage()
         {
         }
+
     }
 }

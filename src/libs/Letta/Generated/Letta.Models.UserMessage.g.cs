@@ -146,5 +146,6 @@ namespace Letta
         public UserMessage()
         {
         }
+
     }
 }

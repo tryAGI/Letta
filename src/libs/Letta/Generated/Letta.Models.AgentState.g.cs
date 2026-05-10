@@ -527,5 +527,6 @@ namespace Letta
         public AgentState()
         {
         }
+
     }
 }

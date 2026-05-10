@@ -76,5 +76,6 @@ namespace Letta
         public ParentToolRule()
         {
         }
+
     }
 }

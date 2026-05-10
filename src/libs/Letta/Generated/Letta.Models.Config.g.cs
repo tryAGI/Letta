@@ -45,6 +45,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.CreateStdioMCPServer PickStdio() => IsStdio
+            ? Stdio!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Stdio' but the value was {ToString()}.");
+
+        /// <summary>
         /// Create a new SSE MCP server
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -75,6 +82,13 @@ namespace Letta
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.CreateSSEMCPServer PickSse() => IsSse
+            ? Sse!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sse' but the value was {ToString()}.");
+
+        /// <summary>
         /// Create a new Streamable HTTP MCP server
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -103,6 +117,13 @@ namespace Letta
             value = StreamableHttp;
             return IsStreamableHttp;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.CreateStreamableHTTPMCPServer PickStreamableHttp() => IsStreamableHttp
+            ? StreamableHttp!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StreamableHttp' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

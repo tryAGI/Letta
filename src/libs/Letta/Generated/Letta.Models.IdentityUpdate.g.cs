@@ -90,5 +90,6 @@ namespace Letta
         public IdentityUpdate()
         {
         }
+
     }
 }

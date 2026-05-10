@@ -40,5 +40,6 @@ namespace Letta
         public MessageContentVariant1ItemDiscriminator()
         {
         }
+
     }
 }

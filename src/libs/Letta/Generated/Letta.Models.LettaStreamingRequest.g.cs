@@ -257,5 +257,6 @@ namespace Letta
         public LettaStreamingRequest()
         {
         }
+
     }
 }

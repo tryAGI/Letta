@@ -229,5 +229,6 @@ namespace Letta
         public LettaSerializeSchemasPydanticAgentSchemaAgentSchema()
         {
         }
+
     }
 }

@@ -39,5 +39,6 @@ namespace Letta
         public MetadataGetStatusResponse()
         {
         }
+
     }
 }

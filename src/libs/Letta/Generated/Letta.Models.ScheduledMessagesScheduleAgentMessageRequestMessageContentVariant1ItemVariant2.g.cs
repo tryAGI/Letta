@@ -50,5 +50,6 @@ namespace Letta
         public ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2()
         {
         }
+
     }
 }

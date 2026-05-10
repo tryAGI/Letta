@@ -40,5 +40,6 @@ namespace Letta
         public DeepseekModelSettingsResponseFormatVariant1Discriminator()
         {
         }
+
     }
 }

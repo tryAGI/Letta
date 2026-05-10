@@ -95,5 +95,6 @@ namespace Letta
         public AgentsSearchDeployedAgentsRequest()
         {
         }
+
     }
 }

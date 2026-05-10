@@ -107,5 +107,6 @@ namespace Letta
         public ChatCompletion()
         {
         }
+
     }
 }

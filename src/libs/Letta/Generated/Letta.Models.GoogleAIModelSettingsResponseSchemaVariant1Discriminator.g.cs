@@ -40,5 +40,6 @@ namespace Letta
         public GoogleAIModelSettingsResponseSchemaVariant1Discriminator()
         {
         }
+
     }
 }

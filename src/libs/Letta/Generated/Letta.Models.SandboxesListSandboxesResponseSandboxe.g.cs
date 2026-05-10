@@ -165,5 +165,6 @@ namespace Letta
         public SandboxesListSandboxesResponseSandboxe()
         {
         }
+
     }
 }

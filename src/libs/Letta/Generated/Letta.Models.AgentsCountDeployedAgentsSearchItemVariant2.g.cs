@@ -61,5 +61,6 @@ namespace Letta
         public AgentsCountDeployedAgentsSearchItemVariant2()
         {
         }
+
     }
 }

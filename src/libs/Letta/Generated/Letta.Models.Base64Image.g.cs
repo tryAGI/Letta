@@ -78,5 +78,6 @@ namespace Letta
         public Base64Image()
         {
         }
+
     }
 }

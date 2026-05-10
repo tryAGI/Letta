@@ -48,5 +48,6 @@ namespace Letta
         public OpenaiTypesChatChatCompletionChoiceLogprobs()
         {
         }
+
     }
 }

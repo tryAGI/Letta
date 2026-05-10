@@ -47,6 +47,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.UrlImage PickUrl() => IsUrl
+            ? Url!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Url' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.Base64Image? Base64 { get; init; }
 #else
@@ -77,6 +84,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.Base64Image PickBase64() => IsBase64
+            ? Base64!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Base64' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.LettaImage? Letta { get; init; }
 #else
@@ -103,6 +117,13 @@ namespace Letta
             value = Letta;
             return IsLetta;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.LettaImage PickLetta() => IsLetta
+            ? Letta!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Letta' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

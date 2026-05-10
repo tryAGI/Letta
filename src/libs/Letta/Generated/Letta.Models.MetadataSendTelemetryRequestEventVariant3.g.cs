@@ -60,5 +60,6 @@ namespace Letta
         public MetadataSendTelemetryRequestEventVariant3()
         {
         }
+
     }
 }

@@ -113,5 +113,6 @@ namespace Letta
         public SearchAllMessagesRequest()
         {
         }
+
     }
 }

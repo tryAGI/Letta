@@ -65,5 +65,6 @@ namespace Letta
         public PassageSearchResult()
         {
         }
+
     }
 }

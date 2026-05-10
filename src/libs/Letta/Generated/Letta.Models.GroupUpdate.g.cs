@@ -77,5 +77,6 @@ namespace Letta
         public GroupUpdate()
         {
         }
+
     }
 }

@@ -157,5 +157,6 @@ namespace Letta
         public FeedsUpdateSubscriptionResponse()
         {
         }
+
     }
 }

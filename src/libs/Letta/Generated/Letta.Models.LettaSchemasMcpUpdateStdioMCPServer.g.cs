@@ -52,5 +52,6 @@ namespace Letta
         public LettaSchemasMcpUpdateStdioMCPServer()
         {
         }
+
     }
 }

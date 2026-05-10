@@ -65,5 +65,6 @@ namespace Letta
         public E2BSandboxConfig()
         {
         }
+
     }
 }

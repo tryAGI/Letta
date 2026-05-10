@@ -117,5 +117,6 @@ namespace Letta
         public TemplatesCreateTemplateResponse()
         {
         }
+
     }
 }

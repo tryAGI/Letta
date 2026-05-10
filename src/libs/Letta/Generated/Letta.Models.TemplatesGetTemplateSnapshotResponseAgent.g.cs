@@ -153,5 +153,6 @@ namespace Letta
         public TemplatesGetTemplateSnapshotResponseAgent()
         {
         }
+
     }
 }

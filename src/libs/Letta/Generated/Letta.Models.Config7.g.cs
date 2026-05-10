@@ -47,6 +47,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1 PickSlackChannelReader() => IsSlackChannelReader
+            ? SlackChannelReader!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SlackChannelReader' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2? CustomWebhook { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Letta
             value = CustomWebhook;
             return IsCustomWebhook;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2 PickCustomWebhook() => IsCustomWebhook
+            ? CustomWebhook!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomWebhook' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

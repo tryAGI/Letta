@@ -100,5 +100,6 @@ namespace Letta
         public SystemMessageListResult()
         {
         }
+
     }
 }

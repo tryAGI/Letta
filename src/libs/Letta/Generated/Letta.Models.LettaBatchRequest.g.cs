@@ -217,5 +217,6 @@ namespace Letta
         public LettaBatchRequest()
         {
         }
+
     }
 }

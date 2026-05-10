@@ -50,5 +50,18 @@ namespace Letta
         public File()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="File"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static File FromFile1(global::Letta.FileFile file1)
+        {
+            return new File
+            {
+                File1 = file1,
+            };
+        }
+
     }
 }

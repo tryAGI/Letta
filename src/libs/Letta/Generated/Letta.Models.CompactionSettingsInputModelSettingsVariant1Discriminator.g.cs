@@ -40,5 +40,6 @@ namespace Letta
         public CompactionSettingsInputModelSettingsVariant1Discriminator()
         {
         }
+
     }
 }

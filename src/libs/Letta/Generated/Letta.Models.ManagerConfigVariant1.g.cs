@@ -47,6 +47,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.RoundRobinManagerUpdate PickRoundRobin() => IsRoundRobin
+            ? RoundRobin!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RoundRobin' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.SupervisorManagerUpdate? Supervisor { get; init; }
 #else
@@ -73,6 +80,13 @@ namespace Letta
             value = Supervisor;
             return IsSupervisor;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SupervisorManagerUpdate PickSupervisor() => IsSupervisor
+            ? Supervisor!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Supervisor' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -107,6 +121,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.DynamicManagerUpdate PickDynamic() => IsDynamic
+            ? Dynamic!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Dynamic' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.SleeptimeManagerUpdate? Sleeptime { get; init; }
 #else
@@ -137,6 +158,13 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.SleeptimeManagerUpdate PickSleeptime() => IsSleeptime
+            ? Sleeptime!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sleeptime' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.VoiceSleeptimeManagerUpdate? VoiceSleeptime { get; init; }
 #else
@@ -163,6 +191,13 @@ namespace Letta
             value = VoiceSleeptime;
             return IsVoiceSleeptime;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.VoiceSleeptimeManagerUpdate PickVoiceSleeptime() => IsVoiceSleeptime
+            ? VoiceSleeptime!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'VoiceSleeptime' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>

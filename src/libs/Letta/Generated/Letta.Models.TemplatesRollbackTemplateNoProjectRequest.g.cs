@@ -42,5 +42,6 @@ namespace Letta
         public TemplatesRollbackTemplateNoProjectRequest()
         {
         }
+
     }
 }

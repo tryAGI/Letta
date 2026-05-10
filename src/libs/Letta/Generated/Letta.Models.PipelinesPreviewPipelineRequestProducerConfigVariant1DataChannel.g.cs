@@ -58,5 +58,6 @@ namespace Letta
         public PipelinesPreviewPipelineRequestProducerConfigVariant1DataChannel()
         {
         }
+
     }
 }

@@ -123,5 +123,6 @@ namespace Letta
         public PassageSearchRequest()
         {
         }
+
     }
 }
