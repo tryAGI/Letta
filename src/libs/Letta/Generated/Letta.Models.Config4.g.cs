@@ -124,6 +124,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Config4 FromStdio(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? value) => new Config4(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Config4(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer value) => new Config4((global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?)value);
 
         /// <summary>
@@ -142,6 +147,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Config4 FromSse(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? value) => new Config4(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Config4(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer value) => new Config4((global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?)value);
 
         /// <summary>
@@ -156,6 +166,11 @@ namespace Letta
         {
             StreamableHttp = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Config4 FromStreamableHttp(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? value) => new Config4(value);
 
         /// <summary>
         /// 

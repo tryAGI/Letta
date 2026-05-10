@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Config7 FromSlackChannelReader(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1? value) => new Config7(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator Config7(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2 value) => new Config7((global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             CustomWebhook = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Config7 FromCustomWebhook(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2? value) => new Config7(value);
 
         /// <summary>
         /// 

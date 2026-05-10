@@ -422,6 +422,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromSystemMessage(global::Letta.SystemMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.UserMessage value) => new ModifyGroupMessageResponse((global::Letta.UserMessage?)value);
 
         /// <summary>
@@ -436,6 +441,11 @@ namespace Letta
         {
             UserMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModifyGroupMessageResponse FromUserMessage(global::Letta.UserMessage? value) => new ModifyGroupMessageResponse(value);
 
         /// <summary>
         /// 
@@ -458,6 +468,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromReasoningMessage(global::Letta.ReasoningMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.HiddenReasoningMessage value) => new ModifyGroupMessageResponse((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
@@ -472,6 +487,11 @@ namespace Letta
         {
             HiddenReasoningMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModifyGroupMessageResponse FromHiddenReasoningMessage(global::Letta.HiddenReasoningMessage? value) => new ModifyGroupMessageResponse(value);
 
         /// <summary>
         /// 
@@ -494,6 +514,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromToolCallMessage(global::Letta.ToolCallMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.ToolReturnMessage value) => new ModifyGroupMessageResponse((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
@@ -508,6 +533,11 @@ namespace Letta
         {
             ToolReturnMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModifyGroupMessageResponse FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new ModifyGroupMessageResponse(value);
 
         /// <summary>
         /// 
@@ -530,6 +560,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromAssistantMessage(global::Letta.AssistantMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.ApprovalRequestMessage value) => new ModifyGroupMessageResponse((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
@@ -544,6 +579,11 @@ namespace Letta
         {
             ApprovalRequestMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModifyGroupMessageResponse FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new ModifyGroupMessageResponse(value);
 
         /// <summary>
         /// 
@@ -566,6 +606,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.SummaryMessage value) => new ModifyGroupMessageResponse((global::Letta.SummaryMessage?)value);
 
         /// <summary>
@@ -584,6 +629,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModifyGroupMessageResponse FromSummaryMessage(global::Letta.SummaryMessage? value) => new ModifyGroupMessageResponse(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModifyGroupMessageResponse(global::Letta.EventMessage value) => new ModifyGroupMessageResponse((global::Letta.EventMessage?)value);
 
         /// <summary>
@@ -598,6 +648,11 @@ namespace Letta
         {
             EventMessage = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModifyGroupMessageResponse FromEventMessage(global::Letta.EventMessage? value) => new ModifyGroupMessageResponse(value);
 
         /// <summary>
         /// 

@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static FuncResponseVariant2Item2 FromText(global::Letta.TextContent? value) => new FuncResponseVariant2Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator FuncResponseVariant2Item2(global::Letta.ImageContent value) => new FuncResponseVariant2Item2((global::Letta.ImageContent?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static FuncResponseVariant2Item2 FromImage(global::Letta.ImageContent? value) => new FuncResponseVariant2Item2(value);
 
         /// <summary>
         /// 

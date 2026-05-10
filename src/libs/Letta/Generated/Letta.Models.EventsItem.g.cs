@@ -184,6 +184,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static EventsItem FromSessionStart(global::Letta.MetadataSendTelemetryRequestEventVariant1? value) => new EventsItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant2 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant2?)value);
 
         /// <summary>
@@ -198,6 +203,11 @@ namespace Letta
         {
             SessionEnd = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static EventsItem FromSessionEnd(global::Letta.MetadataSendTelemetryRequestEventVariant2? value) => new EventsItem(value);
 
         /// <summary>
         /// 
@@ -220,6 +230,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static EventsItem FromToolUsage(global::Letta.MetadataSendTelemetryRequestEventVariant3? value) => new EventsItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant4 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant4?)value);
 
         /// <summary>
@@ -238,6 +253,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static EventsItem FromError(global::Letta.MetadataSendTelemetryRequestEventVariant4? value) => new EventsItem(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant5 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant5?)value);
 
         /// <summary>
@@ -252,6 +272,11 @@ namespace Letta
         {
             UserInput = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static EventsItem FromUserInput(global::Letta.MetadataSendTelemetryRequestEventVariant5? value) => new EventsItem(value);
 
         /// <summary>
         /// 

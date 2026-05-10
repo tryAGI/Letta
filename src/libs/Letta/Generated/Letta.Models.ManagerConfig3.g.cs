@@ -184,6 +184,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig3 FromRoundRobin(global::Letta.RoundRobinManager? value) => new ManagerConfig3(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig3(global::Letta.SupervisorManager value) => new ManagerConfig3((global::Letta.SupervisorManager?)value);
 
         /// <summary>
@@ -198,6 +203,11 @@ namespace Letta
         {
             Supervisor = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfig3 FromSupervisor(global::Letta.SupervisorManager? value) => new ManagerConfig3(value);
 
         /// <summary>
         /// 
@@ -220,6 +230,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig3 FromDynamic(global::Letta.DynamicManager? value) => new ManagerConfig3(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig3(global::Letta.SleeptimeManager value) => new ManagerConfig3((global::Letta.SleeptimeManager?)value);
 
         /// <summary>
@@ -238,6 +253,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ManagerConfig3 FromSleeptime(global::Letta.SleeptimeManager? value) => new ManagerConfig3(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ManagerConfig3(global::Letta.VoiceSleeptimeManager value) => new ManagerConfig3((global::Letta.VoiceSleeptimeManager?)value);
 
         /// <summary>
@@ -252,6 +272,11 @@ namespace Letta
         {
             VoiceSleeptime = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ManagerConfig3 FromVoiceSleeptime(global::Letta.VoiceSleeptimeManager? value) => new ManagerConfig3(value);
 
         /// <summary>
         /// 

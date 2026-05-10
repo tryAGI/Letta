@@ -64,6 +64,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static DataItem2 FromAgent(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? value) => new DataItem2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public DataItem2(
             global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType? type,
             global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? agent

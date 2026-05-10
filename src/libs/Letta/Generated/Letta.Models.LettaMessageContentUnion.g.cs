@@ -244,6 +244,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ImageContent value) => new LettaMessageContentUnion((global::Letta.ImageContent?)value);
 
         /// <summary>
@@ -258,6 +263,11 @@ namespace Letta
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromImage(global::Letta.ImageContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -280,6 +290,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromToolCall(global::Letta.ToolCallContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ToolReturnContent value) => new LettaMessageContentUnion((global::Letta.ToolReturnContent?)value);
 
         /// <summary>
@@ -294,6 +309,11 @@ namespace Letta
         {
             ToolReturn = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromToolReturn(global::Letta.ToolReturnContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -316,6 +336,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromReasoning(global::Letta.ReasoningContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.RedactedReasoningContent value) => new LettaMessageContentUnion((global::Letta.RedactedReasoningContent?)value);
 
         /// <summary>
@@ -334,6 +359,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.OmittedReasoningContent value) => new LettaMessageContentUnion((global::Letta.OmittedReasoningContent?)value);
 
         /// <summary>
@@ -348,6 +378,11 @@ namespace Letta
         {
             OmittedReasoning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromOmittedReasoning(global::Letta.OmittedReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 

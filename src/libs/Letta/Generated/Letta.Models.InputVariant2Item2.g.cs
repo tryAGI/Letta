@@ -274,6 +274,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static InputVariant2Item2 FromText(global::Letta.TextContent? value) => new InputVariant2Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputVariant2Item2(global::Letta.ImageContent value) => new InputVariant2Item2((global::Letta.ImageContent?)value);
 
         /// <summary>
@@ -288,6 +293,11 @@ namespace Letta
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputVariant2Item2 FromImage(global::Letta.ImageContent? value) => new InputVariant2Item2(value);
 
         /// <summary>
         /// 
@@ -310,6 +320,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static InputVariant2Item2 FromToolCall(global::Letta.ToolCallContent? value) => new InputVariant2Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputVariant2Item2(global::Letta.ToolReturnContent value) => new InputVariant2Item2((global::Letta.ToolReturnContent?)value);
 
         /// <summary>
@@ -324,6 +339,11 @@ namespace Letta
         {
             ToolReturn = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputVariant2Item2 FromToolReturn(global::Letta.ToolReturnContent? value) => new InputVariant2Item2(value);
 
         /// <summary>
         /// 
@@ -346,6 +366,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static InputVariant2Item2 FromOmittedReasoning1(global::Letta.ReasoningContent? value) => new InputVariant2Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputVariant2Item2(global::Letta.RedactedReasoningContent value) => new InputVariant2Item2((global::Letta.RedactedReasoningContent?)value);
 
         /// <summary>
@@ -360,6 +385,11 @@ namespace Letta
         {
             RedactedReasoning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputVariant2Item2 FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new InputVariant2Item2(value);
 
         /// <summary>
         /// 
@@ -382,6 +412,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static InputVariant2Item2 FromOmittedReasoning2(global::Letta.OmittedReasoningContent? value) => new InputVariant2Item2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator InputVariant2Item2(global::Letta.SummarizedReasoningContent value) => new InputVariant2Item2((global::Letta.SummarizedReasoningContent?)value);
 
         /// <summary>
@@ -396,6 +431,11 @@ namespace Letta
         {
             SummarizedReasoning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static InputVariant2Item2 FromSummarizedReasoning(global::Letta.SummarizedReasoningContent? value) => new InputVariant2Item2(value);
 
         /// <summary>
         /// 

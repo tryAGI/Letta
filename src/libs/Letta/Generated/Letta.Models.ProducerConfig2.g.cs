@@ -94,6 +94,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ProducerConfig2 FromSlackChannelReader(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? value) => new ProducerConfig2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ProducerConfig2(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2 value) => new ProducerConfig2((global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2?)value);
 
         /// <summary>
@@ -108,6 +113,11 @@ namespace Letta
         {
             CustomWebhook = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ProducerConfig2 FromCustomWebhook(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2? value) => new ProducerConfig2(value);
 
         /// <summary>
         /// 
