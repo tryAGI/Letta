@@ -34,6 +34,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TextContent? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TextContent PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
 #else
@@ -47,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
 #endif
         public bool IsImage => Image != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ImageContent? value)
+        {
+            value = Image;
+            return IsImage;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ImageContent PickImage() => IsImage
+            ? Image!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -68,6 +108,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaToolReturnContentUnion FromText(global::Letta.TextContent? value) => new LettaToolReturnContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaToolReturnContentUnion(global::Letta.ImageContent value) => new LettaToolReturnContentUnion((global::Letta.ImageContent?)value);
 
         /// <summary>
@@ -82,6 +127,11 @@ namespace Letta
         {
             Image = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaToolReturnContentUnion FromImage(global::Letta.ImageContent? value) => new LettaToolReturnContentUnion(value);
 
         /// <summary>
         /// 
@@ -126,8 +176,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TextContent?, TResult>? text = null,
-            global::System.Func<global::Letta.ImageContent?, TResult>? image = null,
+            global::System.Func<global::Letta.TextContent, TResult>? text = null,
+            global::System.Func<global::Letta.ImageContent, TResult>? image = null,
             bool validate = true)
         {
             if (validate)
@@ -151,8 +201,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TextContent?>? text = null,
-            global::System.Action<global::Letta.ImageContent?>? image = null,
+            global::System.Action<global::Letta.TextContent>? text = null,
+
+            global::System.Action<global::Letta.ImageContent>? image = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsImage)
+            {
+                image?.Invoke(Image!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TextContent>? text = null,
+            global::System.Action<global::Letta.ImageContent>? image = null,
             bool validate = true)
         {
             if (validate)

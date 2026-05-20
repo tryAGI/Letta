@@ -40,5 +40,6 @@ namespace Letta
         public BedrockModelSettingsResponseFormatVariant1Discriminator()
         {
         }
+
     }
 }

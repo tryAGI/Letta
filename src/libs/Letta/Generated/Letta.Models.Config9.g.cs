@@ -12,6 +12,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? SlackChannelReader { get; init; }
 #else
@@ -29,6 +34,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickSlackChannelReader(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? value)
+        {
+            value = SlackChannelReader;
+            return IsSlackChannelReader;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1 PickSlackChannelReader() => IsSlackChannelReader
+            ? SlackChannelReader!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SlackChannelReader' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? CustomWebhook { get; init; }
 #else
@@ -42,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CustomWebhook))]
 #endif
         public bool IsCustomWebhook => CustomWebhook != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickCustomWebhook(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? value)
+        {
+            value = CustomWebhook;
+            return IsCustomWebhook;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2 PickCustomWebhook() => IsCustomWebhook
+            ? CustomWebhook!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomWebhook' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +104,11 @@ namespace Letta
         {
             SlackChannelReader = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static Config9 FromSlackChannelReader(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? value) => new Config9(value);
 
         /// <summary>
         /// 
@@ -81,11 +131,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static Config9 FromCustomWebhook(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? value) => new Config9(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Config9(
+            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType? type,
             global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? slackChannelReader,
             global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? customWebhook
             )
         {
+            Type = type;
+
             SlackChannelReader = slackChannelReader;
             CustomWebhook = customWebhook;
         }
@@ -118,8 +176,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?, TResult>? slackChannelReader = null,
-            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?, TResult>? customWebhook = null,
+            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1, TResult>? slackChannelReader = null,
+            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2, TResult>? customWebhook = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +201,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?>? slackChannelReader = null,
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?>? customWebhook = null,
+            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1>? slackChannelReader = null,
+
+            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2>? customWebhook = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsSlackChannelReader)
+            {
+                slackChannelReader?.Invoke(SlackChannelReader!);
+            }
+            else if (IsCustomWebhook)
+            {
+                customWebhook?.Invoke(CustomWebhook!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1>? slackChannelReader = null,
+            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2>? customWebhook = null,
             bool validate = true)
         {
             if (validate)

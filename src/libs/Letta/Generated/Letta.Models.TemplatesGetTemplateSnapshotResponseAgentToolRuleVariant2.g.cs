@@ -68,5 +68,6 @@ namespace Letta
         public TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2()
         {
         }
+
     }
 }

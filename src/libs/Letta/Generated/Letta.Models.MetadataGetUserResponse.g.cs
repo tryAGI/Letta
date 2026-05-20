@@ -118,5 +118,6 @@ namespace Letta
         public MetadataGetUserResponse()
         {
         }
+
     }
 }

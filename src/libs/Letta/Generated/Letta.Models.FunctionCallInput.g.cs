@@ -51,5 +51,6 @@ namespace Letta
         public FunctionCallInput()
         {
         }
+
     }
 }

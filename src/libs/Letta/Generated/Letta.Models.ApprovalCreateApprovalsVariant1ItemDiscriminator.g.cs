@@ -40,5 +40,6 @@ namespace Letta
         public ApprovalCreateApprovalsVariant1ItemDiscriminator()
         {
         }
+
     }
 }

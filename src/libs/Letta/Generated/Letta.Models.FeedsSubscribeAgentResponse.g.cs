@@ -147,5 +147,6 @@ namespace Letta
         public FeedsSubscribeAgentResponse()
         {
         }
+
     }
 }

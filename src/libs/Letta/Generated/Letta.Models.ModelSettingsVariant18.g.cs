@@ -32,6 +32,26 @@ namespace Letta
         public bool IsOpenai => Openai != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOpenai(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.OpenAIModelSettings? value)
+        {
+            value = Openai;
+            return IsOpenai;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OpenAIModelSettings PickOpenai() => IsOpenai
+            ? Openai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Openai' but the value was {ToString()}.");
+
+        /// <summary>
         /// SGLang model configuration (OpenAI-compatible runtime with SGLang-specific parsing).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -47,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sglang))]
 #endif
         public bool IsSglang => Sglang != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickSglang(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.SGLangModelSettings? value)
+        {
+            value = Sglang;
+            return IsSglang;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.SGLangModelSettings PickSglang() => IsSglang
+            ? Sglang!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sglang' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -68,6 +108,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickAnthropic(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.AnthropicModelSettings? value)
+        {
+            value = Anthropic;
+            return IsAnthropic;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.AnthropicModelSettings PickAnthropic() => IsAnthropic
+            ? Anthropic!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Anthropic' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.GoogleAIModelSettings? GoogleAi { get; init; }
 #else
@@ -81,6 +141,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleAi))]
 #endif
         public bool IsGoogleAi => GoogleAi != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGoogleAi(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.GoogleAIModelSettings? value)
+        {
+            value = GoogleAi;
+            return IsGoogleAi;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GoogleAIModelSettings PickGoogleAi() => IsGoogleAi
+            ? GoogleAi!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleAi' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -100,6 +180,26 @@ namespace Letta
         public bool IsGoogleVertex => GoogleVertex != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGoogleVertex(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.GoogleVertexModelSettings? value)
+        {
+            value = GoogleVertex;
+            return IsGoogleVertex;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GoogleVertexModelSettings PickGoogleVertex() => IsGoogleVertex
+            ? GoogleVertex!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertex' but the value was {ToString()}.");
+
+        /// <summary>
         /// Azure OpenAI model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -115,6 +215,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Azure))]
 #endif
         public bool IsAzure => Azure != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAzure(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.AzureModelSettings? value)
+        {
+            value = Azure;
+            return IsAzure;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.AzureModelSettings PickAzure() => IsAzure
+            ? Azure!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Azure' but the value was {ToString()}.");
 
         /// <summary>
         /// xAI model configuration (OpenAI-compatible).
@@ -134,6 +254,26 @@ namespace Letta
         public bool IsXai => Xai != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickXai(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.XAIModelSettings? value)
+        {
+            value = Xai;
+            return IsXai;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.XAIModelSettings PickXai() => IsXai
+            ? Xai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Xai' but the value was {ToString()}.");
+
+        /// <summary>
         /// Z.ai (ZhipuAI) model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -149,6 +289,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Zai))]
 #endif
         public bool IsZai => Zai != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickZai(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ZAIModelSettings? value)
+        {
+            value = Zai;
+            return IsZai;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ZAIModelSettings PickZai() => IsZai
+            ? Zai!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Zai' but the value was {ToString()}.");
 
         /// <summary>
         /// Groq model configuration (OpenAI-compatible).
@@ -168,6 +328,26 @@ namespace Letta
         public bool IsGroq => Groq != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickGroq(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.GroqModelSettings? value)
+        {
+            value = Groq;
+            return IsGroq;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.GroqModelSettings PickGroq() => IsGroq
+            ? Groq!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Groq' but the value was {ToString()}.");
+
+        /// <summary>
         /// Deepseek model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -183,6 +363,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Deepseek))]
 #endif
         public bool IsDeepseek => Deepseek != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickDeepseek(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.DeepseekModelSettings? value)
+        {
+            value = Deepseek;
+            return IsDeepseek;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.DeepseekModelSettings PickDeepseek() => IsDeepseek
+            ? Deepseek!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Deepseek' but the value was {ToString()}.");
 
         /// <summary>
         /// Together AI model configuration (OpenAI-compatible).
@@ -202,6 +402,26 @@ namespace Letta
         public bool IsTogether => Together != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTogether(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TogetherModelSettings? value)
+        {
+            value = Together;
+            return IsTogether;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TogetherModelSettings PickTogether() => IsTogether
+            ? Together!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Together' but the value was {ToString()}.");
+
+        /// <summary>
         /// AWS Bedrock model configuration.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -217,6 +437,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Bedrock))]
 #endif
         public bool IsBedrock => Bedrock != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBedrock(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.BedrockModelSettings? value)
+        {
+            value = Bedrock;
+            return IsBedrock;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.BedrockModelSettings PickBedrock() => IsBedrock
+            ? Bedrock!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Bedrock' but the value was {ToString()}.");
 
         /// <summary>
         /// Baseten model configuration (OpenAI-compatible).
@@ -236,6 +476,26 @@ namespace Letta
         public bool IsBaseten => Baseten != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickBaseten(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.BasetenModelSettings? value)
+        {
+            value = Baseten;
+            return IsBaseten;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.BasetenModelSettings PickBaseten() => IsBaseten
+            ? Baseten!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Baseten' but the value was {ToString()}.");
+
+        /// <summary>
         /// OpenRouter model configuration (OpenAI-compatible).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -253,6 +513,26 @@ namespace Letta
         public bool IsOpenrouter => Openrouter != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOpenrouter(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.OpenRouterModelSettings? value)
+        {
+            value = Openrouter;
+            return IsOpenrouter;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OpenRouterModelSettings PickOpenrouter() => IsOpenrouter
+            ? Openrouter!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Openrouter' but the value was {ToString()}.");
+
+        /// <summary>
         /// ChatGPT OAuth model configuration (uses ChatGPT backend API).
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -268,6 +548,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChatgptOauth))]
 #endif
         public bool IsChatgptOauth => ChatgptOauth != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickChatgptOauth(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ChatGPTOAuthModelSettings? value)
+        {
+            value = ChatgptOauth;
+            return IsChatgptOauth;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ChatGPTOAuthModelSettings PickChatgptOauth() => IsChatgptOauth
+            ? ChatgptOauth!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ChatgptOauth' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -285,6 +585,11 @@ namespace Letta
         {
             Openai = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromOpenai(global::Letta.OpenAIModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -307,6 +612,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromSglang(global::Letta.SGLangModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.AnthropicModelSettings value) => new ModelSettingsVariant18((global::Letta.AnthropicModelSettings?)value);
 
         /// <summary>
@@ -321,6 +631,11 @@ namespace Letta
         {
             Anthropic = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromAnthropic(global::Letta.AnthropicModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -343,6 +658,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromGoogleAi(global::Letta.GoogleAIModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.GoogleVertexModelSettings value) => new ModelSettingsVariant18((global::Letta.GoogleVertexModelSettings?)value);
 
         /// <summary>
@@ -357,6 +677,11 @@ namespace Letta
         {
             GoogleVertex = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromGoogleVertex(global::Letta.GoogleVertexModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -379,6 +704,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromAzure(global::Letta.AzureModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.XAIModelSettings value) => new ModelSettingsVariant18((global::Letta.XAIModelSettings?)value);
 
         /// <summary>
@@ -393,6 +723,11 @@ namespace Letta
         {
             Xai = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromXai(global::Letta.XAIModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -415,6 +750,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromZai(global::Letta.ZAIModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.GroqModelSettings value) => new ModelSettingsVariant18((global::Letta.GroqModelSettings?)value);
 
         /// <summary>
@@ -429,6 +769,11 @@ namespace Letta
         {
             Groq = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromGroq(global::Letta.GroqModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -451,6 +796,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromDeepseek(global::Letta.DeepseekModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.TogetherModelSettings value) => new ModelSettingsVariant18((global::Letta.TogetherModelSettings?)value);
 
         /// <summary>
@@ -465,6 +815,11 @@ namespace Letta
         {
             Together = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromTogether(global::Letta.TogetherModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -487,6 +842,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromBedrock(global::Letta.BedrockModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.BasetenModelSettings value) => new ModelSettingsVariant18((global::Letta.BasetenModelSettings?)value);
 
         /// <summary>
@@ -501,6 +861,11 @@ namespace Letta
         {
             Baseten = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromBaseten(global::Letta.BasetenModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -523,6 +888,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ModelSettingsVariant18 FromOpenrouter(global::Letta.OpenRouterModelSettings? value) => new ModelSettingsVariant18(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ModelSettingsVariant18(global::Letta.ChatGPTOAuthModelSettings value) => new ModelSettingsVariant18((global::Letta.ChatGPTOAuthModelSettings?)value);
 
         /// <summary>
@@ -537,6 +907,11 @@ namespace Letta
         {
             ChatgptOauth = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ModelSettingsVariant18 FromChatgptOauth(global::Letta.ChatGPTOAuthModelSettings? value) => new ModelSettingsVariant18(value);
 
         /// <summary>
         /// 
@@ -633,21 +1008,21 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.OpenAIModelSettings?, TResult>? openai = null,
-            global::System.Func<global::Letta.SGLangModelSettings?, TResult>? sglang = null,
-            global::System.Func<global::Letta.AnthropicModelSettings?, TResult>? anthropic = null,
-            global::System.Func<global::Letta.GoogleAIModelSettings?, TResult>? googleAi = null,
-            global::System.Func<global::Letta.GoogleVertexModelSettings?, TResult>? googleVertex = null,
-            global::System.Func<global::Letta.AzureModelSettings?, TResult>? azure = null,
-            global::System.Func<global::Letta.XAIModelSettings?, TResult>? xai = null,
-            global::System.Func<global::Letta.ZAIModelSettings?, TResult>? zai = null,
-            global::System.Func<global::Letta.GroqModelSettings?, TResult>? groq = null,
-            global::System.Func<global::Letta.DeepseekModelSettings?, TResult>? deepseek = null,
-            global::System.Func<global::Letta.TogetherModelSettings?, TResult>? together = null,
-            global::System.Func<global::Letta.BedrockModelSettings?, TResult>? bedrock = null,
-            global::System.Func<global::Letta.BasetenModelSettings?, TResult>? baseten = null,
-            global::System.Func<global::Letta.OpenRouterModelSettings?, TResult>? openrouter = null,
-            global::System.Func<global::Letta.ChatGPTOAuthModelSettings?, TResult>? chatgptOauth = null,
+            global::System.Func<global::Letta.OpenAIModelSettings, TResult>? openai = null,
+            global::System.Func<global::Letta.SGLangModelSettings, TResult>? sglang = null,
+            global::System.Func<global::Letta.AnthropicModelSettings, TResult>? anthropic = null,
+            global::System.Func<global::Letta.GoogleAIModelSettings, TResult>? googleAi = null,
+            global::System.Func<global::Letta.GoogleVertexModelSettings, TResult>? googleVertex = null,
+            global::System.Func<global::Letta.AzureModelSettings, TResult>? azure = null,
+            global::System.Func<global::Letta.XAIModelSettings, TResult>? xai = null,
+            global::System.Func<global::Letta.ZAIModelSettings, TResult>? zai = null,
+            global::System.Func<global::Letta.GroqModelSettings, TResult>? groq = null,
+            global::System.Func<global::Letta.DeepseekModelSettings, TResult>? deepseek = null,
+            global::System.Func<global::Letta.TogetherModelSettings, TResult>? together = null,
+            global::System.Func<global::Letta.BedrockModelSettings, TResult>? bedrock = null,
+            global::System.Func<global::Letta.BasetenModelSettings, TResult>? baseten = null,
+            global::System.Func<global::Letta.OpenRouterModelSettings, TResult>? openrouter = null,
+            global::System.Func<global::Letta.ChatGPTOAuthModelSettings, TResult>? chatgptOauth = null,
             bool validate = true)
         {
             if (validate)
@@ -723,21 +1098,123 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.OpenAIModelSettings?>? openai = null,
-            global::System.Action<global::Letta.SGLangModelSettings?>? sglang = null,
-            global::System.Action<global::Letta.AnthropicModelSettings?>? anthropic = null,
-            global::System.Action<global::Letta.GoogleAIModelSettings?>? googleAi = null,
-            global::System.Action<global::Letta.GoogleVertexModelSettings?>? googleVertex = null,
-            global::System.Action<global::Letta.AzureModelSettings?>? azure = null,
-            global::System.Action<global::Letta.XAIModelSettings?>? xai = null,
-            global::System.Action<global::Letta.ZAIModelSettings?>? zai = null,
-            global::System.Action<global::Letta.GroqModelSettings?>? groq = null,
-            global::System.Action<global::Letta.DeepseekModelSettings?>? deepseek = null,
-            global::System.Action<global::Letta.TogetherModelSettings?>? together = null,
-            global::System.Action<global::Letta.BedrockModelSettings?>? bedrock = null,
-            global::System.Action<global::Letta.BasetenModelSettings?>? baseten = null,
-            global::System.Action<global::Letta.OpenRouterModelSettings?>? openrouter = null,
-            global::System.Action<global::Letta.ChatGPTOAuthModelSettings?>? chatgptOauth = null,
+            global::System.Action<global::Letta.OpenAIModelSettings>? openai = null,
+
+            global::System.Action<global::Letta.SGLangModelSettings>? sglang = null,
+
+            global::System.Action<global::Letta.AnthropicModelSettings>? anthropic = null,
+
+            global::System.Action<global::Letta.GoogleAIModelSettings>? googleAi = null,
+
+            global::System.Action<global::Letta.GoogleVertexModelSettings>? googleVertex = null,
+
+            global::System.Action<global::Letta.AzureModelSettings>? azure = null,
+
+            global::System.Action<global::Letta.XAIModelSettings>? xai = null,
+
+            global::System.Action<global::Letta.ZAIModelSettings>? zai = null,
+
+            global::System.Action<global::Letta.GroqModelSettings>? groq = null,
+
+            global::System.Action<global::Letta.DeepseekModelSettings>? deepseek = null,
+
+            global::System.Action<global::Letta.TogetherModelSettings>? together = null,
+
+            global::System.Action<global::Letta.BedrockModelSettings>? bedrock = null,
+
+            global::System.Action<global::Letta.BasetenModelSettings>? baseten = null,
+
+            global::System.Action<global::Letta.OpenRouterModelSettings>? openrouter = null,
+
+            global::System.Action<global::Letta.ChatGPTOAuthModelSettings>? chatgptOauth = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsOpenai)
+            {
+                openai?.Invoke(Openai!);
+            }
+            else if (IsSglang)
+            {
+                sglang?.Invoke(Sglang!);
+            }
+            else if (IsAnthropic)
+            {
+                anthropic?.Invoke(Anthropic!);
+            }
+            else if (IsGoogleAi)
+            {
+                googleAi?.Invoke(GoogleAi!);
+            }
+            else if (IsGoogleVertex)
+            {
+                googleVertex?.Invoke(GoogleVertex!);
+            }
+            else if (IsAzure)
+            {
+                azure?.Invoke(Azure!);
+            }
+            else if (IsXai)
+            {
+                xai?.Invoke(Xai!);
+            }
+            else if (IsZai)
+            {
+                zai?.Invoke(Zai!);
+            }
+            else if (IsGroq)
+            {
+                groq?.Invoke(Groq!);
+            }
+            else if (IsDeepseek)
+            {
+                deepseek?.Invoke(Deepseek!);
+            }
+            else if (IsTogether)
+            {
+                together?.Invoke(Together!);
+            }
+            else if (IsBedrock)
+            {
+                bedrock?.Invoke(Bedrock!);
+            }
+            else if (IsBaseten)
+            {
+                baseten?.Invoke(Baseten!);
+            }
+            else if (IsOpenrouter)
+            {
+                openrouter?.Invoke(Openrouter!);
+            }
+            else if (IsChatgptOauth)
+            {
+                chatgptOauth?.Invoke(ChatgptOauth!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.OpenAIModelSettings>? openai = null,
+            global::System.Action<global::Letta.SGLangModelSettings>? sglang = null,
+            global::System.Action<global::Letta.AnthropicModelSettings>? anthropic = null,
+            global::System.Action<global::Letta.GoogleAIModelSettings>? googleAi = null,
+            global::System.Action<global::Letta.GoogleVertexModelSettings>? googleVertex = null,
+            global::System.Action<global::Letta.AzureModelSettings>? azure = null,
+            global::System.Action<global::Letta.XAIModelSettings>? xai = null,
+            global::System.Action<global::Letta.ZAIModelSettings>? zai = null,
+            global::System.Action<global::Letta.GroqModelSettings>? groq = null,
+            global::System.Action<global::Letta.DeepseekModelSettings>? deepseek = null,
+            global::System.Action<global::Letta.TogetherModelSettings>? together = null,
+            global::System.Action<global::Letta.BedrockModelSettings>? bedrock = null,
+            global::System.Action<global::Letta.BasetenModelSettings>? baseten = null,
+            global::System.Action<global::Letta.OpenRouterModelSettings>? openrouter = null,
+            global::System.Action<global::Letta.ChatGPTOAuthModelSettings>? chatgptOauth = null,
             bool validate = true)
         {
             if (validate)

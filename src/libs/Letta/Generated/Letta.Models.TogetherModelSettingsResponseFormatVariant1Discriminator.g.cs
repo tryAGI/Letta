@@ -40,5 +40,6 @@ namespace Letta
         public TogetherModelSettingsResponseFormatVariant1Discriminator()
         {
         }
+
     }
 }

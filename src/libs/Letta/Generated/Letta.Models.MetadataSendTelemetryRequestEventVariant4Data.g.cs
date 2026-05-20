@@ -132,5 +132,6 @@ namespace Letta
         public MetadataSendTelemetryRequestEventVariant4Data()
         {
         }
+
     }
 }

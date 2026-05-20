@@ -52,5 +52,6 @@ namespace Letta
         public LettaServerRestApiRoutersV1ConversationsCompactionRequest()
         {
         }
+
     }
 }

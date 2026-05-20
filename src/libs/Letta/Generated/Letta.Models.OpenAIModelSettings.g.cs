@@ -119,5 +119,6 @@ namespace Letta
         public OpenAIModelSettings()
         {
         }
+
     }
 }

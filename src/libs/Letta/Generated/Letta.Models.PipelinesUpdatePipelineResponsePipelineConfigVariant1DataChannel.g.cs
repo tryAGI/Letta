@@ -58,5 +58,6 @@ namespace Letta
         public PipelinesUpdatePipelineResponsePipelineConfigVariant1DataChannel()
         {
         }
+
     }
 }

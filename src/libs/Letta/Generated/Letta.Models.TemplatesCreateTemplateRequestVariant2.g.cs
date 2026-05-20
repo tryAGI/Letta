@@ -74,5 +74,6 @@ namespace Letta
         public TemplatesCreateTemplateRequestVariant2()
         {
         }
+
     }
 }

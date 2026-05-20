@@ -40,5 +40,6 @@ namespace Letta
         public AnthropicModelSettingsResponseFormatVariant1Discriminator()
         {
         }
+
     }
 }

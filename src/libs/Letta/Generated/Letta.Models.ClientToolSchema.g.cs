@@ -67,5 +67,6 @@ namespace Letta
         public ClientToolSchema()
         {
         }
+
     }
 }

@@ -66,5 +66,6 @@ namespace Letta
         public GenerateResponse()
         {
         }
+
     }
 }

@@ -110,5 +110,6 @@ namespace Letta
         public FeedsListMessagesResponseMessage()
         {
         }
+
     }
 }

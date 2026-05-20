@@ -143,5 +143,6 @@ namespace Letta
         public AgentEnvironmentVariable()
         {
         }
+
     }
 }

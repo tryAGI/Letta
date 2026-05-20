@@ -75,5 +75,6 @@ namespace Letta
         public PassageCreateRequest()
         {
         }
+
     }
 }

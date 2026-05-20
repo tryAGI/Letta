@@ -89,5 +89,6 @@ namespace Letta
         public ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessage()
         {
         }
+
     }
 }

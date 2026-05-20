@@ -232,5 +232,6 @@ namespace Letta
         public BatchJob()
         {
         }
+
     }
 }

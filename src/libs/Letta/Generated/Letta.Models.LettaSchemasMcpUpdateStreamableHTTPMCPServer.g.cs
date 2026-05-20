@@ -85,5 +85,6 @@ namespace Letta
         public LettaSchemasMcpUpdateStreamableHTTPMCPServer()
         {
         }
+
     }
 }

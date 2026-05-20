@@ -34,6 +34,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickApproval(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ApprovalReturn? value)
+        {
+            value = Approval;
+            return IsApproval;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ApprovalReturn PickApproval() => IsApproval
+            ? Approval!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Approval' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.LettaSchemasLettaMessageToolReturn? Tool { get; init; }
 #else
@@ -47,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Tool))]
 #endif
         public bool IsTool => Tool != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickTool(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasLettaMessageToolReturn? value)
+        {
+            value = Tool;
+            return IsTool;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.LettaSchemasLettaMessageToolReturn PickTool() => IsTool
+            ? Tool!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Tool' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -68,6 +108,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ApprovalsVariant1Item FromApproval(global::Letta.ApprovalReturn? value) => new ApprovalsVariant1Item(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ApprovalsVariant1Item(global::Letta.LettaSchemasLettaMessageToolReturn value) => new ApprovalsVariant1Item((global::Letta.LettaSchemasLettaMessageToolReturn?)value);
 
         /// <summary>
@@ -82,6 +127,11 @@ namespace Letta
         {
             Tool = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ApprovalsVariant1Item FromTool(global::Letta.LettaSchemasLettaMessageToolReturn? value) => new ApprovalsVariant1Item(value);
 
         /// <summary>
         /// 
@@ -126,8 +176,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.ApprovalReturn?, TResult>? approval = null,
-            global::System.Func<global::Letta.LettaSchemasLettaMessageToolReturn?, TResult>? tool = null,
+            global::System.Func<global::Letta.ApprovalReturn, TResult>? approval = null,
+            global::System.Func<global::Letta.LettaSchemasLettaMessageToolReturn, TResult>? tool = null,
             bool validate = true)
         {
             if (validate)
@@ -151,8 +201,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.ApprovalReturn?>? approval = null,
-            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn?>? tool = null,
+            global::System.Action<global::Letta.ApprovalReturn>? approval = null,
+
+            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn>? tool = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsApproval)
+            {
+                approval?.Invoke(Approval!);
+            }
+            else if (IsTool)
+            {
+                tool?.Invoke(Tool!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.ApprovalReturn>? approval = null,
+            global::System.Action<global::Letta.LettaSchemasLettaMessageToolReturn>? tool = null,
             bool validate = true)
         {
             if (validate)

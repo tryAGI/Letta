@@ -108,5 +108,6 @@ namespace Letta
         public FeedsCreateFeedResponse()
         {
         }
+
     }
 }

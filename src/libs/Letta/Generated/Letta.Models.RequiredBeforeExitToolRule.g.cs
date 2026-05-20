@@ -64,5 +64,6 @@ namespace Letta
         public RequiredBeforeExitToolRule()
         {
         }
+
     }
 }

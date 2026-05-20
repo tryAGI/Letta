@@ -12,6 +12,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType? Type { get; }
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? Agent { get; init; }
 #else
@@ -25,6 +30,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Agent))]
 #endif
         public bool IsAgent => Agent != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? value)
+        {
+            value = Agent;
+            return IsAgent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1 PickAgent() => IsAgent
+            ? Agent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Agent' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -41,6 +66,24 @@ namespace Letta
         public DataItem2(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? value)
         {
             Agent = value;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static DataItem2 FromAgent(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? value) => new DataItem2(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DataItem2(
+            global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType? type,
+            global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? agent
+            )
+        {
+            Type = type;
+
+            Agent = agent;
         }
 
         /// <summary>
@@ -69,7 +112,7 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1?, TResult>? agent = null,
+            global::System.Func<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1, TResult>? agent = null,
             bool validate = true)
         {
             if (validate)
@@ -89,7 +132,25 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1?>? agent = null,
+            global::System.Action<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1>? agent = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAgent)
+            {
+                agent?.Invoke(Agent!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1>? agent = null,
             bool validate = true)
         {
             if (validate)

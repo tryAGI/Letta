@@ -94,5 +94,6 @@ namespace Letta
         public ChatCompletionMessage()
         {
         }
+
     }
 }

@@ -50,5 +50,6 @@ namespace Letta
         public PipelinesUpdatePipelineResponse2()
         {
         }
+
     }
 }

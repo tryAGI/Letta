@@ -50,5 +50,6 @@ namespace Letta
         public SandboxesCreateSandboxResponse3()
         {
         }
+
     }
 }

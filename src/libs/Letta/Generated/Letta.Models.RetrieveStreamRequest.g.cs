@@ -115,5 +115,6 @@ namespace Letta
         public RetrieveStreamRequest()
         {
         }
+
     }
 }

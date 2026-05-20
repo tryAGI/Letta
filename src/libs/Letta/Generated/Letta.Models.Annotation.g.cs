@@ -52,5 +52,18 @@ namespace Letta
         public Annotation()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="Annotation"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static Annotation FromUrlCitation(global::Letta.AnnotationURLCitation urlCitation)
+        {
+            return new Annotation
+            {
+                UrlCitation = urlCitation,
+            };
+        }
+
     }
 }

@@ -126,5 +126,6 @@ namespace Letta
         public LettaSerializeSchemasPydanticAgentSchemaMessageSchema()
         {
         }
+
     }
 }

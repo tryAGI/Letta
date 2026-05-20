@@ -10,6 +10,11 @@ namespace Letta
     public readonly partial struct TemplatesCreateTemplateNoProjectRequest : global::System.IEquatable<TemplatesCreateTemplateNoProjectRequest>
     {
         /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestDiscriminatorType? Type { get; }
+
+        /// <summary>
         /// Create a template from an existing agent
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -27,6 +32,26 @@ namespace Letta
         public bool IsAgent => Agent != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgent(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? value)
+        {
+            value = Agent;
+            return IsAgent;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1 PickAgent() => IsAgent
+            ? Agent!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Agent' but the value was {ToString()}.");
+
+        /// <summary>
         /// Create a template from an uploaded agent file
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -42,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentFile))]
 #endif
         public bool IsAgentFile => AgentFile != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickAgentFile(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? value)
+        {
+            value = AgentFile;
+            return IsAgentFile;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2 PickAgentFile() => IsAgentFile
+            ? AgentFile!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AgentFile' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -59,6 +104,11 @@ namespace Letta
         {
             Agent = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static TemplatesCreateTemplateNoProjectRequest FromAgent(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? value) => new TemplatesCreateTemplateNoProjectRequest(value);
 
         /// <summary>
         /// 
@@ -81,11 +131,19 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static TemplatesCreateTemplateNoProjectRequest FromAgentFile(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? value) => new TemplatesCreateTemplateNoProjectRequest(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public TemplatesCreateTemplateNoProjectRequest(
+            global::Letta.TemplatesCreateTemplateNoProjectRequestDiscriminatorType? type,
             global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? agent,
             global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? agentFile
             )
         {
+            Type = type;
+
             Agent = agent;
             AgentFile = agentFile;
         }
@@ -118,8 +176,8 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?, TResult>? agent = null,
-            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?, TResult>? agentFile = null,
+            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1, TResult>? agent = null,
+            global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2, TResult>? agentFile = null,
             bool validate = true)
         {
             if (validate)
@@ -143,8 +201,32 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?>? agent = null,
-            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?>? agentFile = null,
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
+
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2>? agentFile = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsAgent)
+            {
+                agent?.Invoke(Agent!);
+            }
+            else if (IsAgentFile)
+            {
+                agentFile?.Invoke(AgentFile!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
+            global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2>? agentFile = null,
             bool validate = true)
         {
             if (validate)

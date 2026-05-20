@@ -141,5 +141,6 @@ namespace Letta
         public AnthropicModelSettings()
         {
         }
+
     }
 }

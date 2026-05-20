@@ -12,7 +12,8 @@ namespace Letta
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string? Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.PipelinesCreatePipelineResponsePipelineConfigDiscriminatorTypeJsonConverter))]
+        public global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminatorType? Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -28,7 +29,7 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PipelinesCreatePipelineResponsePipelineConfigDiscriminator(
-            string? type)
+            global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminatorType? type)
         {
             this.Type = type;
         }
@@ -39,5 +40,6 @@ namespace Letta
         public PipelinesCreatePipelineResponsePipelineConfigDiscriminator()
         {
         }
+
     }
 }

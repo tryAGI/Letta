@@ -148,5 +148,6 @@ namespace Letta
         public EmbeddingConfig()
         {
         }
+
     }
 }

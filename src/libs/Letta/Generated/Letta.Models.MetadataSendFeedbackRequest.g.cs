@@ -268,5 +268,6 @@ namespace Letta
         public MetadataSendFeedbackRequest()
         {
         }
+
     }
 }

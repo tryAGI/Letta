@@ -79,5 +79,6 @@ namespace Letta
         public ConditionalToolRuleSchema()
         {
         }
+
     }
 }

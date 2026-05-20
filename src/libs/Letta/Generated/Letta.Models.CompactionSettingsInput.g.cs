@@ -116,5 +116,6 @@ namespace Letta
         public CompactionSettingsInput()
         {
         }
+
     }
 }

@@ -62,5 +62,6 @@ namespace Letta
         public ChatCompletionMessageFunctionToolCallOutput()
         {
         }
+
     }
 }

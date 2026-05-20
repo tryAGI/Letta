@@ -50,5 +50,6 @@ namespace Letta
         public EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1ToolReturnVariant2Item()
         {
         }
+
     }
 }

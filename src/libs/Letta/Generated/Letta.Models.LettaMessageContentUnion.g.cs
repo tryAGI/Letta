@@ -34,6 +34,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TextContent? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TextContent PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
 #else
@@ -47,6 +67,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
 #endif
         public bool IsImage => Image != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickImage(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ImageContent? value)
+        {
+            value = Image;
+            return IsImage;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ImageContent PickImage() => IsImage
+            ? Image!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
         /// 
@@ -68,6 +108,26 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public bool TryPickToolCall(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ToolCallContent? value)
+        {
+            value = ToolCall;
+            return IsToolCall;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ToolCallContent PickToolCall() => IsToolCall
+            ? ToolCall!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolCall' but the value was {ToString()}.");
+
+        /// <summary>
+        /// 
+        /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolReturnContent? ToolReturn { get; init; }
 #else
@@ -81,6 +141,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturn))]
 #endif
         public bool IsToolReturn => ToolReturn != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickToolReturn(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ToolReturnContent? value)
+        {
+            value = ToolReturn;
+            return IsToolReturn;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ToolReturnContent PickToolReturn() => IsToolReturn
+            ? ToolReturn!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ToolReturn' but the value was {ToString()}.");
 
         /// <summary>
         /// Sent via the Anthropic Messages API
@@ -100,6 +180,26 @@ namespace Letta
         public bool IsReasoning => Reasoning != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.ReasoningContent? value)
+        {
+            value = Reasoning;
+            return IsReasoning;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.ReasoningContent PickReasoning() => IsReasoning
+            ? Reasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Reasoning' but the value was {ToString()}.");
+
+        /// <summary>
         /// Sent via the Anthropic Messages API
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -117,6 +217,26 @@ namespace Letta
         public bool IsRedactedReasoning => RedactedReasoning != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickRedactedReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.RedactedReasoningContent? value)
+        {
+            value = RedactedReasoning;
+            return IsRedactedReasoning;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.RedactedReasoningContent PickRedactedReasoning() => IsRedactedReasoning
+            ? RedactedReasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RedactedReasoning' but the value was {ToString()}.");
+
+        /// <summary>
         /// A placeholder for reasoning content we know is present, but isn't returned by the provider (e.g. OpenAI GPT-5 on ChatCompletions)
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -132,6 +252,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OmittedReasoning))]
 #endif
         public bool IsOmittedReasoning => OmittedReasoning != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickOmittedReasoning(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.OmittedReasoningContent? value)
+        {
+            value = OmittedReasoning;
+            return IsOmittedReasoning;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.OmittedReasoningContent PickOmittedReasoning() => IsOmittedReasoning
+            ? OmittedReasoning!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'OmittedReasoning' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -149,6 +289,11 @@ namespace Letta
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -171,6 +316,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromImage(global::Letta.ImageContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ToolCallContent value) => new LettaMessageContentUnion((global::Letta.ToolCallContent?)value);
 
         /// <summary>
@@ -185,6 +335,11 @@ namespace Letta
         {
             ToolCall = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromToolCall(global::Letta.ToolCallContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -207,6 +362,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromToolReturn(global::Letta.ToolReturnContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ReasoningContent value) => new LettaMessageContentUnion((global::Letta.ReasoningContent?)value);
 
         /// <summary>
@@ -221,6 +381,11 @@ namespace Letta
         {
             Reasoning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromReasoning(global::Letta.ReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -243,6 +408,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static LettaMessageContentUnion FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new LettaMessageContentUnion(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.OmittedReasoningContent value) => new LettaMessageContentUnion((global::Letta.OmittedReasoningContent?)value);
 
         /// <summary>
@@ -257,6 +427,11 @@ namespace Letta
         {
             OmittedReasoning = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static LettaMessageContentUnion FromOmittedReasoning(global::Letta.OmittedReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
         /// 
@@ -321,13 +496,13 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TextContent?, TResult>? text = null,
-            global::System.Func<global::Letta.ImageContent?, TResult>? image = null,
-            global::System.Func<global::Letta.ToolCallContent?, TResult>? toolCall = null,
-            global::System.Func<global::Letta.ToolReturnContent?, TResult>? toolReturn = null,
-            global::System.Func<global::Letta.ReasoningContent?, TResult>? reasoning = null,
-            global::System.Func<global::Letta.RedactedReasoningContent?, TResult>? redactedReasoning = null,
-            global::System.Func<global::Letta.OmittedReasoningContent?, TResult>? omittedReasoning = null,
+            global::System.Func<global::Letta.TextContent, TResult>? text = null,
+            global::System.Func<global::Letta.ImageContent, TResult>? image = null,
+            global::System.Func<global::Letta.ToolCallContent, TResult>? toolCall = null,
+            global::System.Func<global::Letta.ToolReturnContent, TResult>? toolReturn = null,
+            global::System.Func<global::Letta.ReasoningContent, TResult>? reasoning = null,
+            global::System.Func<global::Letta.RedactedReasoningContent, TResult>? redactedReasoning = null,
+            global::System.Func<global::Letta.OmittedReasoningContent, TResult>? omittedReasoning = null,
             bool validate = true)
         {
             if (validate)
@@ -371,13 +546,67 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TextContent?>? text = null,
-            global::System.Action<global::Letta.ImageContent?>? image = null,
-            global::System.Action<global::Letta.ToolCallContent?>? toolCall = null,
-            global::System.Action<global::Letta.ToolReturnContent?>? toolReturn = null,
-            global::System.Action<global::Letta.ReasoningContent?>? reasoning = null,
-            global::System.Action<global::Letta.RedactedReasoningContent?>? redactedReasoning = null,
-            global::System.Action<global::Letta.OmittedReasoningContent?>? omittedReasoning = null,
+            global::System.Action<global::Letta.TextContent>? text = null,
+
+            global::System.Action<global::Letta.ImageContent>? image = null,
+
+            global::System.Action<global::Letta.ToolCallContent>? toolCall = null,
+
+            global::System.Action<global::Letta.ToolReturnContent>? toolReturn = null,
+
+            global::System.Action<global::Letta.ReasoningContent>? reasoning = null,
+
+            global::System.Action<global::Letta.RedactedReasoningContent>? redactedReasoning = null,
+
+            global::System.Action<global::Letta.OmittedReasoningContent>? omittedReasoning = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsImage)
+            {
+                image?.Invoke(Image!);
+            }
+            else if (IsToolCall)
+            {
+                toolCall?.Invoke(ToolCall!);
+            }
+            else if (IsToolReturn)
+            {
+                toolReturn?.Invoke(ToolReturn!);
+            }
+            else if (IsReasoning)
+            {
+                reasoning?.Invoke(Reasoning!);
+            }
+            else if (IsRedactedReasoning)
+            {
+                redactedReasoning?.Invoke(RedactedReasoning!);
+            }
+            else if (IsOmittedReasoning)
+            {
+                omittedReasoning?.Invoke(OmittedReasoning!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TextContent>? text = null,
+            global::System.Action<global::Letta.ImageContent>? image = null,
+            global::System.Action<global::Letta.ToolCallContent>? toolCall = null,
+            global::System.Action<global::Letta.ToolReturnContent>? toolReturn = null,
+            global::System.Action<global::Letta.ReasoningContent>? reasoning = null,
+            global::System.Action<global::Letta.RedactedReasoningContent>? redactedReasoning = null,
+            global::System.Action<global::Letta.OmittedReasoningContent>? omittedReasoning = null,
             bool validate = true)
         {
             if (validate)

@@ -32,6 +32,26 @@ namespace Letta
         public bool IsText => Text != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickText(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.TextResponseFormat? value)
+        {
+            value = Text;
+            return IsText;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.TextResponseFormat PickText() => IsText
+            ? Text!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
+
+        /// <summary>
         /// Response format for JSON schema-based responses.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -49,6 +69,26 @@ namespace Letta
         public bool IsJsonSchema => JsonSchema != null;
 
         /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJsonSchema(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.JsonSchemaResponseFormat? value)
+        {
+            value = JsonSchema;
+            return IsJsonSchema;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.JsonSchemaResponseFormat PickJsonSchema() => IsJsonSchema
+            ? JsonSchema!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonSchema' but the value was {ToString()}.");
+
+        /// <summary>
         /// Response format for JSON object responses.
         /// </summary>
 #if NET6_0_OR_GREATER
@@ -64,6 +104,26 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonObject))]
 #endif
         public bool IsJsonObject => JsonObject != null;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool TryPickJsonObject(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.JsonObjectResponseFormat? value)
+        {
+            value = JsonObject;
+            return IsJsonObject;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::Letta.JsonObjectResponseFormat PickJsonObject() => IsJsonObject
+            ? JsonObject!
+            : throw new global::System.InvalidOperationException($"Expected union variant 'JsonObject' but the value was {ToString()}.");
         /// <summary>
         /// 
         /// </summary>
@@ -81,6 +141,11 @@ namespace Letta
         {
             Text = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResponseFormatVariant113 FromText(global::Letta.TextResponseFormat? value) => new ResponseFormatVariant113(value);
 
         /// <summary>
         /// 
@@ -103,6 +168,11 @@ namespace Letta
         /// <summary>
         /// 
         /// </summary>
+        public static ResponseFormatVariant113 FromJsonSchema(global::Letta.JsonSchemaResponseFormat? value) => new ResponseFormatVariant113(value);
+
+        /// <summary>
+        /// 
+        /// </summary>
         public static implicit operator ResponseFormatVariant113(global::Letta.JsonObjectResponseFormat value) => new ResponseFormatVariant113((global::Letta.JsonObjectResponseFormat?)value);
 
         /// <summary>
@@ -117,6 +187,11 @@ namespace Letta
         {
             JsonObject = value;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public static ResponseFormatVariant113 FromJsonObject(global::Letta.JsonObjectResponseFormat? value) => new ResponseFormatVariant113(value);
 
         /// <summary>
         /// 
@@ -165,9 +240,9 @@ namespace Letta
         /// 
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.TextResponseFormat?, TResult>? text = null,
-            global::System.Func<global::Letta.JsonSchemaResponseFormat?, TResult>? jsonSchema = null,
-            global::System.Func<global::Letta.JsonObjectResponseFormat?, TResult>? jsonObject = null,
+            global::System.Func<global::Letta.TextResponseFormat, TResult>? text = null,
+            global::System.Func<global::Letta.JsonSchemaResponseFormat, TResult>? jsonSchema = null,
+            global::System.Func<global::Letta.JsonObjectResponseFormat, TResult>? jsonObject = null,
             bool validate = true)
         {
             if (validate)
@@ -195,9 +270,39 @@ namespace Letta
         /// 
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.TextResponseFormat?>? text = null,
-            global::System.Action<global::Letta.JsonSchemaResponseFormat?>? jsonSchema = null,
-            global::System.Action<global::Letta.JsonObjectResponseFormat?>? jsonObject = null,
+            global::System.Action<global::Letta.TextResponseFormat>? text = null,
+
+            global::System.Action<global::Letta.JsonSchemaResponseFormat>? jsonSchema = null,
+
+            global::System.Action<global::Letta.JsonObjectResponseFormat>? jsonObject = null,
+            bool validate = true)
+        {
+            if (validate)
+            {
+                Validate();
+            }
+
+            if (IsText)
+            {
+                text?.Invoke(Text!);
+            }
+            else if (IsJsonSchema)
+            {
+                jsonSchema?.Invoke(JsonSchema!);
+            }
+            else if (IsJsonObject)
+            {
+                jsonObject?.Invoke(JsonObject!);
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void Switch(
+            global::System.Action<global::Letta.TextResponseFormat>? text = null,
+            global::System.Action<global::Letta.JsonSchemaResponseFormat>? jsonSchema = null,
+            global::System.Action<global::Letta.JsonObjectResponseFormat>? jsonObject = null,
             bool validate = true)
         {
             if (validate)

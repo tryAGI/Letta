@@ -44,5 +44,6 @@ namespace Letta
         public OpenAIReasoning()
         {
         }
+
     }
 }
