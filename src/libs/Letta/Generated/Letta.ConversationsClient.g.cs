@@ -132,10 +132,7 @@ namespace Letta
         {
 
             HttpClient = httpClient ?? new global::System.Net.Http.HttpClient();
-            if (baseUri is not null)
-            {
-                HttpClient.BaseAddress ??= baseUri;
-            }
+            HttpClient.BaseAddress ??= baseUri ?? new global::System.Uri(DefaultBaseUrl);
             Authorizations = authorizations ?? new global::System.Collections.Generic.List<global::Letta.EndPointAuthorization>();
             Options = options ?? new global::Letta.AutoSDKClientOptions();
             _disposeHttpClient = disposeHttpClient;
@@ -248,7 +245,7 @@ namespace Letta
                 return explicitBaseUri;
             }
 
-            return ResolveSelectedServer()?.Uri ?? (s_availableServers.Length > 0 ? s_availableServers[0].Uri : HttpClient.BaseAddress);
+            return ResolveSelectedServer()?.Uri ?? HttpClient.BaseAddress;
         }
 
         private global::System.Uri? ResolveBaseUri(
