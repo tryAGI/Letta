@@ -60,6 +60,7 @@ public sealed class Environment : IAsyncDisposable
                 await container.StartAsync(cts.Token);
 
                 var client = new LettaClient(
+                    apiKey: "test-local-container-token",
                     baseUri: new UriBuilder(
                         Uri.UriSchemeHttp,
                         container.Hostname,
