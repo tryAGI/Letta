@@ -73,8 +73,16 @@ cd src/libs/Letta && ./generate.sh
 ### Test Modes (Testcontainers)
 
 Tests use Testcontainers with automatic environment detection:
-- **Debug builds** (`dotnet test`): Connect to local instance at `localhost:8283` (requires `LETTA_API_KEY`)
-- **Release/CI builds** (`dotnet test -c Release`): Automatically spin up `letta/letta` Docker container (no auth needed, 3-minute startup timeout)
+- **Docker available:** Automatically spin up `letta/letta` Docker container (no auth needed, 3-minute startup timeout)
+- **Docker unavailable:** Connect to local instance at `localhost:8283` (requires `LETTA_API_KEY`)
+
+First-run pre-pull for faster container startup:
+
+```bash
+docker pull letta/letta:latest
+```
+
+Override with env vars: `LETTA_TEST_ENVIRONMENT=Local|Container`, `LETTA_BASE_URL`, `LETTA_API_KEY` (local mode only).
 
 ## Servers
 

@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using DotNet.Testcontainers.Builders;
 using DotNet.Testcontainers.Containers;
 
@@ -79,11 +80,45 @@ public sealed class Environment : IAsyncDisposable
 
     private static EnvironmentType InferEnvironment()
     {
+        if (System.Environment.GetEnvironmentVariable("LETTA_TEST_ENVIRONMENT") is { Length: > 0 } environmentValue &&
+            Enum.TryParse<EnvironmentType>(environmentValue, ignoreCase: true, out var environmentType))
+        {
+            return environmentType;
+        }
+
+        if (System.Environment.GetEnvironmentVariable("LETTA_BASE_URL") is not { Length: > 0 } &&
+            IsDockerAvailable())
+        {
+            return EnvironmentType.Container;
+        }
+
 #if DEBUG
         return EnvironmentType.Local;
 #else
         return EnvironmentType.Container;
 #endif
+    }
+
+    private static bool IsDockerAvailable()
+    {
+        try
+        {
+            using var process = Process.Start(new ProcessStartInfo
+            {
+                FileName = "docker",
+                ArgumentList = { "info", "--format", "{{.ServerVersion}}" },
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+            });
+
+            return process is not null &&
+                   process.WaitForExit(milliseconds: 5000) &&
+                   process.ExitCode == 0;
+        }
+        catch
+        {
+            return false;
+        }
     }
 }
 
