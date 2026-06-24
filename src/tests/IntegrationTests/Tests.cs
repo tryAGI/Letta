@@ -3,9 +3,9 @@ namespace Letta.IntegrationTests;
 [TestClass]
 public partial class Tests
 {
-    private static Environment _environment = null!;
+    private static Environment? _environment;
 
-    public static LettaClient Client => _environment.Client;
+    public static LettaClient Client => _environment!.Client;
 
     [AssemblyInitialize]
     public static async Task AssemblyInit(TestContext context)
@@ -16,6 +16,9 @@ public partial class Tests
     [AssemblyCleanup]
     public static async Task AssemblyCleanup()
     {
-        await _environment.DisposeAsync();
+        if (_environment is not null)
+        {
+            await _environment.DisposeAsync();
+        }
     }
 }
