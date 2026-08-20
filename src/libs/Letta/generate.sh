@@ -13,10 +13,14 @@ fetch_spec() {
     --connect-timeout 30 --max-time 300
 }
 
-# OpenAPI spec: https://raw.githubusercontent.com/letta-ai/letta/main/fern/openapi.json
+# Letta archived its legacy server repository and removed the public OpenAPI
+# document on 2026-08-16. Pin the final official pre-archive revision so local
+# and CI regeneration remain reproducible.
+spec_revision="56ba9c25552605eec89de8ed3dc6394b625c1993"
+spec_url="https://raw.githubusercontent.com/letta-ai/letta/$spec_revision/fern/openapi.json"
 install_autosdk_cli
 rm -rf Generated
-fetch_spec --fail --silent --show-error -L -o openapi.yaml https://raw.githubusercontent.com/letta-ai/letta/main/fern/openapi.json
+fetch_spec -o openapi.yaml "$spec_url"
 
 # Fix spec using Python:
 # 1. Remove text/event-stream content type from all responses (AutoSDK doesn't handle SSE)
