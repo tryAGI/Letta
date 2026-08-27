@@ -10,11 +10,11 @@ namespace Letta
     public enum ListBlocksOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

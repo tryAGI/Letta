@@ -10,11 +10,11 @@ namespace Letta
     public enum ListBatchesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

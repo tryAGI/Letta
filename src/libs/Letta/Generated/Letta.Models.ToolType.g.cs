@@ -4,52 +4,52 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ToolType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Custom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalComposio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalLangchain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalMcp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaBuiltin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaCore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaFilesCore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaMemoryCore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaMultiAgentCore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaSleeptimeCore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaVoiceSleeptimeCore,
     }

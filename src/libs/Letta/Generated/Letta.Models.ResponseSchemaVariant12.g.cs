@@ -5,12 +5,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ResponseSchemaVariant12 : global::System.IEquatable<ResponseSchemaVariant12>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorType? Type { get; }
 
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TextResponseFormat PickText() => IsText
             ? Text!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonSchema))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsJsonSchema => JsonSchema != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonSchema(
 #if NET6_0_OR_GREATER
@@ -82,7 +82,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.JsonSchemaResponseFormat PickJsonSchema() => IsJsonSchema
             ? JsonSchema!
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(JsonObject))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsJsonObject => JsonObject != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickJsonObject(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.JsonObjectResponseFormat PickJsonObject() => IsJsonObject
             ? JsonObject!
             : throw new global::System.InvalidOperationException($"Expected union variant 'JsonObject' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseSchemaVariant12(global::Letta.TextResponseFormat value) => new ResponseSchemaVariant12((global::Letta.TextResponseFormat?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TextResponseFormat?(ResponseSchemaVariant12 @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseSchemaVariant12(global::Letta.TextResponseFormat? value)
         {
@@ -143,22 +143,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseSchemaVariant12 FromText(global::Letta.TextResponseFormat? value) => new ResponseSchemaVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseSchemaVariant12(global::Letta.JsonSchemaResponseFormat value) => new ResponseSchemaVariant12((global::Letta.JsonSchemaResponseFormat?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.JsonSchemaResponseFormat?(ResponseSchemaVariant12 @this) => @this.JsonSchema;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseSchemaVariant12(global::Letta.JsonSchemaResponseFormat? value)
         {
@@ -166,22 +166,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseSchemaVariant12 FromJsonSchema(global::Letta.JsonSchemaResponseFormat? value) => new ResponseSchemaVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ResponseSchemaVariant12(global::Letta.JsonObjectResponseFormat value) => new ResponseSchemaVariant12((global::Letta.JsonObjectResponseFormat?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.JsonObjectResponseFormat?(ResponseSchemaVariant12 @this) => @this.JsonObject;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseSchemaVariant12(global::Letta.JsonObjectResponseFormat? value)
         {
@@ -189,12 +189,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ResponseSchemaVariant12 FromJsonObject(global::Letta.JsonObjectResponseFormat? value) => new ResponseSchemaVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ResponseSchemaVariant12(
             global::Letta.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             JsonObject as object ??
             JsonSchema as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
             JsonSchema?.ToString() ??
-            JsonObject?.ToString() 
+            JsonObject?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TextResponseFormat, TResult>? text = null,
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TextResponseFormat>? text = null,
@@ -297,7 +297,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TextResponseFormat>? text = null,
@@ -325,7 +325,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ResponseSchemaVariant12 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.TextResponseFormat?>.Default.Equals(Text, other.Text) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.JsonSchemaResponseFormat?>.Default.Equals(JsonSchema, other.JsonSchema) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.JsonObjectResponseFormat?>.Default.Equals(JsonObject, other.JsonObject) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.JsonObjectResponseFormat?>.Default.Equals(JsonObject, other.JsonObject)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ResponseSchemaVariant12 obj1, ResponseSchemaVariant12 obj2)
         {
@@ -368,7 +368,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ResponseSchemaVariant12 obj1, ResponseSchemaVariant12 obj2)
         {
@@ -376,7 +376,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

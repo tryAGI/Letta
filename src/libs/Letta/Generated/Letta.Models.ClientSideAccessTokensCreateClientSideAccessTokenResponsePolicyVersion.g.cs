@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         x1,
     }

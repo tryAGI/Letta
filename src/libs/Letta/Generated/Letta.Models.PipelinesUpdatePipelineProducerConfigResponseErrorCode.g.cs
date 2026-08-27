@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesUpdatePipelineProducerConfigResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfigTypeMismatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidProducerConfig,
     }

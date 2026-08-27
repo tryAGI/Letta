@@ -10,11 +10,11 @@ namespace Letta
     public enum ListInternalRunsOrderBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
     }

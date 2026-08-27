@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentsCountDeployedAgentsSearchItemVariant5Operator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eq,
     }

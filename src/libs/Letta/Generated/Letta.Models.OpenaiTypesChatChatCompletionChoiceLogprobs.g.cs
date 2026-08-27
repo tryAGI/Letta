@@ -9,13 +9,13 @@ namespace Letta
     public sealed partial class OpenaiTypesChatChatCompletionChoiceLogprobs
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         public global::System.Collections.Generic.IList<global::Letta.OpenaiTypesChatChatCompletionTokenLogprobChatCompletionTokenLogprob>? Content { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refusal")]
         public global::System.Collections.Generic.IList<global::Letta.OpenaiTypesChatChatCompletionTokenLogprobChatCompletionTokenLogprob>? Refusal { get; set; }

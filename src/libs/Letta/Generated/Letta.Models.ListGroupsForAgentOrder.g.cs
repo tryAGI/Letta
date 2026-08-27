@@ -10,11 +10,11 @@ namespace Letta
     public enum ListGroupsForAgentOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

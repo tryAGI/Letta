@@ -9,11 +9,11 @@ namespace Letta
     public enum ModalSandboxConfigLanguage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Python,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Typescript,
     }

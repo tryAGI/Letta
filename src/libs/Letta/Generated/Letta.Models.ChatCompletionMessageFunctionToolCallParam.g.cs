@@ -9,7 +9,7 @@ namespace Letta
     public sealed partial class ChatCompletionMessageFunctionToolCallParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -23,7 +23,7 @@ namespace Letta
         public required global::Letta.OpenaiTypesChatChatCompletionMessageFunctionToolCallParamFunction Function { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"function"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

@@ -4,24 +4,24 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SearchAllMessagesResponseItemDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssistantMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMessage,
     }

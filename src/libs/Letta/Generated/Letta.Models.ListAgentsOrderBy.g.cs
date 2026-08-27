@@ -10,15 +10,15 @@ namespace Letta
     public enum ListAgentsOrderBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastRunCompletion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UpdatedAt,
     }

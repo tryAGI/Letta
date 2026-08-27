@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesCreatePipelineResponsePipelineConfigVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomWebhook,
     }

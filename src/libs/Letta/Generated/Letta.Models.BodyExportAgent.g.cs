@@ -4,18 +4,18 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BodyExportAgent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("spec")]
         public global::Letta.AgentFileSchema? Spec { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("legacy_spec")]
         public global::Letta.LettaSerializeSchemasPydanticAgentSchemaAgentSchema? LegacySpec { get; set; }

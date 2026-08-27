@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentsSearchDeployedAgentsRequestSearchItemVariant2Field
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

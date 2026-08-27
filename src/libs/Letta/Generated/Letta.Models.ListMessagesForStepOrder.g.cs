@@ -10,11 +10,11 @@ namespace Letta
     public enum ListMessagesForStepOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

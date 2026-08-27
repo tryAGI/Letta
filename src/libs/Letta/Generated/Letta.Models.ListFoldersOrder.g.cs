@@ -10,11 +10,11 @@ namespace Letta
     public enum ListFoldersOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

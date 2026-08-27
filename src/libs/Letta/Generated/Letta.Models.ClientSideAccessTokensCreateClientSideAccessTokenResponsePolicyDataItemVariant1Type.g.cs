@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Agent,
     }

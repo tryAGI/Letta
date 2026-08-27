@@ -20,7 +20,7 @@ namespace Letta.JsonConverters
                     {
                         return global::Letta.UpdateAgentResponseFormatVariant1DiscriminatorTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

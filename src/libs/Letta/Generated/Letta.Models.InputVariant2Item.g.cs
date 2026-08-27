@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct InputVariant2Item : global::System.IEquatable<InputVariant2Item>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.TextContent? Text { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TextContent PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsImage => Image != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImage(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ImageContent PickImage() => IsImage
             ? Image!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolCallContent? ToolCall { get; init; }
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolCall))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsToolCall => ToolCall != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolCall(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolCallContent PickToolCall() => IsToolCall
             ? ToolCall!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolCall' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolReturnContent? ToolReturn { get; init; }
@@ -135,7 +135,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturn))]
@@ -143,7 +143,7 @@ namespace Letta
         public bool IsToolReturn => ToolReturn != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolReturn(
 #if NET6_0_OR_GREATER
@@ -156,7 +156,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolReturnContent PickToolReturn() => IsToolReturn
             ? ToolReturn!
@@ -172,7 +172,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OmittedReasoning1))]
@@ -180,7 +180,7 @@ namespace Letta
         public bool IsOmittedReasoning1 => OmittedReasoning1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOmittedReasoning1(
 #if NET6_0_OR_GREATER
@@ -193,7 +193,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ReasoningContent PickOmittedReasoning1() => IsOmittedReasoning1
             ? OmittedReasoning1!
@@ -209,7 +209,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RedactedReasoning))]
@@ -217,7 +217,7 @@ namespace Letta
         public bool IsRedactedReasoning => RedactedReasoning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRedactedReasoning(
 #if NET6_0_OR_GREATER
@@ -230,7 +230,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.RedactedReasoningContent PickRedactedReasoning() => IsRedactedReasoning
             ? RedactedReasoning!
@@ -246,7 +246,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OmittedReasoning2))]
@@ -254,7 +254,7 @@ namespace Letta
         public bool IsOmittedReasoning2 => OmittedReasoning2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOmittedReasoning2(
 #if NET6_0_OR_GREATER
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.OmittedReasoningContent PickOmittedReasoning2() => IsOmittedReasoning2
             ? OmittedReasoning2!
@@ -283,7 +283,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SummarizedReasoning))]
@@ -291,7 +291,7 @@ namespace Letta
         public bool IsSummarizedReasoning => SummarizedReasoning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSummarizedReasoning(
 #if NET6_0_OR_GREATER
@@ -304,23 +304,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SummarizedReasoningContent PickSummarizedReasoning() => IsSummarizedReasoning
             ? SummarizedReasoning!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SummarizedReasoning' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.TextContent value) => new InputVariant2Item((global::Letta.TextContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TextContent?(InputVariant2Item @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.TextContent? value)
         {
@@ -328,22 +328,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromText(global::Letta.TextContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.ImageContent value) => new InputVariant2Item((global::Letta.ImageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ImageContent?(InputVariant2Item @this) => @this.Image;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.ImageContent? value)
         {
@@ -351,22 +351,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromImage(global::Letta.ImageContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.ToolCallContent value) => new InputVariant2Item((global::Letta.ToolCallContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolCallContent?(InputVariant2Item @this) => @this.ToolCall;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.ToolCallContent? value)
         {
@@ -374,22 +374,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromToolCall(global::Letta.ToolCallContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.ToolReturnContent value) => new InputVariant2Item((global::Letta.ToolReturnContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolReturnContent?(InputVariant2Item @this) => @this.ToolReturn;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.ToolReturnContent? value)
         {
@@ -397,22 +397,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromToolReturn(global::Letta.ToolReturnContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.ReasoningContent value) => new InputVariant2Item((global::Letta.ReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ReasoningContent?(InputVariant2Item @this) => @this.OmittedReasoning1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.ReasoningContent? value)
         {
@@ -420,22 +420,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromOmittedReasoning1(global::Letta.ReasoningContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.RedactedReasoningContent value) => new InputVariant2Item((global::Letta.RedactedReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.RedactedReasoningContent?(InputVariant2Item @this) => @this.RedactedReasoning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.RedactedReasoningContent? value)
         {
@@ -443,22 +443,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.OmittedReasoningContent value) => new InputVariant2Item((global::Letta.OmittedReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.OmittedReasoningContent?(InputVariant2Item @this) => @this.OmittedReasoning2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.OmittedReasoningContent? value)
         {
@@ -466,22 +466,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromOmittedReasoning2(global::Letta.OmittedReasoningContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator InputVariant2Item(global::Letta.SummarizedReasoningContent value) => new InputVariant2Item((global::Letta.SummarizedReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SummarizedReasoningContent?(InputVariant2Item @this) => @this.SummarizedReasoning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(global::Letta.SummarizedReasoningContent? value)
         {
@@ -489,12 +489,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static InputVariant2Item FromSummarizedReasoning(global::Letta.SummarizedReasoningContent? value) => new InputVariant2Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InputVariant2Item(
             global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType? type,
@@ -521,7 +521,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             SummarizedReasoning as object ??
@@ -531,11 +531,11 @@ namespace Letta
             ToolReturn as object ??
             ToolCall as object ??
             Image as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
@@ -545,11 +545,11 @@ namespace Letta
             OmittedReasoning1?.ToString() ??
             RedactedReasoning?.ToString() ??
             OmittedReasoning2?.ToString() ??
-            SummarizedReasoning?.ToString() 
+            SummarizedReasoning?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -557,7 +557,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TextContent, TResult>? text = null,
@@ -612,7 +612,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -672,7 +672,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -725,7 +725,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -758,7 +758,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(InputVariant2Item other)
         {
@@ -770,12 +770,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ReasoningContent?>.Default.Equals(OmittedReasoning1, other.OmittedReasoning1) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.RedactedReasoningContent?>.Default.Equals(RedactedReasoning, other.RedactedReasoning) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.OmittedReasoningContent?>.Default.Equals(OmittedReasoning2, other.OmittedReasoning2) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.SummarizedReasoningContent?>.Default.Equals(SummarizedReasoning, other.SummarizedReasoning) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.SummarizedReasoningContent?>.Default.Equals(SummarizedReasoning, other.SummarizedReasoning)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(InputVariant2Item obj1, InputVariant2Item obj2)
         {
@@ -783,7 +783,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(InputVariant2Item obj1, InputVariant2Item obj2)
         {
@@ -791,7 +791,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

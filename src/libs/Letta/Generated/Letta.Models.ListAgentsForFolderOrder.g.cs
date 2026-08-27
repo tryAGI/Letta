@@ -10,11 +10,11 @@ namespace Letta
     public enum ListAgentsForFolderOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

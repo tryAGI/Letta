@@ -10,11 +10,11 @@ namespace Letta
     public enum ListProvidersOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesPreviewPipelineResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationNotFound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidProducerConfig,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TokenExpired,
     }

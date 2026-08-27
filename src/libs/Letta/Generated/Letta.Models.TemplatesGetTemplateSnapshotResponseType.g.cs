@@ -4,36 +4,36 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TemplatesGetTemplateSnapshotResponseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Classic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cluster,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dynamic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoundRobin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleeptime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supervisor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceSleeptime,
     }

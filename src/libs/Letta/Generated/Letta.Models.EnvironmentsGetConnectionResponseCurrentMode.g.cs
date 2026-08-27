@@ -4,24 +4,24 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentsGetConnectionResponseCurrentMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AcceptEdits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BypassPermissions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Default,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plan,
     }

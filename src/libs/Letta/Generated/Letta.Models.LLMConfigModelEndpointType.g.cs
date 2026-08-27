@@ -9,115 +9,115 @@ namespace Letta
     public enum LLMConfigModelEndpointType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatgptOauth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepseek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fireworks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleVertex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HuggingFace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Koboldcpp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Llamacpp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lmstudio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LmstudioChatcompletions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LmstudioLegacy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minimax,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ollama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openrouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Together,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vllm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webui,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebuiLegacy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZaiCoding,
     }

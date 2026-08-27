@@ -10,7 +10,7 @@ namespace Letta
     public readonly partial struct TemplatesCreateTemplateRequest : global::System.IEquatable<TemplatesCreateTemplateRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateRequestDiscriminatorType? Type { get; }
 
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Agent))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsAgent => Agent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgent(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateRequestVariant1 PickAgent() => IsAgent
             ? Agent!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentFile))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsAgentFile => AgentFile != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentFile(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateRequestVariant2 PickAgentFile() => IsAgentFile
             ? AgentFile!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentFile' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TemplatesCreateTemplateRequest(global::Letta.TemplatesCreateTemplateRequestVariant1 value) => new TemplatesCreateTemplateRequest((global::Letta.TemplatesCreateTemplateRequestVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TemplatesCreateTemplateRequestVariant1?(TemplatesCreateTemplateRequest @this) => @this.Agent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateRequest(global::Letta.TemplatesCreateTemplateRequestVariant1? value)
         {
@@ -106,22 +106,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TemplatesCreateTemplateRequest FromAgent(global::Letta.TemplatesCreateTemplateRequestVariant1? value) => new TemplatesCreateTemplateRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TemplatesCreateTemplateRequest(global::Letta.TemplatesCreateTemplateRequestVariant2 value) => new TemplatesCreateTemplateRequest((global::Letta.TemplatesCreateTemplateRequestVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TemplatesCreateTemplateRequestVariant2?(TemplatesCreateTemplateRequest @this) => @this.AgentFile;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateRequest(global::Letta.TemplatesCreateTemplateRequestVariant2? value)
         {
@@ -129,12 +129,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TemplatesCreateTemplateRequest FromAgentFile(global::Letta.TemplatesCreateTemplateRequestVariant2? value) => new TemplatesCreateTemplateRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateRequest(
             global::Letta.TemplatesCreateTemplateRequestDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AgentFile as object ??
-            Agent as object 
+            Agent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Agent?.ToString() ??
-            AgentFile?.ToString() 
+            AgentFile?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TemplatesCreateTemplateRequestVariant1, TResult>? agent = null,
@@ -198,7 +198,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TemplatesCreateTemplateRequestVariant1>? agent = null,
@@ -222,7 +222,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TemplatesCreateTemplateRequestVariant1>? agent = null,
@@ -245,7 +245,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TemplatesCreateTemplateRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateRequestVariant1?>.Default.Equals(Agent, other.Agent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateRequestVariant2?>.Default.Equals(AgentFile, other.AgentFile) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateRequestVariant2?>.Default.Equals(AgentFile, other.AgentFile)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TemplatesCreateTemplateRequest obj1, TemplatesCreateTemplateRequest obj2)
         {
@@ -285,7 +285,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TemplatesCreateTemplateRequest obj1, TemplatesCreateTemplateRequest obj2)
         {
@@ -293,7 +293,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

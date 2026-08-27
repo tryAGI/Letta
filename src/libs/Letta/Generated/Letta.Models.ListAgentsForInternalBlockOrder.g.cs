@@ -10,11 +10,11 @@ namespace Letta
     public enum ListAgentsForInternalBlockOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

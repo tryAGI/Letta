@@ -4,19 +4,19 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatCompletionContentPartRefusalParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refusal")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Refusal { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"refusal"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTime,
     }

@@ -10,11 +10,11 @@ namespace Letta
     public enum ListStepsForRunOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -9,79 +9,79 @@ namespace Letta
     public enum EmbeddingModelEmbeddingEndpointType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleVertex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HuggingFace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Koboldcpp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Llamacpp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lmstudio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LmstudioLegacy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ollama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Together,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vllm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Webui,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebuiLegacy,
     }

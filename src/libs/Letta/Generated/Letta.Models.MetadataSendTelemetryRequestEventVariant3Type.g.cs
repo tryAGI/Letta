@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MetadataSendTelemetryRequestEventVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolUsage,
     }

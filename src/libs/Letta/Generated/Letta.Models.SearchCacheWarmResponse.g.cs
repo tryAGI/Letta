@@ -9,21 +9,21 @@ namespace Letta
     public sealed partial class SearchCacheWarmResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"messages"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("collection")]
         public string Collection { get; set; } = "messages";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Status { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("warmed")]
         [global::System.Text.Json.Serialization.JsonRequired]

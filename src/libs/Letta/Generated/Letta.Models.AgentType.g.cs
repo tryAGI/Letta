@@ -9,39 +9,39 @@ namespace Letta
     public enum AgentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaV1Agent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MemgptAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MemgptV2Agent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReactAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SleeptimeAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SplitThreadAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceConvoAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceSleeptimeAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WorkflowAgent,
     }

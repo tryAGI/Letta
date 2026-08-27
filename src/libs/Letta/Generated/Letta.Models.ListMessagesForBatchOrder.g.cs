@@ -10,11 +10,11 @@ namespace Letta
     public enum ListMessagesForBatchOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

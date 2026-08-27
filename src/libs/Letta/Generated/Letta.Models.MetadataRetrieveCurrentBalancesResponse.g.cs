@@ -4,33 +4,33 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class MetadataRetrieveCurrentBalancesResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_balance")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double TotalBalance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monthly_credit_balance")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double MonthlyCreditBalance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("purchased_credit_balance")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double PurchasedCreditBalance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billing_tier")]
         [global::System.Text.Json.Serialization.JsonRequired]

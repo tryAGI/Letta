@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LettaAssistantMessageContentUnion : global::System.IEquatable<LettaAssistantMessageContentUnion>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaAssistantMessageContentUnionDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.TextContent? Text { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -45,23 +45,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TextContent PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaAssistantMessageContentUnion(global::Letta.TextContent value) => new LettaAssistantMessageContentUnion((global::Letta.TextContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TextContent?(LettaAssistantMessageContentUnion @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaAssistantMessageContentUnion(global::Letta.TextContent? value)
         {
@@ -69,12 +69,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaAssistantMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaAssistantMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaAssistantMessageContentUnion(
             global::Letta.LettaAssistantMessageContentUnionDiscriminatorType? type,
@@ -87,21 +87,21 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
-            Text?.ToString() 
+            Text?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -109,7 +109,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TextContent, TResult>? text = null,
@@ -129,7 +129,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -147,7 +147,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -165,7 +165,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -184,17 +184,17 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LettaAssistantMessageContentUnion other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Letta.TextContent?>.Default.Equals(Text, other.Text) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.TextContent?>.Default.Equals(Text, other.Text)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LettaAssistantMessageContentUnion obj1, LettaAssistantMessageContentUnion obj2)
         {
@@ -202,7 +202,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LettaAssistantMessageContentUnion obj1, LettaAssistantMessageContentUnion obj2)
         {
@@ -210,7 +210,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

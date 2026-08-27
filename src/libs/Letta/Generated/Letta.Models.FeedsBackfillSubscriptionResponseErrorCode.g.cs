@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FeedsBackfillSubscriptionResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeedNotFound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionNotFound,
     }

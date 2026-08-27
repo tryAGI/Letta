@@ -10,15 +10,15 @@ namespace Letta
     public enum ListConversationsOrderBy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastMessageAt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastRunCompletion,
     }

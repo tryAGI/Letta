@@ -4,25 +4,25 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1DataChannel
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ChannelId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("channel_name")]
         public string? ChannelName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("last_message_ts")]
         public string? LastMessageTs { get; set; }

@@ -10,11 +10,11 @@ namespace Letta
     public enum ListInternalRunsOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

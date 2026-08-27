@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentsSendMessageRequestMessageVariant1Role
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

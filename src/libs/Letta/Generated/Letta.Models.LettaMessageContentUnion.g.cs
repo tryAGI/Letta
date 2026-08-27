@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LettaMessageContentUnion : global::System.IEquatable<LettaMessageContentUnion>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaMessageContentUnionDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.TextContent? Text { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Text))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsText => Text != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickText(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TextContent PickText() => IsText
             ? Text!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Text' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ImageContent? Image { get; init; }
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Image))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsImage => Image != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickImage(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ImageContent PickImage() => IsImage
             ? Image!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Image' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolCallContent? ToolCall { get; init; }
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolCall))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsToolCall => ToolCall != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolCall(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolCallContent PickToolCall() => IsToolCall
             ? ToolCall!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolCall' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ToolReturnContent? ToolReturn { get; init; }
@@ -135,7 +135,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturn))]
@@ -143,7 +143,7 @@ namespace Letta
         public bool IsToolReturn => ToolReturn != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolReturn(
 #if NET6_0_OR_GREATER
@@ -156,7 +156,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolReturnContent PickToolReturn() => IsToolReturn
             ? ToolReturn!
@@ -172,7 +172,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Reasoning))]
@@ -180,7 +180,7 @@ namespace Letta
         public bool IsReasoning => Reasoning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickReasoning(
 #if NET6_0_OR_GREATER
@@ -193,7 +193,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ReasoningContent PickReasoning() => IsReasoning
             ? Reasoning!
@@ -209,7 +209,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RedactedReasoning))]
@@ -217,7 +217,7 @@ namespace Letta
         public bool IsRedactedReasoning => RedactedReasoning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRedactedReasoning(
 #if NET6_0_OR_GREATER
@@ -230,7 +230,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.RedactedReasoningContent PickRedactedReasoning() => IsRedactedReasoning
             ? RedactedReasoning!
@@ -246,7 +246,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(OmittedReasoning))]
@@ -254,7 +254,7 @@ namespace Letta
         public bool IsOmittedReasoning => OmittedReasoning != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOmittedReasoning(
 #if NET6_0_OR_GREATER
@@ -267,23 +267,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.OmittedReasoningContent PickOmittedReasoning() => IsOmittedReasoning
             ? OmittedReasoning!
             : throw new global::System.InvalidOperationException($"Expected union variant 'OmittedReasoning' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.TextContent value) => new LettaMessageContentUnion((global::Letta.TextContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TextContent?(LettaMessageContentUnion @this) => @this.Text;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.TextContent? value)
         {
@@ -291,22 +291,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromText(global::Letta.TextContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ImageContent value) => new LettaMessageContentUnion((global::Letta.ImageContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ImageContent?(LettaMessageContentUnion @this) => @this.Image;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.ImageContent? value)
         {
@@ -314,22 +314,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromImage(global::Letta.ImageContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ToolCallContent value) => new LettaMessageContentUnion((global::Letta.ToolCallContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolCallContent?(LettaMessageContentUnion @this) => @this.ToolCall;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.ToolCallContent? value)
         {
@@ -337,22 +337,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromToolCall(global::Letta.ToolCallContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ToolReturnContent value) => new LettaMessageContentUnion((global::Letta.ToolReturnContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolReturnContent?(LettaMessageContentUnion @this) => @this.ToolReturn;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.ToolReturnContent? value)
         {
@@ -360,22 +360,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromToolReturn(global::Letta.ToolReturnContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.ReasoningContent value) => new LettaMessageContentUnion((global::Letta.ReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ReasoningContent?(LettaMessageContentUnion @this) => @this.Reasoning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.ReasoningContent? value)
         {
@@ -383,22 +383,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromReasoning(global::Letta.ReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.RedactedReasoningContent value) => new LettaMessageContentUnion((global::Letta.RedactedReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.RedactedReasoningContent?(LettaMessageContentUnion @this) => @this.RedactedReasoning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.RedactedReasoningContent? value)
         {
@@ -406,22 +406,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageContentUnion(global::Letta.OmittedReasoningContent value) => new LettaMessageContentUnion((global::Letta.OmittedReasoningContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.OmittedReasoningContent?(LettaMessageContentUnion @this) => @this.OmittedReasoning;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(global::Letta.OmittedReasoningContent? value)
         {
@@ -429,12 +429,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageContentUnion FromOmittedReasoning(global::Letta.OmittedReasoningContent? value) => new LettaMessageContentUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageContentUnion(
             global::Letta.LettaMessageContentUnionDiscriminatorType? type,
@@ -459,7 +459,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             OmittedReasoning as object ??
@@ -468,11 +468,11 @@ namespace Letta
             ToolReturn as object ??
             ToolCall as object ??
             Image as object ??
-            Text as object 
+            Text as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Text?.ToString() ??
@@ -481,11 +481,11 @@ namespace Letta
             ToolReturn?.ToString() ??
             Reasoning?.ToString() ??
             RedactedReasoning?.ToString() ??
-            OmittedReasoning?.ToString() 
+            OmittedReasoning?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -493,7 +493,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TextContent, TResult>? text = null,
@@ -543,7 +543,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -597,7 +597,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TextContent>? text = null,
@@ -645,7 +645,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -676,7 +676,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LettaMessageContentUnion other)
         {
@@ -687,12 +687,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ToolReturnContent?>.Default.Equals(ToolReturn, other.ToolReturn) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ReasoningContent?>.Default.Equals(Reasoning, other.Reasoning) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.RedactedReasoningContent?>.Default.Equals(RedactedReasoning, other.RedactedReasoning) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.OmittedReasoningContent?>.Default.Equals(OmittedReasoning, other.OmittedReasoning) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.OmittedReasoningContent?>.Default.Equals(OmittedReasoning, other.OmittedReasoning)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LettaMessageContentUnion obj1, LettaMessageContentUnion obj2)
         {
@@ -700,7 +700,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LettaMessageContentUnion obj1, LettaMessageContentUnion obj2)
         {
@@ -708,7 +708,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

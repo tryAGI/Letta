@@ -10,11 +10,11 @@ namespace Letta
     public enum PassageSearchRequestTagMatchMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Any,
     }

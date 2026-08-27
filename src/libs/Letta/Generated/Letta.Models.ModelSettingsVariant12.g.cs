@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ModelSettingsVariant12 : global::System.IEquatable<ModelSettingsVariant12>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType? ProviderType { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.OpenAIModelSettings? Openai { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Openai))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsOpenai => Openai != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenai(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.OpenAIModelSettings PickOpenai() => IsOpenai
             ? Openai!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sglang))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsSglang => Sglang != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSglang(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SGLangModelSettings PickSglang() => IsSglang
             ? Sglang!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Sglang' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.AnthropicModelSettings? Anthropic { get; init; }
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Anthropic))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsAnthropic => Anthropic != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAnthropic(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AnthropicModelSettings PickAnthropic() => IsAnthropic
             ? Anthropic!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Anthropic' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.GoogleAIModelSettings? GoogleAi { get; init; }
@@ -135,7 +135,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleAi))]
@@ -143,7 +143,7 @@ namespace Letta
         public bool IsGoogleAi => GoogleAi != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleAi(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.GoogleAIModelSettings PickGoogleAi() => IsGoogleAi
             ? GoogleAi!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleAi' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.GoogleVertexModelSettings? GoogleVertex { get; init; }
@@ -172,7 +172,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GoogleVertex))]
@@ -180,7 +180,7 @@ namespace Letta
         public bool IsGoogleVertex => GoogleVertex != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGoogleVertex(
 #if NET6_0_OR_GREATER
@@ -193,7 +193,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.GoogleVertexModelSettings PickGoogleVertex() => IsGoogleVertex
             ? GoogleVertex!
@@ -209,7 +209,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Azure))]
@@ -217,7 +217,7 @@ namespace Letta
         public bool IsAzure => Azure != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAzure(
 #if NET6_0_OR_GREATER
@@ -230,7 +230,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AzureModelSettings PickAzure() => IsAzure
             ? Azure!
@@ -246,7 +246,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Xai))]
@@ -254,7 +254,7 @@ namespace Letta
         public bool IsXai => Xai != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickXai(
 #if NET6_0_OR_GREATER
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.XAIModelSettings PickXai() => IsXai
             ? Xai!
@@ -283,7 +283,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Zai))]
@@ -291,7 +291,7 @@ namespace Letta
         public bool IsZai => Zai != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickZai(
 #if NET6_0_OR_GREATER
@@ -304,7 +304,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ZAIModelSettings PickZai() => IsZai
             ? Zai!
@@ -320,7 +320,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Groq))]
@@ -328,7 +328,7 @@ namespace Letta
         public bool IsGroq => Groq != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGroq(
 #if NET6_0_OR_GREATER
@@ -341,7 +341,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.GroqModelSettings PickGroq() => IsGroq
             ? Groq!
@@ -357,7 +357,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Deepseek))]
@@ -365,7 +365,7 @@ namespace Letta
         public bool IsDeepseek => Deepseek != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDeepseek(
 #if NET6_0_OR_GREATER
@@ -378,7 +378,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.DeepseekModelSettings PickDeepseek() => IsDeepseek
             ? Deepseek!
@@ -394,7 +394,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Together))]
@@ -402,7 +402,7 @@ namespace Letta
         public bool IsTogether => Together != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTogether(
 #if NET6_0_OR_GREATER
@@ -415,7 +415,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TogetherModelSettings PickTogether() => IsTogether
             ? Together!
@@ -431,7 +431,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Bedrock))]
@@ -439,7 +439,7 @@ namespace Letta
         public bool IsBedrock => Bedrock != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBedrock(
 #if NET6_0_OR_GREATER
@@ -452,7 +452,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.BedrockModelSettings PickBedrock() => IsBedrock
             ? Bedrock!
@@ -468,7 +468,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Baseten))]
@@ -476,7 +476,7 @@ namespace Letta
         public bool IsBaseten => Baseten != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBaseten(
 #if NET6_0_OR_GREATER
@@ -489,7 +489,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.BasetenModelSettings PickBaseten() => IsBaseten
             ? Baseten!
@@ -505,7 +505,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Openrouter))]
@@ -513,7 +513,7 @@ namespace Letta
         public bool IsOpenrouter => Openrouter != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickOpenrouter(
 #if NET6_0_OR_GREATER
@@ -526,7 +526,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.OpenRouterModelSettings PickOpenrouter() => IsOpenrouter
             ? Openrouter!
@@ -542,7 +542,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ChatgptOauth))]
@@ -550,7 +550,7 @@ namespace Letta
         public bool IsChatgptOauth => ChatgptOauth != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickChatgptOauth(
 #if NET6_0_OR_GREATER
@@ -563,23 +563,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ChatGPTOAuthModelSettings PickChatgptOauth() => IsChatgptOauth
             ? ChatgptOauth!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatgptOauth' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.OpenAIModelSettings value) => new ModelSettingsVariant12((global::Letta.OpenAIModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.OpenAIModelSettings?(ModelSettingsVariant12 @this) => @this.Openai;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.OpenAIModelSettings? value)
         {
@@ -587,22 +587,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromOpenai(global::Letta.OpenAIModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.SGLangModelSettings value) => new ModelSettingsVariant12((global::Letta.SGLangModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SGLangModelSettings?(ModelSettingsVariant12 @this) => @this.Sglang;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.SGLangModelSettings? value)
         {
@@ -610,22 +610,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromSglang(global::Letta.SGLangModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.AnthropicModelSettings value) => new ModelSettingsVariant12((global::Letta.AnthropicModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.AnthropicModelSettings?(ModelSettingsVariant12 @this) => @this.Anthropic;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.AnthropicModelSettings? value)
         {
@@ -633,22 +633,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromAnthropic(global::Letta.AnthropicModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.GoogleAIModelSettings value) => new ModelSettingsVariant12((global::Letta.GoogleAIModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.GoogleAIModelSettings?(ModelSettingsVariant12 @this) => @this.GoogleAi;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.GoogleAIModelSettings? value)
         {
@@ -656,22 +656,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromGoogleAi(global::Letta.GoogleAIModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.GoogleVertexModelSettings value) => new ModelSettingsVariant12((global::Letta.GoogleVertexModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.GoogleVertexModelSettings?(ModelSettingsVariant12 @this) => @this.GoogleVertex;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.GoogleVertexModelSettings? value)
         {
@@ -679,22 +679,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromGoogleVertex(global::Letta.GoogleVertexModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.AzureModelSettings value) => new ModelSettingsVariant12((global::Letta.AzureModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.AzureModelSettings?(ModelSettingsVariant12 @this) => @this.Azure;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.AzureModelSettings? value)
         {
@@ -702,22 +702,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromAzure(global::Letta.AzureModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.XAIModelSettings value) => new ModelSettingsVariant12((global::Letta.XAIModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.XAIModelSettings?(ModelSettingsVariant12 @this) => @this.Xai;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.XAIModelSettings? value)
         {
@@ -725,22 +725,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromXai(global::Letta.XAIModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.ZAIModelSettings value) => new ModelSettingsVariant12((global::Letta.ZAIModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ZAIModelSettings?(ModelSettingsVariant12 @this) => @this.Zai;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.ZAIModelSettings? value)
         {
@@ -748,22 +748,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromZai(global::Letta.ZAIModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.GroqModelSettings value) => new ModelSettingsVariant12((global::Letta.GroqModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.GroqModelSettings?(ModelSettingsVariant12 @this) => @this.Groq;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.GroqModelSettings? value)
         {
@@ -771,22 +771,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromGroq(global::Letta.GroqModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.DeepseekModelSettings value) => new ModelSettingsVariant12((global::Letta.DeepseekModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.DeepseekModelSettings?(ModelSettingsVariant12 @this) => @this.Deepseek;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.DeepseekModelSettings? value)
         {
@@ -794,22 +794,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromDeepseek(global::Letta.DeepseekModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.TogetherModelSettings value) => new ModelSettingsVariant12((global::Letta.TogetherModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TogetherModelSettings?(ModelSettingsVariant12 @this) => @this.Together;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.TogetherModelSettings? value)
         {
@@ -817,22 +817,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromTogether(global::Letta.TogetherModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.BedrockModelSettings value) => new ModelSettingsVariant12((global::Letta.BedrockModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.BedrockModelSettings?(ModelSettingsVariant12 @this) => @this.Bedrock;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.BedrockModelSettings? value)
         {
@@ -840,22 +840,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromBedrock(global::Letta.BedrockModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.BasetenModelSettings value) => new ModelSettingsVariant12((global::Letta.BasetenModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.BasetenModelSettings?(ModelSettingsVariant12 @this) => @this.Baseten;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.BasetenModelSettings? value)
         {
@@ -863,22 +863,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromBaseten(global::Letta.BasetenModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.OpenRouterModelSettings value) => new ModelSettingsVariant12((global::Letta.OpenRouterModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.OpenRouterModelSettings?(ModelSettingsVariant12 @this) => @this.Openrouter;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.OpenRouterModelSettings? value)
         {
@@ -886,22 +886,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromOpenrouter(global::Letta.OpenRouterModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ModelSettingsVariant12(global::Letta.ChatGPTOAuthModelSettings value) => new ModelSettingsVariant12((global::Letta.ChatGPTOAuthModelSettings?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ChatGPTOAuthModelSettings?(ModelSettingsVariant12 @this) => @this.ChatgptOauth;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(global::Letta.ChatGPTOAuthModelSettings? value)
         {
@@ -909,12 +909,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ModelSettingsVariant12 FromChatgptOauth(global::Letta.ChatGPTOAuthModelSettings? value) => new ModelSettingsVariant12(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelSettingsVariant12(
             global::Letta.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType? providerType,
@@ -955,7 +955,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ChatgptOauth as object ??
@@ -972,11 +972,11 @@ namespace Letta
             GoogleAi as object ??
             Anthropic as object ??
             Sglang as object ??
-            Openai as object 
+            Openai as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Openai?.ToString() ??
@@ -993,11 +993,11 @@ namespace Letta
             Bedrock?.ToString() ??
             Baseten?.ToString() ??
             Openrouter?.ToString() ??
-            ChatgptOauth?.ToString() 
+            ChatgptOauth?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -1005,7 +1005,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.OpenAIModelSettings, TResult>? openai = null,
@@ -1095,7 +1095,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.OpenAIModelSettings>? openai = null,
@@ -1197,7 +1197,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.OpenAIModelSettings>? openai = null,
@@ -1285,7 +1285,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1332,7 +1332,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ModelSettingsVariant12 other)
         {
@@ -1351,12 +1351,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.BedrockModelSettings?>.Default.Equals(Bedrock, other.Bedrock) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.BasetenModelSettings?>.Default.Equals(Baseten, other.Baseten) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.OpenRouterModelSettings?>.Default.Equals(Openrouter, other.Openrouter) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.ChatGPTOAuthModelSettings?>.Default.Equals(ChatgptOauth, other.ChatgptOauth) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.ChatGPTOAuthModelSettings?>.Default.Equals(ChatgptOauth, other.ChatgptOauth)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ModelSettingsVariant12 obj1, ModelSettingsVariant12 obj2)
         {
@@ -1364,7 +1364,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ModelSettingsVariant12 obj1, ModelSettingsVariant12 obj2)
         {
@@ -1372,7 +1372,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

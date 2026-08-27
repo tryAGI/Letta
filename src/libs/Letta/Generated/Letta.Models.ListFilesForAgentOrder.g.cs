@@ -10,11 +10,11 @@ namespace Letta
     public enum ListFilesForAgentOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

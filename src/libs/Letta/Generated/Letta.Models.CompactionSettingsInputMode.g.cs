@@ -10,19 +10,19 @@ namespace Letta
     public enum CompactionSettingsInputMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfCompactAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfCompactSlidingWindow,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SlidingWindow,
     }

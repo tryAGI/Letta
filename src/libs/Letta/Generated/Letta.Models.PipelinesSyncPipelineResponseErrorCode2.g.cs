@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesSyncPipelineResponseErrorCode2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PipelineNotFound,
     }

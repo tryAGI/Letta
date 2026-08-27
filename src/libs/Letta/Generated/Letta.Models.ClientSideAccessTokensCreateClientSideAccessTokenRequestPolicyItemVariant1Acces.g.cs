@@ -4,24 +4,24 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ClientSideAccessTokensCreateClientSideAccessTokenRequestPolicyItemVariant1Acces
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadMessages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WriteAgent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WriteMessages,
     }

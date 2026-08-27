@@ -11,7 +11,7 @@ namespace Letta
     public readonly partial struct LettaStreamingResponse : global::System.IEquatable<LettaStreamingResponse>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaStreamingResponseDiscriminatorMessageType? MessageType { get; }
 
@@ -30,7 +30,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SystemMessage))]
@@ -38,7 +38,7 @@ namespace Letta
         public bool IsSystemMessage => SystemMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSystemMessage(
 #if NET6_0_OR_GREATER
@@ -51,7 +51,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SystemMessage PickSystemMessage() => IsSystemMessage
             ? SystemMessage!
@@ -72,7 +72,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserMessage))]
@@ -80,7 +80,7 @@ namespace Letta
         public bool IsUserMessage => UserMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserMessage(
 #if NET6_0_OR_GREATER
@@ -93,7 +93,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.UserMessage PickUserMessage() => IsUserMessage
             ? UserMessage!
@@ -117,7 +117,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HiddenReasoningMessage1))]
@@ -125,7 +125,7 @@ namespace Letta
         public bool IsHiddenReasoningMessage1 => HiddenReasoningMessage1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHiddenReasoningMessage1(
 #if NET6_0_OR_GREATER
@@ -138,7 +138,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ReasoningMessage PickHiddenReasoningMessage1() => IsHiddenReasoningMessage1
             ? HiddenReasoningMessage1!
@@ -162,7 +162,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HiddenReasoningMessage2))]
@@ -170,7 +170,7 @@ namespace Letta
         public bool IsHiddenReasoningMessage2 => HiddenReasoningMessage2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHiddenReasoningMessage2(
 #if NET6_0_OR_GREATER
@@ -183,7 +183,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.HiddenReasoningMessage PickHiddenReasoningMessage2() => IsHiddenReasoningMessage2
             ? HiddenReasoningMessage2!
@@ -204,7 +204,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolCallMessage))]
@@ -212,7 +212,7 @@ namespace Letta
         public bool IsToolCallMessage => ToolCallMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolCallMessage(
 #if NET6_0_OR_GREATER
@@ -225,7 +225,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolCallMessage PickToolCallMessage() => IsToolCallMessage
             ? ToolCallMessage!
@@ -251,7 +251,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturnMessage))]
@@ -259,7 +259,7 @@ namespace Letta
         public bool IsToolReturnMessage => ToolReturnMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolReturnMessage(
 #if NET6_0_OR_GREATER
@@ -272,7 +272,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolReturnMessage PickToolReturnMessage() => IsToolReturnMessage
             ? ToolReturnMessage!
@@ -293,7 +293,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssistantMessage))]
@@ -301,7 +301,7 @@ namespace Letta
         public bool IsAssistantMessage => AssistantMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssistantMessage(
 #if NET6_0_OR_GREATER
@@ -314,7 +314,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AssistantMessage PickAssistantMessage() => IsAssistantMessage
             ? AssistantMessage!
@@ -335,7 +335,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApprovalRequestMessage))]
@@ -343,7 +343,7 @@ namespace Letta
         public bool IsApprovalRequestMessage => ApprovalRequestMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApprovalRequestMessage(
 #if NET6_0_OR_GREATER
@@ -356,7 +356,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalRequestMessage PickApprovalRequestMessage() => IsApprovalRequestMessage
             ? ApprovalRequestMessage!
@@ -379,7 +379,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApprovalResponseMessage))]
@@ -387,7 +387,7 @@ namespace Letta
         public bool IsApprovalResponseMessage => ApprovalResponseMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApprovalResponseMessage(
 #if NET6_0_OR_GREATER
@@ -400,7 +400,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalResponseMessage PickApprovalResponseMessage() => IsApprovalResponseMessage
             ? ApprovalResponseMessage!
@@ -419,7 +419,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Ping))]
@@ -427,7 +427,7 @@ namespace Letta
         public bool IsPing => Ping != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPing(
 #if NET6_0_OR_GREATER
@@ -440,7 +440,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaPing PickPing() => IsPing
             ? Ping!
@@ -456,7 +456,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ErrorMessage))]
@@ -464,7 +464,7 @@ namespace Letta
         public bool IsErrorMessage => ErrorMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickErrorMessage(
 #if NET6_0_OR_GREATER
@@ -477,7 +477,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaErrorMessage PickErrorMessage() => IsErrorMessage
             ? ErrorMessage!
@@ -493,7 +493,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StopReason))]
@@ -501,7 +501,7 @@ namespace Letta
         public bool IsStopReason => StopReason != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStopReason(
 #if NET6_0_OR_GREATER
@@ -514,7 +514,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaStopReason PickStopReason() => IsStopReason
             ? StopReason!
@@ -538,7 +538,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UsageStatistics))]
@@ -546,7 +546,7 @@ namespace Letta
         public bool IsUsageStatistics => UsageStatistics != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUsageStatistics(
 #if NET6_0_OR_GREATER
@@ -559,23 +559,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaUsageStatistics PickUsageStatistics() => IsUsageStatistics
             ? UsageStatistics!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UsageStatistics' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.SystemMessage value) => new LettaStreamingResponse((global::Letta.SystemMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SystemMessage?(LettaStreamingResponse @this) => @this.SystemMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.SystemMessage? value)
         {
@@ -583,22 +583,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromSystemMessage(global::Letta.SystemMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.UserMessage value) => new LettaStreamingResponse((global::Letta.UserMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.UserMessage?(LettaStreamingResponse @this) => @this.UserMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.UserMessage? value)
         {
@@ -606,22 +606,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromUserMessage(global::Letta.UserMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ReasoningMessage value) => new LettaStreamingResponse((global::Letta.ReasoningMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ReasoningMessage?(LettaStreamingResponse @this) => @this.HiddenReasoningMessage1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.ReasoningMessage? value)
         {
@@ -629,22 +629,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromHiddenReasoningMessage1(global::Letta.ReasoningMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.HiddenReasoningMessage value) => new LettaStreamingResponse((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.HiddenReasoningMessage?(LettaStreamingResponse @this) => @this.HiddenReasoningMessage2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.HiddenReasoningMessage? value)
         {
@@ -652,22 +652,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromHiddenReasoningMessage2(global::Letta.HiddenReasoningMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ToolCallMessage value) => new LettaStreamingResponse((global::Letta.ToolCallMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolCallMessage?(LettaStreamingResponse @this) => @this.ToolCallMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.ToolCallMessage? value)
         {
@@ -675,22 +675,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromToolCallMessage(global::Letta.ToolCallMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ToolReturnMessage value) => new LettaStreamingResponse((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolReturnMessage?(LettaStreamingResponse @this) => @this.ToolReturnMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.ToolReturnMessage? value)
         {
@@ -698,22 +698,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.AssistantMessage value) => new LettaStreamingResponse((global::Letta.AssistantMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.AssistantMessage?(LettaStreamingResponse @this) => @this.AssistantMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.AssistantMessage? value)
         {
@@ -721,22 +721,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromAssistantMessage(global::Letta.AssistantMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ApprovalRequestMessage value) => new LettaStreamingResponse((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ApprovalRequestMessage?(LettaStreamingResponse @this) => @this.ApprovalRequestMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.ApprovalRequestMessage? value)
         {
@@ -744,22 +744,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.ApprovalResponseMessage value) => new LettaStreamingResponse((global::Letta.ApprovalResponseMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ApprovalResponseMessage?(LettaStreamingResponse @this) => @this.ApprovalResponseMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.ApprovalResponseMessage? value)
         {
@@ -767,22 +767,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaPing value) => new LettaStreamingResponse((global::Letta.LettaPing?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaPing?(LettaStreamingResponse @this) => @this.Ping;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.LettaPing? value)
         {
@@ -790,22 +790,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromPing(global::Letta.LettaPing? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaErrorMessage value) => new LettaStreamingResponse((global::Letta.LettaErrorMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaErrorMessage?(LettaStreamingResponse @this) => @this.ErrorMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.LettaErrorMessage? value)
         {
@@ -813,22 +813,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromErrorMessage(global::Letta.LettaErrorMessage? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaStopReason value) => new LettaStreamingResponse((global::Letta.LettaStopReason?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaStopReason?(LettaStreamingResponse @this) => @this.StopReason;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.LettaStopReason? value)
         {
@@ -836,22 +836,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromStopReason(global::Letta.LettaStopReason? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaStreamingResponse(global::Letta.LettaUsageStatistics value) => new LettaStreamingResponse((global::Letta.LettaUsageStatistics?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaUsageStatistics?(LettaStreamingResponse @this) => @this.UsageStatistics;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(global::Letta.LettaUsageStatistics? value)
         {
@@ -859,12 +859,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaStreamingResponse FromUsageStatistics(global::Letta.LettaUsageStatistics? value) => new LettaStreamingResponse(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaStreamingResponse(
             global::Letta.LettaStreamingResponseDiscriminatorMessageType? messageType,
@@ -901,7 +901,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UsageStatistics as object ??
@@ -916,11 +916,11 @@ namespace Letta
             HiddenReasoningMessage2 as object ??
             HiddenReasoningMessage1 as object ??
             UserMessage as object ??
-            SystemMessage as object 
+            SystemMessage as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SystemMessage?.ToString() ??
@@ -935,11 +935,11 @@ namespace Letta
             Ping?.ToString() ??
             ErrorMessage?.ToString() ??
             StopReason?.ToString() ??
-            UsageStatistics?.ToString() 
+            UsageStatistics?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -947,7 +947,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.SystemMessage, TResult>? systemMessage = null,
@@ -1027,7 +1027,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.SystemMessage>? systemMessage = null,
@@ -1117,7 +1117,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.SystemMessage>? systemMessage = null,
@@ -1195,7 +1195,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1238,7 +1238,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LettaStreamingResponse other)
         {
@@ -1255,12 +1255,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.LettaPing?>.Default.Equals(Ping, other.Ping) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.LettaErrorMessage?>.Default.Equals(ErrorMessage, other.ErrorMessage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.LettaStopReason?>.Default.Equals(StopReason, other.StopReason) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaUsageStatistics?>.Default.Equals(UsageStatistics, other.UsageStatistics) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaUsageStatistics?>.Default.Equals(UsageStatistics, other.UsageStatistics)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LettaStreamingResponse obj1, LettaStreamingResponse obj2)
         {
@@ -1268,7 +1268,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LettaStreamingResponse obj1, LettaStreamingResponse obj2)
         {
@@ -1276,7 +1276,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

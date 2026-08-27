@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FeedsSubscribeAgentResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentAlreadySubscribed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentNotInProject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidCronExpression,
     }

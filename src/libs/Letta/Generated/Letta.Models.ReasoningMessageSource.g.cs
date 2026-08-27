@@ -9,11 +9,11 @@ namespace Letta
     public enum ReasoningMessageSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NonReasonerModel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReasonerModel,
     }

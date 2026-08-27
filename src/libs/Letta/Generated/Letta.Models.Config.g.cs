@@ -10,7 +10,7 @@ namespace Letta
     public readonly partial struct Config : global::System.IEquatable<Config>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.CreateMCPServerRequestConfigDiscriminatorMcpServerType? McpServerType { get; }
 
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Stdio))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsStdio => Stdio != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStdio(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.CreateStdioMCPServer PickStdio() => IsStdio
             ? Stdio!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sse))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsSse => Sse != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSse(
 #if NET6_0_OR_GREATER
@@ -82,7 +82,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.CreateSSEMCPServer PickSse() => IsSse
             ? Sse!
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamableHttp))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsStreamableHttp => StreamableHttp != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickStreamableHttp(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.CreateStreamableHTTPMCPServer PickStreamableHttp() => IsStreamableHttp
             ? StreamableHttp!
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamableHttp' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Config(global::Letta.CreateStdioMCPServer value) => new Config((global::Letta.CreateStdioMCPServer?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.CreateStdioMCPServer?(Config @this) => @this.Stdio;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Config(global::Letta.CreateStdioMCPServer? value)
         {
@@ -143,22 +143,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Config FromStdio(global::Letta.CreateStdioMCPServer? value) => new Config(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Config(global::Letta.CreateSSEMCPServer value) => new Config((global::Letta.CreateSSEMCPServer?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.CreateSSEMCPServer?(Config @this) => @this.Sse;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Config(global::Letta.CreateSSEMCPServer? value)
         {
@@ -166,22 +166,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Config FromSse(global::Letta.CreateSSEMCPServer? value) => new Config(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Config(global::Letta.CreateStreamableHTTPMCPServer value) => new Config((global::Letta.CreateStreamableHTTPMCPServer?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.CreateStreamableHTTPMCPServer?(Config @this) => @this.StreamableHttp;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Config(global::Letta.CreateStreamableHTTPMCPServer? value)
         {
@@ -189,12 +189,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Config FromStreamableHttp(global::Letta.CreateStreamableHTTPMCPServer? value) => new Config(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Config(
             global::Letta.CreateMCPServerRequestConfigDiscriminatorMcpServerType? mcpServerType,
@@ -211,25 +211,25 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             StreamableHttp as object ??
             Sse as object ??
-            Stdio as object 
+            Stdio as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Stdio?.ToString() ??
             Sse?.ToString() ??
-            StreamableHttp?.ToString() 
+            StreamableHttp?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.CreateStdioMCPServer, TResult>? stdio = null,
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.CreateStdioMCPServer>? stdio = null,
@@ -297,7 +297,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.CreateStdioMCPServer>? stdio = null,
@@ -325,7 +325,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Config other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.CreateStdioMCPServer?>.Default.Equals(Stdio, other.Stdio) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.CreateSSEMCPServer?>.Default.Equals(Sse, other.Sse) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.CreateStreamableHTTPMCPServer?>.Default.Equals(StreamableHttp, other.StreamableHttp) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.CreateStreamableHTTPMCPServer?>.Default.Equals(StreamableHttp, other.StreamableHttp)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Config obj1, Config obj2)
         {
@@ -368,7 +368,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Config obj1, Config obj2)
         {
@@ -376,7 +376,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

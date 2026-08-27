@@ -9,7 +9,7 @@ namespace Letta
     public sealed partial class TemplatesCreateTemplateNoProjectRequestVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.TemplatesCreateTemplateNoProjectRequestVariant1TypeJsonConverter))]

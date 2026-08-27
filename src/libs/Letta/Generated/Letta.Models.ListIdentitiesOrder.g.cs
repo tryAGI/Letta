@@ -10,11 +10,11 @@ namespace Letta
     public enum ListIdentitiesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }
