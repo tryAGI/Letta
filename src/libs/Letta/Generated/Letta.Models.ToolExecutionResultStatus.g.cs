@@ -9,11 +9,11 @@ namespace Letta
     public enum ToolExecutionResultStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant8Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParentLastTool,
     }

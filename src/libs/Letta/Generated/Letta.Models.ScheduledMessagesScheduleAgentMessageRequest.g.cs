@@ -4,37 +4,37 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ScheduledMessagesScheduleAgentMessageRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messages")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestMessage> Messages { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_steps")]
         public double? MaxSteps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
         public string? CallbackUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("include_return_message_types")]
         public global::System.Collections.Generic.IList<global::Letta.ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType>? IncludeReturnMessageTypes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schedule")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1, global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant2>))]

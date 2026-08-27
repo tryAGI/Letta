@@ -9,19 +9,19 @@ namespace Letta
     public enum DuplicateFileHandling
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Skip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Suffix,
     }

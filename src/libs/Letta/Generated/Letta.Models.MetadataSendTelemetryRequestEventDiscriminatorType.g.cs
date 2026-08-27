@@ -4,28 +4,28 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MetadataSendTelemetryRequestEventDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SessionEnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SessionStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolUsage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserInput,
     }

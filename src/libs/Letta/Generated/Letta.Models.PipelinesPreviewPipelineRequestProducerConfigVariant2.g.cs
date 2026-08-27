@@ -4,19 +4,19 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PipelinesPreviewPipelineRequestProducerConfigVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.PipelinesPreviewPipelineRequestProducerConfigVariant2TypeJsonConverter))]
         public global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2Type Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]

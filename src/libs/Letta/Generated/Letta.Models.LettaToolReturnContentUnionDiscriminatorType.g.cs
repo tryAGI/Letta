@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LettaToolReturnContentUnionDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

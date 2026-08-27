@@ -4,26 +4,26 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TemplatesListTemplateVersionsResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Letta.TemplatesListTemplateVersionsResponseVersion> Versions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("has_next_page")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool HasNextPage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("total_count")]
         [global::System.Text.Json.Serialization.JsonRequired]

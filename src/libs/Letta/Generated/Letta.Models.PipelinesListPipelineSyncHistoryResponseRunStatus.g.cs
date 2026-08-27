@@ -4,28 +4,28 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesListPipelineSyncHistoryResponseRunStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Running,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TimedOut,
     }

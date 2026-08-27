@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum EnvironmentsSendMessageRequestMessageVariant2ApprovalVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tool,
     }

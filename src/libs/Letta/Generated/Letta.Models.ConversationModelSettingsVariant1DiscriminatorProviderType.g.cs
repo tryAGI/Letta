@@ -4,68 +4,68 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ConversationModelSettingsVariant1DiscriminatorProviderType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatgptOauth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepseek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleVertex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openrouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sglang,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Together,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zai,
     }

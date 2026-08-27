@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UpdateMCPServerRequestConfigDiscriminator
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mcp_server_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.UpdateMCPServerRequestConfigDiscriminatorMcpServerTypeJsonConverter))]

@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesUpdatePipelineResponsePipelineConfigDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomWebhook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SlackChannelReader,
     }

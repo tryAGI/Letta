@@ -4,19 +4,19 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TemplatesGetTemplateSnapshotResponseRelationship
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agentEntityId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AgentEntityId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blockEntityId")]
         [global::System.Text.Json.Serialization.JsonRequired]

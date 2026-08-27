@@ -4,26 +4,26 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PipelinesCreatePipelineRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integration_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.PipelinesCreatePipelineRequestIntegrationTypeJsonConverter))]
@@ -31,7 +31,7 @@ namespace Letta
         public required global::Letta.PipelinesCreatePipelineRequestIntegrationType IntegrationType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("producer_config")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ProducerConfigJsonConverter))]
@@ -39,19 +39,19 @@ namespace Letta
         public required global::Letta.ProducerConfig ProducerConfig { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriber_agent_ids")]
         public global::System.Collections.Generic.IList<string>? SubscriberAgentIds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriber_cron_schedule")]
         public string? SubscriberCronSchedule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt_template")]
         public string? PromptTemplate { get; set; }

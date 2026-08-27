@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MetadataSendTelemetryRequestEventVariant5Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserInput,
     }

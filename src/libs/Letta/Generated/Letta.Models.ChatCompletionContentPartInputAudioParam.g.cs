@@ -9,14 +9,14 @@ namespace Letta
     public sealed partial class ChatCompletionContentPartInputAudioParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input_audio")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Letta.InputAudio InputAudio { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"input_audio"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

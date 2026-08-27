@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant3Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExitLoop,
     }

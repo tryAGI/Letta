@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateMCPServerRequestConfigDiscriminatorMcpServerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stdio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StreamableHttp,
     }

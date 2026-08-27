@@ -10,11 +10,11 @@ namespace Letta
     public enum SearchArchivalMemoryTagMatchMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Any,
     }

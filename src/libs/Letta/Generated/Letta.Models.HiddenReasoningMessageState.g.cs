@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum HiddenReasoningMessageState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Omitted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redacted,
     }

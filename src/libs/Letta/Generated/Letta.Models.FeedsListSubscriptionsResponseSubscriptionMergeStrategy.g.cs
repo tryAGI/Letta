@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FeedsListSubscriptionsResponseSubscriptionMergeStrategy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CombineIntoSingleMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UniqueMessages,
     }

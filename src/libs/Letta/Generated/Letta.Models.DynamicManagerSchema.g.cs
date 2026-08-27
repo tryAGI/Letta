@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DynamicManagerSchema
     {
@@ -15,7 +15,7 @@ namespace Letta
         public string? ManagerType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manager_agent_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -28,7 +28,7 @@ namespace Letta
         public string? TerminationToken { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_turns")]
         public int? MaxTurns { get; set; }

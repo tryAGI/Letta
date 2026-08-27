@@ -10,11 +10,11 @@ namespace Letta
     public enum ListCoreMemoryBlocksOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

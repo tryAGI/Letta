@@ -4,40 +4,40 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ListAgentsForIdentityIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentBlocks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentIdentities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentManagedGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentPendingApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentSecrets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentSources,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentTags,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentTools,
     }

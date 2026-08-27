@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ApprovalCreateApprovalsVariant1ItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tool,
     }

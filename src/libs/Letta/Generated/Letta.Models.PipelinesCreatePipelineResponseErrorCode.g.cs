@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesCreatePipelineResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgentNotFound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntegrationNotFound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidProducerConfig,
     }

@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JsonObject,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JsonSchema,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

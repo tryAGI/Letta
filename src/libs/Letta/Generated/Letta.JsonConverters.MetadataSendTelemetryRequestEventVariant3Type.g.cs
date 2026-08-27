@@ -20,7 +20,7 @@ namespace Letta.JsonConverters
                     {
                         return global::Letta.MetadataSendTelemetryRequestEventVariant3TypeExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,33 +4,33 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ScheduledMessagesListScheduledMessagesResponseScheduledMessage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AgentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessage Message { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("schedule")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2>))]
@@ -38,7 +38,7 @@ namespace Letta
         public required global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2> Schedule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next_scheduled_time")]
         public string? NextScheduledTime { get; set; }

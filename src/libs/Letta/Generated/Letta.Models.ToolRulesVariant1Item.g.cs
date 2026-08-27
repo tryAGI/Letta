@@ -5,12 +5,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ToolRulesVariant1Item : global::System.IEquatable<ToolRulesVariant1Item>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AgentStateToolRulesVariant1ItemDiscriminatorType? Type { get; }
 
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ConstrainChildTools))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsConstrainChildTools => ConstrainChildTools != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConstrainChildTools(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ChildToolRule PickConstrainChildTools() => IsConstrainChildTools
             ? ConstrainChildTools!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RunFirst))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsRunFirst => RunFirst != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRunFirst(
 #if NET6_0_OR_GREATER
@@ -82,7 +82,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.InitToolRule PickRunFirst() => IsRunFirst
             ? RunFirst!
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ExitLoop))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsExitLoop => ExitLoop != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickExitLoop(
 #if NET6_0_OR_GREATER
@@ -119,7 +119,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TerminalToolRule PickExitLoop() => IsExitLoop
             ? ExitLoop!
@@ -135,7 +135,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Conditional))]
@@ -143,7 +143,7 @@ namespace Letta
         public bool IsConditional => Conditional != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickConditional(
 #if NET6_0_OR_GREATER
@@ -156,7 +156,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ConditionalToolRule PickConditional() => IsConditional
             ? Conditional!
@@ -172,7 +172,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ContinueLoop))]
@@ -180,7 +180,7 @@ namespace Letta
         public bool IsContinueLoop => ContinueLoop != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickContinueLoop(
 #if NET6_0_OR_GREATER
@@ -193,7 +193,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ContinueToolRule PickContinueLoop() => IsContinueLoop
             ? ContinueLoop!
@@ -209,7 +209,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RequiredBeforeExit))]
@@ -217,7 +217,7 @@ namespace Letta
         public bool IsRequiredBeforeExit => RequiredBeforeExit != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRequiredBeforeExit(
 #if NET6_0_OR_GREATER
@@ -230,7 +230,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.RequiredBeforeExitToolRule PickRequiredBeforeExit() => IsRequiredBeforeExit
             ? RequiredBeforeExit!
@@ -246,7 +246,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(MaxCountPerStep))]
@@ -254,7 +254,7 @@ namespace Letta
         public bool IsMaxCountPerStep => MaxCountPerStep != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickMaxCountPerStep(
 #if NET6_0_OR_GREATER
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MaxCountPerStepToolRule PickMaxCountPerStep() => IsMaxCountPerStep
             ? MaxCountPerStep!
@@ -283,7 +283,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ParentLastTool))]
@@ -291,7 +291,7 @@ namespace Letta
         public bool IsParentLastTool => ParentLastTool != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickParentLastTool(
 #if NET6_0_OR_GREATER
@@ -304,7 +304,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ParentToolRule PickParentLastTool() => IsParentLastTool
             ? ParentLastTool!
@@ -320,7 +320,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RequiresApproval))]
@@ -328,7 +328,7 @@ namespace Letta
         public bool IsRequiresApproval => RequiresApproval != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRequiresApproval(
 #if NET6_0_OR_GREATER
@@ -341,23 +341,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.RequiresApprovalToolRule PickRequiresApproval() => IsRequiresApproval
             ? RequiresApproval!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RequiresApproval' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.ChildToolRule value) => new ToolRulesVariant1Item((global::Letta.ChildToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ChildToolRule?(ToolRulesVariant1Item @this) => @this.ConstrainChildTools;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.ChildToolRule? value)
         {
@@ -365,22 +365,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromConstrainChildTools(global::Letta.ChildToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.InitToolRule value) => new ToolRulesVariant1Item((global::Letta.InitToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.InitToolRule?(ToolRulesVariant1Item @this) => @this.RunFirst;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.InitToolRule? value)
         {
@@ -388,22 +388,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromRunFirst(global::Letta.InitToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.TerminalToolRule value) => new ToolRulesVariant1Item((global::Letta.TerminalToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TerminalToolRule?(ToolRulesVariant1Item @this) => @this.ExitLoop;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.TerminalToolRule? value)
         {
@@ -411,22 +411,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromExitLoop(global::Letta.TerminalToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.ConditionalToolRule value) => new ToolRulesVariant1Item((global::Letta.ConditionalToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ConditionalToolRule?(ToolRulesVariant1Item @this) => @this.Conditional;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.ConditionalToolRule? value)
         {
@@ -434,22 +434,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromConditional(global::Letta.ConditionalToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.ContinueToolRule value) => new ToolRulesVariant1Item((global::Letta.ContinueToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ContinueToolRule?(ToolRulesVariant1Item @this) => @this.ContinueLoop;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.ContinueToolRule? value)
         {
@@ -457,22 +457,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromContinueLoop(global::Letta.ContinueToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.RequiredBeforeExitToolRule value) => new ToolRulesVariant1Item((global::Letta.RequiredBeforeExitToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.RequiredBeforeExitToolRule?(ToolRulesVariant1Item @this) => @this.RequiredBeforeExit;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.RequiredBeforeExitToolRule? value)
         {
@@ -480,22 +480,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromRequiredBeforeExit(global::Letta.RequiredBeforeExitToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.MaxCountPerStepToolRule value) => new ToolRulesVariant1Item((global::Letta.MaxCountPerStepToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MaxCountPerStepToolRule?(ToolRulesVariant1Item @this) => @this.MaxCountPerStep;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.MaxCountPerStepToolRule? value)
         {
@@ -503,22 +503,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromMaxCountPerStep(global::Letta.MaxCountPerStepToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.ParentToolRule value) => new ToolRulesVariant1Item((global::Letta.ParentToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ParentToolRule?(ToolRulesVariant1Item @this) => @this.ParentLastTool;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.ParentToolRule? value)
         {
@@ -526,22 +526,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromParentLastTool(global::Letta.ParentToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ToolRulesVariant1Item(global::Letta.RequiresApprovalToolRule value) => new ToolRulesVariant1Item((global::Letta.RequiresApprovalToolRule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.RequiresApprovalToolRule?(ToolRulesVariant1Item @this) => @this.RequiresApproval;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(global::Letta.RequiresApprovalToolRule? value)
         {
@@ -549,12 +549,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ToolRulesVariant1Item FromRequiresApproval(global::Letta.RequiresApprovalToolRule? value) => new ToolRulesVariant1Item(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolRulesVariant1Item(
             global::Letta.AgentStateToolRulesVariant1ItemDiscriminatorType? type,
@@ -583,7 +583,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RequiresApproval as object ??
@@ -594,11 +594,11 @@ namespace Letta
             Conditional as object ??
             ExitLoop as object ??
             RunFirst as object ??
-            ConstrainChildTools as object 
+            ConstrainChildTools as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             ConstrainChildTools?.ToString() ??
@@ -609,11 +609,11 @@ namespace Letta
             RequiredBeforeExit?.ToString() ??
             MaxCountPerStep?.ToString() ??
             ParentLastTool?.ToString() ??
-            RequiresApproval?.ToString() 
+            RequiresApproval?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -621,7 +621,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.ChildToolRule, TResult>? constrainChildTools = null,
@@ -681,7 +681,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.ChildToolRule>? constrainChildTools = null,
@@ -747,7 +747,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.ChildToolRule>? constrainChildTools = null,
@@ -805,7 +805,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -840,7 +840,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ToolRulesVariant1Item other)
         {
@@ -853,12 +853,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.RequiredBeforeExitToolRule?>.Default.Equals(RequiredBeforeExit, other.RequiredBeforeExit) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.MaxCountPerStepToolRule?>.Default.Equals(MaxCountPerStep, other.MaxCountPerStep) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ParentToolRule?>.Default.Equals(ParentLastTool, other.ParentLastTool) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.RequiresApprovalToolRule?>.Default.Equals(RequiresApproval, other.RequiresApproval) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.RequiresApprovalToolRule?>.Default.Equals(RequiresApproval, other.RequiresApproval)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ToolRulesVariant1Item obj1, ToolRulesVariant1Item obj2)
         {
@@ -866,7 +866,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ToolRulesVariant1Item obj1, ToolRulesVariant1Item obj2)
         {
@@ -874,7 +874,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

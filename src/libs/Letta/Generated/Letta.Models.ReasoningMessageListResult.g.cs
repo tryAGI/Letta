@@ -10,7 +10,7 @@ namespace Letta
     public sealed partial class ReasoningMessageListResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reasoning")]
         [global::System.Text.Json.Serialization.JsonRequired]

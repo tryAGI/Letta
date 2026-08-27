@@ -10,12 +10,12 @@ namespace Letta
     public readonly partial struct Source : global::System.IEquatable<Source>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ImageContentSourceDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.UrlImage? Url { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Url))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsUrl => Url != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUrl(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.UrlImage PickUrl() => IsUrl
             ? Url!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Url' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.Base64Image? Base64 { get; init; }
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Base64))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsBase64 => Base64 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBase64(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.Base64Image PickBase64() => IsBase64
             ? Base64!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base64' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.LettaImage? Letta { get; init; }
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Letta))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsLetta => Letta != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickLetta(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaImage PickLetta() => IsLetta
             ? Letta!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Letta' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Source(global::Letta.UrlImage value) => new Source((global::Letta.UrlImage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.UrlImage?(Source @this) => @this.Url;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Source(global::Letta.UrlImage? value)
         {
@@ -143,22 +143,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Source FromUrl(global::Letta.UrlImage? value) => new Source(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Source(global::Letta.Base64Image value) => new Source((global::Letta.Base64Image?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.Base64Image?(Source @this) => @this.Base64;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Source(global::Letta.Base64Image? value)
         {
@@ -166,22 +166,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Source FromBase64(global::Letta.Base64Image? value) => new Source(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator Source(global::Letta.LettaImage value) => new Source((global::Letta.LettaImage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaImage?(Source @this) => @this.Letta;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Source(global::Letta.LettaImage? value)
         {
@@ -189,12 +189,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static Source FromLetta(global::Letta.LettaImage? value) => new Source(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public Source(
             global::Letta.ImageContentSourceDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Letta as object ??
             Base64 as object ??
-            Url as object 
+            Url as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Url?.ToString() ??
             Base64?.ToString() ??
-            Letta?.ToString() 
+            Letta?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.UrlImage, TResult>? url = null,
@@ -267,7 +267,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.UrlImage>? url = null,
@@ -297,7 +297,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.UrlImage>? url = null,
@@ -325,7 +325,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(Source other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.UrlImage?>.Default.Equals(Url, other.Url) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.Base64Image?>.Default.Equals(Base64, other.Base64) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaImage?>.Default.Equals(Letta, other.Letta) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaImage?>.Default.Equals(Letta, other.Letta)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(Source obj1, Source obj2)
         {
@@ -368,7 +368,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(Source obj1, Source obj2)
         {
@@ -376,7 +376,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

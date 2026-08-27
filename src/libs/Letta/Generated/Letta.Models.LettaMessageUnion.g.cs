@@ -5,12 +5,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct LettaMessageUnion : global::System.IEquatable<LettaMessageUnion>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaMessageUnionDiscriminatorMessageType? MessageType { get; }
 
@@ -29,7 +29,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SystemMessage))]
@@ -37,7 +37,7 @@ namespace Letta
         public bool IsSystemMessage => SystemMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSystemMessage(
 #if NET6_0_OR_GREATER
@@ -50,7 +50,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SystemMessage PickSystemMessage() => IsSystemMessage
             ? SystemMessage!
@@ -71,7 +71,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserMessage))]
@@ -79,7 +79,7 @@ namespace Letta
         public bool IsUserMessage => UserMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserMessage(
 #if NET6_0_OR_GREATER
@@ -92,7 +92,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.UserMessage PickUserMessage() => IsUserMessage
             ? UserMessage!
@@ -116,7 +116,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReasoningMessage))]
@@ -124,7 +124,7 @@ namespace Letta
         public bool IsReasoningMessage => ReasoningMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickReasoningMessage(
 #if NET6_0_OR_GREATER
@@ -137,7 +137,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ReasoningMessage PickReasoningMessage() => IsReasoningMessage
             ? ReasoningMessage!
@@ -161,7 +161,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(HiddenReasoningMessage))]
@@ -169,7 +169,7 @@ namespace Letta
         public bool IsHiddenReasoningMessage => HiddenReasoningMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickHiddenReasoningMessage(
 #if NET6_0_OR_GREATER
@@ -182,7 +182,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.HiddenReasoningMessage PickHiddenReasoningMessage() => IsHiddenReasoningMessage
             ? HiddenReasoningMessage!
@@ -203,7 +203,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolCallMessage))]
@@ -211,7 +211,7 @@ namespace Letta
         public bool IsToolCallMessage => ToolCallMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolCallMessage(
 #if NET6_0_OR_GREATER
@@ -224,7 +224,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolCallMessage PickToolCallMessage() => IsToolCallMessage
             ? ToolCallMessage!
@@ -250,7 +250,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolReturnMessage))]
@@ -258,7 +258,7 @@ namespace Letta
         public bool IsToolReturnMessage => ToolReturnMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolReturnMessage(
 #if NET6_0_OR_GREATER
@@ -271,7 +271,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ToolReturnMessage PickToolReturnMessage() => IsToolReturnMessage
             ? ToolReturnMessage!
@@ -292,7 +292,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssistantMessage))]
@@ -300,7 +300,7 @@ namespace Letta
         public bool IsAssistantMessage => AssistantMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssistantMessage(
 #if NET6_0_OR_GREATER
@@ -313,7 +313,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AssistantMessage PickAssistantMessage() => IsAssistantMessage
             ? AssistantMessage!
@@ -334,7 +334,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApprovalRequestMessage))]
@@ -342,7 +342,7 @@ namespace Letta
         public bool IsApprovalRequestMessage => ApprovalRequestMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApprovalRequestMessage(
 #if NET6_0_OR_GREATER
@@ -355,7 +355,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalRequestMessage PickApprovalRequestMessage() => IsApprovalRequestMessage
             ? ApprovalRequestMessage!
@@ -378,7 +378,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ApprovalResponseMessage))]
@@ -386,7 +386,7 @@ namespace Letta
         public bool IsApprovalResponseMessage => ApprovalResponseMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApprovalResponseMessage(
 #if NET6_0_OR_GREATER
@@ -399,7 +399,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalResponseMessage PickApprovalResponseMessage() => IsApprovalResponseMessage
             ? ApprovalResponseMessage!
@@ -415,7 +415,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SummaryMessage))]
@@ -423,7 +423,7 @@ namespace Letta
         public bool IsSummaryMessage => SummaryMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSummaryMessage(
 #if NET6_0_OR_GREATER
@@ -436,7 +436,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SummaryMessage PickSummaryMessage() => IsSummaryMessage
             ? SummaryMessage!
@@ -452,7 +452,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EventMessage))]
@@ -460,7 +460,7 @@ namespace Letta
         public bool IsEventMessage => EventMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickEventMessage(
 #if NET6_0_OR_GREATER
@@ -473,23 +473,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.EventMessage PickEventMessage() => IsEventMessage
             ? EventMessage!
             : throw new global::System.InvalidOperationException($"Expected union variant 'EventMessage' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.SystemMessage value) => new LettaMessageUnion((global::Letta.SystemMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SystemMessage?(LettaMessageUnion @this) => @this.SystemMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.SystemMessage? value)
         {
@@ -497,22 +497,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromSystemMessage(global::Letta.SystemMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.UserMessage value) => new LettaMessageUnion((global::Letta.UserMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.UserMessage?(LettaMessageUnion @this) => @this.UserMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.UserMessage? value)
         {
@@ -520,22 +520,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromUserMessage(global::Letta.UserMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ReasoningMessage value) => new LettaMessageUnion((global::Letta.ReasoningMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ReasoningMessage?(LettaMessageUnion @this) => @this.ReasoningMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.ReasoningMessage? value)
         {
@@ -543,22 +543,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromReasoningMessage(global::Letta.ReasoningMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.HiddenReasoningMessage value) => new LettaMessageUnion((global::Letta.HiddenReasoningMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.HiddenReasoningMessage?(LettaMessageUnion @this) => @this.HiddenReasoningMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.HiddenReasoningMessage? value)
         {
@@ -566,22 +566,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromHiddenReasoningMessage(global::Letta.HiddenReasoningMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ToolCallMessage value) => new LettaMessageUnion((global::Letta.ToolCallMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolCallMessage?(LettaMessageUnion @this) => @this.ToolCallMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.ToolCallMessage? value)
         {
@@ -589,22 +589,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromToolCallMessage(global::Letta.ToolCallMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ToolReturnMessage value) => new LettaMessageUnion((global::Letta.ToolReturnMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ToolReturnMessage?(LettaMessageUnion @this) => @this.ToolReturnMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.ToolReturnMessage? value)
         {
@@ -612,22 +612,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromToolReturnMessage(global::Letta.ToolReturnMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.AssistantMessage value) => new LettaMessageUnion((global::Letta.AssistantMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.AssistantMessage?(LettaMessageUnion @this) => @this.AssistantMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.AssistantMessage? value)
         {
@@ -635,22 +635,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromAssistantMessage(global::Letta.AssistantMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ApprovalRequestMessage value) => new LettaMessageUnion((global::Letta.ApprovalRequestMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ApprovalRequestMessage?(LettaMessageUnion @this) => @this.ApprovalRequestMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.ApprovalRequestMessage? value)
         {
@@ -658,22 +658,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromApprovalRequestMessage(global::Letta.ApprovalRequestMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.ApprovalResponseMessage value) => new LettaMessageUnion((global::Letta.ApprovalResponseMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ApprovalResponseMessage?(LettaMessageUnion @this) => @this.ApprovalResponseMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.ApprovalResponseMessage? value)
         {
@@ -681,22 +681,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromApprovalResponseMessage(global::Letta.ApprovalResponseMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.SummaryMessage value) => new LettaMessageUnion((global::Letta.SummaryMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SummaryMessage?(LettaMessageUnion @this) => @this.SummaryMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.SummaryMessage? value)
         {
@@ -704,22 +704,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromSummaryMessage(global::Letta.SummaryMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator LettaMessageUnion(global::Letta.EventMessage value) => new LettaMessageUnion((global::Letta.EventMessage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.EventMessage?(LettaMessageUnion @this) => @this.EventMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(global::Letta.EventMessage? value)
         {
@@ -727,12 +727,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static LettaMessageUnion FromEventMessage(global::Letta.EventMessage? value) => new LettaMessageUnion(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public LettaMessageUnion(
             global::Letta.LettaMessageUnionDiscriminatorMessageType? messageType,
@@ -765,7 +765,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             EventMessage as object ??
@@ -778,11 +778,11 @@ namespace Letta
             HiddenReasoningMessage as object ??
             ReasoningMessage as object ??
             UserMessage as object ??
-            SystemMessage as object 
+            SystemMessage as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SystemMessage?.ToString() ??
@@ -795,11 +795,11 @@ namespace Letta
             ApprovalRequestMessage?.ToString() ??
             ApprovalResponseMessage?.ToString() ??
             SummaryMessage?.ToString() ??
-            EventMessage?.ToString() 
+            EventMessage?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -807,7 +807,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.SystemMessage, TResult>? systemMessage = null,
@@ -877,7 +877,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.SystemMessage>? systemMessage = null,
@@ -955,7 +955,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.SystemMessage>? systemMessage = null,
@@ -1023,7 +1023,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1062,7 +1062,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(LettaMessageUnion other)
         {
@@ -1077,12 +1077,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ApprovalRequestMessage?>.Default.Equals(ApprovalRequestMessage, other.ApprovalRequestMessage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ApprovalResponseMessage?>.Default.Equals(ApprovalResponseMessage, other.ApprovalResponseMessage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.SummaryMessage?>.Default.Equals(SummaryMessage, other.SummaryMessage) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.EventMessage?>.Default.Equals(EventMessage, other.EventMessage) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.EventMessage?>.Default.Equals(EventMessage, other.EventMessage)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(LettaMessageUnion obj1, LettaMessageUnion obj2)
         {
@@ -1090,7 +1090,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(LettaMessageUnion obj1, LettaMessageUnion obj2)
         {
@@ -1098,7 +1098,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

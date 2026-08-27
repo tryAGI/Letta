@@ -10,11 +10,11 @@ namespace Letta
     public enum ListConversationMessagesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

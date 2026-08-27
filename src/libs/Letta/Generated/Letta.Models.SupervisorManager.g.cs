@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SupervisorManager
     {
@@ -15,7 +15,7 @@ namespace Letta
         public string? ManagerType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manager_agent_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

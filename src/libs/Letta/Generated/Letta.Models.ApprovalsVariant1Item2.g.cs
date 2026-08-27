@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct ApprovalsVariant1Item2 : global::System.IEquatable<ApprovalsVariant1Item2>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.ApprovalReturn? Approval { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Approval))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsApproval => Approval != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickApproval(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ApprovalReturn PickApproval() => IsApproval
             ? Approval!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Approval' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.LettaSchemasLettaMessageToolReturn? Tool { get; init; }
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Tool))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsTool => Tool != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTool(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.LettaSchemasLettaMessageToolReturn PickTool() => IsTool
             ? Tool!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Tool' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApprovalsVariant1Item2(global::Letta.ApprovalReturn value) => new ApprovalsVariant1Item2((global::Letta.ApprovalReturn?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ApprovalReturn?(ApprovalsVariant1Item2 @this) => @this.Approval;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApprovalsVariant1Item2(global::Letta.ApprovalReturn? value)
         {
@@ -106,22 +106,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApprovalsVariant1Item2 FromApproval(global::Letta.ApprovalReturn? value) => new ApprovalsVariant1Item2(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator ApprovalsVariant1Item2(global::Letta.LettaSchemasLettaMessageToolReturn value) => new ApprovalsVariant1Item2((global::Letta.LettaSchemasLettaMessageToolReturn?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.LettaSchemasLettaMessageToolReturn?(ApprovalsVariant1Item2 @this) => @this.Tool;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApprovalsVariant1Item2(global::Letta.LettaSchemasLettaMessageToolReturn? value)
         {
@@ -129,12 +129,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static ApprovalsVariant1Item2 FromTool(global::Letta.LettaSchemasLettaMessageToolReturn? value) => new ApprovalsVariant1Item2(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ApprovalsVariant1Item2(
             global::Letta.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Tool as object ??
-            Approval as object 
+            Approval as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Approval?.ToString() ??
-            Tool?.ToString() 
+            Tool?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.ApprovalReturn, TResult>? approval = null,
@@ -198,7 +198,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.ApprovalReturn>? approval = null,
@@ -222,7 +222,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.ApprovalReturn>? approval = null,
@@ -245,7 +245,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(ApprovalsVariant1Item2 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ApprovalReturn?>.Default.Equals(Approval, other.Approval) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaSchemasLettaMessageToolReturn?>.Default.Equals(Tool, other.Tool) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaSchemasLettaMessageToolReturn?>.Default.Equals(Tool, other.Tool)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(ApprovalsVariant1Item2 obj1, ApprovalsVariant1Item2 obj2)
         {
@@ -285,7 +285,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(ApprovalsVariant1Item2 obj1, ApprovalsVariant1Item2 obj2)
         {
@@ -293,7 +293,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

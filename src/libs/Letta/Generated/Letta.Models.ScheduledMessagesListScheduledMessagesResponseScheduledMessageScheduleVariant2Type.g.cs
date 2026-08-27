@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScheduledMessagesListScheduledMessagesResponseScheduledMessageScheduleVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Recurring,
     }

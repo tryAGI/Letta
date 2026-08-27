@@ -10,11 +10,11 @@ namespace Letta
     public enum ListAgentSourcesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

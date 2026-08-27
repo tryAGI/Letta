@@ -9,14 +9,14 @@ namespace Letta
     public sealed partial class ChatCompletionContentPartImageParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image_url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Letta.ImageURL ImageUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"image_url"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

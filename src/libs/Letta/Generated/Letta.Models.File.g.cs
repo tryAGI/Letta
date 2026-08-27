@@ -9,14 +9,14 @@ namespace Letta
     public sealed partial class File
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("file")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Letta.FileFile File1 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"file"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

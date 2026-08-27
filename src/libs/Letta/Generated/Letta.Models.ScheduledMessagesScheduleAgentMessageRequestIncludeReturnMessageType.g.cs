@@ -4,44 +4,44 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScheduledMessagesScheduleAgentMessageRequestIncludeReturnMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalRequestMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalResponseMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssistantMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HiddenReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolCallMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolReturnMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMessage,
     }

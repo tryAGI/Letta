@@ -5,12 +5,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct SearchAllMessagesResponseItem : global::System.IEquatable<SearchAllMessagesResponseItem>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SearchAllMessagesResponseItemDiscriminatorMessageType? MessageType { get; }
 
@@ -25,7 +25,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SystemMessage))]
@@ -33,7 +33,7 @@ namespace Letta
         public bool IsSystemMessage => SystemMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSystemMessage(
 #if NET6_0_OR_GREATER
@@ -46,7 +46,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.SystemMessageListResult PickSystemMessage() => IsSystemMessage
             ? SystemMessage!
@@ -63,7 +63,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserMessage))]
@@ -71,7 +71,7 @@ namespace Letta
         public bool IsUserMessage => UserMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserMessage(
 #if NET6_0_OR_GREATER
@@ -84,7 +84,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.UserMessageListResult PickUserMessage() => IsUserMessage
             ? UserMessage!
@@ -101,7 +101,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReasoningMessage))]
@@ -109,7 +109,7 @@ namespace Letta
         public bool IsReasoningMessage => ReasoningMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickReasoningMessage(
 #if NET6_0_OR_GREATER
@@ -122,7 +122,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.ReasoningMessageListResult PickReasoningMessage() => IsReasoningMessage
             ? ReasoningMessage!
@@ -139,7 +139,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AssistantMessage))]
@@ -147,7 +147,7 @@ namespace Letta
         public bool IsAssistantMessage => AssistantMessage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAssistantMessage(
 #if NET6_0_OR_GREATER
@@ -160,23 +160,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.AssistantMessageListResult PickAssistantMessage() => IsAssistantMessage
             ? AssistantMessage!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssistantMessage' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.SystemMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.SystemMessageListResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.SystemMessageListResult?(SearchAllMessagesResponseItem @this) => @this.SystemMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchAllMessagesResponseItem(global::Letta.SystemMessageListResult? value)
         {
@@ -184,22 +184,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SearchAllMessagesResponseItem FromSystemMessage(global::Letta.SystemMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.UserMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.UserMessageListResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.UserMessageListResult?(SearchAllMessagesResponseItem @this) => @this.UserMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchAllMessagesResponseItem(global::Letta.UserMessageListResult? value)
         {
@@ -207,22 +207,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SearchAllMessagesResponseItem FromUserMessage(global::Letta.UserMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.ReasoningMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.ReasoningMessageListResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.ReasoningMessageListResult?(SearchAllMessagesResponseItem @this) => @this.ReasoningMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchAllMessagesResponseItem(global::Letta.ReasoningMessageListResult? value)
         {
@@ -230,22 +230,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SearchAllMessagesResponseItem FromReasoningMessage(global::Letta.ReasoningMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator SearchAllMessagesResponseItem(global::Letta.AssistantMessageListResult value) => new SearchAllMessagesResponseItem((global::Letta.AssistantMessageListResult?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.AssistantMessageListResult?(SearchAllMessagesResponseItem @this) => @this.AssistantMessage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchAllMessagesResponseItem(global::Letta.AssistantMessageListResult? value)
         {
@@ -253,12 +253,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static SearchAllMessagesResponseItem FromAssistantMessage(global::Letta.AssistantMessageListResult? value) => new SearchAllMessagesResponseItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SearchAllMessagesResponseItem(
             global::Letta.SearchAllMessagesResponseItemDiscriminatorMessageType? messageType,
@@ -277,27 +277,27 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AssistantMessage as object ??
             ReasoningMessage as object ??
             UserMessage as object ??
-            SystemMessage as object 
+            SystemMessage as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SystemMessage?.ToString() ??
             UserMessage?.ToString() ??
             ReasoningMessage?.ToString() ??
-            AssistantMessage?.ToString() 
+            AssistantMessage?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -305,7 +305,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.SystemMessageListResult, TResult>? systemMessage = null,
@@ -340,7 +340,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.SystemMessageListResult>? systemMessage = null,
@@ -376,7 +376,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.SystemMessageListResult>? systemMessage = null,
@@ -409,7 +409,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -434,7 +434,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(SearchAllMessagesResponseItem other)
         {
@@ -442,12 +442,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.SystemMessageListResult?>.Default.Equals(SystemMessage, other.SystemMessage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.UserMessageListResult?>.Default.Equals(UserMessage, other.UserMessage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.ReasoningMessageListResult?>.Default.Equals(ReasoningMessage, other.ReasoningMessage) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.AssistantMessageListResult?>.Default.Equals(AssistantMessage, other.AssistantMessage) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.AssistantMessageListResult?>.Default.Equals(AssistantMessage, other.AssistantMessage)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(SearchAllMessagesResponseItem obj1, SearchAllMessagesResponseItem obj2)
         {
@@ -455,7 +455,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(SearchAllMessagesResponseItem obj1, SearchAllMessagesResponseItem obj2)
         {
@@ -463,7 +463,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

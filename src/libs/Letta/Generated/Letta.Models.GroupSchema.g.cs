@@ -16,7 +16,7 @@ namespace Letta
         public required global::System.Collections.Generic.IList<string> AgentIds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]

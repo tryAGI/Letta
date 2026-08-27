@@ -4,108 +4,108 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProviderType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Anthropic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Azure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Baseten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bedrock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cerebras,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatgptOauth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deepseek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fireworks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleAi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GoogleVertex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Groq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HuggingFace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Letta,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LmstudioOpenai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minimax,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mistral,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ollama,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Openrouter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sglang,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Together,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vllm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zai,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZaiCoding,
     }

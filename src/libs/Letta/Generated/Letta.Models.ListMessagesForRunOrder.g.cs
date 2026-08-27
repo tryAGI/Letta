@@ -10,11 +10,11 @@ namespace Letta
     public enum ListMessagesForRunOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

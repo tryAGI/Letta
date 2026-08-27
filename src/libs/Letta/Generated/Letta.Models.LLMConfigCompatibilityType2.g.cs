@@ -4,16 +4,16 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LLMConfigCompatibilityType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gguf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mlx,
     }

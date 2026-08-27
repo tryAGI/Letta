@@ -4,44 +4,44 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgentStateToolRulesVariant1ItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Conditional,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConstrainChildTools,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContinueLoop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExitLoop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxCountPerStep,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParentLastTool,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequiredBeforeExit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequiresApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RunFirst,
     }

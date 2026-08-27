@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SleeptimeManager
     {
@@ -15,14 +15,14 @@ namespace Letta
         public string? ManagerType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manager_agent_id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ManagerAgentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sleeptime_agent_frequency")]
         public int? SleeptimeAgentFrequency { get; set; }

@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UsageStatistics
     {
@@ -27,13 +27,13 @@ namespace Letta
         public int? TotalTokens { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prompt_tokens_details")]
         public global::Letta.UsageStatisticsPromptTokenDetails? PromptTokensDetails { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("completion_tokens_details")]
         public global::Letta.UsageStatisticsCompletionTokenDetails? CompletionTokensDetails { get; set; }

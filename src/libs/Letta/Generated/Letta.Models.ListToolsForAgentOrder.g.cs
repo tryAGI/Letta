@@ -10,11 +10,11 @@ namespace Letta
     public enum ListToolsForAgentOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

@@ -10,11 +10,11 @@ namespace Letta
     public enum ListFolderPassagesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

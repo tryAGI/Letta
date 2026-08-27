@@ -9,11 +9,11 @@ namespace Letta
     public enum MetadataSendFeedbackRequestFeature
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LettaCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sdk,
     }

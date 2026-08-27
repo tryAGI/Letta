@@ -10,7 +10,7 @@ namespace Letta
     public sealed partial class ChatCompletionUserMessageParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>))]
@@ -18,14 +18,14 @@ namespace Letta
         public required global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>> Content { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"user"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         public string Role { get; set; } = "user";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }

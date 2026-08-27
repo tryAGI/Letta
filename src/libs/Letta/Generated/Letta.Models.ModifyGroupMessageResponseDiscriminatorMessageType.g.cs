@@ -4,52 +4,52 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ModifyGroupMessageResponseDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalRequestMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalResponseMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssistantMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HiddenReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SummaryMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolCallMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolReturnMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMessage,
     }

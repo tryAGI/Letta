@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FeedsListSubscriptionHistoryResponseRunType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Backfill,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheduled,
     }

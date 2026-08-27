@@ -9,15 +9,15 @@ namespace Letta
     public enum VectorDBProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Native,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pinecone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tpuf,
     }

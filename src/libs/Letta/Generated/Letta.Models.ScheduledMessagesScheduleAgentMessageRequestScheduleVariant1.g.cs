@@ -4,19 +4,19 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1TypeJsonConverter))]
         public global::Letta.ScheduledMessagesScheduleAgentMessageRequestScheduleVariant1Type? Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scheduled_at")]
         [global::System.Text.Json.Serialization.JsonRequired]

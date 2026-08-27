@@ -4,26 +4,26 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AgentsSearchDeployedAgentsRequestSearchItemVariant6
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("field")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6FieldJsonConverter))]
         public global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6Field Field { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSearchItemVariant6OperatorJsonConverter))]
         public global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6Operator Operator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]

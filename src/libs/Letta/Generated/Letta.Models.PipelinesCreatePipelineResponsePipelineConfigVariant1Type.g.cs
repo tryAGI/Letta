@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesCreatePipelineResponsePipelineConfigVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SlackChannelReader,
     }

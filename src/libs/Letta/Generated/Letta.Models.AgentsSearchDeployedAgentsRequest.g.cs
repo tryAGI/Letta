@@ -4,50 +4,50 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AgentsSearchDeployedAgentsRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("search")]
         public global::System.Collections.Generic.IList<global::Letta.OneOf<global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant1, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant2, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant3, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant4, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant5, global::Letta.AgentsSearchDeployedAgentsRequestSearchItemVariant6>>? Search { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project_id")]
         public string? ProjectId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("combinator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestCombinatorJsonConverter))]
         public global::Letta.AgentsSearchDeployedAgentsRequestCombinator? Combinator { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("limit")]
         public double? Limit { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("after")]
         public string? After { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sortBy")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AgentsSearchDeployedAgentsRequestSortByJsonConverter))]
         public global::Letta.AgentsSearchDeployedAgentsRequestSortBy? SortBy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ascending")]
         public bool? Ascending { get; set; }

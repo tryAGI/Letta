@@ -10,11 +10,11 @@ namespace Letta
     public enum ListArchivesOrder
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desc,
     }

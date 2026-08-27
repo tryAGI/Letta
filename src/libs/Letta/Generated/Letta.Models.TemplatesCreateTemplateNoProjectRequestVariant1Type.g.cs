@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TemplatesCreateTemplateNoProjectRequestVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Agent,
     }

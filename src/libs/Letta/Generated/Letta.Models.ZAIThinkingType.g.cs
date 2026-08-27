@@ -10,11 +10,11 @@ namespace Letta
     public enum ZAIThinkingType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

@@ -6,7 +6,7 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LettaAsyncRequest
     {

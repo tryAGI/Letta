@@ -4,19 +4,19 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class FunctionTool
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("function")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Letta.FunctionDefinition Function { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"function"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

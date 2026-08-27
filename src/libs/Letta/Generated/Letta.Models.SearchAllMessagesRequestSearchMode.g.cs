@@ -10,15 +10,15 @@ namespace Letta
     public enum SearchAllMessagesRequestSearchMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hybrid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vector,
     }

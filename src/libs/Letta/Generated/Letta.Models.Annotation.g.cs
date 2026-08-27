@@ -9,7 +9,7 @@ namespace Letta
     public sealed partial class Annotation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"url_citation"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

@@ -4,28 +4,28 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GroupCreateManagerConfigDiscriminatorManagerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dynamic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoundRobin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleeptime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supervisor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceSleeptime,
     }

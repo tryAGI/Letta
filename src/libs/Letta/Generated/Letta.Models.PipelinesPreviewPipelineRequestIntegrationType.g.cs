@@ -4,24 +4,24 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesPreviewPipelineRequestIntegrationType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomWebhook,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Discord,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MicrosoftTeams,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
     }

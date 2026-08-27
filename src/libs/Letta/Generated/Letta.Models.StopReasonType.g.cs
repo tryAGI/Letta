@@ -4,60 +4,60 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum StopReasonType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cancelled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContextWindowOverflowInSystemPrompt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndTurn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InsufficientCredits,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidLlmResponse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidToolCall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LlmApiError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxSteps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxTokensExceeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoToolCall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequiresApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolRule,
     }

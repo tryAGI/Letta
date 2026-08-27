@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PipelinesSyncPipelineResponseErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PipelineDisabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PipelineNotSyncable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SyncFailed,
     }

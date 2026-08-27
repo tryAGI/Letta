@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MetadataSendTelemetryRequestEventVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SessionStart,
     }

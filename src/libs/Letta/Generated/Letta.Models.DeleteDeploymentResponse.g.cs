@@ -27,7 +27,7 @@ namespace Letta
         public global::System.Collections.Generic.IList<string>? DeletedGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]

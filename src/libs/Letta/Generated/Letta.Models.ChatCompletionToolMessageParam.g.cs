@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatCompletionToolMessageParam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>>))]
@@ -17,14 +17,14 @@ namespace Letta
         public required global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.ChatCompletionContentPartTextParam>> Content { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"tool"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         public string Role { get; set; } = "tool";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_call_id")]
         [global::System.Text.Json.Serialization.JsonRequired]

@@ -4,60 +4,60 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LettaStreamingResponseDiscriminatorMessageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalRequestMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApprovalResponseMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssistantMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HiddenReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ping,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReasoningMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StopReason,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolCallMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ToolReturnMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsageStatistics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserMessage,
     }

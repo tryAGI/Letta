@@ -40,7 +40,7 @@ namespace Letta
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Letta.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -50,7 +50,7 @@ namespace Letta
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public AgentsClient Agents => new AgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -60,7 +60,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ArchivesClient Archives => new ArchivesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -70,7 +70,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public BlocksClient Blocks => new BlocksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -80,7 +80,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ChatClient Chat => new ChatClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -90,7 +90,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ClientSideAccessTokensClient ClientSideAccessTokens => new ClientSideAccessTokensClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -100,7 +100,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConversationsClient Conversations => new ConversationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -110,7 +110,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeviceStorageClient DeviceStorage => new DeviceStorageClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EmbeddingsClient Embeddings => new EmbeddingsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -130,7 +130,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EnvironmentsClient Environments => new EnvironmentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -140,7 +140,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FeedsClient Feeds => new FeedsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -150,7 +150,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public FoldersClient Folders => new FoldersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -160,7 +160,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HealthClient Health => new HealthClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -170,7 +170,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InternalAgentsClient InternalAgents => new InternalAgentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -180,7 +180,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InternalBlocksClient InternalBlocks => new InternalBlocksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -190,7 +190,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InternalRunsClient InternalRuns => new InternalRunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -200,7 +200,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public InternalTemplatesClient InternalTemplates => new InternalTemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -210,7 +210,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public JobsClient Jobs => new JobsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -220,7 +220,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public McpServersClient McpServers => new McpServersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -230,7 +230,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MemoryFilesClient MemoryFiles => new MemoryFilesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -240,7 +240,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MessagesClient Messages => new MessagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -250,7 +250,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MetadataClient Metadata => new MetadataClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -260,7 +260,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ModelsClient Models => new ModelsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -270,7 +270,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PassagesClient Passages => new PassagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -280,7 +280,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PipelinesClient Pipelines => new PipelinesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -290,7 +290,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -300,7 +300,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProvidersClient Providers => new ProvidersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -310,7 +310,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RunsClient Runs => new RunsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -320,7 +320,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public SandboxesClient Sandboxes => new SandboxesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -330,7 +330,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ScheduledMessagesClient ScheduledMessages => new ScheduledMessagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -340,7 +340,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public StepsClient Steps => new StepsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -350,7 +350,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TagClient Tag => new TagClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -360,7 +360,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesClient Templates => new TemplatesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -370,7 +370,7 @@ namespace Letta
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ToolsClient Tools => new ToolsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

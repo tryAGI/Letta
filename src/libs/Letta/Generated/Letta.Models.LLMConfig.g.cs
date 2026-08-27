@@ -15,7 +15,7 @@ namespace Letta
     public sealed partial class LLMConfig
     {
         /// <summary>
-        /// LLM model name. 
+        /// LLM model name.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -199,7 +199,7 @@ namespace Letta
         /// Initializes a new instance of the <see cref="LLMConfig" /> class.
         /// </summary>
         /// <param name="model">
-        /// LLM model name. 
+        /// LLM model name.
         /// </param>
         /// <param name="modelEndpointType">
         /// The endpoint type for the model.

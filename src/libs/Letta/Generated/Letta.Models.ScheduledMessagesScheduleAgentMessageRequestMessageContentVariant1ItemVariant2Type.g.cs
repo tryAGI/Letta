@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScheduledMessagesScheduleAgentMessageRequestMessageContentVariant1ItemVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
     }

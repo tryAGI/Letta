@@ -9,11 +9,11 @@ namespace Letta
     public enum LettaSchemasMessageToolReturnOutputStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Success,
     }

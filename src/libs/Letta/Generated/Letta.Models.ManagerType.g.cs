@@ -4,32 +4,32 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ManagerType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dynamic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoundRobin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sleeptime,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Supervisor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Swarm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VoiceSleeptime,
     }

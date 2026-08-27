@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TemplatesGetTemplateSnapshotResponseAgentToolRuleVariant2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RunFirst,
     }

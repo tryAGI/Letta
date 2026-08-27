@@ -4,12 +4,12 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum LettaAssistantMessageContentUnionDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Text,
     }

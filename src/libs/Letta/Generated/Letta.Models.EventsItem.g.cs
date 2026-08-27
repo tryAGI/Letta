@@ -5,17 +5,17 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct EventsItem : global::System.IEquatable<EventsItem>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant1? SessionStart { get; init; }
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SessionStart))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsSessionStart => SessionStart != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSessionStart(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventVariant1 PickSessionStart() => IsSessionStart
             ? SessionStart!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SessionStart' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant2? SessionEnd { get; init; }
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SessionEnd))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsSessionEnd => SessionEnd != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickSessionEnd(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventVariant2 PickSessionEnd() => IsSessionEnd
             ? SessionEnd!
             : throw new global::System.InvalidOperationException($"Expected union variant 'SessionEnd' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant3? ToolUsage { get; init; }
@@ -98,7 +98,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ToolUsage))]
@@ -106,7 +106,7 @@ namespace Letta
         public bool IsToolUsage => ToolUsage != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickToolUsage(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventVariant3 PickToolUsage() => IsToolUsage
             ? ToolUsage!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolUsage' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant4? Error { get; init; }
@@ -135,7 +135,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Error))]
@@ -143,7 +143,7 @@ namespace Letta
         public bool IsError => Error != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickError(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventVariant4 PickError() => IsError
             ? Error!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Error' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Letta.MetadataSendTelemetryRequestEventVariant5? UserInput { get; init; }
@@ -172,7 +172,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(UserInput))]
@@ -180,7 +180,7 @@ namespace Letta
         public bool IsUserInput => UserInput != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickUserInput(
 #if NET6_0_OR_GREATER
@@ -193,23 +193,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.MetadataSendTelemetryRequestEventVariant5 PickUserInput() => IsUserInput
             ? UserInput!
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserInput' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant1 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MetadataSendTelemetryRequestEventVariant1?(EventsItem @this) => @this.SessionStart;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant1? value)
         {
@@ -217,22 +217,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EventsItem FromSessionStart(global::Letta.MetadataSendTelemetryRequestEventVariant1? value) => new EventsItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant2 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MetadataSendTelemetryRequestEventVariant2?(EventsItem @this) => @this.SessionEnd;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant2? value)
         {
@@ -240,22 +240,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EventsItem FromSessionEnd(global::Letta.MetadataSendTelemetryRequestEventVariant2? value) => new EventsItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant3 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant3?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MetadataSendTelemetryRequestEventVariant3?(EventsItem @this) => @this.ToolUsage;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant3? value)
         {
@@ -263,22 +263,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EventsItem FromToolUsage(global::Letta.MetadataSendTelemetryRequestEventVariant3? value) => new EventsItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant4 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant4?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MetadataSendTelemetryRequestEventVariant4?(EventsItem @this) => @this.Error;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant4? value)
         {
@@ -286,22 +286,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EventsItem FromError(global::Letta.MetadataSendTelemetryRequestEventVariant4? value) => new EventsItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant5 value) => new EventsItem((global::Letta.MetadataSendTelemetryRequestEventVariant5?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.MetadataSendTelemetryRequestEventVariant5?(EventsItem @this) => @this.UserInput;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(global::Letta.MetadataSendTelemetryRequestEventVariant5? value)
         {
@@ -309,12 +309,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static EventsItem FromUserInput(global::Letta.MetadataSendTelemetryRequestEventVariant5? value) => new EventsItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public EventsItem(
             global::Letta.MetadataSendTelemetryRequestEventDiscriminatorType? type,
@@ -335,29 +335,29 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             UserInput as object ??
             Error as object ??
             ToolUsage as object ??
             SessionEnd as object ??
-            SessionStart as object 
+            SessionStart as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             SessionStart?.ToString() ??
             SessionEnd?.ToString() ??
             ToolUsage?.ToString() ??
             Error?.ToString() ??
-            UserInput?.ToString() 
+            UserInput?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -365,7 +365,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.MetadataSendTelemetryRequestEventVariant1, TResult>? sessionStart = null,
@@ -405,7 +405,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.MetadataSendTelemetryRequestEventVariant1>? sessionStart = null,
@@ -447,7 +447,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.MetadataSendTelemetryRequestEventVariant1>? sessionStart = null,
@@ -485,7 +485,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -512,7 +512,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(EventsItem other)
         {
@@ -521,12 +521,12 @@ namespace Letta
                 global::System.Collections.Generic.EqualityComparer<global::Letta.MetadataSendTelemetryRequestEventVariant2?>.Default.Equals(SessionEnd, other.SessionEnd) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.MetadataSendTelemetryRequestEventVariant3?>.Default.Equals(ToolUsage, other.ToolUsage) &&
                 global::System.Collections.Generic.EqualityComparer<global::Letta.MetadataSendTelemetryRequestEventVariant4?>.Default.Equals(Error, other.Error) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.MetadataSendTelemetryRequestEventVariant5?>.Default.Equals(UserInput, other.UserInput) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.MetadataSendTelemetryRequestEventVariant5?>.Default.Equals(UserInput, other.UserInput)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(EventsItem obj1, EventsItem obj2)
         {
@@ -534,7 +534,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(EventsItem obj1, EventsItem obj2)
         {
@@ -542,7 +542,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

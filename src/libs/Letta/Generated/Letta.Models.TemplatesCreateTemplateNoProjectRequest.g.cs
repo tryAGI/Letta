@@ -10,7 +10,7 @@ namespace Letta
     public readonly partial struct TemplatesCreateTemplateNoProjectRequest : global::System.IEquatable<TemplatesCreateTemplateNoProjectRequest>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateNoProjectRequestDiscriminatorType? Type { get; }
 
@@ -24,7 +24,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Agent))]
@@ -32,7 +32,7 @@ namespace Letta
         public bool IsAgent => Agent != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgent(
 #if NET6_0_OR_GREATER
@@ -45,7 +45,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1 PickAgent() => IsAgent
             ? Agent!
@@ -61,7 +61,7 @@ namespace Letta
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgentFile))]
@@ -69,7 +69,7 @@ namespace Letta
         public bool IsAgentFile => AgentFile != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgentFile(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2 PickAgentFile() => IsAgentFile
             ? AgentFile!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentFile' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TemplatesCreateTemplateNoProjectRequest(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1 value) => new TemplatesCreateTemplateNoProjectRequest((global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?(TemplatesCreateTemplateNoProjectRequest @this) => @this.Agent;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateNoProjectRequest(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? value)
         {
@@ -106,22 +106,22 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TemplatesCreateTemplateNoProjectRequest FromAgent(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1? value) => new TemplatesCreateTemplateNoProjectRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator TemplatesCreateTemplateNoProjectRequest(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2 value) => new TemplatesCreateTemplateNoProjectRequest((global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?(TemplatesCreateTemplateNoProjectRequest @this) => @this.AgentFile;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateNoProjectRequest(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? value)
         {
@@ -129,12 +129,12 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static TemplatesCreateTemplateNoProjectRequest FromAgentFile(global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2? value) => new TemplatesCreateTemplateNoProjectRequest(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TemplatesCreateTemplateNoProjectRequest(
             global::Letta.TemplatesCreateTemplateNoProjectRequestDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AgentFile as object ??
-            Agent as object 
+            Agent as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Agent?.ToString() ??
-            AgentFile?.ToString() 
+            AgentFile?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1, TResult>? agent = null,
@@ -198,7 +198,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
@@ -222,7 +222,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1>? agent = null,
@@ -245,7 +245,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(TemplatesCreateTemplateNoProjectRequest other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant1?>.Default.Equals(Agent, other.Agent) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?>.Default.Equals(AgentFile, other.AgentFile) 
+                global::System.Collections.Generic.EqualityComparer<global::Letta.TemplatesCreateTemplateNoProjectRequestVariant2?>.Default.Equals(AgentFile, other.AgentFile)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(TemplatesCreateTemplateNoProjectRequest obj1, TemplatesCreateTemplateNoProjectRequest obj2)
         {
@@ -285,7 +285,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(TemplatesCreateTemplateNoProjectRequest obj1, TemplatesCreateTemplateNoProjectRequest obj2)
         {
@@ -293,7 +293,7 @@ namespace Letta
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

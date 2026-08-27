@@ -10,11 +10,11 @@ namespace Letta
     public enum AnthropicThinkingType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Enabled,
     }

@@ -4,20 +4,20 @@
 namespace Letta
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SandboxType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         E2b,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Local,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Modal,
     }
