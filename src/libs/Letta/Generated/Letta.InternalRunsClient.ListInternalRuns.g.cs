@@ -47,7 +47,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? agentIds,
             global::System.Collections.Generic.IList<string>? statuses,
             bool? background,
-            global::Letta.StopReasonType? stopReason,
+            ref global::Letta.StopReasonType? stopReason,
             ref string? templateFamily,
             int? stepCount,
             ref global::Letta.ComparisonOperator? stepCountOperator,
@@ -63,7 +63,7 @@ namespace Letta
             ref string? conversationId,
             int? durationPercentile,
             int? durationValue,
-            global::Letta.ListInternalRunsDurationOperator2? durationOperator,
+            ref global::Letta.ListInternalRunsDurationOperator2? durationOperator,
             global::System.DateTime? startDate,
             global::System.DateTime? endDate);
         partial void PrepareListInternalRunsRequest(
@@ -368,7 +368,7 @@ namespace Letta
                 agentIds: agentIds,
                 statuses: statuses,
                 background: background,
-                stopReason: stopReason,
+                stopReason: ref stopReason,
                 templateFamily: ref templateFamily,
                 stepCount: stepCount,
                 stepCountOperator: ref stepCountOperator,
@@ -384,7 +384,7 @@ namespace Letta
                 conversationId: ref conversationId,
                 durationPercentile: durationPercentile,
                 durationValue: durationValue,
-                durationOperator: durationOperator,
+                durationOperator: ref durationOperator,
                 startDate: startDate,
                 endDate: endDate);
 
