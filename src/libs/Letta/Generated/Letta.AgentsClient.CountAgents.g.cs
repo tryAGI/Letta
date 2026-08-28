@@ -49,7 +49,7 @@ namespace Letta
             ref string? baseTemplateId,
             ref string? identityId,
             global::System.Collections.Generic.IList<string>? identifierKeys,
-            global::Letta.StopReasonType? lastStopReason,
+            ref global::Letta.StopReasonType? lastStopReason,
             ref string? createdById);
         partial void PrepareCountAgentsRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -219,7 +219,7 @@ namespace Letta
                 baseTemplateId: ref baseTemplateId,
                 identityId: ref identityId,
                 identifierKeys: identifierKeys,
-                lastStopReason: lastStopReason,
+                lastStopReason: ref lastStopReason,
                 createdById: ref createdById);
 
 

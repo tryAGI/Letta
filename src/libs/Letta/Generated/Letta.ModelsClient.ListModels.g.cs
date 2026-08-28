@@ -42,7 +42,7 @@ namespace Letta
             global::System.Net.Http.HttpClient httpClient,
             global::System.Collections.Generic.IList<global::Letta.ProviderCategory>? providerCategory,
             ref string? providerName,
-            global::Letta.ProviderType? providerType);
+            ref global::Letta.ProviderType? providerType);
         partial void PrepareListModelsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -112,7 +112,7 @@ namespace Letta
                 httpClient: HttpClient,
                 providerCategory: providerCategory,
                 providerName: ref providerName,
-                providerType: providerType);
+                providerType: ref providerType);
 
 
             var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(

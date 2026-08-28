@@ -46,7 +46,7 @@ namespace Letta
             ref global::Letta.ListProvidersOrder? order,
             ref string? orderBy,
             ref string? name,
-            global::Letta.ProviderType? providerType);
+            ref global::Letta.ProviderType? providerType);
         partial void PrepareListProvidersRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -174,7 +174,7 @@ namespace Letta
                 order: ref order,
                 orderBy: ref orderBy,
                 name: ref name,
-                providerType: providerType);
+                providerType: ref providerType);
 
 
             var __authorizations = global::Letta.EndPointSecurityResolver.ResolveAuthorizations(

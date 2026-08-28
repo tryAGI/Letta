@@ -60,7 +60,7 @@ namespace Letta
             ref global::Letta.ListAgentsOrderBy? orderBy,
             ref bool? ascending,
             ref string? sortBy,
-            global::Letta.StopReasonType? lastStopReason,
+            ref global::Letta.StopReasonType? lastStopReason,
             ref string? createdById);
         partial void PrepareListAgentsRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -339,7 +339,7 @@ namespace Letta
                 orderBy: ref orderBy,
                 ascending: ref ascending,
                 sortBy: ref sortBy,
-                lastStopReason: lastStopReason,
+                lastStopReason: ref lastStopReason,
                 createdById: ref createdById);
 
 
