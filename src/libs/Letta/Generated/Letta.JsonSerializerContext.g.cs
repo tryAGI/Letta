@@ -71,6 +71,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>), TypeInfoPropertyName = "DictionaryStringObject_System_Collections_Generic_Dictionary_string_object")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentEnvironmentVariable))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
@@ -513,7 +514,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MaxCountPerStepToolRuleSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.AgentType?, string, object>), TypeInfoPropertyName = "AnyOfAgentTypeStringObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.FileBlock>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageRole), TypeInfoPropertyName = "MessageRole2")]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -581,6 +581,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageRole), TypeInfoPropertyName = "MessageRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item), TypeInfoPropertyName = "ContentVariant1Item2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminator))]
@@ -1025,7 +1026,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListConversationsOrder), TypeInfoPropertyName = "ListConversationsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListConversationsOrderBy), TypeInfoPropertyName = "ListConversationsOrderBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListConversationMessagesOrder), TypeInfoPropertyName = "ListConversationMessagesOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListGroupsOrder), TypeInfoPropertyName = "ListGroupsOrder2")]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1093,6 +1093,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListGroupsOrder), TypeInfoPropertyName = "ListGroupsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListGroupMessagesOrder), TypeInfoPropertyName = "ListGroupMessagesOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListIdentitiesOrder), TypeInfoPropertyName = "ListIdentitiesOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForIdentityOrder), TypeInfoPropertyName = "ListAgentsForIdentityOrder2")]
@@ -1537,7 +1538,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SandboxesTerminateSandboxResponse3))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeviceStorageGetDeviceStorageKeyResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item?), TypeInfoPropertyName = "NullableToolRulesVariant1Item2_3")]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1605,6 +1605,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item?), TypeInfoPropertyName = "NullableToolRulesVariant1Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentStateToolRulesVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableAgentStateToolRulesVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentType?), TypeInfoPropertyName = "NullableAgentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentStateModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableAgentStateModelSettingsVariant1DiscriminatorProviderType2")]
@@ -2049,7 +2050,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item>, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.MessageType>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientToolSchema>))]
     internal sealed partial class SourceGenerationContextChunk3 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -2117,6 +2117,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesListScheduledMessagesResponseScheduledMessageMessageMessageContentVariant1ItemVariant2_97cf3dee86b43fa6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientToolSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSkillSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.CreateBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item2>))]
@@ -2155,7 +2156,6 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaSchemasLettaMessageToolReturn>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<int>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Collections.Generic.List<object>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.LettaUserMessageContentUnion>, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaUserMessageContentUnion>))]
