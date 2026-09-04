@@ -2273,6 +2273,7 @@ namespace Letta
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
 
+
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
 
         /// <summary>
@@ -2294,13 +2295,8 @@ namespace Letta
             return Resolver.GetTypeInfo(type, Options);
         }
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+         static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
             options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter());
@@ -2459,8 +2455,17 @@ namespace Letta
             options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>());
             options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseScheduleVariant2>());
             options.Converters.Add(new global::Letta.JsonConverters.UnixTimestampJsonConverter());
-
             options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            AddConverters(options);
 
             return options;
         }
