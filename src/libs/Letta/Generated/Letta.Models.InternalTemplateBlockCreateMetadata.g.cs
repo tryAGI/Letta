@@ -4,8 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Metadata of the block.<br/>
-    /// Default Value: {}
+    ///
     /// </summary>
     public sealed partial class InternalTemplateBlockCreateMetadata
     {

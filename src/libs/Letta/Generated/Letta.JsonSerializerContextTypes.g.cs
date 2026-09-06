@@ -385,11 +385,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnthropicModelSettingsVerbosity2? Type88 { get; set; }
+        public global::Letta.AnthropicModelSettingsVerbosity? Type88 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnthropicModelSettingsEffort2? Type89 { get; set; }
+        public global::Letta.AnthropicModelSettingsEffort? Type89 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -629,7 +629,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ChatCompletionServiceTier2? Type149 { get; set; }
+        public global::Letta.ChatCompletionServiceTier? Type149 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1553,19 +1553,19 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LLMConfigReasoningEffort2? Type380 { get; set; }
+        public global::Letta.LLMConfigReasoningEffort? Type380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LLMConfigEffort2? Type381 { get; set; }
+        public global::Letta.LLMConfigEffort? Type381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LLMConfigCompatibilityType2? Type382 { get; set; }
+        public global::Letta.LLMConfigCompatibilityType? Type382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LLMConfigVerbosity2? Type383 { get; set; }
+        public global::Letta.LLMConfigVerbosity? Type383 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1781,7 +1781,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.MCPToolHealth2? Type437 { get; set; }
+        public global::Letta.MCPToolHealth? Type437 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1889,19 +1889,19 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelReasoningEffort2? Type464 { get; set; }
+        public global::Letta.ModelReasoningEffort? Type464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelEffort2? Type465 { get; set; }
+        public global::Letta.ModelEffort? Type465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelCompatibilityType2? Type466 { get; set; }
+        public global::Letta.ModelCompatibilityType? Type466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelVerbosity2? Type467 { get; set; }
+        public global::Letta.ModelVerbosity? Type467 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2177,11 +2177,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.StepFeedback2? Type536 { get; set; }
+        public global::Letta.StepFeedback? Type536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.StepStatus2? Type537 { get; set; }
+        public global::Letta.StepStatus? Type537 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2253,7 +2253,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolJSONSchema3? Type555 { get; set; }
+        public global::Letta.ToolJSONSchema2? Type555 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3617,7 +3617,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ListInternalRunsDurationOperator2? Type896 { get; set; }
+        public global::Letta.ListInternalRunsDurationOperator? Type896 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3665,7 +3665,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ListStepsFeedback2? Type908 { get; set; }
+        public global::Letta.ListStepsFeedback? Type908 { get; set; }
         /// <summary>
         ///
         /// </summary>

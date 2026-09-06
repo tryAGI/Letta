@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Metadata associated with the source.
+    ///
     /// </summary>
     public sealed partial class SourceUpdateMetadata
     {

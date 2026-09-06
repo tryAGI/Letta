@@ -33,7 +33,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("json_schema")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.ToolJSONSchema3 JsonSchema { get; set; }
+        public required global::Letta.ToolJSONSchema2 JsonSchema { get; set; }
 
         /// <summary>
         ///
@@ -116,7 +116,7 @@ namespace Letta
         public LettaSerializeSchemasPydanticAgentSchemaToolSchema(
             string createdAt,
             string description,
-            global::Letta.ToolJSONSchema3 jsonSchema,
+            global::Letta.ToolJSONSchema2 jsonSchema,
             string name,
             int returnCharLimit,
             string sourceType,

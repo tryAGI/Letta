@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Custom HTTP headers to include with requests
+    ///
     /// </summary>
     public sealed partial class LettaSchemasMcpServerUpdateStreamableHTTPMCPServerCustomHeaders
     {

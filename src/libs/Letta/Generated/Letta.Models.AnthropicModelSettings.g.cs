@@ -53,13 +53,13 @@ namespace Letta
         /// Soft control for how verbose model output should be, used for GPT-5 models.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verbosity")]
-        public global::Letta.AnthropicModelSettingsVerbosity2? Verbosity { get; set; }
+        public global::Letta.AnthropicModelSettingsVerbosity? Verbosity { get; set; }
 
         /// <summary>
         /// Effort level for supported Anthropic models (controls token spending). 'max' is only available on Opus 4.6. Not setting this gives similar performance to 'high'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effort")]
-        public global::Letta.AnthropicModelSettingsEffort2? Effort { get; set; }
+        public global::Letta.AnthropicModelSettingsEffort? Effort { get; set; }
 
         /// <summary>
         /// Enable strict mode for tool calling. When true, tool outputs are guaranteed to match JSON schemas.<br/>
@@ -120,8 +120,8 @@ namespace Letta
             double? temperature,
             global::Letta.AnthropicThinking? thinking,
             global::Letta.ResponseFormatVariant12? responseFormat,
-            global::Letta.AnthropicModelSettingsVerbosity2? verbosity,
-            global::Letta.AnthropicModelSettingsEffort2? effort,
+            global::Letta.AnthropicModelSettingsVerbosity? verbosity,
+            global::Letta.AnthropicModelSettingsEffort? effort,
             bool? strict)
         {
             this.MaxOutputTokens = maxOutputTokens;

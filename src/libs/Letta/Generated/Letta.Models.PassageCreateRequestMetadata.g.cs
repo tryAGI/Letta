@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Optional metadata for the passage
+    ///
     /// </summary>
     public sealed partial class PassageCreateRequestMetadata
     {

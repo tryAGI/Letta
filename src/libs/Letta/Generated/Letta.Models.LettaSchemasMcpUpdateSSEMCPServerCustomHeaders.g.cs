@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Custom authentication headers as key-value pairs
+    ///
     /// </summary>
     public sealed partial class LettaSchemasMcpUpdateSSEMCPServerCustomHeaders
     {

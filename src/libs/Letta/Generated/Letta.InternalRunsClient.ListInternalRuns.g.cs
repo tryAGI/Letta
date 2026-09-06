@@ -63,7 +63,7 @@ namespace Letta
             ref string? conversationId,
             int? durationPercentile,
             int? durationValue,
-            ref global::Letta.ListInternalRunsDurationOperator2? durationOperator,
+            ref global::Letta.ListInternalRunsDurationOperator? durationOperator,
             global::System.DateTime? startDate,
             global::System.DateTime? endDate);
         partial void PrepareListInternalRunsRequest(
@@ -90,7 +90,7 @@ namespace Letta
             string? conversationId,
             int? durationPercentile,
             int? durationValue,
-            global::Letta.ListInternalRunsDurationOperator2? durationOperator,
+            global::Letta.ListInternalRunsDurationOperator? durationOperator,
             global::System.DateTime? startDate,
             global::System.DateTime? endDate);
         partial void ProcessListInternalRunsResponse(
@@ -209,7 +209,7 @@ namespace Letta
             string? conversationId = default,
             int? durationPercentile = default,
             int? durationValue = default,
-            global::Letta.ListInternalRunsDurationOperator2? durationOperator = default,
+            global::Letta.ListInternalRunsDurationOperator? durationOperator = default,
             global::System.DateTime? startDate = default,
             global::System.DateTime? endDate = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
@@ -353,7 +353,7 @@ namespace Letta
             string? conversationId = default,
             int? durationPercentile = default,
             int? durationValue = default,
-            global::Letta.ListInternalRunsDurationOperator2? durationOperator = default,
+            global::Letta.ListInternalRunsDurationOperator? durationOperator = default,
             global::System.DateTime? startDate = default,
             global::System.DateTime? endDate = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,

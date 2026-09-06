@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Additional metadata
+    ///
     /// </summary>
     public sealed partial class ArchiveMetadata
     {

@@ -47,7 +47,7 @@ namespace Letta
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("service_tier")]
-        public global::Letta.ChatCompletionServiceTier2? ServiceTier { get; set; }
+        public global::Letta.ChatCompletionServiceTier? ServiceTier { get; set; }
 
         /// <summary>
         ///
@@ -86,7 +86,7 @@ namespace Letta
             global::System.Collections.Generic.IList<global::Letta.Choice> choices,
             int created,
             string model,
-            global::Letta.ChatCompletionServiceTier2? serviceTier,
+            global::Letta.ChatCompletionServiceTier? serviceTier,
             string? systemFingerprint,
             global::Letta.CompletionUsage? usage,
             string @object = "chat.completion")

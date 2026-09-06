@@ -103,7 +103,7 @@ namespace Letta
         /// The reasoning effort to use when generating text reasoning models
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reasoning_effort")]
-        public global::Letta.LLMConfigReasoningEffort2? ReasoningEffort { get; set; }
+        public global::Letta.LLMConfigReasoningEffort? ReasoningEffort { get; set; }
 
         /// <summary>
         /// Configurable thinking budget for extended thinking. Used for enable_reasoner and also for Google Vertex models like Gemini 2.5 Flash. Minimum value is 1024 when used with enable_reasoner.<br/>
@@ -116,7 +116,7 @@ namespace Letta
         /// The effort level for Anthropic models that support it (Opus 4.5, Opus 4.6). Controls token spending and thinking behavior. Not setting this gives similar performance to 'high'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effort")]
-        public global::Letta.LLMConfigEffort2? Effort { get; set; }
+        public global::Letta.LLMConfigEffort? Effort { get; set; }
 
         /// <summary>
         /// Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim. From OpenAI: Number between -2.0 and 2.0.
@@ -128,13 +128,13 @@ namespace Letta
         /// The framework compatibility type for the model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("compatibility_type")]
-        public global::Letta.LLMConfigCompatibilityType2? CompatibilityType { get; set; }
+        public global::Letta.LLMConfigCompatibilityType? CompatibilityType { get; set; }
 
         /// <summary>
         /// Soft control for how verbose model output should be, used for GPT-5 models.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verbosity")]
-        public global::Letta.LLMConfigVerbosity2? Verbosity { get; set; }
+        public global::Letta.LLMConfigVerbosity? Verbosity { get; set; }
 
         /// <summary>
         /// The cost tier for the model (cloud only).
@@ -300,12 +300,12 @@ namespace Letta
             double? temperature,
             int? maxTokens,
             bool? enableReasoner,
-            global::Letta.LLMConfigReasoningEffort2? reasoningEffort,
+            global::Letta.LLMConfigReasoningEffort? reasoningEffort,
             int? maxReasoningTokens,
-            global::Letta.LLMConfigEffort2? effort,
+            global::Letta.LLMConfigEffort? effort,
             double? frequencyPenalty,
-            global::Letta.LLMConfigCompatibilityType2? compatibilityType,
-            global::Letta.LLMConfigVerbosity2? verbosity,
+            global::Letta.LLMConfigCompatibilityType? compatibilityType,
+            global::Letta.LLMConfigVerbosity? verbosity,
             string? tier,
             global::Letta.ResponseFormatVariant19? responseFormat,
             bool? strict,

@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The function return object
+    ///
     /// </summary>
     public sealed partial class ToolExecutionResultFuncReturn
     {

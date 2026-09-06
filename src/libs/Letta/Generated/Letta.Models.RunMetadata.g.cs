@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Additional metadata for the run.
+    ///
     /// </summary>
     public sealed partial class RunMetadata
     {

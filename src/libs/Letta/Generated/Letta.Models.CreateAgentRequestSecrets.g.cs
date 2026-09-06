@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The environment variables for tool execution specific to this agent.
+    ///
     /// </summary>
     public sealed partial class CreateAgentRequestSecrets
     {

@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Environment variables to set
+    ///
     /// </summary>
     public sealed partial class LettaSchemasMcpServerUpdateStdioMCPServerEnv
     {

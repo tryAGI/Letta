@@ -168,7 +168,7 @@ namespace Letta
         /// The feedback for this step. Must be either 'positive' or 'negative'.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("feedback")]
-        public global::Letta.StepFeedback2? Feedback { get; set; }
+        public global::Letta.StepFeedback? Feedback { get; set; }
 
         /// <summary>
         /// The project that the agent that executed this step belongs to (cloud only).
@@ -193,7 +193,7 @@ namespace Letta
         /// Default Value: pending
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        public global::Letta.StepStatus2? Status { get; set; }
+        public global::Letta.StepStatus? Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -321,11 +321,11 @@ namespace Letta
             string? tid,
             string? traceId,
             string? requestId,
-            global::Letta.StepFeedback2? feedback,
+            global::Letta.StepFeedback? feedback,
             string? projectId,
             string? errorType,
             object? errorData,
-            global::Letta.StepStatus2? status)
+            global::Letta.StepStatus? status)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Origin = origin;

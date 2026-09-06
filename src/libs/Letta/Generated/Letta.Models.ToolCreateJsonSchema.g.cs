@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The JSON schema of the function (auto-generated from source_code if not provided)
+    ///
     /// </summary>
     public sealed partial class ToolCreateJsonSchema
     {

@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The metadata of the job.
+    ///
     /// </summary>
     public sealed partial class BatchJobMetadata
     {

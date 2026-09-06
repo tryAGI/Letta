@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Skill files as path -&gt; content mapping. Must include 'SKILL.md' key if provided.
+    ///
     /// </summary>
     public sealed partial class SkillSchemaFiles
     {

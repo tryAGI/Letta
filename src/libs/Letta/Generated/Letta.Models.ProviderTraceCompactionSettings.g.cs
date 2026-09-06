@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Compaction/summarization settings (summarization calls only)
+    ///
     /// </summary>
     public sealed partial class ProviderTraceCompactionSettings
     {
