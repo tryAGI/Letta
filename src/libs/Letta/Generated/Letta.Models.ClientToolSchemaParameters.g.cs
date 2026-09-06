@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// JSON Schema for the function parameters
+    ///
     /// </summary>
     public sealed partial class ClientToolSchemaParameters
     {

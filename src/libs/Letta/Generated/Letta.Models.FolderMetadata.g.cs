@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Metadata associated with the folder.
+    ///
     /// </summary>
     public sealed partial class FolderMetadata
     {

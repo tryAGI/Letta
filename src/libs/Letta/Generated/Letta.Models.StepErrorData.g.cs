@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Error details including message, traceback, and additional context
+    ///
     /// </summary>
     public sealed partial class StepErrorData
     {

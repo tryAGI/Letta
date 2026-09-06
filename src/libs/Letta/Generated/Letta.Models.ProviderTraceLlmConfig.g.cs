@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// LLM configuration used for this call (non-summarization calls only)
+    ///
     /// </summary>
     public sealed partial class ProviderTraceLlmConfig
     {

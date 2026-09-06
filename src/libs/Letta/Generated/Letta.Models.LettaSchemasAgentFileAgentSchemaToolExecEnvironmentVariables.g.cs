@@ -4,9 +4,8 @@
 namespace Letta
 {
     /// <summary>
-    /// Deprecated: Use `secrets` field instead. Environment variables for tool execution.
+    ///
     /// </summary>
-    [global::System.Obsolete("This model marked as deprecated.")]
     public sealed partial class LettaSchemasAgentFileAgentSchemaToolExecEnvironmentVariables
     {
 

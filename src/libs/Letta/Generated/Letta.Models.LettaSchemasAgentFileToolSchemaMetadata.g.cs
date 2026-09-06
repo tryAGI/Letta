@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// A dictionary of additional metadata for the tool.
+    ///
     /// </summary>
     public sealed partial class LettaSchemasAgentFileToolSchemaMetadata
     {

@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The args JSON schema of the function.
+    ///
     /// </summary>
     public sealed partial class ToolArgsJsonSchema
     {

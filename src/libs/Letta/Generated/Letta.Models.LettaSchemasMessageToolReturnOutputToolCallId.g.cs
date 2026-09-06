@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The ID for the tool call
+    ///
     /// </summary>
     public sealed partial class LettaSchemasMessageToolReturnOutputToolCallId
     {

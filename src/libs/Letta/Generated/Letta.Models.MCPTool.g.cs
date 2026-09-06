@@ -56,7 +56,7 @@ namespace Letta
         /// Schema health status for OpenAI strict mode
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("health")]
-        public global::Letta.MCPToolHealth2? Health { get; set; }
+        public global::Letta.MCPToolHealth? Health { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -88,7 +88,7 @@ namespace Letta
             object? outputSchema,
             global::Letta.ToolAnnotations? annotations,
             object? meta,
-            global::Letta.MCPToolHealth2? health)
+            global::Letta.MCPToolHealth? health)
         {
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Title = title;

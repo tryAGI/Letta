@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// The metadata of the agent.
+    ///
     /// </summary>
     public sealed partial class CreateAgentRequestMetadata
     {

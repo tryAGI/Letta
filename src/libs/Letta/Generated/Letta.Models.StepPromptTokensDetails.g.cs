@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Detailed prompt token breakdown (e.g., cached_tokens, cache_read_tokens, cache_creation_tokens).
+    ///
     /// </summary>
     public sealed partial class StepPromptTokensDetails
     {

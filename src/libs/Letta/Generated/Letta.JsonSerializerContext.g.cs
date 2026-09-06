@@ -160,8 +160,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "AnthropicModelSettingsResponseFormatVariant1DiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsVerbosity2), TypeInfoPropertyName = "AnthropicModelSettingsVerbosity22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsEffort2), TypeInfoPropertyName = "AnthropicModelSettingsEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsVerbosity), TypeInfoPropertyName = "AnthropicModelSettingsVerbosity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsEffort), TypeInfoPropertyName = "AnthropicModelSettingsEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicThinkingType), TypeInfoPropertyName = "AnthropicThinkingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ApprovalsVariant1Item>))]
@@ -221,7 +221,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Choice>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Choice))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionServiceTier2), TypeInfoPropertyName = "ChatCompletionServiceTier22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionServiceTier), TypeInfoPropertyName = "ChatCompletionServiceTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompletionUsage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionAssistantMessageParam))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>), TypeInfoPropertyName = "AnyOfStringIListAnyOfChatCompletionContentPartTextParamChatCompletionContentPartRefusalParamObject2")]
@@ -453,10 +453,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Job))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigModelEndpointType), TypeInfoPropertyName = "LLMConfigModelEndpointType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProviderCategory), TypeInfoPropertyName = "ProviderCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigReasoningEffort2), TypeInfoPropertyName = "LLMConfigReasoningEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigEffort2), TypeInfoPropertyName = "LLMConfigEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigCompatibilityType2), TypeInfoPropertyName = "LLMConfigCompatibilityType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigVerbosity2), TypeInfoPropertyName = "LLMConfigVerbosity22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigReasoningEffort), TypeInfoPropertyName = "LLMConfigReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigEffort), TypeInfoPropertyName = "LLMConfigEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigCompatibilityType), TypeInfoPropertyName = "LLMConfigCompatibilityType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigVerbosity), TypeInfoPropertyName = "LLMConfigVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant19))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "LLMConfigResponseFormatVariant1DiscriminatorType2")]
@@ -510,7 +510,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MCPServerType), TypeInfoPropertyName = "MCPServerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MCPTool))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolAnnotations))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MCPToolHealth2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MCPToolHealth))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MaxCountPerStepToolRuleSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.AgentType?, string, object>), TypeInfoPropertyName = "AnyOfAgentTypeStringObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.FileBlock>))]
@@ -604,10 +604,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModalSandboxConfigLanguage), TypeInfoPropertyName = "ModalSandboxConfigLanguage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Model))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelModelEndpointType), TypeInfoPropertyName = "ModelModelEndpointType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort2), TypeInfoPropertyName = "ModelReasoningEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort2), TypeInfoPropertyName = "ModelEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType2), TypeInfoPropertyName = "ModelCompatibilityType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity2), TypeInfoPropertyName = "ModelVerbosity22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort), TypeInfoPropertyName = "ModelReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort), TypeInfoPropertyName = "ModelEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType), TypeInfoPropertyName = "ModelCompatibilityType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity), TypeInfoPropertyName = "ModelVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant110))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "ModelResponseFormatVariant1DiscriminatorType2")]
@@ -676,8 +676,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StdioMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StdioServerConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Step))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepFeedback2), TypeInfoPropertyName = "StepFeedback22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepStatus2), TypeInfoPropertyName = "StepStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepFeedback), TypeInfoPropertyName = "StepFeedback2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepStatus), TypeInfoPropertyName = "StepStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepMetrics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StreamableHTTPMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StreamableHTTPServerConfig))]
@@ -695,7 +695,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolEnvVarSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResultStatus), TypeInfoPropertyName = "ToolExecutionResultStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolJSONSchema3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolJSONSchema2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaSchemasLettaMessageToolReturn>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolReturnMessageStatus), TypeInfoPropertyName = "ToolReturnMessageStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRunFromSource))]
@@ -1104,7 +1104,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForInternalBlockOrder), TypeInfoPropertyName = "ListAgentsForInternalBlockOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrder), TypeInfoPropertyName = "ListInternalRunsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrderBy), TypeInfoPropertyName = "ListInternalRunsOrderBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsDurationOperator2), TypeInfoPropertyName = "ListInternalRunsDurationOperator22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsDurationOperator), TypeInfoPropertyName = "ListInternalRunsDurationOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ProviderCategory>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListBlocksOrder), TypeInfoPropertyName = "ListBlocksOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForBlockOrder), TypeInfoPropertyName = "ListAgentsForBlockOrder2")]
@@ -1116,7 +1116,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListMessagesForRunOrder), TypeInfoPropertyName = "ListMessagesForRunOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsForRunOrder), TypeInfoPropertyName = "ListStepsForRunOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsOrder), TypeInfoPropertyName = "ListStepsOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsFeedback2), TypeInfoPropertyName = "ListStepsFeedback22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsFeedback), TypeInfoPropertyName = "ListStepsFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListMessagesForStepOrder), TypeInfoPropertyName = "ListMessagesForStepOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListTagsOrder), TypeInfoPropertyName = "ListTagsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAllMessagesOrder), TypeInfoPropertyName = "ListAllMessagesOrder2")]
@@ -1613,8 +1613,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StopReasonType?), TypeInfoPropertyName = "NullableStopReasonType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableAnthropicModelSettingsResponseFormatVariant1DiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsVerbosity2?), TypeInfoPropertyName = "NullableAnthropicModelSettingsVerbosity22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsEffort2?), TypeInfoPropertyName = "NullableAnthropicModelSettingsEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsVerbosity?), TypeInfoPropertyName = "NullableAnthropicModelSettingsVerbosity2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsEffort?), TypeInfoPropertyName = "NullableAnthropicModelSettingsEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicThinkingType?), TypeInfoPropertyName = "NullableAnthropicThinkingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item?), TypeInfoPropertyName = "NullableApprovalsVariant1Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableApprovalCreateApprovalsVariant1ItemDiscriminatorType2")]
@@ -1630,7 +1630,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobStatus?), TypeInfoPropertyName = "NullableJobStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobType?), TypeInfoPropertyName = "NullableJobType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.BedrockModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableBedrockModelSettingsResponseFormatVariant1DiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionServiceTier2?), TypeInfoPropertyName = "NullableChatCompletionServiceTier22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ChatCompletionServiceTier?), TypeInfoPropertyName = "NullableChatCompletionServiceTier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>, object>?), TypeInfoPropertyName = "NullableAnyOfStringIListAnyOfChatCompletionContentPartTextParamChatCompletionContentPartRefusalParamObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>?), TypeInfoPropertyName = "NullableAnyOfChatCompletionContentPartTextParamChatCompletionContentPartRefusalParam2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionMessageFunctionToolCallParam, global::Letta.ChatCompletionMessageCustomToolCallParam>?), TypeInfoPropertyName = "NullableAnyOfChatCompletionMessageFunctionToolCallParamChatCompletionMessageCustomToolCallParam2")]
@@ -1689,10 +1689,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateGroupCreateManagerConfigDiscriminatorManagerType?), TypeInfoPropertyName = "NullableInternalTemplateGroupCreateManagerConfigDiscriminatorManagerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigModelEndpointType?), TypeInfoPropertyName = "NullableLLMConfigModelEndpointType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProviderCategory?), TypeInfoPropertyName = "NullableProviderCategory2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigReasoningEffort2?), TypeInfoPropertyName = "NullableLLMConfigReasoningEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigEffort2?), TypeInfoPropertyName = "NullableLLMConfigEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigCompatibilityType2?), TypeInfoPropertyName = "NullableLLMConfigCompatibilityType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigVerbosity2?), TypeInfoPropertyName = "NullableLLMConfigVerbosity22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigReasoningEffort?), TypeInfoPropertyName = "NullableLLMConfigReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigEffort?), TypeInfoPropertyName = "NullableLLMConfigEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigCompatibilityType?), TypeInfoPropertyName = "NullableLLMConfigCompatibilityType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigVerbosity?), TypeInfoPropertyName = "NullableLLMConfigVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableLLMConfigResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>, object>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item2Object2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item2?), TypeInfoPropertyName = "NullableInputVariant2Item22")]
@@ -1721,10 +1721,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageSearchRequestSearchMode?), TypeInfoPropertyName = "NullableMessageSearchRequestSearchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModalSandboxConfigLanguage?), TypeInfoPropertyName = "NullableModalSandboxConfigLanguage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelModelEndpointType?), TypeInfoPropertyName = "NullableModelModelEndpointType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort2?), TypeInfoPropertyName = "NullableModelReasoningEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort2?), TypeInfoPropertyName = "NullableModelEffort22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType2?), TypeInfoPropertyName = "NullableModelCompatibilityType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity2?), TypeInfoPropertyName = "NullableModelVerbosity22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort?), TypeInfoPropertyName = "NullableModelReasoningEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort?), TypeInfoPropertyName = "NullableModelEffort2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType?), TypeInfoPropertyName = "NullableModelCompatibilityType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity?), TypeInfoPropertyName = "NullableModelVerbosity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableModelResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableOpenAIModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIReasoningReasoningEffort?), TypeInfoPropertyName = "NullableOpenAIReasoningReasoningEffort2")]
@@ -1736,8 +1736,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SandboxType?), TypeInfoPropertyName = "NullableSandboxType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>?), TypeInfoPropertyName = "NullableAnyOfLocalSandboxConfigE2BSandboxConfigModalSandboxConfig2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SearchAllMessagesRequestSearchMode?), TypeInfoPropertyName = "NullableSearchAllMessagesRequestSearchMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepFeedback2?), TypeInfoPropertyName = "NullableStepFeedback22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepStatus2?), TypeInfoPropertyName = "NullableStepStatus22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepFeedback?), TypeInfoPropertyName = "NullableStepFeedback2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StepStatus?), TypeInfoPropertyName = "NullableStepStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TogetherModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableTogetherModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolType?), TypeInfoPropertyName = "NullableToolType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResultStatus?), TypeInfoPropertyName = "NullableToolExecutionResultStatus2")]
@@ -1885,7 +1885,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForInternalBlockOrder?), TypeInfoPropertyName = "NullableListAgentsForInternalBlockOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrder?), TypeInfoPropertyName = "NullableListInternalRunsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsOrderBy?), TypeInfoPropertyName = "NullableListInternalRunsOrderBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsDurationOperator2?), TypeInfoPropertyName = "NullableListInternalRunsDurationOperator22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListInternalRunsDurationOperator?), TypeInfoPropertyName = "NullableListInternalRunsDurationOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListBlocksOrder?), TypeInfoPropertyName = "NullableListBlocksOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForBlockOrder?), TypeInfoPropertyName = "NullableListAgentsForBlockOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAgentsForBlockIncludeItem?), TypeInfoPropertyName = "NullableListAgentsForBlockIncludeItem2")]
@@ -1895,7 +1895,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListMessagesForRunOrder?), TypeInfoPropertyName = "NullableListMessagesForRunOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsForRunOrder?), TypeInfoPropertyName = "NullableListStepsForRunOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsOrder?), TypeInfoPropertyName = "NullableListStepsOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsFeedback2?), TypeInfoPropertyName = "NullableListStepsFeedback22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListStepsFeedback?), TypeInfoPropertyName = "NullableListStepsFeedback2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListMessagesForStepOrder?), TypeInfoPropertyName = "NullableListMessagesForStepOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListTagsOrder?), TypeInfoPropertyName = "NullableListTagsOrder2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListAllMessagesOrder?), TypeInfoPropertyName = "NullableListAllMessagesOrder2")]
@@ -2496,13 +2496,13 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1DiscriminatorType?)
 
-                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity2)
+                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity)
 
-                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity2?)
+                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity?)
 
-                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort2)
+                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort)
 
-                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort2?)
+                    || typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort?)
 
                     || typeToConvert == typeof(global::Letta.AnthropicThinkingType)
 
@@ -2524,9 +2524,9 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.BedrockModelSettingsResponseFormatVariant1DiscriminatorType?)
 
-                    || typeToConvert == typeof(global::Letta.ChatCompletionServiceTier2)
+                    || typeToConvert == typeof(global::Letta.ChatCompletionServiceTier)
 
-                    || typeToConvert == typeof(global::Letta.ChatCompletionServiceTier2?)
+                    || typeToConvert == typeof(global::Letta.ChatCompletionServiceTier?)
 
                     || typeToConvert == typeof(global::Letta.ChatGPTOAuthReasoningReasoningEffort)
 
@@ -2684,21 +2684,21 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.LLMConfigModelEndpointType?)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort2)
+                    || typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort2?)
+                    || typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort?)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigEffort2)
+                    || typeToConvert == typeof(global::Letta.LLMConfigEffort)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigEffort2?)
+                    || typeToConvert == typeof(global::Letta.LLMConfigEffort?)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType2)
+                    || typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType2?)
+                    || typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType?)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigVerbosity2)
+                    || typeToConvert == typeof(global::Letta.LLMConfigVerbosity)
 
-                    || typeToConvert == typeof(global::Letta.LLMConfigVerbosity2?)
+                    || typeToConvert == typeof(global::Letta.LLMConfigVerbosity?)
 
                     || typeToConvert == typeof(global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType)
 
@@ -2760,21 +2760,21 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.ModelModelEndpointType?)
 
-                    || typeToConvert == typeof(global::Letta.ModelReasoningEffort2)
+                    || typeToConvert == typeof(global::Letta.ModelReasoningEffort)
 
-                    || typeToConvert == typeof(global::Letta.ModelReasoningEffort2?)
+                    || typeToConvert == typeof(global::Letta.ModelReasoningEffort?)
 
-                    || typeToConvert == typeof(global::Letta.ModelEffort2)
+                    || typeToConvert == typeof(global::Letta.ModelEffort)
 
-                    || typeToConvert == typeof(global::Letta.ModelEffort2?)
+                    || typeToConvert == typeof(global::Letta.ModelEffort?)
 
-                    || typeToConvert == typeof(global::Letta.ModelCompatibilityType2)
+                    || typeToConvert == typeof(global::Letta.ModelCompatibilityType)
 
-                    || typeToConvert == typeof(global::Letta.ModelCompatibilityType2?)
+                    || typeToConvert == typeof(global::Letta.ModelCompatibilityType?)
 
-                    || typeToConvert == typeof(global::Letta.ModelVerbosity2)
+                    || typeToConvert == typeof(global::Letta.ModelVerbosity)
 
-                    || typeToConvert == typeof(global::Letta.ModelVerbosity2?)
+                    || typeToConvert == typeof(global::Letta.ModelVerbosity?)
 
                     || typeToConvert == typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType)
 
@@ -2824,13 +2824,13 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.SearchAllMessagesRequestSearchMode?)
 
-                    || typeToConvert == typeof(global::Letta.StepFeedback2)
+                    || typeToConvert == typeof(global::Letta.StepFeedback)
 
-                    || typeToConvert == typeof(global::Letta.StepFeedback2?)
+                    || typeToConvert == typeof(global::Letta.StepFeedback?)
 
-                    || typeToConvert == typeof(global::Letta.StepStatus2)
+                    || typeToConvert == typeof(global::Letta.StepStatus)
 
-                    || typeToConvert == typeof(global::Letta.StepStatus2?)
+                    || typeToConvert == typeof(global::Letta.StepStatus?)
 
                     || typeToConvert == typeof(global::Letta.StopReasonType)
 
@@ -3320,9 +3320,9 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.ListInternalRunsOrderBy?)
 
-                    || typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator2)
+                    || typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator)
 
-                    || typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator2?)
+                    || typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator?)
 
                     || typeToConvert == typeof(global::Letta.ListBlocksOrder)
 
@@ -3360,9 +3360,9 @@ namespace Letta
 
                     || typeToConvert == typeof(global::Letta.ListStepsOrder?)
 
-                    || typeToConvert == typeof(global::Letta.ListStepsFeedback2)
+                    || typeToConvert == typeof(global::Letta.ListStepsFeedback)
 
-                    || typeToConvert == typeof(global::Letta.ListStepsFeedback2?)
+                    || typeToConvert == typeof(global::Letta.ListStepsFeedback?)
 
                     || typeToConvert == typeof(global::Letta.ListMessagesForStepOrder)
 
@@ -3831,24 +3831,24 @@ namespace Letta
                     return new global::Letta.JsonConverters.AnthropicModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity2))
+                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity))
                 {
-                    return new global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2JsonConverter();
+                    return new global::Letta.JsonConverters.AnthropicModelSettingsVerbosityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity2?))
+                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsVerbosity?))
                 {
-                    return new global::Letta.JsonConverters.AnthropicModelSettingsVerbosity2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.AnthropicModelSettingsVerbosityNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort2))
+                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort))
                 {
-                    return new global::Letta.JsonConverters.AnthropicModelSettingsEffort2JsonConverter();
+                    return new global::Letta.JsonConverters.AnthropicModelSettingsEffortJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort2?))
+                if (typeToConvert == typeof(global::Letta.AnthropicModelSettingsEffort?))
                 {
-                    return new global::Letta.JsonConverters.AnthropicModelSettingsEffort2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.AnthropicModelSettingsEffortNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.AnthropicThinkingType))
@@ -3901,14 +3901,14 @@ namespace Letta
                     return new global::Letta.JsonConverters.BedrockModelSettingsResponseFormatVariant1DiscriminatorTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ChatCompletionServiceTier2))
+                if (typeToConvert == typeof(global::Letta.ChatCompletionServiceTier))
                 {
-                    return new global::Letta.JsonConverters.ChatCompletionServiceTier2JsonConverter();
+                    return new global::Letta.JsonConverters.ChatCompletionServiceTierJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ChatCompletionServiceTier2?))
+                if (typeToConvert == typeof(global::Letta.ChatCompletionServiceTier?))
                 {
-                    return new global::Letta.JsonConverters.ChatCompletionServiceTier2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ChatCompletionServiceTierNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.ChatGPTOAuthReasoningReasoningEffort))
@@ -4301,44 +4301,44 @@ namespace Letta
                     return new global::Letta.JsonConverters.LLMConfigModelEndpointTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort2))
+                if (typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigReasoningEffort2JsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigReasoningEffortJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort2?))
+                if (typeToConvert == typeof(global::Letta.LLMConfigReasoningEffort?))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigReasoningEffort2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigReasoningEffortNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigEffort2))
+                if (typeToConvert == typeof(global::Letta.LLMConfigEffort))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigEffort2JsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigEffortJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigEffort2?))
+                if (typeToConvert == typeof(global::Letta.LLMConfigEffort?))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigEffort2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigEffortNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType2))
+                if (typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigCompatibilityType2JsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigCompatibilityTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType2?))
+                if (typeToConvert == typeof(global::Letta.LLMConfigCompatibilityType?))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigCompatibilityType2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigCompatibilityTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigVerbosity2))
+                if (typeToConvert == typeof(global::Letta.LLMConfigVerbosity))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigVerbosity2JsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigVerbosityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.LLMConfigVerbosity2?))
+                if (typeToConvert == typeof(global::Letta.LLMConfigVerbosity?))
                 {
-                    return new global::Letta.JsonConverters.LLMConfigVerbosity2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.LLMConfigVerbosityNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType))
@@ -4491,44 +4491,44 @@ namespace Letta
                     return new global::Letta.JsonConverters.ModelModelEndpointTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelReasoningEffort2))
+                if (typeToConvert == typeof(global::Letta.ModelReasoningEffort))
                 {
-                    return new global::Letta.JsonConverters.ModelReasoningEffort2JsonConverter();
+                    return new global::Letta.JsonConverters.ModelReasoningEffortJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelReasoningEffort2?))
+                if (typeToConvert == typeof(global::Letta.ModelReasoningEffort?))
                 {
-                    return new global::Letta.JsonConverters.ModelReasoningEffort2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ModelReasoningEffortNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelEffort2))
+                if (typeToConvert == typeof(global::Letta.ModelEffort))
                 {
-                    return new global::Letta.JsonConverters.ModelEffort2JsonConverter();
+                    return new global::Letta.JsonConverters.ModelEffortJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelEffort2?))
+                if (typeToConvert == typeof(global::Letta.ModelEffort?))
                 {
-                    return new global::Letta.JsonConverters.ModelEffort2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ModelEffortNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelCompatibilityType2))
+                if (typeToConvert == typeof(global::Letta.ModelCompatibilityType))
                 {
-                    return new global::Letta.JsonConverters.ModelCompatibilityType2JsonConverter();
+                    return new global::Letta.JsonConverters.ModelCompatibilityTypeJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelCompatibilityType2?))
+                if (typeToConvert == typeof(global::Letta.ModelCompatibilityType?))
                 {
-                    return new global::Letta.JsonConverters.ModelCompatibilityType2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ModelCompatibilityTypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelVerbosity2))
+                if (typeToConvert == typeof(global::Letta.ModelVerbosity))
                 {
-                    return new global::Letta.JsonConverters.ModelVerbosity2JsonConverter();
+                    return new global::Letta.JsonConverters.ModelVerbosityJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ModelVerbosity2?))
+                if (typeToConvert == typeof(global::Letta.ModelVerbosity?))
                 {
-                    return new global::Letta.JsonConverters.ModelVerbosity2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ModelVerbosityNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType))
@@ -4651,24 +4651,24 @@ namespace Letta
                     return new global::Letta.JsonConverters.SearchAllMessagesRequestSearchModeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.StepFeedback2))
+                if (typeToConvert == typeof(global::Letta.StepFeedback))
                 {
-                    return new global::Letta.JsonConverters.StepFeedback2JsonConverter();
+                    return new global::Letta.JsonConverters.StepFeedbackJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.StepFeedback2?))
+                if (typeToConvert == typeof(global::Letta.StepFeedback?))
                 {
-                    return new global::Letta.JsonConverters.StepFeedback2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.StepFeedbackNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.StepStatus2))
+                if (typeToConvert == typeof(global::Letta.StepStatus))
                 {
-                    return new global::Letta.JsonConverters.StepStatus2JsonConverter();
+                    return new global::Letta.JsonConverters.StepStatusJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.StepStatus2?))
+                if (typeToConvert == typeof(global::Letta.StepStatus?))
                 {
-                    return new global::Letta.JsonConverters.StepStatus2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.StepStatusNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.StopReasonType))
@@ -5891,14 +5891,14 @@ namespace Letta
                     return new global::Letta.JsonConverters.ListInternalRunsOrderByNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator2))
+                if (typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator))
                 {
-                    return new global::Letta.JsonConverters.ListInternalRunsDurationOperator2JsonConverter();
+                    return new global::Letta.JsonConverters.ListInternalRunsDurationOperatorJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator2?))
+                if (typeToConvert == typeof(global::Letta.ListInternalRunsDurationOperator?))
                 {
-                    return new global::Letta.JsonConverters.ListInternalRunsDurationOperator2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ListInternalRunsDurationOperatorNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.ListBlocksOrder))
@@ -5991,14 +5991,14 @@ namespace Letta
                     return new global::Letta.JsonConverters.ListStepsOrderNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ListStepsFeedback2))
+                if (typeToConvert == typeof(global::Letta.ListStepsFeedback))
                 {
-                    return new global::Letta.JsonConverters.ListStepsFeedback2JsonConverter();
+                    return new global::Letta.JsonConverters.ListStepsFeedbackJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Letta.ListStepsFeedback2?))
+                if (typeToConvert == typeof(global::Letta.ListStepsFeedback?))
                 {
-                    return new global::Letta.JsonConverters.ListStepsFeedback2NullableJsonConverter();
+                    return new global::Letta.JsonConverters.ListStepsFeedbackNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Letta.ListMessagesForStepOrder))

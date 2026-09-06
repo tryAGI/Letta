@@ -4,7 +4,7 @@
 namespace Letta
 {
     /// <summary>
-    /// Deprecated: use `secrets` field instead
+    ///
     /// </summary>
     public sealed partial class UpdateAgentToolExecEnvironmentVariables
     {
