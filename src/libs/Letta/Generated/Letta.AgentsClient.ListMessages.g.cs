@@ -296,7 +296,7 @@ namespace Letta
                                 .AddOptionalParameter("assistant_message_tool_name", assistantMessageToolName)
                                 .AddOptionalParameter("assistant_message_tool_kwarg", assistantMessageToolKwarg)
                                 .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString())
+                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
