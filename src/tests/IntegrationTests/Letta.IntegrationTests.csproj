@@ -11,7 +11,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="AwesomeAssertions" Version="9.6.0" />
-    <PackageReference Include="Testcontainers" Version="4.14.0" />
   </ItemGroup>
 
   <ItemGroup Label="GlobalUsings">
