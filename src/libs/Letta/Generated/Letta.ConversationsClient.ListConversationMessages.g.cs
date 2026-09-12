@@ -259,7 +259,7 @@ namespace Letta
                                 .AddOptionalParameter("order_by", orderBy)
                                 .AddOptionalParameter("group_id", groupId)
                                 .AddOptionalParameter("include_err", includeErr?.ToString().ToLowerInvariant())
-                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString())
+                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(

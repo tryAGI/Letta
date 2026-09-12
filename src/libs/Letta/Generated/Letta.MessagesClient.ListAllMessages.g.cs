@@ -196,7 +196,7 @@ namespace Letta
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("order", order?.ToValueString())
                                 .AddOptionalParameter("conversation_id", conversationId)
-                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes?.ToString())
+                                .AddOptionalParameter("include_return_message_types", includeReturnMessageTypes, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(

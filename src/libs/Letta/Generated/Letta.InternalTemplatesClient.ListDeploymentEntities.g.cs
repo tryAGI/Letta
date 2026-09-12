@@ -137,7 +137,7 @@ namespace Letta
                                 servers: s_ListDeploymentEntitiesServers,
                                 defaultBaseUrl: "https://app.letta.com/"));
                             __pathBuilder
-                                .AddOptionalParameter("entity_types", entityTypes?.ToString())
+                                .AddOptionalParameter("entity_types", entityTypes, delimiter: ",", explode: true)
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(

@@ -211,7 +211,7 @@ namespace Letta
                                 .AddOptionalParameter("order", order?.ToValueString())
                                 .AddOptionalParameter("order_by", orderBy)
                                 .AddOptionalParameter("name", name)
-                                .AddOptionalParameter("provider_type", providerType?.ToString())
+                                .AddOptionalParameter("provider_type", providerType?.ToValueString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Letta.AutoSDKRequestOptionsSupport.AppendQueryParameters(
