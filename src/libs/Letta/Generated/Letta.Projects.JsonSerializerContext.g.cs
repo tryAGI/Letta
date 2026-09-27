@@ -5,45 +5,15 @@
 #pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
 
 namespace Letta
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProjectsCreateProjectRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<string, double?>), TypeInfoPropertyName = "OneOfStringDouble2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProjectsListProjectsResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ProjectsListProjectsResponseProject>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProjectsListProjectsResponseProject))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProjectsCreateProjectResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProjectsDeleteProjectResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<string, double?>?), TypeInfoPropertyName = "NullableOneOfStringDouble2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ProjectsListProjectsResponseProject>))]
-    internal sealed partial class ProjectsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class ProjectsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
 
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
@@ -79,16 +49,7 @@ namespace Letta
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.UnixTimestampJsonConverter());
+            global::Letta.SourceGenerationContext.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -142,7 +103,7 @@ namespace Letta
             {
                 return index switch
                 {
-                    0 => new ProjectsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::Letta.SourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
