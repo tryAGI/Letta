@@ -5,58 +5,15 @@
 #pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
 
 namespace Letta
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType), TypeInfoPropertyName = "EmbeddingConfigEmbeddingEndpointType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.HTTPValidationError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ValidationError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Passage))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PassageSearchRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PassageSearchRequestTagMatchMode), TypeInfoPropertyName = "PassageSearchRequestTagMatchMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PassageSearchResult))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<string, int?>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?>), TypeInfoPropertyName = "AnyOfStringInt322")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.PassageSearchResult>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType?), TypeInfoPropertyName = "NullableEmbeddingConfigEmbeddingEndpointType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PassageSearchRequestTagMatchMode?), TypeInfoPropertyName = "NullablePassageSearchRequestTagMatchMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?>?), TypeInfoPropertyName = "NullableAnyOfStringInt322")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<double>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<string, int?>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.PassageSearchResult>))]
-    internal sealed partial class PassagesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class PassagesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
 
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
@@ -92,17 +49,7 @@ namespace Letta
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.UnixTimestampJsonConverter());
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::Letta.SourceGenerationContext.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -115,48 +62,6 @@ namespace Letta
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType)
-
-                    || typeToConvert == typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType?)
-
-                    || typeToConvert == typeof(global::Letta.PassageSearchRequestTagMatchMode)
-
-                    || typeToConvert == typeof(global::Letta.PassageSearchRequestTagMatchMode?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType))
-                {
-                    return new global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType?))
-                {
-                    return new global::Letta.JsonConverters.EmbeddingConfigEmbeddingEndpointTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.PassageSearchRequestTagMatchMode))
-                {
-                    return new global::Letta.JsonConverters.PassageSearchRequestTagMatchModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.PassageSearchRequestTagMatchMode?))
-                {
-                    return new global::Letta.JsonConverters.PassageSearchRequestTagMatchModeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -198,7 +103,7 @@ namespace Letta
             {
                 return index switch
                 {
-                    0 => new PassagesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::Letta.SourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

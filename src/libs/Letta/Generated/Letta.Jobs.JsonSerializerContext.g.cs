@@ -5,54 +5,15 @@
 #pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
 
 namespace Letta
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StopReasonType), TypeInfoPropertyName = "StopReasonType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobStatus), TypeInfoPropertyName = "JobStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobType), TypeInfoPropertyName = "JobType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.HTTPValidationError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ValidationError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Job))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<string, int?>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?>), TypeInfoPropertyName = "AnyOfStringInt322")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListJobsOrder), TypeInfoPropertyName = "ListJobsOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Job>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StopReasonType?), TypeInfoPropertyName = "NullableStopReasonType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobStatus?), TypeInfoPropertyName = "NullableJobStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobType?), TypeInfoPropertyName = "NullableJobType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?>?), TypeInfoPropertyName = "NullableAnyOfStringInt322")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ListJobsOrder?), TypeInfoPropertyName = "NullableListJobsOrder2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ValidationError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<string, int?>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Job>))]
-    internal sealed partial class JobsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class JobsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
 
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
@@ -88,17 +49,7 @@ namespace Letta
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Letta.JsonConverters.UnixTimestampJsonConverter());
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::Letta.SourceGenerationContext.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -111,76 +62,6 @@ namespace Letta
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::Letta.JobStatus)
-
-                    || typeToConvert == typeof(global::Letta.JobStatus?)
-
-                    || typeToConvert == typeof(global::Letta.JobType)
-
-                    || typeToConvert == typeof(global::Letta.JobType?)
-
-                    || typeToConvert == typeof(global::Letta.StopReasonType)
-
-                    || typeToConvert == typeof(global::Letta.StopReasonType?)
-
-                    || typeToConvert == typeof(global::Letta.ListJobsOrder)
-
-                    || typeToConvert == typeof(global::Letta.ListJobsOrder?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::Letta.JobStatus))
-                {
-                    return new global::Letta.JsonConverters.JobStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.JobStatus?))
-                {
-                    return new global::Letta.JsonConverters.JobStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.JobType))
-                {
-                    return new global::Letta.JsonConverters.JobTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.JobType?))
-                {
-                    return new global::Letta.JsonConverters.JobTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.StopReasonType))
-                {
-                    return new global::Letta.JsonConverters.StopReasonTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.StopReasonType?))
-                {
-                    return new global::Letta.JsonConverters.StopReasonTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.ListJobsOrder))
-                {
-                    return new global::Letta.JsonConverters.ListJobsOrderJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Letta.ListJobsOrder?))
-                {
-                    return new global::Letta.JsonConverters.ListJobsOrderNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -222,7 +103,7 @@ namespace Letta
             {
                 return index switch
                 {
-                    0 => new JobsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::Letta.SourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
