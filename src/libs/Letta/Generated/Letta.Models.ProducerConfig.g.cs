@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1 PickSlackChannelReader() => IsSlackChannelReader
-            ? SlackChannelReader!
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1 PickSlackChannelReader() => SlackChannelReader is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SlackChannelReader' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2 PickCustomWebhook() => IsCustomWebhook
-            ? CustomWebhook!
+        public global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2 PickCustomWebhook() => CustomWebhook is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CustomWebhook' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSlackChannelReader && slackChannelReader != null)
+            if (SlackChannelReader is { } __value0 && slackChannelReader != null)
             {
-                return slackChannelReader(SlackChannelReader!);
+                return slackChannelReader(__value0);
             }
-            else if (IsCustomWebhook && customWebhook != null)
+            else if (CustomWebhook is { } __value1 && customWebhook != null)
             {
-                return customWebhook(CustomWebhook!);
+                return customWebhook(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSlackChannelReader)
+            if (SlackChannelReader is { } __value0)
             {
-                slackChannelReader?.Invoke(SlackChannelReader!);
+                slackChannelReader?.Invoke(__value0);
             }
-            else if (IsCustomWebhook)
+            else if (CustomWebhook is { } __value1)
             {
-                customWebhook?.Invoke(CustomWebhook!);
+                customWebhook?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSlackChannelReader)
+            if (SlackChannelReader is { } __value0)
             {
-                slackChannelReader?.Invoke(SlackChannelReader!);
+                slackChannelReader?.Invoke(__value0);
             }
-            else if (IsCustomWebhook)
+            else if (CustomWebhook is { } __value1)
             {
-                customWebhook?.Invoke(CustomWebhook!);
+                customWebhook?.Invoke(__value1);
             }
         }
 

@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.CreateStdioMCPServer PickStdio() => IsStdio
-            ? Stdio!
+        public global::Letta.CreateStdioMCPServer PickStdio() => Stdio is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Stdio' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.CreateSSEMCPServer PickSse() => IsSse
-            ? Sse!
+        public global::Letta.CreateSSEMCPServer PickSse() => Sse is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Sse' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.CreateStreamableHTTPMCPServer PickStreamableHttp() => IsStreamableHttp
-            ? StreamableHttp!
+        public global::Letta.CreateStreamableHTTPMCPServer PickStreamableHttp() => StreamableHttp is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StreamableHttp' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsStdio && stdio != null)
+            if (Stdio is { } __value0 && stdio != null)
             {
-                return stdio(Stdio!);
+                return stdio(__value0);
             }
-            else if (IsSse && sse != null)
+            else if (Sse is { } __value1 && sse != null)
             {
-                return sse(Sse!);
+                return sse(__value1);
             }
-            else if (IsStreamableHttp && streamableHttp != null)
+            else if (StreamableHttp is { } __value2 && streamableHttp != null)
             {
-                return streamableHttp(StreamableHttp!);
+                return streamableHttp(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsStdio)
+            if (Stdio is { } __value0)
             {
-                stdio?.Invoke(Stdio!);
+                stdio?.Invoke(__value0);
             }
-            else if (IsSse)
+            else if (Sse is { } __value1)
             {
-                sse?.Invoke(Sse!);
+                sse?.Invoke(__value1);
             }
-            else if (IsStreamableHttp)
+            else if (StreamableHttp is { } __value2)
             {
-                streamableHttp?.Invoke(StreamableHttp!);
+                streamableHttp?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsStdio)
+            if (Stdio is { } __value0)
             {
-                stdio?.Invoke(Stdio!);
+                stdio?.Invoke(__value0);
             }
-            else if (IsSse)
+            else if (Sse is { } __value1)
             {
-                sse?.Invoke(Sse!);
+                sse?.Invoke(__value1);
             }
-            else if (IsStreamableHttp)
+            else if (StreamableHttp is { } __value2)
             {
-                streamableHttp?.Invoke(StreamableHttp!);
+                streamableHttp?.Invoke(__value2);
             }
         }
 

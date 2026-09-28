@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.RoundRobinManager PickRoundRobin() => IsRoundRobin
-            ? RoundRobin!
+        public global::Letta.RoundRobinManager PickRoundRobin() => RoundRobin is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RoundRobin' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.SupervisorManager PickSupervisor() => IsSupervisor
-            ? Supervisor!
+        public global::Letta.SupervisorManager PickSupervisor() => Supervisor is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Supervisor' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.DynamicManager PickDynamic() => IsDynamic
-            ? Dynamic!
+        public global::Letta.DynamicManager PickDynamic() => Dynamic is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Dynamic' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.SleeptimeManager PickSleeptime() => IsSleeptime
-            ? Sleeptime!
+        public global::Letta.SleeptimeManager PickSleeptime() => Sleeptime is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Sleeptime' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.VoiceSleeptimeManager PickVoiceSleeptime() => IsVoiceSleeptime
-            ? VoiceSleeptime!
+        public global::Letta.VoiceSleeptimeManager PickVoiceSleeptime() => VoiceSleeptime is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VoiceSleeptime' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -380,25 +380,25 @@ namespace Letta
                 Validate();
             }
 
-            if (IsRoundRobin && roundRobin != null)
+            if (RoundRobin is { } __value0 && roundRobin != null)
             {
-                return roundRobin(RoundRobin!);
+                return roundRobin(__value0);
             }
-            else if (IsSupervisor && supervisor != null)
+            else if (Supervisor is { } __value1 && supervisor != null)
             {
-                return supervisor(Supervisor!);
+                return supervisor(__value1);
             }
-            else if (IsDynamic && dynamic != null)
+            else if (Dynamic is { } __value2 && dynamic != null)
             {
-                return dynamic(Dynamic!);
+                return dynamic(__value2);
             }
-            else if (IsSleeptime && sleeptime != null)
+            else if (Sleeptime is { } __value3 && sleeptime != null)
             {
-                return sleeptime(Sleeptime!);
+                return sleeptime(__value3);
             }
-            else if (IsVoiceSleeptime && voiceSleeptime != null)
+            else if (VoiceSleeptime is { } __value4 && voiceSleeptime != null)
             {
-                return voiceSleeptime(VoiceSleeptime!);
+                return voiceSleeptime(__value4);
             }
 
             return default(TResult);
@@ -424,25 +424,25 @@ namespace Letta
                 Validate();
             }
 
-            if (IsRoundRobin)
+            if (RoundRobin is { } __value0)
             {
-                roundRobin?.Invoke(RoundRobin!);
+                roundRobin?.Invoke(__value0);
             }
-            else if (IsSupervisor)
+            else if (Supervisor is { } __value1)
             {
-                supervisor?.Invoke(Supervisor!);
+                supervisor?.Invoke(__value1);
             }
-            else if (IsDynamic)
+            else if (Dynamic is { } __value2)
             {
-                dynamic?.Invoke(Dynamic!);
+                dynamic?.Invoke(__value2);
             }
-            else if (IsSleeptime)
+            else if (Sleeptime is { } __value3)
             {
-                sleeptime?.Invoke(Sleeptime!);
+                sleeptime?.Invoke(__value3);
             }
-            else if (IsVoiceSleeptime)
+            else if (VoiceSleeptime is { } __value4)
             {
-                voiceSleeptime?.Invoke(VoiceSleeptime!);
+                voiceSleeptime?.Invoke(__value4);
             }
         }
 
@@ -462,25 +462,25 @@ namespace Letta
                 Validate();
             }
 
-            if (IsRoundRobin)
+            if (RoundRobin is { } __value0)
             {
-                roundRobin?.Invoke(RoundRobin!);
+                roundRobin?.Invoke(__value0);
             }
-            else if (IsSupervisor)
+            else if (Supervisor is { } __value1)
             {
-                supervisor?.Invoke(Supervisor!);
+                supervisor?.Invoke(__value1);
             }
-            else if (IsDynamic)
+            else if (Dynamic is { } __value2)
             {
-                dynamic?.Invoke(Dynamic!);
+                dynamic?.Invoke(__value2);
             }
-            else if (IsSleeptime)
+            else if (Sleeptime is { } __value3)
             {
-                sleeptime?.Invoke(Sleeptime!);
+                sleeptime?.Invoke(__value3);
             }
-            else if (IsVoiceSleeptime)
+            else if (VoiceSleeptime is { } __value4)
             {
-                voiceSleeptime?.Invoke(VoiceSleeptime!);
+                voiceSleeptime?.Invoke(__value4);
             }
         }
 

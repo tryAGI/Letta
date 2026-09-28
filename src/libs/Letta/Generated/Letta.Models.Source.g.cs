@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.UrlImage PickUrl() => IsUrl
-            ? Url!
+        public global::Letta.UrlImage PickUrl() => Url is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Url' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Base64Image PickBase64() => IsBase64
-            ? Base64!
+        public global::Letta.Base64Image PickBase64() => Base64 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Base64' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaImage PickLetta() => IsLetta
-            ? Letta!
+        public global::Letta.LettaImage PickLetta() => Letta is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Letta' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsUrl && url != null)
+            if (Url is { } __value0 && url != null)
             {
-                return url(Url!);
+                return url(__value0);
             }
-            else if (IsBase64 && base64 != null)
+            else if (Base64 is { } __value1 && base64 != null)
             {
-                return base64(Base64!);
+                return base64(__value1);
             }
-            else if (IsLetta && letta != null)
+            else if (Letta is { } __value2 && letta != null)
             {
-                return letta(Letta!);
+                return letta(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsUrl)
+            if (Url is { } __value0)
             {
-                url?.Invoke(Url!);
+                url?.Invoke(__value0);
             }
-            else if (IsBase64)
+            else if (Base64 is { } __value1)
             {
-                base64?.Invoke(Base64!);
+                base64?.Invoke(__value1);
             }
-            else if (IsLetta)
+            else if (Letta is { } __value2)
             {
-                letta?.Invoke(Letta!);
+                letta?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace Letta
                 Validate();
             }
 
-            if (IsUrl)
+            if (Url is { } __value0)
             {
-                url?.Invoke(Url!);
+                url?.Invoke(__value0);
             }
-            else if (IsBase64)
+            else if (Base64 is { } __value1)
             {
-                base64?.Invoke(Base64!);
+                base64?.Invoke(__value1);
             }
-            else if (IsLetta)
+            else if (Letta is { } __value2)
             {
-                letta?.Invoke(Letta!);
+                letta?.Invoke(__value2);
             }
         }
 

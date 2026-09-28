@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant1 PickAgent() => IsAgent
-            ? Agent!
+        public global::Letta.TemplatesCreateTemplateRequestVariant1 PickAgent() => Agent is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Agent' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.TemplatesCreateTemplateRequestVariant2 PickAgentFile() => IsAgentFile
-            ? AgentFile!
+        public global::Letta.TemplatesCreateTemplateRequestVariant2 PickAgentFile() => AgentFile is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgentFile' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsAgent && agent != null)
+            if (Agent is { } __value0 && agent != null)
             {
-                return agent(Agent!);
+                return agent(__value0);
             }
-            else if (IsAgentFile && agentFile != null)
+            else if (AgentFile is { } __value1 && agentFile != null)
             {
-                return agentFile(AgentFile!);
+                return agentFile(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsAgent)
+            if (Agent is { } __value0)
             {
-                agent?.Invoke(Agent!);
+                agent?.Invoke(__value0);
             }
-            else if (IsAgentFile)
+            else if (AgentFile is { } __value1)
             {
-                agentFile?.Invoke(AgentFile!);
+                agentFile?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace Letta
                 Validate();
             }
 
-            if (IsAgent)
+            if (Agent is { } __value0)
             {
-                agent?.Invoke(Agent!);
+                agent?.Invoke(__value0);
             }
-            else if (IsAgentFile)
+            else if (AgentFile is { } __value1)
             {
-                agentFile?.Invoke(AgentFile!);
+                agentFile?.Invoke(__value1);
             }
         }
 

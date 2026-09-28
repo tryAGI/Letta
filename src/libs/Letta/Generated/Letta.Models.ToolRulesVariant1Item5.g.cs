@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ChildToolRule PickConstrainChildTools() => IsConstrainChildTools
-            ? ConstrainChildTools!
+        public global::Letta.ChildToolRule PickConstrainChildTools() => ConstrainChildTools is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ConstrainChildTools' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.InitToolRule PickRunFirst() => IsRunFirst
-            ? RunFirst!
+        public global::Letta.InitToolRule PickRunFirst() => RunFirst is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RunFirst' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.TerminalToolRule PickExitLoop() => IsExitLoop
-            ? ExitLoop!
+        public global::Letta.TerminalToolRule PickExitLoop() => ExitLoop is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ExitLoop' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ConditionalToolRule PickConditional() => IsConditional
-            ? Conditional!
+        public global::Letta.ConditionalToolRule PickConditional() => Conditional is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Conditional' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ContinueToolRule PickContinueLoop() => IsContinueLoop
-            ? ContinueLoop!
+        public global::Letta.ContinueToolRule PickContinueLoop() => ContinueLoop is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ContinueLoop' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.RequiredBeforeExitToolRule PickRequiredBeforeExit() => IsRequiredBeforeExit
-            ? RequiredBeforeExit!
+        public global::Letta.RequiredBeforeExitToolRule PickRequiredBeforeExit() => RequiredBeforeExit is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RequiredBeforeExit' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.MaxCountPerStepToolRule PickMaxCountPerStep() => IsMaxCountPerStep
-            ? MaxCountPerStep!
+        public global::Letta.MaxCountPerStepToolRule PickMaxCountPerStep() => MaxCountPerStep is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'MaxCountPerStep' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ParentToolRule PickParentLastTool() => IsParentLastTool
-            ? ParentLastTool!
+        public global::Letta.ParentToolRule PickParentLastTool() => ParentLastTool is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ParentLastTool' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.RequiresApprovalToolRule PickRequiresApproval() => IsRequiresApproval
-            ? RequiresApproval!
+        public global::Letta.RequiresApprovalToolRule PickRequiresApproval() => RequiresApproval is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RequiresApproval' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -640,41 +640,41 @@ namespace Letta
                 Validate();
             }
 
-            if (IsConstrainChildTools && constrainChildTools != null)
+            if (ConstrainChildTools is { } __value0 && constrainChildTools != null)
             {
-                return constrainChildTools(ConstrainChildTools!);
+                return constrainChildTools(__value0);
             }
-            else if (IsRunFirst && runFirst != null)
+            else if (RunFirst is { } __value1 && runFirst != null)
             {
-                return runFirst(RunFirst!);
+                return runFirst(__value1);
             }
-            else if (IsExitLoop && exitLoop != null)
+            else if (ExitLoop is { } __value2 && exitLoop != null)
             {
-                return exitLoop(ExitLoop!);
+                return exitLoop(__value2);
             }
-            else if (IsConditional && conditional != null)
+            else if (Conditional is { } __value3 && conditional != null)
             {
-                return conditional(Conditional!);
+                return conditional(__value3);
             }
-            else if (IsContinueLoop && continueLoop != null)
+            else if (ContinueLoop is { } __value4 && continueLoop != null)
             {
-                return continueLoop(ContinueLoop!);
+                return continueLoop(__value4);
             }
-            else if (IsRequiredBeforeExit && requiredBeforeExit != null)
+            else if (RequiredBeforeExit is { } __value5 && requiredBeforeExit != null)
             {
-                return requiredBeforeExit(RequiredBeforeExit!);
+                return requiredBeforeExit(__value5);
             }
-            else if (IsMaxCountPerStep && maxCountPerStep != null)
+            else if (MaxCountPerStep is { } __value6 && maxCountPerStep != null)
             {
-                return maxCountPerStep(MaxCountPerStep!);
+                return maxCountPerStep(__value6);
             }
-            else if (IsParentLastTool && parentLastTool != null)
+            else if (ParentLastTool is { } __value7 && parentLastTool != null)
             {
-                return parentLastTool(ParentLastTool!);
+                return parentLastTool(__value7);
             }
-            else if (IsRequiresApproval && requiresApproval != null)
+            else if (RequiresApproval is { } __value8 && requiresApproval != null)
             {
-                return requiresApproval(RequiresApproval!);
+                return requiresApproval(__value8);
             }
 
             return default(TResult);
@@ -708,41 +708,41 @@ namespace Letta
                 Validate();
             }
 
-            if (IsConstrainChildTools)
+            if (ConstrainChildTools is { } __value0)
             {
-                constrainChildTools?.Invoke(ConstrainChildTools!);
+                constrainChildTools?.Invoke(__value0);
             }
-            else if (IsRunFirst)
+            else if (RunFirst is { } __value1)
             {
-                runFirst?.Invoke(RunFirst!);
+                runFirst?.Invoke(__value1);
             }
-            else if (IsExitLoop)
+            else if (ExitLoop is { } __value2)
             {
-                exitLoop?.Invoke(ExitLoop!);
+                exitLoop?.Invoke(__value2);
             }
-            else if (IsConditional)
+            else if (Conditional is { } __value3)
             {
-                conditional?.Invoke(Conditional!);
+                conditional?.Invoke(__value3);
             }
-            else if (IsContinueLoop)
+            else if (ContinueLoop is { } __value4)
             {
-                continueLoop?.Invoke(ContinueLoop!);
+                continueLoop?.Invoke(__value4);
             }
-            else if (IsRequiredBeforeExit)
+            else if (RequiredBeforeExit is { } __value5)
             {
-                requiredBeforeExit?.Invoke(RequiredBeforeExit!);
+                requiredBeforeExit?.Invoke(__value5);
             }
-            else if (IsMaxCountPerStep)
+            else if (MaxCountPerStep is { } __value6)
             {
-                maxCountPerStep?.Invoke(MaxCountPerStep!);
+                maxCountPerStep?.Invoke(__value6);
             }
-            else if (IsParentLastTool)
+            else if (ParentLastTool is { } __value7)
             {
-                parentLastTool?.Invoke(ParentLastTool!);
+                parentLastTool?.Invoke(__value7);
             }
-            else if (IsRequiresApproval)
+            else if (RequiresApproval is { } __value8)
             {
-                requiresApproval?.Invoke(RequiresApproval!);
+                requiresApproval?.Invoke(__value8);
             }
         }
 
@@ -766,41 +766,41 @@ namespace Letta
                 Validate();
             }
 
-            if (IsConstrainChildTools)
+            if (ConstrainChildTools is { } __value0)
             {
-                constrainChildTools?.Invoke(ConstrainChildTools!);
+                constrainChildTools?.Invoke(__value0);
             }
-            else if (IsRunFirst)
+            else if (RunFirst is { } __value1)
             {
-                runFirst?.Invoke(RunFirst!);
+                runFirst?.Invoke(__value1);
             }
-            else if (IsExitLoop)
+            else if (ExitLoop is { } __value2)
             {
-                exitLoop?.Invoke(ExitLoop!);
+                exitLoop?.Invoke(__value2);
             }
-            else if (IsConditional)
+            else if (Conditional is { } __value3)
             {
-                conditional?.Invoke(Conditional!);
+                conditional?.Invoke(__value3);
             }
-            else if (IsContinueLoop)
+            else if (ContinueLoop is { } __value4)
             {
-                continueLoop?.Invoke(ContinueLoop!);
+                continueLoop?.Invoke(__value4);
             }
-            else if (IsRequiredBeforeExit)
+            else if (RequiredBeforeExit is { } __value5)
             {
-                requiredBeforeExit?.Invoke(RequiredBeforeExit!);
+                requiredBeforeExit?.Invoke(__value5);
             }
-            else if (IsMaxCountPerStep)
+            else if (MaxCountPerStep is { } __value6)
             {
-                maxCountPerStep?.Invoke(MaxCountPerStep!);
+                maxCountPerStep?.Invoke(__value6);
             }
-            else if (IsParentLastTool)
+            else if (ParentLastTool is { } __value7)
             {
-                parentLastTool?.Invoke(ParentLastTool!);
+                parentLastTool?.Invoke(__value7);
             }
-            else if (IsRequiresApproval)
+            else if (RequiresApproval is { } __value8)
             {
-                requiresApproval?.Invoke(RequiresApproval!);
+                requiresApproval?.Invoke(__value8);
             }
         }
 

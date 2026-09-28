@@ -53,8 +53,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.SystemMessage PickSystemMessage() => IsSystemMessage
-            ? SystemMessage!
+        public global::Letta.SystemMessage PickSystemMessage() => SystemMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SystemMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -95,8 +95,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.UserMessage PickUserMessage() => IsUserMessage
-            ? UserMessage!
+        public global::Letta.UserMessage PickUserMessage() => UserMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -140,8 +140,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ReasoningMessage PickHiddenReasoningMessage1() => IsHiddenReasoningMessage1
-            ? HiddenReasoningMessage1!
+        public global::Letta.ReasoningMessage PickHiddenReasoningMessage1() => HiddenReasoningMessage1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'HiddenReasoningMessage1' but the value was {ToString()}.");
 
         /// <summary>
@@ -185,8 +185,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.HiddenReasoningMessage PickHiddenReasoningMessage2() => IsHiddenReasoningMessage2
-            ? HiddenReasoningMessage2!
+        public global::Letta.HiddenReasoningMessage PickHiddenReasoningMessage2() => HiddenReasoningMessage2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'HiddenReasoningMessage2' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolCallMessage PickToolCallMessage() => IsToolCallMessage
-            ? ToolCallMessage!
+        public global::Letta.ToolCallMessage PickToolCallMessage() => ToolCallMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolCallMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -274,8 +274,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolReturnMessage PickToolReturnMessage() => IsToolReturnMessage
-            ? ToolReturnMessage!
+        public global::Letta.ToolReturnMessage PickToolReturnMessage() => ToolReturnMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ToolReturnMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -316,8 +316,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AssistantMessage PickAssistantMessage() => IsAssistantMessage
-            ? AssistantMessage!
+        public global::Letta.AssistantMessage PickAssistantMessage() => AssistantMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssistantMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -358,8 +358,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ApprovalRequestMessage PickApprovalRequestMessage() => IsApprovalRequestMessage
-            ? ApprovalRequestMessage!
+        public global::Letta.ApprovalRequestMessage PickApprovalRequestMessage() => ApprovalRequestMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApprovalRequestMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -402,8 +402,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ApprovalResponseMessage PickApprovalResponseMessage() => IsApprovalResponseMessage
-            ? ApprovalResponseMessage!
+        public global::Letta.ApprovalResponseMessage PickApprovalResponseMessage() => ApprovalResponseMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ApprovalResponseMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -442,8 +442,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaPing PickPing() => IsPing
-            ? Ping!
+        public global::Letta.LettaPing PickPing() => Ping is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Ping' but the value was {ToString()}.");
 
         /// <summary>
@@ -479,8 +479,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaErrorMessage PickErrorMessage() => IsErrorMessage
-            ? ErrorMessage!
+        public global::Letta.LettaErrorMessage PickErrorMessage() => ErrorMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ErrorMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -516,8 +516,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaStopReason PickStopReason() => IsStopReason
-            ? StopReason!
+        public global::Letta.LettaStopReason PickStopReason() => StopReason is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'StopReason' but the value was {ToString()}.");
 
         /// <summary>
@@ -561,8 +561,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaUsageStatistics PickUsageStatistics() => IsUsageStatistics
-            ? UsageStatistics!
+        public global::Letta.LettaUsageStatistics PickUsageStatistics() => UsageStatistics is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UsageStatistics' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -970,57 +970,57 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage && systemMessage != null)
+            if (SystemMessage is { } __value0 && systemMessage != null)
             {
-                return systemMessage(SystemMessage!);
+                return systemMessage(__value0);
             }
-            else if (IsUserMessage && userMessage != null)
+            else if (UserMessage is { } __value1 && userMessage != null)
             {
-                return userMessage(UserMessage!);
+                return userMessage(__value1);
             }
-            else if (IsHiddenReasoningMessage1 && hiddenReasoningMessage1 != null)
+            else if (HiddenReasoningMessage1 is { } __value2 && hiddenReasoningMessage1 != null)
             {
-                return hiddenReasoningMessage1(HiddenReasoningMessage1!);
+                return hiddenReasoningMessage1(__value2);
             }
-            else if (IsHiddenReasoningMessage2 && hiddenReasoningMessage2 != null)
+            else if (HiddenReasoningMessage2 is { } __value3 && hiddenReasoningMessage2 != null)
             {
-                return hiddenReasoningMessage2(HiddenReasoningMessage2!);
+                return hiddenReasoningMessage2(__value3);
             }
-            else if (IsToolCallMessage && toolCallMessage != null)
+            else if (ToolCallMessage is { } __value4 && toolCallMessage != null)
             {
-                return toolCallMessage(ToolCallMessage!);
+                return toolCallMessage(__value4);
             }
-            else if (IsToolReturnMessage && toolReturnMessage != null)
+            else if (ToolReturnMessage is { } __value5 && toolReturnMessage != null)
             {
-                return toolReturnMessage(ToolReturnMessage!);
+                return toolReturnMessage(__value5);
             }
-            else if (IsAssistantMessage && assistantMessage != null)
+            else if (AssistantMessage is { } __value6 && assistantMessage != null)
             {
-                return assistantMessage(AssistantMessage!);
+                return assistantMessage(__value6);
             }
-            else if (IsApprovalRequestMessage && approvalRequestMessage != null)
+            else if (ApprovalRequestMessage is { } __value7 && approvalRequestMessage != null)
             {
-                return approvalRequestMessage(ApprovalRequestMessage!);
+                return approvalRequestMessage(__value7);
             }
-            else if (IsApprovalResponseMessage && approvalResponseMessage != null)
+            else if (ApprovalResponseMessage is { } __value8 && approvalResponseMessage != null)
             {
-                return approvalResponseMessage(ApprovalResponseMessage!);
+                return approvalResponseMessage(__value8);
             }
-            else if (IsPing && ping != null)
+            else if (Ping is { } __value9 && ping != null)
             {
-                return ping(Ping!);
+                return ping(__value9);
             }
-            else if (IsErrorMessage && errorMessage != null)
+            else if (ErrorMessage is { } __value10 && errorMessage != null)
             {
-                return errorMessage(ErrorMessage!);
+                return errorMessage(__value10);
             }
-            else if (IsStopReason && stopReason != null)
+            else if (StopReason is { } __value11 && stopReason != null)
             {
-                return stopReason(StopReason!);
+                return stopReason(__value11);
             }
-            else if (IsUsageStatistics && usageStatistics != null)
+            else if (UsageStatistics is { } __value12 && usageStatistics != null)
             {
-                return usageStatistics(UsageStatistics!);
+                return usageStatistics(__value12);
             }
 
             return default(TResult);
@@ -1062,57 +1062,57 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage)
+            if (SystemMessage is { } __value0)
             {
-                systemMessage?.Invoke(SystemMessage!);
+                systemMessage?.Invoke(__value0);
             }
-            else if (IsUserMessage)
+            else if (UserMessage is { } __value1)
             {
-                userMessage?.Invoke(UserMessage!);
+                userMessage?.Invoke(__value1);
             }
-            else if (IsHiddenReasoningMessage1)
+            else if (HiddenReasoningMessage1 is { } __value2)
             {
-                hiddenReasoningMessage1?.Invoke(HiddenReasoningMessage1!);
+                hiddenReasoningMessage1?.Invoke(__value2);
             }
-            else if (IsHiddenReasoningMessage2)
+            else if (HiddenReasoningMessage2 is { } __value3)
             {
-                hiddenReasoningMessage2?.Invoke(HiddenReasoningMessage2!);
+                hiddenReasoningMessage2?.Invoke(__value3);
             }
-            else if (IsToolCallMessage)
+            else if (ToolCallMessage is { } __value4)
             {
-                toolCallMessage?.Invoke(ToolCallMessage!);
+                toolCallMessage?.Invoke(__value4);
             }
-            else if (IsToolReturnMessage)
+            else if (ToolReturnMessage is { } __value5)
             {
-                toolReturnMessage?.Invoke(ToolReturnMessage!);
+                toolReturnMessage?.Invoke(__value5);
             }
-            else if (IsAssistantMessage)
+            else if (AssistantMessage is { } __value6)
             {
-                assistantMessage?.Invoke(AssistantMessage!);
+                assistantMessage?.Invoke(__value6);
             }
-            else if (IsApprovalRequestMessage)
+            else if (ApprovalRequestMessage is { } __value7)
             {
-                approvalRequestMessage?.Invoke(ApprovalRequestMessage!);
+                approvalRequestMessage?.Invoke(__value7);
             }
-            else if (IsApprovalResponseMessage)
+            else if (ApprovalResponseMessage is { } __value8)
             {
-                approvalResponseMessage?.Invoke(ApprovalResponseMessage!);
+                approvalResponseMessage?.Invoke(__value8);
             }
-            else if (IsPing)
+            else if (Ping is { } __value9)
             {
-                ping?.Invoke(Ping!);
+                ping?.Invoke(__value9);
             }
-            else if (IsErrorMessage)
+            else if (ErrorMessage is { } __value10)
             {
-                errorMessage?.Invoke(ErrorMessage!);
+                errorMessage?.Invoke(__value10);
             }
-            else if (IsStopReason)
+            else if (StopReason is { } __value11)
             {
-                stopReason?.Invoke(StopReason!);
+                stopReason?.Invoke(__value11);
             }
-            else if (IsUsageStatistics)
+            else if (UsageStatistics is { } __value12)
             {
-                usageStatistics?.Invoke(UsageStatistics!);
+                usageStatistics?.Invoke(__value12);
             }
         }
 
@@ -1140,57 +1140,57 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage)
+            if (SystemMessage is { } __value0)
             {
-                systemMessage?.Invoke(SystemMessage!);
+                systemMessage?.Invoke(__value0);
             }
-            else if (IsUserMessage)
+            else if (UserMessage is { } __value1)
             {
-                userMessage?.Invoke(UserMessage!);
+                userMessage?.Invoke(__value1);
             }
-            else if (IsHiddenReasoningMessage1)
+            else if (HiddenReasoningMessage1 is { } __value2)
             {
-                hiddenReasoningMessage1?.Invoke(HiddenReasoningMessage1!);
+                hiddenReasoningMessage1?.Invoke(__value2);
             }
-            else if (IsHiddenReasoningMessage2)
+            else if (HiddenReasoningMessage2 is { } __value3)
             {
-                hiddenReasoningMessage2?.Invoke(HiddenReasoningMessage2!);
+                hiddenReasoningMessage2?.Invoke(__value3);
             }
-            else if (IsToolCallMessage)
+            else if (ToolCallMessage is { } __value4)
             {
-                toolCallMessage?.Invoke(ToolCallMessage!);
+                toolCallMessage?.Invoke(__value4);
             }
-            else if (IsToolReturnMessage)
+            else if (ToolReturnMessage is { } __value5)
             {
-                toolReturnMessage?.Invoke(ToolReturnMessage!);
+                toolReturnMessage?.Invoke(__value5);
             }
-            else if (IsAssistantMessage)
+            else if (AssistantMessage is { } __value6)
             {
-                assistantMessage?.Invoke(AssistantMessage!);
+                assistantMessage?.Invoke(__value6);
             }
-            else if (IsApprovalRequestMessage)
+            else if (ApprovalRequestMessage is { } __value7)
             {
-                approvalRequestMessage?.Invoke(ApprovalRequestMessage!);
+                approvalRequestMessage?.Invoke(__value7);
             }
-            else if (IsApprovalResponseMessage)
+            else if (ApprovalResponseMessage is { } __value8)
             {
-                approvalResponseMessage?.Invoke(ApprovalResponseMessage!);
+                approvalResponseMessage?.Invoke(__value8);
             }
-            else if (IsPing)
+            else if (Ping is { } __value9)
             {
-                ping?.Invoke(Ping!);
+                ping?.Invoke(__value9);
             }
-            else if (IsErrorMessage)
+            else if (ErrorMessage is { } __value10)
             {
-                errorMessage?.Invoke(ErrorMessage!);
+                errorMessage?.Invoke(__value10);
             }
-            else if (IsStopReason)
+            else if (StopReason is { } __value11)
             {
-                stopReason?.Invoke(StopReason!);
+                stopReason?.Invoke(__value11);
             }
-            else if (IsUsageStatistics)
+            else if (UsageStatistics is { } __value12)
             {
-                usageStatistics?.Invoke(UsageStatistics!);
+                usageStatistics?.Invoke(__value12);
             }
         }
 
