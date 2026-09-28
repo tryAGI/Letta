@@ -47,8 +47,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.OpenAIModelSettings PickOpenai() => IsOpenai
-            ? Openai!
+        public global::Letta.OpenAIModelSettings PickOpenai() => Openai is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Openai' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.SGLangModelSettings PickSglang() => IsSglang
-            ? Sglang!
+        public global::Letta.SGLangModelSettings PickSglang() => Sglang is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Sglang' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnthropicModelSettings PickAnthropic() => IsAnthropic
-            ? Anthropic!
+        public global::Letta.AnthropicModelSettings PickAnthropic() => Anthropic is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Anthropic' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.GoogleAIModelSettings PickGoogleAi() => IsGoogleAi
-            ? GoogleAi!
+        public global::Letta.GoogleAIModelSettings PickGoogleAi() => GoogleAi is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleAi' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.GoogleVertexModelSettings PickGoogleVertex() => IsGoogleVertex
-            ? GoogleVertex!
+        public global::Letta.GoogleVertexModelSettings PickGoogleVertex() => GoogleVertex is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GoogleVertex' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AzureModelSettings PickAzure() => IsAzure
-            ? Azure!
+        public global::Letta.AzureModelSettings PickAzure() => Azure is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Azure' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.XAIModelSettings PickXai() => IsXai
-            ? Xai!
+        public global::Letta.XAIModelSettings PickXai() => Xai is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Xai' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ZAIModelSettings PickZai() => IsZai
-            ? Zai!
+        public global::Letta.ZAIModelSettings PickZai() => Zai is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Zai' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.GroqModelSettings PickGroq() => IsGroq
-            ? Groq!
+        public global::Letta.GroqModelSettings PickGroq() => Groq is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Groq' but the value was {ToString()}.");
 
         /// <summary>
@@ -380,8 +380,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.DeepseekModelSettings PickDeepseek() => IsDeepseek
-            ? Deepseek!
+        public global::Letta.DeepseekModelSettings PickDeepseek() => Deepseek is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Deepseek' but the value was {ToString()}.");
 
         /// <summary>
@@ -417,8 +417,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.TogetherModelSettings PickTogether() => IsTogether
-            ? Together!
+        public global::Letta.TogetherModelSettings PickTogether() => Together is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Together' but the value was {ToString()}.");
 
         /// <summary>
@@ -454,8 +454,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.BedrockModelSettings PickBedrock() => IsBedrock
-            ? Bedrock!
+        public global::Letta.BedrockModelSettings PickBedrock() => Bedrock is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Bedrock' but the value was {ToString()}.");
 
         /// <summary>
@@ -491,8 +491,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.BasetenModelSettings PickBaseten() => IsBaseten
-            ? Baseten!
+        public global::Letta.BasetenModelSettings PickBaseten() => Baseten is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Baseten' but the value was {ToString()}.");
 
         /// <summary>
@@ -528,8 +528,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.OpenRouterModelSettings PickOpenrouter() => IsOpenrouter
-            ? Openrouter!
+        public global::Letta.OpenRouterModelSettings PickOpenrouter() => Openrouter is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Openrouter' but the value was {ToString()}.");
 
         /// <summary>
@@ -565,8 +565,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ChatGPTOAuthModelSettings PickChatgptOauth() => IsChatgptOauth
-            ? ChatgptOauth!
+        public global::Letta.ChatGPTOAuthModelSettings PickChatgptOauth() => ChatgptOauth is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ChatgptOauth' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -1030,65 +1030,65 @@ namespace Letta
                 Validate();
             }
 
-            if (IsOpenai && openai != null)
+            if (Openai is { } __value0 && openai != null)
             {
-                return openai(Openai!);
+                return openai(__value0);
             }
-            else if (IsSglang && sglang != null)
+            else if (Sglang is { } __value1 && sglang != null)
             {
-                return sglang(Sglang!);
+                return sglang(__value1);
             }
-            else if (IsAnthropic && anthropic != null)
+            else if (Anthropic is { } __value2 && anthropic != null)
             {
-                return anthropic(Anthropic!);
+                return anthropic(__value2);
             }
-            else if (IsGoogleAi && googleAi != null)
+            else if (GoogleAi is { } __value3 && googleAi != null)
             {
-                return googleAi(GoogleAi!);
+                return googleAi(__value3);
             }
-            else if (IsGoogleVertex && googleVertex != null)
+            else if (GoogleVertex is { } __value4 && googleVertex != null)
             {
-                return googleVertex(GoogleVertex!);
+                return googleVertex(__value4);
             }
-            else if (IsAzure && azure != null)
+            else if (Azure is { } __value5 && azure != null)
             {
-                return azure(Azure!);
+                return azure(__value5);
             }
-            else if (IsXai && xai != null)
+            else if (Xai is { } __value6 && xai != null)
             {
-                return xai(Xai!);
+                return xai(__value6);
             }
-            else if (IsZai && zai != null)
+            else if (Zai is { } __value7 && zai != null)
             {
-                return zai(Zai!);
+                return zai(__value7);
             }
-            else if (IsGroq && groq != null)
+            else if (Groq is { } __value8 && groq != null)
             {
-                return groq(Groq!);
+                return groq(__value8);
             }
-            else if (IsDeepseek && deepseek != null)
+            else if (Deepseek is { } __value9 && deepseek != null)
             {
-                return deepseek(Deepseek!);
+                return deepseek(__value9);
             }
-            else if (IsTogether && together != null)
+            else if (Together is { } __value10 && together != null)
             {
-                return together(Together!);
+                return together(__value10);
             }
-            else if (IsBedrock && bedrock != null)
+            else if (Bedrock is { } __value11 && bedrock != null)
             {
-                return bedrock(Bedrock!);
+                return bedrock(__value11);
             }
-            else if (IsBaseten && baseten != null)
+            else if (Baseten is { } __value12 && baseten != null)
             {
-                return baseten(Baseten!);
+                return baseten(__value12);
             }
-            else if (IsOpenrouter && openrouter != null)
+            else if (Openrouter is { } __value13 && openrouter != null)
             {
-                return openrouter(Openrouter!);
+                return openrouter(__value13);
             }
-            else if (IsChatgptOauth && chatgptOauth != null)
+            else if (ChatgptOauth is { } __value14 && chatgptOauth != null)
             {
-                return chatgptOauth(ChatgptOauth!);
+                return chatgptOauth(__value14);
             }
 
             return default(TResult);
@@ -1134,65 +1134,65 @@ namespace Letta
                 Validate();
             }
 
-            if (IsOpenai)
+            if (Openai is { } __value0)
             {
-                openai?.Invoke(Openai!);
+                openai?.Invoke(__value0);
             }
-            else if (IsSglang)
+            else if (Sglang is { } __value1)
             {
-                sglang?.Invoke(Sglang!);
+                sglang?.Invoke(__value1);
             }
-            else if (IsAnthropic)
+            else if (Anthropic is { } __value2)
             {
-                anthropic?.Invoke(Anthropic!);
+                anthropic?.Invoke(__value2);
             }
-            else if (IsGoogleAi)
+            else if (GoogleAi is { } __value3)
             {
-                googleAi?.Invoke(GoogleAi!);
+                googleAi?.Invoke(__value3);
             }
-            else if (IsGoogleVertex)
+            else if (GoogleVertex is { } __value4)
             {
-                googleVertex?.Invoke(GoogleVertex!);
+                googleVertex?.Invoke(__value4);
             }
-            else if (IsAzure)
+            else if (Azure is { } __value5)
             {
-                azure?.Invoke(Azure!);
+                azure?.Invoke(__value5);
             }
-            else if (IsXai)
+            else if (Xai is { } __value6)
             {
-                xai?.Invoke(Xai!);
+                xai?.Invoke(__value6);
             }
-            else if (IsZai)
+            else if (Zai is { } __value7)
             {
-                zai?.Invoke(Zai!);
+                zai?.Invoke(__value7);
             }
-            else if (IsGroq)
+            else if (Groq is { } __value8)
             {
-                groq?.Invoke(Groq!);
+                groq?.Invoke(__value8);
             }
-            else if (IsDeepseek)
+            else if (Deepseek is { } __value9)
             {
-                deepseek?.Invoke(Deepseek!);
+                deepseek?.Invoke(__value9);
             }
-            else if (IsTogether)
+            else if (Together is { } __value10)
             {
-                together?.Invoke(Together!);
+                together?.Invoke(__value10);
             }
-            else if (IsBedrock)
+            else if (Bedrock is { } __value11)
             {
-                bedrock?.Invoke(Bedrock!);
+                bedrock?.Invoke(__value11);
             }
-            else if (IsBaseten)
+            else if (Baseten is { } __value12)
             {
-                baseten?.Invoke(Baseten!);
+                baseten?.Invoke(__value12);
             }
-            else if (IsOpenrouter)
+            else if (Openrouter is { } __value13)
             {
-                openrouter?.Invoke(Openrouter!);
+                openrouter?.Invoke(__value13);
             }
-            else if (IsChatgptOauth)
+            else if (ChatgptOauth is { } __value14)
             {
-                chatgptOauth?.Invoke(ChatgptOauth!);
+                chatgptOauth?.Invoke(__value14);
             }
         }
 
@@ -1222,65 +1222,65 @@ namespace Letta
                 Validate();
             }
 
-            if (IsOpenai)
+            if (Openai is { } __value0)
             {
-                openai?.Invoke(Openai!);
+                openai?.Invoke(__value0);
             }
-            else if (IsSglang)
+            else if (Sglang is { } __value1)
             {
-                sglang?.Invoke(Sglang!);
+                sglang?.Invoke(__value1);
             }
-            else if (IsAnthropic)
+            else if (Anthropic is { } __value2)
             {
-                anthropic?.Invoke(Anthropic!);
+                anthropic?.Invoke(__value2);
             }
-            else if (IsGoogleAi)
+            else if (GoogleAi is { } __value3)
             {
-                googleAi?.Invoke(GoogleAi!);
+                googleAi?.Invoke(__value3);
             }
-            else if (IsGoogleVertex)
+            else if (GoogleVertex is { } __value4)
             {
-                googleVertex?.Invoke(GoogleVertex!);
+                googleVertex?.Invoke(__value4);
             }
-            else if (IsAzure)
+            else if (Azure is { } __value5)
             {
-                azure?.Invoke(Azure!);
+                azure?.Invoke(__value5);
             }
-            else if (IsXai)
+            else if (Xai is { } __value6)
             {
-                xai?.Invoke(Xai!);
+                xai?.Invoke(__value6);
             }
-            else if (IsZai)
+            else if (Zai is { } __value7)
             {
-                zai?.Invoke(Zai!);
+                zai?.Invoke(__value7);
             }
-            else if (IsGroq)
+            else if (Groq is { } __value8)
             {
-                groq?.Invoke(Groq!);
+                groq?.Invoke(__value8);
             }
-            else if (IsDeepseek)
+            else if (Deepseek is { } __value9)
             {
-                deepseek?.Invoke(Deepseek!);
+                deepseek?.Invoke(__value9);
             }
-            else if (IsTogether)
+            else if (Together is { } __value10)
             {
-                together?.Invoke(Together!);
+                together?.Invoke(__value10);
             }
-            else if (IsBedrock)
+            else if (Bedrock is { } __value11)
             {
-                bedrock?.Invoke(Bedrock!);
+                bedrock?.Invoke(__value11);
             }
-            else if (IsBaseten)
+            else if (Baseten is { } __value12)
             {
-                baseten?.Invoke(Baseten!);
+                baseten?.Invoke(__value12);
             }
-            else if (IsOpenrouter)
+            else if (Openrouter is { } __value13)
             {
-                openrouter?.Invoke(Openrouter!);
+                openrouter?.Invoke(__value13);
             }
-            else if (IsChatgptOauth)
+            else if (ChatgptOauth is { } __value14)
             {
-                chatgptOauth?.Invoke(ChatgptOauth!);
+                chatgptOauth?.Invoke(__value14);
             }
         }
 

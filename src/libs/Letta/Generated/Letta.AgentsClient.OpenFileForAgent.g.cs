@@ -184,8 +184,8 @@ namespace Letta
                 PrepareOpenFileForAgentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    fileId: fileId!,
-                    agentId: agentId!);
+                    fileId: fileId,
+                    agentId: agentId);
 
                 return __httpRequest;
             }
@@ -207,7 +207,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/files/{fileId}/open\"",
                                 httpMethod: "PATCH",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -241,7 +241,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/files/{fileId}/open\"",
                                 httpMethod: "PATCH",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -282,7 +282,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/files/{fileId}/open\"",
                                 httpMethod: "PATCH",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -330,7 +330,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/files/{fileId}/open\"",
                                 httpMethod: "PATCH",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -352,7 +352,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/files/{fileId}/open\"",
                                 httpMethod: "PATCH",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

@@ -48,8 +48,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.SystemMessageListResult PickSystemMessage() => IsSystemMessage
-            ? SystemMessage!
+        public global::Letta.SystemMessageListResult PickSystemMessage() => SystemMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SystemMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -86,8 +86,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.UserMessageListResult PickUserMessage() => IsUserMessage
-            ? UserMessage!
+        public global::Letta.UserMessageListResult PickUserMessage() => UserMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'UserMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -124,8 +124,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ReasoningMessageListResult PickReasoningMessage() => IsReasoningMessage
-            ? ReasoningMessage!
+        public global::Letta.ReasoningMessageListResult PickReasoningMessage() => ReasoningMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReasoningMessage' but the value was {ToString()}.");
 
         /// <summary>
@@ -162,8 +162,8 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AssistantMessageListResult PickAssistantMessage() => IsAssistantMessage
-            ? AssistantMessage!
+        public global::Letta.AssistantMessageListResult PickAssistantMessage() => AssistantMessage is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AssistantMessage' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -319,21 +319,21 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage && systemMessage != null)
+            if (SystemMessage is { } __value0 && systemMessage != null)
             {
-                return systemMessage(SystemMessage!);
+                return systemMessage(__value0);
             }
-            else if (IsUserMessage && userMessage != null)
+            else if (UserMessage is { } __value1 && userMessage != null)
             {
-                return userMessage(UserMessage!);
+                return userMessage(__value1);
             }
-            else if (IsReasoningMessage && reasoningMessage != null)
+            else if (ReasoningMessage is { } __value2 && reasoningMessage != null)
             {
-                return reasoningMessage(ReasoningMessage!);
+                return reasoningMessage(__value2);
             }
-            else if (IsAssistantMessage && assistantMessage != null)
+            else if (AssistantMessage is { } __value3 && assistantMessage != null)
             {
-                return assistantMessage(AssistantMessage!);
+                return assistantMessage(__value3);
             }
 
             return default(TResult);
@@ -357,21 +357,21 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage)
+            if (SystemMessage is { } __value0)
             {
-                systemMessage?.Invoke(SystemMessage!);
+                systemMessage?.Invoke(__value0);
             }
-            else if (IsUserMessage)
+            else if (UserMessage is { } __value1)
             {
-                userMessage?.Invoke(UserMessage!);
+                userMessage?.Invoke(__value1);
             }
-            else if (IsReasoningMessage)
+            else if (ReasoningMessage is { } __value2)
             {
-                reasoningMessage?.Invoke(ReasoningMessage!);
+                reasoningMessage?.Invoke(__value2);
             }
-            else if (IsAssistantMessage)
+            else if (AssistantMessage is { } __value3)
             {
-                assistantMessage?.Invoke(AssistantMessage!);
+                assistantMessage?.Invoke(__value3);
             }
         }
 
@@ -390,21 +390,21 @@ namespace Letta
                 Validate();
             }
 
-            if (IsSystemMessage)
+            if (SystemMessage is { } __value0)
             {
-                systemMessage?.Invoke(SystemMessage!);
+                systemMessage?.Invoke(__value0);
             }
-            else if (IsUserMessage)
+            else if (UserMessage is { } __value1)
             {
-                userMessage?.Invoke(UserMessage!);
+                userMessage?.Invoke(__value1);
             }
-            else if (IsReasoningMessage)
+            else if (ReasoningMessage is { } __value2)
             {
-                reasoningMessage?.Invoke(ReasoningMessage!);
+                reasoningMessage?.Invoke(__value2);
             }
-            else if (IsAssistantMessage)
+            else if (AssistantMessage is { } __value3)
             {
-                assistantMessage?.Invoke(AssistantMessage!);
+                assistantMessage?.Invoke(__value3);
             }
         }
 

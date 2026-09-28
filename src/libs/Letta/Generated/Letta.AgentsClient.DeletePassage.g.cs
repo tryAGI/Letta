@@ -174,8 +174,8 @@ namespace Letta
                 PrepareDeletePassageRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    memoryId: memoryId!,
-                    agentId: agentId!);
+                    memoryId: memoryId,
+                    agentId: agentId);
 
                 return __httpRequest;
             }
@@ -197,7 +197,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/archival-memory/{memoryId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -231,7 +231,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/archival-memory/{memoryId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -272,7 +272,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/archival-memory/{memoryId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -320,7 +320,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/archival-memory/{memoryId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -342,7 +342,7 @@ namespace Letta
                                 pathTemplate: "$\"/v1/agents/{agentId}/archival-memory/{memoryId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
