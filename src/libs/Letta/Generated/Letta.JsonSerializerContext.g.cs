@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Letta
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
@@ -83,8 +78,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentFileSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaSchemasAgentFileAgentSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchema))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.GroupSchema>))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupSchema))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.BlockSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.BlockSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.FileSchema>))]
@@ -114,7 +113,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AgentType), TypeInfoPropertyName = "AgentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfig))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfig))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIModelSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SGLangModelSettings))]
@@ -145,13 +146,19 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Block))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Tool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Tool))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Source2>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source2))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AgentEnvironmentVariable>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Identity>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Identity))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalRequestMessage))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Group))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.StopReasonType), TypeInfoPropertyName = "StopReasonType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Annotation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnnotationURLCitation))]
@@ -170,7 +177,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasLettaMessageToolReturn))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType), TypeInfoPropertyName = "ApprovalCreateApprovalsVariant1ItemDiscriminatorType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta>), TypeInfoPropertyName = "AnyOfToolCall2ToolCallDelta2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCall2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCallDelta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>), TypeInfoPropertyName = "AnyOfIListToolCall2ToolCallDeltaObject2")]
@@ -331,7 +340,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant15))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant15))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "CreateAgentRequestResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateArchivalMemory))]
@@ -359,10 +370,14 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DynamicManagerSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DynamicManagerUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.E2BSandboxConfig))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType), TypeInfoPropertyName = "EmbeddingConfigEmbeddingEndpointType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingModel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProviderType), TypeInfoPropertyName = "ProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingModelEmbeddingEndpointType), TypeInfoPropertyName = "EmbeddingModelEmbeddingEndpointType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EventMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ExportAgentRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.FeedbackType), TypeInfoPropertyName = "FeedbackType2")]
@@ -390,28 +405,44 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroqModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "GroqModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerType), TypeInfoPropertyName = "ManagerType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupCreate))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerConfig), TypeInfoPropertyName = "ManagerConfig2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.RoundRobinManager))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SupervisorManager))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SleeptimeManager))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.VoiceSleeptimeManager))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupCreateManagerConfigDiscriminator))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupCreateManagerConfigDiscriminatorManagerType), TypeInfoPropertyName = "GroupCreateManagerConfigDiscriminatorManagerType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerConfig2), TypeInfoPropertyName = "ManagerConfig22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SupervisorManagerSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SleeptimeManagerSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.VoiceSleeptimeManagerSchema))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupSchemaManagerConfigDiscriminator))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType), TypeInfoPropertyName = "GroupSchemaManagerConfigDiscriminatorManagerType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupUpdate))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.RoundRobinManagerUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SupervisorManagerUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SleeptimeManagerUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.VoiceSleeptimeManagerUpdate))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupUpdateManagerConfigVariant1Discriminator))]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupUpdateManagerConfigVariant1DiscriminatorManagerType), TypeInfoPropertyName = "GroupUpdateManagerConfigVariant1DiscriminatorManagerType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.HTTPValidationError))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ValidationError))]
@@ -442,7 +473,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant17))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant18))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateBlockCreate))]
@@ -522,10 +555,8 @@ namespace Letta
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
@@ -603,11 +634,19 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModalSandboxConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModalSandboxConfigLanguage), TypeInfoPropertyName = "ModalSandboxConfigLanguage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Model))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelModelEndpointType), TypeInfoPropertyName = "ModelModelEndpointType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort), TypeInfoPropertyName = "ModelReasoningEffort2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort), TypeInfoPropertyName = "ModelEffort2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType), TypeInfoPropertyName = "ModelCompatibilityType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity), TypeInfoPropertyName = "ModelVerbosity2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant110))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "ModelResponseFormatVariant1DiscriminatorType2")]
@@ -697,7 +736,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResultStatus), TypeInfoPropertyName = "ToolExecutionResultStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolJSONSchema2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaSchemasLettaMessageToolReturn>))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolReturnMessageStatus), TypeInfoPropertyName = "ToolReturnMessageStatus2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRunFromSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolSearchRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolSearchRequestSearchMode), TypeInfoPropertyName = "ToolSearchRequestSearchMode2")]
@@ -715,7 +756,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant18))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "UpdateAgentModelSettingsVariant1DiscriminatorProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant115))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "UpdateAgentResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAssistantMessage))]
@@ -760,7 +803,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant110))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant118))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaSchemasAgentFileMessageSchema>))]
@@ -1034,10 +1079,8 @@ namespace Letta
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
@@ -1156,7 +1199,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyMessageResponseDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyMessageResponseDiscriminatorMessageType), TypeInfoPropertyName = "ModifyMessageResponseDiscriminatorMessageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.MessageSearchResult>))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Group>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Conversation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyGroupMessageResponse), TypeInfoPropertyName = "ModifyGroupMessageResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyGroupMessageResponseDiscriminator))]
@@ -1546,10 +1591,8 @@ namespace Letta
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
@@ -1618,7 +1661,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicThinkingType?), TypeInfoPropertyName = "NullableAnthropicThinkingType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item?), TypeInfoPropertyName = "NullableApprovalsVariant1Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableApprovalCreateApprovalsVariant1ItemDiscriminatorType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta>?), TypeInfoPropertyName = "NullableAnyOfToolCall2ToolCallDelta2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta, object>?), TypeInfoPropertyName = "NullableAnyOfIListToolCall2ToolCallDeltaObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item2?), TypeInfoPropertyName = "NullableApprovalsVariant1Item22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType2")]
@@ -1659,9 +1704,13 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateMCPServerRequestConfigDiscriminatorMcpServerType?), TypeInfoPropertyName = "NullableCreateMCPServerRequestConfigDiscriminatorMcpServerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeepseekModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableDeepseekModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DuplicateFileHandling?), TypeInfoPropertyName = "NullableDuplicateFileHandling2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingConfigEmbeddingEndpointType?), TypeInfoPropertyName = "NullableEmbeddingConfigEmbeddingEndpointType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProviderType?), TypeInfoPropertyName = "NullableProviderType2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EmbeddingModelEmbeddingEndpointType?), TypeInfoPropertyName = "NullableEmbeddingModelEmbeddingEndpointType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.FeedbackType?), TypeInfoPropertyName = "NullableFeedbackType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.FileProcessingStatus?), TypeInfoPropertyName = "NullableFileProcessingStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GoogleAIModelSettingsResponseSchemaVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableGoogleAIModelSettingsResponseSchemaVariant1DiscriminatorType2")]
@@ -1669,10 +1718,16 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableGroqModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerType?), TypeInfoPropertyName = "NullableManagerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerConfig?), TypeInfoPropertyName = "NullableManagerConfig2_3")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupCreateManagerConfigDiscriminatorManagerType?), TypeInfoPropertyName = "NullableGroupCreateManagerConfigDiscriminatorManagerType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerConfig2?), TypeInfoPropertyName = "NullableManagerConfig22")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupSchemaManagerConfigDiscriminatorManagerType?), TypeInfoPropertyName = "NullableGroupSchemaManagerConfigDiscriminatorManagerType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroupUpdateManagerConfigVariant1DiscriminatorManagerType?), TypeInfoPropertyName = "NullableGroupUpdateManagerConfigVariant1DiscriminatorManagerType2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.HiddenReasoningMessageState?), TypeInfoPropertyName = "NullableHiddenReasoningMessageState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityType?), TypeInfoPropertyName = "NullableIdentityType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?, double?, bool?, object>?), TypeInfoPropertyName = "NullableAnyOfStringInt32DoubleBooleanObject2")]
@@ -1720,11 +1775,19 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaMessageContentUnion?), TypeInfoPropertyName = "NullableLettaMessageContentUnion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageSearchRequestSearchMode?), TypeInfoPropertyName = "NullableMessageSearchRequestSearchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModalSandboxConfigLanguage?), TypeInfoPropertyName = "NullableModalSandboxConfigLanguage2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelModelEndpointType?), TypeInfoPropertyName = "NullableModelModelEndpointType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelReasoningEffort?), TypeInfoPropertyName = "NullableModelReasoningEffort2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelEffort?), TypeInfoPropertyName = "NullableModelEffort2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelCompatibilityType?), TypeInfoPropertyName = "NullableModelCompatibilityType2")]
+    #pragma warning restore CS0618
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity?), TypeInfoPropertyName = "NullableModelVerbosity2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableModelResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableOpenAIModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIReasoningReasoningEffort?), TypeInfoPropertyName = "NullableOpenAIReasoningReasoningEffort2")]
@@ -1741,7 +1804,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TogetherModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableTogetherModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolType?), TypeInfoPropertyName = "NullableToolType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResultStatus?), TypeInfoPropertyName = "NullableToolExecutionResultStatus2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolReturnMessageStatus?), TypeInfoPropertyName = "NullableToolReturnMessageStatus2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolSearchRequestSearchMode?), TypeInfoPropertyName = "NullableToolSearchRequestSearchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TurnTokenDataRole?), TypeInfoPropertyName = "NullableTurnTokenDataRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item4?), TypeInfoPropertyName = "NullableToolRulesVariant1Item42")]
@@ -2013,7 +2078,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.EnvironmentsListConnectionsResponseConnectionCurrentMode?), TypeInfoPropertyName = "NullableEnvironmentsListConnectionsResponseConnectionCurrentMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SandboxesListSandboxesResponseSandboxeCurrentMode?), TypeInfoPropertyName = "NullableSandboxesListSandboxesResponseSandboxeCurrentMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaSchemasAgentFileAgentSchema>))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.GroupSchema>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.BlockSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FileSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.SourceSchema>))]
@@ -2058,10 +2125,8 @@ namespace Letta
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_ca7935fffee39e82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ChatCompletionDeveloperMessageParam, global::Letta.ChatCompletionSystemMessageParam, global::Letta.ChatCompletionUserMessageParam, global::Letta.ChatCompletionAssistantMessageParam, global::Letta.ChatCompletionToolMessageParam, global::Letta.ChatCompletionFunctionMessageParam>), TypeInfoPropertyName = "ChatCompletionFunctionMessageParam_1e9257f4f8dba400")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>), TypeInfoPropertyName = "File_cb3024b51b6c9ac5")]
@@ -2216,7 +2281,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Folder>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.BlockResponse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.MessageSearchResult>))]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Group>))]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Conversation>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Run>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Model>))]
