@@ -91,7 +91,7 @@ namespace Letta
             double? topP = default,
             int? n = default,
             bool? stream = default,
-            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>, object>? stop = default,
+            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>>? stop = default,
             int? maxTokens = default,
             double? presencePenalty = default,
             double? frequencyPenalty = default,
