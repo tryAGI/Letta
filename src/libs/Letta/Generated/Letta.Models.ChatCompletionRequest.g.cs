@@ -52,8 +52,8 @@ namespace Letta
         /// Sequences where the API will stop generating
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("stop")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, object>))]
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>, object>? Stop { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>>? Stop { get; set; }
 
         /// <summary>
         /// Maximum number of tokens to generate
@@ -133,7 +133,7 @@ namespace Letta
             double? topP,
             int? n,
             bool? stream,
-            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>, object>? stop,
+            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<string>>? stop,
             int? maxTokens,
             double? presencePenalty,
             double? frequencyPenalty,

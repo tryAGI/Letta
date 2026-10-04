@@ -20,8 +20,8 @@ namespace Letta
         /// Syntactic sugar for a single user message. Equivalent to messages=[{'role': 'user', 'content': input}].
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("input")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>))]
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>? Input { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>))]
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>? Input { get; set; }
 
         /// <summary>
         /// Maximum number of steps the agent should take to process the request.<br/>
@@ -173,7 +173,7 @@ namespace Letta
 #endif
         public LettaRequest(
             global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>>? messages,
-            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>, object>? input,
+            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>? input,
             int? maxSteps,
             global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes,
             global::System.Collections.Generic.IList<global::Letta.ClientToolSchema>? clientTools,

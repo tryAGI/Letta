@@ -38,8 +38,8 @@ namespace Letta
         /// The function response - either a string or list of content parts (text/image)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("func_response")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>))]
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>? FuncResponse { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>>))]
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>>? FuncResponse { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -73,7 +73,7 @@ namespace Letta
             object? toolCallId,
             global::System.Collections.Generic.IList<string>? stdout,
             global::System.Collections.Generic.IList<string>? stderr,
-            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>, object>? funcResponse)
+            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.FuncResponseVariant2Item>>? funcResponse)
         {
             this.ToolCallId = toolCallId;
             this.Status = status;

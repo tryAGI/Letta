@@ -12,8 +12,8 @@ namespace Letta
         /// Agent type controlling prompt rendering.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("agent_type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string, object>))]
-        public global::Letta.AnyOf<global::Letta.AgentType?, string, object>? AgentType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string>))]
+        public global::Letta.AnyOf<global::Letta.AgentType?, string>? AgentType { get; set; }
 
         /// <summary>
         /// Whether this agent uses git-backed memory with structured labels.<br/>
@@ -71,7 +71,7 @@ namespace Letta
 #endif
         public Memory(
             global::System.Collections.Generic.IList<global::Letta.Block> blocks,
-            global::Letta.AnyOf<global::Letta.AgentType?, string, object>? agentType,
+            global::Letta.AnyOf<global::Letta.AgentType?, string>? agentType,
             bool? gitEnabled,
             global::System.Collections.Generic.IList<global::Letta.FileBlock>? fileBlocks,
             string? promptTemplate)

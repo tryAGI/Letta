@@ -124,7 +124,7 @@ namespace Letta
         global::System.Threading.Tasks.Task<string> PreviewConversationModelRequestAsync(
             string conversationId,
             global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>>? messages = default,
-            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>, object>? input = default,
+            global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>? input = default,
             int? maxSteps = default,
             global::System.Collections.Generic.IList<global::Letta.MessageType>? includeReturnMessageTypes = default,
             global::System.Collections.Generic.IList<global::Letta.ClientToolSchema>? clientTools = default,
