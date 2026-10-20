@@ -37,14 +37,14 @@ namespace Letta
 
         internal global::Letta.AutoSDKServerConfiguration AutoSDKServerConfiguration { get; set; } = new global::Letta.AutoSDKServerConfiguration();
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Letta.InternalAgentsSourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext>? JsonSerializerContextProvider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
-            get => JsonSerializerContextProvider.Value;
+            get => JsonSerializerContextProvider?.Value ?? global::Letta.InternalAgentsSourceGenerationContext.Default;
             set => JsonSerializerContextProvider = new(() => value);
         }
 
