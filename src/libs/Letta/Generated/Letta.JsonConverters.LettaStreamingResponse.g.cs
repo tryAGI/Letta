@@ -35,19 +35,19 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.UserMessage)}");
                 userMessage = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.ReasoningMessage? hiddenReasoningMessage1 = default;
-            if (discriminator?.MessageType == global::Letta.LettaStreamingResponseDiscriminatorMessageType.HiddenReasoningMessage)
+            global::Letta.ReasoningMessage? reasoningMessage = default;
+            if (discriminator?.MessageType == global::Letta.LettaStreamingResponseDiscriminatorMessageType.ReasoningMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningMessage> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ReasoningMessage)}");
-                hiddenReasoningMessage1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                reasoningMessage = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.HiddenReasoningMessage? hiddenReasoningMessage2 = default;
+            global::Letta.HiddenReasoningMessage? hiddenReasoningMessage = default;
             if (discriminator?.MessageType == global::Letta.LettaStreamingResponseDiscriminatorMessageType.HiddenReasoningMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.HiddenReasoningMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.HiddenReasoningMessage> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.HiddenReasoningMessage)}");
-                hiddenReasoningMessage2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                hiddenReasoningMessage = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.ToolCallMessage? toolCallMessage = default;
             if (discriminator?.MessageType == global::Letta.LettaStreamingResponseDiscriminatorMessageType.ToolCallMessage)
@@ -119,9 +119,9 @@ namespace Letta.JsonConverters
 
                 userMessage,
 
-                hiddenReasoningMessage1,
+                reasoningMessage,
 
-                hiddenReasoningMessage2,
+                hiddenReasoningMessage,
 
                 toolCallMessage,
 
@@ -166,17 +166,17 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.UserMessage).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickUserMessage(), typeInfo);
             }
-            else if (value.IsHiddenReasoningMessage1)
+            else if (value.IsReasoningMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningMessage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ReasoningMessage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickHiddenReasoningMessage1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReasoningMessage(), typeInfo);
             }
-            else if (value.IsHiddenReasoningMessage2)
+            else if (value.IsHiddenReasoningMessage)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.HiddenReasoningMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.HiddenReasoningMessage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.HiddenReasoningMessage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickHiddenReasoningMessage2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickHiddenReasoningMessage(), typeInfo);
             }
             else if (value.IsToolCallMessage)
             {
