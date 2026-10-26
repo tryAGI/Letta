@@ -49,12 +49,12 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ToolReturnContent)}");
                 toolReturn = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.ReasoningContent? omittedReasoning1 = default;
-            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.OmittedReasoning)
+            global::Letta.ReasoningContent? reasoning = default;
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.Reasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ReasoningContent)}");
-                omittedReasoning1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                reasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.RedactedReasoningContent? redactedReasoning = default;
             if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.RedactedReasoning)
@@ -63,12 +63,12 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.RedactedReasoningContent)}");
                 redactedReasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.OmittedReasoningContent? omittedReasoning2 = default;
+            global::Letta.OmittedReasoningContent? omittedReasoning = default;
             if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.OmittedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.OmittedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.OmittedReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.OmittedReasoningContent)}");
-                omittedReasoning2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                omittedReasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.SummarizedReasoningContent? summarizedReasoning = default;
             if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.SummarizedReasoning)
@@ -88,11 +88,11 @@ namespace Letta.JsonConverters
 
                 toolReturn,
 
-                omittedReasoning1,
+                reasoning,
 
                 redactedReasoning,
 
-                omittedReasoning2,
+                omittedReasoning,
 
                 summarizedReasoning
                 );
@@ -133,11 +133,11 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ToolReturnContent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickToolReturn(), typeInfo);
             }
-            else if (value.IsOmittedReasoning1)
+            else if (value.IsReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOmittedReasoning1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReasoning(), typeInfo);
             }
             else if (value.IsRedactedReasoning)
             {
@@ -145,11 +145,11 @@ namespace Letta.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.RedactedReasoningContent).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRedactedReasoning(), typeInfo);
             }
-            else if (value.IsOmittedReasoning2)
+            else if (value.IsOmittedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.OmittedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.OmittedReasoningContent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.OmittedReasoningContent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOmittedReasoning2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickOmittedReasoning(), typeInfo);
             }
             else if (value.IsSummarizedReasoning)
             {
