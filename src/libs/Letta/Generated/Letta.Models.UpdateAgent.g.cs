@@ -57,7 +57,7 @@ namespace Letta
         /// The tool rules governing the agent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_rules")]
-        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>? ToolRules { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? ToolRules { get; set; }
 
         /// <summary>
         /// The ids of the messages in the agent's in-context memory.
@@ -135,7 +135,7 @@ namespace Letta
         /// The model settings for the agent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant18? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant12? ModelSettings { get; set; }
 
         /// <summary>
         /// The compaction settings configuration used for compaction.
@@ -181,7 +181,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::Letta.ResponseFormatVariant115? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant12? ResponseFormat { get; set; }
 
         /// <summary>
         /// Deprecated: Use `model` field to configure max output tokens instead. The maximum number of tokens to generate, including reasoning step.
@@ -350,7 +350,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? blockIds,
             global::System.Collections.Generic.IList<string>? tags,
             string? system,
-            global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>? toolRules,
+            global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? toolRules,
             global::System.Collections.Generic.IList<string>? messageIds,
             string? description,
             object? metadata,
@@ -363,7 +363,7 @@ namespace Letta
             bool? messageBufferAutoclear,
             string? model,
             string? embedding,
-            global::Letta.ModelSettingsVariant18? modelSettings,
+            global::Letta.ModelSettingsVariant12? modelSettings,
             global::Letta.CompactionSettingsInput? compactionSettings,
             int? contextWindowLimit,
             global::Letta.EmbeddingConfig? embeddingConfig,

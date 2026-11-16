@@ -6,7 +6,7 @@ namespace Letta
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class ToolJSONSchema2
+    public sealed partial class ToolJSONSchema
     {
         /// <summary>
         ///
@@ -48,7 +48,7 @@ namespace Letta
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolJSONSchema2" /> class.
+        /// Initializes a new instance of the <see cref="ToolJSONSchema" /> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="description"></param>
@@ -58,7 +58,7 @@ namespace Letta
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public ToolJSONSchema2(
+        public ToolJSONSchema(
             string name,
             string description,
             global::Letta.ParametersSchema parameters,
@@ -73,9 +73,9 @@ namespace Letta
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolJSONSchema2" /> class.
+        /// Initializes a new instance of the <see cref="ToolJSONSchema" /> class.
         /// </summary>
-        public ToolJSONSchema2()
+        public ToolJSONSchema()
         {
         }
 

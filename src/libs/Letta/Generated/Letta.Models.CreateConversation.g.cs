@@ -30,7 +30,7 @@ namespace Letta
         /// The model settings for this conversation (overrides agent's model settings).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant16? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant15? ModelSettings { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,7 +60,7 @@ namespace Letta
             string? summary,
             global::System.Collections.Generic.IList<string>? isolatedBlockLabels,
             string? model,
-            global::Letta.ModelSettingsVariant16? modelSettings)
+            global::Letta.ModelSettingsVariant15? modelSettings)
         {
             this.Summary = summary;
             this.IsolatedBlockLabels = isolatedBlockLabels;

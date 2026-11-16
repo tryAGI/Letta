@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.UpdateConversationModelSettingsVariant1DiscriminatorProviderType? ProviderType { get; }
+        public global::Letta.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType? ProviderType { get; }
 
         /// <summary>
         ///
@@ -917,7 +917,7 @@ namespace Letta
         ///
         /// </summary>
         public ModelSettingsVariant19(
-            global::Letta.UpdateConversationModelSettingsVariant1DiscriminatorProviderType? providerType,
+            global::Letta.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType? providerType,
             global::Letta.OpenAIModelSettings? openai,
             global::Letta.SGLangModelSettings? sglang,
             global::Letta.AnthropicModelSettings? anthropic,

@@ -2,7 +2,7 @@
 
 namespace Letta
 {
-    public readonly partial struct Source
+    public sealed partial class Source
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -54,7 +54,7 @@ namespace Letta
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
                 typeof(global::Letta.Source),
-                jsonSerializerContext) as global::Letta.Source?;
+                jsonSerializerContext) as global::Letta.Source;
         }
 
         /// <summary>
@@ -101,7 +101,7 @@ namespace Letta
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
                 typeof(global::Letta.Source),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Letta.Source?;
+                jsonSerializerContext).ConfigureAwait(false)) as global::Letta.Source;
         }
 
         /// <summary>

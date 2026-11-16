@@ -17,61 +17,61 @@ namespace Letta.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::Letta.TextContent? text = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.Text)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.Text)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.TextContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.TextContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.TextContent)}");
                 text = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.ImageContent? image = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.Image)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.Image)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ImageContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ImageContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ImageContent)}");
                 image = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.ToolCallContent? toolCall = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.ToolCall)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.ToolCall)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ToolCallContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ToolCallContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ToolCallContent)}");
                 toolCall = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.ToolReturnContent? toolReturn = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.ToolReturn)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.ToolReturn)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ToolReturnContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ToolReturnContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ToolReturnContent)}");
                 toolReturn = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.ReasoningContent? reasoning = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.Reasoning)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.Reasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ReasoningContent)}");
                 reasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.RedactedReasoningContent? redactedReasoning = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.RedactedReasoning)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.RedactedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.RedactedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.RedactedReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.RedactedReasoningContent)}");
                 redactedReasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.OmittedReasoningContent? omittedReasoning = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.OmittedReasoning)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.OmittedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.OmittedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.OmittedReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.OmittedReasoningContent)}");
                 omittedReasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::Letta.SummarizedReasoningContent? summarizedReasoning = default;
-            if (discriminator?.Type == global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType.SummarizedReasoning)
+            if (discriminator?.Type == global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType.SummarizedReasoning)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.SummarizedReasoningContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.SummarizedReasoningContent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.SummarizedReasoningContent)}");

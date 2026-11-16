@@ -40,7 +40,7 @@ namespace Letta
         /// The response format for the model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
-        public global::Letta.ResponseFormatVariant14? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant110? ResponseFormat { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -78,7 +78,7 @@ namespace Letta
             bool? parallelToolCalls,
             string? providerType,
             double? temperature,
-            global::Letta.ResponseFormatVariant14? responseFormat)
+            global::Letta.ResponseFormatVariant110? responseFormat)
         {
             this.MaxOutputTokens = maxOutputTokens;
             this.ParallelToolCalls = parallelToolCalls;

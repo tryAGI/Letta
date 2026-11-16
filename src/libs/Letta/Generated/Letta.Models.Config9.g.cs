@@ -5,163 +5,227 @@
 namespace Letta
 {
     /// <summary>
-    ///
+    /// The MCP server configuration updates (Stdio, SSE, or Streamable HTTP)
     /// </summary>
     public readonly partial struct Config9 : global::System.IEquatable<Config9>
     {
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType? Type { get; }
+        public global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType? McpServerType { get; }
 
         /// <summary>
-        ///
+        /// Update schema for Stdio MCP server - all fields optional
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? SlackChannelReader { get; init; }
+        public global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? Stdio { get; init; }
 #else
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? SlackChannelReader { get; }
+        public global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? Stdio { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SlackChannelReader))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Stdio))]
 #endif
-        public bool IsSlackChannelReader => SlackChannelReader != null;
+        public bool IsStdio => Stdio != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSlackChannelReader(
+        public bool TryPickStdio(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? value)
+            out global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? value)
         {
-            value = SlackChannelReader;
-            return IsSlackChannelReader;
+            value = Stdio;
+            return IsStdio;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1 PickSlackChannelReader() => SlackChannelReader is { } value
+        public global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer PickStdio() => Stdio is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SlackChannelReader' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Stdio' but the value was {ToString()}.");
 
         /// <summary>
-        ///
+        /// Update schema for SSE MCP server - all fields optional
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? CustomWebhook { get; init; }
+        public global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? Sse { get; init; }
 #else
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? CustomWebhook { get; }
+        public global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? Sse { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CustomWebhook))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Sse))]
 #endif
-        public bool IsCustomWebhook => CustomWebhook != null;
+        public bool IsSse => Sse != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCustomWebhook(
+        public bool TryPickSse(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? value)
+            out global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? value)
         {
-            value = CustomWebhook;
-            return IsCustomWebhook;
+            value = Sse;
+            return IsSse;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2 PickCustomWebhook() => CustomWebhook is { } value
+        public global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer PickSse() => Sse is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomWebhook' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Sse' but the value was {ToString()}.");
+
         /// <summary>
-        ///
+        /// Update schema for Streamable HTTP MCP server - all fields optional
         /// </summary>
-        public static implicit operator Config9(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1 value) => new Config9((global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?)value);
+#if NET6_0_OR_GREATER
+        public global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? StreamableHttp { get; init; }
+#else
+        public global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? StreamableHttp { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?(Config9 @this) => @this.SlackChannelReader;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(StreamableHttp))]
+#endif
+        public bool IsStreamableHttp => StreamableHttp != null;
 
         /// <summary>
         ///
         /// </summary>
-        public Config9(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? value)
+        public bool TryPickStreamableHttp(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? value)
         {
-            SlackChannelReader = value;
+            value = StreamableHttp;
+            return IsStreamableHttp;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static Config9 FromSlackChannelReader(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? value) => new Config9(value);
+        public global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer PickStreamableHttp() => StreamableHttp is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'StreamableHttp' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator Config9(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer value) => new Config9((global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator Config9(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2 value) => new Config9((global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?)value);
+        public static implicit operator global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?(Config9 @this) => @this.Stdio;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?(Config9 @this) => @this.CustomWebhook;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public Config9(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? value)
+        public Config9(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? value)
         {
-            CustomWebhook = value;
+            Stdio = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static Config9 FromCustomWebhook(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? value) => new Config9(value);
+        public static Config9 FromStdio(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? value) => new Config9(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator Config9(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer value) => new Config9((global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?(Config9 @this) => @this.Sse;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public Config9(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? value)
+        {
+            Sse = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static Config9 FromSse(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? value) => new Config9(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator Config9(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer value) => new Config9((global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?(Config9 @this) => @this.StreamableHttp;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public Config9(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? value)
+        {
+            StreamableHttp = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static Config9 FromStreamableHttp(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? value) => new Config9(value);
 
         /// <summary>
         ///
         /// </summary>
         public Config9(
-            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType? type,
-            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? slackChannelReader,
-            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? customWebhook
+            global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType? mcpServerType,
+            global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? stdio,
+            global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? sse,
+            global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? streamableHttp
             )
         {
-            Type = type;
+            McpServerType = mcpServerType;
 
-            SlackChannelReader = slackChannelReader;
-            CustomWebhook = customWebhook;
+            Stdio = stdio;
+            Sse = sse;
+            StreamableHttp = streamableHttp;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            CustomWebhook as object ??
-            SlackChannelReader as object
+            StreamableHttp as object ??
+            Sse as object ??
+            Stdio as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SlackChannelReader?.ToString() ??
-            CustomWebhook?.ToString()
+            Stdio?.ToString() ??
+            Sse?.ToString() ??
+            StreamableHttp?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace Letta
         /// </summary>
         public bool Validate()
         {
-            return IsSlackChannelReader && !IsCustomWebhook || !IsSlackChannelReader && IsCustomWebhook;
+            return IsStdio && !IsSse && !IsStreamableHttp || !IsStdio && IsSse && !IsStreamableHttp || !IsStdio && !IsSse && IsStreamableHttp;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1, TResult>? slackChannelReader = null,
-            global::System.Func<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2, TResult>? customWebhook = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer, TResult>? stdio = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer, TResult>? sse = null,
+            global::System.Func<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer, TResult>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace Letta
                 Validate();
             }
 
-            if (SlackChannelReader is { } __value0 && slackChannelReader != null)
+            if (Stdio is { } __value0 && stdio != null)
             {
-                return slackChannelReader(__value0);
+                return stdio(__value0);
             }
-            else if (CustomWebhook is { } __value1 && customWebhook != null)
+            else if (Sse is { } __value1 && sse != null)
             {
-                return customWebhook(__value1);
+                return sse(__value1);
+            }
+            else if (StreamableHttp is { } __value2 && streamableHttp != null)
+            {
+                return streamableHttp(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace Letta
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1>? slackChannelReader = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer>? stdio = null,
 
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2>? customWebhook = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer>? sse = null,
+
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace Letta
                 Validate();
             }
 
-            if (SlackChannelReader is { } __value0)
+            if (Stdio is { } __value0)
             {
-                slackChannelReader?.Invoke(__value0);
+                stdio?.Invoke(__value0);
             }
-            else if (CustomWebhook is { } __value1)
+            else if (Sse is { } __value1)
             {
-                customWebhook?.Invoke(__value1);
+                sse?.Invoke(__value1);
+            }
+            else if (StreamableHttp is { } __value2)
+            {
+                streamableHttp?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace Letta
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1>? slackChannelReader = null,
-            global::System.Action<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2>? customWebhook = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer>? stdio = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer>? sse = null,
+            global::System.Action<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer>? streamableHttp = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace Letta
                 Validate();
             }
 
-            if (SlackChannelReader is { } __value0)
+            if (Stdio is { } __value0)
             {
-                slackChannelReader?.Invoke(__value0);
+                stdio?.Invoke(__value0);
             }
-            else if (CustomWebhook is { } __value1)
+            else if (Sse is { } __value1)
             {
-                customWebhook?.Invoke(__value1);
+                sse?.Invoke(__value1);
+            }
+            else if (StreamableHttp is { } __value2)
+            {
+                streamableHttp?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace Letta
         {
             var fields = new object?[]
             {
-                SlackChannelReader,
-                typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1),
-                CustomWebhook,
-                typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2),
+                Stdio,
+                typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer),
+                Sse,
+                typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer),
+                StreamableHttp,
+                typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace Letta
         public bool Equals(Config9 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?>.Default.Equals(SlackChannelReader, other.SlackChannelReader) &&
-                global::System.Collections.Generic.EqualityComparer<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?>.Default.Equals(CustomWebhook, other.CustomWebhook)
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?>.Default.Equals(Stdio, other.Stdio) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?>.Default.Equals(Sse, other.Sse) &&
+                global::System.Collections.Generic.EqualityComparer<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?>.Default.Equals(StreamableHttp, other.StreamableHttp)
                 ;
         }
 

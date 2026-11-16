@@ -18,9 +18,9 @@ namespace Letta
         /// The MCP server configuration updates (Stdio, SSE, or Streamable HTTP)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.Config4JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.Config9JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.Config4 Config { get; set; }
+        public required global::Letta.Config9 Config { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,7 +41,7 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMCPServerRequest(
-            global::Letta.Config4 config,
+            global::Letta.Config9 config,
             string? serverName)
         {
             this.ServerName = serverName;

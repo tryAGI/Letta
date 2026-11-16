@@ -4,10 +4,10 @@
 namespace Letta.JsonConverters
 {
     /// <inheritdoc />
-    public class Config7JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.Config7>
+    public class Config2JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.Config2>
     {
         /// <inheritdoc />
-        public override global::Letta.Config7 Read(
+        public override global::Letta.Config2 Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -36,7 +36,7 @@ namespace Letta.JsonConverters
                 customWebhook = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
-            var __value = new global::Letta.Config7(
+            var __value = new global::Letta.Config2(
                 discriminator?.Type,
                 slackChannelReader,
 
@@ -49,7 +49,7 @@ namespace Letta.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Letta.Config7 value,
+            global::Letta.Config2 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));

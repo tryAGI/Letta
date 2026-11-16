@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.OpenAIModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
+        public global::Letta.DeepseekModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
 
         /// <summary>
         /// Response format for plain text responses.
@@ -197,7 +197,7 @@ namespace Letta
         ///
         /// </summary>
         public ResponseFormatVariant111(
-            global::Letta.OpenAIModelSettingsResponseFormatVariant1DiscriminatorType? type,
+            global::Letta.DeepseekModelSettingsResponseFormatVariant1DiscriminatorType? type,
             global::Letta.TextResponseFormat? text,
             global::Letta.JsonSchemaResponseFormat? jsonSchema,
             global::Letta.JsonObjectResponseFormat? jsonObject

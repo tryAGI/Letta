@@ -148,9 +148,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Tool>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Tool))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Source2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Source>))]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AgentEnvironmentVariable>))]
     #pragma warning restore CS0618
@@ -165,7 +165,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnnotationURLCitation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicThinking))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant12))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant113))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "AnthropicModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnthropicModelSettingsVerbosity), TypeInfoPropertyName = "AnthropicModelSettingsVerbosity2")]
@@ -179,12 +179,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType), TypeInfoPropertyName = "ApprovalCreateApprovalsVariant1ItemDiscriminatorType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta>), TypeInfoPropertyName = "AnyOfToolCall2ToolCallDelta2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall, global::Letta.ToolCallDelta>), TypeInfoPropertyName = "AnyOfToolCallToolCallDelta2")]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCall2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCall))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCallDelta))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>), TypeInfoPropertyName = "AnyOfIListToolCall2ToolCallDelta2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolCall2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>), TypeInfoPropertyName = "AnyOfIListToolCallToolCallDelta2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalResponseMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ApprovalsVariant1Item2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item2), TypeInfoPropertyName = "ApprovalsVariant1Item22")]
@@ -206,7 +206,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AuthRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AuthResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Guid))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant13))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant16))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AzureModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AzureModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "AzureModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Base64Image))]
@@ -215,7 +215,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobStatus), TypeInfoPropertyName = "JobStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.JobType), TypeInfoPropertyName = "JobType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(long))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant14))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant110))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.BedrockModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.BedrockModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "BedrockModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.BillingContext))]
@@ -285,11 +285,11 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CodeInput))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsInput))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant12))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant17))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsInputModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "CompactionSettingsInputModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsInputMode), TypeInfoPropertyName = "CompactionSettingsInputMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant13))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant18))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsOutputModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "CompactionSettingsOutputModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CompactionSettingsOutputMode), TypeInfoPropertyName = "CompactionSettingsOutputMode2")]
@@ -304,7 +304,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.Message>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Message))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Conversation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant14))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant13))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ConversationModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ConversationModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "ConversationModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ConversationMessageRequest))]
@@ -312,9 +312,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>), TypeInfoPropertyName = "AnyOfMessageCreateApprovalCreateToolReturnCreate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageCreate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolReturnCreate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item), TypeInfoPropertyName = "InputVariant2Item2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item5), TypeInfoPropertyName = "InputVariant2Item52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TextContent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ImageContent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolCallContent))]
@@ -333,16 +333,16 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.CreateBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateBlock))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item2), TypeInfoPropertyName = "ToolRulesVariant1Item22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item3), TypeInfoPropertyName = "ToolRulesVariant1Item32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestToolRulesVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestToolRulesVariant1ItemDiscriminatorType), TypeInfoPropertyName = "CreateAgentRequestToolRulesVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.MessageCreate>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant15))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant14))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant15))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant17))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "CreateAgentRequestResponseFormatVariant1DiscriminatorType2")]
@@ -351,17 +351,17 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaBatchRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaBatchRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateConversation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant16))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant15))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateConversationModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateConversationModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "CreateConversationModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateMCPServerRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config), TypeInfoPropertyName = "Config2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config8), TypeInfoPropertyName = "Config82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateStdioMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateSSEMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateStreamableHTTPMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateMCPServerRequestConfigDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateMCPServerRequestConfigDiscriminatorMcpServerType), TypeInfoPropertyName = "CreateMCPServerRequestConfigDiscriminatorMcpServerType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant16))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant111))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeepseekModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeepseekModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "DeepseekModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeleteDeploymentResponse))]
@@ -402,7 +402,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseSchemaVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GoogleVertexModelSettingsResponseSchemaVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorType), TypeInfoPropertyName = "GoogleVertexModelSettingsResponseSchemaVariant1DiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant17))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant15))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroqModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "GroqModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ManagerType), TypeInfoPropertyName = "ManagerType2")]
@@ -458,7 +458,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityPropertyType), TypeInfoPropertyName = "IdentityPropertyType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityUpsert))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source), TypeInfoPropertyName = "Source2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source2), TypeInfoPropertyName = "Source22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UrlImage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaImage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ImageContentSourceDiscriminator))]
@@ -467,15 +467,15 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ImportedAgentsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputAudioFormat), TypeInfoPropertyName = "InputAudioFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item3), TypeInfoPropertyName = "ToolRulesVariant1Item32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item4), TypeInfoPropertyName = "ToolRulesVariant1Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType), TypeInfoPropertyName = "InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant17))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant19))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant18))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant115))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType2")]
@@ -491,7 +491,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigEffort), TypeInfoPropertyName = "LLMConfigEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigCompatibilityType), TypeInfoPropertyName = "LLMConfigCompatibilityType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigVerbosity), TypeInfoPropertyName = "LLMConfigVerbosity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant19))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant118))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "LLMConfigResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaAsyncRequest))]
@@ -509,9 +509,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaErrorMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaPing))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item4), TypeInfoPropertyName = "InputVariant2Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item), TypeInfoPropertyName = "InputVariant2Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaRequestInputVariant2ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaRequestInputVariant2ItemDiscriminatorType), TypeInfoPropertyName = "LettaRequestInputVariant2ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaRequestConfig))]
@@ -523,9 +523,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.TurnTokenData>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TurnTokenData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item5), TypeInfoPropertyName = "InputVariant2Item52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>), TypeInfoPropertyName = "AnyOfStringIListInputVariant2Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item4), TypeInfoPropertyName = "InputVariant2Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType), TypeInfoPropertyName = "LettaStreamingRequestInputVariant2ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingResponse), TypeInfoPropertyName = "LettaStreamingResponse2")]
@@ -614,8 +614,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.FileBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageRole), TypeInfoPropertyName = "MessageRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item), TypeInfoPropertyName = "ContentVariant1Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item4>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item4), TypeInfoPropertyName = "ContentVariant1Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminatorType), TypeInfoPropertyName = "MessageContentVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ChatCompletionMessageFunctionToolCallOutput>))]
@@ -648,18 +648,18 @@ namespace Letta
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelVerbosity), TypeInfoPropertyName = "ModelVerbosity2")]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant110))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant117))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "ModelResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyApprovalRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModifyFeedbackRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.NpmRequirement))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIReasoning))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant111))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant18))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "OpenAIModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenAIReasoningReasoningEffort), TypeInfoPropertyName = "OpenAIReasoningReasoningEffort2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant112))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant114))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenRouterModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OpenRouterModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "OpenRouterModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Organization))]
@@ -693,7 +693,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Run))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.RunStatus), TypeInfoPropertyName = "RunStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.RunMetrics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant113))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant19))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SGLangModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SGLangModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "SGLangModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SSEMCPServer))]
@@ -726,7 +726,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SummaryMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.SystemMessageListResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TagSchema))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant114))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant112))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TogetherModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TogetherModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "TogetherModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolType), TypeInfoPropertyName = "ToolType2")]
@@ -735,7 +735,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolEnvVarSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolExecutionResultStatus), TypeInfoPropertyName = "ToolExecutionResultStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolJSONSchema2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolJSONSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.LettaSchemasLettaMessageToolReturn>))]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolReturnMessageStatus), TypeInfoPropertyName = "ToolReturnMessageStatus2")]
@@ -750,25 +750,25 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<object>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item4), TypeInfoPropertyName = "ToolRulesVariant1Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item2), TypeInfoPropertyName = "ToolRulesVariant1Item22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentToolRulesVariant1ItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentToolRulesVariant1ItemDiscriminatorType), TypeInfoPropertyName = "UpdateAgentToolRulesVariant1ItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant18))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant12))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "UpdateAgentModelSettingsVariant1DiscriminatorProviderType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant115))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant12))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "UpdateAgentResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAssistantMessage))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateConversation))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant19))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ModelSettingsVariant16))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateConversationModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateConversationModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "UpdateConversationModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateMCPServerRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config4), TypeInfoPropertyName = "Config42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config9), TypeInfoPropertyName = "Config92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer))]
@@ -789,10 +789,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UserUpdate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.AnyOf<string, int?>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?>), TypeInfoPropertyName = "AnyOfStringInt322")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant116))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant13))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.XAIModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.XAIModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "XAIModelSettingsResponseFormatVariant1DiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant117))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant14))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ZAIModelSettingsResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "ZAIModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ZAIThinking))]
@@ -805,7 +805,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType), TypeInfoPropertyName = "LettaSchemasAgentFileAgentSchemaModelSettingsVariant1DiscriminatorProviderType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant118))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ResponseFormatVariant116))]
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1Discriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType), TypeInfoPropertyName = "LettaSchemasAgentFileAgentSchemaResponseFormatVariant1DiscriminatorType2")]
@@ -1001,7 +1001,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineRequestProducerConfigDiscriminatorType), TypeInfoPropertyName = "PipelinesCreatePipelineRequestProducerConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig2), TypeInfoPropertyName = "ProducerConfig22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig3), TypeInfoPropertyName = "ProducerConfig32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type), TypeInfoPropertyName = "PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Data))]
@@ -1013,7 +1013,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType), TypeInfoPropertyName = "PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestIntegrationType), TypeInfoPropertyName = "PipelinesPreviewPipelineRequestIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig3), TypeInfoPropertyName = "ProducerConfig32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig2), TypeInfoPropertyName = "ProducerConfig22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Type), TypeInfoPropertyName = "PipelinesPreviewPipelineRequestProducerConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Data))]
@@ -1330,8 +1330,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion), TypeInfoPropertyName = "ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.DataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem), TypeInfoPropertyName = "DataItem2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.DataItem2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem2), TypeInfoPropertyName = "DataItem22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type), TypeInfoPropertyName = "ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces>))]
@@ -1344,8 +1344,8 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicy))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion), TypeInfoPropertyName = "ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.DataItem2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem2), TypeInfoPropertyName = "DataItem22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.DataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem), TypeInfoPropertyName = "DataItem2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type), TypeInfoPropertyName = "ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces>))]
@@ -1461,7 +1461,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipeline))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineIntegrationType), TypeInfoPropertyName = "PipelinesCreatePipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config5), TypeInfoPropertyName = "Config52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config3), TypeInfoPropertyName = "Config32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Type), TypeInfoPropertyName = "PipelinesCreatePipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Data))]
@@ -1477,7 +1477,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Letta.PipelinesListPipelinesResponsePipeline>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipeline))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineIntegrationType), TypeInfoPropertyName = "PipelinesListPipelinesResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config6), TypeInfoPropertyName = "Config62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config), TypeInfoPropertyName = "Config2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Type), TypeInfoPropertyName = "PipelinesListPipelinesResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Data))]
@@ -1491,7 +1491,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipeline))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineIntegrationType), TypeInfoPropertyName = "PipelinesGetPipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config7), TypeInfoPropertyName = "Config72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config2), TypeInfoPropertyName = "Config22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Type), TypeInfoPropertyName = "PipelinesGetPipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Data))]
@@ -1506,7 +1506,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipeline))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineIntegrationType), TypeInfoPropertyName = "PipelinesUpdatePipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config8), TypeInfoPropertyName = "Config82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config4), TypeInfoPropertyName = "Config42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Type), TypeInfoPropertyName = "PipelinesUpdatePipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Data))]
@@ -1524,7 +1524,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipeline))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType), TypeInfoPropertyName = "PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config9), TypeInfoPropertyName = "Config92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config5), TypeInfoPropertyName = "Config52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type), TypeInfoPropertyName = "PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Data))]
@@ -1665,9 +1665,9 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item?), TypeInfoPropertyName = "NullableApprovalsVariant1Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalCreateApprovalsVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableApprovalCreateApprovalsVariant1ItemDiscriminatorType2")]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta>?), TypeInfoPropertyName = "NullableAnyOfToolCall2ToolCallDelta2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ToolCall, global::Letta.ToolCallDelta>?), TypeInfoPropertyName = "NullableAnyOfToolCallToolCallDelta2")]
     #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>?), TypeInfoPropertyName = "NullableAnyOfIListToolCall2ToolCallDelta2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>?), TypeInfoPropertyName = "NullableAnyOfIListToolCallToolCallDelta2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalsVariant1Item2?), TypeInfoPropertyName = "NullableApprovalsVariant1Item22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableApprovalResponseMessageApprovalsVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.VectorDBProvider?), TypeInfoPropertyName = "NullableVectorDBProvider2")]
@@ -1695,16 +1695,16 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ComparisonOperator?), TypeInfoPropertyName = "NullableComparisonOperator2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ConversationModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableConversationModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>?), TypeInfoPropertyName = "NullableAnyOfMessageCreateApprovalCreateToolReturnCreate2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item?), TypeInfoPropertyName = "NullableInputVariant2Item2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item5?), TypeInfoPropertyName = "NullableInputVariant2Item52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ConversationMessageRequestInputVariant2ItemDiscriminatorType?), TypeInfoPropertyName = "NullableConversationMessageRequestInputVariant2ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageType?), TypeInfoPropertyName = "NullableMessageType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item2?), TypeInfoPropertyName = "NullableToolRulesVariant1Item22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item3?), TypeInfoPropertyName = "NullableToolRulesVariant1Item32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestToolRulesVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableCreateAgentRequestToolRulesVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableCreateAgentRequestModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateAgentRequestResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableCreateAgentRequestResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateConversationModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableCreateConversationModelSettingsVariant1DiscriminatorProviderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config?), TypeInfoPropertyName = "NullableConfig2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config8?), TypeInfoPropertyName = "NullableConfig82")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.CreateMCPServerRequestConfigDiscriminatorMcpServerType?), TypeInfoPropertyName = "NullableCreateMCPServerRequestConfigDiscriminatorMcpServerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DeepseekModelSettingsResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableDeepseekModelSettingsResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DuplicateFileHandling?), TypeInfoPropertyName = "NullableDuplicateFileHandling2")]
@@ -1736,11 +1736,11 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityType?), TypeInfoPropertyName = "NullableIdentityType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, int?, double?, bool?, object>?), TypeInfoPropertyName = "NullableAnyOfStringInt32DoubleBooleanObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.IdentityPropertyType?), TypeInfoPropertyName = "NullableIdentityPropertyType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source?), TypeInfoPropertyName = "NullableSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Source2?), TypeInfoPropertyName = "NullableSource22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ImageContentSourceDiscriminatorType?), TypeInfoPropertyName = "NullableImageContentSourceDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ImageURLDetail?), TypeInfoPropertyName = "NullableImageURLDetail2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputAudioFormat?), TypeInfoPropertyName = "NullableInputAudioFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item3?), TypeInfoPropertyName = "NullableToolRulesVariant1Item32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item4?), TypeInfoPropertyName = "NullableToolRulesVariant1Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableInternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableInternalTemplateAgentCreateModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableInternalTemplateAgentCreateResponseFormatVariant1DiscriminatorType2")]
@@ -1759,19 +1759,19 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item3?), TypeInfoPropertyName = "NullableInputVariant2Item32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaBatchRequestInputVariant2ItemDiscriminatorType?), TypeInfoPropertyName = "NullableLettaBatchRequestInputVariant2ItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item42")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item4?), TypeInfoPropertyName = "NullableInputVariant2Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item?), TypeInfoPropertyName = "NullableInputVariant2Item2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaRequestInputVariant2ItemDiscriminatorType?), TypeInfoPropertyName = "NullableLettaRequestInputVariant2ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaMessageUnion?), TypeInfoPropertyName = "NullableLettaMessageUnion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item52")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item5?), TypeInfoPropertyName = "NullableInputVariant2Item52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>?), TypeInfoPropertyName = "NullableAnyOfStringIListInputVariant2Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.InputVariant2Item4?), TypeInfoPropertyName = "NullableInputVariant2Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType?), TypeInfoPropertyName = "NullableLettaStreamingRequestInputVariant2ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingResponse?), TypeInfoPropertyName = "NullableLettaStreamingResponse2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaStreamingResponseDiscriminatorMessageType?), TypeInfoPropertyName = "NullableLettaStreamingResponseDiscriminatorMessageType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MCPServerType?), TypeInfoPropertyName = "NullableMCPServerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.AgentType?, string>?), TypeInfoPropertyName = "NullableAnyOfAgentTypeString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageRole?), TypeInfoPropertyName = "NullableMessageRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item?), TypeInfoPropertyName = "NullableContentVariant1Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ContentVariant1Item4?), TypeInfoPropertyName = "NullableContentVariant1Item42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageContentVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableMessageContentVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>?), TypeInfoPropertyName = "NullableAnyOfApprovalReturnLettaSchemasMessageToolReturnOutput2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MessageCreateRole?), TypeInfoPropertyName = "NullableMessageCreateRole2")]
@@ -1813,12 +1813,12 @@ namespace Letta
     #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolSearchRequestSearchMode?), TypeInfoPropertyName = "NullableToolSearchRequestSearchMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TurnTokenDataRole?), TypeInfoPropertyName = "NullableTurnTokenDataRole2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item4?), TypeInfoPropertyName = "NullableToolRulesVariant1Item42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ToolRulesVariant1Item2?), TypeInfoPropertyName = "NullableToolRulesVariant1Item22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentToolRulesVariant1ItemDiscriminatorType?), TypeInfoPropertyName = "NullableUpdateAgentToolRulesVariant1ItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableUpdateAgentModelSettingsVariant1DiscriminatorProviderType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateAgentResponseFormatVariant1DiscriminatorType?), TypeInfoPropertyName = "NullableUpdateAgentResponseFormatVariant1DiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateConversationModelSettingsVariant1DiscriminatorProviderType?), TypeInfoPropertyName = "NullableUpdateConversationModelSettingsVariant1DiscriminatorProviderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config4?), TypeInfoPropertyName = "NullableConfig42")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config9?), TypeInfoPropertyName = "NullableConfig92")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType?), TypeInfoPropertyName = "NullableUpdateMCPServerRequestConfigDiscriminatorMcpServerType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>?), TypeInfoPropertyName = "NullableAnyOfIListLettaUserMessageContentUnionString2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.LettaUserMessageContentUnion?), TypeInfoPropertyName = "NullableLettaUserMessageContentUnion2")]
@@ -1902,12 +1902,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineRequestProducerConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineRequestProducerConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineRequestProducerConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineRequestProducerConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineRequestProducerConfigDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig2?), TypeInfoPropertyName = "NullableProducerConfig22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig3?), TypeInfoPropertyName = "NullableProducerConfig32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestIntegrationType?), TypeInfoPropertyName = "NullablePipelinesPreviewPipelineRequestIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig3?), TypeInfoPropertyName = "NullableProducerConfig32")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ProducerConfig2?), TypeInfoPropertyName = "NullableProducerConfig22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesPreviewPipelineRequestProducerConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesPreviewPipelineRequestProducerConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesPreviewPipelineRequestProducerConfigDiscriminatorType2")]
@@ -2009,12 +2009,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffort?), TypeInfoPropertyName = "NullableTemplatesGetTemplateSnapshotResponseAgentPropertiesReasoningEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.TemplatesGetTemplateSnapshotResponseType?), TypeInfoPropertyName = "NullableTemplatesGetTemplateSnapshotResponseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion?), TypeInfoPropertyName = "NullableClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem?), TypeInfoPropertyName = "NullableDataItem2_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem2?), TypeInfoPropertyName = "NullableDataItem22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type?), TypeInfoPropertyName = "NullableClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces?), TypeInfoPropertyName = "NullableClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType?), TypeInfoPropertyName = "NullableClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion?), TypeInfoPropertyName = "NullableClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem2?), TypeInfoPropertyName = "NullableDataItem22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.DataItem?), TypeInfoPropertyName = "NullableDataItem2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type?), TypeInfoPropertyName = "NullableClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces?), TypeInfoPropertyName = "NullableClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType?), TypeInfoPropertyName = "NullableClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType2")]
@@ -2043,31 +2043,31 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.FeedsListSubscriptionsResponseSubscriptionMergeStrategy?), TypeInfoPropertyName = "NullableFeedsListSubscriptionsResponseSubscriptionMergeStrategy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.MemoryFilesListDirectoryResponseEntrieType?), TypeInfoPropertyName = "NullableMemoryFilesListDirectoryResponseEntrieType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineIntegrationType?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config5?), TypeInfoPropertyName = "NullableConfig52")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config3?), TypeInfoPropertyName = "NullableConfig32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineResponsePipelineConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponsePipelineConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineResponsePipelineConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesCreatePipelineResponseErrorCode?), TypeInfoPropertyName = "NullablePipelinesCreatePipelineResponseErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineIntegrationType?), TypeInfoPropertyName = "NullablePipelinesListPipelinesResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config6?), TypeInfoPropertyName = "NullableConfig62")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config?), TypeInfoPropertyName = "NullableConfig2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesListPipelinesResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesListPipelinesResponsePipelineConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesListPipelinesResponsePipelineConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesListPipelinesResponsePipelineConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineIntegrationType?), TypeInfoPropertyName = "NullablePipelinesGetPipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config7?), TypeInfoPropertyName = "NullableConfig72")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config2?), TypeInfoPropertyName = "NullableConfig22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesGetPipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesGetPipelineResponsePipelineConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponsePipelineConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesGetPipelineResponsePipelineConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesGetPipelineResponseErrorCode?), TypeInfoPropertyName = "NullablePipelinesGetPipelineResponseErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineIntegrationType?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config8?), TypeInfoPropertyName = "NullableConfig82")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config4?), TypeInfoPropertyName = "NullableConfig42")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineResponsePipelineConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponsePipelineConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineResponsePipelineConfigDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineResponseErrorCode?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineResponseErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesDeletePipelineResponseErrorCode?), TypeInfoPropertyName = "NullablePipelinesDeletePipelineResponseErrorCode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigResponsePipelineIntegrationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config9?), TypeInfoPropertyName = "NullableConfig92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.Config5?), TypeInfoPropertyName = "NullableConfig52")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2Type?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType?), TypeInfoPropertyName = "NullablePipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType2")]
@@ -2095,12 +2095,12 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Block>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Tool>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Source2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Source>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AgentEnvironmentVariable>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.Identity>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ApprovalsVariant1Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolCall2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.ToolCall>, global::Letta.ToolCallDelta>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolCall>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ApprovalsVariant1Item2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ArchivalMemorySearchResult>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.LettaAssistantMessageContentUnion>, string>))]
@@ -2183,32 +2183,32 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.OneOf<global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>, string>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_string_e6d48bff86b9f0ca")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.OneOf<global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant1, global::Letta.ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2>>), TypeInfoPropertyName = "ScheduledMessagesRetrieveScheduledMessageResponseMessageMessageContentVariant1ItemVariant2_4c4e29f4c2923f40")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.MessageType>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientToolSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSkillSchema>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.CreateBlock>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item3>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.MessageCreate>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaBatchRequest>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ValidationError>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.IdentityProperty>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item3>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item3>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item3>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaMessageUnion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TurnTokenData>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.DeploymentEntity>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.PipRequirement>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.FileBlock>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ContentVariant1Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ContentVariant1Item4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ChatCompletionMessageFunctionToolCallOutput>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaSchemasMessageToolReturnOutput>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>>))]
@@ -2225,7 +2225,7 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaSchemasLettaMessageToolReturn>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<int>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::System.Collections.Generic.List<object>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item4>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.LettaUserMessageContentUnion>, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.LettaUserMessageContentUnion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.AnyOf<string, int?>>))]
@@ -2308,10 +2308,10 @@ namespace Letta
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseBlock>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesGetTemplateSnapshotResponseRelationship>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.TemplatesListTemplateVersionsResponseVersion>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.DataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.DataItem2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1Acces>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseToken>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.DataItem2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.DataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1Acces>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ProjectsListProjectsResponseProject>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Letta.ScheduledMessagesListScheduledMessagesResponseScheduledMessage>))]
@@ -2374,54 +2374,54 @@ namespace Letta
             options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1ItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant1JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant1JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ApprovalsVariant1ItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ApprovalsVariant1Item2JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2ItemJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ConfigJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant16JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant13JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item5JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant14JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant15JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config8JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseSchemaVariant1JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseSchemaVariant12JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant17JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant15JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ManagerConfigJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ManagerConfig2JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ManagerConfigVariant1JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.SourceJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item3JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant17JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Source2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ManagerConfig3JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item2JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2ItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item4JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.InputVariant2Item5JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.LettaStreamingResponseJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ContentVariant1ItemJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant110JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant111JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant113JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item4JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant18JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant115JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant19JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.Config4JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ContentVariant1Item4JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant117JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant18JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant114JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant19JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant112JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant12JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant16JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config9JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant13JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant14JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ToolRulesVariant1Item5JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ModelSettingsVariant110JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant118JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ResponseFormatVariant116JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.FuncResponseVariant2ItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.FuncResponseVariant2Item2JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.LettaMessageUnionJsonConverter());
@@ -2434,21 +2434,21 @@ namespace Letta
             options.Converters.Add(new global::Letta.JsonConverters.PolicyItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.EventsItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ProducerConfigJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.ProducerConfig2JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ProducerConfig3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ProducerConfig2JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ModifyMessageResponseJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ModifyGroupMessageResponseJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.ListMessagesForStepResponseItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.SearchAllMessagesResponseItemJsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.DataItemJsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.DataItem2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.DataItemJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config3JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.ConfigJsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config2JsonConverter());
+            options.Converters.Add(new global::Letta.JsonConverters.Config4JsonConverter());
             options.Converters.Add(new global::Letta.JsonConverters.Config5JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.Config6JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.Config7JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.Config8JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.Config9JsonConverter());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartRefusalParam>>>());
@@ -2463,23 +2463,23 @@ namespace Letta
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.AnyOf<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ChatCompletionContentPartTextParam, global::Letta.ChatCompletionContentPartImageParam, global::Letta.ChatCompletionContentPartInputAudioParam, global::Letta.File>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, int?, double?, bool?, object>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item2>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item3>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.MessageCreate, global::Letta.ApprovalCreate, global::Letta.ToolReturnCreate>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.AgentType?, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ApprovalReturn, global::Letta.LettaSchemasMessageToolReturnOutput>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaMessageContentUnion>, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.LocalSandboxConfig, global::Letta.E2BSandboxConfig, global::Letta.ModalSandboxConfig>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>());
-            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall, global::Letta.ToolCallDelta>());
+            options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaAssistantMessageContentUnion>, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>());
             options.Converters.Add(new global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.LettaUserMessageContentUnion>, string>());

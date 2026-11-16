@@ -17,30 +17,39 @@ namespace Letta.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.UpdateMCPServerRequestConfigDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.UpdateMCPServerRequestConfigDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.UpdateMCPServerRequestConfigDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1? slackChannelReader = default;
-            if (discriminator?.Type == global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType.SlackChannelReader)
+            global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer? stdio = default;
+            if (discriminator?.McpServerType == global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType.Stdio)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1)}");
-                slackChannelReader = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer)}");
+                stdio = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2? customWebhook = default;
-            if (discriminator?.Type == global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigDiscriminatorType.CustomWebhook)
+            global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer? sse = default;
+            if (discriminator?.McpServerType == global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType.Sse)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2)}");
-                customWebhook = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer)}");
+                sse = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer? streamableHttp = default;
+            if (discriminator?.McpServerType == global::Letta.UpdateMCPServerRequestConfigDiscriminatorMcpServerType.StreamableHttp)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer)}");
+                streamableHttp = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::Letta.Config9(
-                discriminator?.Type,
-                slackChannelReader,
+                discriminator?.McpServerType,
+                stdio,
 
-                customWebhook
+                sse,
+
+                streamableHttp
                 );
 
             return __value;
@@ -55,17 +64,23 @@ namespace Letta.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsSlackChannelReader)
+            if (value.IsStdio)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSlackChannelReader(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateStdioMCPServer).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStdio(), typeInfo);
             }
-            else if (value.IsCustomWebhook)
+            else if (value.IsSse)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesUpdatePipelineProducerConfigResponsePipelineConfigVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCustomWebhook(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateSSEMCPServer).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSse(), typeInfo);
+            }
+            else if (value.IsStreamableHttp)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.LettaSchemasMcpServerUpdateStreamableHTTPMCPServer).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickStreamableHttp(), typeInfo);
             }
         }
     }

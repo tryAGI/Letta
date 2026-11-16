@@ -12,9 +12,9 @@ namespace Letta
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("producer_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ProducerConfig2JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ProducerConfig3JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.ProducerConfig2 ProducerConfig { get; set; }
+        public required global::Letta.ProducerConfig3 ProducerConfig { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,7 +30,7 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PipelinesUpdatePipelineProducerConfigRequest(
-            global::Letta.ProducerConfig2 producerConfig)
+            global::Letta.ProducerConfig3 producerConfig)
         {
             this.ProducerConfig = producerConfig;
         }

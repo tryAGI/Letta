@@ -74,7 +74,7 @@ namespace Letta
         /// The model settings for this conversation (overrides agent's model settings).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant14? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant13? ModelSettings { get; set; }
 
         /// <summary>
         /// Timestamp of the most recent message request sent to this conversation.
@@ -141,7 +141,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? inContextMessageIds,
             global::System.Collections.Generic.IList<string>? isolatedBlockIds,
             string? model,
-            global::Letta.ModelSettingsVariant14? modelSettings,
+            global::Letta.ModelSettingsVariant13? modelSettings,
             global::System.DateTime? lastMessageAt)
         {
             this.CreatedById = createdById;

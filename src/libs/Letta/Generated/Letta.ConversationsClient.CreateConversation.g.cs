@@ -528,7 +528,7 @@ namespace Letta
             string? summary = default,
             global::System.Collections.Generic.IList<string>? isolatedBlockLabels = default,
             string? model = default,
-            global::Letta.ModelSettingsVariant16? modelSettings = default,
+            global::Letta.ModelSettingsVariant15? modelSettings = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

@@ -47,7 +47,7 @@ namespace Letta
         /// The response format for the model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
-        public global::Letta.ResponseFormatVariant12? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant113? ResponseFormat { get; set; }
 
         /// <summary>
         /// Soft control for how verbose model output should be, used for GPT-5 models.
@@ -119,7 +119,7 @@ namespace Letta
             string? providerType,
             double? temperature,
             global::Letta.AnthropicThinking? thinking,
-            global::Letta.ResponseFormatVariant12? responseFormat,
+            global::Letta.ResponseFormatVariant113? responseFormat,
             global::Letta.AnthropicModelSettingsVerbosity? verbosity,
             global::Letta.AnthropicModelSettingsEffort? effort,
             bool? strict)

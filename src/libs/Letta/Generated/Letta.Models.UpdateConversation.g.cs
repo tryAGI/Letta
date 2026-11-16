@@ -24,7 +24,7 @@ namespace Letta
         /// The model settings for this conversation (overrides agent's model settings).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant19? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant16? ModelSettings { get; set; }
 
         /// <summary>
         /// Timestamp of the most recent message request sent to this conversation.
@@ -59,7 +59,7 @@ namespace Letta
         public UpdateConversation(
             string? summary,
             string? model,
-            global::Letta.ModelSettingsVariant19? modelSettings,
+            global::Letta.ModelSettingsVariant16? modelSettings,
             global::System.DateTime? lastMessageAt)
         {
             this.Summary = summary;

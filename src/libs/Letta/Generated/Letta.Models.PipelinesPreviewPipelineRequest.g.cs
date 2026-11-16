@@ -27,9 +27,9 @@ namespace Letta
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("producer_config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ProducerConfig3JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.ProducerConfig2JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.ProducerConfig3 ProducerConfig { get; set; }
+        public required global::Letta.ProducerConfig2 ProducerConfig { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,7 +49,7 @@ namespace Letta
         public PipelinesPreviewPipelineRequest(
             global::Letta.PipelinesPreviewPipelineRequestIntegrationType integrationType,
             string integrationId,
-            global::Letta.ProducerConfig3 producerConfig)
+            global::Letta.ProducerConfig2 producerConfig)
         {
             this.IntegrationType = integrationType;
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));

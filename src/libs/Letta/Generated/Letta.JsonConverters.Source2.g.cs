@@ -4,10 +4,10 @@
 namespace Letta.JsonConverters
 {
     /// <inheritdoc />
-    public class SourceJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.Source>
+    public class Source2JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.Source2>
     {
         /// <inheritdoc />
-        public override global::Letta.Source Read(
+        public override global::Letta.Source2 Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -43,7 +43,7 @@ namespace Letta.JsonConverters
                 letta = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
-            var __value = new global::Letta.Source(
+            var __value = new global::Letta.Source2(
                 discriminator?.Type,
                 url,
 
@@ -58,7 +58,7 @@ namespace Letta.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Letta.Source value,
+            global::Letta.Source2 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));

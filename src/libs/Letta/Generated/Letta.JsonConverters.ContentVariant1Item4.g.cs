@@ -4,10 +4,10 @@
 namespace Letta.JsonConverters
 {
     /// <inheritdoc />
-    public class ContentVariant1ItemJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.ContentVariant1Item>
+    public class ContentVariant1Item4JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Letta.ContentVariant1Item4>
     {
         /// <inheritdoc />
-        public override global::Letta.ContentVariant1Item Read(
+        public override global::Letta.ContentVariant1Item4 Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -78,7 +78,7 @@ namespace Letta.JsonConverters
                 summarizedReasoning = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
-            var __value = new global::Letta.ContentVariant1Item(
+            var __value = new global::Letta.ContentVariant1Item4(
                 discriminator?.Type,
                 text,
 
@@ -103,7 +103,7 @@ namespace Letta.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Letta.ContentVariant1Item value,
+            global::Letta.ContentVariant1Item4 value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
