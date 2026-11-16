@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.BedrockModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
+        public global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
 
         /// <summary>
         /// Response format for plain text responses.
@@ -197,7 +197,7 @@ namespace Letta
         ///
         /// </summary>
         public ResponseFormatVariant14(
-            global::Letta.BedrockModelSettingsResponseFormatVariant1DiscriminatorType? type,
+            global::Letta.ZAIModelSettingsResponseFormatVariant1DiscriminatorType? type,
             global::Letta.TextResponseFormat? text,
             global::Letta.JsonSchemaResponseFormat? jsonSchema,
             global::Letta.JsonObjectResponseFormat? jsonObject

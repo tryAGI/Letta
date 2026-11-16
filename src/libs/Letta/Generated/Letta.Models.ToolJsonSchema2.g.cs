@@ -6,7 +6,7 @@ namespace Letta
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class CreateVoiceChatCompletionsResponse2
+    public sealed partial class ToolJsonSchema2
     {
 
         /// <summary>

@@ -61,9 +61,9 @@ namespace Letta
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.Config8JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.Config4JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.Config8 Config { get; set; }
+        public required global::Letta.Config4 Config { get; set; }
 
         /// <summary>
         ///
@@ -171,7 +171,7 @@ namespace Letta
             string projectId,
             global::Letta.PipelinesUpdatePipelineResponsePipelineIntegrationType integrationType,
             string feedId,
-            global::Letta.Config8 config,
+            global::Letta.Config4 config,
             global::System.DateTime createdAt,
             global::System.DateTime updatedAt,
             string? integrationId,

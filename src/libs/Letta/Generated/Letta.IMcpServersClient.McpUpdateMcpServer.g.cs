@@ -50,7 +50,7 @@ namespace Letta
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.AnyOf<global::Letta.StdioMCPServer, global::Letta.SSEMCPServer, global::Letta.StreamableHTTPMCPServer>> McpUpdateMcpServerAsync(
             string mcpServerId,
-            global::Letta.Config4 config,
+            global::Letta.Config9 config,
             string? serverName = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

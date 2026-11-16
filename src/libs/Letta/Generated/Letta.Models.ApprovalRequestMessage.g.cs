@@ -82,16 +82,16 @@ namespace Letta
         /// The tool call that has been requested by the llm to run
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_call")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall2, global::Letta.ToolCallDelta>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::Letta.ToolCall, global::Letta.ToolCallDelta>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta> ToolCall { get; set; }
+        public required global::Letta.AnyOf<global::Letta.ToolCall, global::Letta.ToolCallDelta> ToolCall { get; set; }
 
         /// <summary>
         /// The tool calls that have been requested by the llm to run, which are pending approval
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_calls")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>))]
-        public global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>? ToolCalls { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>))]
+        public global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>? ToolCalls { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -129,7 +129,7 @@ namespace Letta
         public ApprovalRequestMessage(
             string id,
             global::System.DateTime date,
-            global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta> toolCall,
+            global::Letta.AnyOf<global::Letta.ToolCall, global::Letta.ToolCallDelta> toolCall,
             string? name,
             string? messageType,
             string? otid,
@@ -138,7 +138,7 @@ namespace Letta
             bool? isErr,
             int? seqId,
             string? runId,
-            global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>? toolCalls)
+            global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>? toolCalls)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Date = date;

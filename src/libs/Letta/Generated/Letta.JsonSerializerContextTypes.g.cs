@@ -330,11 +330,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.Source2>? Type73 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.Source>? Type73 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Source2? Type74 { get; set; }
+        public global::Letta.Source? Type74 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -378,7 +378,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant12? Type85 { get; set; }
+        public global::Letta.ResponseFormatVariant113? Type85 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -430,11 +430,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<global::Letta.ToolCall2, global::Letta.ToolCallDelta>? Type98 { get; set; }
+        public global::Letta.AnyOf<global::Letta.ToolCall, global::Letta.ToolCallDelta>? Type98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolCall2? Type99 { get; set; }
+        public global::Letta.ToolCall? Type99 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -442,11 +442,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>? Type101 { get; set; }
+        public global::Letta.AnyOf<global::System.Collections.Generic.IList<global::Letta.ToolCall>, global::Letta.ToolCallDelta>? Type101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ToolCall2>? Type102 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolCall>? Type102 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -534,7 +534,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant13? Type124 { get; set; }
+        public global::Letta.ResponseFormatVariant16? Type124 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -570,7 +570,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant14? Type133 { get; set; }
+        public global::Letta.ResponseFormatVariant110? Type133 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -846,7 +846,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant12? Type202 { get; set; }
+        public global::Letta.ModelSettingsVariant17? Type202 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -862,7 +862,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant13? Type206 { get; set; }
+        public global::Letta.ModelSettingsVariant18? Type206 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -922,7 +922,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant14? Type221 { get; set; }
+        public global::Letta.ModelSettingsVariant13? Type221 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -954,15 +954,15 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>? Type229 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>? Type229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>? Type230 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>? Type230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.InputVariant2Item? Type231 { get; set; }
+        public global::Letta.InputVariant2Item5? Type231 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1038,11 +1038,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? Type250 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>? Type250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolRulesVariant1Item2? Type251 { get; set; }
+        public global::Letta.ToolRulesVariant1Item3? Type251 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1058,7 +1058,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant15? Type255 { get; set; }
+        public global::Letta.ModelSettingsVariant14? Type255 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1070,7 +1070,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant15? Type258 { get; set; }
+        public global::Letta.ResponseFormatVariant17? Type258 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1102,7 +1102,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant16? Type266 { get; set; }
+        public global::Letta.ModelSettingsVariant15? Type266 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1118,7 +1118,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config? Type270 { get; set; }
+        public global::Letta.Config8? Type270 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1142,7 +1142,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant16? Type276 { get; set; }
+        public global::Letta.ResponseFormatVariant111? Type276 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1290,7 +1290,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant17? Type313 { get; set; }
+        public global::Letta.ResponseFormatVariant15? Type313 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1450,7 +1450,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Source? Type353 { get; set; }
+        public global::Letta.Source2? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1486,11 +1486,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>? Type362 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolRulesVariant1Item3? Type363 { get; set; }
+        public global::Letta.ToolRulesVariant1Item4? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1502,7 +1502,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant17? Type366 { get; set; }
+        public global::Letta.ModelSettingsVariant19? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1514,7 +1514,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant18? Type369 { get; set; }
+        public global::Letta.ResponseFormatVariant115? Type369 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1574,7 +1574,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant19? Type384 { get; set; }
+        public global::Letta.ResponseFormatVariant118? Type384 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1646,15 +1646,15 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>? Type402 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>>? Type402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>? Type403 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item>? Type403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.InputVariant2Item4? Type404 { get; set; }
+        public global::Letta.InputVariant2Item? Type404 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1702,15 +1702,15 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>>? Type416 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>>? Type416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item5>? Type417 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.InputVariant2Item4>? Type417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.InputVariant2Item5? Type418 { get; set; }
+        public global::Letta.InputVariant2Item4? Type418 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1806,11 +1806,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>? Type442 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item4>? Type442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ContentVariant1Item? Type443 { get; set; }
+        public global::Letta.ContentVariant1Item4? Type443 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1910,7 +1910,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant110? Type468 { get; set; }
+        public global::Letta.ResponseFormatVariant117? Type468 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1938,7 +1938,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant111? Type475 { get; set; }
+        public global::Letta.ResponseFormatVariant18? Type475 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1954,7 +1954,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant112? Type479 { get; set; }
+        public global::Letta.ResponseFormatVariant114? Type479 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2090,7 +2090,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant113? Type513 { get; set; }
+        public global::Letta.ResponseFormatVariant19? Type513 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2222,7 +2222,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant114? Type546 { get; set; }
+        public global::Letta.ResponseFormatVariant112? Type546 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2258,7 +2258,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolJSONSchema2? Type555 { get; set; }
+        public global::Letta.ToolJSONSchema? Type555 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2310,11 +2310,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item4>? Type568 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? Type568 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ToolRulesVariant1Item4? Type569 { get; set; }
+        public global::Letta.ToolRulesVariant1Item2? Type569 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2326,7 +2326,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant18? Type572 { get; set; }
+        public global::Letta.ModelSettingsVariant12? Type572 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2338,7 +2338,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant115? Type575 { get; set; }
+        public global::Letta.ResponseFormatVariant12? Type575 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2358,7 +2358,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ModelSettingsVariant19? Type580 { get; set; }
+        public global::Letta.ModelSettingsVariant16? Type580 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2374,7 +2374,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config4? Type584 { get; set; }
+        public global::Letta.Config9? Type584 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2458,7 +2458,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant116? Type605 { get; set; }
+        public global::Letta.ResponseFormatVariant13? Type605 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2470,7 +2470,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant117? Type608 { get; set; }
+        public global::Letta.ResponseFormatVariant14? Type608 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2518,7 +2518,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ResponseFormatVariant118? Type620 { get; set; }
+        public global::Letta.ResponseFormatVariant116? Type620 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3294,7 +3294,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ProducerConfig2? Type814 { get; set; }
+        public global::Letta.ProducerConfig3? Type814 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3342,7 +3342,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.ProducerConfig3? Type826 { get; set; }
+        public global::Letta.ProducerConfig2? Type826 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4342,11 +4342,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.DataItem>? Type1076 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.DataItem2>? Type1076 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.DataItem? Type1077 { get; set; }
+        public global::Letta.DataItem2? Type1077 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4398,11 +4398,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Letta.DataItem2>? Type1090 { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.DataItem>? Type1090 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.DataItem2? Type1091 { get; set; }
+        public global::Letta.DataItem? Type1091 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4862,7 +4862,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config5? Type1206 { get; set; }
+        public global::Letta.Config3? Type1206 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4926,7 +4926,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config6? Type1222 { get; set; }
+        public global::Letta.Config? Type1222 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4982,7 +4982,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config7? Type1236 { get; set; }
+        public global::Letta.Config2? Type1236 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5042,7 +5042,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config8? Type1251 { get; set; }
+        public global::Letta.Config4? Type1251 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5114,7 +5114,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.Config9? Type1269 { get; set; }
+        public global::Letta.Config5? Type1269 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5399,7 +5399,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.Source2>? ListType12 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.Source>? ListType12 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5415,11 +5415,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.ToolCall2>, global::Letta.ToolCallDelta>? ListType16 { get; set; }
+        public global::Letta.AnyOf<global::System.Collections.Generic.List<global::Letta.ToolCall>, global::Letta.ToolCallDelta>? ListType16 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.ToolCall2>? ListType17 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.ToolCall>? ListType17 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5491,11 +5491,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item>>? ListType35 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>>? ListType35 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item>? ListType36 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>? ListType36 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5515,7 +5515,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item2>? ListType41 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item3>? ListType41 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5535,7 +5535,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item3>? ListType46 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item4>? ListType46 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5555,11 +5555,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>>? ListType51 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item>>? ListType51 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>? ListType52 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item>? ListType52 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5571,11 +5571,11 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>>? ListType55 { get; set; }
+        public global::Letta.AnyOf<string, global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>>? ListType55 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item5>? ListType56 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.InputVariant2Item4>? ListType56 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5591,7 +5591,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.ContentVariant1Item>? ListType60 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.ContentVariant1Item4>? ListType60 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5663,7 +5663,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item4>? ListType78 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.ToolRulesVariant1Item2>? ListType78 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5987,7 +5987,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.DataItem>? ListType159 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.DataItem2>? ListType159 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5999,7 +5999,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Letta.DataItem2>? ListType162 { get; set; }
+        public global::System.Collections.Generic.List<global::Letta.DataItem>? ListType162 { get; set; }
         /// <summary>
         ///
         /// </summary>

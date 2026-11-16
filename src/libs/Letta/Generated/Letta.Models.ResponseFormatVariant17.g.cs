@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
+        public global::Letta.CreateAgentRequestResponseFormatVariant1DiscriminatorType? Type { get; }
 
         /// <summary>
         /// Response format for plain text responses.
@@ -197,7 +197,7 @@ namespace Letta
         ///
         /// </summary>
         public ResponseFormatVariant17(
-            global::Letta.GroqModelSettingsResponseFormatVariant1DiscriminatorType? type,
+            global::Letta.CreateAgentRequestResponseFormatVariant1DiscriminatorType? type,
             global::Letta.TextResponseFormat? text,
             global::Letta.JsonSchemaResponseFormat? jsonSchema,
             global::Letta.JsonObjectResponseFormat? jsonObject

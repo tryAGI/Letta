@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LettaRequestInputVariant2ItemDiscriminatorType? Type { get; }
+        public global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -497,7 +497,7 @@ namespace Letta
         ///
         /// </summary>
         public InputVariant2Item4(
-            global::Letta.LettaRequestInputVariant2ItemDiscriminatorType? type,
+            global::Letta.LettaStreamingRequestInputVariant2ItemDiscriminatorType? type,
             global::Letta.TextContent? text,
             global::Letta.ImageContent? image,
             global::Letta.ToolCallContent? toolCall,

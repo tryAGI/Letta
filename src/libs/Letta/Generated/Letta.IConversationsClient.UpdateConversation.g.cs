@@ -64,7 +64,7 @@ namespace Letta
             string conversationId,
             string? summary = default,
             string? model = default,
-            global::Letta.ModelSettingsVariant19? modelSettings = default,
+            global::Letta.ModelSettingsVariant16? modelSettings = default,
             global::System.DateTime? lastMessageAt = default,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

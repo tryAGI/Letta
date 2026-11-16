@@ -57,7 +57,7 @@ namespace Letta
         /// The tool rules governing the agent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tool_rules")]
-        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? ToolRules { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>? ToolRules { get; set; }
 
         /// <summary>
         /// The tags associated with the agent.
@@ -154,7 +154,7 @@ namespace Letta
         /// The model settings for the agent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant15? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant14? ModelSettings { get; set; }
 
         /// <summary>
         /// The compaction settings configuration used for compaction.
@@ -292,7 +292,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::Letta.ResponseFormatVariant15? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant17? ResponseFormat { get; set; }
 
         /// <summary>
         /// The timezone of the agent (IANA format).
@@ -432,7 +432,7 @@ namespace Letta
             global::System.Collections.Generic.IList<string>? toolIds,
             global::System.Collections.Generic.IList<string>? folderIds,
             global::System.Collections.Generic.IList<string>? blockIds,
-            global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item2>? toolRules,
+            global::System.Collections.Generic.IList<global::Letta.ToolRulesVariant1Item3>? toolRules,
             global::System.Collections.Generic.IList<string>? tags,
             string? system,
             global::Letta.AgentType? agentType,
@@ -444,7 +444,7 @@ namespace Letta
             object? metadata,
             string? model,
             string? embedding,
-            global::Letta.ModelSettingsVariant15? modelSettings,
+            global::Letta.ModelSettingsVariant14? modelSettings,
             global::Letta.CompactionSettingsInput? compactionSettings,
             int? contextWindowLimit,
             global::System.Collections.Generic.Dictionary<string, string>? secrets,

@@ -7,7 +7,7 @@ namespace Letta
     /// <summary>
     ///
     /// </summary>
-    public readonly partial struct ContentVariant1Item : global::System.IEquatable<ContentVariant1Item>
+    public readonly partial struct ContentVariant1Item4 : global::System.IEquatable<ContentVariant1Item4>
     {
         /// <summary>
         ///
@@ -312,17 +312,17 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.TextContent value) => new ContentVariant1Item((global::Letta.TextContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.TextContent value) => new ContentVariant1Item4((global::Letta.TextContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.TextContent?(ContentVariant1Item @this) => @this.Text;
+        public static implicit operator global::Letta.TextContent?(ContentVariant1Item4 @this) => @this.Text;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.TextContent? value)
+        public ContentVariant1Item4(global::Letta.TextContent? value)
         {
             Text = value;
         }
@@ -330,22 +330,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromText(global::Letta.TextContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromText(global::Letta.TextContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.ImageContent value) => new ContentVariant1Item((global::Letta.ImageContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.ImageContent value) => new ContentVariant1Item4((global::Letta.ImageContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.ImageContent?(ContentVariant1Item @this) => @this.Image;
+        public static implicit operator global::Letta.ImageContent?(ContentVariant1Item4 @this) => @this.Image;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.ImageContent? value)
+        public ContentVariant1Item4(global::Letta.ImageContent? value)
         {
             Image = value;
         }
@@ -353,22 +353,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromImage(global::Letta.ImageContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromImage(global::Letta.ImageContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.ToolCallContent value) => new ContentVariant1Item((global::Letta.ToolCallContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.ToolCallContent value) => new ContentVariant1Item4((global::Letta.ToolCallContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.ToolCallContent?(ContentVariant1Item @this) => @this.ToolCall;
+        public static implicit operator global::Letta.ToolCallContent?(ContentVariant1Item4 @this) => @this.ToolCall;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.ToolCallContent? value)
+        public ContentVariant1Item4(global::Letta.ToolCallContent? value)
         {
             ToolCall = value;
         }
@@ -376,22 +376,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromToolCall(global::Letta.ToolCallContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromToolCall(global::Letta.ToolCallContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.ToolReturnContent value) => new ContentVariant1Item((global::Letta.ToolReturnContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.ToolReturnContent value) => new ContentVariant1Item4((global::Letta.ToolReturnContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.ToolReturnContent?(ContentVariant1Item @this) => @this.ToolReturn;
+        public static implicit operator global::Letta.ToolReturnContent?(ContentVariant1Item4 @this) => @this.ToolReturn;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.ToolReturnContent? value)
+        public ContentVariant1Item4(global::Letta.ToolReturnContent? value)
         {
             ToolReturn = value;
         }
@@ -399,22 +399,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromToolReturn(global::Letta.ToolReturnContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromToolReturn(global::Letta.ToolReturnContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.ReasoningContent value) => new ContentVariant1Item((global::Letta.ReasoningContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.ReasoningContent value) => new ContentVariant1Item4((global::Letta.ReasoningContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.ReasoningContent?(ContentVariant1Item @this) => @this.Reasoning;
+        public static implicit operator global::Letta.ReasoningContent?(ContentVariant1Item4 @this) => @this.Reasoning;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.ReasoningContent? value)
+        public ContentVariant1Item4(global::Letta.ReasoningContent? value)
         {
             Reasoning = value;
         }
@@ -422,22 +422,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromReasoning(global::Letta.ReasoningContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromReasoning(global::Letta.ReasoningContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.RedactedReasoningContent value) => new ContentVariant1Item((global::Letta.RedactedReasoningContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.RedactedReasoningContent value) => new ContentVariant1Item4((global::Letta.RedactedReasoningContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.RedactedReasoningContent?(ContentVariant1Item @this) => @this.RedactedReasoning;
+        public static implicit operator global::Letta.RedactedReasoningContent?(ContentVariant1Item4 @this) => @this.RedactedReasoning;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.RedactedReasoningContent? value)
+        public ContentVariant1Item4(global::Letta.RedactedReasoningContent? value)
         {
             RedactedReasoning = value;
         }
@@ -445,22 +445,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromRedactedReasoning(global::Letta.RedactedReasoningContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.OmittedReasoningContent value) => new ContentVariant1Item((global::Letta.OmittedReasoningContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.OmittedReasoningContent value) => new ContentVariant1Item4((global::Letta.OmittedReasoningContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.OmittedReasoningContent?(ContentVariant1Item @this) => @this.OmittedReasoning;
+        public static implicit operator global::Letta.OmittedReasoningContent?(ContentVariant1Item4 @this) => @this.OmittedReasoning;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.OmittedReasoningContent? value)
+        public ContentVariant1Item4(global::Letta.OmittedReasoningContent? value)
         {
             OmittedReasoning = value;
         }
@@ -468,22 +468,22 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromOmittedReasoning(global::Letta.OmittedReasoningContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromOmittedReasoning(global::Letta.OmittedReasoningContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator ContentVariant1Item(global::Letta.SummarizedReasoningContent value) => new ContentVariant1Item((global::Letta.SummarizedReasoningContent?)value);
+        public static implicit operator ContentVariant1Item4(global::Letta.SummarizedReasoningContent value) => new ContentVariant1Item4((global::Letta.SummarizedReasoningContent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::Letta.SummarizedReasoningContent?(ContentVariant1Item @this) => @this.SummarizedReasoning;
+        public static implicit operator global::Letta.SummarizedReasoningContent?(ContentVariant1Item4 @this) => @this.SummarizedReasoning;
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(global::Letta.SummarizedReasoningContent? value)
+        public ContentVariant1Item4(global::Letta.SummarizedReasoningContent? value)
         {
             SummarizedReasoning = value;
         }
@@ -491,12 +491,12 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static ContentVariant1Item FromSummarizedReasoning(global::Letta.SummarizedReasoningContent? value) => new ContentVariant1Item(value);
+        public static ContentVariant1Item4 FromSummarizedReasoning(global::Letta.SummarizedReasoningContent? value) => new ContentVariant1Item4(value);
 
         /// <summary>
         ///
         /// </summary>
-        public ContentVariant1Item(
+        public ContentVariant1Item4(
             global::Letta.MessageContentVariant1ItemDiscriminatorType? type,
             global::Letta.TextContent? text,
             global::Letta.ImageContent? image,
@@ -760,7 +760,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public bool Equals(ContentVariant1Item other)
+        public bool Equals(ContentVariant1Item4 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::Letta.TextContent?>.Default.Equals(Text, other.Text) &&
@@ -777,15 +777,15 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public static bool operator ==(ContentVariant1Item obj1, ContentVariant1Item obj2)
+        public static bool operator ==(ContentVariant1Item4 obj1, ContentVariant1Item4 obj2)
         {
-            return global::System.Collections.Generic.EqualityComparer<ContentVariant1Item>.Default.Equals(obj1, obj2);
+            return global::System.Collections.Generic.EqualityComparer<ContentVariant1Item4>.Default.Equals(obj1, obj2);
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static bool operator !=(ContentVariant1Item obj1, ContentVariant1Item obj2)
+        public static bool operator !=(ContentVariant1Item4 obj1, ContentVariant1Item4 obj2)
         {
             return !(obj1 == obj2);
         }
@@ -795,7 +795,7 @@ namespace Letta
         /// </summary>
         public override bool Equals(object? obj)
         {
-            return obj is ContentVariant1Item o && Equals(o);
+            return obj is ContentVariant1Item4 o && Equals(o);
         }
     }
 }

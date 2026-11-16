@@ -17,15 +17,15 @@ namespace Letta.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1? agent = default;
-            if (discriminator?.Type == global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemDiscriminatorType.Agent)
+            global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1? agent = default;
+            if (discriminator?.Type == global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemDiscriminatorType.Agent)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1)}");
                 agent = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
@@ -48,8 +48,8 @@ namespace Letta.JsonConverters
 
             if (value.IsAgent)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ClientSideAccessTokensListClientSideAccessTokensResponseTokenPolicyDataItemVariant1).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyDataItemVariant1).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAgent(), typeInfo);
             }
         }

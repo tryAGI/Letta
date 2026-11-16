@@ -291,7 +291,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::Letta.ResponseFormatVariant118? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant116? ResponseFormat { get; set; }
 
         /// <summary>
         /// The timezone of the agent (IANA format).

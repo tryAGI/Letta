@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType? Type { get; }
+        public global::Letta.SGLangModelSettingsResponseFormatVariant1DiscriminatorType? Type { get; }
 
         /// <summary>
         /// Response format for plain text responses.
@@ -197,7 +197,7 @@ namespace Letta
         ///
         /// </summary>
         public ResponseFormatVariant19(
-            global::Letta.LLMConfigResponseFormatVariant1DiscriminatorType? type,
+            global::Letta.SGLangModelSettingsResponseFormatVariant1DiscriminatorType? type,
             global::Letta.TextResponseFormat? text,
             global::Letta.JsonSchemaResponseFormat? jsonSchema,
             global::Letta.JsonObjectResponseFormat? jsonObject

@@ -6,7 +6,7 @@ namespace Letta
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class ToolCall2
+    public sealed partial class ToolCall
     {
         /// <summary>
         ///
@@ -36,7 +36,7 @@ namespace Letta
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolCall2" /> class.
+        /// Initializes a new instance of the <see cref="ToolCall" /> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="arguments"></param>
@@ -44,7 +44,7 @@ namespace Letta
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public ToolCall2(
+        public ToolCall(
             string name,
             string arguments,
             string toolCallId)
@@ -55,9 +55,9 @@ namespace Letta
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ToolCall2" /> class.
+        /// Initializes a new instance of the <see cref="ToolCall" /> class.
         /// </summary>
-        public ToolCall2()
+        public ToolCall()
         {
         }
 

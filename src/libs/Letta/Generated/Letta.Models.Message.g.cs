@@ -80,7 +80,7 @@ namespace Letta
         /// The content of the message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
-        public global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>? Content { get; set; }
+        public global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item4>? Content { get; set; }
 
         /// <summary>
         /// For role user/assistant: the (optional) name of the participant. For role tool/function: the name of the function called.
@@ -274,7 +274,7 @@ namespace Letta
             string? id,
             string? agentId,
             string? model,
-            global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item>? content,
+            global::System.Collections.Generic.IList<global::Letta.ContentVariant1Item4>? content,
             string? name,
             global::System.Collections.Generic.IList<global::Letta.ChatCompletionMessageFunctionToolCallOutput>? toolCalls,
             string? toolCallId,

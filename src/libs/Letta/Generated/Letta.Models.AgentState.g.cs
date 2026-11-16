@@ -157,7 +157,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Letta.Source2> Sources { get; set; }
+        public required global::System.Collections.Generic.IList<global::Letta.Source> Sources { get; set; }
 
         /// <summary>
         /// The tags associated with the agent.
@@ -444,7 +444,7 @@ namespace Letta
             global::Letta.Memory memory,
             global::System.Collections.Generic.IList<global::Letta.Block> blocks,
             global::System.Collections.Generic.IList<global::Letta.Tool> tools,
-            global::System.Collections.Generic.IList<global::Letta.Source2> sources,
+            global::System.Collections.Generic.IList<global::Letta.Source> sources,
             global::System.Collections.Generic.IList<string> tags,
             string? createdById,
             string? lastUpdatedById,

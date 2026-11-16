@@ -47,7 +47,7 @@ namespace Letta
         /// The response format for the model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
-        public global::Letta.ResponseFormatVariant113? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant19? ResponseFormat { get; set; }
 
         /// <summary>
         /// Enable strict mode for tool calling. When true, tool outputs are guaranteed to match JSON schemas.<br/>
@@ -110,7 +110,7 @@ namespace Letta
             string? providerType,
             double? temperature,
             global::Letta.OpenAIReasoning? reasoning,
-            global::Letta.ResponseFormatVariant113? responseFormat,
+            global::Letta.ResponseFormatVariant19? responseFormat,
             bool? strict,
             string? toolCallParser)
         {

@@ -20,7 +20,7 @@ namespace Letta
         /// Optional model settings used to override defaults for the summarizer model.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("model_settings")]
-        public global::Letta.ModelSettingsVariant13? ModelSettings { get; set; }
+        public global::Letta.ModelSettingsVariant18? ModelSettings { get; set; }
 
         /// <summary>
         /// The prompt to use for summarization. If None, uses mode-specific default.
@@ -94,7 +94,7 @@ namespace Letta
 #endif
         public CompactionSettingsOutput(
             string? model,
-            global::Letta.ModelSettingsVariant13? modelSettings,
+            global::Letta.ModelSettingsVariant18? modelSettings,
             string? prompt,
             bool? promptAcknowledgement,
             int? clipChars,

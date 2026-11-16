@@ -12,7 +12,7 @@ namespace Letta
         /// <summary>
         ///
         /// </summary>
-        public global::Letta.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType? Type { get; }
+        public global::Letta.CreateAgentRequestToolRulesVariant1ItemDiscriminatorType? Type { get; }
 
         /// <summary>
         /// A ToolRule represents a tool that can be invoked by the agent.
@@ -557,7 +557,7 @@ namespace Letta
         ///
         /// </summary>
         public ToolRulesVariant1Item3(
-            global::Letta.InternalTemplateAgentCreateToolRulesVariant1ItemDiscriminatorType? type,
+            global::Letta.CreateAgentRequestToolRulesVariant1ItemDiscriminatorType? type,
             global::Letta.ChildToolRule? constrainChildTools,
             global::Letta.InitToolRule? runFirst,
             global::Letta.TerminalToolRule? exitLoop,

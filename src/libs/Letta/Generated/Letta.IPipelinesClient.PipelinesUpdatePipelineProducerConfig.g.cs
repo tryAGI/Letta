@@ -45,7 +45,7 @@ namespace Letta
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Letta.PipelinesUpdatePipelineProducerConfigResponse> PipelinesUpdatePipelineProducerConfigAsync(
             string pipelineId,
-            global::Letta.ProducerConfig2 producerConfig,
+            global::Letta.ProducerConfig3 producerConfig,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

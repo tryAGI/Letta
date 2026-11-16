@@ -17,22 +17,22 @@ namespace Letta.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1? slackChannelReader = default;
-            if (discriminator?.Type == global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType.SlackChannelReader)
+            global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1? slackChannelReader = default;
+            if (discriminator?.Type == global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminatorType.SlackChannelReader)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1)}");
                 slackChannelReader = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2? customWebhook = default;
-            if (discriminator?.Type == global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigDiscriminatorType.CustomWebhook)
+            global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2? customWebhook = default;
+            if (discriminator?.Type == global::Letta.PipelinesPreviewPipelineRequestProducerConfigDiscriminatorType.CustomWebhook)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2)}");
                 customWebhook = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
@@ -57,14 +57,14 @@ namespace Letta.JsonConverters
 
             if (value.IsSlackChannelReader)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant1).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant1).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSlackChannelReader(), typeInfo);
             }
             else if (value.IsCustomWebhook)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesUpdatePipelineProducerConfigRequestProducerConfigVariant2).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Letta.PipelinesPreviewPipelineRequestProducerConfigVariant2).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCustomWebhook(), typeInfo);
             }
         }

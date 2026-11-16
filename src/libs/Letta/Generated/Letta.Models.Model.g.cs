@@ -185,7 +185,7 @@ namespace Letta
         /// The response format for the model's output. Supports text, json_object, and json_schema (structured outputs). Can be set via model_settings.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("response_format")]
-        public global::Letta.ResponseFormatVariant110? ResponseFormat { get; set; }
+        public global::Letta.ResponseFormatVariant117? ResponseFormat { get; set; }
 
         /// <summary>
         /// Enable strict mode for tool calling. When true, tool schemas include strict: true and additionalProperties: false, guaranteeing tool outputs match JSON schemas.<br/>
@@ -306,7 +306,7 @@ namespace Letta
             string? providerName,
             string? modelType,
             global::Letta.ModelEffort? effort,
-            global::Letta.ResponseFormatVariant110? responseFormat,
+            global::Letta.ResponseFormatVariant117? responseFormat,
             bool? strict,
             bool? returnLogprobs,
             int? topLogprobs,

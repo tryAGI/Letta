@@ -498,7 +498,7 @@ namespace Letta
         public async global::System.Threading.Tasks.Task<global::Letta.PipelinesPreviewPipelineResponse> PipelinesPreviewPipelineAsync(
             global::Letta.PipelinesPreviewPipelineRequestIntegrationType integrationType,
             string integrationId,
-            global::Letta.ProducerConfig3 producerConfig,
+            global::Letta.ProducerConfig2 producerConfig,
             global::Letta.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {

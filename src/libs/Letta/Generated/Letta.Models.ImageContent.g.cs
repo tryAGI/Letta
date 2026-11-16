@@ -19,9 +19,9 @@ namespace Letta
         /// The source of the image.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.SourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Letta.JsonConverters.Source2JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Letta.Source Source { get; set; }
+        public required global::Letta.Source2 Source { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,7 +43,7 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ImageContent(
-            global::Letta.Source source,
+            global::Letta.Source2 source,
             string? type)
         {
             this.Type = type;

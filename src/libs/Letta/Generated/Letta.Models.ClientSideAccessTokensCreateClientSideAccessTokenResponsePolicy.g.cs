@@ -20,7 +20,7 @@ namespace Letta
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Letta.DataItem> Data { get; set; }
+        public required global::System.Collections.Generic.IList<global::Letta.DataItem2> Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace Letta
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicy(
-            global::System.Collections.Generic.IList<global::Letta.DataItem> data,
+            global::System.Collections.Generic.IList<global::Letta.DataItem2> data,
             global::Letta.ClientSideAccessTokensCreateClientSideAccessTokenResponsePolicyVersion version)
         {
             this.Version = version;
