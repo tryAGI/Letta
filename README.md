@@ -1,5 +1,24 @@
 # Letta
 
+> [!WARNING]
+> **This SDK is retired.** It targets the Letta **v1** agents API, and that API no longer exists to
+> call: `api.letta.com` answers every path, existing or not, with an HTML redirect to
+> `memory.store`. Upstream archived `letta-ai/letta` into a documentation-only repository on
+> 2026-08-16, deleting `fern/openapi.json` along with the server, so the spec this SDK is generated
+> from is pinned to commit `56ba9c25` - the last revision that still contained it, and the newest
+> source that exists.
+>
+> There is nothing to migrate to and nothing to track. The search was not casual: no `openapi.json`,
+> `openapi.yaml`, `fern.config.json` or `generators.yml` exists anywhere in the `letta-ai` org;
+> `letta-python` is a Stainless SDK whose `.stats.yml` records only an endpoint count, with no source
+> URL; `docs.letta.com` publishes no document; and `letta/letta` on Docker Hub, despite a description
+> that still reads "Run the Letta service", now ships the **`letta` CLI** - run it and it prints help
+> and exits. Its last server-era tag is `0.16.8` from 2026-05-14, three months older than the pinned
+> spec.
+>
+> The published packages stay on NuGet for anyone running a self-hosted Letta v1. No further releases
+> will be made.
+
 [![Nuget package](https://img.shields.io/nuget/vpre/Letta)](https://www.nuget.org/packages/Letta/)
 [![dotnet](https://github.com/tryAGI/Letta/actions/workflows/dotnet.yml/badge.svg?branch=main)](https://github.com/tryAGI/Letta/actions/workflows/dotnet.yml)
 [![License: MIT](https://img.shields.io/github/license/tryAGI/Letta)](https://github.com/tryAGI/Letta/blob/main/LICENSE.txt)
